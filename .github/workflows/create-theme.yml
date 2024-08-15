@@ -31,8 +31,8 @@ jobs:
           echo "THEME_NAME=${{ fromJson(steps.issue-parser.outputs.jsonString)['name'] }}" >> $GITHUB_ENV
           echo "THEME_DESCRIPTION=${{ fromJson(steps.issue-parser.outputs.jsonString)['description'] }}" >> $GITHUB_ENV
           echo "THEME_HOMEPAGE=${{ fromJson(steps.issue-parser.outputs.jsonString)['homepage'] }}" >> $GITHUB_ENV
-          echo "THEME_STYLES=${{ fromJson(steps.issue-parser.outputs.jsonString)['styles'] }}" >> $GITHUB_ENV
-          echo "THEME_README=${{ fromJson(steps.issue-parser.outputs.jsonString)['readme'] }}" >> $GITHUB_ENV
+          echo 'THEME_STYLES=${{ fromJson(steps.issue-parser.outputs.jsonString)['styles'] }}' >> $GITHUB_ENV
+          echo 'THEME_README=${{ fromJson(steps.issue-parser.outputs.jsonString)['readme'] }}' >> $GITHUB_ENV
 
       - name: Setup Git
         run: |
