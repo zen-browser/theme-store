@@ -55,8 +55,8 @@ jobs:
           python3 scripts/submit-theme.py \
               --name "${{ env.THEME_NAME }}" \
               --description "${{ env.THEME_DESCRIPTION }}" \
+              --author "${{ env.THEME_AUTHOR }}" \
               --homepage "${{ env.THEME_HOMEPAGE }}" 2> error.log
-        continue-on-error: true
 
       - name: Export creation output
         if: failure()
