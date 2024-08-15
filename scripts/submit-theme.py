@@ -7,27 +7,40 @@ import uuid
 STYLES_FILE = "chrome.css"
 README_FILE = "readme.md"
 
+TEMPLATE_STYLES_FILE = "./theme-styles.css"
+TEMPLATE_README_FILE = "./theme-readme.md"
+
 def create_theme_id():
     return str(uuid.uuid4())
 
 def get_static_asset(theme_id, asset):
     return f"https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/{theme_id}/{asset}"
 
+def get_styles():
+    with open(TEMPLATE_STYLES_FILE, 'r') as f:
+        content = f.read()
+        content = content[len("```css"):]
+        content = content[:-len("```")]
+        return content
+    
+def get_readme():
+    with open(TEMPLATE_README_FILE, 'r') as f:
+        content = f.read()
+        content = content[len("```markdown"):]
+        content = content[:-len("```")]
+        return content
+
 def main():
     parser = argparse.ArgumentParser(description='Submit a theme to the theme repo.')
     parser.add_argument('--name', type=str, help='The theme to submit.')
     parser.add_argument('--description', type=str, help='The description of the theme.')
     parser.add_argument('--homepage', type=str, help='The homepage of the theme.')
-    parser.add_argument('--styles', type=str, help='The style of the theme.')
-    parser.add_argument('--readme', type=str, help='The README of the theme.')
     parser.add_argument('--author', type=str, help='The author of the theme.')
     args = parser.parse_args()
 
     name = args.name
     description = args.description
     homepage = args.homepage
-    style = args.styles
-    readme = args.readme
     author = args.author
 
     theme_id = create_theme_id()
@@ -36,9 +49,8 @@ def main():
 Welcome to the Zen Browser Theme Store!
 
 Please review the information below before submitting your theme. Also... Why are you here?
-
+          
 This action is only for theme reviewers. If you are a theme developer, please use the theme store.
-
 Just joking, you can do whatever you want. You're the boss.  
     """)
 
@@ -57,10 +69,10 @@ Just joking, you can do whatever you want. You're the boss.
         json.dump(theme, f)
 
     with open(f"themes/{theme_id}/{STYLES_FILE}", 'w') as f:
-        f.write(style)
+        f.write(get_styles())
 
     with open(f"themes/{theme_id}/{README_FILE}", 'w') as f:
-        f.write(readme)
+        f.write(get_readme())
 
     print(f"Theme submitted with ID: {theme_id}")
     for key, value in theme.items():

@@ -31,8 +31,15 @@ jobs:
           echo "THEME_NAME=${{ fromJson(steps.issue-parser.outputs.jsonString)['name'] }}" >> $GITHUB_ENV
           echo "THEME_DESCRIPTION=${{ fromJson(steps.issue-parser.outputs.jsonString)['description'] }}" >> $GITHUB_ENV
           echo "THEME_HOMEPAGE=${{ fromJson(steps.issue-parser.outputs.jsonString)['homepage'] }}" >> $GITHUB_ENV
-          echo 'THEME_STYLES=${{ fromJson(steps.issue-parser.outputs.jsonString)['styles'] }}' >> $GITHUB_ENV
-          echo 'THEME_README=${{ fromJson(steps.issue-parser.outputs.jsonString)['readme'] }}' >> $GITHUB_ENV
+          
+          echo "Ouputing styles and readme"
+          cat <<THEME_CREATE_EOT >> theme-styles.css
+          ${{ fromJson(steps.issue-parser.outputs.jsonString)['styles'] }}
+          THEME_CREATE_EOT
+
+          cat <<THEME_CREATE_EOT >> theme-readme.md
+          ${{ fromJson(steps.issue-parser.outputs.jsonString)['readme'] }}
+          THEME_CREATE_EOT
 
       - name: Setup Git
         run: |
@@ -44,9 +51,7 @@ jobs:
           python3 scripts/submit-theme.py \
               --name "${{ env.THEME_NAME }}" \
               --description "${{ env.THEME_DESCRIPTION }}" \
-              --homepage "${{ env.THEME_HOMEPAGE }}" \
-              --styles "${{ env.THEME_STYLES }}" \
-              --readme "${{ env.THEME_README }}" 2> error.log
+              --homepage "${{ env.THEME_HOMEPAGE }}" 2> error.log
         continue-on-error: true
 
       - name: Export creation output
