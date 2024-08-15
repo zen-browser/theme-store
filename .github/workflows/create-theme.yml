@@ -1,0 +1,31 @@
+on:
+  issues:
+    types: [opened]
+
+jobs:
+  titlePrefixCheck:
+    runs-on: ubuntu-latest
+    steps:
+
+      - name: Parse issue
+        id: parse
+        uses: onmax/issue-form-parser@v1.5
+        with:
+          issue_number: ${{ github.event.issue.number }}
+    
+      # Examples on how to use the output
+      - name: Show parsed payload data
+        run: |
+          # Using the character `'` to prevent all characters enclosed within
+          # them from being treated as special characters (e.g. $ or `)
+          echo '${{ steps.parse.outputs.payload }}'
+    
+          # Print the value of the "Name" field
+          echo '${{ fromJson(steps.parse.outputs.payload)["Name"] }}'
+
+      - if: startsWith(github.event.issue.title, '[create-theme]: ') != 'true'
+        name: Close Issue
+        uses: peter-evans/close-issue@v3
+        with:
+          comment: |
+            # Thank you for your contribution!
