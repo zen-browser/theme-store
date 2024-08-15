@@ -45,3 +45,5 @@ body:
     attributes:
       label: Readme
       description: The README file for the theme.
+    validations:
+      required: true
