@@ -22,14 +22,17 @@ jobs:
         with:
           template-path: .github/ISSUE_TEMPLATE/create-theme.yml
 
+      - name: echo parsed payload
+        run: echo "${{ steps.issue-parser.outputs.jsonString }}"
+
       - name: Export parsed payload into variables
         id: export
         run: |
-          echo "THEME_NAME=${{ steps.issue-parser.outputs.name }}" >> $GITHUB_ENV
-          echo "THEME_DESCRIPTION=${{ steps.issue-parser.outputs.description }}" >> $GITHUB_ENV
-          echo "THEME_HOMEPAGE=${{ steps.issue-parser.outputs.homepage }}" >> $GITHUB_ENV
-          echo "THEME_STYLES=${{ steps.issue-parser.outputs.styles }}" >> $GITHUB_ENV
-          echo "THEME_README=${{ steps.issue-parser.outputs.readme }}" >> $GITHUB_ENV
+          echo "THEME_NAME=${{ fromJson(steps.issue-parser.outputs.jsonString)['name'] }}" >> $GITHUB_ENV
+          echo "THEME_DESCRIPTION=${{ fromJson(steps.issue-parser.outputs.jsonString)['description'] }}" >> $GITHUB_ENV
+          echo "THEME_HOMEPAGE=${{ fromJson(steps.issue-parser.outputs.jsonString)['homepage'] }}" >> $GITHUB_ENV
+          echo "THEME_STYLES=${{ fromJson(steps.issue-parser.outputs.jsonString)['styles'] }}" >> $GITHUB_ENV
+          echo "THEME_README=${{ fromJson(steps.issue-parser.outputs.jsonString)['readme'] }}" >> $GITHUB_ENV
 
       - name: Setup Git
         run: |
