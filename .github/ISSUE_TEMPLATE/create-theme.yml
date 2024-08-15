@@ -39,9 +39,9 @@ body:
         }
     validations:
       required: true
-  - type: markdown
+  - type: textarea
     id: readme
     attributes:
-      value: |
-        # Theme Name
-        Theme Description
+      render: markdown
+      label: Readme
+      description: The README file for the theme.
