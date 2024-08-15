@@ -32,11 +32,11 @@ jobs:
       - name: Export parsed payload into variables
         id: export
         run: |
-          export THEME_NAME='${{ fromJson(steps.parse.outputs.payload)["Name"] }}'
-          export THEME_DESCRIPTION='${{ fromJson(steps.parse.outputs.payload)["Description"] }}'
-          export THEME_HOMEPAGE='${{ fromJson(steps.parse.outputs.payload)["Homepage"] }}'
-          export THEME_STYLES='${{ fromJson(steps.parse.outputs.payload)["Theme Styles"] }}'
-          export THEME_README='${{ fromJson(steps.parse.outputs.payload)["Readme"] }}'
+          export THEME_NAME='${{ fromJson(steps.parse.outputs.payload)['Name'] }}'
+          export THEME_DESCRIPTION='${{ fromJson(steps.parse.outputs.payload)['Description'] }}'
+          export THEME_HOMEPAGE='${{ fromJson(steps.parse.outputs.payload)['Homepage'] }}'
+          export THEME_STYLES='${{ fromJson(steps.parse.outputs.payload)['Theme Styles'] }}'
+          export THEME_README='${{ fromJson(steps.parse.outputs.payload)['Readme'] }}'
           export THEME_AUTHOR='${{ github.actor }}'
 
       - name: Setup Git
