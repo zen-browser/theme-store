@@ -52,3 +52,14 @@ body:
       description: The README file for the theme.
     validations:
       required: true
+  - type: textarea
+    id: preferences
+    attributes:
+      render: json
+      label: Preferences
+      description: The preferences for the theme in JSON format. Leave empty if there are no preferences.
+      placeholder: |
+        {
+          "uc.my-preference.enable-this": "Enable this feature for the theme",
+          "uc.my-preference.show-that": "Show that feature for the theme"
+        }

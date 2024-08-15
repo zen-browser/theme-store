@@ -46,6 +46,12 @@ jobs:
           contents: ${{ fromJson(steps.issue-parser.outputs.jsonString)['readme'] }}
           path: theme-readme.md
 
+      - name: Write preferences to file
+        uses: "DamianReeves/write-file-action@master"
+        with:
+          contents: ${{ fromJson(steps.issue-parser.outputs.jsonString)['preferences'] }}
+          path: theme-preferences.json
+
       - name: Setup Git
         run: |
           git config --global user.name "github-actions[bot]"

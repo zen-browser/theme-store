@@ -10,9 +10,11 @@ import imghdr
 STYLES_FILE = "chrome.css"
 README_FILE = "readme.md"
 IMAGE_FILE = "image.png"
+PREFERENCES_FILE = "preferences.json"
 
 TEMPLATE_STYLES_FILE = "./theme-styles.css"
 TEMPLATE_README_FILE = "./theme-readme.md"
+TEMPLATE_PREFERENCES_FILE = "./theme-preferences.json"
 
 def create_theme_id():
     return str(uuid.uuid4())
@@ -33,6 +35,40 @@ def get_readme():
         content = content[len("```markdown"):]
         content = content[:-len("```")]
         return content
+    
+def validate_preferences(preferences):
+    for key, value in preferences.items():
+        if not isinstance(key, str):
+            print("Preference key must be a string.", file=sys.stderr)
+            exit(1)
+        if not isinstance(value, str):
+            print("Preference description must be a string.", file=sys.stderr)
+            exit(1)
+        if len(key) == 0:
+            print("Preference key is required.", file=sys.stderr)
+            exit(1)
+        for char in key:
+            if not char.isalnum() and char != '.' and char != '-' and char != '_':
+                print("Preference key must only contain letters, numbers, periods, dashes, and underscores.", file=sys.stderr)
+                exit(1)
+        if len(value) == 0:
+            print("Preference description is required.", file=sys.stderr)
+            exit(1)
+    return preferences
+
+def get_preferences():
+    with open(TEMPLATE_PREFERENCES_FILE, 'r') as f:
+        try:
+            content = f.read()
+            if content.strip() == "":
+                return {}
+            content = content[len("```json"):]
+            content = content[:-len("```")]
+            return validate_preferences(json.loads(content))
+        except json.JSONDecodeError as e:
+            print("Preferences file is invalid.", file=sys.stderr)
+            print(e, file=sys.stderr)
+            exit(1)
 
 def validate_name(name):
     if len(name) == 0:
@@ -107,8 +143,6 @@ Just joking, you can do whatever you want. You're the boss.
     }
 
     os.makedirs(f"themes/{theme_id}")
-    with open(f"themes/{theme_id}/theme.json", 'w') as f:
-        json.dump(theme, f)
 
     with open(f"themes/{theme_id}/{STYLES_FILE}", 'w') as f:
         f.write(get_styles())
@@ -116,7 +150,18 @@ Just joking, you can do whatever you want. You're the boss.
     with open(f"themes/{theme_id}/{README_FILE}", 'w') as f:
         f.write(get_readme())
 
+    with open(f"themes/{theme_id}/{PREFERENCES_FILE}", 'w') as f:
+        prefs = get_preferences()
+        if len(prefs) > 0:
+            print("Detected preferences file. Please review the preferences below.")
+            print(prefs)
+            theme['preferences'] = get_static_asset(theme_id, PREFERENCES_FILE)
+            json.dump(prefs, f)
+
     download_image(image, f"themes/{theme_id}/{IMAGE_FILE}")
+
+    with open(f"themes/{theme_id}/theme.json", 'w') as f:
+        json.dump(theme, f)
 
     print(f"Theme submitted with ID: {theme_id}")
     for key, value in theme.items():
