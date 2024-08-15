@@ -73,9 +73,7 @@ jobs:
 
             Sorry about that! There was an error creating the theme. Please try again or contact the maintainers for help.
 
-            ```
-            ${{ env.CREATION_OUTPUT }}
-            ```
+            > ${{ env.CREATION_OUTPUT }}
 
       - name: Create Pull Request
         uses: peter-evans/create-pull-request@v3
