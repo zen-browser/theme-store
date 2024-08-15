@@ -150,13 +150,18 @@ Just joking, you can do whatever you want. You're the boss.
     with open(f"themes/{theme_id}/{README_FILE}", 'w') as f:
         f.write(get_readme())
 
-    with open(f"themes/{theme_id}/{PREFERENCES_FILE}", 'w') as f:
-        prefs = get_preferences()
-        if len(prefs) > 0:
-            print("Detected preferences file. Please review the preferences below.")
-            print(prefs)
-            theme['preferences'] = get_static_asset(theme_id, PREFERENCES_FILE)
-            json.dump(prefs, f)
+    if os.path.exists(TEMPLATE_PREFERENCES_FILE):
+        prefs_file = f"themes/{theme_id}/{PREFERENCES_FILE}"
+        with open(prefs_file, 'w') as f:
+            prefs = get_preferences()
+            if len(prefs) > 0:
+                print("Detected preferences file. Please review the preferences below.")
+                print(prefs)
+                theme['preferences'] = get_static_asset(theme_id, PREFERENCES_FILE)
+                json.dump(prefs, f)
+            else:
+                print("No preferences detected.")
+                os.remove(prefs_file)
 
     download_image(image, f"themes/{theme_id}/{IMAGE_FILE}")
 

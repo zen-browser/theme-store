@@ -48,6 +48,7 @@ jobs:
 
       - name: Write preferences to file
         uses: "DamianReeves/write-file-action@master"
+        if: fromJson(steps.issue-parser.outputs.jsonString)['preferences'] != ''
         with:
           contents: ${{ fromJson(steps.issue-parser.outputs.jsonString)['preferences'] }}
           path: theme-preferences.json
