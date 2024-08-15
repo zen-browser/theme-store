@@ -78,7 +78,7 @@ jobs:
         if: success()
         with:
           add-paths: themes/
-          token: ${{ secrets.GITHUB_TOKEN }}
+          token: ${{ secrets.DEPLOY_KEY }}
           commit-message: "Add theme: ${{ env.THEME_NAME }}"
           delete-branch: true
           title: "Add theme: ${{ env.THEME_NAME }}"
