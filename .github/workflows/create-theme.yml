@@ -18,9 +18,9 @@ jobs:
 
       - name: Parse issue
         id: parse
-        uses: onmax/issue-form-parser@v1.5
+        uses: stefanbuck/github-issue-parser@v3
         with:
-          issue_number: ${{ github.event.issue.number }}
+          template-path: .github/ISSUE_TEMPLATE/create-theme.yml
     
       # Examples on how to use the output
       - name: Show parsed payload data
@@ -32,12 +32,11 @@ jobs:
       - name: Export parsed payload into variables
         id: export
         run: |
-          echo 'THEME_NAME=\'${{ fromJson(steps.parse.outputs.payload)['Name'] }}\'' >> $GITHUB_ENV                      
-          echo 'THEME_DESCRIPTION=\'${{ fromJson(steps.parse.outputs.payload)['Description'] }}\'' >> $GITHUB_ENV
-          echo 'THEME_HOMEPAGE=\'${{ fromJson(steps.parse.outputs.payload)['Homepage'] }}\'' >> $GITHUB_ENV
-          echo 'THEME_STYLES=\'${{ fromJson(steps.parse.outputs.payload)['Theme Styles'] }}\'' >> $GITHUB_ENV
-          echo 'THEME_README=\'${{ fromJson(steps.parse.outputs.payload)['Readme'] }}\'' >> $GITHUB_ENV
-          echo 'THEME_AUTHOR=\'${{ github.actor }}\'' >> $GITHUB_ENV
+          echo "THEME_NAME=${{ steps.issue-parser.outputs.name }}" >> $GITHUB_ENV
+          echo "THEME_DESCRIPTION=${{ steps.issue-parser.outputs.description }}" >> $GITHUB_ENV
+          echo "THEME_HOMEPAGE=${{ steps.issue-parser.outputs.homepage }}" >> $GITHUB_ENV
+          echo "THEME_STYLES=${{ steps.issue-parser.outputs.styles }}" >> $GITHUB_ENV
+          echo "THEME_README=${{ steps.issue-parser.outputs.readme }}" >> $GITHUB_ENV
 
       - name: Setup Git
         run: |
