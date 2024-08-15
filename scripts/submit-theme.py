@@ -32,6 +32,16 @@ def main():
 
     theme_id = create_theme_id()
 
+    print("""
+Welcome to the Zen Browser Theme Store!
+
+Please review the information below before submitting your theme. Also... Why are you here?
+
+This action is only for theme reviewers. If you are a theme developer, please use the theme store.
+
+Just joking, you can do whatever you want. You're the boss.  
+    """)
+
     theme = {
         'id': theme_id,
         'name': name,
