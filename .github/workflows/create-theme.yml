@@ -17,17 +17,10 @@ jobs:
           python-version: '3.x'
 
       - name: Parse issue
-        id: parse
+        id: issue-parser
         uses: stefanbuck/github-issue-parser@v3
         with:
           template-path: .github/ISSUE_TEMPLATE/create-theme.yml
-    
-      # Examples on how to use the output
-      - name: Show parsed payload data
-        run: |
-          # Using the character `'` to prevent all characters enclosed within
-          # them from being treated as special characters (e.g. $ or `)
-          echo '${{ steps.parse.outputs.payload }}'
 
       - name: Export parsed payload into variables
         id: export
