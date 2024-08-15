@@ -37,7 +37,7 @@ jobs:
           echo 'THEME_HOMEPAGE=\'${{ fromJson(steps.parse.outputs.payload)['Homepage'] }}\'' >> $GITHUB_ENV
           echo 'THEME_STYLES=\'${{ fromJson(steps.parse.outputs.payload)['Theme Styles'] }}\'' >> $GITHUB_ENV
           echo 'THEME_README=\'${{ fromJson(steps.parse.outputs.payload)['Readme'] }}\'' >> $GITHUB_ENV
-          echo 'THEME_AUTHOR=\'${{ github.actor }}' >> $GITHUB_ENV
+          echo 'THEME_AUTHOR=\'${{ github.actor }}\'' >> $GITHUB_ENV
 
       - name: Setup Git
         run: |
