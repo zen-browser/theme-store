@@ -1,1 +1,12 @@
-{}
+{
+    "83a641f7-eca9-4c0f-91af-45627bef0539": {
+        "id": "83a641f7-eca9-4c0f-91af-45627bef0539",
+        "name": "Floating URLbar",
+        "description": "Levitate the URL bar when focusing on it, with a blurred background.",
+        "homepage": "https://github.com/zen-browser/theme-components",
+        "style": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/83a641f7-eca9-4c0f-91af-45627bef0539/chrome.css",
+        "readme": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/83a641f7-eca9-4c0f-91af-45627bef0539/readme.md",
+        "image": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/83a641f7-eca9-4c0f-91af-45627bef0539/image.png",
+        "author": "mauro-balades"
+    }
+}
