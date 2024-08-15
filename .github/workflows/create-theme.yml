@@ -19,11 +19,8 @@ jobs:
           # Using the character `'` to prevent all characters enclosed within
           # them from being treated as special characters (e.g. $ or `)
           echo '${{ steps.parse.outputs.payload }}'
-    
-          # Print the value of the "Name" field
-          echo '${{ fromJson(steps.parse.outputs.payload)["Name"] }}'
 
-      - if: startsWith(github.event.issue.title, '[create-theme]: ') != 'true'
+      - if: startsWith(github.event.issue.title, '[create-theme]:') != 'true'
         name: Close Issue
         uses: peter-evans/close-issue@v3
         with:
