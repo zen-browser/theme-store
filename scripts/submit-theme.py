@@ -4,9 +4,12 @@ import argparse
 import json
 import uuid
 import sys
+import requests
+import imghdr
 
 STYLES_FILE = "chrome.css"
 README_FILE = "readme.md"
+IMAGE_FILE = "image.png"
 
 TEMPLATE_STYLES_FILE = "./theme-styles.css"
 TEMPLATE_README_FILE = "./theme-readme.md"
@@ -51,18 +54,32 @@ def validate_description(description):
         print("Description must be less than 100 characters.", file=sys.stderr)
         exit(1)
 
+def download_image(image_url, image_path):
+    response = requests.get(image_url)
+    if response.status_code != 200:
+        print("Image URL is invalid.", file=sys.stderr)
+        exit(1)
+    with open(image_path, 'wb') as f:
+        f.write(response.content)
+    # Check if the image is valid and a PNG
+    if imghdr.what(image_path) != 'png':
+        print("Image must be a PNG.", file=sys.stderr)
+        exit(1)
+
 def main():
     parser = argparse.ArgumentParser(description='Submit a theme to the theme repo.')
     parser.add_argument('--name', type=str, help='The theme to submit.')
     parser.add_argument('--description', type=str, help='The description of the theme.')
     parser.add_argument('--homepage', type=str, help='The homepage of the theme.')
     parser.add_argument('--author', type=str, help='The author of the theme.')
+    parser.add_argument('--image', type=str, help='The image of the theme.')
     args = parser.parse_args()
 
     name = args.name
     description = args.description
     homepage = args.homepage
     author = args.author
+    image = args.image
 
     validate_name(name)
     validate_description(description)
@@ -85,6 +102,7 @@ Just joking, you can do whatever you want. You're the boss.
         'homepage': homepage,
         'style': get_static_asset(theme_id, STYLES_FILE),
         'readme': get_static_asset(theme_id, README_FILE),
+        'image': get_static_asset(theme_id, IMAGE_FILE),
         'author': author
     }
 
@@ -97,6 +115,8 @@ Just joking, you can do whatever you want. You're the boss.
 
     with open(f"themes/{theme_id}/{README_FILE}", 'w') as f:
         f.write(get_readme())
+
+    download_image(image, f"themes/{theme_id}/{IMAGE_FILE}")
 
     print(f"Theme submitted with ID: {theme_id}")
     for key, value in theme.items():

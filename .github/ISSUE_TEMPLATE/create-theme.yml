@@ -24,9 +24,13 @@ body:
     attributes:
       label: Homepage
       description: The URL of the theme's homepage or repository.
-      placeholder: Theme Homepage
-    validations:
-      required: true
+      placeholder: https://github.com/...
+  - type: input
+    id: image
+    attributes:
+      label: Image
+      description: "A URL to an image representing the theme. It can be a temporary image, it will be cloned to the theme library. Note: The image must be a PNG file. E.g. an imgur link."
+      placeholder: https://...
   - type: textarea
     id: styles
     attributes:

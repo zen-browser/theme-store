@@ -31,6 +31,7 @@ jobs:
           echo "THEME_NAME=${{ fromJson(steps.issue-parser.outputs.jsonString)['name'] }}" >> $GITHUB_ENV
           echo "THEME_DESCRIPTION=${{ fromJson(steps.issue-parser.outputs.jsonString)['description'] }}" >> $GITHUB_ENV
           echo "THEME_HOMEPAGE=${{ fromJson(steps.issue-parser.outputs.jsonString)['homepage'] }}" >> $GITHUB_ENV
+          echo "THEME_IMAGE=${{ fromJson(steps.issue-parser.outputs.jsonString)['image'] }}" >> $GITHUB_ENV
           echo "THEME_AUTHOR=${{ github.event.issue.user.login }}" >> $GITHUB_ENV
 
       - name: Write styles to file
@@ -56,6 +57,7 @@ jobs:
               --name "${{ env.THEME_NAME }}" \
               --description "${{ env.THEME_DESCRIPTION }}" \
               --author "${{ env.THEME_AUTHOR }}" \
+              --image "${{ env.THEME_IMAGE }}" \
               --homepage "${{ env.THEME_HOMEPAGE }}" 2> error.log
 
       - name: Export creation output
@@ -103,7 +105,7 @@ jobs:
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
           comment: |
-            # Thank you for your contribution!
+            # Thank you for your contribution! :tada:
 
             Your theme has been successfully submitted. The maintainers will review it and get back to you soon.
 
