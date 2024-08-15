@@ -44,10 +44,6 @@ jobs:
           git config --global user.name "github-actions[bot]"
           git config --global user.email "github-actions[bot]@users.noreply.github.com"
 
-      - name: Create branch
-        run: |
-          git checkout -b create-theme-${{ github.event.issue.number }}
-        
       - name: Create theme content
         run: |
           python3 scripts/submit-theme.py \
@@ -77,18 +73,13 @@ jobs:
             ${{ env.CREATION_OUTPUT }}
             ```
 
-      - if: success()
-        name: Commit changes
-        run: |
-          git add themes/
-          git commit -m "Add theme: $THEME_NAME"
-          git push origin create-theme-${{ github.event.issue.number }}
-
       - name: Create Pull Request
         uses: peter-evans/create-pull-request@v3
+        if: success()
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
           commit-message: "Add theme: $THEME_NAME"
+          delete-branch: true
           title: "Add theme: $THEME_NAME"
           body: |
             # Add theme: $THEME_NAME
@@ -124,7 +115,7 @@ jobs:
             Your theme has been successfully submitted. The maintainers will review it and get back to you soon.
 
             Here are some details about your submission:
-            * Your theme has been requested into [this PR](${{ steps.createPR.outputs.pull-request-url }}).
+            * Your theme has been requested into [this PR](https://github.com/zen-browser/theme-store/pull/${{ steps.createPR.outputs.pull-request-url }})!
             * It has been created into the [create-theme-${{ github.event.issue.number }} branch](https://github.com/zen-browser/theme-store/tree/create-theme-${{ github.event.issue.number }}).
 
             > If you have any questions or need help, feel free to ask in the comments below or in the PR.
