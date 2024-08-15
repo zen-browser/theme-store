@@ -6,6 +6,7 @@ import uuid
 import sys
 import requests
 import imghdr
+import urllib.parse
 
 STYLES_FILE = "chrome.css"
 README_FILE = "readme.md"
@@ -35,6 +36,17 @@ def get_readme():
         content = content[len("```markdown"):]
         content = content[:-len("```")]
         return content
+    
+def validate_url(url, allow_empty=False):
+    if allow_empty and len(url) == 0:
+        return
+    try:
+        urllib.parse.urlparse(url)
+    except Exception as e:
+        print("URL is invalid.", file=sys.stderr)
+        print(e, file=sys.stderr)
+        exit(1)
+
     
 def validate_preferences(preferences):
     for key, value in preferences.items():
@@ -119,6 +131,9 @@ def main():
 
     validate_name(name)
     validate_description(description)
+
+    validate_url(image)
+    validate_url(homepage, allow_empty=True)
 
     theme_id = create_theme_id()
 
