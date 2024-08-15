@@ -28,7 +28,7 @@ body:
     validations:
       required: true
   - type: textarea
-    id: Theme Styles
+    id: styles
     attributes:
       label: Theme Styles
       description: The CSS styles for the theme.
@@ -42,9 +42,6 @@ body:
   - type: markdown
     id: readme
     attributes:
-      label: README
-      description: A markdown display for the theme. This will be displayed in the theme marketplace.
-      placeholder: |
+      value: |
         # Theme Name
-        A brief description of the theme.
-  
+        Theme Description
