@@ -77,30 +77,21 @@ jobs:
         uses: peter-evans/create-pull-request@v3
         if: success()
         with:
+          add-paths: themes/
           token: ${{ secrets.GITHUB_TOKEN }}
-          commit-message: "Add theme: $THEME_NAME"
+          commit-message: "Add theme: ${{ env.THEME_NAME }}"
           delete-branch: true
-          title: "Add theme: $THEME_NAME"
+          title: "Add theme: ${{ env.THEME_NAME }}"
           body: |
-            # Add theme: $THEME_NAME
+            # Add theme: ${{ env.THEME_NAME }}
 
             This PR adds a new theme to the theme library.
 
             ## Theme Details
-            * **Name**: $THEME_NAME
-            * **Description**: $THEME_DESCRIPTION
-            * **Homepage**: $THEME_HOMEPAGE
-            * **Author**: @$THEME_AUTHOR
-
-            ## Theme Styles
-            ```css
-            $THEME_STYLES
-            ```
-
-            ## Theme README
-            ```markdown
-            $THEME_README
-            ```
+            * **Name**: ${{ env.THEME_NAME }}
+            * **Description**: ${{ env.THEME_DESCRIPTION }}
+            * **Homepage**: ${{ env.THEME_HOMEPAGE }}
+            * **Author**: @${{ env.THEME_AUTHOR }}
           branch: create-theme-${{ github.event.issue.number }}
           base: main
         
