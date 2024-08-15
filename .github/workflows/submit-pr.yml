@@ -1,0 +1,35 @@
+
+on:
+  pull_request:
+    types: [closed]
+    
+jobs:
+  submitPR:
+    permissions: write-all
+    name: Rebuild themes after theme submission
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+
+      - name: Install python
+        uses: actions/setup-python@v2
+        with:
+          python-version: '3.x'
+
+      - name: Setup Git
+        run: |
+          git config --global user.name "github-actions[bot]"
+          git config --global user.email "github-actions[bot]@users.noreply.github.com"
+
+      - name: Rebuild all themes
+        run: |
+          python3 scripts/rebuild-themes.py
+        
+      - name: Commit changes
+        run: |
+          git add themes.json
+          git commit -m "Rebuild themes.json after theme submission"
+          git push
+
+      
