@@ -50,14 +50,14 @@ jobs:
         
       - name: Create theme content
         run: |
-          export CREATION_OUTPUT=$(\
-            python3 scripts/create-theme.py \
+          python3 scripts/submit-theme.py \
               --name "${THEME_NAME}" \
               --description "${THEME_DESCRIPTION}" \
               --homepage "${THEME_HOMEPAGE}" \
               --styles "${THEME_STYLES}" \
               --readme "${THEME_README}" \
-              --author "${THEME_AUTHOR}")
+              --author "${THEME_AUTHOR}" 2> error.log
+          export CREATION_OUTPUT=$(cat error.log)
       
       - name: Show error message
         if: failure()
