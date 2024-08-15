@@ -3,7 +3,9 @@ on:
     types: [opened]
 
 jobs:
-  titlePrefixCheck:
+  createPR:
+    permissions: write-all
+    name: Submit a theme
     runs-on: ubuntu-latest
     steps:
 
@@ -24,5 +26,6 @@ jobs:
         name: Close Issue
         uses: peter-evans/close-issue@v3
         with:
+          token: ${{ secrets.GITHUB_TOKEN }}
           comment: |
             # Thank you for your contribution!
