@@ -15,18 +15,18 @@ def get_static_asset(theme_id, asset):
 
 def main():
     parser = argparse.ArgumentParser(description='Submit a theme to the theme repo.')
-    parser.add_argument('name', type=str, help='The theme to submit.')
-    parser.add_argument('description', type=str, help='The description of the theme.')
-    parser.add_argument('homepage', type=str, help='The homepage of the theme.')
-    parser.add_argument('style', type=str, help='The style of the theme.')
-    parser.add_argument('readme', type=str, help='The README of the theme.')
-    parser.add_argument('author', type=str, help='The author of the theme.')
+    parser.add_argument('--name', type=str, help='The theme to submit.')
+    parser.add_argument('--description', type=str, help='The description of the theme.')
+    parser.add_argument('--homepage', type=str, help='The homepage of the theme.')
+    parser.add_argument('--styles', type=str, help='The style of the theme.')
+    parser.add_argument('--readme', type=str, help='The README of the theme.')
+    parser.add_argument('--author', type=str, help='The author of the theme.')
     args = parser.parse_args()
 
     name = args.name
     description = args.description
     homepage = args.homepage
-    style = args.style
+    style = args.styles
     readme = args.readme
     author = args.author
 

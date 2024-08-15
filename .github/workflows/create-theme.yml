@@ -57,6 +57,10 @@ jobs:
               --styles "${THEME_STYLES}" \
               --readme "${THEME_README}" \
               --author "${THEME_AUTHOR}" 2> error.log
+
+      - name: Export creation output
+        if: failure()
+        run: |
           echo "CREATION_OUTPUT=$(cat error.log)" >> $GITHUB_ENV
       
       - name: Show error message
@@ -70,7 +74,7 @@ jobs:
             Sorry about that! There was an error creating the theme. Please try again or contact the maintainers for help.
 
             ```
-            ${{ steps.export.outputs.CREATION_OUTPUT }}
+            ${{ env.CREATION_OUTPUT }}
             ```
 
       - if: success()
