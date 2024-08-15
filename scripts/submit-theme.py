@@ -41,7 +41,10 @@ def validate_url(url, allow_empty=False):
     if allow_empty and len(url) == 0:
         return
     try:
-        urllib.parse.urlparse(url)
+        result = urllib.parse.urlparse(url)
+        if result.scheme != 'https':
+            print("URL must be HTTPS.", file=sys.stderr)
+            exit(1)
     except Exception as e:
         print("URL is invalid.", file=sys.stderr)
         print(e, file=sys.stderr)
@@ -103,7 +106,7 @@ def validate_description(description):
         exit(1)
 
 def download_image(image_url, image_path):
-    response = requests.get(image_url)
+    response = requests.get(image_url, headers={'User-Agent': 'Epicture'})
     if response.status_code != 200:
         print("Image URL is invalid.", file=sys.stderr)
         exit(1)

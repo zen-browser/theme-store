@@ -70,6 +70,7 @@ jobs:
       - name: Export creation output
         if: failure()
         run: |
+          cat error.log
           echo "CREATION_OUTPUT=$(cat error.log)" >> $GITHUB_ENV
       
       - name: Show error message
