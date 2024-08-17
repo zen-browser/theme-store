@@ -7,7 +7,7 @@ body:
     id: name
     attributes:
       label: Name
-      description: The name of the theme.
+      description: The name of the theme. With a maximum of 25 characters.
       placeholder: Theme Name
     validations:
       required: true
@@ -15,7 +15,7 @@ body:
     id: description
     attributes:
       label: Description
-      description: A brief description of the theme.
+      description: A brief description of the theme. With a maximum of 100 characters.
       placeholder: Theme Description
     validations:
       required: true
