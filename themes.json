@@ -19,5 +19,15 @@
         "image": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/5a007026-0801-4a5d-9740-f17dc1c3ff21/image.png",
         "author": "n7itro",
         "preferences": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/5a007026-0801-4a5d-9740-f17dc1c3ff21/preferences.json"
+    },
+    "680424a8-a818-406b-98c5-7726214e2a9f": {
+        "id": "680424a8-a818-406b-98c5-7726214e2a9f",
+        "name": "Remove Browser Padding",
+        "description": "Remove the right and bottom paddings of the browser views on zen!",
+        "homepage": "https://github.com/zen-browser/theme-components",
+        "style": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/680424a8-a818-406b-98c5-7726214e2a9f/chrome.css",
+        "readme": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/680424a8-a818-406b-98c5-7726214e2a9f/readme.md",
+        "image": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/680424a8-a818-406b-98c5-7726214e2a9f/image.png",
+        "author": "mauro-balades"
     }
 }
