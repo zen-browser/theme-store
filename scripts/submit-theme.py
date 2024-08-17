@@ -5,7 +5,6 @@ import json
 import uuid
 import sys
 import requests
-import imghdr
 import urllib.parse
 
 STYLES_FILE = "chrome.css"
@@ -89,8 +88,8 @@ def validate_name(name):
     if len(name) == 0:
         print("Name is required.", file=sys.stderr)
         exit(1)
-    if len(name) > 20:
-        print("Name must be less than 50 characters.", file=sys.stderr)
+    if len(name) > 25:
+        print("Name must be less than 25 characters.", file=sys.stderr)
         exit(1)
     for char in name:
         if not char.isalnum() and char != ' ':
@@ -110,12 +109,12 @@ def download_image(image_url, image_path):
     if response.status_code != 200:
         print("Image URL is invalid.", file=sys.stderr)
         exit(1)
-    with open(image_path, 'wb') as f:
-        f.write(response.content)
     # Check if the image is valid and a PNG
-    if imghdr.what(image_path) != 'png':
+    if response.headers['Content-Type'] != 'image/png':
         print("Image must be a PNG.", file=sys.stderr)
         exit(1)
+    with open(image_path, 'wb') as f:
+        f.write(response.content)
 
 def main():
     parser = argparse.ArgumentParser(description='Submit a theme to the theme repo.')
