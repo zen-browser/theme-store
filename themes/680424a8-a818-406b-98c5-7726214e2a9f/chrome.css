@@ -1,0 +1,7 @@
+
+#tabbrowser-tabpanels {
+    & .browserSidebarContainer:not([zen-split="true"]) {
+        --zen-browser-border-radius: var(--zen-border-radius) 0 0 0;
+        --zen-element-separation: 0;
+    }
+}
