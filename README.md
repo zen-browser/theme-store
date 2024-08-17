@@ -31,7 +31,7 @@ When creating a new theme, the bot will automatically create the files and folde
 
 When updating a theme, the bot will automatically update the theme files and folders with the new changes. This will directly push the changes to the main branch.
 
-> We do this to make our lives easier and to make the process of adding and updating themes more efficient. We are sorry if you wanted to become a contributor to this repository and become part of the process. We are always open to suggestions and feedback, so feel free to open an issue if you have any!
+> We do this to make our lives easier and to make the process of adding and updating themes more efficient. We are always open to suggestions and feedback, so feel free to open an issue if you have any!
 
 ## License
 
