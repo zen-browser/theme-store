@@ -23,7 +23,11 @@
 }
 
 @media (-moz-mac-big-sur-theme: 1) {
-    hbox.titlebar-buttonbox-container { 
+  .titlebar-buttonbox-container { 
       display: none !important; 
+  }
+
+  .window-controls{
+    display: none !important;
   }
 }
