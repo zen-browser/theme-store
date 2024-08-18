@@ -7,6 +7,7 @@ jobs:
     permissions: write-all
     name: Submit a theme
     runs-on: ubuntu-latest
+    if: startsWith(github.event.issue.title, '[create-theme]:') != 'true' && success()
     steps:
       - name: Checkout code
         uses: actions/checkout@v2
@@ -111,8 +112,7 @@ jobs:
           branch: create-theme-${{ github.event.issue.number }}
           base: main
         
-      - if: startsWith(github.event.issue.title, '[create-theme]:') != 'true' && success()
-        name: Close Issue
+      - name: Close Issue
         uses: peter-evans/close-issue@v3
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
