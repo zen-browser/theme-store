@@ -24,10 +24,10 @@
 
 @media (-moz-mac-big-sur-theme: 1) {
   .titlebar-buttonbox-container { 
-      display: none !important; 
+      display: none; 
   }
 
   .window-controls{
-    display: none !important;
+    display: none;
   }
 }
