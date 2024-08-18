@@ -31,6 +31,8 @@ body:
       label: Image
       description: "A URL to an image representing the theme. It can be a temporary image, it will be cloned to the theme library. Note: The image must be a PNG file. E.g. an imgur link."
       placeholder: https://...
+    validations:
+      required: true
   - type: textarea
     id: styles
     attributes:
