@@ -7,7 +7,7 @@ jobs:
     permissions: write-all
     name: Submit a theme
     runs-on: ubuntu-latest
-    if: startsWith(github.event.issue.title, '[create-theme]:') != 'true' && success()
+    if: startsWith(github.event.issue.title, '[create-theme]:') == 'true'
     steps:
       - name: Checkout code
         uses: actions/checkout@v2
