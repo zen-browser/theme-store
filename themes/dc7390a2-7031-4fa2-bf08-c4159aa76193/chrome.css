@@ -1,0 +1,70 @@
+
+/* Hide Window Control Buttons on Mac */
+@media (-moz-bool-pref: "uc.theme.hide-window-control-mac.enabled") {
+    .titlebar-buttonbox-container {
+        display: none
+    }
+}
+
+/* Hide Folder Icons in Bookmarks */
+@media (-moz-bool-pref: "uc.theme.hide-bookmarks-folder-icons.enabled") {
+    .bookmark-item>image:not([src]) {
+        display: none;
+    }
+}
+
+/* Remove forward button */
+@media (-moz-bool-pref: "uc.remove-forward-btn.enabled") {
+    #forward-button {
+        display: none !important;
+    }
+}
+
+/* Make Web Sidebar Compact */
+@media (-moz-bool-pref: "uc.theme.compact-web-sidebar.enabled") {
+    #zen-sidebar-web-header {
+        min-height: 38px !important;
+    }
+
+#zen-sidebar-web-header toolbarbutton image {
+        height: 24px !important;
+        width: 24px !important;
+    }
+
+#zen-sidebar-panels-wrapper {
+        min-height: 42px !important;
+        border: none !important;
+    }
+}
+
+/* Compact Tab Tar */
+@media (-moz-bool-pref: "uc.theme.compact-tab-bar.enabled") {
+    .tabbrowser-tab {
+        margin-bottom: 2px !important;
+        min-height: unset !important;
+        border: none !important;
+    }
+
+#tabs-newtab-button {
+        height: unset !important;
+    }
+}
+
+/* Hide New Tab Button */
+@media (-moz-bool-pref: "uc.theme.hide-new-tab-btn.enabled") {
+    #tabs-newtab-button {
+        display: none !important;
+    }
+}
+
+/* Fix expand sidebar */
+#zen-expand-sidebar-button {
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+}
+
+/* Remove Double bg on hover */
+#zen-sidebar-icons-wrapper>toolbarbutton>image {
+    background: none !important;
+}
