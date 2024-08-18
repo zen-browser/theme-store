@@ -6,6 +6,8 @@ THEMES_FOLDER = './themes'
 THEMES_DATA_FILE = './themes.json'
 
 def main():
+    with open(THEMES_DATA_FILE, 'w') as f:
+        json.dump({}, f, indent=4)
     for theme in os.listdir(THEMES_FOLDER):
         theme_folder = os.path.join(THEMES_FOLDER, theme)
         if not os.path.isdir(theme_folder):
