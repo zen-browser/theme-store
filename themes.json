@@ -1,12 +1,12 @@
 {
-    "83a641f7-eca9-4c0f-91af-45627bef0539": {
-        "id": "83a641f7-eca9-4c0f-91af-45627bef0539",
-        "name": "Floating URLbar",
-        "description": "Levitate the URL bar when focusing on it, with a blurred background.",
+    "680424a8-a818-406b-98c5-7726214e2a9f": {
+        "id": "680424a8-a818-406b-98c5-7726214e2a9f",
+        "name": "Remove Browser Padding",
+        "description": "Remove the right and bottom paddings of the browser views on zen!",
         "homepage": "https://github.com/zen-browser/theme-components",
-        "style": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/83a641f7-eca9-4c0f-91af-45627bef0539/chrome.css",
-        "readme": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/83a641f7-eca9-4c0f-91af-45627bef0539/readme.md",
-        "image": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/83a641f7-eca9-4c0f-91af-45627bef0539/image.png",
+        "style": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/680424a8-a818-406b-98c5-7726214e2a9f/chrome.css",
+        "readme": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/680424a8-a818-406b-98c5-7726214e2a9f/readme.md",
+        "image": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/680424a8-a818-406b-98c5-7726214e2a9f/image.png",
         "author": "mauro-balades"
     },
     "5a007026-0801-4a5d-9740-f17dc1c3ff21": {
@@ -20,25 +20,14 @@
         "author": "n7itro",
         "preferences": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/5a007026-0801-4a5d-9740-f17dc1c3ff21/preferences.json"
     },
-    "680424a8-a818-406b-98c5-7726214e2a9f": {
-        "id": "680424a8-a818-406b-98c5-7726214e2a9f",
-        "name": "Remove Browser Padding",
-        "description": "Remove the right and bottom paddings of the browser views on zen!",
+    "83a641f7-eca9-4c0f-91af-45627bef0539": {
+        "id": "83a641f7-eca9-4c0f-91af-45627bef0539",
+        "name": "Floating URLbar",
+        "description": "Levitate the URL bar when focusing on it, with a blurred background.",
         "homepage": "https://github.com/zen-browser/theme-components",
-        "style": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/680424a8-a818-406b-98c5-7726214e2a9f/chrome.css",
-        "readme": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/680424a8-a818-406b-98c5-7726214e2a9f/readme.md",
-        "image": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/680424a8-a818-406b-98c5-7726214e2a9f/image.png",
+        "style": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/83a641f7-eca9-4c0f-91af-45627bef0539/chrome.css",
+        "readme": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/83a641f7-eca9-4c0f-91af-45627bef0539/readme.md",
+        "image": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/83a641f7-eca9-4c0f-91af-45627bef0539/image.png",
         "author": "mauro-balades"
-    },
-    "dc7390a2-7031-4fa2-bf08-c4159aa76193": {
-        "id": "dc7390a2-7031-4fa2-bf08-c4159aa76193",
-        "name": "zen11",
-        "description": "Customize your Zen experience",
-        "homepage": "https://github.com/Alexcoder5/zen11",
-        "style": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/dc7390a2-7031-4fa2-bf08-c4159aa76193/chrome.css",
-        "readme": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/dc7390a2-7031-4fa2-bf08-c4159aa76193/readme.md",
-        "image": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/dc7390a2-7031-4fa2-bf08-c4159aa76193/image.png",
-        "author": "Alexcoder5",
-        "preferences": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/dc7390a2-7031-4fa2-bf08-c4159aa76193/preferences.json"
     }
 }
