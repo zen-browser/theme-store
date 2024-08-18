@@ -1,4 +1,3 @@
-
 /* Remove minimize window button */
 @media (-moz-bool-pref: "uc.my-preference.hide-minimize") {
   .titlebar-min {
@@ -20,5 +19,11 @@
 @media (-moz-bool-pref: "uc.my-preference.hide-close") {
   .titlebar-close {
     display: none;
+  }
+}
+
+@media (-moz-mac-big-sur-theme: 1) {
+    hbox.titlebar-buttonbox-container { 
+      display: none !important; 
   }
 }
