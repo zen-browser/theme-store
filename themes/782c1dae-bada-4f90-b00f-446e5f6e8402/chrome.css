@@ -1,0 +1,14 @@
+
+/* Decrease the minimum width of the tab sidebar */
+@media (-moz-bool-pref: "zen.view.sidebar-expanded") {  
+   #navigator-toolbox {
+     --zen-navigation-toolbar-min-width: 115px !important;
+  }
+}
+
+/* Decrease the minimum height of tabs */
+@media (-moz-bool-pref: "uc.sidebar.compact-tabs") {
+  .tabbrowser-tab {
+    --tab-min-width: 20px !important;
+  }
+}
