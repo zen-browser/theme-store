@@ -1,6 +1,6 @@
 
 /* Decrease the minimum width of the tab sidebar */
-@media (-moz-bool-pref: "uc.sidebar.compact-min-width") and (-moz-bool-pref: "zen.view.sidebar-expanded") {  
+@media (-moz-bool-pref: "zen.view.sidebar-expanded") {  
    #navigator-toolbox {
      --zen-navigation-toolbar-min-width: 115px !important;
   }
