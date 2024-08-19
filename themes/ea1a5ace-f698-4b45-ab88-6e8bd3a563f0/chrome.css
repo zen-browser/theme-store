@@ -1,0 +1,21 @@
+
+/* Center the bookmarks toolbar */
+@media (-moz-bool-pref: "uc.bookmarks.center-toolbar") {
+  #PlacesToolbarItems {
+    justify-content: center;
+  }
+}
+
+/* Hide folder icons in the bookmarks toolbar */
+@media (-moz-bool-pref: "uc.bookmarks.hide-folder-icons") {
+  .bookmark-item[container="true"] .toolbarbutton-icon {
+    display: none;
+  }
+}
+
+/* Hide favicons in the bookmarks toolbar */
+@media (-moz-bool-pref: "uc.bookmarks.hide-favicons") {
+  .bookmark-item:not([container]) .toolbarbutton-icon {
+    display: none;
+  }
+}
