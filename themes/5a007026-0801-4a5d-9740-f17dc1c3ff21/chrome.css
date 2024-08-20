@@ -1,12 +1,12 @@
 /* Remove minimize window button */
-@media (-moz-bool-pref: "uc.my-preference.hide-minimize") {
+@media (-moz-bool-pref: "uc.hide-minimize") {
   .titlebar-min {
     display: none;
   }
 }
 
 /* Remove maximize window button */
-@media (-moz-bool-pref: "uc.my-preference.hide-maximize") {
+@media (-moz-bool-pref: "uc.hide-maximize") {
   .titlebar-max {
     display: none;
   }
@@ -16,7 +16,7 @@
 }
 
 /* Remove close window button */
-@media (-moz-bool-pref: "uc.my-preference.hide-close") {
+@media (-moz-bool-pref: "uc.hide-close") {
   .titlebar-close {
     display: none;
   }
