@@ -175,7 +175,7 @@ Just joking, you can do whatever you want. You're the boss.
                 print("Detected preferences file. Please review the preferences below.")
                 print(prefs)
                 theme['preferences'] = get_static_asset(theme_id, PREFERENCES_FILE)
-                json.dump(prefs, f)
+                json.dump(prefs, f, indent=4)
             else:
                 print("No preferences detected.")
                 os.remove(prefs_file)
