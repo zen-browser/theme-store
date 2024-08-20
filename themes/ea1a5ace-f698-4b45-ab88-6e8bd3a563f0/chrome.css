@@ -19,3 +19,32 @@
     display: none;
   }
 }
+
+@media (-moz-bool-pref: "uc.bookmarks.expand-on-search") or (-moz-bool-pref: "uc.bookmarks.expand-on-hover") {
+    #PersonalToolbar:not([customizing]) {
+      position: relative;
+      margin-bottom: -35px;
+      transform: rotateX(90deg);
+      transform-origin: top;
+      transition: transform 135ms linear 600ms;
+      z-index: 1;
+  }
+}
+  
+/* Expand the bookmarks toolbar by hovering */
+@media (-moz-bool-pref: "uc.bookmarks.expand-on-hover") {
+    #zen-appcontent-navbar-container:hover {
+        #PersonalToolbar {
+        transition-delay: 100ms;
+        transform: rotateX(0deg);
+        }
+    }
+}
+
+/* Expand the bookmarks toolbar when you search */
+@media (-moz-bool-pref: "uc.bookmarks.expand-on-search") {
+    #nav-bar:focus-within + #PersonalToolbar{
+        transition-delay: 100ms;
+        transform: rotateX(0deg);
+    }
+}
