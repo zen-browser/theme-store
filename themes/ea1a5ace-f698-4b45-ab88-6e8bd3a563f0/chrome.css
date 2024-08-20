@@ -24,9 +24,9 @@
     #PersonalToolbar:not([customizing]) {
       position: relative;
       margin-bottom: -35px;
-      transform: rotateX(90deg);
+      transform: rotateX(90deg) !important;
       transform-origin: top;
-      transition: transform 135ms linear 600ms;
+      transition: transform 135ms linear 600ms !important;
       z-index: 1;
   }
 }
@@ -36,7 +36,7 @@
     #zen-appcontent-navbar-container:hover {
         #PersonalToolbar {
         transition-delay: 100ms;
-        transform: rotateX(0deg);
+        transform: rotateX(0deg) !important;
         }
     }
 }
@@ -45,6 +45,6 @@
 @media (-moz-bool-pref: "uc.bookmarks.expand-on-search") {
     #nav-bar:focus-within + #PersonalToolbar{
         transition-delay: 100ms;
-        transform: rotateX(0deg);
+        transform: rotateX(0deg) !important;
     }
 }
