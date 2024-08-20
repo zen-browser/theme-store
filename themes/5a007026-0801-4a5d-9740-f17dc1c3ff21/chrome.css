@@ -1,4 +1,3 @@
-
 /* Remove minimize window button */
 @media (-moz-bool-pref: "uc.my-preference.hide-minimize") {
   .titlebar-min {
@@ -19,6 +18,16 @@
 /* Remove close window button */
 @media (-moz-bool-pref: "uc.my-preference.hide-close") {
   .titlebar-close {
+    display: none;
+  }
+}
+
+@media (-moz-mac-big-sur-theme: 1) {
+  .titlebar-buttonbox-container { 
+      display: none; 
+  }
+
+  .window-controls{
     display: none;
   }
 }
