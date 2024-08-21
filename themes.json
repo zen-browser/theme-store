@@ -9,6 +9,16 @@
         "image": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/c6813222-6571-4ba6-8faf-58f3343324f6/image.png",
         "author": "gunir"
     },
+    "e3eec307-7c64-4cbd-a0c5-3447cd45a840": {
+        "id": "e3eec307-7c64-4cbd-a0c5-3447cd45a840",
+        "name": "Catppuccin",
+        "description": "Dive into Catppuccin's, unique pastel color theme for Zen!",
+        "homepage": "https://catppuccin.com/",
+        "style": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/e3eec307-7c64-4cbd-a0c5-3447cd45a840/chrome.css",
+        "readme": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/e3eec307-7c64-4cbd-a0c5-3447cd45a840/readme.md",
+        "image": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/e3eec307-7c64-4cbd-a0c5-3447cd45a840/image.png",
+        "author": "mauro-balades"
+    },
     "053a3ffa-9233-4554-88f3-076e6a6ebb43": {
         "id": "053a3ffa-9233-4554-88f3-076e6a6ebb43",
         "name": "Hide tab mute",
