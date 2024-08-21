@@ -8,6 +8,7 @@ import requests
 import urllib.parse
 
 STYLES_FILE = "chrome.css"
+COLORS_FILE = "colors.json"
 README_FILE = "readme.md"
 IMAGE_FILE = "image.png"
 PREFERENCES_FILE = "preferences.json"
@@ -22,11 +23,17 @@ def create_theme_id():
 def get_static_asset(theme_id, asset):
     return f"https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/{theme_id}/{asset}"
 
-def get_styles():
+def get_styles(is_color_theme, theme_id):
     with open(TEMPLATE_STYLES_FILE, 'r') as f:
         content = f.read()
         content = content[len("```css"):]
         content = content[:-len("```")]
+
+        # we actually have a JSON file here that needs to be generated
+        if is_color_theme:
+            with open(f"themes/{theme_id}/{COLORS_FILE}", 'w') as f:
+                json.dump(json.loads(content), f, indent=4)
+            return "/* This is a color theme. */"
         return content
     
 def get_readme():
@@ -123,6 +130,7 @@ def main():
     parser.add_argument('--homepage', type=str, help='The homepage of the theme.')
     parser.add_argument('--author', type=str, help='The author of the theme.')
     parser.add_argument('--image', type=str, help='The image of the theme.')
+    parser.add_argument('--is-color-theme', action='store_true', help='Whether the theme is a color theme.')
     args = parser.parse_args()
 
     name = args.name
@@ -130,6 +138,7 @@ def main():
     homepage = args.homepage
     author = args.author
     image = args.image
+    is_color_theme = args.is_color_theme == True
 
     validate_name(name)
     validate_description(description)
@@ -162,7 +171,7 @@ Just joking, you can do whatever you want. You're the boss.
     os.makedirs(f"themes/{theme_id}")
 
     with open(f"themes/{theme_id}/{STYLES_FILE}", 'w') as f:
-        f.write(get_styles())
+        f.write(get_styles(is_color_theme, theme_id))
 
     with open(f"themes/{theme_id}/{README_FILE}", 'w') as f:
         f.write(get_readme())

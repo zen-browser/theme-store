@@ -38,6 +38,7 @@ jobs:
           echo "THEME_HOMEPAGE=${{ fromJson(steps.issue-parser.outputs.jsonString)['homepage'] }}" >> $GITHUB_ENV
           echo "THEME_IMAGE=${{ fromJson(steps.issue-parser.outputs.jsonString)['image'] }}" >> $GITHUB_ENV
           echo "THEME_AUTHOR=${{ github.event.issue.user.login }}" >> $GITHUB_ENV
+          echo "THEME_IS_COLOR_THEME=${{ fromJson(steps.issue-parser.outputs.jsonString)['is-color-theme'] }}" >> $GITHUB_ENV
 
       - name: Write styles to file
         uses: "DamianReeves/write-file-action@master"
@@ -70,6 +71,7 @@ jobs:
               --description "${{ env.THEME_DESCRIPTION }}" \
               --author "${{ env.THEME_AUTHOR }}" \
               --image "${{ env.THEME_IMAGE }}" \
+              --is-color-theme "${{ env.THEME_IS_COLOR_THEME }}" \
               --homepage "${{ env.THEME_HOMEPAGE }}" 2> error.log
 
       - name: Export creation output

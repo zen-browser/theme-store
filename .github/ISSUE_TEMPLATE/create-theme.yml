@@ -33,16 +33,28 @@ body:
       placeholder: https://...
     validations:
       required: true
+  - type: checkbox
+    id: is-color-theme
+    attributes:
+      label: Is Color Theme
+      description: Check this box if the theme is a color theme.
   - type: textarea
     id: styles
     attributes:
       label: Theme Styles
       render: css
-      description: The CSS styles for the theme.
+      description: The CSS styles for the theme. If the theme is a color theme, the styles should be a JSON object with the color values.
       placeholder: |
         body {
           background-color: white;
           color: black;
+        }
+
+        or
+
+        {
+          "primaryColor": "#000000",
+          ...
         }
     validations:
       required: true
@@ -59,7 +71,7 @@ body:
     attributes:
       render: json
       label: Preferences
-      description: The preferences for the theme in JSON format. Leave empty if there are no preferences.
+      description: The preferences for the theme in JSON format. Leave empty if there are no preferences. This is not used for color themes.
       placeholder: |
         {
           "uc.my-preference.enable-this": "Enable this feature for the theme",

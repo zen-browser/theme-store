@@ -5,6 +5,32 @@ import json
 THEMES_FOLDER = './themes'
 THEMES_DATA_FILE = './themes.json'
 
+def get_color_css_variable(color):
+    if color == "primaryColor":
+        return '--zen-colors-primary'
+    if color == "secondaryColor":
+        return '--zen-colors-secondary'
+    if color == "tertiaryColor":
+        return '--zen-colors-tertiary'
+    if color == "colorsBorder":
+        return '--zen-colors-border'
+    print(f"Unknown color: {color}")
+    exit(1)
+
+def write_colors(colors_file, output_file):
+    with open(colors_file, 'r') as f:
+        colors = json.load(f)
+        with open(output_file, 'w') as f:
+            f.write('/* This is a color theme. */\n')
+            f.write(':root {\n')
+            for color in colors:
+                if color == "isDarkMode":
+                    continue
+                f.write(f'    {get_color_css_variable(color)}: {colors[color]};\n')
+            if colors["isDarkMode"]:
+                f.write('    color-scheme: dark !important;\n')
+            f.write('}\n')
+
 def main():
     with open(THEMES_DATA_FILE, 'w') as f:
         json.dump({}, f, indent=4)
@@ -22,6 +48,10 @@ def main():
                 themes_data[theme] = theme_data
                 with open(THEMES_DATA_FILE, 'w') as f:
                     json.dump(themes_data, f, indent=4)
+        theme_colors_file = os.path.join(theme_folder, 'colors.json')
+        if os.path.exists(theme_colors_file):
+            theme_colors_output = os.path.join(theme_folder, 'chrome.css')
+            write_colors(theme_colors_file, theme_colors_output)
         print(f"Rebuilt theme: {theme}")
     print("Rebuilt all themes!")
   
