@@ -177,6 +177,9 @@ Just joking, you can do whatever you want. You're the boss.
         f.write(get_readme())
 
     if os.path.exists(TEMPLATE_PREFERENCES_FILE):
+        if is_color_theme:
+            print("Color themes do not support preferences.", file=sys.stderr)
+            exit(1)
         prefs_file = f"themes/{theme_id}/{PREFERENCES_FILE}"
         with open(prefs_file, 'w') as f:
             prefs = get_preferences()
