@@ -50,6 +50,7 @@ def main():
                     json.dump(themes_data, f, indent=4)
         theme_colors_file = os.path.join(theme_folder, 'colors.json')
         if os.path.exists(theme_colors_file):
+            print(f"  Found colors.json in theme: {theme}")
             theme_colors_output = os.path.join(theme_folder, 'chrome.css')
             write_colors(theme_colors_file, theme_colors_output)
         print(f"Rebuilt theme: {theme}")
