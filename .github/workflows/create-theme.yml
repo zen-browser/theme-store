@@ -38,7 +38,7 @@ jobs:
           echo "THEME_HOMEPAGE=${{ fromJson(steps.issue-parser.outputs.jsonString)['homepage'] }}" >> $GITHUB_ENV
           echo "THEME_IMAGE=${{ fromJson(steps.issue-parser.outputs.jsonString)['image'] }}" >> $GITHUB_ENV
           echo "THEME_AUTHOR=${{ github.event.issue.user.login }}" >> $GITHUB_ENV
-          echo "THEME_IS_COLOR_THEME=${{ fromJson(steps.issue-parser.outputs.jsonString)['is-color-theme'] }}" >> $GITHUB_ENV
+          echo "THEME_IS_COLOR_THEME=${{ contains(fromJson(steps.issue-parser.outputs.jsonString)['is-color-theme'], 'JSON Color Theme') }}" >> $GITHUB_ENV
 
       - name: Write styles to file
         uses: "DamianReeves/write-file-action@master"
