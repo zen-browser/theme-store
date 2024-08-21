@@ -28,9 +28,6 @@ jobs:
         with:
           template-path: .github/ISSUE_TEMPLATE/create-theme.yml
 
-      - name: echo parsed payload
-        run: echo "${{ steps.issue-parser.outputs.jsonString }}"
-
       - name: Export parsed payload into variables
         id: export
         run: |
