@@ -130,7 +130,7 @@ def main():
     parser.add_argument('--homepage', type=str, help='The homepage of the theme.')
     parser.add_argument('--author', type=str, help='The author of the theme.')
     parser.add_argument('--image', type=str, help='The image of the theme.')
-    parser.add_argument('--is-color-theme', action='store_true', help='Whether the theme is a color theme.')
+    parser.add_argument('--is-color-theme', type=str, help='Whether the theme is a color theme.')
     args = parser.parse_args()
 
     name = args.name
@@ -138,7 +138,7 @@ def main():
     homepage = args.homepage
     author = args.author
     image = args.image
-    is_color_theme = args.is_color_theme == True
+    is_color_theme = args.is_color_theme == "true"
 
     validate_name(name)
     validate_description(description)
