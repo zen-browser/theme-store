@@ -21,7 +21,7 @@ def write_colors(colors_file, output_file):
     with open(colors_file, 'r') as f:
         colors = json.load(f)
         with open(output_file, 'w') as f:
-            f.write('/* This is a color theme. */\n')
+            f.write('/* This is an auto generated color theme. */\n')
             f.write(':root {\n')
             for color in colors:
                 if color == "isDarkMode":
