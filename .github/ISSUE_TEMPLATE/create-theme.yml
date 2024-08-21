@@ -40,7 +40,6 @@ body:
       description: The type of the theme.
       options:
         - label: JSON Color Theme
-          value: true
     validations:
       required: true
   - type: textarea
