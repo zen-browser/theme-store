@@ -1,4 +1,4 @@
-
+name: Submit PR
 on:
   pull_request:
     types: [closed]
