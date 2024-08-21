@@ -33,11 +33,16 @@ body:
       placeholder: https://...
     validations:
       required: true
-  - type: checkbox
+  - type: checkboxes
     id: is-color-theme
     attributes:
-      label: Is Color Theme
-      description: Check this box if the theme is a color theme.
+      label: Type
+      description: The type of the theme.
+      options:
+        - label: JSON Color Theme
+          value: true
+    validations:
+      required: true
   - type: textarea
     id: styles
     attributes:
