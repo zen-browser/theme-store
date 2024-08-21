@@ -30,8 +30,6 @@ def write_colors(colors_file, output_file):
             if colors["isDarkMode"]:
                 f.write('    color-scheme: dark !important;\n')
             f.write('}\n')
-        with open(output_file, 'r') as f:
-            print(f.read())
 
 def main():
     with open(THEMES_DATA_FILE, 'w') as f:

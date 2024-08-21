@@ -30,6 +30,7 @@ jobs:
       - name: Commit changes
         run: |
           git add themes.json
+          git add themes/*
           git commit -m "Rebuild themes.json after theme submission"
           git push
 
