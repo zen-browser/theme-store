@@ -1,0 +1,57 @@
+
+/* Reduced space from edge */   
+@media (-moz-bool-pref: "uc.sidebar.no-edge-padding") and (-moz-bool-pref: "zen.view.compact") {
+    :root[sizemode="maximized"] #navigator-toolbox {
+        --zen-compact-toolbox-margin-single: 0px !important;
+    }
+}
+
+/* Reduced tab sidebar height */
+@media (-moz-bool-pref: "uc.sidebar.reduced-height") and (-moz-bool-pref: "zen.view.compact") {
+    #navigator-toolbox {
+        padding-top: 12.5vh !important;
+        height: 75vh !important;
+    }
+}
+
+@media (-moz-bool-pref "uc.sidebar.hide-expand-compact") and (-moz-bool-pref: "zen.view.compact") {
+   #zen-expand-sidebar-button {
+      display: none !important;
+   }
+}
+
+@media (-moz-bool-pref "uc.sidebar.hide-history-compact") and (-moz-bool-pref: "zen.view.compact") {
+   #zen-history-button {
+     display: none !important;
+   }
+}
+
+@media (-moz-bool-pref "uc.sidebar.hide-profile-compact") and (-moz-bool-pref: "zen.view.compact") {
+   #zen-profile-button {
+     display: none !important;
+   }
+}
+   
+@media (-moz-bool-pref "uc.sidebar.hide-bookmark-compact") and (-moz-bool-pref: "zen.view.compact") {
+   #zen-bookmark-button {
+     display: none !important;
+   }
+}
+
+@media (-moz-bool-pref "uc.sidebar.hide-preferences-compact") and (-moz-bool-pref: "zen.view.compact") {
+   #zen-preferences-button {
+     display: none !important;
+   }
+}
+
+@media (-moz-bool-pref "uc.sidebar.hide-sidepanel-compact") and (-moz-bool-pref: "zen.view.compact") {
+   #zen-sidepanel-button {
+     display: none !important;
+   }
+}
+
+@media (-moz-bool-pref "uc.sidebar.hide-alltabs-compact") and (-moz-bool-pref: "zen.view.compact") {
+   #alltabs-button {
+     display: none;
+   }
+}

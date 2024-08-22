@@ -1,0 +1,11 @@
+{
+    "uc.sidebar.no-edge-padding": "Remove space between screen edge and tab sidebar while in compact mode",
+    "uc.sidebar.reduced-height": "Reduce tab sidebar height while in compact mode",
+    "uc.sidebar.hide-expand-compact": "Hide the expand sidebar button while in compact mode",
+    "uc.sidebar.hide-history-compact": "Hide the history button while in compact mode",
+    "uc.sidebar.hide-profile-compact": "Hide the profile button while in compact mode",
+    "uc.sidebar.hide-bookmark-compact": "Hide the bookmark button while in compact mode",
+    "uc.sidebar.hide-preferences-compact": "Hide the preferences button while in compact mode",
+    "uc.sidebar.hide-sidepanel-compact": "Hide the show sidepanel button while in compact mode",
+    "uc.sidebar.hide-alltabs-compact": "Hide the show all tabs button while in compact mode"
+}
