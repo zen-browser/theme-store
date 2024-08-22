@@ -31,11 +31,8 @@ def write_colors(colors_file, output_file):
                 if color == "isDarkMode":
                     continue
                 f.write(f'    {get_color_css_variable(color)}: {colors[color]} !important;\n')
-            if colors["isDarkMode"]:
-                f.write('    color-scheme: dark !important;\n')
-            else:
-                f.write('    color-scheme: light !important;\n')
             f.write('}\n')
+        return colors
 
 def main():
     with open(THEMES_DATA_FILE, 'w') as f:
@@ -51,14 +48,17 @@ def main():
             theme_data = json.load(f)
             with open(THEMES_DATA_FILE, 'r') as f:
                 themes_data = json.load(f)
+                theme_colors_file = os.path.join(theme_folder, 'colors.json')
+                if os.path.exists(theme_colors_file):
+                    print(f"  Found colors.json in theme: {theme}")
+                    theme_colors_output = os.path.join(theme_folder, 'chrome.css')
+                    colors = write_colors(theme_colors_file, theme_colors_output)
+                    if 'isDarkMode' in colors: 
+                        theme_data['isDarkMode'] = colors['isDarkMode'] 
+                    theme_data['isColorTheme'] = True
                 themes_data[theme] = theme_data
                 with open(THEMES_DATA_FILE, 'w') as f:
                     json.dump(themes_data, f, indent=4)
-        theme_colors_file = os.path.join(theme_folder, 'colors.json')
-        if os.path.exists(theme_colors_file):
-            print(f"  Found colors.json in theme: {theme}")
-            theme_colors_output = os.path.join(theme_folder, 'chrome.css')
-            write_colors(theme_colors_file, theme_colors_output)
         print(f"Rebuilt theme: {theme}")
     print("Rebuilt all themes!")
   
