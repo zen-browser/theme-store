@@ -12,3 +12,29 @@
     --tab-min-width: 20px !important;
   }
 }
+
+/* Reduced space from edge */   
+@media (-moz-bool-pref: "uc.sidebar.no-edge-padding") and (-moz-bool-pref: "zen.view.compact") {
+    :root[sizemode="maximized"] #navigator-toolbox {
+        --zen-compact-toolbox-margin-single: 0px;
+    }
+}
+
+/* Hide bottom nav buttons */
+@media (-moz-bool-pref: "uc.sidebar.hide-bottom-buttons") {
+    #zen-sidebar-icons-wrapper {
+        display: none !important;
+    }
+}
+
+/* Reduced tab bar height */
+@media (-moz-bool-pref: "uc.sidebar.reduced-height") and (-moz-bool-pref: "zen.view.compact") {
+    #alltabs-button {
+        display: none;
+    }
+    
+    #navigator-toolbox {
+        padding-top: 12.5vh !important;
+        height: 75vh !important;
+    }
+}
