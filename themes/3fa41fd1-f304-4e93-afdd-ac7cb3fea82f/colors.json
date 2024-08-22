@@ -1,0 +1,7 @@
+{
+    "isDarkMode": true,
+    "primaryColor": "color-mix(in srgb, var(--zen-primary-color) 60%, black 50%)",
+    "secondaryColor": "color-mix(in srgb, var(--zen-primary-color) 60%, black 60%)",
+    "tertiaryColor": "color-mix(in srgb, var(--zen-primary-color) 0%, black 85%)",
+    "colorsBorder": "color-mix(in srgb, var(--zen-primary-color) 60%, black 20%)"
+}
