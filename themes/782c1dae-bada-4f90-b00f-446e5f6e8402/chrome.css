@@ -11,30 +11,46 @@
   .tabbrowser-tab {
     --tab-min-width: 20px !important;
   }
+}   
+
+@media (-moz-bool-pref: "uc.sidebar.hide-expand") {
+  #zen-expand-sidebar-button {
+    display: none !important;
+  }
 }
 
-/* Reduced space from edge */   
-@media (-moz-bool-pref: "uc.sidebar.no-edge-padding") and (-moz-bool-pref: "zen.view.compact") {
-    :root[sizemode="maximized"] #navigator-toolbox {
-        --zen-compact-toolbox-margin-single: 0px !important;
-    }
+@media (-moz-bool-pref: "uc.sidebar.hide-history") {
+    #zen-history-button {
+      display: none !important;
+  }
 }
 
-/* Hide bottom nav buttons */
-@media (-moz-bool-pref: "uc.sidebar.hide-bottom-buttons") and (-moz-bool-pref: "zen.view.compact") {
-    #zen-sidebar-icons-wrapper {
-        display: none !important;
+@media (-moz-bool-pref: "uc.sidebar.hide-profile") {
+    #zen-profile-button {
+      display: none !important;
     }
+ }
+
+@media (-moz-bool-pref: "uc.sidebar.hide-bookmark") {
+  #zen-bookmark-button {
+    display: none !important;
+  }
 }
 
-/* Reduced tab bar height */
-@media (-moz-bool-pref: "uc.sidebar.reduced-height") and (-moz-bool-pref: "zen.view.compact") {
-    #alltabs-button {
-        display: none;
-    }
-    
-    #navigator-toolbox {
-        padding-top: 12.5vh !important;
-        height: 75vh !important;
-    }
+@media (-moz-bool-pref: "uc.sidebar.hide-preferences") {
+  #zen-preferences-button {
+    display: none !important;
+  }
+}
+
+@media (-moz-bool-pref: "uc.sidebar.hide-sidepanel") {
+  #zen-sidepanel-button {
+    display: none !important;
+  }
+}
+
+@media (-moz-bool-pref: "uc.sidebar.hide-alltabs") {
+  #alltabs-button {
+    display: none;
+  }
 }
