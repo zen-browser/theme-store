@@ -1,59 +1,4 @@
 {
-    "ea1a5ace-f698-4b45-ab88-6e8bd3a563f0": {
-        "id": "ea1a5ace-f698-4b45-ab88-6e8bd3a563f0",
-        "name": "Bookmark Toolbar Tweaks",
-        "description": "Center bookmarks, hide the icons!",
-        "homepage": "https://github.com/n7itro/Zen-Themes/",
-        "style": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/ea1a5ace-f698-4b45-ab88-6e8bd3a563f0/chrome.css",
-        "readme": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/ea1a5ace-f698-4b45-ab88-6e8bd3a563f0/readme.md",
-        "image": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/ea1a5ace-f698-4b45-ab88-6e8bd3a563f0/image.png",
-        "author": "n7itro",
-        "preferences": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/ea1a5ace-f698-4b45-ab88-6e8bd3a563f0/preferences.json"
-    },
-    "782c1dae-bada-4f90-b00f-446e5f6e8402": {
-        "id": "782c1dae-bada-4f90-b00f-446e5f6e8402",
-        "name": "Compact Sidebar",
-        "description": "Allow the tab sidebar to take up less space! New: Smaller Compact Mode",
-        "homepage": "https://github.com/n7itro/Zen-Themes/",
-        "style": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/782c1dae-bada-4f90-b00f-446e5f6e8402/chrome.css",
-        "readme": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/782c1dae-bada-4f90-b00f-446e5f6e8402/readme.md",
-        "image": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/782c1dae-bada-4f90-b00f-446e5f6e8402/image.png",
-        "author": "n7itro",
-        "preferences": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/782c1dae-bada-4f90-b00f-446e5f6e8402/preferences.json"
-    },
-    "ef16716a-58dc-42d4-99f8-b1667d32247d": {
-        "id": "ef16716a-58dc-42d4-99f8-b1667d32247d",
-        "name": "Formula 1",
-        "description": "Embrace the simplicity of black and red",
-        "homepage": "",
-        "style": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/ef16716a-58dc-42d4-99f8-b1667d32247d/chrome.css",
-        "readme": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/ef16716a-58dc-42d4-99f8-b1667d32247d/readme.md",
-        "image": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/ef16716a-58dc-42d4-99f8-b1667d32247d/image.png",
-        "author": "thejournalwriter",
-        "isDarkMode": true,
-        "isColorTheme": true
-    },
-    "83a641f7-eca9-4c0f-91af-45627bef0539": {
-        "id": "83a641f7-eca9-4c0f-91af-45627bef0539",
-        "name": "Floating URLbar",
-        "description": "Levitate the URL bar when focusing on it, with a blurred background.",
-        "homepage": "https://github.com/zen-browser/theme-components",
-        "style": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/83a641f7-eca9-4c0f-91af-45627bef0539/chrome.css",
-        "readme": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/83a641f7-eca9-4c0f-91af-45627bef0539/readme.md",
-        "image": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/83a641f7-eca9-4c0f-91af-45627bef0539/image.png",
-        "author": "mauro-balades"
-    },
-    "5a007026-0801-4a5d-9740-f17dc1c3ff21": {
-        "id": "5a007026-0801-4a5d-9740-f17dc1c3ff21",
-        "name": "Hide Window Buttons",
-        "description": "Hide the minimize, maximize, and close window buttons",
-        "homepage": "https://github.com/n7itro/Zen-Themes",
-        "style": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/5a007026-0801-4a5d-9740-f17dc1c3ff21/chrome.css",
-        "readme": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/5a007026-0801-4a5d-9740-f17dc1c3ff21/readme.md",
-        "image": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/5a007026-0801-4a5d-9740-f17dc1c3ff21/image.png",
-        "author": "n7itro",
-        "preferences": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/5a007026-0801-4a5d-9740-f17dc1c3ff21/preferences.json"
-    },
     "17f70712-4530-42d0-ba0f-fa25bcbf2ddc": {
         "id": "17f70712-4530-42d0-ba0f-fa25bcbf2ddc",
         "name": "Vesper Dark",
@@ -63,6 +8,28 @@
         "readme": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/17f70712-4530-42d0-ba0f-fa25bcbf2ddc/readme.md",
         "image": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/17f70712-4530-42d0-ba0f-fa25bcbf2ddc/image.png",
         "author": "bdsqqq",
+        "isDarkMode": true,
+        "isColorTheme": true
+    },
+    "c6813222-6571-4ba6-8faf-58f3343324f6": {
+        "id": "c6813222-6571-4ba6-8faf-58f3343324f6",
+        "name": "Disable Rounded Corners",
+        "description": "Disable Rounded Corners from Web View.",
+        "homepage": "https://github.com/gunir/desktop/tree/themes/themes",
+        "style": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/c6813222-6571-4ba6-8faf-58f3343324f6/chrome.css",
+        "readme": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/c6813222-6571-4ba6-8faf-58f3343324f6/readme.md",
+        "image": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/c6813222-6571-4ba6-8faf-58f3343324f6/image.png",
+        "author": "gunir"
+    },
+    "e3eec307-7c64-4cbd-a0c5-3447cd45a840": {
+        "id": "e3eec307-7c64-4cbd-a0c5-3447cd45a840",
+        "name": "Catppuccin",
+        "description": "Dive into Catppuccin's, unique pastel color theme for Zen!",
+        "homepage": "https://catppuccin.com/",
+        "style": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/e3eec307-7c64-4cbd-a0c5-3447cd45a840/chrome.css",
+        "readme": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/e3eec307-7c64-4cbd-a0c5-3447cd45a840/readme.md",
+        "image": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/e3eec307-7c64-4cbd-a0c5-3447cd45a840/image.png",
+        "author": "mauro-balades",
         "isDarkMode": true,
         "isColorTheme": true
     },
@@ -86,26 +53,59 @@
         "image": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/680424a8-a818-406b-98c5-7726214e2a9f/image.png",
         "author": "mauro-balades"
     },
-    "e3eec307-7c64-4cbd-a0c5-3447cd45a840": {
-        "id": "e3eec307-7c64-4cbd-a0c5-3447cd45a840",
-        "name": "Catppuccin",
-        "description": "Dive into Catppuccin's, unique pastel color theme for Zen!",
-        "homepage": "https://catppuccin.com/",
-        "style": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/e3eec307-7c64-4cbd-a0c5-3447cd45a840/chrome.css",
-        "readme": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/e3eec307-7c64-4cbd-a0c5-3447cd45a840/readme.md",
-        "image": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/e3eec307-7c64-4cbd-a0c5-3447cd45a840/image.png",
-        "author": "mauro-balades",
+    "782c1dae-bada-4f90-b00f-446e5f6e8402": {
+        "id": "782c1dae-bada-4f90-b00f-446e5f6e8402",
+        "name": "Compact Sidebar",
+        "description": "Allow the tab sidebar to take up less space! New: Smaller Compact Mode",
+        "homepage": "https://github.com/n7itro/Zen-Themes/",
+        "style": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/782c1dae-bada-4f90-b00f-446e5f6e8402/chrome.css",
+        "readme": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/782c1dae-bada-4f90-b00f-446e5f6e8402/readme.md",
+        "image": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/782c1dae-bada-4f90-b00f-446e5f6e8402/image.png",
+        "author": "n7itro",
+        "preferences": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/782c1dae-bada-4f90-b00f-446e5f6e8402/preferences.json"
+    },
+    "5a007026-0801-4a5d-9740-f17dc1c3ff21": {
+        "id": "5a007026-0801-4a5d-9740-f17dc1c3ff21",
+        "name": "Hide Window Buttons",
+        "description": "Hide the minimize, maximize, and close window buttons",
+        "homepage": "https://github.com/n7itro/Zen-Themes",
+        "style": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/5a007026-0801-4a5d-9740-f17dc1c3ff21/chrome.css",
+        "readme": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/5a007026-0801-4a5d-9740-f17dc1c3ff21/readme.md",
+        "image": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/5a007026-0801-4a5d-9740-f17dc1c3ff21/image.png",
+        "author": "n7itro",
+        "preferences": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/5a007026-0801-4a5d-9740-f17dc1c3ff21/preferences.json"
+    },
+    "83a641f7-eca9-4c0f-91af-45627bef0539": {
+        "id": "83a641f7-eca9-4c0f-91af-45627bef0539",
+        "name": "Floating URLbar",
+        "description": "Levitate the URL bar when focusing on it, with a blurred background.",
+        "homepage": "https://github.com/zen-browser/theme-components",
+        "style": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/83a641f7-eca9-4c0f-91af-45627bef0539/chrome.css",
+        "readme": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/83a641f7-eca9-4c0f-91af-45627bef0539/readme.md",
+        "image": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/83a641f7-eca9-4c0f-91af-45627bef0539/image.png",
+        "author": "mauro-balades"
+    },
+    "ef16716a-58dc-42d4-99f8-b1667d32247d": {
+        "id": "ef16716a-58dc-42d4-99f8-b1667d32247d",
+        "name": "Formula 1",
+        "description": "Embrace the simplicity of black and red",
+        "homepage": "",
+        "style": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/ef16716a-58dc-42d4-99f8-b1667d32247d/chrome.css",
+        "readme": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/ef16716a-58dc-42d4-99f8-b1667d32247d/readme.md",
+        "image": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/ef16716a-58dc-42d4-99f8-b1667d32247d/image.png",
+        "author": "thejournalwriter",
         "isDarkMode": true,
         "isColorTheme": true
     },
-    "c6813222-6571-4ba6-8faf-58f3343324f6": {
-        "id": "c6813222-6571-4ba6-8faf-58f3343324f6",
-        "name": "Disable Rounded Corners",
-        "description": "Disable Rounded Corners from Web View.",
-        "homepage": "https://github.com/gunir/desktop/tree/themes/themes",
-        "style": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/c6813222-6571-4ba6-8faf-58f3343324f6/chrome.css",
-        "readme": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/c6813222-6571-4ba6-8faf-58f3343324f6/readme.md",
-        "image": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/c6813222-6571-4ba6-8faf-58f3343324f6/image.png",
-        "author": "gunir"
+    "ea1a5ace-f698-4b45-ab88-6e8bd3a563f0": {
+        "id": "ea1a5ace-f698-4b45-ab88-6e8bd3a563f0",
+        "name": "Bookmark Toolbar Tweaks",
+        "description": "Center bookmarks, hide the icons!",
+        "homepage": "https://github.com/n7itro/Zen-Themes/",
+        "style": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/ea1a5ace-f698-4b45-ab88-6e8bd3a563f0/chrome.css",
+        "readme": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/ea1a5ace-f698-4b45-ab88-6e8bd3a563f0/readme.md",
+        "image": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/ea1a5ace-f698-4b45-ab88-6e8bd3a563f0/image.png",
+        "author": "n7itro",
+        "preferences": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/ea1a5ace-f698-4b45-ab88-6e8bd3a563f0/preferences.json"
     }
 }
