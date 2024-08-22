@@ -1,0 +1,26 @@
+
+:root * {
+  --zen-sidebar-action-button-width:36px !important;
+  --toolbarbutton-inner-padding: unset!important;
+  --zen-tabbrowser-padding: 0px!important;
+  --tab-min-width: 36px!important;
+}
+
+/* Fix scrollbar visible issue when having a lot of tabs */
+#tabbrowser-arrowscrollbox {
+  scrollbar-width: none
+}
+
+#zen-workspaces-button {
+  border: unset!important;
+}
+
+.tabbrowser-tab, .toolbarbutton-1 {
+  margin: unset!important;
+  padding: unset!important;
+  margin-left: 0px!important;
+}
+
+#zen-sidebar-icons-wrapper {
+  align-items: unset!important;
+}
