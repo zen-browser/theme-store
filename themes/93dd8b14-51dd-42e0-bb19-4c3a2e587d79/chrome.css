@@ -1,0 +1,20 @@
+
+:root {
+    --zen-main-browser-background: radial-gradient(circle, rgb(255, 0, 30) 0%, rgba(49,4,23,1) 90%, rgba(15,4,29,1) 100%) !important;
+  }
+
+@media (-moz-bool-pref: "zen.view.compact"){
+
+#titlebar {
+    background: radial-gradient(circle at 100%, rgb(88, 0, 0) 0%, rgba(15,4,29,1) 100%) !important;
+  }
+
+}
+
+@media (-moz-bool-pref: "zen.view.compact.hide-toolbar") and (-moz-bool-pref: "zen.view.compact"){
+
+#zen-appcontent-navbar-container {
+    background: radial-gradient(circle at 100%, rgb(88, 0, 0) 0%, rgba(15,4,29,1) 100%) !important;
+  }
+
+}
