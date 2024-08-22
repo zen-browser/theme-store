@@ -1,0 +1,6 @@
+
+@media (-moz-bool-pref: "zen.tabs.vertical") {
+  #navigator-toolbox {
+    --zen-navigator-toolbox-background: var(--lwt-additional-images);
+  }
+}
