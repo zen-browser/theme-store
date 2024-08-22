@@ -1,1 +1,9 @@
-/* This is a color theme. */
+/* This is an auto generated color theme. */
+:root {
+    --zen-colors-primary: color-mix(in srgb, var(--zen-primary-color) 100%, black 0%) !important;
+    --zen-colors-secondary: color-mix(in srgb, var(--zen-primary-color) 0%, black 100%) !important;
+    --zen-colors-tertiary: color-mix(in srgb, var(--zen-primary-color) 10%, black 90%) !important;
+    --zen-colors-border: color-mix(in srgb, var(--zen-colors-primary) 100%, black 0%) !important;
+    --zen-primary-color: #ff2600 !important;
+    color-scheme: dark !important;
+}
