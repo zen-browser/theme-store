@@ -2,7 +2,7 @@
 @media not (-moz-bool-pref: "zen.view.compact") {   
     #tabbrowser-tabpanels {
         & .browserSidebarContainer:not([zen-split="true"]) {
-            --zen-border-radius: var(--zen-border-radius) 0 0 0;
+            --zen-webview-border-radius: var(--zen-border-radius) 0 0 0;
             --zen-element-separation: 0;
         }
     }
@@ -10,7 +10,7 @@
     @media (-moz-bool-pref: "zen.tabs.vertical.right-side") {
         #tabbrowser-tabpanels {
             & .browserSidebarContainer:not([zen-split="true"]) {
-                --zen-border-radius: 0 var(--zen-border-radius) 0 0;
+                --zen-webview-border-radius: 0 var(--zen-border-radius) 0 0;
             }
         }
     }
