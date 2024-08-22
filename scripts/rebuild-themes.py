@@ -14,6 +14,10 @@ def get_color_css_variable(color):
         return '--zen-colors-tertiary'
     if color == "colorsBorder":
         return '--zen-colors-border'
+    if color == "dialogBg":
+        return '--zen-dialog-background'
+    if color == "accentColor":
+        return '--zen-primary-color'
     print(f"Unknown color: {color}")
     exit(1)
 
