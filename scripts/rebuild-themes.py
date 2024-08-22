@@ -30,9 +30,11 @@ def write_colors(colors_file, output_file):
             for color in colors:
                 if color == "isDarkMode":
                     continue
-                f.write(f'    {get_color_css_variable(color)}: {colors[color]};\n')
+                f.write(f'    {get_color_css_variable(color)}: {colors[color]} !important;\n')
             if colors["isDarkMode"]:
                 f.write('    color-scheme: dark !important;\n')
+            else:
+                f.write('    color-scheme: light !important;\n')
             f.write('}\n')
 
 def main():

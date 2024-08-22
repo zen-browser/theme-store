@@ -22,9 +22,9 @@
   }
 }
 
-@media (-moz-mac-big-sur-theme: 1) {
+@media (-moz-bool-pref: "uc.hide-window-buttons") {
   .titlebar-buttonbox-container { 
-      display: none; 
+      display: none !important; 
   }
 
   .window-controls{
