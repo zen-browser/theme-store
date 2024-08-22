@@ -1,2 +1,4 @@
 
-I dunno what license to put here
+# Formula 1 Theme
+
+* This sleek theme combines deep blacks with striking red accents
