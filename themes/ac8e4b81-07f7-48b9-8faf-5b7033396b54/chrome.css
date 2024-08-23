@@ -1,0 +1,90 @@
+
+@namespace url("http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul");
+
+/*
+Minimal Extension Menu
+ */
+
+@media (-moz-bool-pref: "uc.theme.mask-url-bar.enabled") {
+  #unified-extensions-view {
+    --uei-icon-size: 16px;
+  }
+
+.unified-extensions-item-menu-button.subviewbutton {
+    padding: 0px !important;
+    margin-inline-end: 0 !important;
+  }
+
+.unified-extensions-item-action-button.subviewbutton {
+    padding-block: 6px !important;
+  }
+
+.unified-extensions-item-menu-button.subviewbutton>.toolbarbutton-icon {
+    padding: 4px !important;
+  }
+
+.unified-extensions-item-message-deck {
+    display: none
+  }
+
+#unified-extensions-view>vbox>vbox>.unified-extensions-item {
+    padding-block: 0px !important;
+  }
+
+#unified-extensions-panel .unified-extensions-item {
+    margin-block: 0 !important;
+  }
+
+/*
+URL View
+*/
+
+.urlbarView-row-inner,
+  .urlbarView-no-wrap {
+    align-items: center !important;
+  }
+
+findbar {
+    --findbar-wdt: 945px;
+    --margin: 1rem;
+    --rounding: 5px;
+
+position: fixed !important;
+    z-index: 5 !important;
+    bottom: var(--margin);
+
+left: calc((100vw - var(--findbar-wdt)) / 2);
+
+width: var(--findbar-wdt);
+
+border-radius: var(--rounding) !important;
+
+.findbar-closebutton {
+      display: none !important;
+    }
+
+}
+
+/* Hidden URL bar */
+
+#urlbar {
+    --toolbarbutton-border-radius: 10px !important;
+    border-radius: 10px;
+  }
+
+#identity-box:not(.chromeUI) #identity-icon-box {
+    border-radius: 10px !important;
+  }
+
+#urlbar:not([customizing]) {
+    opacity: 0;
+    transition: transform 400ms ease 3s, opacity 400ms ease 3s !important;
+  }
+
+#urlbar:hover,
+  #urlbar:focus-within {
+    opacity: 1;
+    transition-duration: 500ms, 200ms !important;
+    transition-delay: 0s !important;
+  }
+}
