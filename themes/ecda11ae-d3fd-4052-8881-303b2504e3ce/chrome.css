@@ -1,1 +1,7 @@
-/* This is a color theme. */
+/* This is an auto generated color theme. */
+:root {
+    --zen-colors-primary: #ebdbb2 !important;
+    --zen-colors-secondary: #504945 !important;
+    --zen-colors-tertiary: #282828 !important;
+    --zen-colors-border: #ebdbb2 !important;
+}
