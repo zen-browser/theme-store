@@ -1,0 +1,6 @@
+
+@-moz-document url-prefix("chrome:") {
+  #navigator-toolbox {
+    --zen-navigator-toolbox-background: var(--lwt-header-image, var(--lwt-additional-images)) no-repeat var(--lwt-background-tiling) var(--lwt-background-alignment) var(--lwt-accent-color);
+  }
+}
