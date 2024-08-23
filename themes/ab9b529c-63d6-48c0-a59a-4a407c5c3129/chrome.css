@@ -1,0 +1,42 @@
+
+@media (-moz-bool-pref: "uc.minimal-sidebar.hide-alltabs-button.enabled") {
+  #alltabs-button {
+    display: none !important;
+  }
+}
+
+@media (-moz-bool-pref: "uc.minimal-sidebar.hide-profile-button.enabled") {
+  #zen-profile-button {
+    display: none !important;
+  }
+}
+
+@media (-moz-bool-pref: "uc.minimal-sidebar.hide-expand-sidebar-button.enabled") {
+  #zen-expand-sidebar-button {
+    display: none !important;
+  }
+}
+
+@media (-moz-bool-pref: "uc.minimal-sidebar.hide-bookmark-button.enabled") {
+  #zen-bookmark-button {
+    display: none !important;
+  }
+}
+
+@media (-moz-bool-pref: "uc.minimal-sidebar.hide-history-button.enabled") {
+  #zen-history-button {
+    display: none !important;
+  }
+}
+
+@media (-moz-bool-pref: "uc.minimal-sidebar.hide-preferences-button.enabled") {
+  #zen-preferences-button {
+    display: none !important;
+  }
+}
+
+@media (-moz-bool-pref: "uc.minimal-sidebar.compact-spacing.enabled") {
+  #zen-sidebar-icons-wrapper {
+    padding-top: 0px !important;
+  }
+}
