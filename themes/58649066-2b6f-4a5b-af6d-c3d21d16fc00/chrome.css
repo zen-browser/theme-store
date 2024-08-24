@@ -1,0 +1,31 @@
+
+@media not (-moz-bool-pref: "uc.private-browsing-top-bar.no-bg") {
+  [privatebrowsingmode] #nav-bar {
+    background-image: linear-gradient(to bottom, #25003EFF, #25003E44) !important;
+  }
+
+@media (-moz-bool-pref: "uc.private-browsing-top-bar.solid-bg") {
+    [privatebrowsingmode] #nav-bar {
+      background-image: none !important;
+      background-color: #25003E !important;
+    }
+  }
+}
+
+@media not (-moz-bool-pref: "uc.private-browsing-top-bar.hide-icon") {
+  [privatebrowsingmode] #stop-reload-button {
+    position: relative;
+  }
+
+[privatebrowsingmode] #stop-reload-button::after {
+    content: "";
+    position: absolute;
+    left: 100%;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url("chrome://global/skin/icons/indicator-private-browsing.svg");
+    background-repeat: no-repeat;
+    background-position: center center;
+  }
+}
