@@ -1,4 +1,14 @@
 {
+    "5ac61d13-a0dc-400e-aaa0-0f10fd3a7d0c": {
+        "id": "5ac61d13-a0dc-400e-aaa0-0f10fd3a7d0c",
+        "name": "Uniform Workspaces Button",
+        "description": "Make the workspaces button consistent with the other sidebar buttons, while remaining unique.",
+        "homepage": "https://github.com/andrewbellucci/zen-uniform-workspaces-button",
+        "style": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/5ac61d13-a0dc-400e-aaa0-0f10fd3a7d0c/chrome.css",
+        "readme": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/5ac61d13-a0dc-400e-aaa0-0f10fd3a7d0c/readme.md",
+        "image": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/5ac61d13-a0dc-400e-aaa0-0f10fd3a7d0c/image.png",
+        "author": "andrewbellucci"
+    },
     "17f70712-4530-42d0-ba0f-fa25bcbf2ddc": {
         "id": "17f70712-4530-42d0-ba0f-fa25bcbf2ddc",
         "name": "Vesper Dark",
