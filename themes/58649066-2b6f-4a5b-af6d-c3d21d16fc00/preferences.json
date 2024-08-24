@@ -1,0 +1,5 @@
+{
+    "uc.private-browsing-top-bar.solid-bg": "Replaces the purple gradient on the toolbar with a solid purple color",
+    "uc.private-browsing-top-bar.no-bg": "Removes the background color on the toolbar entirely",
+    "uc.private-browsing-top-bar.hide-icon": "Hides the private browsing icon"
+}
