@@ -1,0 +1,14 @@
+
+@-moz-document url-prefix("chrome:") {
+	/* Element | chrome://browser/content/browser.xhtml */
+	toolbar#zen-sidebar-icons-wrapper {
+		display: flex !important;
+		flex-direction: row !important;
+		flex-wrap: wrap !important;
+		justify-content: center !important;
+	}
+	
+	toolbar#zen-sidebar-icons-wrapper > toolbarbutton {
+    flex: 1;
+	}
+}
