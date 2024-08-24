@@ -26,6 +26,20 @@
   }
 }
 
+/* Hide bookmark labels */
+@media (-moz-bool-pref: "uc.bookmarks.hide-name") {
+    .bookmark-item:not([container]) .toolbarbutton-text { 
+        display: none !important; 
+    }
+}
+ 
+@media (not (-moz-bool-pref: "uc.bookmarks.transparent")) {
+    #PersonalToolbar:not([customizing]) {
+       margin-bottom: -25px !important; 
+       background-color: var(--zen-colors-tertiary) !important;
+    }
+}  
+
 @media (-moz-bool-pref: "uc.bookmarks.expand-on-search") or (-moz-bool-pref: "uc.bookmarks.expand-on-hover") {
     #PersonalToolbar:not([customizing]) {
       position: relative;
