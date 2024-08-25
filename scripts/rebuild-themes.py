@@ -61,9 +61,14 @@ def main():
                     past_version = themes_data[theme].get('version', None)
                 themes_data[theme] = theme_data
                 if past_version is not None:
+                    print(f"  Found past version: {past_version}")
                     themes_data[theme]['version'] = past_version
+                else:
+                    print(f"  No past version found, setting to 1.0.0")
+                    themes_data[theme]['version'] = "1.0.0"
                 with open(THEMES_DATA_FILE, 'w') as f:
                     json.dump(themes_data, f, indent=4)
+                    del themes_data
         print(f"Rebuilt theme: {theme}")
     print("Rebuilt all themes!")
   
