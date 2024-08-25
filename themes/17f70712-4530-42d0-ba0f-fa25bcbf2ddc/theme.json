@@ -1,1 +1,11 @@
-{"id": "17f70712-4530-42d0-ba0f-fa25bcbf2ddc", "name": "Vesper Dark", "description": "P\u0336e\u0336p\u0336p\u0336e\u0336r\u0336m\u0336i\u0336n\u0336t\u0336 and orange flavored dark theme for V\u0336S\u0336C\u0336o\u0336d\u0336e\u0336 Zen browser.", "homepage": "", "style": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/17f70712-4530-42d0-ba0f-fa25bcbf2ddc/chrome.css", "readme": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/17f70712-4530-42d0-ba0f-fa25bcbf2ddc/readme.md", "image": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/17f70712-4530-42d0-ba0f-fa25bcbf2ddc/image.png", "author": "bdsqqq"}
+{
+    "id": "17f70712-4530-42d0-ba0f-fa25bcbf2ddc",
+    "name": "Vesper Dark",
+    "description": "P\u0336e\u0336p\u0336p\u0336e\u0336r\u0336m\u0336i\u0336n\u0336t\u0336 and orange flavored dark theme for V\u0336S\u0336C\u0336o\u0336d\u0336e\u0336 Zen browser.",
+    "homepage": "",
+    "style": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/17f70712-4530-42d0-ba0f-fa25bcbf2ddc/chrome.css",
+    "readme": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/17f70712-4530-42d0-ba0f-fa25bcbf2ddc/readme.md",
+    "image": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/17f70712-4530-42d0-ba0f-fa25bcbf2ddc/image.png",
+    "author": "bdsqqq",
+    "version": "1.0.0"
+}

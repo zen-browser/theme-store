@@ -1,1 +1,11 @@
-{"id": "c6813222-6571-4ba6-8faf-58f3343324f6", "name": "Disable Rounded Corners", "description": "Disable Rounded Corners from Web View.", "homepage": "https://github.com/gunir/desktop/tree/themes/themes", "style": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/c6813222-6571-4ba6-8faf-58f3343324f6/chrome.css", "readme": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/c6813222-6571-4ba6-8faf-58f3343324f6/readme.md", "image": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/c6813222-6571-4ba6-8faf-58f3343324f6/image.png", "author": "gunir"}
+{
+    "id": "c6813222-6571-4ba6-8faf-58f3343324f6",
+    "name": "Disable Rounded Corners",
+    "description": "Disable Rounded Corners from Web View.",
+    "homepage": "https://github.com/gunir/desktop/tree/themes/themes",
+    "style": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/c6813222-6571-4ba6-8faf-58f3343324f6/chrome.css",
+    "readme": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/c6813222-6571-4ba6-8faf-58f3343324f6/readme.md",
+    "image": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/c6813222-6571-4ba6-8faf-58f3343324f6/image.png",
+    "author": "gunir",
+    "version": "1.0.0"
+}
