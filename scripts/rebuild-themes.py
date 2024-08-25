@@ -2,8 +2,6 @@
 import os
 import json
 
-import _ensure_packages_have_version
-
 THEMES_FOLDER = './themes'
 THEMES_DATA_FILE = './themes.json'
 
@@ -48,7 +46,6 @@ def main():
             continue
         with open(theme_data_file, 'r') as f:
             theme_data = json.load(f)
-            theme_data = _ensure_packages_have_version.ensure_packages_have_version(theme_data)
             with open(THEMES_DATA_FILE, 'r') as f:
                 themes_data = json.load(f)
                 theme_colors_file = os.path.join(theme_folder, 'colors.json')
@@ -59,7 +56,12 @@ def main():
                     if 'isDarkMode' in colors: 
                         theme_data['isDarkMode'] = colors['isDarkMode'] 
                     theme_data['isColorTheme'] = True
+                past_version = None
+                if theme in themes_data:
+                    past_version = themes_data[theme].get('version', None)
                 themes_data[theme] = theme_data
+                if past_version is not None:
+                    themes_data[theme]['version'] = past_version
                 with open(THEMES_DATA_FILE, 'w') as f:
                     json.dump(themes_data, f, indent=4)
         print(f"Rebuilt theme: {theme}")
