@@ -2,6 +2,8 @@
 import os
 import json
 
+import _ensure_packages_have_version
+
 THEMES_FOLDER = './themes'
 THEMES_DATA_FILE = './themes.json'
 
@@ -46,6 +48,7 @@ def main():
             continue
         with open(theme_data_file, 'r') as f:
             theme_data = json.load(f)
+            theme_data = _ensure_packages_have_version.ensure_packages_have_version(theme_data)
             with open(THEMES_DATA_FILE, 'r') as f:
                 themes_data = json.load(f)
                 theme_colors_file = os.path.join(theme_folder, 'colors.json')
