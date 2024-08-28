@@ -76,9 +76,4 @@
   }
 }
 
-/* Adjust border radius of workspace button to the same as tabs when toggled on */
-@media (-moz-bool-pref: "uc.workspace-button.border-radius") {
-  #zen-workspaces-button {
-    border-radius: 10px !important;
-  }
-}
+
