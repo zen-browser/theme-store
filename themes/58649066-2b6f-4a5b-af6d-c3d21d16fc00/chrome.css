@@ -4,7 +4,7 @@
   }
 
   [privatebrowsingmode] [devtoolstheme=light] #nav-bar {
-    background-image: linear-gradient(to bottom, #C080EB, #ffffff00 98%) !important;
+    background-image: linear-gradient(to bottom, #C080EBFF, #ffffff00 98%) !important;
   }
 
   @media (-moz-bool-pref: "uc.private-browsing-top-bar.solid-bg") {
@@ -38,14 +38,18 @@
     pointer-events: none;
   }
 
-  /* Prevents the spring from collapsing too far and causing the URL bar to overlap the icon */
+  /*
+   * Prevents the spring from collapsing too far and causing the URL bar to overlap the icon 
+   */
   [privatebrowsingmode] toolbarspring:has(+ #urlbar-container) {
     min-width: 40px !important;
   }
 
-  @media (max-width: 704px) {
-    [privatebrowsingmode] #urlbar-container {
-      margin-inline-start: 40px !important;
-    }
+  /* 
+   *If the spring has been remvoed (e.g., the browser width is too small), 
+   *then add a margin to the URL bar to prevent it from overlapping the icon
+   */
+  [privatebrowsingmode] #stop-reload-button + #urlbar-container {
+    margin-inline-start: 40px !important;
   }
 }
