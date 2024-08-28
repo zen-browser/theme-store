@@ -1,20 +1,37 @@
+/**
+ * This Zen theme adds additional styling to the private browsing mode window such as a gradient on the toolbar,
+ * a border around the browser page, and an icon in the URL bar. These are configurable in Zen's Look and Feel settings.
+ *
+ * The --pbmh prefix stands for Private Browsing Mode Highlighting.
+ */
+
+:root {
+  --pbmh-private-browsing-mode-color: #25003E;
+  --pbmh-private-browsing-mode-border: hsl(from var(--pbmh-private-browsing-mode-color) h s calc(l + 20));
+}
+
+[devtoolstheme=light] {
+  --pbmh-private-browsing-mode-color: #C080EB;
+  --pbmh-private-browsing-mode-border: hsl(from var(--pbmh-private-browsing-mode-color) h s calc(l - 20));
+}
+
 @media not (-moz-bool-pref: "uc.private-browsing-top-bar.no-bg") {
   [privatebrowsingmode] #nav-bar {
-    background-image: linear-gradient(to bottom, #25003EFF, #25003E00 98%) !important;
-  }
-
-  [privatebrowsingmode] [devtoolstheme=light] #nav-bar {
-    background-image: linear-gradient(to bottom, #C080EBFF, #ffffff00 98%) !important;
+    background-image: linear-gradient(to bottom, var(--pbmh-private-browsing-mode-color), rgb(from var(--pbmh-private-browsing-mode-color) r g b / 0%) 98%) !important;
   }
 
   @media (-moz-bool-pref: "uc.private-browsing-top-bar.solid-bg") {
     [privatebrowsingmode] #nav-bar {
       background-image: none !important;
-      background-color: #25003E !important;
+      background-color: var(--pbmh-private-browsing-mode-color) !important;
     }
+  }
+}
 
-    [privatebrowsingmode] [devtoolstheme=light] #nav-bar {
-      background-color: #C080EB !important;
+@media not (-moz-bool-pref: "uc.private-browsing-top-bar.no-border") {
+  :root[privatebrowsingmode]:not([inDOMFullscreen="true"]):not([chromehidden~="location"]):not([chromehidden~="toolbar"]) {
+    & #tabbrowser-tabbox #tabbrowser-tabpanels .browserSidebarContainer {
+      box-shadow: 0 0 0 2px var(--pbmh-private-browsing-mode-border) !important;
     }
   }
 }
@@ -49,7 +66,7 @@
    *If the spring has been remvoed (e.g., the browser width is too small), 
    *then add a margin to the URL bar to prevent it from overlapping the icon
    */
-  [privatebrowsingmode] #stop-reload-button + #urlbar-container {
+  [privatebrowsingmode] #stop-reload-button+#urlbar-container {
     margin-inline-start: 40px !important;
   }
 }
