@@ -1,26 +1,23 @@
-
-@-moz-document url-prefix("chrome:") {
 	
-	@media not (-moz-bool-pref: "zen.view.sidebar-expanded") {
-		.tabbrowser-tab:is([soundplaying], [muted], [activemedia-blocked])::after {
-			content:'';
-			position: absolute;
-			width: 3px;
-			border-radius: 3px;
-			height: calc(100% - 0px);
-			top: 50%;
-			left: calc(100% - 2px);
-			transform: translateY(-50%);
-			background-color: var(--zen-primary-color);
-		}
-		
-		.tabbrowser-tab:not([selected=true]){
-			border-radius: 0px;
-		}
-		
-		.tabbrowser-tab:not([selected=true]):hover{
-			border-radius: 8px;
-		}
+@media not (-moz-bool-pref: "zen.view.sidebar-expanded") {
+	.tabbrowser-tab:is([soundplaying], [muted], [activemedia-blocked])::after {
+		content:'';
+		position: absolute;
+		width: 3px;
+		border-radius: 3px;
+		height: calc(100% - 0px);
+		top: 50%;
+		left: calc(100% - 2px);
+		transform: translateY(-50%);
+		background-color: var(--zen-primary-color);
 	}
 	
+	.tabbrowser-tab:not([selected=true]){
+		border-radius: 0px;
+	}
+	
+	.tabbrowser-tab:not([selected=true]):hover{
+		border-radius: 8px;
+	}
 }
+
