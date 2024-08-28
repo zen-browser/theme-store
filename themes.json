@@ -93,6 +93,17 @@
         "author": "ch4og",
         "version": "1.0.0"
     },
+    "1e9f3101-210b-4ff5-8830-434e4919100d": {
+        "id": "1e9f3101-210b-4ff5-8830-434e4919100d",
+        "name": "Better Letterboxing",
+        "description": "More pleasant, theme-friendly, and most importantly, rounded letterboxing.",
+        "homepage": "",
+        "style": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/1e9f3101-210b-4ff5-8830-434e4919100d/chrome.css",
+        "readme": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/1e9f3101-210b-4ff5-8830-434e4919100d/readme.md",
+        "image": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/1e9f3101-210b-4ff5-8830-434e4919100d/image.png",
+        "author": "qtchaos",
+        "version": "1.0.0"
+    },
     "d42bf02e-3411-4265-84e6-3dc2dba5fdd8": {
         "id": "d42bf02e-3411-4265-84e6-3dc2dba5fdd8",
         "name": "elementary OS Titlebar",
