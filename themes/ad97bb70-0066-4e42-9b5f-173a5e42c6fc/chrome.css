@@ -28,6 +28,7 @@
 /* background color when selected */
 .tabbrowser-tab[pinned][selected="true"] {
   background-color: light-dark(color-mix(in srgb, var(--toolbarbutton-hover-background), #000000 6%), color-mix(in srgb, var(--toolbarbutton-hover-background), #000000 0%)) !important;
+}
 
 /* background color when hovering and selected */
 .tabbrowser-tab[pinned][selected="true"]:hover {
