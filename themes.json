@@ -128,6 +128,17 @@
         "isDarkMode": true,
         "isColorTheme": true
     },
+    "2e3369c7-e450-46ba-8794-75ccb0de5e48": {
+        "id": "2e3369c7-e450-46ba-8794-75ccb0de5e48",
+        "name": "Now playing indicator",
+        "description": "Show indicator for for Now playing tab if the sidebar is collapsed.",
+        "homepage": "https://github.com/benstone326/zen-browser-now-playing-indicator",
+        "style": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/2e3369c7-e450-46ba-8794-75ccb0de5e48/chrome.css",
+        "readme": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/2e3369c7-e450-46ba-8794-75ccb0de5e48/readme.md",
+        "image": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/2e3369c7-e450-46ba-8794-75ccb0de5e48/image.png",
+        "author": "benstone326",
+        "version": "1.0.0"
+    },
     "5a007026-0801-4a5d-9740-f17dc1c3ff21": {
         "id": "5a007026-0801-4a5d-9740-f17dc1c3ff21",
         "name": "Hide Window Buttons",
