@@ -3,7 +3,6 @@
     "zen.tabs.dim-pending": "Stop Zen from dimming unloaded pinned tabs",
     "uc.hide-seperator-line": "Hide the seperator line between pinned tabs and the first normal tab",
     "uc.tab-bar.align-with-navbar": "Aligns the tab bar with the navbar",
-    "uc.workspace-button.border-radius": "This applies the same border radius from the tabs to the workspace button",
     "uc.workspace-button.remove-border": "Removes the border of the workspace button",
     "uc.workspace-button.move-to-bottom": "Move the workspace button to the bottom of the tab bar"
 }
