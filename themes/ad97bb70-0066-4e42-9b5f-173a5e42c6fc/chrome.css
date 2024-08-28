@@ -1,4 +1,3 @@
-
 /* Increase size of pinned tabs */
 @media (-moz-bool-pref: "zen.tabs.vertical") {
   @media (-moz-bool-pref: "zen.view.sidebar-expanded") {
@@ -76,4 +75,9 @@
   }
 }
 
-
+/* Stop Zen toolbar from greying out when losing focus when toggled on */
+@media (-moz-bool-pref: "uc.zen-toolbar-opacity") {
+  :root {
+    --inactive-titlebar-opacity: 1 !important;
+  }
+}
