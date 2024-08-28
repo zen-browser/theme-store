@@ -42,6 +42,14 @@
     #TabsToolbar {
       padding-top: 0 !important;
     }
+    @media (-moz-bool-pref: "uc.workspace-button.move-to-bottom") {
+      #tabbrowser-arrowscrollbox {
+        margin-top: 0 !important;
+      }
+      .scrollbox-clip > scrollbox {
+        padding-top: 0 !important;
+      }
+    }
   }
 }
 
