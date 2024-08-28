@@ -1,4 +1,3 @@
-
 @media (-moz-bool-pref: "uc.minimal-sidebar.hide-alltabs-button.enabled") {
   #alltabs-button {
     display: none !important;
@@ -31,6 +30,12 @@
 
 @media (-moz-bool-pref: "uc.minimal-sidebar.hide-preferences-button.enabled") {
   #zen-preferences-button {
+    display: none !important;
+  }
+}
+
+@media (-moz-bool-pref: "uc.minimal-sidebar.hide-sidepanel-button.enabled") {
+  #zen-sidepanel-button {
     display: none !important;
   }
 }
