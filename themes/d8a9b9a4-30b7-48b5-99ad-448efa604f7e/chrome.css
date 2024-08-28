@@ -1,6 +1,4 @@
 
-@-moz-document url-prefix("chrome:") {
-
 #zen-appcontent-navbar-container {
       --urlbar-height: unset;
       transition: .2s ease-in-out;
@@ -39,4 +37,3 @@
     }
   }
 
-}
