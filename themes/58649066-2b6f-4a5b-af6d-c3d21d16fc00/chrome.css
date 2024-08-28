@@ -1,13 +1,20 @@
-
 @media not (-moz-bool-pref: "uc.private-browsing-top-bar.no-bg") {
   [privatebrowsingmode] #nav-bar {
-    background-image: linear-gradient(to bottom, #25003EFF, #25003E44) !important;
+    background-image: linear-gradient(to bottom, #25003EFF, #25003E00 98%) !important;
+  }
+
+  [privatebrowsingmode] [devtoolstheme=light] #nav-bar {
+    background-image: linear-gradient(to bottom, #C080EB, #ffffff00 98%) !important;
   }
 
 @media (-moz-bool-pref: "uc.private-browsing-top-bar.solid-bg") {
     [privatebrowsingmode] #nav-bar {
       background-image: none !important;
       background-color: #25003E !important;
+    }
+
+    [privatebrowsingmode] [devtoolstheme=light] #nav-bar {
+      background-color: #C080EB !important;
     }
   }
 }
