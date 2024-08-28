@@ -7,7 +7,7 @@
     background-image: linear-gradient(to bottom, #C080EB, #ffffff00 98%) !important;
   }
 
-@media (-moz-bool-pref: "uc.private-browsing-top-bar.solid-bg") {
+  @media (-moz-bool-pref: "uc.private-browsing-top-bar.solid-bg") {
     [privatebrowsingmode] #nav-bar {
       background-image: none !important;
       background-color: #25003E !important;
@@ -24,7 +24,7 @@
     position: relative;
   }
 
-[privatebrowsingmode] #stop-reload-button::after {
+  [privatebrowsingmode] #stop-reload-button::after {
     content: "";
     position: absolute;
     left: 100%;
@@ -34,5 +34,18 @@
     background-image: url("chrome://global/skin/icons/indicator-private-browsing.svg");
     background-repeat: no-repeat;
     background-position: center center;
+    background-size: 70%;
+    pointer-events: none;
+  }
+
+  /* Prevents the spring from collapsing too far and causing the URL bar to overlap the icon */
+  [privatebrowsingmode] toolbarspring:has(+ #urlbar-container) {
+    min-width: 40px !important;
+  }
+
+  @media (max-width: 704px) {
+    [privatebrowsingmode] #urlbar-container {
+      margin-inline-start: 40px !important;
+    }
   }
 }
