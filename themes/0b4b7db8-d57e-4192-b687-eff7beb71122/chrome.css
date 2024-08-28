@@ -1,0 +1,54 @@
+
+#navigator-toolbox {
+  padding-left: 0 !important;
+  padding-right: 6px !important;
+}
+@media (-moz-bool-pref: "zen.view.compact") {
+  #navigator-toolbox {
+    transform: translateX(
+      calc(+90% + (var(--zen-compact-toolbox-margin-single) / 2))
+    ) !important;
+  }
+  #navigator-toolbox:hover,
+  #navigator-toolbox:focus-within,
+  #navigator-toolbox[zen-user-show],
+  #mainPopupSet:has(> #appMenu-popup:hover) ~ toolbox,
+  #navigator-toolbox:has(*[open="true"]:not(tab):not(#zen-sidepanel-button)) {
+    transform: none !important;
+  }
+}
+#zen-tabbox-wrapper {
+  flex-direction: row-reverse;
+}
+/* Remove maximize window button */
+@media (-moz-bool-pref: "uc.right-vertical-tabs.right-sidebar-panel") {
+  #tabbrowser-tabbox {
+    display: flex;
+    flex-direction: row-reverse !important;
+  }
+}
+@media (-moz-bool-pref: "zen.tabs.vertical") {
+  @media (-moz-bool-pref: "zen.view.sidebar-expanded") {
+    #navigator-toolbox:is(
+        #navigator-toolbox[zen-user-hover="true"]:hover,
+        #navigator-toolbox[zen-user-hover="true"]:focus-within,
+        #mainPopupSet[zen-user-hover="true"]:has(> #appMenu-popup:hover)
+          ~ toolbox,
+        #navigator-toolbox[zen-user-hover="true"]:has(
+            [open="true"]:not(tab):not(#zen-sidepanel-button)
+          ),
+        :not([zen-user-hover="true"])
+      ) {
+      & #zen-sidebar-icons-wrapper {
+        display: flex !important;
+        grid-template-columns: repeat(auto-fill, minmax(37px, 1fr));
+        transition: 0.1s;
+        flex-direction: row !important;
+      }
+    }
+    #TabsToolbar #zen-sidebar-icons-wrapper .toolbarbutton-1 {
+      margin-left: 0 !important;
+      margin-right: 0 !important;
+    }
+  }
+}
