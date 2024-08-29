@@ -1,92 +1,110 @@
-/* Increase size of pinned tabs */
 @media (-moz-bool-pref: "zen.tabs.vertical") {
+  
+  @media (-moz-bool-pref: "uc.pins.compact") {
+    :root {
+      --pinned-tabs-size: calc(var(--tab-min-height) * 1);
+      --pinned-tabs-gap: 5px;
+    }
+  }
+  
+  @media not (-moz-bool-pref: "uc.pins.compact") {
+    :root {
+      --pinned-tabs-size: calc(var(--tab-min-height) * 1.9);
+      --pinned-tabs-gap: 10px;
+    }
+  }
+  
+  /* Increase size of pinned tabs */
+  
   @media (-moz-bool-pref: "zen.view.sidebar-expanded") {
     .scrollbox-clip > scrollbox {
-      grid-template-columns: repeat(auto-fill, minmax(calc(var(--tab-min-height) * 1.9), 1fr)) !important;
-      column-gap: 10px;
+      grid-template-columns: repeat(auto-fill, minmax(var(--pinned-tabs-size), 1fr)) !important;
+      column-gap: var(--pinned-tabs-gap);
     }
     .tabbrowser-tab[pinned] {
-      margin-top: 5px !important;
-      margin-bottom: 5px !important;
+      margin-top: calc(var(--pinned-tabs-gap) / 2) !important;
+      margin-bottom: calc(var(--pinned-tabs-gap) / 2) !important;
     }
   }
-}
-
-/* COLORS of pinned tabs*/
-
-/* background color of pinned tabs in a normal state (not hovered/selected) */
-.tabbrowser-tab[pinned] {
-  background-color: light-dark(color-mix(in srgb, var(--toolbarbutton-hover-background), #ffffff 12%), color-mix(in srgb, var(--toolbarbutton-hover-background), #000000 30%)) !important;
-  border-radius: 8px !important;
-}
-
-/* background color when hovering */
-.tabbrowser-tab[pinned]:hover {
-  background-color: light-dark(color-mix(in srgb, var(--toolbarbutton-hover-background), #000000 2%), color-mix(in srgb, var(--toolbarbutton-hover-background), #000000 20%)) !important;
-}
-
-/* background color when selected */
-.tabbrowser-tab[pinned][selected="true"] {
-  background-color: light-dark(color-mix(in srgb, var(--toolbarbutton-hover-background), #000000 6%), color-mix(in srgb, var(--toolbarbutton-hover-background), #000000 0%)) !important;
-}
-
-/* background color when hovering and selected */
-.tabbrowser-tab[pinned][selected="true"]:hover {
-  background-color: light-dark(color-mix(in srgb, var(--toolbarbutton-hover-background), #000000 8%), color-mix(in srgb, var(--toolbarbutton-hover-background), #ffffff 5%)) !important;
-}
-
-	
-/* Align tab bar with nav bar when not in compact mode when toggled on */
-@media not (-moz-bool-pref: "zen.view.compact"){
-  @media (-moz-bool-pref: "uc.tab-bar.align-with-navbar") {
-    #TabsToolbar {
-      padding-top: 0 !important;
-    }
-    @media (-moz-bool-pref: "uc.workspace-button.move-to-bottom") {
-      #tabbrowser-arrowscrollbox {
-        margin-top: 0 !important;
-      }
-      .scrollbox-clip > scrollbox {
+  
+  
+  /* COLORS of pinned tabs*/
+  
+  /* background color of pinned tabs in a normal state (not hovered/selected) */
+  .tabbrowser-tab[pinned] {
+    background-color: light-dark(color-mix(in srgb, var(--toolbarbutton-hover-background), #ffffff 12%), color-mix(in srgb, var(--toolbarbutton-hover-background), #000000 30%)) !important;
+    border-radius: 8px !important;
+  }
+  
+  /* background color when hovering */
+  .tabbrowser-tab[pinned]:hover {
+    background-color: light-dark(color-mix(in srgb, var(--toolbarbutton-hover-background), #000000 2%), color-mix(in srgb, var(--toolbarbutton-hover-background), #000000 20%)) !important;
+  }
+  
+  /* background color when selected */
+  .tabbrowser-tab[pinned][selected="true"],
+  .tabbrowser-tab[pinned][multiselected="true"]{
+    background-color: light-dark(color-mix(in srgb, var(--toolbarbutton-hover-background), #000000 6%), color-mix(in srgb, var(--toolbarbutton-hover-background), #000000 0%)) !important;
+  }
+  
+  /* background color when hovering and selected */
+  .tabbrowser-tab[pinned][selected="true"]:hover,
+  .tabbrowser-tab[pinned][multiselected="true"]:hover {
+    background-color: light-dark(color-mix(in srgb, var(--toolbarbutton-hover-background), #000000 8%), color-mix(in srgb, var(--toolbarbutton-hover-background), #ffffff 5%)) !important;
+  }
+  
+    
+  /* Align tab bar with nav bar when not in compact mode when toggled on */
+  @media not (-moz-bool-pref: "zen.view.compact"){
+    @media (-moz-bool-pref: "uc.tab-bar.align-with-navbar") {
+      #TabsToolbar {
         padding-top: 0 !important;
       }
+      @media (-moz-bool-pref: "uc.workspace-button.move-to-bottom") {
+        #tabbrowser-arrowscrollbox {
+          margin-top: 0 !important;
+        }
+        .scrollbox-clip > scrollbox {
+          padding-top: 0 !important;
+        }
+      }
     }
   }
-}
-
-/* Remove the border of the workspace button if enabled when toggled on */
-@media (-moz-bool-pref: "uc.workspace-button.remove-border"){
-  #zen-workspaces-button {
-    border: hidden !important;
+  
+  /* Remove the border of the workspace button if enabled when toggled on */
+  @media (-moz-bool-pref: "uc.workspace-button.remove-border"){
+    #zen-workspaces-button {
+      border: hidden !important;
+    }
   }
-}
+  
+  /* Move workspace button to the bottom if enabled when toggled on */
+  @media (-moz-bool-pref: "uc.workspace-button.move-to-bottom"){
+    #zen-workspaces-button {
+      order: 1;
+      margin-bottom: auto !important;
+    }
 
-/* Move workspace button to the bottom if enabled when toggled on */
-@media (-moz-bool-pref: "uc.workspace-button.move-to-bottom"){
-  #zen-workspaces-button {
-    order: 1;
-    margin-bottom: auto !important;
-  }
-  @media (-moz-bool-pref: "zen.tabs.vertical") {
     @media (-moz-bool-pref: "zen.view.sidebar-expanded") {
       .tabbrowser-tab[pinned] {
         margin-top: 0px !important;
-        margin-bottom: 10px !important;
+        margin-bottom: var(--pinned-tabs-gap) !important;
       }
     }
   }
-}
-
-/* Hide seperator line above first normal tab when toggled on */
-@media (-moz-bool-pref: "uc.hide-seperator-line") {
-  #tabbrowser-tabs:has(.tabbrowser-tab[pinned]) .tabbrowser-tab:nth-child(1 of [fadein]:not([pinned]):not([hidden])) {
-	  margin-top: 10px !important;
-	  overflow: hidden !important;
+  
+  /* Hide seperator line above first normal tab when toggled on */
+  @media (-moz-bool-pref: "uc.hide-seperator-line") {
+    #tabbrowser-tabs:has(.tabbrowser-tab[pinned]) .tabbrowser-tab:nth-child(1 of [fadein]:not([pinned]):not([hidden])) {
+      margin-top: var(--pinned-tabs-gap) !important;
+      overflow: hidden !important;
+    }
   }
-}
-
-/* Stop Zen toolbar from greying out when losing focus when toggled on */
-@media (-moz-bool-pref: "uc.zen-toolbar-opacity") {
-  :root {
-    --inactive-titlebar-opacity: 1 !important;
+  
+  /* Stop Zen toolbar from greying out when losing focus when toggled on */
+  @media (-moz-bool-pref: "uc.zen-toolbar-opacity") {
+    :root {
+      --inactive-titlebar-opacity: 1 !important;
+    }
   }
 }
