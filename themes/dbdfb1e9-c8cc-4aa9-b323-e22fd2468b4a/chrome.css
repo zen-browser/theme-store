@@ -1,0 +1,16 @@
+
+@-moz-document url-prefix("chrome:") {
+        /*
+          Midnight Theme made by rato/shaeriz using zen-browser.app/create-theme and custom colors . Enjoy!
+        */
+
+:root {
+    --zen-colors-primary: color-mix(in srgb, var(--zen-primary-color) 50%, black 50%) !important;
+    --zen-colors-secondary: color-mix(in srgb, var(--zen-primary-color) 40%, black 60%) !important;
+    --zen-colors-tertiary: color-mix(in srgb, var(--zen-primary-color) 15%, black 85%) !important;
+    --zen-colors-border: #514480 !important;
+    --zen-dialog-background: #13121c !important;
+    --zen-primary-color: #8f77f2 !important;
+}
+
+}
