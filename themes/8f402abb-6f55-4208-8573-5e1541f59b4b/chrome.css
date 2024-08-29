@@ -1,0 +1,28 @@
+
+#zen-sidebar-web-panel-wrapper {
+    margin: 10px !important;
+    position: absolute !important;
+    z-index: 999999 !important;
+    bottom: 0 !important;
+    top: 0 !important;
+}
+
+@media (-moz-bool-pref: "uc.floating-webpanel.midmargin.enabled") {
+    #zen-sidebar-web-panel-wrapper {
+        margin: 5px !important;
+        position: absolute !important;
+        z-index: 999999 !important;
+        bottom: 0 !important;
+        top: 0 !important;
+    }
+}
+
+@media (-moz-bool-pref: "uc.floating-webpanel.nomargin.enabled") {
+    #zen-sidebar-web-panel-wrapper {
+        margin: 0 !important;
+        position: absolute !important;
+        z-index: 999999 !important;
+        bottom: 0 !important;
+        top: 0 !important;
+    }
+}
