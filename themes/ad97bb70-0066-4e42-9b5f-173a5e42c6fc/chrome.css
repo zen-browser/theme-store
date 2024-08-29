@@ -1,5 +1,6 @@
 @media (-moz-bool-pref: "zen.tabs.vertical") {
   
+  /* Pins compact mode when toggled */
   @media (-moz-bool-pref: "uc.pins.compact") {
     :root {
       --pinned-tabs-size: calc(var(--tab-min-height) * 1);
@@ -105,6 +106,13 @@
   @media (-moz-bool-pref: "uc.zen-toolbar-opacity") {
     :root {
       --inactive-titlebar-opacity: 1 !important;
+    }
+  }
+
+  /* Add some space above/below pinned tabs when only icon visible -> tabbar not expanded */
+  @media not (-moz-bool-pref: "zen.view.sidebar-expanded") {
+    .tabbrowser-tab[pinned] {
+      margin-bottom: 7px !important;
     }
   }
 }
