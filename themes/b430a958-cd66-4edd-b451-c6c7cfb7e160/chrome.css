@@ -1,10 +1,4 @@
 
-@media (-moz-bool-pref: "uc.hidePlugins.disabled") {
-  #unified-extensions-button{
-    display: inherit;
- }
-}
-
 #unified-extensions-button{
     display:none;
 }
