@@ -6,4 +6,5 @@
     "uc.tab-bar.align-with-navbar": "Aligns the tab bar with the navbar",
     "uc.workspace-button.remove-border": "Removes the border of the workspace button",
     "uc.workspace-button.move-to-bottom": "Move the workspace button to the bottom of the tab bar"
+    "uc.pins.compact": "This makes the pinned tabs more compact by decreasing their width and the gap inbetween them"
 }
