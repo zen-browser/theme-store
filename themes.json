@@ -184,16 +184,27 @@
         "author": "DaitiDay",
         "version": "1.0.0"
     },
+    "74c755b3-41a5-4f78-83cb-cd1e1e076bb6": {
+        "id": "74c755b3-41a5-4f78-83cb-cd1e1e076bb6",
+        "name": "Better UniExtBtn",
+        "description": "change unified extensions button to zen browser icon",
+        "homepage": "",
+        "style": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/74c755b3-41a5-4f78-83cb-cd1e1e076bb6/chrome.css",
+        "readme": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/74c755b3-41a5-4f78-83cb-cd1e1e076bb6/readme.md",
+        "image": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/74c755b3-41a5-4f78-83cb-cd1e1e076bb6/image.png",
+        "author": "lindongbin",
+        "version": "1.0.0"
+    },
     "2e3369c7-e450-46ba-8794-75ccb0de5e48": {
         "id": "2e3369c7-e450-46ba-8794-75ccb0de5e48",
         "name": "Now playing indicator",
-        "description": "Show indicator for for Now playing tab if the sidebar is collapsed.",
+        "description": "Display an indicator on the 'Now playing' tab when the sidebar is collapsed.",
         "homepage": "https://github.com/benstone326/zen-browser-now-playing-indicator",
         "style": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/2e3369c7-e450-46ba-8794-75ccb0de5e48/chrome.css",
         "readme": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/2e3369c7-e450-46ba-8794-75ccb0de5e48/readme.md",
         "image": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/2e3369c7-e450-46ba-8794-75ccb0de5e48/image.png",
         "author": "benstone326",
-        "version": "1.0.0"
+        "version": "1.0.1"
     },
     "daf345ec-9a89-4b5d-9d41-47df562e29c9": {
         "id": "daf345ec-9a89-4b5d-9d41-47df562e29c9",
@@ -227,7 +238,7 @@
         "readme": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/ad97bb70-0066-4e42-9b5f-173a5e42c6fc/readme.md",
         "image": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/ad97bb70-0066-4e42-9b5f-173a5e42c6fc/image.png",
         "author": "JLBlk",
-        "version": "1.0.0",
+        "version": "1.1.0",
         "preferences": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/ad97bb70-0066-4e42-9b5f-173a5e42c6fc/preferences.json"
     },
     "b430a958-cd66-4edd-b451-c6c7cfb7e160": {
@@ -239,8 +250,7 @@
         "readme": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/b430a958-cd66-4edd-b451-c6c7cfb7e160/readme.md",
         "image": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/b430a958-cd66-4edd-b451-c6c7cfb7e160/image.png",
         "author": "adammpkins",
-        "version": "1.0.0",
-        "preferences": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/b430a958-cd66-4edd-b451-c6c7cfb7e160/preferences.json"
+        "version": "1.0.0"
     },
     "570afd9d-96fa-48b5-bad3-0c106757cce9": {
         "id": "570afd9d-96fa-48b5-bad3-0c106757cce9",
