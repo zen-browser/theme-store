@@ -1,7 +1,11 @@
-# Theme Repository for Zen Browser
-
+<div align="center">
+<picture>
+    <img src="./zen-alpha-mantis.svg" width="128px">
+</picture>
+</div>
+<h1 align="center">
 🎨 Theme repository for @zen-browser!
-
+</h1>
 
 ## Submitting a Theme
 
