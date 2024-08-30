@@ -1,23 +1,21 @@
-	
 @media not (-moz-bool-pref: "zen.view.sidebar-expanded") {
 	.tabbrowser-tab:is([soundplaying], [muted], [activemedia-blocked])::after {
 		content:'';
 		position: absolute;
 		width: 3px !important;
 		border-radius: 3px !important;
-		height: calc(100% - 0px) !important;
+		height: 100% !important;
 		top: 50%;
 		left: calc(100% - 2px) !important;
 		transform: translateY(-50%);
 		background-color: var(--zen-primary-color) !important;
 	}
 	
-	.tabbrowser-tab:not([selected=true]){
-		border-radius: 0px;
+	.tabbrowser-tab:not([selected=true])::after{
+		    height: 50% !important;
 	}
 	
-	.tabbrowser-tab:not([selected=true]):hover{
-		border-radius: 8px;
+	.tabbrowser-tab:not([selected=true]):hover::after{
+		height: 100% !important;
 	}
 }
-
