@@ -71,6 +71,17 @@
         "isDarkMode": true,
         "isColorTheme": true
     },
+    "929fd512-a12b-4020-92eb-a967afed103f": {
+        "id": "929fd512-a12b-4020-92eb-a967afed103f",
+        "name": "Restore Legacy Top Bar",
+        "description": "Restores the pre 1.0.0-a32 top bar.",
+        "homepage": "https://github.com/bw8686/zentheme-restorelegacytopbar",
+        "style": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/929fd512-a12b-4020-92eb-a967afed103f/chrome.css",
+        "readme": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/929fd512-a12b-4020-92eb-a967afed103f/readme.md",
+        "image": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/929fd512-a12b-4020-92eb-a967afed103f/image.png",
+        "author": "bw8686",
+        "version": "1.0.0"
+    },
     "053a3ffa-9233-4554-88f3-076e6a6ebb43": {
         "id": "053a3ffa-9233-4554-88f3-076e6a6ebb43",
         "name": "Hide tab mute",
