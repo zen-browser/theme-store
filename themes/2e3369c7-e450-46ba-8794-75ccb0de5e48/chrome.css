@@ -9,7 +9,6 @@
 		left: calc(100% - 2px) !important;
 		transform: translateY(-50%);
 		background-color: var(--zen-primary-color) !important;
-    		transition: height 0.2s ease !important;
 	}
 	
 	.tabbrowser-tab:not([selected=true])::after{
