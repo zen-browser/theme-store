@@ -1,8 +1,8 @@
-<p align="center">
+<div align="center">
 <picture>
     <img src="https://cdn.jsdelivr.net/gh/zen-browser/www@master/public/logos/zen-alpha-mantis.svg" width="128px">
 </picture>
-</p>
+</div>
 <h1 align="center">
 🎨 Theme repository for @zen-browser!
 </h1>
