@@ -26,14 +26,14 @@
     "58649066-2b6f-4a5b-af6d-c3d21d16fc00": {
         "id": "58649066-2b6f-4a5b-af6d-c3d21d16fc00",
         "name": "Private Mode Highlighting",
-        "description": "This theme adds a purple gradient and icon to the main toolbar of any private browsing window.",
+        "description": "This theme adds extra theming and an icon to the main toolbar of any private browsing window.",
         "homepage": "https://github.com/danm36/zen-browser-private-browsing-toolbar-highlighting",
         "style": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/58649066-2b6f-4a5b-af6d-c3d21d16fc00/chrome.css",
         "readme": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/58649066-2b6f-4a5b-af6d-c3d21d16fc00/readme.md",
         "image": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/58649066-2b6f-4a5b-af6d-c3d21d16fc00/image.png",
         "author": "danm36",
         "preferences": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/58649066-2b6f-4a5b-af6d-c3d21d16fc00/preferences.json",
-        "version": "1.0.0"
+        "version": "1.0.1"
     },
     "ab9b529c-63d6-48c0-a59a-4a407c5c3129": {
         "id": "ab9b529c-63d6-48c0-a59a-4a407c5c3129",
@@ -136,7 +136,7 @@
         "readme": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/d42bf02e-3411-4265-84e6-3dc2dba5fdd8/readme.md",
         "image": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/d42bf02e-3411-4265-84e6-3dc2dba5fdd8/image.png",
         "author": "SudoVanilla",
-        "version": "1.0.0"
+        "version": "1.0.1"
     },
     "680424a8-a818-406b-98c5-7726214e2a9f": {
         "id": "680424a8-a818-406b-98c5-7726214e2a9f",
@@ -173,6 +173,17 @@
         "isDarkMode": true,
         "isColorTheme": true
     },
+    "49dbaa98-06ee-42bd-9a8e-834babef7a41": {
+        "id": "49dbaa98-06ee-42bd-9a8e-834babef7a41",
+        "name": "Collapsed Tab X Button",
+        "description": "This theme adds a close button to the collapsed tabs in Zen Browser.",
+        "homepage": "https://github.com/burnt0rice/zen-themes/tree/main/collapsed-tab-close-button",
+        "style": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/49dbaa98-06ee-42bd-9a8e-834babef7a41/chrome.css",
+        "readme": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/49dbaa98-06ee-42bd-9a8e-834babef7a41/readme.md",
+        "image": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/49dbaa98-06ee-42bd-9a8e-834babef7a41/image.png",
+        "author": "burnt0rice",
+        "version": "1.0.0"
+    },
     "d8a9b9a4-30b7-48b5-99ad-448efa604f7e": {
         "id": "d8a9b9a4-30b7-48b5-99ad-448efa604f7e",
         "name": "Only top bar in compact",
@@ -182,7 +193,7 @@
         "readme": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/d8a9b9a4-30b7-48b5-99ad-448efa604f7e/readme.md",
         "image": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/d8a9b9a4-30b7-48b5-99ad-448efa604f7e/image.png",
         "author": "vytorrennan",
-        "version": "1.0.0"
+        "version": "1.0.1"
     },
     "c5f7fb68-cc75-4df0-8b02-dc9ee13aa773": {
         "id": "c5f7fb68-cc75-4df0-8b02-dc9ee13aa773",
@@ -215,7 +226,7 @@
         "readme": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/2e3369c7-e450-46ba-8794-75ccb0de5e48/readme.md",
         "image": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/2e3369c7-e450-46ba-8794-75ccb0de5e48/image.png",
         "author": "benstone326",
-        "version": "1.0.1"
+        "version": "1.1.1"
     },
     "daf345ec-9a89-4b5d-9d41-47df562e29c9": {
         "id": "daf345ec-9a89-4b5d-9d41-47df562e29c9",
