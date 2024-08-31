@@ -332,5 +332,18 @@
         "author": "n7itro",
         "preferences": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/ea1a5ace-f698-4b45-ab88-6e8bd3a563f0/preferences.json",
         "version": "1.0.0"
+    },
+    "5ca67725-1f43-4ff2-9fcf-0c59af71c73a": {
+        "id": "5ca67725-1f43-4ff2-9fcf-0c59af71c73a",
+        "name": "Midnight",
+        "description": "A dark and pleasant to the eyes purple theme :)",
+        "homepage": "",
+        "style": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/5ca67725-1f43-4ff2-9fcf-0c59af71c73a/chrome.css",
+        "readme": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/5ca67725-1f43-4ff2-9fcf-0c59af71c73a/readme.md",
+        "image": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/5ca67725-1f43-4ff2-9fcf-0c59af71c73a/image.png",
+        "author": "shaeriz",
+        "version": "1.0.0",
+        "isDarkMode": true,
+        "isColorTheme": true
     }
 }
