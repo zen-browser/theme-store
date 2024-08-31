@@ -136,7 +136,7 @@
         "readme": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/d42bf02e-3411-4265-84e6-3dc2dba5fdd8/readme.md",
         "image": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/d42bf02e-3411-4265-84e6-3dc2dba5fdd8/image.png",
         "author": "SudoVanilla",
-        "version": "1.0.0"
+        "version": "1.0.1"
     },
     "680424a8-a818-406b-98c5-7726214e2a9f": {
         "id": "680424a8-a818-406b-98c5-7726214e2a9f",
@@ -172,6 +172,17 @@
         "version": "1.0.0",
         "isDarkMode": true,
         "isColorTheme": true
+    },
+    "49dbaa98-06ee-42bd-9a8e-834babef7a41": {
+        "id": "49dbaa98-06ee-42bd-9a8e-834babef7a41",
+        "name": "Collapsed Tab X Button",
+        "description": "This theme adds a close button to the collapsed tabs in Zen Browser.",
+        "homepage": "https://github.com/burnt0rice/zen-themes/tree/main/collapsed-tab-close-button",
+        "style": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/49dbaa98-06ee-42bd-9a8e-834babef7a41/chrome.css",
+        "readme": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/49dbaa98-06ee-42bd-9a8e-834babef7a41/readme.md",
+        "image": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/49dbaa98-06ee-42bd-9a8e-834babef7a41/image.png",
+        "author": "burnt0rice",
+        "version": "1.0.0"
     },
     "d8a9b9a4-30b7-48b5-99ad-448efa604f7e": {
         "id": "d8a9b9a4-30b7-48b5-99ad-448efa604f7e",
