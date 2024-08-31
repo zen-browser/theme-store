@@ -1,6 +1,5 @@
-
 /* Move Maximize Button to Right-Side */
-.titlebar-button.titlebar-max {
+.titlebar-button.titlebar-max, .titlebar-button.titlebar-restore {
   position: fixed;
   right: 11px;
   top: 12px;
