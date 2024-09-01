@@ -13,7 +13,9 @@ This **Zen theme** elevates your experience with pinned tabs and the tab bar in 
   - Stop Zen from dimming unloaded tabs
   - Stop Zen from decreasing opacity/greying out toolbar when Zen windows loses focus
   - Align tabs with navbar
+  - Center all tabs and workspace button when tab bar is expanded
   - Remove the border of the workspace button
   - Move workspace button to the bottom of the tabbar
   - Hide seperator line between pinned tabs and normal tabs
-  - Compact mode for the pins
+  - Taller pinned tabs
+  - Compact mode for pinned tabs
