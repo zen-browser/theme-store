@@ -8,8 +8,6 @@ This **Zen theme** elevates your experience with pinned tabs and the tab bar in 
     (This can be toggled off)
   - Adds some space between the pinned tabs
 
-![image](https://github.com/user-attachments/assets/ca671bae-590a-4ab8-9da5-13dab1369da7)
-
 ## Optional Features (toggle in Zen's theme settings):
   - Stop Zen from loading all pinned tabs on startup
   - Stop Zen from dimming unloaded tabs
