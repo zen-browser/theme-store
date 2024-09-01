@@ -1,0 +1,12 @@
+{
+	"id": "6a51c7de-3796-4aa8-a2e4-46274f0b59a8",
+	"name": "Zen Sidebar At Right Side",
+	"description": "Pin or float the Zen Sidebar at the right side.",
+	"homepage": "",
+	"style": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/6a51c7de-3796-4aa8-a2e4-46274f0b59a8/chrome.css",
+	"readme": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/6a51c7de-3796-4aa8-a2e4-46274f0b59a8/readme.md",
+	"image": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/6a51c7de-3796-4aa8-a2e4-46274f0b59a8/image.png",
+	"author": "AntonioSTM",
+	"version": "1.0.0",
+	"preferences": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/6a51c7de-3796-4aa8-a2e4-46274f0b59a8/preferences.json"
+}
