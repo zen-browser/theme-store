@@ -1,0 +1,18 @@
+
+/*#region  ZEN SIDEBAR AT RIGHT SIDE  */
+	/*#region  RIGHT SIDE PINNED ZEN SIDEBAR  */
+		@media (-moz-bool-pref: "uc.zen-sidebar.pin-at-right-side") {
+			#zen-sidebar-web-panel-wrapper:not(:has(#zen-sidebar-web-panel[pinned="true"])) {
+				order: 2 !important;
+				margin-left: 10px !important;
+			}
+		}
+	/*#endregion*/
+	/*#region  RIGHT SIDE FLOATING ZEN SIDEBAR  */
+		@media (-moz-bool-pref: "uc.zen-sidebar.float-at-right-side") {
+			#zen-sidebar-web-panel-wrapper:has(#zen-sidebar-web-panel[pinned="true"]) {
+				flex-direction: row-reverse;
+			}
+		}
+	/*#endregion*/
+/*#endregion*/
