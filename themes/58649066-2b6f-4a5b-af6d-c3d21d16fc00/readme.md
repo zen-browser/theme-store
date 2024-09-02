@@ -10,11 +10,12 @@ By default, this theme:
 * Adds a purple border surrounding the page.
 * Adds a private browsing icon to the right of the refresh button.
 
-It also comes with three settings:
+It also comes with the following settings:
 
 * Replace the gradient with a solid purple color.
 * Remove the background color entirely.
 * Remove the purple border that surrounds the page.
+* Changes the purple highlight color to either match Zen's theme color, or a custom color of your choice.
 * Hide the private browsing icon.
 
 These settings can be found in Zen's browser settings, in the 'Theme Store' tab.

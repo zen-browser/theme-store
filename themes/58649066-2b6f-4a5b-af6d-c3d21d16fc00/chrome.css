@@ -5,14 +5,29 @@
  * The --pbmh prefix stands for Private Browsing Mode Highlighting.
  */
 
-:root {
-  --pbmh-private-browsing-mode-color: #25003E;
-  --pbmh-private-browsing-mode-border: hsl(from var(--pbmh-private-browsing-mode-color) h s calc(l + 20));
+ :root {
+  --pbmh-private-browsing-mode-base-color: #32064e;
 }
 
-[devtoolstheme=light] {
-  --pbmh-private-browsing-mode-color: #C080EB;
-  --pbmh-private-browsing-mode-border: hsl(from var(--pbmh-private-browsing-mode-color) h s calc(l - 20));
+@media (-moz-bool-pref: "uc.private-browsing-top-bar.use-zen-theme-color") { :root { --pbmh-private-browsing-mode-base-color: oklch(from var(--zen-primary-color) calc(l - 0.5) c h); } }
+
+@media (-moz-bool-pref: "uc.private-browsing-top-bar.color-blue") { :root { --pbmh-private-browsing-mode-base-color: oklch(from #aac7ff calc(l - 0.5) c h); } }
+@media (-moz-bool-pref: "uc.private-browsing-top-bar.color-teal") { :root { --pbmh-private-browsing-mode-base-color: oklch(from #74d7cb calc(l - 0.5) c h); } }
+@media (-moz-bool-pref: "uc.private-browsing-top-bar.color-green") { :root { --pbmh-private-browsing-mode-base-color: oklch(from #a0d490 calc(l - 0.5) c h); } }
+@media (-moz-bool-pref: "uc.private-browsing-top-bar.color-yellow") { :root { --pbmh-private-browsing-mode-base-color: oklch(from #dec663 calc(l - 0.5) c h); } }
+@media (-moz-bool-pref: "uc.private-browsing-top-bar.color-orange") { :root { --pbmh-private-browsing-mode-base-color: oklch(from #ffb787 calc(l - 0.5) c h); } }
+@media (-moz-bool-pref: "uc.private-browsing-top-bar.color-brown") { :root { --pbmh-private-browsing-mode-base-color: oklch(from #dec1b1 calc(l - 0.5) c h); } }
+@media (-moz-bool-pref: "uc.private-browsing-top-bar.color-red") { :root { --pbmh-private-browsing-mode-base-color: oklch(from #ffb1c0 calc(l - 0.5) c h); } }
+@media (-moz-bool-pref: "uc.private-browsing-top-bar.color-pink") { :root { --pbmh-private-browsing-mode-base-color: oklch(from #f6b0ea calc(l - 0.5) c h); } }
+
+:root {
+  --pbmh-private-browsing-mode-color: var(--pbmh-private-browsing-mode-base-color);
+  --pbmh-private-browsing-mode-border: oklch(from var(--pbmh-private-browsing-mode-color) calc(l + 0.2) c h);
+
+  &:where([lwt-toolbar="light"]) {
+    --pbmh-private-browsing-mode-color: oklch(from var(--pbmh-private-browsing-mode-base-color) calc(l + 0.45) calc(c + 0.05) h);
+    --pbmh-private-browsing-mode-border: oklch(from var(--pbmh-private-browsing-mode-color) calc(l - 0.2) c h);
+  }
 }
 
 @media not (-moz-bool-pref: "uc.private-browsing-top-bar.no-bg") {
@@ -45,13 +60,17 @@
     content: "";
     position: absolute;
     left: 100%;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    background-image: url("chrome://global/skin/icons/indicator-private-browsing.svg");
+    top: 0.5rem;
+    bottom: 0.5rem;
+    aspect-ratio: 1;
+    width: auto;
+    height: auto;
+    border-radius: 100%;
+    background-color: oklch(from var(--pbmh-private-browsing-mode-base-color) calc(l + 0.05) calc(c + 0.2) h);
+    background-image: url("data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz48c3ZnIHZpZXdCb3g9IjAgMCAyNCAyNCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48ZGVmcz48c3R5bGU+KntmaWxsOm5vbmU7c3Ryb2tlOiNGRkZGRkY7c3Ryb2tlLW1pdGVybGltaXQ6MTA7c3Ryb2tlLXdpZHRoOjEuOTJweDt9PC9zdHlsZT48L2RlZnM+PHBvbHlsaW5lIHBvaW50cz0iMC41IDExLjA0IDEyIDExLjA0IDIzLjUgMTEuMDQiLz48cGF0aCBkPSJNMTkuNjcsMTFINC4zM0w1LDQuNjhBMi41NCwyLjU0LDAsMCwxLDcuNTcsMi40MmgwYTIuNDcsMi40NywwLDAsMSwxLjEzLjI3aDBhNy40Myw3LjQzLDAsMCwwLDYuNiwwaDBhMi40NywyLjQ3LDAsMCwxLDEuMTMtLjI3aDBBMi41NCwyLjU0LDAsMCwxLDE5LDQuNjhaIi8+PGNpcmNsZSBjeD0iNi43MyIgY3k9IjE4LjIzIiByPSIzLjM1Ii8+PGNpcmNsZSBjeD0iMTcuMjciIGN5PSIxOC4yMyIgcj0iMy4zNSIvPjxwYXRoIGQ9Ik0xMC4wOCwxOC43MWExLjkyLDEuOTIsMCwxLDEsMy44NCwwIi8+PGxpbmUgeDE9IjEuNDYiIHkxPSIxNS44MyIgeDI9IjQuMzMiIHkyPSIxNS44MyIvPjxsaW5lIHgxPSIxOS42NyIgeTE9IjE1LjgzIiB4Mj0iMjIuNTQiIHkyPSIxNS44MyIvPjwvc3ZnPg==");
     background-repeat: no-repeat;
     background-position: center center;
-    background-size: 70%;
+    background-size: 65%;
     pointer-events: none;
   }
 
