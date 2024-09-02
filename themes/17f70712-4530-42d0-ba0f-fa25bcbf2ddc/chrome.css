@@ -4,4 +4,6 @@
     --zen-colors-secondary: #FFFFFF25 !important;
     --zen-colors-tertiary: #101010 !important;
     --zen-colors-border: #282828 !important;
+    --toolbar-field-focus-background-color: #101010 !important;
+    --toolbar-field-background-color: #101010 !important;
 }
