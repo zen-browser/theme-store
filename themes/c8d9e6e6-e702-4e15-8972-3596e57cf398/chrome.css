@@ -1,0 +1,8 @@
+
+:root:not([customizing]) #back-button[disabled] {
+    display: none !important;
+}
+
+:root:not([customizing]) #forward-button[disabled] {
+    display: none !important;
+}
