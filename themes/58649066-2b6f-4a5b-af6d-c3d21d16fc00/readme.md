@@ -17,6 +17,6 @@ It also comes with three settings:
 * Remove the purple border that surrounds the page.
 * Hide the private browsing icon.
 
-These settings can be found in Zen's browser settings, in the 'Look and Feel' tab.
+These settings can be found in Zen's browser settings, in the 'Theme Store' tab.
 
 Encountered an issue? Raise them [here](https://github.com/danm36/zen-browser-private-browsing-toolbar-highlighting/issues).
