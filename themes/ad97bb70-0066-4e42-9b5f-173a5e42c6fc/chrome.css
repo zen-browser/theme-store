@@ -17,12 +17,14 @@
 
   /* Make pinned tabs taller when toggled */
   @media (-moz-bool-pref: "uc.pins.tall") {
-    .tabbrowser-tab[pinned] { 
-      min-height: 43px !important;
-    }
-    @media (-moz-bool-pref: "uc.pins.compact") {
-      :root {
-        --pinned-tabs-width: 43px !important;
+    @media (-moz-bool-pref: "zen.view.sidebar-expanded") {
+      .tabbrowser-tab[pinned] { 
+        min-height: 43px !important;
+      }
+      @media (-moz-bool-pref: "uc.pins.compact") {
+        :root {
+          --pinned-tabs-width: 43px !important;
+        }
       }
     }
   }
@@ -116,7 +118,13 @@
             margin-top: calc(var(--pinned-tabs-gap) - 3px) !important;
           }
         }
+        @media not (-moz-bool-pref: "zen.view.sidebar-expanded") {
+          #tabbrowser-tabs:has(.tabbrowser-tab[pinned]) .tabbrowser-tab:nth-child(1 of [fadein]:not([pinned]):not([hidden])) {
+            margin-top: 10px !important;
+          }
+        }
       }
+        
 
       @media (-moz-bool-pref: "zen.themes.tabs.legacy-location") {
         #TabsToolbar {
@@ -166,7 +174,7 @@
   @media not (-moz-bool-pref: "zen.view.sidebar-expanded") {
     .tabbrowser-tab[pinned] {
       margin-top: 2px !important;
-      margin-bottom: 2px !important;
+      margin-bottom: 4px !important;
     }
   }
 }
