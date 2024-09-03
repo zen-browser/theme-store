@@ -26,30 +26,6 @@
       }
     }
   }
-
-  /* Center all tabs and Workspace Button when tab bar expanded when toggled */
-  @media (-moz-bool-pref: "uc.tabs.centered") and (not (-moz-bool-pref: "zen.view.compact")) {
-    .tabbrowser-tab {
-      margin-left: 2px !important;
-    }
-    #zen-workspaces-button {
-      margin-left: 4px !important;
-    }
-    #tabs-newtab-button {
-      margin-left: 5px !important;
-    }
-    @media not (-moz-bool-pref: "zen.view.sidebar-expanded") {
-      .tabbrowser-tab {
-        margin-left: 7px !important;
-      }
-      #zen-workspaces-button {
-        margin-left: 8px !important;
-      }
-      #tabs-newtab-button {
-        margin-left: 6px !important;
-      }
-    }
-  }
   
   /* Increase width of pinned tabs */
   @media (-moz-bool-pref: "zen.view.sidebar-expanded") {
