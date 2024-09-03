@@ -410,6 +410,18 @@
         "preferences": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/ab9b529c-63d6-48c0-a59a-4a407c5c3129/preferences.json",
         "version": "1.0.0"
     },
+    "dd4f5461-1564-4e56-9f9d-f81e3c18f93c": {
+        "id": "dd4f5461-1564-4e56-9f9d-f81e3c18f93c",
+        "name": "Zen Sidebar At Right Side",
+        "description": "Pin or float the Zen Sidebar at the right side.",
+        "homepage": "",
+        "style": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/dd4f5461-1564-4e56-9f9d-f81e3c18f93c/chrome.css",
+        "readme": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/dd4f5461-1564-4e56-9f9d-f81e3c18f93c/readme.md",
+        "image": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/dd4f5461-1564-4e56-9f9d-f81e3c18f93c/image.png",
+        "author": "AntonioSTM",
+        "version": "1.0.0",
+        "preferences": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/dd4f5461-1564-4e56-9f9d-f81e3c18f93c/preferences.json"
+    },
     "ad97bb70-0066-4e42-9b5f-173a5e42c6fc": {
         "id": "ad97bb70-0066-4e42-9b5f-173a5e42c6fc",
         "name": "SuperPins",
