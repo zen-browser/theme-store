@@ -1,0 +1,23 @@
+
+#unified-extensions-view box.panel-header,
+#unified-extensions-description,
+#unified-extensions-messages-container {
+  display: none !important;
+}
+
+#unified-extensions-view {
+  width: var(--menu-panel-width) !important;
+}
+
+panelview .unified-extensions-item-action-button {
+  padding-inline: 10px !important;
+  padding-block: 0px !important;
+}
+
+#unified-extensions-manage-extensions {
+  padding-inline: 10px !important;
+}
+
+#unified-extensions-panel .unified-extensions-item {
+  margin-block: 1px !important;
+}
