@@ -400,15 +400,15 @@
         "isDarkMode": true,
         "isColorTheme": true
     },
-    "1c345278-af0f-4a38-8a57-2ef846d5e71c": {
-        "id": "1c345278-af0f-4a38-8a57-2ef846d5e71c",
-        "name": "Hide Tab Manager",
-        "description": "Hides the sidebar's tab manager.",
-        "homepage": "https://github.com/Stilic/zen-hide-tab-manager",
-        "style": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/1c345278-af0f-4a38-8a57-2ef846d5e71c/chrome.css",
-        "readme": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/1c345278-af0f-4a38-8a57-2ef846d5e71c/readme.md",
-        "image": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/1c345278-af0f-4a38-8a57-2ef846d5e71c/image.png",
-        "author": "Stilic",
+    "c8d9e6e6-e702-4e15-8972-3596e57cf398": {
+        "id": "c8d9e6e6-e702-4e15-8972-3596e57cf398",
+        "name": "Zen Back Forward",
+        "description": "Hide Back and Forward button when you don't need them",
+        "homepage": "",
+        "style": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/c8d9e6e6-e702-4e15-8972-3596e57cf398/chrome.css",
+        "readme": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/c8d9e6e6-e702-4e15-8972-3596e57cf398/readme.md",
+        "image": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/c8d9e6e6-e702-4e15-8972-3596e57cf398/image.png",
+        "author": "KiKaraage",
         "version": "1.0.0"
     }
 }
