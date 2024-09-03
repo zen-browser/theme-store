@@ -1,0 +1,65 @@
+
+#PersonalToolbar {
+  padding-block-end: .5rem !important;
+  padding-inline: 6px 12px !important;
+  .bookmark-item {
+    padding-inline: .5rem !important;
+  }
+  #PlacesChevron{
+    margin-inline: .5rem !important;
+    height: fit-content;
+    margin-block: auto !important;
+    image {
+      transform: rotateZ(90deg)
+    }
+    
+    &[open] {
+      #PlacesChevronPopup{
+        opacity: 1;
+        left: -50rem;
+      }
+    }
+    #PlacesChevronPopup{
+      margin-top: 1rem !important;
+      padding-bottom: 1rem;
+      margin-block-end: 1rem !important;
+      padding-inline: .5rem 1rem !important;
+      opacity: .2;
+      transition: opacity 300ms ease-out;
+    }
+  }
+  #OtherBookmarks {
+    &[open] {
+      #OtherBookmarksPopup{
+        opacity: 1;
+        left: -50rem;
+      }
+    }
+    #OtherBookmarksPopup{
+      margin-top: .75rem !important;
+      padding-bottom: .75rem;
+      margin-block-end: 1rem !important;
+      padding-inline: .5rem 1rem !important;
+      opacity: .2;
+      transition: opacity 300ms ease-out;
+    }
+    
+  }
+  
+  #OtherBookmarks::before {
+    left: -.75rem;
+    position: relative;
+    content: "";
+    width: 1px;
+    background-color: color-mix(in srgb, var(--zen-primary-color) 35%, transparent 50%);
+    height: 100%;
+  }
+}
+@media (prefers-reduced-motion) {
+  #PlacesChevronPopup{
+      transition: none;
+   }
+  #OtherBookmarksPopup{
+    transition: none;
+  }
+}
