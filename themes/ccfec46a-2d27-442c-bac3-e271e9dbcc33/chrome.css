@@ -1,0 +1,34 @@
+
+@-moz-document url-prefix("chrome:") {
+  :root {
+    --zen-colors-primary: #faf4ed !important;
+    --zen-colors-secondary: #faf4ed !important;
+    --zen-colors-tertiary: #faf4ed !important;
+    --zen-colors-border: #f2e9e1 !important;
+    --primary-color: #797593!important;
+    --light-color: #cecacd !important;
+    --alt-color: #9893a5 !important;
+    color-scheme: light !important;
+  }
+
+toolbarbutton, titlebar-button, label{
+    color: var(--primary-color) !important;;
+    fill: var(--primary-color) !important;;
+  }
+
+#tracking-protection-icon, #star-button.urlbar-icon {
+    fill: var(--alt-color) !important;
+  }
+
+#identity-icon-box.identity-box-button {
+    background-color: var(--primary-color) !important;
+  }
+
+#identity-icon, #identity-icon-label {
+    color: var(--light-color) !important;
+  }
+
+#urlbar-background {
+    background-color: var(--zen-colors-primary) !important;
+  }
+}
