@@ -4,7 +4,6 @@
     "uc.zen-toolbar-opacity": "Stop Zen from decreasing opacity/greying out when Zen windows loses focus",
     "uc.hide-seperator-line": "Hides the seperator line between pinned tabs and the first normal tab",
     "uc.tabs.align-with-navbar": "Aligns the tabs with the navbar",
-    "uc.tabs.centered": "Centers all pinned tabs and workspace button when tab bar is expanded",
     "uc.workspace-button.remove-border": "Removes the border of the workspace button",
     "uc.workspace-button.move-to-bottom": "Moves the workspace button to the bottom of the tab bar",
     "uc.pins.disable-bg-color": "Disables the background color of pinned tabs",
