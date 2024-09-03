@@ -23,6 +23,17 @@
         "isDarkMode": true,
         "isColorTheme": true
     },
+    "721c6c40-585b-4c72-a7af-6114c42591b7": {
+        "id": "721c6c40-585b-4c72-a7af-6114c42591b7",
+        "name": "Better Bookmark",
+        "description": "Make BookmarkBar better than before and match with Zen",
+        "homepage": "",
+        "style": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/721c6c40-585b-4c72-a7af-6114c42591b7/chrome.css",
+        "readme": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/721c6c40-585b-4c72-a7af-6114c42591b7/readme.md",
+        "image": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/721c6c40-585b-4c72-a7af-6114c42591b7/image.png",
+        "author": "Gnkalk",
+        "version": "1.0.0"
+    },
     "58649066-2b6f-4a5b-af6d-c3d21d16fc00": {
         "id": "58649066-2b6f-4a5b-af6d-c3d21d16fc00",
         "name": "Private Mode Highlighting",
@@ -316,7 +327,7 @@
         "readme": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/ad97bb70-0066-4e42-9b5f-173a5e42c6fc/readme.md",
         "image": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/ad97bb70-0066-4e42-9b5f-173a5e42c6fc/image.png",
         "author": "JLBlk",
-        "version": "1.1.0",
+        "version": "1.2.0",
         "preferences": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/ad97bb70-0066-4e42-9b5f-173a5e42c6fc/preferences.json"
     },
     "b430a958-cd66-4edd-b451-c6c7cfb7e160": {
