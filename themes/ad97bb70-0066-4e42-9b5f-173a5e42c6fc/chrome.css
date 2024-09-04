@@ -67,7 +67,7 @@
   /* Increase width of pinned tabs */
   @media (not (-moz-bool-pref: "uc.pins.wide.disabled")) and (-moz-bool-pref: "zen.view.sidebar-expanded") and (not (-moz-bool-pref: "zen.view.sidebar-expanded.on-hover")) { 
     #vertical-pinned-tabs-container {
-      grid-template-columns: repeat(auto-fit, minmax(calc(var(--collapsed-tab-width) * 1.65), auto)) !important;
+      grid-template-columns: repeat(auto-fit, minmax(66px, auto)) !important;
       gap: var(--pins-gap) var(--pins-gap) !important;
     }
   }
@@ -81,7 +81,7 @@
       #navigator-toolbox[zen-user-hover="true"]:has(*[open="true"]:not(tab):not(#zen-sidepanel-button)), 
       :not([zen-user-hover="true"])) {
         #vertical-pinned-tabs-container {
-          grid-template-columns: repeat(auto-fit, minmax(calc(var(--collapsed-tab-width) * 1.65), auto)) !important;
+          grid-template-columns: repeat(auto-fit, minmax(66px, auto)) !important;
           gap: var(--pins-gap) var(--pins-gap) !important;
         }
         @media (-moz-bool-pref: "uc.pins.tall") {
