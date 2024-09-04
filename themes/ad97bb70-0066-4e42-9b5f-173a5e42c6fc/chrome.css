@@ -1,47 +1,6 @@
 @media (-moz-bool-pref: "zen.tabs.vertical") {
-  
-  /* Pins compact mode when toggled */
-  @media (-moz-bool-pref: "uc.pins.compact") {
-    :root {
-      --pinned-tabs-width: var(--tab-min-height);
-      --pinned-tabs-gap: 5px;
-      --pinned-tabs-height: 36px;
-    }
-  }
-  @media not (-moz-bool-pref: "uc.pins.compact") {
-    :root {
-      --pinned-tabs-width: calc(var(--tab-min-height) * 1.7);
-      --pinned-tabs-gap: 10px;
-    }
-  }
 
-  /* Make pinned tabs taller when toggled */
-  @media (-moz-bool-pref: "uc.pins.tall") and (-moz-bool-pref: "zen.view.sidebar-expanded") {
-    .tabbrowser-tab[pinned] { 
-      min-height: 43px !important;
-    }
-    @media (-moz-bool-pref: "uc.pins.compact") {
-      :root {
-        --pinned-tabs-width: 43px !important;
-      }
-    }
-  }
-  
-  /* Increase width of pinned tabs */
-  @media (-moz-bool-pref: "zen.view.sidebar-expanded") {
-    .scrollbox-clip > scrollbox {
-      grid-template-columns: repeat(auto-fill, minmax(var(--pinned-tabs-width), 1fr)) !important;
-      column-gap: var(--pinned-tabs-gap);
-    }
-    .tabbrowser-tab[pinned] {
-      margin-top: calc(var(--pinned-tabs-gap) / 2) !important;
-      margin-bottom: calc(var(--pinned-tabs-gap) / 2) !important;
-    }
-  }
-  
-  
   /* COLORS of pinned tabs */
-
   @media not (-moz-bool-pref: "uc.pins.disable-bg-color") {
     /* background color of pinned tabs in a normal state (not hovered/selected) */
     .tabbrowser-tab[pinned] {
@@ -62,7 +21,7 @@
     .tabbrowser-tab[pinned][multiselected="true"]:hover {
       background-color: light-dark(color-mix(in srgb, var(--toolbarbutton-hover-background), #000000 8%), color-mix(in srgb, var(--toolbarbutton-hover-background), #ffffff 5%)) !important;
     }
-
+  
     @media (-moz-bool-pref: "uc.pins.bg-color.pop") {
       /* background color of pinned tabs in a normal state (not hovered/selected) */
       .tabbrowser-tab[pinned] {
@@ -86,68 +45,51 @@
     }  
   }
   
-
-  /* Hide seperator line above first normal tab when toggled on */
-  @media (-moz-bool-pref: "uc.hide-seperator-line") {
-    #tabbrowser-tabs:has(.tabbrowser-tab[pinned]) .tabbrowser-tab:nth-child(1 of [fadein]:not([pinned]):not([hidden])) {
-      margin-top: var(--pinned-tabs-gap) !important;
-      overflow: hidden !important;
+  /* Make pinned tabs taller when toggled */
+  @media (-moz-bool-pref: "uc.pins.tall") and (-moz-bool-pref: "zen.view.sidebar-expanded") {
+    .tabbrowser-tab[pinned] { 
+      min-height: 43px !important;
+    }
+    @media (-moz-bool-pref: "uc.pins.compact") {
+      :root {
+        --pinned-tabs-width: 43px !important;
+      }
+    }
+  }  
+  
+  /* Set margin between pinned tabs on toggle */
+  @media (-moz-bool-pref: "uc.pins.margins.compact") {
+    :root {
+      --pins-gap: 5px;
+    }
+  }
+  @media not (-moz-bool-pref: "uc.pins.margins.compact") {
+    :root {
+      --pins-gap: 10px;
     }
   }
 
-  /* Align tab bar with nav bar when not in compact mode when toggled on */
-  @media (-moz-bool-pref: "uc.tabs.align-with-navbar") and (not (-moz-bool-pref: "zen.view.compact")) {
-
-    @media not (-moz-bool-pref: "zen.themes.tabs.legacy-location") {
-      #tabbrowser-arrowscrollbox {
-        margin-top: 0 !important;
-      }
-      .scrollbox-clip > scrollbox {
-        padding-top: 0 !important;
-      }
-      .tabbrowser-tab[pinned] {
-        margin-top: calc((var(--pinned-tabs-gap) / 2) - 3px) !important;
-        margin-bottom: calc((var(--pinned-tabs-gap) / 2) + 3px) !important;
-      }
-      @media (-moz-bool-pref: "uc.pins.compact") {
-        .tabbrowser-tab[pinned] {
-          margin-top: calc((var(--pinned-tabs-gap) / 2) - 1px) !important;
-          margin-bottom: calc((var(--pinned-tabs-gap) / 2) + 1px) !important;
-        }
-      }
-      @media not (-moz-bool-pref: "uc.pins.compact") {
-        #tabbrowser-tabs:has(.tabbrowser-tab[pinned]) .tabbrowser-tab:nth-child(1 of [fadein]:not([pinned]):not([hidden])) {
-          margin-top: calc(var(--pinned-tabs-gap) - 3px) !important;
-        }
-      }
-      @media not (-moz-bool-pref: "zen.view.sidebar-expanded") {
-        #tabbrowser-tabs:has(.tabbrowser-tab[pinned]) .tabbrowser-tab:nth-child(1 of [fadein]:not([pinned]):not([hidden])) {
-          margin-top: 10px !important;
-        }
-      }
-    } 
-
-    @media (-moz-bool-pref: "zen.themes.tabs.legacy-location") {
-      #TabsToolbar {
-        padding-top: 0 !important;
-      }
-      @media (-moz-bool-pref: "uc.workspace-button.move-to-bottom") {
-        #tabbrowser-arrowscrollbox {
-          margin-top: 0 !important;
-        }
-        .scrollbox-clip > scrollbox {
-          padding-top: 0 !important;
-        }
-      }
+  /* Increase width of pinned tabs */
+  @media (-moz-bool-pref: "zen.view.sidebar-expanded") and (not (-moz-bool-pref: "uc.pins.wide.disabled")) { 
+    #vertical-pinned-tabs-container {
+      grid-template-columns: repeat(auto-fit, minmax(calc(var(--collapsed-tab-width) * 1.65), auto)) !important;
+      gap: var(--pins-gap) var(--pins-gap) !important;
     }
   }
   
-  /* Remove the border of the workspace button if enabled when toggled on */
-  @media (-moz-bool-pref: "uc.workspace-button.remove-border") {
-    #zen-workspaces-button {
-      border: hidden !important;
+  @media (-moz-bool-pref: "uc.pins.container.disable-max-height") {
+    #vertical-pinned-tabs-container {
+      max-height: none !important;
     }
   }
+  
+  /* Hides the separator line between pinned tabs and normal ones if toggled */
+  @media (-moz-bool-pref: "uc.separator-line.hide") {
+    #newtab-button-container::before {
+      width: 0 !important;
+    }
+  }
+  
   
   /* Move workspace button to the bottom if enabled when toggled on */
   @media (-moz-bool-pref: "uc.workspace-button.move-to-bottom") {
@@ -163,18 +105,17 @@
     }
   }
   
+  /* Remove the border of the workspace button if enabled when toggled on */
+  @media (-moz-bool-pref: "uc.workspace-button.remove-border") {
+    #zen-workspaces-button {
+      border: hidden !important;
+    }
+  }
+
   /* Stop Zen toolbar from greying out when losing focus when toggled on */
   @media (-moz-bool-pref: "uc.zen-toolbar-opacity") {
     :root {
       --inactive-titlebar-opacity: 1 !important;
-    }
-  }
-
-  /* Add some space above/below pinned tabs when only icon visible -> tabbar not expanded */
-  @media not (-moz-bool-pref: "zen.view.sidebar-expanded") {
-    .tabbrowser-tab[pinned] {
-      margin-top: 2px !important;
-      margin-bottom: 4px !important;
     }
   }
 }
