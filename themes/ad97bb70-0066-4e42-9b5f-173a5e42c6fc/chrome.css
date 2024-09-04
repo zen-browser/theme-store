@@ -84,6 +84,11 @@
           grid-template-columns: repeat(auto-fit, minmax(calc(var(--collapsed-tab-width) * 1.65), auto)) !important;
           gap: var(--pins-gap) var(--pins-gap) !important;
         }
+        @media (-moz-bool-pref: "uc.pins.tall") {
+          .tabbrowser-tab[pinned] { 
+            min-height: 43px !important;
+          }
+        }
     }
   }
   
