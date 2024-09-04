@@ -165,7 +165,8 @@ Just joking, you can do whatever you want. You're the boss.
         'style': get_static_asset(theme_id, STYLES_FILE),
         'readme': get_static_asset(theme_id, README_FILE),
         'image': get_static_asset(theme_id, IMAGE_FILE),
-        'author': author
+        'author': author,
+        'version': '1.0.0',
     }
 
     os.makedirs(f"themes/{theme_id}")

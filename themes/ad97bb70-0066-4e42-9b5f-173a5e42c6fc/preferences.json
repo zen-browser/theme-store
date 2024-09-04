@@ -1,0 +1,13 @@
+{
+    "browser.sessionstore.restore_pinned_tabs_on_demand": "Stop Zen from loading all pinned tabs on startup, instead load pinned tabs on demand",
+    "zen.tabs.dim-pending": "Uncheck to stop Zen from dimming unloaded tabs",
+    "uc.zen-toolbar-opacity": "Stop Zen from decreasing opacity/greying out when Zen windows loses focus",
+    "uc.hide-seperator-line": "Hides the seperator line between pinned tabs and the first normal tab",
+    "uc.tabs.align-with-navbar": "Aligns the tabs with the navbar",
+    "uc.workspace-button.remove-border": "Removes the border of the workspace button",
+    "uc.workspace-button.move-to-bottom": "Moves the workspace button to the bottom of the tab bar",
+    "uc.pins.disable-bg-color": "Disables the background color of pinned tabs",
+    "uc.pins.bg-color.pop": "This makes the colors of pinned tabs pop more",
+    "uc.pins.tall": "This makes the pinned tabs a bit taller (Disabled when tab bar not expanded)",
+    "uc.pins.compact": "This makes the pinned tabs more compact by decreasing their width and the gap inbetween them"
+}

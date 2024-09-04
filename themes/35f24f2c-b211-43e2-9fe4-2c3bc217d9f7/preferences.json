@@ -1,0 +1,6 @@
+{
+    "uc.theme.comptitle-one-char-title.enabled": "Shorter title (1 character)",
+    "uc.theme.comptitle-three-char-title.enabled": "Longer title (3 characters)",
+    "uc.theme.comptitle-enable-pinned.enabled": "Enable in pinned tabs",
+    "uc.theme.comptitle-default-text.enabled": "More contrast-y text, may be harder to look at"
+}

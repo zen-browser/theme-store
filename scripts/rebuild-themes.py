@@ -59,6 +59,7 @@ def main():
                 themes_data[theme] = theme_data
                 with open(THEMES_DATA_FILE, 'w') as f:
                     json.dump(themes_data, f, indent=4)
+                    del themes_data
         print(f"Rebuilt theme: {theme}")
     print("Rebuilt all themes!")
   

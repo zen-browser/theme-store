@@ -1,0 +1,32 @@
+
+@media (-moz-bool-pref: "uc.urlbar.border-radius") {
+  #urlbar {
+    border-radius: 10px !important;
+  }
+          
+  #notification-popup-box {
+    border-radius: 6px !important;
+  }
+        
+  /* Border radius on hover */
+  #urlbar .urlbar-page-action, #urlbar #tracking-protection-icon-container, #urlbar:not([breakout-extend="true"]) #identity-box:is(:not(.chromeUI), [pageproxystate="invalid"]) #identity-icon-box {
+    border-radius: 6px !important;;
+  }
+        
+  /* Border radius of boxes on the left */
+  #identity-box:has(#identity-permission-box:is([hasPermissions], [hasSharingIcon])):not([pageproxystate="invalid"]) #identity-icon-box {
+    border-top-left-radius: 6px !important;
+    border-bottom-left-radius: 6px !important;
+    border-top-right-radius: 0 !important;
+    border-bottom-right-radius: 0 !important;
+  }
+
+/* Extensions or similar */
+  #urlbar:not([breakout-extend="true"]) #identity-box.chromeUI:not([pageproxystate="invalid"]) #identity-icon-box {
+    border-radius: 6px 6px 6px 6px !important;
+  }
+}
+
+@media (-moz-bool-pref: "uc.urltext.center") {
+  #urlbar:not([focused]) .urlbar-input{ text-align: center !important; }
+}
