@@ -1,0 +1,14 @@
+
+@media (-moz-bool-pref: "zen.view.compact") {
+ #zen-appcontent-navbar-container {
+   align-self: center !important;
+   width: 75% !important;
+   border-radius: 0px 0px 10px 10px !important;
+ }
+ @media (-moz-bool-pref: "uc.topbar.float") {
+  #zen-appcontent-navbar-container {
+   margin-top: 1vh;
+   border-radius: 10px 10px 10px 10px !important;
+  }
+ }
+}
