@@ -65,12 +65,27 @@
   }
 
   /* Increase width of pinned tabs */
-  @media (not (-moz-bool-pref: "uc.pins.wide.disabled")) and (-moz-bool-pref: "zen.view.sidebar-expanded") and (not (-moz-bool-pref: "zen.view.sidebar-expanded.on-hover")){ 
+  @media (not (-moz-bool-pref: "uc.pins.wide.disabled")) and (-moz-bool-pref: "zen.view.sidebar-expanded") and (not (-moz-bool-pref: "zen.view.sidebar-expanded.on-hover")) { 
     #vertical-pinned-tabs-container {
       grid-template-columns: repeat(auto-fit, minmax(calc(var(--collapsed-tab-width) * 1.65), auto)) !important;
       gap: var(--pins-gap) var(--pins-gap) !important;
     }
-  }  
+  }
+
+  /* Increase width of pinned tabs when expand on hover toggled */
+  @media (-moz-bool-pref: "zen.view.sidebar-expanded") and (not (-moz-bool-pref: "uc.pins.wide.disabled")) {  
+    #navigator-toolbox:is(
+      #navigator-toolbox[zen-user-hover="true"]:hover,
+      #navigator-toolbox[zen-user-hover="true"]:focus-within,
+      #mainPopupSet[zen-user-hover="true"]:has(> #appMenu-popup:hover) ~ toolbox,
+      #navigator-toolbox[zen-user-hover="true"]:has(*[open="true"]:not(tab):not(#zen-sidepanel-button)), 
+      :not([zen-user-hover="true"])) {
+        #vertical-pinned-tabs-container {
+          grid-template-columns: repeat(auto-fit, minmax(calc(var(--collapsed-tab-width) * 1.65), auto)) !important;
+          gap: var(--pins-gap) var(--pins-gap) !important;
+        }
+    }
+  }
   
   /* Disable pins container max height */
   @media (-moz-bool-pref: "uc.pins.container.disable-max-height") {
