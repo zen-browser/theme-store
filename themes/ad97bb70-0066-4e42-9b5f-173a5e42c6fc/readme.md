@@ -3,7 +3,7 @@
 This **Zen theme** elevates your experience with pinned tabs and the tab bar in general by making some UI changes, inspired by the favorites in Arc.
 
 ## What it does by default:
-  - Increases the width of pinned tabs (This can be toggled off)
+  - Increases the width of pinned tabs (This can be toggled off) (Currently **not working for Expand on hover**)
   - Adds a background color (according to your accent color set in *Settings -> Look and Feel -> Theme Color*)
     (This can be toggled off)
   - Adds some space between the pinned tabs
