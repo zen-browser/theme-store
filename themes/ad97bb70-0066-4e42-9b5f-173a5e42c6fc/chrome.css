@@ -46,14 +46,9 @@
   }
   
   /* Make pinned tabs taller when toggled */
-  @media (-moz-bool-pref: "uc.pins.tall") and (-moz-bool-pref: "zen.view.sidebar-expanded") {
+  @media (-moz-bool-pref: "uc.pins.tall") and (-moz-bool-pref: "zen.view.sidebar-expanded") and (not (-moz-bool-pref: "zen.view.sidebar-expanded.on-hover")){
     .tabbrowser-tab[pinned] { 
       min-height: 43px !important;
-    }
-    @media (-moz-bool-pref: "uc.pins.compact") {
-      :root {
-        --pinned-tabs-width: 43px !important;
-      }
     }
   }  
   
@@ -63,20 +58,25 @@
       --pins-gap: 5px;
     }
   }
-  @media not (-moz-bool-pref: "uc.pins.margins.compact") {
+  @media (not (-moz-bool-pref: "uc.pins.margins.compact")) {
     :root {
       --pins-gap: 10px;
     }
   }
 
   /* Increase width of pinned tabs */
-  @media (-moz-bool-pref: "zen.view.sidebar-expanded") and (not (-moz-bool-pref: "uc.pins.wide.disabled")) { 
+  @media (not (-moz-bool-pref: "uc.pins.wide.disabled")) and (-moz-bool-pref: "zen.view.sidebar-expanded") and (not (-moz-bool-pref: "zen.view.sidebar-expanded.on-hover")){ 
     #vertical-pinned-tabs-container {
       grid-template-columns: repeat(auto-fit, minmax(calc(var(--collapsed-tab-width) * 1.65), auto)) !important;
-      gap: var(--pins-gap) var(--pins-gap) !important;
     }
-  }
+    @media (-moz-bool-pref: "zen.view.sidebar-expanded") {
+      #vertical-pinned-tabs-container {
+        gap: var(--pins-gap) var(--pins-gap) !important;
+      }      
+    }
+  }  
   
+  /* Disable pins container max height */
   @media (-moz-bool-pref: "uc.pins.container.disable-max-height") {
     #vertical-pinned-tabs-container {
       max-height: none !important;
@@ -89,7 +89,6 @@
       width: 0 !important;
     }
   }
-  
   
   /* Move workspace button to the bottom if enabled when toggled on */
   @media (-moz-bool-pref: "uc.workspace-button.move-to-bottom") {
