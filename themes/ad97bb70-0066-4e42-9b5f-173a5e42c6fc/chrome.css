@@ -68,11 +68,7 @@
   @media (not (-moz-bool-pref: "uc.pins.wide.disabled")) and (-moz-bool-pref: "zen.view.sidebar-expanded") and (not (-moz-bool-pref: "zen.view.sidebar-expanded.on-hover")){ 
     #vertical-pinned-tabs-container {
       grid-template-columns: repeat(auto-fit, minmax(calc(var(--collapsed-tab-width) * 1.65), auto)) !important;
-    }
-    @media (-moz-bool-pref: "zen.view.sidebar-expanded") {
-      #vertical-pinned-tabs-container {
-        gap: var(--pins-gap) var(--pins-gap) !important;
-      }      
+      gap: var(--pins-gap) var(--pins-gap) !important;
     }
   }  
   
