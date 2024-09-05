@@ -4,7 +4,7 @@
   --ezuitb-tab-background-hover: rgba(0, 0, 0, 0.1);
   --ezuitb-url-bar-background: rgba(0, 0, 0, 0.08);
   --ezuitb-floating-url-bar-background: rgba(255, 255, 255, 0.8);
-  --ezuitb-new-tab-button-text-color: rgba(0, 0, 0, 0.5);
+  --ezuitb-new-tab-button-text-color: rgba(0, 0, 0, 0.3);
   --ezuitb-tab-background-active: #ffffff;
   --ezuitb-tab-background-active-shadow: 2px 2px 2px rgba(0, 0, 0, 0.14),
     -1px -1px 1px rgba(0, 0, 0, 0.1);
@@ -15,6 +15,9 @@
   --ezuitb-border-color: #00000028;
   --ezuitb-attention-color: #e06271;
   --ezuitb-page-canvas-spacing: calc(var(--zen-element-separation) * 1.2);
+  --ezuitb-element-one-quarter-separation: calc(
+    var(--zen-element-separation) * 0.25
+  );
   --ezuitb-element-half-separation: calc(var(--zen-element-separation) / 2);
   --ezuitb-element-three-quarters-separation: calc(
     var(--zen-element-separation) * 0.75
@@ -25,13 +28,7 @@
     -1px -1px 3px rgba(0, 0, 0, 0.2);
   --ezuitb-floating-url-bar-shadow: 2px 2px 3px rgba(0, 0, 0, 0.8),
     1px 1px 3px rgba(0, 0, 0, 0.8);
-}
-
-/* Exit Button Padding Right */
-@media (-moz-bool-pref: "uc.erics-zen-ui-tweak-box.exit-button-padding-right.enabled") {
-  .titlebar-buttonbox-container {
-    padding-right: var(--zen-element-separation);
-  }
+  --ezuitb-tab-bar-button-height: 36px;
 }
 
 /* Fun colors */
@@ -66,9 +63,17 @@
   }
 }
 
+/* Keep padding if collapsed */
+@media (-moz-bool-pref: "uc.erics-zen-ui-tweak-box.keep-tab-bar-top-padding-when-collapsed.enabled") {
+  @media not (-moz-bool-pref: "zen.view.sidebar-expanded") {
+    #TabsToolbar {
+      padding-top: var(--ezuitb-element-half-separation) !important;
+    }
+  }
+}
+
 /* Web-page canvas shadow */
 @media (-moz-bool-pref: "uc.erics-zen-ui-tweak-box.page-canvas-shadows.enabled") {
-  /* Necessary to keep the shadow on the left side visible */
   #appcontent {
     overflow: visible !important;
   }
@@ -88,6 +93,31 @@
       }
     }
   }
+
+  @media (-moz-bool-pref: "zen.view.compact") {
+    #tabbrowser-tabpanels {
+      padding-left: var(--ezuitb-page-canvas-spacing) !important;
+    }
+
+    @media (-moz-bool-pref: "zen.view.compact.hide-toolbar") {
+      #tabbrowser-tabpanels {
+        padding-top: var(--ezuitb-page-canvas-spacing) !important;
+      }
+    }
+
+    @media not (-moz-bool-pref: "zen.view.compact.hide-toolbar") {
+      #navigator-toolbox {
+        --zen-compact-toolbox-margin: calc(
+            var(--zen-compact-toolbox-margin-single) +
+              var(--zen-element-separation) +
+              (14px + (var(--toolbarbutton-inner-padding) * 2))
+          )
+          var(--zen-compact-toolbox-margin-single)
+          var(--zen-compact-toolbox-margin-single)
+          var(--zen-compact-toolbox-margin-single) !important;
+      }
+    }
+  }
 }
 
 /* URL Bar remove border */
@@ -97,6 +127,7 @@
   }
 }
 
+/* Url bar tweaks */
 @media (-moz-bool-pref: "uc.erics-zen-ui-tweak-box.url-bar-tweaks.enabled") {
   /* URL Bar buttons hover */
   .urlbar-input-container {
@@ -140,11 +171,13 @@
 /* New Tab Button with text */
 @media (-moz-bool-pref: "uc.erics-zen-ui-tweak-box.new-tab-button-text.enabled") {
   @media (-moz-bool-pref: "zen.view.sidebar-expanded") {
-    #tabs-newtab-button {
+    #vertical-tabs-newtab-button {
       display: flex;
       flex-direction: row !important;
       justify-content: flex-start !important;
+      padding-left: var(--ezuitb-element-one-quarter-separation) !important;
       &:after {
+        font-size: 1rem;
         content: "New Tab";
         flex: 1;
         color: var(--ezuitb-new-tab-button-text-color);
@@ -153,39 +186,60 @@
   }
 }
 
-/* New tab separator when no unpinned tabs */
-@media (-moz-bool-pref: "uc.erics-zen-ui-tweak-box.new-tab-separator-when-no-unpinned-tabs.enabled") {
-  .tabbrowser-tab[pinned]
-    + #tabbrowser-arrowscrollbox-periphery
-    > #tabs-newtab-button {
-    margin-top: calc(var(--zen-element-separation) * 2) !important;
+/* New tab button below tabs */
+@media (-moz-bool-pref: "uc.erics-zen-ui-tweak-box.new-tab-button-below-tabs.enabled") {
+  #vertical-pinned-tabs-container {
+    margin-bottom: var(--ezuitb-element-half-separation);
+    padding-bottom: var(--zen-element-separation);
     position: relative;
+    &:after {
+      content: " ";
+      position: absolute;
+      top: 100%;
+      left: 0;
+      width: 100%;
+      height: 1px;
+      border-radius: 1px;
+      background: var(--zen-colors-border);
+    }
   }
 
-  /* The separator */
-  .tabbrowser-tab[pinned]
-    + #tabbrowser-arrowscrollbox-periphery
-    > #tabs-newtab-button::before {
-    content: "";
-    position: absolute;
-    /* Using --zen-element-separation here made the bar thicker */
-    top: -8px;
-    left: 0;
-    width: 100%;
-    height: 1.5px;
-    border-radius: 1px;
-    background: var(--zen-colors-border);
+  #vertical-pinned-tabs-container {
+    max-height: unset !important;
+  }
+
+  #newtab-button-container {
+    order: 3;
+    padding-top: 0 !important;
+    margin-top: 0 !important;
+
+    &:before {
+      content: none;
+      display: none;
+      visibility: hidden;
+    }
+  }
+}
+
+/* Pinned tabs no-scroll */
+@media (-moz-bool-pref: "uc.erics-zen-ui-tweak-box.pinned-tabs-no-scroll.enabled") {
+  #vertical-pinned-tabs-container {
+    max-height: unset !important;
+    overflow-x: unset !important;
+    overflow-y: unset !important;
+    overflow: visible !important;
   }
 }
 
 /* Pinned tabs grid layout */
 @media (-moz-bool-pref: "uc.erics-zen-ui-tweak-box.pinned-tabs-layout.enabled") {
-  .scrollbox-clip > scrollbox {
+  #vertical-pinned-tabs-container {
     grid-template-columns: repeat(
       auto-fill,
       minmax(calc(var(--tab-min-height) * 1.2), 1fr)
     ) !important;
-    gap: 5px;
+    column-gap: unset !important;
+    gap: var(--ezuitb-element-half-separation) !important;
   }
 
   .tabbrowser-tab[pinned] {
@@ -208,12 +262,6 @@
     background-color: var(--ezuitb-tab-background-active) !important;
     box-shadow: var(--ezuitb-tab-background-active-shadow) !important;
   }
-
-  .tabbrowser-tab[pinned]:active {
-    /*  Keep the size of the separator when the tab is pressed */
-    transform: initial !important;
-    box-shadow: initial !important;
-  }
 }
 
 /* Zen workspace button */
@@ -226,7 +274,6 @@
     height: 36px !important;
     width: 36px !important;
     border-width: 0 !important;
-    margin-top: var(--zen-element-separation) !important;
     padding: 0 !important;
     margin-left: var(--ezuitb-element-three-quarters-separation) !important;
     margin-right: 0 !important;
@@ -237,14 +284,11 @@
     background-color: var(--ezuitb-darken-background-hover) !important;
   }
 
-  /* Zen workspace button - width when expanded */
+  /* Zen workspace button - expanded */
   @media (-moz-bool-pref: "zen.view.sidebar-expanded") {
     #zen-workspaces-button {
-      width: calc(
-        100% - var(--ezuitb-element-three-quarters-separation)
-      ) !important;
+      width: calc(100% - var(--ezuitb-element-half-separation)) !important;
       margin-left: var(--ezuitb-element-half-separation) !important;
-      margin-bottom: 0 !important;
     }
   }
 }
@@ -264,8 +308,29 @@
 
 /* Tab tweaks */
 @media (-moz-bool-pref: "uc.erics-zen-ui-tweak-box.tab-button-tweaks.enabled") {
-  .tabbrowser-tab:not([pinned]):not([selected="true"]):hover,
-  #tabs-newtab-button:hover {
+  #TabsToolbar,
+  #tabbrowser-tabs,
+  #tabbrowser-arrowscrollbox {
+    overflow-x: unset !important;
+    overflow-y: unset !important;
+  }
+
+  /* Even if you set overflow: visible, this container cuts the shadow on
+  right side of the button, so our only option is to increase the width */
+  #tabbrowser-arrowscrollbox {
+    width: calc(100% + var(--ezuitb-element-half-separation));
+
+    .tabbrowser-tab:not([pinned]) {
+      width: calc(100% - var(--ezuitb-element-half-separation)) !important;
+      margin-right: var(--ezuitb-element-half-separation) !important;
+    }
+  }
+
+  .tabbrowser-tab:not([pinned]):not(:last-of-type) {
+    margin-bottom: var(--ezuitb-element-half-separation) !important;
+  }
+
+  .tabbrowser-tab:not([pinned]):not([selected="true"]):hover {
     background-color: var(--ezuitb-tab-background-hover) !important;
   }
 
@@ -274,11 +339,20 @@
     background-color: var(--ezuitb-tab-background-active) !important;
     box-shadow: var(--ezuitb-tab-background-active-shadow) !important;
   }
+}
 
-  .tabbrowser-tab:not([pinned]):active,
-  #tabs-newtab-button:active {
-    /*  Keep the size of the separator when the tab is pressed */
-    transform: initial !important;
-    box-shadow: initial !important;
+/* New tab tweaks */
+@media (-moz-bool-pref: "uc.erics-zen-ui-tweak-box.new-tab-button-tweaks.enabled") {
+  #vertical-tabs-newtab-button {
+    background-color: transparent !important;
+    height: var(--ezuitb-tab-bar-button-height) !important;
+
+    &:hover {
+      background-color: var(--ezuitb-tab-background-hover) !important;
+    }
+
+    > .toolbarbutton-icon {
+      background-color: transparent !important;
+    }
   }
 }
