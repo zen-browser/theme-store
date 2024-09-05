@@ -1,0 +1,52 @@
+
+@media (-moz-bool-pref: "zen.view.compact") {
+ #zen-appcontent-navbar-container {
+   align-self: center !important;
+   width: 75% !important;
+   border-radius: 0px 0px 10px 10px !important;
+ }
+ @media (-moz-bool-pref: "uc.compacttopbar.float") {
+  #zen-appcontent-navbar-container {
+   margin: 1vh !important;
+   border-radius: 10px 10px 10px 10px !important;
+  }
+ }
+ @media (-moz-bool-pref: "uc.compacttopbar.glow") {
+  #nav-bar {
+   box-shadow: rgb(38, 57, 77) 0px 0px 20px 10px;
+   border-radius: 0px 0px 10px 10px !important;
+  }
+  @media (-moz-bool-pref: "uc.topbar.float") {
+   #nav-bar {
+    border-radius: 10px 10px 10px 10px !important;
+   }
+  }
+ }
+ @media (-moz-bool-pref: "uc.compacttopbar.outline") {
+  #nav-bar {
+   border: 1px solid rgba(255, 255, 255, 0.4) !important;
+   border-top: 0px solid !important;
+   border-radius: 0px 0px 10px 10px !important;
+  }
+  @media (-moz-bool-pref: "uc.compacttopbar.float") {
+   #nav-bar {
+    border: 1px solid rgba(255, 255, 255, 0.4) !important;
+    border-radius: 10px 10px 10px 10px !important;
+   }
+  }
+ }
+ @media (-moz-bool-pref: "uc.compacttopbar.applyToTabBar") {
+  @media (-moz-bool-pref: "uc.topbar.glow") {
+   #titlebar {
+    box-shadow: rgb(38, 57, 77) 0px 0px 20px 10px;
+    border-radius: 10px 10px 10px 10px !important;
+   }
+  }
+  @media (-moz-bool-pref: "uc.compacttopbar.outline") {
+   #titlebar {
+    border: 1px solid rgba(255, 255, 255, 0.4) !important;
+    border-radius: 10px 10px 10px 10px !important;
+   }
+  }
+ }
+}
