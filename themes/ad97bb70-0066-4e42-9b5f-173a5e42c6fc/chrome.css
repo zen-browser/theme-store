@@ -1,48 +1,45 @@
 @media (-moz-bool-pref: "zen.tabs.vertical") {
 
   /* COLORS of pinned tabs */
-  @media not (-moz-bool-pref: "uc.pins.disable-bg-color") {
+  @media (-moz-bool-pref: "uc.pins.bg-color.pop") and (not (-moz-bool-pref: "uc.pins.disable-bg-color")) {
     /* background color of pinned tabs in a normal state (not hovered/selected) */
     .tabbrowser-tab[pinned] {
-      background-color: light-dark(color-mix(in srgb, var(--toolbarbutton-hover-background), #ffffff 12%), color-mix(in srgb, var(--toolbarbutton-hover-background), #000000 30%)) !important;
+      background-color: light-dark(hsl(from var(--zen-primary-color) h 70% 90%), hsl(from var(--zen-primary-color) h 25% 20%)) !important;
       border-radius: 8px !important;
     }
     /* background color when hovering */
-    .tabbrowser-tab[pinned]:hover {
-      background-color: light-dark(color-mix(in srgb, var(--toolbarbutton-hover-background), #000000 2%), color-mix(in srgb, var(--toolbarbutton-hover-background), #000000 20%)) !important;
-    }  
+    .tabbrowser-tab[pinned]:hover{
+      background-color: light-dark(hsl(from var(--zen-primary-color) h 70% 88%), hsl(from var(--zen-primary-color) h 25% 22%)) !important;
+    }
     /* background color when selected */
     .tabbrowser-tab[pinned][selected="true"],
     .tabbrowser-tab[pinned][multiselected="true"] {
-      background-color: light-dark(color-mix(in srgb, var(--toolbarbutton-hover-background), #000000 6%), color-mix(in srgb, var(--toolbarbutton-hover-background), #000000 0%)) !important;
+      background-color: light-dark(hsl(from var(--zen-primary-color) h 70% 83%), hsl(from var(--zen-primary-color) h 25% 35%)) !important;
     }
     /* background color when hovering and selected */
     .tabbrowser-tab[pinned][selected="true"]:hover,
-    .tabbrowser-tab[pinned][multiselected="true"]:hover {
-      background-color: light-dark(color-mix(in srgb, var(--toolbarbutton-hover-background), #000000 8%), color-mix(in srgb, var(--toolbarbutton-hover-background), #ffffff 5%)) !important;
+    .tabbrowser-tab[pinned][multiselected="true"]:hover{
+      background-color: light-dark(hsl(from var(--zen-primary-color) h 70% 81%), hsl(from var(--zen-primary-color) h 25% 37%)) !important;
     }
+  }
+    
+  /* Makes pinned tabs transparent */
+  @media (-moz-bool-pref: "uc.pins.disable-bg-color") {
+    .tabbrowser-tab[pinned]:not(:hover):not([selected="true"]) {
+      background-color: transparent !important;
+    }
+  }
   
-    @media (-moz-bool-pref: "uc.pins.bg-color.pop") {
-      /* background color of pinned tabs in a normal state (not hovered/selected) */
-      .tabbrowser-tab[pinned] {
-        background-color: light-dark(hsl(from var(--zen-primary-color) h 70% 90%), hsl(from var(--zen-primary-color) h 25% 20%)) !important;
-        border-radius: 8px !important;
-      }
-      /* background color when hovering */
-      .tabbrowser-tab[pinned]:hover{
-        background-color: light-dark(hsl(from var(--zen-primary-color) h 70% 88%), hsl(from var(--zen-primary-color) h 25% 22%)) !important;
-      }
-      /* background color when selected */
-      .tabbrowser-tab[pinned][selected="true"],
-      .tabbrowser-tab[pinned][multiselected="true"] {
-        background-color: light-dark(hsl(from var(--zen-primary-color) h 70% 83%), hsl(from var(--zen-primary-color) h 25% 35%)) !important;
-      }
-      /* background color when hovering and selected */
-      .tabbrowser-tab[pinned][selected="true"]:hover,
-      .tabbrowser-tab[pinned][multiselected="true"]:hover{
-        background-color: light-dark(hsl(from var(--zen-primary-color) h 70% 81%), hsl(from var(--zen-primary-color) h 25% 37%)) !important;
-      }
-    }  
+  /* Make new tabs button transparen */
+  @media (-moz-bool-pref: "uc.new-tab-button.transparent") {
+    #vertical-tabs-newtab-button {
+      background-color: transparent !important;
+    }
+  }
+  
+  /* Make gap between new tabs button and pins consistent */
+  #vertical-tabs-newtab-button {
+    margin-top: 5px !important;
   }
   
   /* Make pinned tabs taller when toggled */
@@ -67,7 +64,7 @@
   /* Increase width of pinned tabs */
   @media (not (-moz-bool-pref: "uc.pins.wide.disabled")) and (-moz-bool-pref: "zen.view.sidebar-expanded") and (not (-moz-bool-pref: "zen.view.sidebar-expanded.on-hover")) { 
     #vertical-pinned-tabs-container {
-      grid-template-columns: repeat(auto-fit, minmax(66px, auto)) !important;
+      grid-template-columns: repeat(auto-fit, minmax(68px, auto)) !important;
       gap: var(--pins-gap) var(--pins-gap) !important;
     }
   }
@@ -81,7 +78,7 @@
       #navigator-toolbox[zen-user-hover="true"]:has(*[open="true"]:not(tab):not(#zen-sidepanel-button)), 
       :not([zen-user-hover="true"])) {
         #vertical-pinned-tabs-container {
-          grid-template-columns: repeat(auto-fit, minmax(66px, auto)) !important;
+          grid-template-columns: repeat(auto-fit, minmax(68px, auto)) !important;
           gap: var(--pins-gap) var(--pins-gap) !important;
         }
         @media (-moz-bool-pref: "uc.pins.tall") {
@@ -89,13 +86,6 @@
             min-height: 43px !important;
           }
         }
-    }
-  }
-  
-  /* Disable pins container max height */
-  @media (-moz-bool-pref: "uc.pins.container.disable-max-height") {
-    #vertical-pinned-tabs-container {
-      max-height: none !important;
     }
   }
   
@@ -124,13 +114,6 @@
   @media (-moz-bool-pref: "uc.workspace-button.remove-border") {
     #zen-workspaces-button {
       border: hidden !important;
-    }
-  }
-
-  /* Stop Zen toolbar from greying out when losing focus when toggled on */
-  @media (-moz-bool-pref: "uc.zen-toolbar-opacity") {
-    :root {
-      --inactive-titlebar-opacity: 1 !important;
     }
   }
 }
