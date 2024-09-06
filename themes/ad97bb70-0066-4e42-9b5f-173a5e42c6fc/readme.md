@@ -15,5 +15,5 @@ This **Zen theme** elevates your experience with pinned tabs and the tab bar in 
   - Hide the separator line between pinned tabs and normal tabs
   - Remove the border of the workspace button
   - Move workspace button to the bottom of the tabbar
-  - Make all pinned tabs load on startup
+  - Load pinned tabs only when using them, instead of loading all of them on startup
   - Dim unloaded tabs
