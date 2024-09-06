@@ -4,22 +4,22 @@
   @media (-moz-bool-pref: "uc.pins.bg-color.pop") and (not (-moz-bool-pref: "uc.pins.disable-bg-color")) {
     /* background color of pinned tabs in a normal state (not hovered/selected) */
     .tabbrowser-tab[pinned] {
-      background-color: light-dark(hsl(from var(--zen-primary-color) h 70% 90%), hsl(from var(--zen-primary-color) h 25% 20%)) !important;
+      background-color: light-dark(hsl(from var(--zen-primary-color) h 70% 92%), hsl(from var(--zen-primary-color) h 25% 15%)) !important;
       border-radius: 8px !important;
     }
     /* background color when hovering */
     .tabbrowser-tab[pinned]:hover{
-      background-color: light-dark(hsl(from var(--zen-primary-color) h 70% 88%), hsl(from var(--zen-primary-color) h 25% 22%)) !important;
+      background-color: light-dark(hsl(from var(--zen-primary-color) h 70% 90%), hsl(from var(--zen-primary-color) h 25% 17%)) !important;
     }
     /* background color when selected */
     .tabbrowser-tab[pinned][selected="true"],
     .tabbrowser-tab[pinned][multiselected="true"] {
-      background-color: light-dark(hsl(from var(--zen-primary-color) h 70% 83%), hsl(from var(--zen-primary-color) h 25% 35%)) !important;
+      background-color: light-dark(hsl(from var(--zen-primary-color) h 70% 85%), hsl(from var(--zen-primary-color) h 25% 28%)) !important;
     }
     /* background color when hovering and selected */
     .tabbrowser-tab[pinned][selected="true"]:hover,
     .tabbrowser-tab[pinned][multiselected="true"]:hover{
-      background-color: light-dark(hsl(from var(--zen-primary-color) h 70% 81%), hsl(from var(--zen-primary-color) h 25% 37%)) !important;
+      background-color: light-dark(hsl(from var(--zen-primary-color) h 70% 83%), hsl(from var(--zen-primary-color) h 25% 30%)) !important;
     }
   }
     
