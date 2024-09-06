@@ -1,4 +1,4 @@
-
+/* Adjust border radius of url bar and its elements */
 @media (-moz-bool-pref: "uc.urlbar.border-radius") {
   #urlbar {
     border-radius: 10px !important;
@@ -21,12 +21,35 @@
     border-bottom-right-radius: 0 !important;
   }
 
-/* Extensions or similar */
+  /* Extensions or similar */
   #urlbar:not([breakout-extend="true"]) #identity-box.chromeUI:not([pageproxystate="invalid"]) #identity-icon-box {
     border-radius: 6px 6px 6px 6px !important;
   }
 }
 
+/* Centers the url text if toggled */
 @media (-moz-bool-pref: "uc.urltext.center") {
-  #urlbar:not([focused]) .urlbar-input{ text-align: center !important; }
+  #urlbar:not([focused]) .urlbar-input{
+    text-align: center !important; 
+  }
+}
+
+/* Blurs the background when url bar is focused when toggled */
+@media (-moz-bool-pref: "uc.urlbar.blur") {
+  #urlbar:is([breakout][breakout-extend], [breakout][usertyping][focused]):after {
+    content: "";
+    position: fixed;
+    pointer-events: none;
+  
+    width: 100vw;
+    height: 100vh;
+  
+    top: 0px;
+    left: 0px;
+  
+    background-color: rgba(0, 0, 0, 0.3);
+    backdrop-filter: blur(1px);
+  
+    z-index: -1;
+  }
 }
