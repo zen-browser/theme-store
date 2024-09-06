@@ -8,6 +8,6 @@
     "uc.separator-line.hide": "Hides the seperator line between pinned tabs and the first normal tab",
     "uc.workspace-button.remove-border": "Removes the border of the workspace button",
     "uc.workspace-button.move-to-bottom": "Moves the workspace button to the bottom of the tab bar",
-    "browser.sessionstore.restore_pinned_tabs_on_demand": "Uncheck to make all pinned tabs load on startup",
+    "browser.sessionstore.restore_pinned_tabs_on_demand": "Loads pinned tabs only when using them, instead of loading all of them on startup",
     "zen.tabs.dim-pending": "Dims unloaded tabs"
 }
