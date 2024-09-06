@@ -1,4 +1,5 @@
 {
     "uc.urlbar.border-radius": "Adjusts the border radius of the url bar and its items",
-    "uc.urltext.center": "Centers the text inside the url bar"
+    "uc.urltext.center": "Centers the text inside the url bar",
+    "uc.urlbar.blur": "Blurs the background when the url bar is in focus"
 }
