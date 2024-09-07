@@ -1,1 +1,11 @@
-{"id": "6a5e8204-ea7f-4c3d-a6fc-de503b470d70", "name": "Compact Topsites", "description": "Theme for compact Top site icons on new tab", "homepage": "https://github.com/naiyerasif/zen-compact-topsites", "style": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/6a5e8204-ea7f-4c3d-a6fc-de503b470d70/chrome.css", "readme": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/6a5e8204-ea7f-4c3d-a6fc-de503b470d70/readme.md", "image": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/6a5e8204-ea7f-4c3d-a6fc-de503b470d70/image.png", "author": "naiyerasif", "version": "1.0.0"}
+{
+    "id": "6a5e8204-ea7f-4c3d-a6fc-de503b470d70",
+    "name": "Compact Topsites",
+    "description": "Theme for compact Top site icons on new tab",
+    "homepage": "https://github.com/naiyerasif/zen-compact-topsites",
+    "style": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/6a5e8204-ea7f-4c3d-a6fc-de503b470d70/chrome.css",
+    "readme": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/6a5e8204-ea7f-4c3d-a6fc-de503b470d70/readme.md",
+    "image": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/6a5e8204-ea7f-4c3d-a6fc-de503b470d70/image.png",
+    "author": "naiyerasif",
+    "version": "1.0.0"
+}
