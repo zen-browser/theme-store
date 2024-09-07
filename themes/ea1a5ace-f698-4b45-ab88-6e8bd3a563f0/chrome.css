@@ -28,7 +28,7 @@
 
 /* Hide bookmark labels */
 @media (-moz-bool-pref: "uc.bookmarks.hide-name") {
-    .bookmark-item:not([container]) .toolbarbutton-text { 
+    #personal-bookmarks .bookmark-item:not([container]) .toolbarbutton-text { 
         display: none !important; 
     }
 }

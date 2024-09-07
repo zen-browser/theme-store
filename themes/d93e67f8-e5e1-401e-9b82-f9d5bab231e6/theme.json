@@ -1,1 +1,12 @@
-{"id": "d93e67f8-e5e1-401e-9b82-f9d5bab231e6", "name": "Super Url Bar", "description": "Get simple rounded edges, centered text for your url bar and a background blur.", "homepage": "https://github.com/JLBlk/Zen-Themes/tree/main/SuperUrlBar", "style": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/d93e67f8-e5e1-401e-9b82-f9d5bab231e6/chrome.css", "readme": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/d93e67f8-e5e1-401e-9b82-f9d5bab231e6/readme.md", "image": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/d93e67f8-e5e1-401e-9b82-f9d5bab231e6/image.png", "author": "JLBlk", "version": "1.1.0", "preferences": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/d93e67f8-e5e1-401e-9b82-f9d5bab231e6/preferences.json"}
+{
+    "id": "d93e67f8-e5e1-401e-9b82-f9d5bab231e6",
+    "name": "Super Url Bar",
+    "description": "Get simple rounded edges, centered text for your url bar and a background blur.",
+    "homepage": "https://github.com/JLBlk/Zen-Themes/tree/main/SuperUrlBar",
+    "style": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/d93e67f8-e5e1-401e-9b82-f9d5bab231e6/chrome.css",
+    "readme": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/d93e67f8-e5e1-401e-9b82-f9d5bab231e6/readme.md",
+    "image": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/d93e67f8-e5e1-401e-9b82-f9d5bab231e6/image.png",
+    "author": "JLBlk",
+    "version": "1.1.0",
+    "preferences": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/d93e67f8-e5e1-401e-9b82-f9d5bab231e6/preferences.json"
+}

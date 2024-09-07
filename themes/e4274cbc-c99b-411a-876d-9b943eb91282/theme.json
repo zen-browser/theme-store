@@ -1,1 +1,11 @@
-{"id": "e4274cbc-c99b-411a-876d-9b943eb91282", "name": "Exit Button Right Padding", "description": "A simple theme that adds a bit of padding to the right of the exit button", "homepage": "https://github.com/ericmackrodt/zen-themes/", "style": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/e4274cbc-c99b-411a-876d-9b943eb91282/chrome.css", "readme": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/e4274cbc-c99b-411a-876d-9b943eb91282/readme.md", "image": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/e4274cbc-c99b-411a-876d-9b943eb91282/image.png", "author": "ericmackrodt", "version": "1.0.0"}
+{
+    "id": "e4274cbc-c99b-411a-876d-9b943eb91282",
+    "name": "Exit Button Right Padding",
+    "description": "A simple theme that adds a bit of padding to the right of the exit button",
+    "homepage": "https://github.com/ericmackrodt/zen-themes/",
+    "style": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/e4274cbc-c99b-411a-876d-9b943eb91282/chrome.css",
+    "readme": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/e4274cbc-c99b-411a-876d-9b943eb91282/readme.md",
+    "image": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/e4274cbc-c99b-411a-876d-9b943eb91282/image.png",
+    "author": "ericmackrodt",
+    "version": "1.0.0"
+}
