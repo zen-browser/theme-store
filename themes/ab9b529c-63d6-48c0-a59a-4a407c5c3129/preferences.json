@@ -6,5 +6,7 @@
   "uc.minimal-sidebar.hide-history-button.enabled": "Hide the history button",
   "uc.minimal-sidebar.hide-preferences-button.enabled": "Hide the preferences button",
   "uc.minimal-sidebar.hide-sidepanel-button.enabled": "Hide the sidepanel button",
-  "uc.minimal-sidebar.compact-spacing.enabled": "Make padding above the remaining buttons smaller" 
+  "uc.minimal-sidebar.compact-spacing.enabled": "Make padding above the remaining buttons smaller",
+  "uc.minimal-sidebar.hide-sidebar.enabled": "Hide all sidebar buttons",
+  "uc.minimal-sidebar.fix-sidebar-width.enabled": "Fix sidebar width when you hide all buttons and workspaces"
 }
