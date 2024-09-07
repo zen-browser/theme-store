@@ -1,4 +1,4 @@
-#urlbar:is([breakout][breakout-extend], [focused]) {
+#urlbar:is([breakout][breakout-extend], [breakout][usertyping][focused]) {
     #urlbar-input {
         font-size: 16px !important;
     }
