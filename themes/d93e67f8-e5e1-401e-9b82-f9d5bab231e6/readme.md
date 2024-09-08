@@ -1,6 +1,7 @@
 # Super Url Bar
 
 ## This **Zen theme** gives you 3 optional toggles (in Zen's theme settings):
-  - Adjust border radius of url bar
+  - Adjust border radius of the url bar
   - Center url text
-  - Blur the background when url bar is in focus
+  - Remove the border of the url bar
+  - Blur the background when the url bar is in focus
