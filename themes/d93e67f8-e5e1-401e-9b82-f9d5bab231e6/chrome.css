@@ -53,3 +53,10 @@
     z-index: -1;
   }
 }
+
+/* Removes the border of the url bar when toggled */
+@media (-moz-bool-pref: "uc.urlbar.border.removed") {
+  #urlbar {
+    border: none !important;
+  }
+}
