@@ -1,5 +1,6 @@
 {
   "uc.minimal-sidebar.hide-alltabs-button.enabled": "Hide the alltabs button",
+  "uc.minimal-sidebar.hide-newtab-button.enabled": "Hide the newtab button",
   "uc.minimal-sidebar.hide-profile-button.enabled": "Hide the profile button",
   "uc.minimal-sidebar.hide-expand-sidebar-button.enabled": "Hide the expand sidebar button",
   "uc.minimal-sidebar.hide-bookmark-button.enabled": "Hide the bookmarks button",
