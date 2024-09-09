@@ -1,0 +1,11 @@
+{
+    "uc.supergradient.preset1": "Northern Horizen: A blue-green'ish gradient",
+    "uc.supergradient.preset2": "Scarlet Dusk: A red-yellow'ish gradient",
+    "uc.supergradient.preset3": "Amethyst Claret: A blue/purple-red'ish gradient",
+    "uc.supergradient.preset4": "Olive Sunset: A green-red'ish gradient",
+    "uc.supergradient.preset5": "Midnight Majesty: A yellow-purple'ish gradient",
+    "uc.supergradient.brighten": "Brightens the colors of the gradient",
+    "uc.supergradient.desaturate": "Desaturates the colors of the gradient",
+    "uc.supergradient.use-accent-color": "Uses Zen's accent colors (e.g. on tabs, set in Zen's Look and Feel setting) instead of accent colors adjusted for the gradient",
+    "uc.supergradient.switch-colors": "Switches the colors orders in the gradient"
+}

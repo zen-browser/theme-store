@@ -1,0 +1,165 @@
+
+/* Get the same gradient depending on tabs side */
+@media (-moz-bool-pref: "zen.tabs.vertical.right-side") {
+  :root {
+    --gradient-start: circle at 95% top;
+  }
+}
+@media not (-moz-bool-pref: "zen.tabs.vertical.right-side") {
+  :root {
+    --gradient-start: circle at 5% top;
+  }
+}
+
+/* Control lightness of colors based on pref and dark/white mode*/
+@media (prefers-color-scheme: dark) {
+  @media (-moz-bool-pref: "uc.supergradient.brighten") {
+    :root {
+      --lightness: 16%;
+      --accent-color-lightness: 30%;
+    }
+  }
+  @media not (-moz-bool-pref: "uc.supergradient.brighten") {
+    :root {
+      --lightness: 12%;
+      --accent-color-lightness: 30%;
+    }
+  }
+} 
+@media (prefers-color-scheme: light) {
+  @media (-moz-bool-pref: "uc.supergradient.brighten") {
+    :root {
+      --lightness: 85%;
+      --accent-color-lightness: 70%;
+    }
+  }
+  @media not (-moz-bool-pref: "uc.supergradient.brighten") {
+    :root {
+      --lightness: 80%;
+      --accent-color-lightness: 70%;
+    }
+  }
+}
+
+/* Control saturation of colors */
+@media (-moz-bool-pref: "uc.supergradient.desaturate") {
+  :root {
+    --saturation: 55%;
+  }
+}
+@media not (-moz-bool-pref: "uc.supergradient.desaturate") {
+  :root {
+    --saturation: 75%;
+  }
+}
+
+/* SuperGradient Presets */
+
+/* 1. Top-left; 2. Bottom-left; 3. Top-right'ish 4. Bottom-right*/
+
+@media (-moz-bool-pref: "uc.supergradient.preset1") {
+  :root {
+    --gradient-color1: hsl(220, var(--saturation), var(--lightness));
+    --gradient-color2: hsl(160, var(--saturation), var(--lightness));
+    --gradient-color3: hsl(200, var(--saturation), var(--lightness));
+    --gradient-color4: hsl(180, var(--saturation), var(--lightness));
+    --switched-color1: hsl(160, var(--saturation), var(--lightness));
+    --switched-color2: hsl(220, var(--saturation), var(--lightness));
+    --switched-color3: hsl(180, var(--saturation), var(--lightness));
+    --switched-color4: hsl(200, var(--saturation), var(--lightness));
+    --custom-accent-color: hsla(205, 50%, var(--accent-color-lightness), 0.7);
+    --switched-accent-color: hsla(170, 50%, var(--accent-color-lightness), 0.7);
+  }
+}
+
+@media (-moz-bool-pref: "uc.supergradient.preset2") {
+  :root {
+    --gradient-color1: hsl(340, var(--saturation), var(--lightness));
+    --gradient-color2: hsl(40, var(--saturation), var(--lightness));
+    --gradient-color3: hsl(30, var(--saturation), var(--lightness));
+    --gradient-color4: hsl(340, var(--saturation), var(--lightness));
+    --switched-color1: hsl(40, var(--saturation), var(--lightness));
+    --switched-color2: hsl(340, var(--saturation), var(--lightness));
+    --switched-color3: hsl(340, var(--saturation), var(--lightness));
+    --switched-color4: hsl(30, var(--saturation), var(--lightness));
+    --custom-accent-color: hsla(350, 50%, var(--accent-color-lightness), 0.6);
+    --switched-accent-color: hsla(40, 50%, var(--accent-color-lightness), 0.6);
+  }
+}
+
+@media (-moz-bool-pref: "uc.supergradient.preset3") {
+  :root {
+    --gradient-color1: hsl(270, var(--saturation), var(--lightness));
+    --gradient-color2: hsl(0, var(--saturation), var(--lightness));
+    --gradient-color3: hsl(320, var(--saturation), var(--lightness));
+    --gradient-color4: hsl(20, var(--saturation), var(--lightness));
+    --switched-color1: hsl(0, var(--saturation), var(--lightness));
+    --switched-color2: hsl(270, var(--saturation), var(--lightness));
+    --switched-color3: hsl(20, var(--saturation), var(--lightness));
+    --switched-color4: hsl(320, var(--saturation), var(--lightness));
+    --custom-accent-color: hsla(280, 50%, var(--accent-color-lightness), 0.5);
+    --switched-accent-color: hsla(350, 50%, var(--accent-color-lightness), 0.5);
+  }
+}
+
+@media (-moz-bool-pref: "uc.supergradient.preset4") {
+  :root {
+    --gradient-color1: hsl(20, var(--saturation), var(--lightness));
+    --gradient-color2: hsl(65, var(--saturation), var(--lightness));
+    --gradient-color3: hsl(50, var(--saturation), var(--lightness));
+    --gradient-color4: hsl(160, var(--saturation), var(--lightness));
+    --switched-color1: hsl(65, var(--saturation), var(--lightness));
+    --switched-color2: hsl(20, var(--saturation), var(--lightness));
+    --switched-color3: hsl(160, var(--saturation), var(--lightness));
+    --switched-color4: hsl(50, var(--saturation), var(--lightness));
+    --custom-accent-color: hsla(40, 50%, var(--accent-color-lightness), 0.5);
+    --switched-accent-color: hsla(60, 50%, var(--accent-color-lightness), 0.5);
+  }
+}
+
+@media (-moz-bool-pref: "uc.supergradient.preset5") {
+  :root {
+    --gradient-color1: hsl(50, var(--saturation), var(--lightness));
+    --gradient-color2: hsl(300, var(--saturation), var(--lightness));
+    --gradient-color3: hsl(60, var(--saturation), var(--lightness));
+    --gradient-color4: hsl(10, var(--saturation), var(--lightness));
+    --switched-color1: hsl(300, var(--saturation), var(--lightness));
+    --switched-color2: hsl(50, var(--saturation), var(--lightness));
+    --switched-color3: hsl(10, var(--saturation), var(--lightness));
+    --switched-color4: hsl(60, var(--saturation), var(--lightness));
+    --custom-accent-color: hsla(50, 50%, var(--accent-color-lightness), 0.5);
+    --switched-accent-color: hsla(310, 50%, var(--accent-color-lightness), 0.4);
+  }
+}
+
+/* Switch the colors in the gradient (when toggled) */
+@media (-moz-bool-pref: "uc.supergradient.switch-colors") {
+  :root {
+    --gradient-color1: var(--switched-color1) !important;
+    --gradient-color2: var(--switched-color2) !important;
+    --gradient-color3: var(--switched-color3) !important;
+    --gradient-color4: var(--switched-color4) !important; 
+    --custom-accent-color: var(--switched-accent-color) !important;
+  }
+}
+
+/* Applies the color gradient based on the set user preferences */
+@media (-moz-bool-pref: "uc.supergradient.preset1"), (-moz-bool-pref: "uc.supergradient.preset2"), (-moz-bool-pref: "uc.supergradient.preset3"), (-moz-bool-pref: "uc.supergradient.preset4"), (-moz-bool-pref: "uc.supergradient.preset5") {
+  :root {
+    --zen-main-browser-background: radial-gradient(var(--gradient-start), var(--gradient-color1), var(--gradient-color2), var(--gradient-color3), var(--gradient-color4)) !important;
+    --toolbarbutton-hover-background: var(--custom-accent-color) !important;
+  }
+  /* Make the colors work in Compact Mode */
+  @media (-moz-bool-pref: "zen.view.compact"), (-moz-bool-pref: "zen.view.compact") and (-moz-bool-pref: "zen.view.compact.hide-toolbar") {
+    #titlebar, #zen-appcontent-navbar-container {
+      background: radial-gradient(var(--gradient-start), var(--gradient-color1), var(--gradient-color2), var(--gradient-color3), var(--gradient-color4)) !important;
+    }
+  }
+}
+
+/* Use the set accent color instead of adjusted ones (when toggled) */
+@media (-moz-bool-pref: "uc.supergradient.use-accent-color") {
+  :root {
+    --toolbarbutton-hover-background: var(--button-hover-bgcolor) !important;
+  }
+}
