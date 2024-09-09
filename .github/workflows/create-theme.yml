@@ -95,6 +95,7 @@ jobs:
         if: success()
         with:
           add-paths: themes/
+          labels: staged
           token: ${{ secrets.DEPLOY_KEY }}
           commit-message: "Add theme: ${{ env.THEME_NAME }}"
           delete-branch: true

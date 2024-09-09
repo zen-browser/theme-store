@@ -1,1 +1,11 @@
-{"id": "74c755b3-41a5-4f78-83cb-cd1e1e076bb6", "name": "Better UniExtBtn", "description": "change unified extensions button to zen browser icon", "homepage": "", "style": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/74c755b3-41a5-4f78-83cb-cd1e1e076bb6/chrome.css", "readme": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/74c755b3-41a5-4f78-83cb-cd1e1e076bb6/readme.md", "image": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/74c755b3-41a5-4f78-83cb-cd1e1e076bb6/image.png", "author": "lindongbin", "version": "1.0.0"}
+{
+    "id": "74c755b3-41a5-4f78-83cb-cd1e1e076bb6",
+    "name": "Better UniExtBtn",
+    "description": "change unified extensions button to zen browser icon",
+    "homepage": "",
+    "style": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/74c755b3-41a5-4f78-83cb-cd1e1e076bb6/chrome.css",
+    "readme": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/74c755b3-41a5-4f78-83cb-cd1e1e076bb6/readme.md",
+    "image": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/74c755b3-41a5-4f78-83cb-cd1e1e076bb6/image.png",
+    "author": "lindongbin",
+    "version": "1.0.0"
+}

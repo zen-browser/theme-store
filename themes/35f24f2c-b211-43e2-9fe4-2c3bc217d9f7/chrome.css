@@ -1,6 +1,6 @@
-
 @media not (-moz-bool-pref: "zen.view.sidebar-expanded") {
   .tabbrowser-tab {
+    /* Unhide the tab title and show only the first comptitle-width letters */
     .tab-label-container {
       --comptitle-width: 2ch;
       overflow: hidden;
@@ -9,7 +9,11 @@
       width: var(--comptitle-width);
       right: 0;
       white-space: nowrap;
-      background: color-mix(in srgb, var(--background-color-box) 75%, transparent);
+      background: color-mix(
+        in srgb,
+        var(--background-color-box) 75%,
+        transparent
+      );
       height: 1rem !important;
       opacity: 1;
       top: 0;
@@ -19,35 +23,45 @@
       mask-image: none !important;
       color: var(--text-color-deemphasized);
     }
+
+    /* Disable the "Playing" subtitle */
+    .tab-secondary-label {
+      display: none !important;
+    }
+
+    /* Accent the text when tab is selected */
     &[selected] {
       .tab-label-container {
-        color: initial!important;
+        color: initial !important;
       }
     }
-  
+
+    /* 1 character */
     @media (-moz-bool-pref: "uc.theme.comptitle-one-char-title.enabled") {
       .tab-label-container {
         --comptitle-width: 1ch;
       }
     }
 
-@media (-moz-bool-pref: "uc.theme.comptitle-three-char-title.enabled") {
+    /* 3 characters */
+    @media (-moz-bool-pref: "uc.theme.comptitle-three-char-title.enabled") {
       .tab-label-container {
         --comptitle-width: 3ch;
       }
     }
 
-@media (-moz-bool-pref: "uc.theme.comptitle-enable-pinned.enabled") {
+    /* Enable on pinned tabs */
+    @media (-moz-bool-pref: "uc.theme.comptitle-enable-pinned.enabled") {
       .tab-label-container {
-        width: var(--comptitle-width)!important;
+        width: var(--comptitle-width) !important;
       }
     }
 
-@media (-moz-bool-pref: "uc.theme.comptitle-default-text.enabled") {
+    /* Use active text color for all tabs */
+    @media (-moz-bool-pref: "uc.theme.comptitle-default-text.enabled") {
       .tab-label-container {
-        color: initial!important;
+        color: initial !important;
       }
     }
-    
   }
 }
