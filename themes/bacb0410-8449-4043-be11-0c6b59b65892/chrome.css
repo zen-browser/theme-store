@@ -1,0 +1,14 @@
+
+/*foldes*/
+#PlacesToolbarItems .bookmark-item[container] > .toolbarbutton-icon {
+  list-style-image: url("folder.ico") !important;
+}
+
+/* subfolders */
+#PlacesToolbarItems .bookmark-item[container] .bookmark-item[container] {
+  list-style-image: url("folder.ico") !important;
+}
+
+#PlacesChevron .bookmark-item[container] .menu-iconic-icon {
+  list-style-image: url("folder.ico") !important;
+}
