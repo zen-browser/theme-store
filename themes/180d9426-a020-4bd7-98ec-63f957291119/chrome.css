@@ -1,0 +1,32 @@
+
+.titlebar-buttonbox {
+  padding: 9px !important;
+}
+
+.titlebar-button:hover {
+  background-color: var(--button-hover-bgcolor) !important;
+}
+
+.titlebar-min {
+  padding-left: 10px !important;
+  padding-right: 10px !important;
+  border-radius: var(--uc-contextmenu-menuitem-border-radius) !important;
+}
+
+.titlebar-max {
+  padding-left: 10px !important;
+  padding-right: 10px !important;
+  margin-left: 5px !important;
+  margin-right: 5px !important;
+  border-radius: var(--uc-contextmenu-menuitem-border-radius) !important;
+}
+
+.titlebar-close {
+  padding-left: 10px !important;
+  padding-right: 10px !important;
+  border-radius: var(--uc-contextmenu-menuitem-border-radius) !important;
+}
+
+.titlebar-close:hover {
+  background-color: var(--buttons-destructive-hover-bgcolor) !important;
+}
