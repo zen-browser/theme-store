@@ -1,7 +1,7 @@
 #zen-appcontent-navbar-container {
   --urlbar-height: unset;
   transition: 0.2s ease-in-out;
-  transform: translateY(calc(-85% + var(--zen-element-separation)));
+  transform: translateY(calc(-93% + var(--zen-element-separation)));
   opacity: 0;
   position: absolute;
   width: 100%;
