@@ -1,1 +1,12 @@
-{"id": "c5f7fb68-cc75-4df0-8b02-dc9ee13aa773", "name": "Audio TabIcon Plus", "description": "Enhance audio/mute tab-icon", "homepage": "", "style": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/c5f7fb68-cc75-4df0-8b02-dc9ee13aa773/chrome.css", "readme": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/c5f7fb68-cc75-4df0-8b02-dc9ee13aa773/readme.md", "image": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/c5f7fb68-cc75-4df0-8b02-dc9ee13aa773/image.png", "author": "DaitiDay", "version": "1.0.0"}
+{
+    "id": "c5f7fb68-cc75-4df0-8b02-dc9ee13aa773",
+    "name": "Audio TabIcon Plus",
+    "description": "Enhance audio/mute tab-icon",
+    "homepage": "",
+    "style": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/c5f7fb68-cc75-4df0-8b02-dc9ee13aa773/chrome.css",
+    "readme": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/c5f7fb68-cc75-4df0-8b02-dc9ee13aa773/readme.md",
+    "image": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/c5f7fb68-cc75-4df0-8b02-dc9ee13aa773/image.png",
+    "author": "DaitiDay",
+    "preferences": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/c5f7fb68-cc75-4df0-8b02-dc9ee13aa773/preferences.json",
+    "version": "1.0.1"
+}

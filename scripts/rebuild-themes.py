@@ -46,6 +46,8 @@ def main():
             continue
         with open(theme_data_file, 'r') as f:
             theme_data = json.load(f)
+            with open(theme_data_file, 'w') as f:
+                json.dump(theme_data, f, indent=4) # format the json file
             with open(THEMES_DATA_FILE, 'r') as f:
                 themes_data = json.load(f)
                 theme_colors_file = os.path.join(theme_folder, 'colors.json')
@@ -58,7 +60,7 @@ def main():
                     theme_data['isColorTheme'] = True
                 themes_data[theme] = theme_data
                 with open(THEMES_DATA_FILE, 'w') as f:
-                    json.dump(themes_data, f, indent=4)
+                    json.dump(themes_data, f)
                     del themes_data
         print(f"Rebuilt theme: {theme}")
     print("Rebuilt all themes!")

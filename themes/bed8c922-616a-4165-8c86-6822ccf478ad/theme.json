@@ -1,0 +1,12 @@
+{
+    "id": "bed8c922-616a-4165-8c86-6822ccf478ad",
+    "name": "Erics Zen UI Tweak Box",
+    "description": "Various tweaks for the Zen Browser UI",
+    "homepage": "https://github.com/ericmackrodt/zen-themes",
+    "style": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/bed8c922-616a-4165-8c86-6822ccf478ad/chrome.css",
+    "readme": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/bed8c922-616a-4165-8c86-6822ccf478ad/readme.md",
+    "image": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/bed8c922-616a-4165-8c86-6822ccf478ad/image.png",
+    "author": "ericmackrodt",
+    "version": "1.0.0",
+    "preferences": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/bed8c922-616a-4165-8c86-6822ccf478ad/preferences.json"
+}
