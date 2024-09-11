@@ -9,6 +9,7 @@ This **Zen theme** elevates your experience with pinned tabs and the tab bar in 
 ## Optional Features (toggle in Zen's theme settings):
   - Taller pinned tabs
   - Smaller Margins between pinned tabs (5px or 10px)
+  - Box like corners for pinned tabs (less rounded corners)
   - Hide unloaded pinned tabs when tab bar is collapsed (Additional option: Show all pinned tabs on hover even with tab bar collapsed)
   - Color pop for pinned tabs (according to your accent color set in *Settings -> Look and Feel -> Theme Color*)
   - Make pinned tabs transparent
