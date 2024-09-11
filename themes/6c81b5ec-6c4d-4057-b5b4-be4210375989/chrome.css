@@ -1,4 +1,8 @@
-
+:root{
+ --uc-compacttopbar-glow-color : hsl(from var(--zen-colors-primary) h 34% 23%);
+ --uc-compacttopbar-outline-color: rgb(from var(--zen-colors-primary) r g b / 50%);
+}
+@media (-moz-bool-pref: "uc.compacttopbar.activate") {
 @media (-moz-bool-pref: "zen.view.compact") {
  #zen-appcontent-navbar-container {
    align-self: center !important;
@@ -7,16 +11,16 @@
  }
  @media (-moz-bool-pref: "uc.compacttopbar.float") {
   #zen-appcontent-navbar-container {
-   margin: 1vh !important;
+   margin: 1.5vh !important;
    border-radius: 10px 10px 10px 10px !important;
   }
  }
  @media (-moz-bool-pref: "uc.compacttopbar.glow") {
   #nav-bar {
-   box-shadow: rgb(38, 57, 77) 0px 0px 20px 10px;
+   box-shadow: var(--uc-compacttopbar-glow-color) 0px 0px 20px 10px;
    border-radius: 0px 0px 10px 10px !important;
   }
-  @media (-moz-bool-pref: "uc.topbar.float") {
+  @media (-moz-bool-pref: "uc.compacttopbar.float") {
    #nav-bar {
     border-radius: 10px 10px 10px 10px !important;
    }
@@ -24,29 +28,30 @@
  }
  @media (-moz-bool-pref: "uc.compacttopbar.outline") {
   #nav-bar {
-   border: 1px solid rgba(255, 255, 255, 0.4) !important;
+   border: 1px solid var(--uc-compacttopbar-outline-color) !important;
    border-top: 0px solid !important;
    border-radius: 0px 0px 10px 10px !important;
   }
   @media (-moz-bool-pref: "uc.compacttopbar.float") {
    #nav-bar {
-    border: 1px solid rgba(255, 255, 255, 0.4) !important;
+    border: 1px solid var(--uc-compacttopbar-outline-color) !important;
     border-radius: 10px 10px 10px 10px !important;
    }
   }
  }
  @media (-moz-bool-pref: "uc.compacttopbar.applyToTabBar") {
-  @media (-moz-bool-pref: "uc.topbar.glow") {
+  @media (-moz-bool-pref: "uc.compacttopbar.glow") {
    #titlebar {
-    box-shadow: rgb(38, 57, 77) 0px 0px 20px 10px;
+    box-shadow: var(--uc-compacttopbar-glow-color)  0px 0px 20px 10px !important;
     border-radius: 10px 10px 10px 10px !important;
    }
   }
   @media (-moz-bool-pref: "uc.compacttopbar.outline") {
    #titlebar {
-    border: 1px solid rgba(255, 255, 255, 0.4) !important;
+    border: 1px solid var(--uc-compacttopbar-outline-color) !important;
     border-radius: 10px 10px 10px 10px !important;
    }
   }
  }
+}
 }

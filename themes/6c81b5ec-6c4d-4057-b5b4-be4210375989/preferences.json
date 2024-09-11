@@ -1,6 +1,7 @@
 {
-    "uc.compacttopbar.float": "Makes the top bar float out from screen edge in compact mode",
-    "uc.compacttopbar.glow": "Makes the top bar have a glow around it for better visual seperation",
-    "uc.compacttopbar.outline": "Makes the top bar have a thin white outline around it for better visual seperation",
-    "uc.compacttopbar.applyToTabBar": "Apply glow and outline to Tab navigation side bar as well"
+ "uc.compacttopbar.activate":"Activate the theme (make sure compact mode is enabled)",
+ "uc.compacttopbar.float":"Makes the top bar float out from screen edge in compact mode",
+ "uc.compacttopbar.glow":"Makes the top bar have a glow (based on zen primary color) around it for better visual seperation",
+ "uc.compacttopbar.outline":"Makes the top bar have a thin outline (based on zen primary color) around it for better visual seperation",
+ "uc.compacttopbar.applyToTabBar":"Apply glow and outline to Tab navigation side bar as well"
 }
