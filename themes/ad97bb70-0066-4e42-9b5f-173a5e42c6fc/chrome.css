@@ -5,7 +5,6 @@
     /* background color of pinned tabs in a normal state (not hovered/selected) */
     .tabbrowser-tab[pinned] {
       background-color: light-dark(hsl(from var(--zen-primary-color) h 70% 92%), hsl(from var(--zen-primary-color) h 25% 15%)) !important;
-      border-radius: 8px !important;
     }
     /* background color when hovering */
     .tabbrowser-tab[pinned]:hover{
@@ -57,18 +56,6 @@
   }
 
   /* Increase width of pinned tabs */
-  @media (not (-moz-bool-pref: "uc.pins.wide.disabled")) and (-moz-bool-pref: "zen.view.sidebar-expanded") and (not (-moz-bool-pref: "zen.view.sidebar-expanded.on-hover")) { 
-    #vertical-pinned-tabs-container {
-      grid-template-columns: repeat(auto-fit, minmax(68px, auto)) !important;
-      gap: var(--pins-gap) var(--pins-gap) !important;
-    }
-    /* Make gap between new tabs button and pins consistent */
-    #vertical-tabs-newtab-button {
-      margin-top: 5px !important;
-    }
-  }
-
-  /* Increase width of pinned tabs when expand on hover toggled */
   @media (-moz-bool-pref: "zen.view.sidebar-expanded") and (not (-moz-bool-pref: "uc.pins.wide.disabled")) {  
     #navigator-toolbox:is(
       #navigator-toolbox[zen-user-hover="true"]:hover,
@@ -77,7 +64,7 @@
       #navigator-toolbox[zen-user-hover="true"]:has(*[open="true"]:not(tab):not(#zen-sidepanel-button)), 
       :not([zen-user-hover="true"])) {
         #vertical-pinned-tabs-container {
-          grid-template-columns: repeat(auto-fit, minmax(68px, auto)) !important;
+          grid-template-columns: repeat(auto-fit, minmax(60px, auto)) !important;
           gap: var(--pins-gap) var(--pins-gap) !important;
         }
         @media (-moz-bool-pref: "uc.pins.tall") {
@@ -87,8 +74,15 @@
         }
         /* Make gap between new tabs button and pins consistent */
         #vertical-tabs-newtab-button {
-          margin-top: 5px !important;
+          margin-top: calc(var(--pins-gap) / 2) !important;
         }
+    }
+  }
+  
+  /* Make pinned tabs look more box like */
+  @media (-moz-bool-pref: "uc.pins.box-like-corners") {
+    .tabbrowser-tab[pinned] {
+      border-radius: 5px !important;
     }
   }
   
