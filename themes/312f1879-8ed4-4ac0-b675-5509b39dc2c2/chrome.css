@@ -1,0 +1,8 @@
+
+#zen-sidebar-icons-wrapper::before{
+  width: 0% !important;
+}
+
+#newtab-button-container::before {
+  width: 0% !important;
+}
