@@ -2,6 +2,7 @@
     "uc.pins.wide.disabled": "Disables the layout changes made by SuperPins",
     "uc.pins.tall": "Increases the height of pinned tabs (Disabled when tab bar not expanded)",
     "uc.pins.margins.compact": "Decreases the gap between pinned tabs",
+    "uc.pins.box-like-corners": "Makes the pinned tabs look more box like (Less rounded edges)",
     "uc.pins.only-show-active": "Only shows loaded tabs when the tab bar is collapsed",
     "uc.pins.only-show-active.on-hover": "Only shows loaded tabs when the tab bar is collapsed, except when hovering over them (Only works with the above option enabled!)",
     "uc.pins.bg-color.pop": "Makes the colors of pinned tabs pop more",
