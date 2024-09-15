@@ -1,0 +1,10 @@
+
+#newtab-button-container {
+	order: 1;
+	margin-bottom: var(--space-small);
+	margin-top: -10px;
+}
+
+#tabbrowser-arrowscrollbox {
+	margin-bottom: 0px !important;
+}
