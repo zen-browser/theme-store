@@ -1,0 +1,13 @@
+
+#zen-appcontent-navbar-container {
+  padding: 20px;
+  border: none !important;
+  background: none !important;
+  box-sizing: border-box;
+}
+
+#nav-bar {
+  background: var(--zen-colors-tertiary) !important;
+  border-radius: 8px;
+  border: 1px solid var(--zen-colors-border) !important;
+}
