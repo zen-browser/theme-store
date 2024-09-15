@@ -1,0 +1,46 @@
+
+#zen-sidebar-splitter {
+    display: none !important;
+}
+
+#navigator-toolbox {
+    position: absolute !important;
+    top: -9999px;
+    left: -9999px;
+}
+
+html:has(#sidebar-box[hidden="true"]) #tabbrowser-tabpanels {
+    padding-left: var(--zen-element-separation) !important;
+    margin-left: -2px
+}
+
+#sidebar-box {
+    min-width: 34px !important;
+}
+
+#sidebar-splitter {
+    right: -8px;
+    z-index: 999 !important;
+    border: 2px solid transparent !important;
+}
+
+#history-panel,
+#bookmarksPanel {
+    background: transparent !important;
+}
+
+html {
+    --lwt-sidebar-background-color: transparent !important;
+}
+
+@media (-moz-bool-pref: "uc.theme.compact-tab-bar.enabled") {
+    #tabbrowser-tabpanels {
+        padding-left: 0px !important;
+    }
+}
+
+@media (-moz-bool-pref: "uc.theme.hide-sidebar-header.enabled") {
+    #sidebar-header {
+        display: none !important;
+    }
+}
