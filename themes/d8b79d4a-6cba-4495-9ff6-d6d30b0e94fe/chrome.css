@@ -1,12 +1,11 @@
-
-.tabbrowser-tab::after {
-  content:'';
-  position: absolute;
-  width: 3px !important;
-  height: 100% !important;
-  background-color: var(--zen-primary-color) !important;
+.tab-background {
+  position: relative;
 }
 
-.tabbrowser-tab:not([selected=true])::after{
-  height: 0% !important;
+.tab-background[selected='']::after {
+  content: '';
+  position: absolute;
+  width: 3px;
+  height: 100%;
+  background-color: var(--zen-primary-color);
 }
