@@ -13,7 +13,6 @@ This **Zen theme** elevates your experience with pinned tabs and the tab bar in 
   - Hide unloaded pinned tabs when tab bar is collapsed (Additional option: Show all pinned tabs on hover even with tab bar collapsed)
   - Color pop for pinned tabs (according to your accent color set in *Settings -> Look and Feel -> Theme Color*)
   - Make pinned tabs transparent
-  - Make the new tabs button transparent
   - Hide the separator line between pinned tabs and normal tabs
   - Remove the border of the workspace button
   - Move workspace button to the bottom of the tabbar
