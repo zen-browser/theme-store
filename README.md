@@ -16,6 +16,10 @@ To submit a theme, please follow these steps:
 * Submit the issue
 * Let us take care of the rest!
 
+## Important notice
+
+**All** themes in this repository are licensed under the [Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License](https://creativecommons.org/licenses/by-nc-sa/4.0/). By submitting a theme to this repository, you agree to this license. Themes can be copied, modified, and distributed for non-commercial purposes only. They may be changed without previous notice by the maintainers of this repository, in order to fix bugs, improve performance, or for any other reason.
+
 ## Updating a Theme
 
 To update a theme, please follow these steps:

@@ -4,7 +4,7 @@
     }
 
     z-index: 2;
-    position: fixed !important;
+    position: absolute !important;
     bottom: auto !important;
     top: 20vh !important;
     padding-left: 6px !important;
