@@ -1,5 +1,5 @@
 
-.tabbrowser-tab::after {
+.tabbrowser-tab .tab-background::after {
   content:'';
   position: absolute;
   width: 3px !important;
@@ -7,6 +7,6 @@
   background-color: var(--zen-primary-color) !important;
 }
 
-.tabbrowser-tab:not([selected=true])::after{
+.tabbrowser-tab .tab-background:not([selected=true])::after{
   height: 0% !important;
 }
