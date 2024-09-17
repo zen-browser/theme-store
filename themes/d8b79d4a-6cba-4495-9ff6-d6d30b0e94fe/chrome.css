@@ -7,6 +7,6 @@
   background-color: var(--zen-primary-color) !important;
 }
 
-.tabbrowser-tab .tab-background:not([selected=true])::after{
+.tabbrowser-tab .tab-background:not([selected])::after{
   height: 0% !important;
 }
