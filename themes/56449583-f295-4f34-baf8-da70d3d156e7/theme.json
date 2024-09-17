@@ -1,0 +1,11 @@
+{
+    "id": "56449583-f295-4f34-baf8-da70d3d156e7",
+    "name": "Solarized",
+    "description": "Solarized color pallete ported into Zen!",
+    "homepage": "https://github.com/mohvn/solarized-zenbrowser",
+    "style": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/56449583-f295-4f34-baf8-da70d3d156e7/chrome.css",
+    "readme": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/56449583-f295-4f34-baf8-da70d3d156e7/readme.md",
+    "image": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/56449583-f295-4f34-baf8-da70d3d156e7/image.png",
+    "author": "mohvn",
+    "version": "1.0.0"
+}
