@@ -7,7 +7,6 @@
     "uc.pins.only-show-active.on-hover": "Only shows loaded tabs when the tab bar is collapsed, except when hovering over them (Only works with the above option enabled!)",
     "uc.pins.bg-color.pop": "Makes the colors of pinned tabs pop more",
     "uc.pins.disable-bg-color": "Disables the background color of pinned tabs",
-    "uc.new-tab-button.transparent": "Makes the new tabs button transparent",
     "uc.separator-line.hide": "Hides the seperator line between pinned tabs and the first normal tab",
     "uc.workspace-button.remove-border": "Removes the border of the workspace button",
     "uc.workspace-button.move-to-bottom": "Moves the workspace button to the bottom of the tab bar",
