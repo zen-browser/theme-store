@@ -1,24 +1,35 @@
 /**
  * This Zen theme adds additional styling to the private browsing mode window such as a gradient on the toolbar,
- * a border around the browser page, and an icon in the URL bar. These are configurable in Zen's Theme Store settings.
+ * a border around the browser page, and an icon in the URL bar. These are configurable in the Zen Mods settings.
  *
  * The --pbmh prefix stands for Private Browsing Mode Highlighting.
  */
 
- :root {
+/*******************************************\
+ * Base variables.
+\*******************************************/
+
+:root {
   --pbmh-private-browsing-mode-base-color: #32064e;
+  --pbmh-private-browsing-mode-gradient-stop-color: rgb(from var(--pbmh-private-browsing-mode-color) r g b / 0%);
+  --pbmg-private-browsing-mode-gradient-stop-position: 50px;
+  --pbmg-private-browsing-mode-border-size: 2px;
 }
 
-@media (-moz-bool-pref: "uc.private-browsing-top-bar.use-zen-theme-color") { :root { --pbmh-private-browsing-mode-base-color: oklch(from var(--zen-primary-color) calc(l - 0.5) c h); } }
 
-@media (-moz-bool-pref: "uc.private-browsing-top-bar.color-blue") { :root { --pbmh-private-browsing-mode-base-color: oklch(from #aac7ff calc(l - 0.5) c h); } }
-@media (-moz-bool-pref: "uc.private-browsing-top-bar.color-teal") { :root { --pbmh-private-browsing-mode-base-color: oklch(from #74d7cb calc(l - 0.5) c h); } }
-@media (-moz-bool-pref: "uc.private-browsing-top-bar.color-green") { :root { --pbmh-private-browsing-mode-base-color: oklch(from #a0d490 calc(l - 0.5) c h); } }
-@media (-moz-bool-pref: "uc.private-browsing-top-bar.color-yellow") { :root { --pbmh-private-browsing-mode-base-color: oklch(from #dec663 calc(l - 0.5) c h); } }
-@media (-moz-bool-pref: "uc.private-browsing-top-bar.color-orange") { :root { --pbmh-private-browsing-mode-base-color: oklch(from #ffb787 calc(l - 0.5) c h); } }
-@media (-moz-bool-pref: "uc.private-browsing-top-bar.color-brown") { :root { --pbmh-private-browsing-mode-base-color: oklch(from #dec1b1 calc(l - 0.5) c h); } }
-@media (-moz-bool-pref: "uc.private-browsing-top-bar.color-red") { :root { --pbmh-private-browsing-mode-base-color: oklch(from #ffb1c0 calc(l - 0.5) c h); } }
-@media (-moz-bool-pref: "uc.private-browsing-top-bar.color-pink") { :root { --pbmh-private-browsing-mode-base-color: oklch(from #f6b0ea calc(l - 0.5) c h); } }
+/*******************************************\
+ * Topbar highlighting.
+\*******************************************/
+
+:root:has(#theme-Private-Mode-Highlighting[uc-private-browsing-top-bar-color="match-zen"]) { --pbmh-private-browsing-mode-base-color: oklch(from var(--zen-primary-color) calc(l - 0.5) c h); }
+:root:has(#theme-Private-Mode-Highlighting[uc-private-browsing-top-bar-color="blue"]) { --pbmh-private-browsing-mode-base-color: oklch(from #aac7ff calc(l - 0.5) c h); }
+:root:has(#theme-Private-Mode-Highlighting[uc-private-browsing-top-bar-color="teal"]) { --pbmh-private-browsing-mode-base-color: oklch(from #74d7cb calc(l - 0.5) c h); }
+:root:has(#theme-Private-Mode-Highlighting[uc-private-browsing-top-bar-color="green"]) { --pbmh-private-browsing-mode-base-color: oklch(from #a0d490 calc(l - 0.5) c h); }
+:root:has(#theme-Private-Mode-Highlighting[uc-private-browsing-top-bar-color="yellow"]) { --pbmh-private-browsing-mode-base-color: oklch(from #dec663 calc(l - 0.5) c h); }
+:root:has(#theme-Private-Mode-Highlighting[uc-private-browsing-top-bar-color="orange"]) { --pbmh-private-browsing-mode-base-color: oklch(from #ffb787 calc(l - 0.5) c h); }
+:root:has(#theme-Private-Mode-Highlighting[uc-private-browsing-top-bar-color="brown"]) { --pbmh-private-browsing-mode-base-color: oklch(from #dec1b1 calc(l - 0.5) c h); }
+:root:has(#theme-Private-Mode-Highlighting[uc-private-browsing-top-bar-color="red"]) { --pbmh-private-browsing-mode-base-color: oklch(from #ffb1c0 calc(l - 0.5) c h); }
+:root:has(#theme-Private-Mode-Highlighting[uc-private-browsing-top-bar-color="pink"]) { --pbmh-private-browsing-mode-base-color: oklch(from #f6b0ea calc(l - 0.5) c h); }
 
 :root {
   --pbmh-private-browsing-mode-color: var(--pbmh-private-browsing-mode-base-color);
@@ -30,26 +41,38 @@
   }
 }
 
-@media not (-moz-bool-pref: "uc.private-browsing-top-bar.no-bg") {
-  [privatebrowsingmode] #nav-bar {
-    background-image: linear-gradient(to bottom, var(--pbmh-private-browsing-mode-color), rgb(from var(--pbmh-private-browsing-mode-color) r g b / 0%) 98%) !important;
-  }
+:root:has(#theme-Private-Mode-Highlighting[uc-private-browsing-top-bar-highlighting-style="solid"]) {
+  --pbmh-private-browsing-mode-gradient-stop-color: var(--pbmh-private-browsing-mode-color);
+}
 
-  @media (-moz-bool-pref: "uc.private-browsing-top-bar.solid-bg") {
-    [privatebrowsingmode] #nav-bar {
-      background-image: none !important;
-      background-color: var(--pbmh-private-browsing-mode-color) !important;
-    }
+:root:has(#theme-Private-Mode-Highlighting[uc-private-browsing-top-bar-highlighting-style]:not([uc-private-browsing-top-bar-highlighting-style="nonestyle"])) {
+  &[privatebrowsingmode] #browser {
+    background-image: linear-gradient(
+      to bottom,
+      var(--pbmh-private-browsing-mode-color), 
+      var(--pbmh-private-browsing-mode-gradient-stop-color) var(--pbmg-private-browsing-mode-gradient-stop-position),
+      transparent calc(var(--pbmg-private-browsing-mode-gradient-stop-position) + 1px)
+    ) !important;
   }
 }
 
-@media not (-moz-bool-pref: "uc.private-browsing-top-bar.no-border") {
-  :root[privatebrowsingmode]:not([inDOMFullscreen="true"]):not([chromehidden~="location"]):not([chromehidden~="toolbar"]) {
-    & #tabbrowser-tabbox #tabbrowser-tabpanels .browserSidebarContainer {
-      box-shadow: 0 0 0 2px var(--pbmh-private-browsing-mode-border) !important;
-    }
+/*******************************************\
+ * Viewport border styling.
+\*******************************************/
+
+:root:has(#theme-Private-Mode-Highlighting[uc-private-browsing-top-bar-border-style="thin"]) {
+  --pbmg-private-browsing-mode-border-size: 1px;
+}
+
+:root[privatebrowsingmode]:not([inDOMFullscreen="true"]):not([chromehidden~="location"]):not([chromehidden~="toolbar"]):has(#theme-Private-Mode-Highlighting[uc-private-browsing-top-bar-border-style]:not([uc-private-browsing-top-bar-border-style="nonestyle"])) {
+  & #tabbrowser-tabbox #tabbrowser-tabpanels .browserSidebarContainer {
+    box-shadow: 0 0 0 var(--pbmg-private-browsing-mode-border-size) var(--pbmh-private-browsing-mode-border) !important;
   }
 }
+
+/*******************************************\
+ * Private Browsing Mode Icon styling.
+\*******************************************/
 
 @media not (-moz-bool-pref: "uc.private-browsing-top-bar.hide-icon") {
   [privatebrowsingmode] #stop-reload-button {
@@ -59,9 +82,9 @@
   [privatebrowsingmode] #stop-reload-button::after {
     content: "";
     position: absolute;
-    left: 100%;
-    top: 0.5rem;
-    bottom: 0.5rem;
+    left: calc(100% + 0.5em);
+    top: 1em;
+    bottom: 1em;
     aspect-ratio: 1;
     width: auto;
     height: auto;

@@ -1,15 +1,92 @@
-{
-    "uc.private-browsing-top-bar.solid-bg": "Replaces the gradient on the toolbar with a solid color.", 
-    "uc.private-browsing-top-bar.no-bg": "Removes the background color on the toolbar entirely.", 
-    "uc.private-browsing-top-bar.no-border": "Removes the colored border that surrounds the page.",
-    "uc.private-browsing-top-bar.use-zen-theme-color": "Use the Zen theme color as the highlight color.",
-    "uc.private-browsing-top-bar.color-blue": "Use a blue color as the highlight color. Overrides any ticked colors above this setting.",
-    "uc.private-browsing-top-bar.color-teal": "Use a teal color as the highlight color. Overrides any ticked colors above this setting.",
-    "uc.private-browsing-top-bar.color-green": "Use a green color as the highlight color. Overrides any ticked colors above this setting.",
-    "uc.private-browsing-top-bar.color-yellow": "Use a yellow color as the highlight color. Overrides any ticked colors above this setting.",
-    "uc.private-browsing-top-bar.color-orange": "Use a orange color as the highlight color. Overrides any ticked colors above this setting.",
-    "uc.private-browsing-top-bar.color-brown": "Use a brown color as the highlight color. Overrides any ticked colors above this setting.",
-    "uc.private-browsing-top-bar.color-red": "Use a red color as the highlight color. Overrides any ticked colors above this setting.",
-    "uc.private-browsing-top-bar.color-pink": "Use a pink color as the highlight color. Overrides any ticked colors above this setting.",
-    "uc.private-browsing-top-bar.hide-icon": "Hides the private browsing icon."
-}
+[
+    {
+        "property": "uc.private-browsing-top-bar.highlighting-style",
+        "label": "Highlighting Style:",
+        "type": "dropdown",
+        "options": [
+            {
+                "label": "Gradient",
+                "value": "gradient"
+            },
+            {
+                "label": "Solid",
+                "value": "solid"
+            },
+            {
+                "label": "None",
+                "value": "nonestyle"
+            }
+        ]
+    },
+    {
+        "property": "uc.private-browsing-top-bar.border-style",
+        "label": "Border Thickness:",
+        "type": "dropdown",
+        "options": [
+            {
+                "label": "Default",
+                "value": "default"
+            },
+            {
+                "label": "Thin",
+                "value": "thin"
+            },
+            {
+                "label": "None",
+                "value": "nonestyle"
+            }
+        ]
+    },
+    {
+        "property": "uc.private-browsing-top-bar.color",
+        "label": "Highlighting Base Color:",
+        "type": "dropdown",
+        "options": [
+            {
+                "label": "Default Purple",
+                "value": "default"
+            },
+            {
+                "label": "Match Zen Theme Color",
+                "value": "match-zen"
+            },
+            {
+                "label": "Blue",
+                "value": "blue"
+            },
+            {
+                "label": "Teal",
+                "value": "teal"
+            },
+            {
+                "label": "Green",
+                "value": "green"
+            },
+            {
+                "label": "Yellow",
+                "value": "yellow"
+            },
+            {
+                "label": "Orange",
+                "value": "orange"
+            },
+            {
+                "label": "Brown",
+                "value": "brown"
+            },
+            {
+                "label": "Red",
+                "value": "red"
+            },
+            {
+                "label": "Pink",
+                "value": "pink"
+            }
+        ]
+    },
+    {
+        "property": "uc.private-browsing-top-bar.hide-icon",
+        "label": "Hide the private browsing icon.",
+        "type": "checkbox"
+    }
+]
