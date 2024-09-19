@@ -1,0 +1,9 @@
+
+/* Hides the toolbarbutton element for restore and minimize */
+toolbarbutton.titlebar-button.titlebar-restore {
+  display: none;
+}
+
+toolbarbutton.titlebar-button.titlebar-max {
+  display: none;
+}
