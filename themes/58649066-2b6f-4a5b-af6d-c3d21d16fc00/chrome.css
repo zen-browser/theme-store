@@ -45,7 +45,7 @@
   --pbmh-private-browsing-mode-gradient-stop-color: var(--pbmh-private-browsing-mode-color);
 }
 
-:root:has(#theme-Private-Mode-Highlighting[uc-private-browsing-top-bar-highlighting-style]:not([uc-private-browsing-top-bar-highlighting-style="nonestyle"])) {
+:root:has(#theme-Private-Mode-Highlighting[uc-private-browsing-top-bar-highlighting-style]:not([uc-private-browsing-top-bar-highlighting-style="none"])) {
   &[privatebrowsingmode] #browser {
     background-image: linear-gradient(
       to bottom,
@@ -64,7 +64,7 @@
   --pbmg-private-browsing-mode-border-size: 1px;
 }
 
-:root[privatebrowsingmode]:not([inDOMFullscreen="true"]):not([chromehidden~="location"]):not([chromehidden~="toolbar"]):has(#theme-Private-Mode-Highlighting[uc-private-browsing-top-bar-border-style]:not([uc-private-browsing-top-bar-border-style="nonestyle"])) {
+:root[privatebrowsingmode]:not([inDOMFullscreen="true"]):not([chromehidden~="location"]):not([chromehidden~="toolbar"]):has(#theme-Private-Mode-Highlighting[uc-private-browsing-top-bar-border-style]:not([uc-private-browsing-top-bar-border-style="none"])) {
   & #tabbrowser-tabbox #tabbrowser-tabpanels .browserSidebarContainer {
     box-shadow: 0 0 0 var(--pbmg-private-browsing-mode-border-size) var(--pbmh-private-browsing-mode-border) !important;
   }

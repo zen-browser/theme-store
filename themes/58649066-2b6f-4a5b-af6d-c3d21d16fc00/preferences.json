@@ -3,6 +3,7 @@
         "property": "uc.private-browsing-top-bar.highlighting-style",
         "label": "Highlighting Style:",
         "type": "dropdown",
+        "defaultValue": "gradient",
         "options": [
             {
                 "label": "Gradient",
@@ -11,10 +12,6 @@
             {
                 "label": "Solid",
                 "value": "solid"
-            },
-            {
-                "label": "None",
-                "value": "nonestyle"
             }
         ]
     },
@@ -22,6 +19,7 @@
         "property": "uc.private-browsing-top-bar.border-style",
         "label": "Border Thickness:",
         "type": "dropdown",
+        "defaultValue": "default",
         "options": [
             {
                 "label": "Default",
@@ -30,10 +28,6 @@
             {
                 "label": "Thin",
                 "value": "thin"
-            },
-            {
-                "label": "None",
-                "value": "nonestyle"
             }
         ]
     },
@@ -41,6 +35,7 @@
         "property": "uc.private-browsing-top-bar.color",
         "label": "Highlighting Base Color:",
         "type": "dropdown",
+        "defaultValue": "default",
         "options": [
             {
                 "label": "Default Purple",
