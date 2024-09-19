@@ -18,6 +18,6 @@ It also comes with the following settings:
 * Changes the purple highlight color to either match Zen's theme color, or a custom color of your choice.
 * Hide the private browsing icon.
 
-These settings can be found in Zen's browser settings, in the 'Theme Store' tab.
+These settings can be found in Zen's browser settings, in the 'Zen Mods' tab.
 
 Encountered an issue? Raise them [here](https://github.com/danm36/zen-browser-private-browsing-toolbar-highlighting/issues).
