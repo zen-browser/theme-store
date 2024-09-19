@@ -1,0 +1,5 @@
+{
+    "uc.floatingtoolbar.compact.enabled": "Enable compact toolbar, similar to Smaller Compact Mode by n7itro",
+    "uc.floatingtoolbar.increase.spacing": "Increase space around edge of browser window and toolbar / tab bar",
+    "uc.floatingtoolbar.merge.bookmarks": "Merge bookmark bar with toolbar (requires visible bookbark bar)"
+}
