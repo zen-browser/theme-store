@@ -1,11 +1,40 @@
-
 import os
+import re
 import argparse
 import json
 import uuid
 import sys
 import requests
 import urllib.parse
+from enum import StrEnum
+
+
+class PreferenceFields(StrEnum):
+    PROPERTY = "property"
+    LABEL = "label"
+    TYPE = "type"
+    OPTIONS = "options"
+    DEFAULT_VALUE = "defaultValue"
+    DISABLED_ON = "disabledOn"
+    PLACEHOLDER = "placeholder"
+
+
+class PreferenceTypes(StrEnum):
+    CHECKBOX = "checkbox"
+    DROPDOWN = "dropdown"
+    STRING = "string"
+
+    def valid_types(self) -> list[type]:
+        match self:
+            case self.CHECKBOX:
+                return [bool]
+
+            case self.DROPDOWN:
+                return [str, int, float]
+
+            case self.STRING:
+                return [str]
+
 
 STYLES_FILE = "chrome.css"
 COLORS_FILE = "colors.json"
@@ -17,120 +46,234 @@ TEMPLATE_STYLES_FILE = "./theme-styles.css"
 TEMPLATE_README_FILE = "./theme-readme.md"
 TEMPLATE_PREFERENCES_FILE = "./theme-preferences.json"
 
+VALID_OS = set(["linux", "macos", "windows"])
+PLACEHOLDER_TYPES = [PreferenceTypes.DROPDOWN, PreferenceTypes.STRING]
+REQUIRED_FIELDS = set(
+    [PreferenceFields.PROPERTY, PreferenceFields.LABEL, PreferenceFields.TYPE]
+)
+
+
+def panic(string: str, error=None):
+    print(string, file=sys.stderr)
+
+    if error:
+        print(error, file=sys.stderr)
+
+    exit(1)
+
+
 def create_theme_id():
     return str(uuid.uuid4())
+
 
 def get_static_asset(theme_id, asset):
     return f"https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/{theme_id}/{asset}"
 
+
 def get_styles(is_color_theme, theme_id):
-    with open(TEMPLATE_STYLES_FILE, 'r') as f:
+    with open(TEMPLATE_STYLES_FILE, "r") as f:
         content = f.read()
-        content = content[len("```css"):]
-        content = content[:-len("```")]
+        content = content[len("```css") :]
+        content = content[: -len("```")]
 
         # we actually have a JSON file here that needs to be generated
         if is_color_theme:
-            with open(f"themes/{theme_id}/{COLORS_FILE}", 'w') as f:
+            with open(f"themes/{theme_id}/{COLORS_FILE}", "w") as f:
                 json.dump(json.loads(content), f, indent=4)
             return "/* This is a color theme. */"
         return content
-    
+
+
 def get_readme():
-    with open(TEMPLATE_README_FILE, 'r') as f:
+    with open(TEMPLATE_README_FILE, "r") as f:
         content = f.read()
-        content = content[len("```markdown"):]
-        content = content[:-len("```")]
+        content = content[len("```markdown") :]
+        content = content[: -len("```")]
         return content
-    
+
+
 def validate_url(url, allow_empty=False):
     if allow_empty and len(url) == 0:
         return
     try:
         result = urllib.parse.urlparse(url)
-        if result.scheme != 'https':
-            print("URL must be HTTPS.", file=sys.stderr)
-            exit(1)
+        if result.scheme != "https":
+            panic("URL must be HTTPS.")
     except Exception as e:
-        print("URL is invalid.", file=sys.stderr)
-        print(e, file=sys.stderr)
+        panic("URL is invalid.", e)
+
+
+def get_enum_error(value, Enum: StrEnum):
+    return f"Field must be one of {', '.join(Enum._value2member_map_)} but received \"{value}\""
+
+
+def parse_field_to_enum(key: tuple[str, any]) -> tuple[PreferenceFields, any]:
+    try:
+        converted_key = re.sub(r"(?<!^)(?=[A-Z])", "_", key[0]).upper()
+        return (PreferenceFields[converted_key], key[1])
+    except:
+        panic(key[0], PreferenceFields)
         exit(1)
 
-    
+
+def parse_type(value: str) -> PreferenceTypes:
+    try:
+        converted_value = re.sub(r"(?<!^)(?=[A-Z])", "_", value).upper()
+        return PreferenceTypes[converted_value]
+    except:
+        panic(get_enum_error(value, PreferenceTypes))
+
+
+def check_value_type(value, arr_types: list[type]):
+    return type(value) in arr_types
+
+
+def is_value_in_enum(value, Enum: StrEnum) -> bool:
+    try:
+        Enum[value.upper()]
+
+        return True
+    except:
+        return False
+
+
+def is_empty_str(value: str) -> bool:
+    return not isinstance(value, str) or len(value) == 0
+
+
 def validate_preferences(preferences):
-    for key, value in preferences.items():
-        if not isinstance(key, str):
-            print("Preference key must be a string.", file=sys.stderr)
-            exit(1)
-        if not isinstance(value, str):
-            print("Preference description must be a string.", file=sys.stderr)
-            exit(1)
-        if len(key) == 0:
-            print("Preference key is required.", file=sys.stderr)
-            exit(1)
-        for char in key:
-            if not char.isalnum() and char != '.' and char != '-' and char != '_':
-                print("Preference key must only contain letters, numbers, periods, dashes, and underscores.", file=sys.stderr)
-                exit(1)
-        if len(value) == 0:
-            print("Preference description is required.", file=sys.stderr)
-            exit(1)
+    for entry in preferences:
+        properties = dict(
+            map(
+                lambda key: parse_field_to_enum(key),
+                entry.items(),
+            )
+        )
+
+        if not set(properties.keys()).issuperset(REQUIRED_FIELDS):
+            panic(f"Required fields ({", ".join(REQUIRED_FIELDS)}) are not in {entry}.")
+
+        current_type = parse_type(properties[PreferenceFields.TYPE])
+        valid_type_list = current_type.valid_types()
+        current_property = properties[PreferenceFields.PROPERTY]
+
+        for key, value in properties.items():
+            match key:
+                case PreferenceFields.PROPERTY:
+                    if is_empty_str(value) or re.search(r"[^A-z0-9\-_.]", value):
+                        panic(
+                            f"Property must only contain letters, numbers, periods, dashes, and underscores. Received {current_property}"
+                        )
+
+                case PreferenceFields.LABEL:
+                    if not isinstance(value, str) or len(value) == 0:
+                        panic(f"Label for {current_property} is required.")
+
+                case PreferenceFields.TYPE:
+                    if not isinstance(value, str) or len(value) == 0:
+                        panic(f"Type in {current_property} is required.")
+                    elif not is_value_in_enum(value, PreferenceTypes):
+                        panic(get_enum_error(value, PreferenceTypes))
+
+                case PreferenceFields.OPTIONS:
+                    if current_type != PreferenceTypes.DROPDOWN:
+                        panic("Dropdown type is required for property options")
+                    elif not isinstance(value, list) or len(value) == 0:
+                        panic(f"Options in {current_property} cannot be empty")
+                    else:
+                        for option in value:
+                            option_label = option.get("label")
+                            option_value = option.get("value")
+
+                            if is_empty_str(option_label):
+                                panic(
+                                    f"Label for option in {current_property} is required."
+                                )
+
+                            if not check_value_type(option_value, valid_type_list):
+                                panic(
+                                    f"Option {option_label} in {current_property} was expecting value of any type in {", ".join(map(lambda type: type.__name__, valid_type_list))}, but received {type(option_value).__name__}"
+                                )
+
+                case PreferenceFields.DEFAULT_VALUE:
+                    if not check_value_type(value, valid_type_list):
+                        panic(
+                            f"Field defaultValue in {current_property} was expecting value with any type in {", ".join(map(lambda type: type.__name__, valid_type_list))} but received {value}"
+                        )
+
+                case PreferenceFields.DISABLED_ON:
+                    if not isinstance(value, list):
+                        panic(
+                            f"Field disabledOn in {current_property} is expecting an array"
+                        )
+                    elif len(value) != 0 and not set(value).issuperset(VALID_OS):
+                        panic(
+                            f"Field disabledOn in {current_property} is expecting one or more of {", ".join(VALID_OS)} but received {", ".join(value)}"
+                        )
+
+                case PreferenceFields.PLACEHOLDER:
+                    if not current_type in PLACEHOLDER_TYPES:
+                        panic(
+                            f"Placeholder in {current_property} can only be used for types {", ".join(PLACEHOLDER_TYPES)}"
+                        )
+
+                case _:
+                    panic("This should be unreachable.")
+
     return preferences
 
+
 def get_preferences():
-    with open(TEMPLATE_PREFERENCES_FILE, 'r') as f:
+    with open(TEMPLATE_PREFERENCES_FILE, "r") as f:
         try:
             content = f.read()
             if content.strip() == "":
                 return {}
-            content = content[len("```json"):]
-            content = content[:-len("```")]
+            content = re.sub(r"```json\n*", "", content)
+            content = re.sub(r"\n*```\n*", "", content)
             return validate_preferences(json.loads(content))
         except json.JSONDecodeError as e:
-            print("Preferences file is invalid.", file=sys.stderr)
-            print(e, file=sys.stderr)
-            exit(1)
+            panic("Preferences file is invalid.", e)
+
 
 def validate_name(name):
     if len(name) == 0:
-        print("Name is required.", file=sys.stderr)
-        exit(1)
+        panic("Name is required.")
     if len(name) > 25:
-        print("Name must be less than 25 characters.", file=sys.stderr)
-        exit(1)
+        panic("Name must be less than 25 characters.")
     for char in name:
-        if not char.isalnum() and char != ' ':
-            print("Name must only contain letters, numbers, and spaces.", file=sys.stderr)
-            exit(1)
-  
+        if not char.isalnum() and char != " ":
+            panic("Name must only contain letters, numbers, and spaces.")
+
+
 def validate_description(description):
     if len(description) == 0:
-        print("Description is required.", file=sys.stderr)
-        exit(1)
+        panic("Description is required.")
     if len(description) > 120:
-        print("Description must be less than 100 characters.", file=sys.stderr)
-        exit(1)
+        panic("Description must be less than 100 characters.")
+
 
 def download_image(image_url, image_path):
-    response = requests.get(image_url, headers={'User-Agent': 'Epicture'})
+    response = requests.get(image_url, headers={"User-Agent": "Epicture"})
     if response.status_code != 200:
-        print("Image URL is invalid.", file=sys.stderr)
-        exit(1)
+        panic("Image URL is invalid.")
     # Check if the image is valid and a PNG
-    if response.headers['Content-Type'] != 'image/png':
-        print("Image must be a PNG.", file=sys.stderr)
-        exit(1)
-    with open(image_path, 'wb') as f:
+    if response.headers["Content-Type"] != "image/png":
+        panic("Image must be a PNG.")
+    with open(image_path, "wb") as f:
         f.write(response.content)
 
+
 def main():
-    parser = argparse.ArgumentParser(description='Submit a theme to the theme repo.')
-    parser.add_argument('--name', type=str, help='The theme to submit.')
-    parser.add_argument('--description', type=str, help='The description of the theme.')
-    parser.add_argument('--homepage', type=str, help='The homepage of the theme.')
-    parser.add_argument('--author', type=str, help='The author of the theme.')
-    parser.add_argument('--image', type=str, help='The image of the theme.')
-    parser.add_argument('--is-color-theme', type=str, help='Whether the theme is a color theme.')
+    parser = argparse.ArgumentParser(description="Submit a theme to the theme repo.")
+    parser.add_argument("--name", type=str, help="The theme to submit.")
+    parser.add_argument("--description", type=str, help="The description of the theme.")
+    parser.add_argument("--homepage", type=str, help="The homepage of the theme.")
+    parser.add_argument("--author", type=str, help="The author of the theme.")
+    parser.add_argument("--image", type=str, help="The image of the theme.")
+    parser.add_argument(
+        "--is-color-theme", type=str, help="Whether the theme is a color theme."
+    )
     args = parser.parse_args()
 
     name = args.name
@@ -148,46 +291,47 @@ def main():
 
     theme_id = create_theme_id()
 
-    print("""
+    print(
+        """
 Welcome to the Zen Browser Theme Store!
 
 Please review the information below before submitting your theme. Also... Why are you here?
-          
+
 This action is only for theme reviewers. If you are a theme developer, please use the theme store.
-Just joking, you can do whatever you want. You're the boss.  
-    """)
+Just joking, you can do whatever you want. You're the boss.
+    """
+    )
 
     theme = {
-        'id': theme_id,
-        'name': name,
-        'description': description,
-        'homepage': homepage,
-        'style': get_static_asset(theme_id, STYLES_FILE),
-        'readme': get_static_asset(theme_id, README_FILE),
-        'image': get_static_asset(theme_id, IMAGE_FILE),
-        'author': author,
-        'version': '1.0.0',
+        "id": theme_id,
+        "name": name,
+        "description": description,
+        "homepage": homepage,
+        "style": get_static_asset(theme_id, STYLES_FILE),
+        "readme": get_static_asset(theme_id, README_FILE),
+        "image": get_static_asset(theme_id, IMAGE_FILE),
+        "author": author,
+        "version": "1.0.0",
     }
 
     os.makedirs(f"themes/{theme_id}")
 
-    with open(f"themes/{theme_id}/{STYLES_FILE}", 'w') as f:
+    with open(f"themes/{theme_id}/{STYLES_FILE}", "w") as f:
         f.write(get_styles(is_color_theme, theme_id))
 
-    with open(f"themes/{theme_id}/{README_FILE}", 'w') as f:
+    with open(f"themes/{theme_id}/{README_FILE}", "w") as f:
         f.write(get_readme())
 
     if os.path.exists(TEMPLATE_PREFERENCES_FILE):
         if is_color_theme:
-            print("Color themes do not support preferences.", file=sys.stderr)
-            exit(1)
+            panic("Color themes do not support preferences.")
         prefs_file = f"themes/{theme_id}/{PREFERENCES_FILE}"
-        with open(prefs_file, 'w') as f:
+        with open(prefs_file, "w") as f:
             prefs = get_preferences()
             if len(prefs) > 0:
                 print("Detected preferences file. Please review the preferences below.")
                 print(prefs)
-                theme['preferences'] = get_static_asset(theme_id, PREFERENCES_FILE)
+                theme["preferences"] = get_static_asset(theme_id, PREFERENCES_FILE)
                 json.dump(prefs, f, indent=4)
             else:
                 print("No preferences detected.")
@@ -195,12 +339,13 @@ Just joking, you can do whatever you want. You're the boss.
 
     download_image(image, f"themes/{theme_id}/{IMAGE_FILE}")
 
-    with open(f"themes/{theme_id}/theme.json", 'w') as f:
+    with open(f"themes/{theme_id}/theme.json", "w") as f:
         json.dump(theme, f)
 
     print(f"Theme submitted with ID: {theme_id}")
     for key, value in theme.items():
         print(f"\t{key}: {value}")
 
-if __name__ == '__main__':
+
+if __name__ == "__main__":
     main()
