@@ -18,6 +18,10 @@ jobs:
         with:
           python-version: '3.x'
 
+      - name: Setup python modules
+        run: |
+          pip3 install requests
+
       - name: Setup Git
         run: |
           git config --global user.name "github-actions[bot]"
