@@ -1,4 +1,14 @@
-{
-    "uc.zen-sidebar.pin-at-right-side": "Pin the Zen Sidebar at the right side when pinned.",
-    "uc.zen-sidebar.float-at-right-side": "Float the Zen Sidebar at the right side when floating."
-}
+[
+    {
+        "property": "uc.zen-sidebar.pin-at-right-side",
+        "label": "Pin the Zen Sidebar at the right side when pinned.",
+        "type": "checkbox",
+        "disabledOn": []
+    },
+    {
+        "property": "uc.zen-sidebar.float-at-right-side",
+        "label": "Float the Zen Sidebar at the right side when floating.",
+        "type": "checkbox",
+        "disabledOn": []
+    }
+]

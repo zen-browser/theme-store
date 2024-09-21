@@ -1,11 +1,56 @@
-{
-    "uc.supergradient.preset1": "Northern Horizen: A blue-green'ish gradient",
-    "uc.supergradient.preset2": "Scarlet Dusk: A red-yellow'ish gradient",
-    "uc.supergradient.preset3": "Amethyst Claret: A blue/purple-red'ish gradient",
-    "uc.supergradient.preset4": "Olive Sunset: A green-red'ish gradient",
-    "uc.supergradient.preset5": "Midnight Majesty: A yellow-purple'ish gradient",
-    "uc.supergradient.brighten": "Brightens the colors of the gradient",
-    "uc.supergradient.desaturate": "Desaturates the colors of the gradient",
-    "uc.supergradient.use-accent-color": "Uses Zen's accent colors (e.g. on tabs, set in Zen's Look and Feel setting) instead of accent colors adjusted for the gradient",
-    "uc.supergradient.switch-colors": "Switches the colors orders in the gradient"
-}
+[
+    {
+        "property": "uc.supergradient.preset1",
+        "label": "Northern Horizen: A blue-green'ish gradient",
+        "type": "checkbox",
+        "disabledOn": []
+    },
+    {
+        "property": "uc.supergradient.preset2",
+        "label": "Scarlet Dusk: A red-yellow'ish gradient",
+        "type": "checkbox",
+        "disabledOn": []
+    },
+    {
+        "property": "uc.supergradient.preset3",
+        "label": "Amethyst Claret: A blue/purple-red'ish gradient",
+        "type": "checkbox",
+        "disabledOn": []
+    },
+    {
+        "property": "uc.supergradient.preset4",
+        "label": "Olive Sunset: A green-red'ish gradient",
+        "type": "checkbox",
+        "disabledOn": []
+    },
+    {
+        "property": "uc.supergradient.preset5",
+        "label": "Midnight Majesty: A yellow-purple'ish gradient",
+        "type": "checkbox",
+        "disabledOn": []
+    },
+    {
+        "property": "uc.supergradient.brighten",
+        "label": "Brightens the colors of the gradient",
+        "type": "checkbox",
+        "disabledOn": []
+    },
+    {
+        "property": "uc.supergradient.desaturate",
+        "label": "Desaturates the colors of the gradient",
+        "type": "checkbox",
+        "disabledOn": []
+    },
+    {
+        "property": "uc.supergradient.use-accent-color",
+        "label": "Uses Zen's accent colors (e.g. on tabs, set in Zen's Look and Feel setting) instead of accent colors adjusted for the gradient",
+        "type": "checkbox",
+        "disabledOn": []
+    },
+    {
+        "property": "uc.supergradient.switch-colors",
+        "label": "Switches the colors orders in the gradient",
+        "type": "checkbox",
+        "disabledOn": []
+    }
+]
