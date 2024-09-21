@@ -17,7 +17,7 @@ jobs:
         uses: actions/setup-python@v2
         with:
           python-version: '3.x'
-        
+
       - name: Setup python modules
         run: |
           pip3 install requests
@@ -39,19 +39,19 @@ jobs:
           echo "THEME_IS_COLOR_THEME=${{ contains(fromJson(steps.issue-parser.outputs.jsonString)['is-color-theme'], 'JSON Color Theme') }}" >> $GITHUB_ENV
 
       - name: Write styles to file
-        uses: "DamianReeves/write-file-action@master"
+        uses: 'DamianReeves/write-file-action@master'
         with:
           contents: ${{ fromJson(steps.issue-parser.outputs.jsonString)['styles'] }}
           path: theme-styles.css
 
       - name: Write readme to file
-        uses: "DamianReeves/write-file-action@master"
+        uses: 'DamianReeves/write-file-action@master'
         with:
           contents: ${{ fromJson(steps.issue-parser.outputs.jsonString)['readme'] }}
           path: theme-readme.md
 
       - name: Write preferences to file
-        uses: "DamianReeves/write-file-action@master"
+        uses: 'DamianReeves/write-file-action@master'
         if: fromJson(steps.issue-parser.outputs.jsonString)['preferences'] != ''
         with:
           contents: ${{ fromJson(steps.issue-parser.outputs.jsonString)['preferences'] }}
@@ -64,7 +64,7 @@ jobs:
 
       - name: Create theme content
         run: |
-          python3 scripts/submit-theme.py \
+          python3 scripts/submit_theme.py \
               --name "${{ env.THEME_NAME }}" \
               --description "${{ env.THEME_DESCRIPTION }}" \
               --author "${{ env.THEME_AUTHOR }}" \
@@ -77,7 +77,7 @@ jobs:
         run: |
           cat error.log
           echo "CREATION_OUTPUT=$(cat error.log)" >> $GITHUB_ENV
-      
+
       - name: Show error message
         if: failure()
         uses: peter-evans/close-issue@v3
@@ -97,9 +97,9 @@ jobs:
           add-paths: themes/
           labels: staged
           token: ${{ secrets.DEPLOY_KEY }}
-          commit-message: "Add theme: ${{ env.THEME_NAME }}"
+          commit-message: 'Add theme: ${{ env.THEME_NAME }}'
           delete-branch: true
-          title: "Add theme: ${{ env.THEME_NAME }}"
+          title: 'Add theme: ${{ env.THEME_NAME }}'
           body: |
             # Add theme: ${{ env.THEME_NAME }}
 
@@ -112,7 +112,7 @@ jobs:
             * **Author**: @${{ env.THEME_AUTHOR }}
           branch: create-theme-${{ github.event.issue.number }}
           base: main
-        
+
       - name: Close Issue
         uses: peter-evans/close-issue@v3
         with:

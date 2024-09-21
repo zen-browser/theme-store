@@ -150,7 +150,9 @@ def validate_preferences(preferences):
             )
         )
 
-        if not set(properties.keys()).issuperset(REQUIRED_FIELDS):
+        if not len(set(properties).intersection(REQUIRED_FIELDS)) == len(
+            REQUIRED_FIELDS
+        ):
             panic(f"Required fields ({", ".join(REQUIRED_FIELDS)}) are not in {entry}.")
 
         current_type = parse_type(properties[PreferenceFields.TYPE])
@@ -206,10 +208,12 @@ def validate_preferences(preferences):
                         panic(
                             f"Field disabledOn in {current_property} is expecting an array"
                         )
-                    elif len(value) != 0 and not set(value).issuperset(VALID_OS):
-                        panic(
-                            f"Field disabledOn in {current_property} is expecting one or more of {", ".join(VALID_OS)} but received {", ".join(value)}"
-                        )
+                    elif len(value) != 0:
+                        for possibleOs in value:
+                            if possibleOs not in VALID_OS:
+                                panic(
+                                    f"Field disabledOn in {current_property} is expecting one or more of {", ".join(VALID_OS)} but received {possibleOs}"
+                                )
 
                 case PreferenceFields.PLACEHOLDER:
                     if not current_type in PLACEHOLDER_TYPES:
@@ -223,6 +227,33 @@ def validate_preferences(preferences):
     return preferences
 
 
+def convert_legacy_preferences(preferences):
+    key_regex = re.compile(r"(!?)(?:(macos|windows|linux):)?([A-z0-9-_.]+)")
+    new_preferences = []
+    for key, label in preferences.items():
+        negated, osValue, property = key_regex.search(key).groups()
+
+        disabledOn = []
+
+        if negated == "!" and osValue:
+            disabledOn = [osValue]
+        elif osValue:
+            disabledOn = [i for i in VALID_OS if i != osValue]
+
+        new_preferences.append(
+            dict(
+                [
+                    ("property", property),
+                    ("label", label),
+                    ("type", "checkbox"),
+                    ("disabledOn", disabledOn),
+                ]
+            )
+        )
+
+    return new_preferences
+
+
 def get_preferences():
     with open(TEMPLATE_PREFERENCES_FILE, "r") as f:
         try:
@@ -231,7 +262,16 @@ def get_preferences():
                 return {}
             content = re.sub(r"```json\n*", "", content)
             content = re.sub(r"\n*```\n*", "", content)
-            return validate_preferences(json.loads(content))
+
+            if content.startswith("{") and content.endswith("}"):
+                print(
+                    "Warning: Detected legacy preferences syntax, converting them into new syntax"
+                )
+                content = convert_legacy_preferences(json.loads(content))
+            else:
+                content = json.loads(content)
+
+            return validate_preferences(content)
         except json.JSONDecodeError as e:
             panic("Preferences file is invalid.", e)
 
