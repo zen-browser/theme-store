@@ -98,7 +98,7 @@ def main():
                         preferences_data = convert_legacy_preferences(preferences_data)
 
                     with open(preferences_data_file, "w") as f:
-                        json.dump(preferences_data, f)
+                        json.dump(preferences_data, f, indent=4)
                         del preferences_data
 
         print(f"Rebuilt theme: {theme}")
