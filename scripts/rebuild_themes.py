@@ -91,14 +91,13 @@ def main():
                 with open(preferences_data_file, "r") as f:
                     preferences_data = json.load(f)
 
+                    print("preferences_data", preferences_data)
                     if isinstance(preferences_data, dict):
-                        print("is dict")
                         print(
                             "Legacy preferences found, performing transformation into new structure."
                         )
                         preferences_data = convert_legacy_preferences(preferences_data)
-                    else:
-                        print("is list")
+
                     print("preferences_data", preferences_data)
 
         print(f"Rebuilt theme: {theme}")
