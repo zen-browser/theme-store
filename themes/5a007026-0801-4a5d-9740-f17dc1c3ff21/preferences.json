@@ -1,1 +1,35 @@
-{"!macos:uc.hide-minimize": "Hide the minimize window button", "!macos:uc.hide-maximize": "Hide the maximize window button", "!macos:uc.hide-close": "Hide the close window button", "macos:uc.hide-window-buttons": "Hide the window buttons"}
+[
+    {
+        "property": "uc.hide-minimize",
+        "label": "Hide the minimize window button",
+        "type": "checkbox",
+        "disabledOn": [
+            "macos"
+        ]
+    },
+    {
+        "property": "uc.hide-maximize",
+        "label": "Hide the maximize window button",
+        "type": "checkbox",
+        "disabledOn": [
+            "macos"
+        ]
+    },
+    {
+        "property": "uc.hide-close",
+        "label": "Hide the close window button",
+        "type": "checkbox",
+        "disabledOn": [
+            "macos"
+        ]
+    },
+    {
+        "property": "uc.hide-window-buttons",
+        "label": "Hide the window buttons",
+        "type": "checkbox",
+        "disabledOn": [
+            "linux",
+            "windows"
+        ]
+    }
+]
