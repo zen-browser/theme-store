@@ -25,15 +25,18 @@ def get_color_css_variable(color):
 def write_colors(colors_file, output_file):
     with open(colors_file, "r") as f:
         colors = json.load(f)
+
         with open(output_file, "w") as f:
             f.write("/* This is an auto generated color theme. */\n")
             f.write(":root {\n")
+
             for color in colors:
                 if color == "isDarkMode":
                     continue
                 f.write(
                     f"    {get_color_css_variable(color)}: {colors[color]} !important;\n"
                 )
+
             f.write("}\n")
         return colors
 
@@ -43,29 +46,46 @@ def main():
         json.dump({}, f, indent=4)
     for theme in os.listdir(THEMES_FOLDER):
         theme_folder = os.path.join(THEMES_FOLDER, theme)
+
         if not os.path.isdir(theme_folder):
             continue
+
         theme_data_file = os.path.join(theme_folder, "theme.json")
+
         if not os.path.exists(theme_data_file):
             continue
+
         with open(theme_data_file, "r") as f:
             theme_data = json.load(f)
+            print("theme_data", theme_data)
+
             with open(theme_data_file, "w") as f:
                 json.dump(theme_data, f, indent=4)  # format the json file
+
             with open(THEMES_DATA_FILE, "r") as f:
                 themes_data = json.load(f)
                 theme_colors_file = os.path.join(theme_folder, "colors.json")
+
                 if os.path.exists(theme_colors_file):
                     print(f"  Found colors.json in theme: {theme}")
+
                     theme_colors_output = os.path.join(theme_folder, "chrome.css")
                     colors = write_colors(theme_colors_file, theme_colors_output)
+                    print("colors", colors)
+
                     if "isDarkMode" in colors:
                         theme_data["isDarkMode"] = colors["isDarkMode"]
+
                     theme_data["isColorTheme"] = True
+
+                print("colors", theme_data)
                 themes_data[theme] = theme_data
+                print("themes_data", themes_data)
+
                 with open(THEMES_DATA_FILE, "w") as f:
                     json.dump(themes_data, f)
                     del themes_data
+
         print(f"Rebuilt theme: {theme}")
     print("Rebuilt all themes!")
 
