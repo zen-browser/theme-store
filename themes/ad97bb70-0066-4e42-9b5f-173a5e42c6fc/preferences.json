@@ -48,24 +48,6 @@
         "disabledOn": []
     },
     {
-        "property": "uc.separator-line.hide",
-        "label": "Hides the seperator line between pinned tabs and the first normal tab",
-        "type": "checkbox",
-        "disabledOn": []
-    },
-    {
-        "property": "uc.workspace-button.remove-border",
-        "label": "Removes the border of the workspace button",
-        "type": "checkbox",
-        "disabledOn": []
-    },
-    {
-        "property": "uc.workspace-button.move-to-bottom",
-        "label": "Moves the workspace button to the bottom of the tab bar",
-        "type": "checkbox",
-        "disabledOn": []
-    },
-    {
         "property": "browser.sessionstore.restore_pinned_tabs_on_demand",
         "label": "Loads pinned tabs only when using them, instead of loading all of them on startup",
         "type": "checkbox",
