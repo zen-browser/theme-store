@@ -58,7 +58,7 @@
       :not([zen-user-hover="true"])) {
         #vertical-pinned-tabs-container {
           grid-template-columns: repeat(auto-fit, minmax(60px, auto)) !important;
-          gap: var(--pins-gap) var(--pins-gap) !important;
+          gap: var(--pins-gap) calc(var(--pins-gap) + 4px) !important;
         }
         @media (-moz-bool-pref: "uc.pins.tall") {
           .tabbrowser-tab[pinned] { 
@@ -66,33 +66,15 @@
           }
         }
     }
+    #vertical-pinned-tabs-container {
+      margin-bottom: var(--pins-gap) !important;
+    }
   }
   
   /* Make pinned tabs look more box like */
   @media (-moz-bool-pref: "uc.pins.box-like-corners") {
     .tabbrowser-tab[pinned] .tab-stack .tab-background{
       border-radius: 5px !important;
-    }
-  }
-  
-  /* Hides the separator line between pinned tabs and normal ones (when toggled) */
-  @media (-moz-bool-pref: "uc.separator-line.hide") {
-    #newtab-button-container::before {
-      width: 0 !important;
-    }
-  }
-  
-  /* Move workspace button to the bottom (when toggled) */
-  @media (-moz-bool-pref: "uc.workspace-button.move-to-bottom") {
-    #zen-workspaces-button {
-      order: 1;
-      margin-bottom: auto !important;
-    }
-    @media (-moz-bool-pref: "zen.view.sidebar-expanded") {
-      .tabbrowser-tab[pinned] {
-        margin-top: 0px !important;
-        margin-bottom: var(--pinned-tabs-gap) !important;
-      }
     }
   }
   
@@ -143,13 +125,6 @@
         position: absolute !important; /* Using position: absolute and visibility: hidden instead of display:none stops the icons of unloaded tabs from loading when sidebar expands */
         visibility: hidden !important;
       }
-    }
-  }
-  
-  /* Remove the border of the workspace button if enabled (when toggled) */
-  @media (-moz-bool-pref: "uc.workspace-button.remove-border") {
-    #zen-workspaces-button {
-      border: hidden !important;
     }
   }
 }
