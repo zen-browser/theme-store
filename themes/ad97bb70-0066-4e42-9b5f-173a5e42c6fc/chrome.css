@@ -3,35 +3,28 @@
   /* COLOR POP of pinned tabs (when toggled) */
   @media (-moz-bool-pref: "uc.pins.bg-color.pop") and (not (-moz-bool-pref: "uc.pins.disable-bg-color")) {
     /* background color of pinned tabs in a normal state (not hovered/selected) */
-    .tabbrowser-tab[pinned] {
+    .tabbrowser-tab[pinned] .tab-stack .tab-background {
       background-color: light-dark(hsl(from var(--zen-primary-color) h 70% 92%), hsl(from var(--zen-primary-color) h 25% 15%)) !important;
     }
     /* background color when hovering */
-    .tabbrowser-tab[pinned]:hover{
+    .tabbrowser-tab[pinned]:hover .tab-stack .tab-background{
       background-color: light-dark(hsl(from var(--zen-primary-color) h 70% 90%), hsl(from var(--zen-primary-color) h 25% 17%)) !important;
     }
     /* background color when selected */
-    .tabbrowser-tab[pinned][selected="true"],
-    .tabbrowser-tab[pinned][multiselected="true"] {
+    .tabbrowser-tab[pinned][selected="true"] .tab-stack .tab-background,
+    .tabbrowser-tab[pinned][multiselected="true"] .tab-stack .tab-background {
       background-color: light-dark(hsl(from var(--zen-primary-color) h 70% 85%), hsl(from var(--zen-primary-color) h 25% 28%)) !important;
     }
     /* background color when hovering and selected */
-    .tabbrowser-tab[pinned][selected="true"]:hover,
-    .tabbrowser-tab[pinned][multiselected="true"]:hover{
+    .tabbrowser-tab[pinned][selected="true"]:hover .tab-stack .tab-background,
+    .tabbrowser-tab[pinned][multiselected="true"]:hover .tab-stack .tab-background{
       background-color: light-dark(hsl(from var(--zen-primary-color) h 70% 83%), hsl(from var(--zen-primary-color) h 25% 30%)) !important;
     }
   }
     
   /* Makes pinned tabs transparent (when toggled) */
   @media (-moz-bool-pref: "uc.pins.disable-bg-color") {
-    .tabbrowser-tab[pinned]:not(:hover):not([selected="true"]) {
-      background-color: transparent !important;
-    }
-  }
-  
-  /* Make new tabs button transparent (when toggled) */
-  @media (-moz-bool-pref: "uc.new-tab-button.transparent") {
-    #vertical-tabs-newtab-button:not(:hover) {
+    .tabbrowser-tab[pinned]:not(:hover):not([selected="true"]) .tab-stack .tab-background {
       background-color: transparent !important;
     }
   }
@@ -46,12 +39,12 @@
   /* Set margin between pinned tabs (when toggled) */
   @media (-moz-bool-pref: "uc.pins.margins.compact") {
     :root {
-      --pins-gap: 5px;
+      --pins-gap: 1px;
     }
   }
   @media (not (-moz-bool-pref: "uc.pins.margins.compact")) {
     :root {
-      --pins-gap: 10px;
+      --pins-gap: 6px;
     }
   }
 
@@ -72,16 +65,12 @@
             min-height: 43px !important;
           }
         }
-        /* Make gap between new tabs button and pins consistent */
-        #vertical-tabs-newtab-button {
-          margin-top: calc(var(--pins-gap) / 2) !important;
-        }
     }
   }
   
   /* Make pinned tabs look more box like */
   @media (-moz-bool-pref: "uc.pins.box-like-corners") {
-    .tabbrowser-tab[pinned] {
+    .tabbrowser-tab[pinned] .tab-stack .tab-background{
       border-radius: 5px !important;
     }
   }

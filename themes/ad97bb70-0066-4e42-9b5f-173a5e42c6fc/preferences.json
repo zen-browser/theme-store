@@ -1,16 +1,80 @@
-{
-    "uc.pins.wide.disabled": "Disables the layout changes made by SuperPins",
-    "uc.pins.tall": "Increases the height of pinned tabs (Disabled when tab bar not expanded)",
-    "uc.pins.margins.compact": "Decreases the gap between pinned tabs",
-    "uc.pins.box-like-corners": "Makes the pinned tabs look more box like (Less rounded edges)",
-    "uc.pins.only-show-active": "Only shows loaded tabs when the tab bar is collapsed",
-    "uc.pins.only-show-active.on-hover": "Only shows loaded tabs when the tab bar is collapsed, except when hovering over them (Only works with the above option enabled!)",
-    "uc.pins.bg-color.pop": "Makes the colors of pinned tabs pop more",
-    "uc.pins.disable-bg-color": "Disables the background color of pinned tabs",
-    "uc.new-tab-button.transparent": "Makes the new tabs button transparent",
-    "uc.separator-line.hide": "Hides the seperator line between pinned tabs and the first normal tab",
-    "uc.workspace-button.remove-border": "Removes the border of the workspace button",
-    "uc.workspace-button.move-to-bottom": "Moves the workspace button to the bottom of the tab bar",
-    "browser.sessionstore.restore_pinned_tabs_on_demand": "Loads pinned tabs only when using them, instead of loading all of them on startup",
-    "zen.tabs.dim-pending": "Dims unloaded tabs"
-}
+[
+    {
+        "property": "uc.pins.wide.disabled",
+        "label": "Disables the layout changes made by SuperPins",
+        "type": "checkbox",
+        "disabledOn": []
+    },
+    {
+        "property": "uc.pins.tall",
+        "label": "Increases the height of pinned tabs (Disabled when tab bar not expanded)",
+        "type": "checkbox",
+        "disabledOn": []
+    },
+    {
+        "property": "uc.pins.margins.compact",
+        "label": "Decreases the gap between pinned tabs",
+        "type": "checkbox",
+        "disabledOn": []
+    },
+    {
+        "property": "uc.pins.box-like-corners",
+        "label": "Makes the pinned tabs look more box like (Less rounded edges)",
+        "type": "checkbox",
+        "disabledOn": []
+    },
+    {
+        "property": "uc.pins.only-show-active",
+        "label": "Only shows loaded tabs when the tab bar is collapsed",
+        "type": "checkbox",
+        "disabledOn": []
+    },
+    {
+        "property": "uc.pins.only-show-active.on-hover",
+        "label": "Only shows loaded tabs when the tab bar is collapsed, except when hovering over them (Only works with the above option enabled!)",
+        "type": "checkbox",
+        "disabledOn": []
+    },
+    {
+        "property": "uc.pins.bg-color.pop",
+        "label": "Makes the colors of pinned tabs pop more",
+        "type": "checkbox",
+        "disabledOn": []
+    },
+    {
+        "property": "uc.pins.disable-bg-color",
+        "label": "Disables the background color of pinned tabs",
+        "type": "checkbox",
+        "disabledOn": []
+    },
+    {
+        "property": "uc.separator-line.hide",
+        "label": "Hides the seperator line between pinned tabs and the first normal tab",
+        "type": "checkbox",
+        "disabledOn": []
+    },
+    {
+        "property": "uc.workspace-button.remove-border",
+        "label": "Removes the border of the workspace button",
+        "type": "checkbox",
+        "disabledOn": []
+    },
+    {
+        "property": "uc.workspace-button.move-to-bottom",
+        "label": "Moves the workspace button to the bottom of the tab bar",
+        "type": "checkbox",
+        "disabledOn": []
+    },
+    {
+        "property": "browser.sessionstore.restore_pinned_tabs_on_demand",
+        "label": "Loads pinned tabs only when using them, instead of loading all of them on startup",
+        "type": "checkbox",
+        "disabledOn": []
+    },
+    {
+        "property": "zen.tabs.dim-pending",
+        "label": "Dims unloaded tabs",
+        "type": "checkbox",
+        "disabledOn": []
+    }
+]

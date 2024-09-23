@@ -1,1 +1,11 @@
-{"id": "e4faf306-61b1-4785-8678-7bdee9dc2564", "name": "Tokyo Night Moon", "description": "A dark theme inspired by folke's Tokyo Night Moon color palette", "homepage": "https://github.com/ZweTyy/Tokyo-Night-Moon-Theme-Zen-browser", "style": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/e4faf306-61b1-4785-8678-7bdee9dc2564/chrome.css", "readme": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/e4faf306-61b1-4785-8678-7bdee9dc2564/readme.md", "image": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/e4faf306-61b1-4785-8678-7bdee9dc2564/image.png", "author": "ZweTyy", "version": "1.0.0"}
+{
+    "id": "e4faf306-61b1-4785-8678-7bdee9dc2564",
+    "name": "Tokyo Night Moon",
+    "description": "A dark theme inspired by folke's Tokyo Night Moon color palette",
+    "homepage": "https://github.com/ZweTyy/Tokyo-Night-Moon-Theme-Zen-browser",
+    "style": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/e4faf306-61b1-4785-8678-7bdee9dc2564/chrome.css",
+    "readme": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/e4faf306-61b1-4785-8678-7bdee9dc2564/readme.md",
+    "image": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/e4faf306-61b1-4785-8678-7bdee9dc2564/image.png",
+    "author": "ZweTyy",
+    "version": "1.0.1"
+}
