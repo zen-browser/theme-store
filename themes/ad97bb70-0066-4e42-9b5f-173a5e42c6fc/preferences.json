@@ -25,15 +25,20 @@
     },
     {
         "property": "uc.pins.only-show-active",
-        "label": "Only shows loaded tabs when the tab bar is collapsed",
-        "type": "checkbox",
-        "disabledOn": []
-    },
-    {
-        "property": "uc.pins.only-show-active.on-hover",
-        "label": "Only shows loaded tabs when the tab bar is collapsed, except when hovering over them (Only works with the above option enabled!)",
-        "type": "checkbox",
-        "disabledOn": []
+        "label": "Only shows loaded pinned tabs (when the tab bar is collapsed)",
+        "type": "dropdown",
+        "disabledOn": [],
+        "options": 
+        [
+            {
+                "label": "Normal",
+                "value": "Normal"
+            },
+            {
+                "label": "Also show them on hover",
+                "value": "OnHover"
+            }
+        ]
     },
     {
         "property": "uc.pins.bg-color.pop",
