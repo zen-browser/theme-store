@@ -79,13 +79,21 @@
   }
   
   /* Hides unloaded tabs when tab bar is collapsed (when toggled)*/
-  @media (-moz-bool-pref: "uc.pins.only-show-active") and (not (-moz-bool-pref: "zen.view.sidebar-expanded")) {
-    .tabbrowser-tab[pinned][pending="true"] {
-      position: absolute !important; /* Using position: absolute and visibility: hidden instead of display:none stops the icons of unloaded tabs from loading when sidebar expands */
-      visibility: hidden !important;
+  @media (not (-moz-bool-pref: "zen.view.sidebar-expanded")) {
+    :root:has(#theme-SuperPins[uc-pins-only-show-active="Normal"]) {
+      .tabbrowser-tab[pinned][pending="true"] {
+        position: absolute !important; /* Using position: absolute and visibility: hidden instead of display:none stops the icons of unloaded tabs from loading when sidebar expands */
+        visibility: hidden !important;
+      }
     }
+
     /* Shows all pins when user is hovering over them when tab bar is collapsed */
-    @media (-moz-bool-pref: "uc.pins.only-show-active.on-hover") {
+    :root:has(#theme-SuperPins[uc-pins-only-show-active="OnHover"]) {
+      .tabbrowser-tab[pinned][pending="true"] {
+        position: absolute !important; /* Using position: absolute and visibility: hidden instead of display:none stops the icons of unloaded tabs from loading when sidebar expands */
+        visibility: hidden !important;
+      }
+
       #vertical-pinned-tabs-container:hover .tabbrowser-tab[pinned][pending="true"] {
         position: relative !important;
         visibility: visible !important;
