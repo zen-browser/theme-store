@@ -75,16 +75,16 @@
 \*******************************************/
 
 @media not (-moz-bool-pref: "uc.private-browsing-top-bar.hide-icon") {
-  [privatebrowsingmode] #stop-reload-button {
+  [privatebrowsingmode] #zen-profile-button {
     position: relative;
   }
 
-  [privatebrowsingmode] #stop-reload-button::after {
+  [privatebrowsingmode] #zen-profile-button::after {
     content: "";
     position: absolute;
-    left: calc(100% + 0.5em);
-    top: 1em;
-    bottom: 1em;
+    left: calc(100% + 1em);
+    top: 25%;
+    bottom: 25%;
     aspect-ratio: 1;
     width: auto;
     height: auto;
@@ -95,20 +95,5 @@
     background-position: center center;
     background-size: 65%;
     pointer-events: none;
-  }
-
-  /*
-   * Prevents the spring from collapsing too far and causing the URL bar to overlap the icon 
-   */
-  [privatebrowsingmode] toolbarspring:has(+ #urlbar-container) {
-    min-width: 40px !important;
-  }
-
-  /* 
-   *If the spring has been remvoed (e.g., the browser width is too small), 
-   *then add a margin to the URL bar to prevent it from overlapping the icon
-   */
-  [privatebrowsingmode] #stop-reload-button+#urlbar-container {
-    margin-inline-start: 40px !important;
   }
 }
