@@ -242,22 +242,39 @@
     }
   }
 }
+
 /* Makes the Film Grain Effect work in compact mode as well */
 @media (-moz-bool-pref: "zen.view.compact") {
+
+  #TabsToolbar::after {
+    content: "";
+    position: absolute;
+  
+    width: 100%;
+    height: 100%;
+  
+    top: 0px;
+    left: 0px;
+          
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    z-index: -2;
+  }
+  
   @media (prefers-color-scheme: dark) {
     /* Textures: 3%, 5% and 8% Opacity and white on black */
     :root:has(#theme-SuperGradient[theme-supergradient-film-grain-intensity="Subtle"]) {
-      #TabsToolbar, #nav-bar {
+      #TabsToolbar::after, #nav-bar {
         background-image: url("https://raw.githubusercontent.com/JLBlk/Zen-Themes/refs/heads/main/SuperGradient/Film-Grain%20Textures/dark-subtle.png") !important;
       }
     }
     :root:has(#theme-SuperGradient[theme-supergradient-film-grain-intensity="Normal"]) {
-      #TabsToolbar, #nav-bar {
+      #TabsToolbar::after, #nav-bar {
         background-image: url("https://raw.githubusercontent.com/JLBlk/Zen-Themes/refs/heads/main/SuperGradient/Film-Grain%20Textures/dark-normal.png") !important;
       }
     }
     :root:has(#theme-SuperGradient[theme-supergradient-film-grain-intensity="Intense"]) {
-       #TabsToolbar, #nav-bar {
+       #TabsToolbar::after, #nav-bar {
         background-image: url("https://raw.githubusercontent.com/JLBlk/Zen-Themes/refs/heads/main/SuperGradient/Film-Grain%20Textures/dark-intense.png") !important;
       }
     }
@@ -265,26 +282,19 @@
   @media (prefers-color-scheme: light) {
     /* 3%, 6% and 9% Opacity and black on white*/
      :root:has(#theme-SuperGradient[theme-supergradient-film-grain-intensity="Subtle"]) {
-      #TabsToolbar, #nav-bar {
+      #TabsToolbar::after, #nav-bar {
         background-image: url("https://raw.githubusercontent.com/JLBlk/Zen-Themes/refs/heads/main/SuperGradient/Film-Grain%20Textures/light-subtle.png") !important;
        }
     }
     :root:has(#theme-SuperGradient[theme-supergradient-film-grain-intensity="Normal"]) {
-      #TabsToolbar, #nav-bar {
+      #TabsToolbar::after, #nav-bar {
         background-image: url("https://raw.githubusercontent.com/JLBlk/Zen-Themes/refs/heads/main/SuperGradient/Film-Grain%20Textures/light-subtle.png") !important;
       }
     }
     :root:has(#theme-SuperGradient[theme-supergradient-film-grain-intensity="Intense"]) {
-      #TabsToolbar, #nav-bar {
+      #TabsToolbar::after, #nav-bar {
         background-image: url("https://raw.githubusercontent.com/JLBlk/Zen-Themes/refs/heads/main/SuperGradient/Film-Grain%20Textures/light-subtle.png") !important;
       }
     }
-  }
-}
-
-/* This fixes the corners of the browser content */
-:root:not([inDOMFullscreen='true']):not([chromehidden~='location']):not([chromehidden~='toolbar']) {
-  & #tabbrowser-tabbox #tabbrowser-tabpanels .browserSidebarContainer {
-    overflow: hidden;
   }
 }
