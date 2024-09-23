@@ -65,7 +65,6 @@
         "property": "theme.supergradient.film-grain-intensity",
         "label": "Film Grain Intensity",
         "type": "dropdown",
-        "placeholder": "Add a Film Grain Effect and control its Intensity",
         "options": [
             {
                 "label": "Subtle",
