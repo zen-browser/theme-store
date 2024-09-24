@@ -3,21 +3,21 @@
 		& .tab-background::after {
 			content:'';
 			position: absolute;
-			width: 3px !important;
-			border-radius: 3px !important;
-			height: 100% !important;
+			width: 4px !important;
+			border-radius: 4px !important;
+			height: 66.66% !important;
 			top: 50%;
-			left: calc(100% - 2px) !important;
+			left: calc(100% - 4px) !important;
 			transform: translateY(-50%);
 			background-color: var(--zen-primary-color) !important;
 		}
 	
 		&:not([selected='true']) .tab-background::after{
-			height: 50% !important;
+			height: 33.33% !important;
 		}
 		
 		&:not([selected='true']):hover .tab-background::after{
-			height: 100% !important;
+			height: 66.66% !important;
 		}
 	}
 }
