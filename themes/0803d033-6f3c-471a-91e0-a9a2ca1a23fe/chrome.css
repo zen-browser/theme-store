@@ -1,0 +1,56 @@
+
+/*  Youtube Theme */
+@-moz-document domain("www.youtube.com") {
+  * {
+    font-family: Luminari !important;
+    font-weight: lighter !important;
+  }
+ytd-app, .ytd-popup-container.style-scope, .ytd-app.style-scope, #masthead > .ytd-masthead.style-scope, 
+#contentContainer, #guide-renderer, #content-wrapper, #search, .ytd-playlist-panel-renderer.style-scope, 
+.ytd-tabbed-page-header.style-scope {
+  background-color: #080e16 !important;
+}
+/*--search bar popup--*/
+html[dark] .sbsb_a {
+  background: var(--yt-spec-raised-background);
+  background-color: rgba(8,14,22,0.7) !important;
+  backdrop-filter: blur(33px);
+  border-radius: 10px !important;
+}
+
+ytd-browse.ytd-page-manager.style-scope {
+  border: #25262B !important;
+}
+/*--notification popups--*/
+.style-scope.ytd-popup-container {
+  background-color: rgba(8,14,22,0.7) !important;
+  backdrop-filter: blur(33px);
+  border-radius: 10px !important;
+}
+.ytd-multi-page-menu-renderer {
+  background-color: rgba(8,14,22,0.7) !important;
+  backdrop-filter: blur(33px);
+}
+  /*--video player, context menu--*/
+  .ytp-popup.ytp-contextmenu { border-radius: 10px !important; }
+    /*SEEKBAR COLOR*/
+  /*
+  .ytp-swatch-background-color { background-color: #00ADEF !important; }
+  */
+  /*playlist overlay backdrop filter*/ 
+/*progress bar / next button preview border radius*/
+/*info popup backdrop filter*/
+#tooltip.paper-tooltip {
+  border-radius: 8px !important;
+  padding: 4px 8px !important;
+  margin: 12px 8px !important;
+  backdrop-filter: blur(33px) !important;
+  background-color: rgba(8,14,22,0.7) !important;
+ }
+ /*right click info panel backdrop filter*/
+ .ytp-popup, .html5-video-info-panel {
+  backdrop-filter: blur(33px) !important;
+  border-radius: 33px !important;
+  background-color: rgba(8,14,22,0.7) !important;
+ }
+}
