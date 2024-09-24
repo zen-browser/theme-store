@@ -8,8 +8,19 @@
     {
         "property": "uc.urltext.center",
         "label": "Centers the text inside the url bar",
-        "type": "checkbox",
-        "disabledOn": []
+        "type": "dropdown",
+        "defaultValue": "normal",
+        "disabledOn": [],
+        "options": [
+            {
+                "label": "Centered unless focused",
+                "value": "normal"
+            },
+            {
+                "label": "Always Centered",
+                "value": "advanced"
+            }
+        ]
     },
     {
         "property": "uc.urlbar.border.removed",
@@ -20,6 +31,36 @@
     {
         "property": "uc.urlbar.blur",
         "label": "Blurs the background when the url bar is in focus",
+        "type": "checkbox",
+        "disabledOn": []
+    },
+    {
+        "property": "uc.urlbar.icon.zoom.removed",
+        "label": "Hides the Zoom icon",
+        "type": "checkbox",
+        "disabledOn": []
+    },
+    {
+        "property": "uc.urlbar.icon.shield.removed",
+        "label": "Hides the Shield icon",
+        "type": "checkbox",
+        "disabledOn": []
+    },
+    {
+        "property": "uc.urlbar.icon.bookmark.removed",
+        "label": "Hides the Bookmark (Star) icon",
+        "type": "checkbox",
+        "disabledOn": []
+    },
+    {
+        "property": "uc.urlbar.icon.reader-mode.removed",
+        "label": "Hides the Reader-Mode icon",
+        "type": "checkbox",
+        "disabledOn": []
+    },
+    {
+        "property": "uc.urlbar.icon.pip.removed",
+        "label": "Hides the Picture-in-Picture icon",
         "type": "checkbox",
         "disabledOn": []
     }

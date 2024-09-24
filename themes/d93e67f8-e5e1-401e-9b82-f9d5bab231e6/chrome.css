@@ -27,9 +27,14 @@
   }
 }
 
-/* Centers the url text if toggled */
-@media (-moz-bool-pref: "uc.urltext.center") {
-  #urlbar:not([focused]) .urlbar-input{
+/* Centers the url text when enabled in dropdown: 1.Option: Centers the text unless url bar is focused; 2.Option: Centers the text always*/
+:root:has(#theme-Super-Url-Bar[uc-urltext-center="normal"]) {
+  #urlbar:not([focused]) .urlbar-input {
+    text-align: center !important; 
+  }
+}
+:root:has(#theme-Super-Url-Bar[uc-urltext-center="advanced"]) {
+  #urlbar .urlbar-input {
     text-align: center !important; 
   }
 }
@@ -53,11 +58,9 @@
     z-index: -1;
   }
   
-  /* Scuffed af solution to make blur work (need to find better solution)*/
+  /* Scuffed af solution to make blur work (need to find better solution) */
   :root:not([inDOMFullscreen='true']):not([chromehidden~='location']):not([chromehidden~='toolbar']) {
-    & #tabbrowser-tabbox #tabbrowser-tabpanels .browserSidebarContainer {
-      clip-path: inset(-5px -5px -5px round var(--zen-webview-border-radius, var(--zen-border-radius)));
-    }
+    clip-path: inset(0 round var(--zen-webview-border-radius, var(--zen-border-radius)));
   }
 }
 
@@ -65,5 +68,32 @@
 @media (-moz-bool-pref: "uc.urlbar.border.removed") {
   #urlbar {
     border: none !important;
+  }
+}
+
+/* Removes certain buttons from the url bar (when toggled) */
+@media (-moz-bool-pref: "uc.urlbar.icon.zoom.removed") {
+  #urlbar-zoom-button {
+    display: none !important;
+  }
+}
+@media (-moz-bool-pref: "uc.urlbar.icon.shield.removed") {
+  #tracking-protection-icon-container {
+    display: none !important;
+  }
+}
+@media (-moz-bool-pref: "uc.urlbar.icon.bookmark.removed") {
+  #star-button-box {
+    display: none !important;
+  }
+}
+@media (-moz-bool-pref: "uc.urlbar.icon.reader-mode.removed") {
+  #reader-mode-button {
+    display: none !important;
+  }
+}
+@media (-moz-bool-pref: "uc.urlbar.icon.pip.removed") {
+  #picture-in-picture-button {
+    display: none !important;
   }
 }
