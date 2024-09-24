@@ -1,4 +1,3 @@
-
 /* Get the same gradient depending on tabs side */
 @media (-moz-bool-pref: "zen.tabs.vertical.right-side") {
   :root {
@@ -11,36 +10,6 @@
   }
 }
 
-/* Control lightness of colors based on pref and dark/white mode*/
-@media (prefers-color-scheme: dark) {
-  @media (-moz-bool-pref: "uc.supergradient.brighten") {
-    :root {
-      --lightness: 16%;
-      --accent-color-lightness: 30%;
-    }
-  }
-  @media not (-moz-bool-pref: "uc.supergradient.brighten") {
-    :root {
-      --lightness: 12%;
-      --accent-color-lightness: 30%;
-    }
-  }
-} 
-@media (prefers-color-scheme: light) {
-  @media (-moz-bool-pref: "uc.supergradient.brighten") {
-    :root {
-      --lightness: 85%;
-      --accent-color-lightness: 70%;
-    }
-  }
-  @media not (-moz-bool-pref: "uc.supergradient.brighten") {
-    :root {
-      --lightness: 80%;
-      --accent-color-lightness: 70%;
-    }
-  }
-}
-
 /* Control saturation of colors */
 @media (-moz-bool-pref: "uc.supergradient.desaturate") {
   :root {
@@ -49,7 +18,53 @@
 }
 @media not (-moz-bool-pref: "uc.supergradient.desaturate") {
   :root {
-    --saturation: 75%;
+    --saturation: 80%;
+  }
+}
+
+/* Control lightness of colors/intensity of the gradient */
+@media (prefers-color-scheme: dark) {
+  :root:has(#theme-SuperGradient[theme-supergradient-intensity="ReallySubtle"]) {
+    --lightness: 7%;
+    --accent-color-lightness: 36%;
+  }
+  :root:has(#theme-SuperGradient[theme-supergradient-intensity="RatherSubtle"]) {
+    --lightness: 9%;
+    --accent-color-lightness: 38%;
+  }
+  :root:has(#theme-SuperGradient[theme-supergradient-intensity="Normal"]) {
+    --lightness: 12%;
+    --accent-color-lightness: 40%;
+  }
+  :root:has(#theme-SuperGradient[theme-supergradient-intensity="RatherIntense"]) {
+    --lightness: 14%;
+    --accent-color-lightness: 44%;
+  }
+  :root:has(#theme-SuperGradient[theme-supergradient-intensity="ReallyIntense"]) {
+    --lightness: 16%;
+    --accent-color-lightness: 48%;
+  }
+} 
+@media (prefers-color-scheme: light) {
+  :root:has(#theme-SuperGradient[theme-supergradient-intensity="ReallySubtle"]) {
+    --lightness: 90%;
+    --accent-color-lightness: 66%;
+  }
+  :root:has(#theme-SuperGradient[theme-supergradient-intensity="RatherSubtle"]) {
+    --lightness: 85%;
+    --accent-color-lightness: 62%;
+  }
+  :root:has(#theme-SuperGradient[theme-supergradient-intensity="Normal"]) {
+    --lightness: 80%;
+    --accent-color-lightness: 58%;
+  }
+  :root:has(#theme-SuperGradient[theme-supergradient-intensity="RatherIntense"]) {
+    --lightness: 75%;
+    --accent-color-lightness: 54%;
+  }
+  :root:has(#theme-SuperGradient[theme-supergradient-intensity="ReallyIntense"]) {
+    --lightness: 70%;
+    --accent-color-lightness: 50%;
   }
 }
 
@@ -57,79 +72,82 @@
 
 /* 1. Top-left; 2. Bottom-left; 3. Top-right'ish 4. Bottom-right*/
 
-@media (-moz-bool-pref: "uc.supergradient.preset1") {
-  :root {
-    --gradient-color1: hsl(220, var(--saturation), var(--lightness));
-    --gradient-color2: hsl(160, var(--saturation), var(--lightness));
-    --gradient-color3: hsl(200, var(--saturation), var(--lightness));
-    --gradient-color4: hsl(180, var(--saturation), var(--lightness));
-    --switched-color1: hsl(160, var(--saturation), var(--lightness));
-    --switched-color2: hsl(220, var(--saturation), var(--lightness));
-    --switched-color3: hsl(180, var(--saturation), var(--lightness));
-    --switched-color4: hsl(200, var(--saturation), var(--lightness));
-    --custom-accent-color: hsla(205, 50%, var(--accent-color-lightness), 0.7);
-    --switched-accent-color: hsla(170, 50%, var(--accent-color-lightness), 0.7);
-  }
+:root:has(#theme-SuperGradient[theme-supergradient-preset="NorthernHorizen"]) {
+  --gradient-color1: hsl(220, var(--saturation), var(--lightness));
+  --gradient-color2: hsl(160, var(--saturation), var(--lightness));
+  --gradient-color3: hsl(200, var(--saturation), var(--lightness));
+  --gradient-color4: hsl(180, var(--saturation), var(--lightness));
+  --switched-color1: hsl(160, var(--saturation), var(--lightness));
+  --switched-color2: hsl(220, var(--saturation), var(--lightness));
+  --switched-color3: hsl(180, var(--saturation), var(--lightness));
+  --switched-color4: hsl(200, var(--saturation), var(--lightness));
+  --custom-accent-color: hsla(205, 50%, var(--accent-color-lightness), 0.7);
+  --switched-accent-color: hsla(170, 50%, var(--accent-color-lightness), 0.7);
 }
 
-@media (-moz-bool-pref: "uc.supergradient.preset2") {
-  :root {
-    --gradient-color1: hsl(340, var(--saturation), var(--lightness));
-    --gradient-color2: hsl(40, var(--saturation), var(--lightness));
-    --gradient-color3: hsl(30, var(--saturation), var(--lightness));
-    --gradient-color4: hsl(340, var(--saturation), var(--lightness));
-    --switched-color1: hsl(40, var(--saturation), var(--lightness));
-    --switched-color2: hsl(340, var(--saturation), var(--lightness));
-    --switched-color3: hsl(340, var(--saturation), var(--lightness));
-    --switched-color4: hsl(30, var(--saturation), var(--lightness));
-    --custom-accent-color: hsla(350, 50%, var(--accent-color-lightness), 0.6);
-    --switched-accent-color: hsla(40, 50%, var(--accent-color-lightness), 0.6);
-  }
+:root:has(#theme-SuperGradient[theme-supergradient-preset="ScarletDusk"])  {
+  --gradient-color1: hsl(340, var(--saturation), var(--lightness));
+  --gradient-color2: hsl(40, var(--saturation), var(--lightness));
+  --gradient-color3: hsl(30, var(--saturation), var(--lightness));
+  --gradient-color4: hsl(340, var(--saturation), var(--lightness));
+  --switched-color1: hsl(40, var(--saturation), var(--lightness));
+  --switched-color2: hsl(340, var(--saturation), var(--lightness));
+  --switched-color3: hsl(340, var(--saturation), var(--lightness));
+  --switched-color4: hsl(30, var(--saturation), var(--lightness));
+  --custom-accent-color: hsla(350, 50%, var(--accent-color-lightness), 0.6);
+  --switched-accent-color: hsla(40, 50%, var(--accent-color-lightness), 0.6);
 }
 
-@media (-moz-bool-pref: "uc.supergradient.preset3") {
-  :root {
-    --gradient-color1: hsl(270, var(--saturation), var(--lightness));
-    --gradient-color2: hsl(0, var(--saturation), var(--lightness));
-    --gradient-color3: hsl(320, var(--saturation), var(--lightness));
-    --gradient-color4: hsl(20, var(--saturation), var(--lightness));
-    --switched-color1: hsl(0, var(--saturation), var(--lightness));
-    --switched-color2: hsl(270, var(--saturation), var(--lightness));
-    --switched-color3: hsl(20, var(--saturation), var(--lightness));
-    --switched-color4: hsl(320, var(--saturation), var(--lightness));
-    --custom-accent-color: hsla(280, 50%, var(--accent-color-lightness), 0.5);
-    --switched-accent-color: hsla(350, 50%, var(--accent-color-lightness), 0.5);
-  }
+:root:has(#theme-SuperGradient[theme-supergradient-preset="AmethystClaret"])  {
+  --gradient-color1: hsl(270, var(--saturation), var(--lightness));
+  --gradient-color2: hsl(0, var(--saturation), var(--lightness));
+  --gradient-color3: hsl(320, var(--saturation), var(--lightness));
+  --gradient-color4: hsl(20, var(--saturation), var(--lightness));
+  --switched-color1: hsl(0, var(--saturation), var(--lightness));
+  --switched-color2: hsl(270, var(--saturation), var(--lightness));
+  --switched-color3: hsl(20, var(--saturation), var(--lightness));
+  --switched-color4: hsl(320, var(--saturation), var(--lightness));
+  --custom-accent-color: hsla(280, 50%, var(--accent-color-lightness), 0.5);
+  --switched-accent-color: hsla(350, 50%, var(--accent-color-lightness), 0.5);
 }
 
-@media (-moz-bool-pref: "uc.supergradient.preset4") {
-  :root {
-    --gradient-color1: hsl(20, var(--saturation), var(--lightness));
-    --gradient-color2: hsl(65, var(--saturation), var(--lightness));
-    --gradient-color3: hsl(50, var(--saturation), var(--lightness));
-    --gradient-color4: hsl(160, var(--saturation), var(--lightness));
-    --switched-color1: hsl(65, var(--saturation), var(--lightness));
-    --switched-color2: hsl(20, var(--saturation), var(--lightness));
-    --switched-color3: hsl(160, var(--saturation), var(--lightness));
-    --switched-color4: hsl(50, var(--saturation), var(--lightness));
-    --custom-accent-color: hsla(40, 50%, var(--accent-color-lightness), 0.5);
-    --switched-accent-color: hsla(60, 50%, var(--accent-color-lightness), 0.5);
-  }
+:root:has(#theme-SuperGradient[theme-supergradient-preset="OliveSunset"])  {
+  --gradient-color1: hsl(20, var(--saturation), var(--lightness));
+  --gradient-color2: hsl(65, var(--saturation), var(--lightness));
+  --gradient-color3: hsl(50, var(--saturation), var(--lightness));
+  --gradient-color4: hsl(160, var(--saturation), var(--lightness));
+  --switched-color1: hsl(65, var(--saturation), var(--lightness));
+  --switched-color2: hsl(20, var(--saturation), var(--lightness));
+  --switched-color3: hsl(160, var(--saturation), var(--lightness));
+  --switched-color4: hsl(50, var(--saturation), var(--lightness));
+  --custom-accent-color: hsla(40, 50%, var(--accent-color-lightness), 0.5);
+  --switched-accent-color: hsla(60, 50%, var(--accent-color-lightness), 0.5);
 }
 
-@media (-moz-bool-pref: "uc.supergradient.preset5") {
-  :root {
-    --gradient-color1: hsl(50, var(--saturation), var(--lightness));
-    --gradient-color2: hsl(300, var(--saturation), var(--lightness));
-    --gradient-color3: hsl(60, var(--saturation), var(--lightness));
-    --gradient-color4: hsl(10, var(--saturation), var(--lightness));
-    --switched-color1: hsl(300, var(--saturation), var(--lightness));
-    --switched-color2: hsl(50, var(--saturation), var(--lightness));
-    --switched-color3: hsl(10, var(--saturation), var(--lightness));
-    --switched-color4: hsl(60, var(--saturation), var(--lightness));
-    --custom-accent-color: hsla(50, 50%, var(--accent-color-lightness), 0.5);
-    --switched-accent-color: hsla(310, 50%, var(--accent-color-lightness), 0.4);
-  }
+:root:has(#theme-SuperGradient[theme-supergradient-preset="MidnightMajesty"])  {
+  --gradient-color1: hsl(50, var(--saturation), var(--lightness));
+  --gradient-color2: hsl(300, var(--saturation), var(--lightness));
+  --gradient-color3: hsl(60, var(--saturation), var(--lightness));
+  --gradient-color4: hsl(10, var(--saturation), var(--lightness));
+  --switched-color1: hsl(300, var(--saturation), var(--lightness));
+  --switched-color2: hsl(50, var(--saturation), var(--lightness));
+  --switched-color3: hsl(10, var(--saturation), var(--lightness));
+  --switched-color4: hsl(60, var(--saturation), var(--lightness));
+  --custom-accent-color: hsla(50, 50%, var(--accent-color-lightness), 0.5);
+  --switched-accent-color: hsla(310, 50%, var(--accent-color-lightness), 0.4);
+}
+
+:root:has(#theme-SuperGradient[theme-supergradient-preset="CustomGradient"]) {
+  --gradient-color1: var(--uc-supergradient-custom-colors-1);
+  --gradient-color2: var(--uc-supergradient-custom-colors-2);
+  --gradient-color3: var(--uc-supergradient-custom-colors-3);
+  --gradient-color4: var(--uc-supergradient-custom-colors-4);
+  --switched-color1: var(--uc-supergradient-custom-colors-2);
+  --switched-color2: var(--uc-supergradient-custom-colors-1);
+  --switched-color3: var(--uc-supergradient-custom-colors-4);
+  --switched-color4: var(--uc-supergradient-custom-colors-3);
+  --custom-accent-color: light-dark(color-mix(in srgb, var(--uc-supergradient-custom-colors-1) 85%, black 15%),color-mix(in srgb, var(--uc-supergradient-custom-colors-1) 85%, white 15%));
+  --switched-accent-color: light-dark(color-mix(in srgb, var(--uc-supergradient-custom-colors-2) 85%, black 15%),color-mix(in srgb, var(--uc-supergradient-custom-colors-2) 85%, white 15%));
 }
 
 /* Switch the colors in the gradient (when toggled) */
@@ -144,22 +162,139 @@
 }
 
 /* Applies the color gradient based on the set user preferences */
-@media (-moz-bool-pref: "uc.supergradient.preset1"), (-moz-bool-pref: "uc.supergradient.preset2"), (-moz-bool-pref: "uc.supergradient.preset3"), (-moz-bool-pref: "uc.supergradient.preset4"), (-moz-bool-pref: "uc.supergradient.preset5") {
+:root {
+  --zen-colors-tertiary: radial-gradient(var(--gradient-start), var(--gradient-color1), var(--gradient-color2), var(--gradient-color3), var(--gradient-color4)) !important;
+}
+
+/* Make gradient work when "Expand on hover" is enabled */
+@media (-moz-bool-pref: "zen.view.sidebar-expanded") and (-moz-bool-pref: "zen.view.sidebar-expanded.on-hover") {
+  #navigator-toolbox:is(
+    #navigator-toolbox[zen-user-hover="true"]:hover,
+    #navigator-toolbox[zen-user-hover="true"]:focus-within,
+    #mainPopupSet[zen-user-hover="true"]:has(> #appMenu-popup:hover) ~ toolbox,
+    #navigator-toolbox[zen-user-hover="true"]:has(*[open="true"]:not(tab):not(#zen-sidepanel-button)), 
+    :not([zen-user-hover="true"])) {
+      #TabsToolbar {
+        background: radial-gradient(var(--gradient-start), var(--gradient-color1), var(--gradient-color2), var(--gradient-color3), var(--gradient-color4)) !important;
+      }
+  }
+}
+
+/* Use custom accent colors adjusted to the gradient (unless toggled, which uses zen's accent color) */
+@media not (-moz-bool-pref: "uc.supergradient.use-accent-color") {
   :root {
-    --zen-main-browser-background: radial-gradient(var(--gradient-start), var(--gradient-color1), var(--gradient-color2), var(--gradient-color3), var(--gradient-color4)) !important;
     --toolbarbutton-hover-background: var(--custom-accent-color) !important;
   }
-  /* Make the colors work in Compact Mode */
-  @media (-moz-bool-pref: "zen.view.compact"), (-moz-bool-pref: "zen.view.compact") and (-moz-bool-pref: "zen.view.compact.hide-toolbar") {
-    #titlebar, #zen-appcontent-navbar-container {
-      background: radial-gradient(var(--gradient-start), var(--gradient-color1), var(--gradient-color2), var(--gradient-color3), var(--gradient-color4)) !important;
+  /* background color of pinned tabs in a normal state (not hovered/selected) */
+  .tabbrowser-tab[pinned] .tab-stack .tab-background {
+    background-color: color-mix(in srgb, var(--custom-accent-color) 35%, transparent 75%) !important;
+  }
+  /* background color when hovering */
+  .tabbrowser-tab:hover .tab-stack .tab-background{
+    background-color: color-mix(in srgb, var(--custom-accent-color) 50%, transparent 75%) !important;
+  }
+  /* background color when selected */
+  .tabbrowser-tab[selected="true"] .tab-stack .tab-background,
+  .tabbrowser-tab[multiselected="true"] .tab-stack .tab-background {
+    background-color: var(--custom-accent-color) !important;
+  }
+  /* background color when hovering and selected */
+  .tabbrowser-tab[selected="true"]:hover .tab-stack .tab-background,
+  .tabbrowser-tab[multiselected="true"]:hover .tab-stack .tab-background{
+    background-color: color-mix(in srgb, var(--custom-accent-color) 90%, transparent) !important;
+  }
+}
+
+/* This creates the Film Grain Effect */
+@media (prefers-color-scheme: dark) {
+  /* Textures: 3%, 5% and 8% Opacity and white on black */
+  :root:has(#theme-SuperGradient[theme-supergradient-film-grain-intensity="Subtle"]) {
+    #browser {
+      background-image: url("https://raw.githubusercontent.com/JLBlk/Zen-Themes/refs/heads/main/SuperGradient/Film-Grain%20Textures/dark-subtle.png") !important;
+    }
+  }
+  :root:has(#theme-SuperGradient[theme-supergradient-film-grain-intensity="Normal"]) {
+    #browser {
+      background-image: url("https://raw.githubusercontent.com/JLBlk/Zen-Themes/refs/heads/main/SuperGradient/Film-Grain%20Textures/dark-normal.png") !important;
+    }
+  }
+  :root:has(#theme-SuperGradient[theme-supergradient-film-grain-intensity="Intense"]) {
+    #browser {
+      background-image: url("https://raw.githubusercontent.com/JLBlk/Zen-Themes/refs/heads/main/SuperGradient/Film-Grain%20Textures/dark-intense.png") !important;
+    }
+  }
+}
+@media (prefers-color-scheme: light) {
+  /* 3%, 6% and 9% Opacity and black on white*/
+   :root:has(#theme-SuperGradient[theme-supergradient-film-grain-intensity="Subtle"]) {
+    #browser {
+      background-image: url("https://raw.githubusercontent.com/JLBlk/Zen-Themes/refs/heads/main/SuperGradient/Film-Grain%20Textures/light-subtle.png") !important;
+     }
+  }
+  :root:has(#theme-SuperGradient[theme-supergradient-film-grain-intensity="Normal"]) {
+    #browser {
+      background-image: url("https://raw.githubusercontent.com/JLBlk/Zen-Themes/refs/heads/main/SuperGradient/Film-Grain%20Textures/light-normal.png") !important;
+    }
+  }
+  :root:has(#theme-SuperGradient[theme-supergradient-film-grain-intensity="Intense"]) {
+    #browser {
+      background-image: url("https://raw.githubusercontent.com/JLBlk/Zen-Themes/refs/heads/main/SuperGradient/Film-Grain%20Textures/light-intense.png") !important;
     }
   }
 }
 
-/* Use the set accent color instead of adjusted ones (when toggled) */
-@media (-moz-bool-pref: "uc.supergradient.use-accent-color") {
-  :root {
-    --toolbarbutton-hover-background: var(--button-hover-bgcolor) !important;
+/* Makes the Film Grain Effect work in compact mode as well */
+@media (-moz-bool-pref: "zen.view.compact") {
+
+  #TabsToolbar::after {
+    content: "";
+    position: absolute;
+  
+    width: 100%;
+    height: 100%;
+  
+    top: 0px;
+    left: 0px;
+          
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    z-index: -2;
+  }
+  
+  @media (prefers-color-scheme: dark) {
+    /* Textures: 3%, 5% and 8% Opacity and white on black */
+    :root:has(#theme-SuperGradient[theme-supergradient-film-grain-intensity="Subtle"]) {
+      #TabsToolbar::after, #nav-bar {
+        background-image: url("https://raw.githubusercontent.com/JLBlk/Zen-Themes/refs/heads/main/SuperGradient/Film-Grain%20Textures/dark-subtle.png") !important;
+      }
+    }
+    :root:has(#theme-SuperGradient[theme-supergradient-film-grain-intensity="Normal"]) {
+      #TabsToolbar::after, #nav-bar {
+        background-image: url("https://raw.githubusercontent.com/JLBlk/Zen-Themes/refs/heads/main/SuperGradient/Film-Grain%20Textures/dark-normal.png") !important;
+      }
+    }
+    :root:has(#theme-SuperGradient[theme-supergradient-film-grain-intensity="Intense"]) {
+       #TabsToolbar::after, #nav-bar {
+        background-image: url("https://raw.githubusercontent.com/JLBlk/Zen-Themes/refs/heads/main/SuperGradient/Film-Grain%20Textures/dark-intense.png") !important;
+      }
+    }
+  }
+  @media (prefers-color-scheme: light) {
+    /* 3%, 6% and 9% Opacity and black on white*/
+     :root:has(#theme-SuperGradient[theme-supergradient-film-grain-intensity="Subtle"]) {
+      #TabsToolbar::after, #nav-bar {
+        background-image: url("https://raw.githubusercontent.com/JLBlk/Zen-Themes/refs/heads/main/SuperGradient/Film-Grain%20Textures/light-subtle.png") !important;
+       }
+    }
+    :root:has(#theme-SuperGradient[theme-supergradient-film-grain-intensity="Normal"]) {
+      #TabsToolbar::after, #nav-bar {
+        background-image: url("https://raw.githubusercontent.com/JLBlk/Zen-Themes/refs/heads/main/SuperGradient/Film-Grain%20Textures/light-subtle.png") !important;
+      }
+    }
+    :root:has(#theme-SuperGradient[theme-supergradient-film-grain-intensity="Intense"]) {
+      #TabsToolbar::after, #nav-bar {
+        background-image: url("https://raw.githubusercontent.com/JLBlk/Zen-Themes/refs/heads/main/SuperGradient/Film-Grain%20Textures/light-subtle.png") !important;
+      }
+    }
   }
 }
