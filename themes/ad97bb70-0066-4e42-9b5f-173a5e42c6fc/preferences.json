@@ -28,8 +28,7 @@
         "label": "Only shows loaded pinned tabs (when the tab bar is collapsed)",
         "type": "dropdown",
         "disabledOn": [],
-        "options": 
-        [
+        "options": [
             {
                 "label": "Normal",
                 "value": "Normal"
