@@ -49,25 +49,38 @@
   }
 
   /* Increase width of pinned tabs */
-  @media (-moz-bool-pref: "zen.view.sidebar-expanded") and (not (-moz-bool-pref: "uc.pins.wide.disabled")) {  
-    #navigator-toolbox:is(
-      #navigator-toolbox[zen-user-hover="true"]:hover,
-      #navigator-toolbox[zen-user-hover="true"]:focus-within,
-      #mainPopupSet[zen-user-hover="true"]:has(> #appMenu-popup:hover) ~ toolbox,
-      #navigator-toolbox[zen-user-hover="true"]:has(*[open="true"]:not(tab):not(#zen-sidepanel-button)), 
-      :not([zen-user-hover="true"])) {
-        #vertical-pinned-tabs-container {
-          grid-template-columns: repeat(auto-fit, minmax(60px, auto)) !important;
-          gap: var(--pins-gap) calc(var(--pins-gap) + 4px) !important;
-        }
-        @media (-moz-bool-pref: "uc.pins.tall") {
-          .tabbrowser-tab[pinned] { 
-            min-height: 43px !important;
-          }
-        }
-    }
+  @media (-moz-bool-pref: "zen.view.sidebar-expanded") and (not (-moz-bool-pref: "zen.view.sidebar-expanded.on-hover")) and (not (-moz-bool-pref: "uc.pins.wide.disabled")) {
     #vertical-pinned-tabs-container {
+      grid-template-columns: repeat(auto-fit, minmax(60px, auto)) !important;
+      gap: var(--pins-gap) calc(var(--pins-gap) + 4px) !important;
       margin-bottom: var(--pins-gap) !important;
+    }
+    @media (-moz-bool-pref: "uc.pins.tall") {
+      .tabbrowser-tab[pinned] { 
+        min-height: 43px !important;
+      }
+    }
+  }
+
+  /* Increase width of pinned tabs for expand on hover */
+  @media (-moz-bool-pref: "zen.view.sidebar-expanded") and (-moz-bool-pref: "zen.view.sidebar-expanded.on-hover") and (not (-moz-bool-pref: "uc.pins.wide.disabled")) {  
+    #navigator-toolbox[zen-has-hover],
+    #navigator-toolbox:focus-within,
+    #navigator-toolbox[movingtab],
+    #navigator-toolbox[flash-popup],
+    #navigator-toolbox[has-popup-menu],
+    #navigator-toolbox:has(.tabbrowser-tab:active),
+    #navigator-toolbox:has(*[open='true']:not(tab):not(#zen-sidepanel-button)) {
+      #vertical-pinned-tabs-container {
+        grid-template-columns: repeat(auto-fit, minmax(60px, auto)) !important;
+        gap: var(--pins-gap) calc(var(--pins-gap) + 4px) !important;
+        margin-bottom: var(--pins-gap) !important;
+      }
+      @media (-moz-bool-pref: "uc.pins.tall") {
+        .tabbrowser-tab[pinned] { 
+          min-height: 43px !important;
+        }
+      }
     }
   }
   
@@ -120,18 +133,23 @@
     }
   }
   
-  /* Hides unloaded tabs when tab bar is collapsed when in "Expand on hove" mode (when toggled)*/
-  @media (-moz-bool-pref: "uc.pins.only-show-active"){  
-  #navigator-toolbox:not(
-    :is(
-    #navigator-toolbox[zen-user-hover="true"]:hover,
-    #navigator-toolbox[zen-user-hover="true"]:focus-within,
-    #mainPopupSet[zen-user-hover="true"]:has(> #appMenu-popup:hover) ~ toolbox,
-    #navigator-toolbox[zen-user-hover="true"]:has(*[open="true"]:not(tab):not(#zen-sidepanel-button)), 
-    :not([zen-user-hover="true"]))) {
-      .tabbrowser-tab[pinned][pending="true"] {
-        position: absolute !important; /* Using position: absolute and visibility: hidden instead of display:none stops the icons of unloaded tabs from loading when sidebar expands */
-        visibility: hidden !important;
+  /* Hides unloaded tabs when tab bar is collapsed when in "Expand on hove" mode (when toggled) */
+  @media (-moz-bool-pref: "zen.view.sidebar-expanded") and (-moz-bool-pref: "zen.view.sidebar-expanded.on-hover") {
+    :root:has(#theme-SuperPins[uc-pins-only-show-active="Normal"]),
+    :root:has(#theme-SuperPins[uc-pins-only-show-active="OnHover"]) { 
+      #navigator-toolbox:not(
+        :is( 
+        #navigator-toolbox[zen-has-hover],
+        #navigator-toolbox:focus-within,
+        #navigator-toolbox[movingtab],
+        #navigator-toolbox[flash-popup],
+        #navigator-toolbox[has-popup-menu],
+        #navigator-toolbox:has(.tabbrowser-tab:active),
+        #navigator-toolbox:has(*[open='true']:not(tab):not(#zen-sidepanel-button)))) {
+          .tabbrowser-tab[pinned][pending="true"] {
+            position: absolute !important; /* Using position: absolute and visibility: hidden instead of display:none stops the icons of unloaded tabs from loading when sidebar expands */
+            visibility: hidden !important;
+          }
       }
     }
   }
