@@ -162,7 +162,12 @@
 }
 
 /* Applies the color gradient based on the set user preferences */
-:root {
+:root:has(#theme-SuperGradient[theme-supergradient-preset="NorthernHorizen"]),
+:root:has(#theme-SuperGradient[theme-supergradient-preset="ScarletDusk"]),
+:root:has(#theme-SuperGradient[theme-supergradient-preset="AmethystClaret"]),
+:root:has(#theme-SuperGradient[theme-supergradient-preset="OliveSunset"]),
+:root:has(#theme-SuperGradient[theme-supergradient-preset="MidnightMajesty"]),
+:root:has(#theme-SuperGradient[theme-supergradient-preset="CustomGradient"]) {
   --zen-colors-tertiary: radial-gradient(var(--gradient-start), var(--gradient-color1), var(--gradient-color2), var(--gradient-color3), var(--gradient-color4)) !important;
 }
 
@@ -183,26 +188,33 @@
 
 /* Use custom accent colors adjusted to the gradient (unless toggled, which uses zen's accent color) */
 @media not (-moz-bool-pref: "uc.supergradient.use-accent-color") {
-  :root {
-    --toolbarbutton-hover-background: var(--custom-accent-color) !important;
-  }
-  /* background color of pinned tabs in a normal state (not hovered/selected) */
-  .tabbrowser-tab[pinned] .tab-stack .tab-background {
-    background-color: color-mix(in srgb, var(--custom-accent-color) 35%, transparent 75%) !important;
-  }
-  /* background color when hovering */
-  .tabbrowser-tab:hover .tab-stack .tab-background{
-    background-color: color-mix(in srgb, var(--custom-accent-color) 50%, transparent 75%) !important;
-  }
-  /* background color when selected */
-  .tabbrowser-tab[selected="true"] .tab-stack .tab-background,
-  .tabbrowser-tab[multiselected="true"] .tab-stack .tab-background {
-    background-color: var(--custom-accent-color) !important;
-  }
-  /* background color when hovering and selected */
-  .tabbrowser-tab[selected="true"]:hover .tab-stack .tab-background,
-  .tabbrowser-tab[multiselected="true"]:hover .tab-stack .tab-background{
-    background-color: color-mix(in srgb, var(--custom-accent-color) 90%, transparent) !important;
+  :root:has(#theme-SuperGradient[theme-supergradient-preset="NorthernHorizen"]),
+  :root:has(#theme-SuperGradient[theme-supergradient-preset="ScarletDusk"]),
+  :root:has(#theme-SuperGradient[theme-supergradient-preset="AmethystClaret"]),
+  :root:has(#theme-SuperGradient[theme-supergradient-preset="OliveSunset"]),
+  :root:has(#theme-SuperGradient[theme-supergradient-preset="MidnightMajesty"]),
+  :root:has(#theme-SuperGradient[theme-supergradient-preset="CustomGradient"]) {
+    :root {
+      --toolbarbutton-hover-background: var(--custom-accent-color) !important;
+    }
+    /* background color of pinned tabs in a normal state (not hovered/selected) */
+    .tabbrowser-tab[pinned] .tab-stack .tab-background {
+      background-color: color-mix(in srgb, var(--custom-accent-color) 35%, transparent 75%) !important;
+    }
+    /* background color when hovering */
+    .tabbrowser-tab:hover .tab-stack .tab-background{
+      background-color: color-mix(in srgb, var(--custom-accent-color) 50%, transparent 75%) !important;
+    }
+    /* background color when selected */
+    .tabbrowser-tab[selected="true"] .tab-stack .tab-background,
+    .tabbrowser-tab[multiselected="true"] .tab-stack .tab-background {
+      background-color: var(--custom-accent-color) !important;
+    }
+    /* background color when hovering and selected */
+    .tabbrowser-tab[selected="true"]:hover .tab-stack .tab-background,
+    .tabbrowser-tab[multiselected="true"]:hover .tab-stack .tab-background{
+      background-color: color-mix(in srgb, var(--custom-accent-color) 90%, transparent) !important;
+    }
   }
 }
 
