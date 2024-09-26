@@ -1,0 +1,15 @@
+
+#PersonalToolbar {
+    margin-left: 4rem;
+}
+#PersonalToolbar .bookmark-item {
+    display: flex !important; 
+    justify-content: start !important;
+    align-items: center !important;
+    width: 2rem !important;
+    transition: 0.25s !important;
+    padding-right: 1rem !important;
+}
+#PersonalToolbar .bookmark-item:hover{
+    width: 10rem !important;
+}
