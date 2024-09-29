@@ -1,8 +1,0 @@
-[
-    {
-        "property": "uc.only-top-bar-compact.top-margin-on-reduced.enabled",
-        "label": "Enable top margin when top bar is reduced",
-        "type": "checkbox",
-        "disabledOn": []
-    }
-]
