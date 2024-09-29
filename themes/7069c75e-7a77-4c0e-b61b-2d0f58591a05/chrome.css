@@ -1,0 +1,10 @@
+
+@media {
+  #zen-appcontent-navbar-container {
+    background: var(--lwt-header-image, var(--lwt-additional-images))
+                no-repeat var(--lwt-background-tiling) var(--lwt-background-alignment)
+                var(--lwt-accent-color) !important;
+    background-size: var(--lwt-background-tiling) !important;
+    background-position-y: var(--theme-firefoxtheme-heightmove, 50%) !important;
+  }
+}
