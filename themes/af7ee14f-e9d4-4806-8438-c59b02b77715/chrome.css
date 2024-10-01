@@ -173,13 +173,13 @@
     
 /* Makes the gradient work in compact mode */
 @media (-moz-bool-pref:"zen.view.compact.hide-toolbar") and (-moz-bool-pref: "zen.view.compact") {
-  #nav-bar {
+  #nav-bar::before, #nav-bar, #PersonalToolbar[data-l10n-id="bookmarks-toolbar"] { /* Attribute "data-l10n-id" makes the gradient work with floating toolbar mod bookmarks toolbar */
     background: radial-gradient(var(--gradient-start), var(--gradient-color1), var(--gradient-color2), var(--gradient-color3), var(--gradient-color4)) !important;
   }
 }    
 @media (-moz-bool-pref:"zen.view.compact.hide-tabbar") and (-moz-bool-pref: "zen.view.compact") {
   #navigator-toolbox {
-    background: radial-gradient(var(--gradient-start), var(--gradient-color1), var(--gradient-color2), var(--gradient-color3), var(--gradient-color4)) !important;
+    --zen-themed-toolbar-bg: radial-gradient(var(--gradient-start), var(--gradient-color1), var(--gradient-color2), var(--gradient-color3), var(--gradient-color4)) !important;
   }
 }
 
@@ -312,7 +312,7 @@
       top: 0px;
       left: 0px;
 
-      border-top-right-radius: 5px;
+      border-bottom-left-radius: 5px;
       border-bottom-right-radius: 5px;
       z-index: 0;
     }
