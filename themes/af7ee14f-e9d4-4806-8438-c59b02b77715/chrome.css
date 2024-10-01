@@ -137,6 +137,41 @@
   --switched-accent-color: hsla(310, 50%, var(--accent-color-lightness), 0.4);
 }
 
+:root:has(#theme-SuperGradient[theme-supergradient-preset="GalaxyDream"]) {
+  
+  --zen-main-browser-background: radial-gradient(ellipse, var(--zen-browser-gradient-base, #1B1E27) 20%, light-dark(#ffffff, #1b1b1b) 100%) !important;
+  
+  /* Makes the gradient work in compact mode */
+  @media (-moz-bool-pref:"zen.view.compact.hide-toolbar") and (-moz-bool-pref: "zen.view.compact") {
+    #nav-bar::before, #nav-bar { /* Attribute "data-l10n-id" makes the gradient work with floating toolbar mod bookmarks toolbar */
+      background: radial-gradient(ellipse at bottom, var(--zen-browser-gradient-base, #1B1E27) 2%, light-dark(#ffffff, #1b1b1b) 100%) !important;
+    }
+    #PersonalToolbar[data-l10n-id="bookmarks-toolbar"] {
+      background: radial-gradient(ellipse at top, var(--zen-browser-gradient-base, #1B1E27) 2%, light-dark(#ffffff, #1b1b1b) 100%) !important;
+    }
+  }    
+  @media (-moz-bool-pref:"zen.view.compact.hide-tabbar") and (-moz-bool-pref: "zen.view.compact") {
+    #navigator-toolbox {
+      --zen-themed-toolbar-bg: radial-gradient(ellipse at right, var(--zen-browser-gradient-base, #1B1E27) 1%, light-dark(#ffffff, #1b1b1b) 95%) !important;
+    }
+  }
+
+  /* Make gradient work when "Expand on hover" is enabled */
+  @media (-moz-bool-pref: "zen.view.sidebar-expanded") and (-moz-bool-pref: "zen.view.sidebar-expanded.on-hover") {
+    #navigator-toolbox[zen-has-hover],
+    #navigator-toolbox:focus-within,
+    #navigator-toolbox[movingtab],
+    #navigator-toolbox[flash-popup],
+    #navigator-toolbox[has-popup-menu],
+    #navigator-toolbox:has(.tabbrowser-tab:active),
+    #navigator-toolbox:has(*[open='true']:not(tab):not(#zen-sidepanel-button)) {
+      #TabsToolbar {
+        background: radial-gradient(ellipse at right, var(--zen-browser-gradient-base, #1B1E27) 1%, light-dark(#ffffff, #1b1b1b) 95%) !important;
+      }
+    }
+  }
+}
+
 :root:has(#theme-SuperGradient[theme-supergradient-preset="CustomGradient"]) {
   --gradient-color1: var(--uc-supergradient-custom-colors-1);
   --gradient-color2: var(--uc-supergradient-custom-colors-2);
