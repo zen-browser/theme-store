@@ -27,6 +27,10 @@
                 "value": "MidnightMajesty"
             },
             {
+                "label": "Zen Galaxy/Dream Legacy Theme",
+                "value": "GalaxyDream"
+            },
+            {
                 "label": "Custom Gradient: Use your own colors!",
                 "value": "CustomGradient"
             }
