@@ -24,7 +24,6 @@
     border: 2px solid transparent !important;
   }
 }
-
 @media (-moz-bool-pref: 'theme.sidebery.sidebar.auto-collapse.enable') and (-moz-bool-pref: 'theme.sidebery.hide-zen-tabbar') {
   #sidebar-box {
     border-left-width: 0 !important;
@@ -36,7 +35,7 @@
   /* credits: https://canary.discord.com/channels/1088172780480114748/1290440055126495343 */
   html {
     --sidebery-width: 36px;
-    --sidebery-hidden-width: 20px;
+    --sidebery-hidden-width: 8px;
     --sidebery-open-width: 256px;
   }
   html {
@@ -81,5 +80,57 @@
         width: var(--sidebery-open-width) !important;
       }
     }
+    #tabbrowser-tabbox {
+      margin-left: calc(
+        var(--sidebery-hidden-width) + var(--zen-element-separation) / 2
+      ) !important;
+    }
+  }
+}
+@media (-moz-bool-pref: 'browser.tabs.allow_transparent_browser') {
+  html {
+    --lwt-sidebar-background-color: transparent !important;
+    --sidebar-background-color: transparent !important;
+  }
+  window.sidebar-panel,
+  window#webextpanels-window {
+    /*           background: var(--sidebar-background-color) !important; */
+    background: transparent !important;
+  }
+  #sidebar-box {
+    border-color: transparent !important;
+    box-shadow: none !important;
+    #sidebar-header {
+      order: 0;
+      border: none !important;
+      border-bottom: 1px solid var(--sidebar-border-color) !important;
+      font-size: 1em !important;
+    }
+  }
+}
+@media not (-moz-bool-pref: 'theme.sidebery.hide-zen-tabbar') {
+  #tabbrowser-tabbox {
+    margin-left: calc(var(--zen-element-separation) / 2) !important;
+  }
+  @media not (-moz-bool-pref: 'browser.tabs.allow_transparent_browser') {
+    #tabbrowser-tabbox {
+      margin-left: calc(var(--zen-element-separation) / 1.5) !important;
+    }
+  }
+}
+@media (-moz-bool-pref: 'theme.sidebery.sidebar-header.bottom-layout') {
+  #sidebar-box #sidebar-header {
+    order: 1;
+    border: none !important;
+    border-top: 1px solid var(--sidebar-border-color) !important;
+    font-size: 1em !important;
+    #sidebar-switcher-arrow {
+      list-style-image: url('chrome://global/skin/icons/arrow-up-12.svg') !important;
+    }
+  }
+}
+@media (-moz-bool-pref: 'theme.sidebery.sidebar-header.hide') {
+  #sidebar-header {
+    display: none !important;
   }
 }
