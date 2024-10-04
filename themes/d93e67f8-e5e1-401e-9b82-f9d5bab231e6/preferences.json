@@ -63,7 +63,7 @@
     },
     {
         "property": "uc.urlbar.custom-bg-color",
-        "label": "Custom Color for the Url Bar (Checkbox above needs to be active",
+        "label": "Custom Color for the Url Bar (Checkbox above needs to be active)",
         "placeholder": "Enter Color Code",
         "type": "string"
     },
