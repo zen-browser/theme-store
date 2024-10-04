@@ -67,7 +67,7 @@
     },
     {
         "property": "theme.supergradient.film-grain-intensity",
-        "label": "Film Grain Intensity (Won't apply for 'Expand on Hover')",
+        "label": "Film Grain Intensity",
         "type": "dropdown",
         "options": [
             {
