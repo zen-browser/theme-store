@@ -29,10 +29,43 @@
         "disabledOn": []
     },
     {
-        "property": "uc.urlbar.blur",
-        "label": "Blurs the background when the url bar is in focus",
-        "type": "checkbox",
-        "disabledOn": []
+        "property": "uc.urlbar.blur-intensity",
+        "label": "Enable a Background Blur when the Url Bar is focused & select its Intensity",
+        "type": "dropdown",
+        "disabledOn": [],
+        "options": [
+            {
+                "label": "Subtle",
+                "value": "Subtle"
+            },
+            {
+                "label": "Normal",
+                "value": "Normal"
+            },
+            {
+                "label": "Rather Strong",
+                "value": "RatherStrong"
+            },
+            {
+                "label": "Strong",
+                "value": "Strong"
+            },
+            {
+                "label": "Really Strong",
+                "value": "ReallyStrong"
+            }
+        ]
+    },
+    {
+        "property": "uc.urlbar.custom-bg-color.checkbox",
+        "label": "Enable Custom Colors for the Url Bar",
+        "type": "checkbox"
+    },
+    {
+        "property": "uc.urlbar.custom-bg-color",
+        "label": "Custom Color for the Url Bar (Checkbox above needs to be active",
+        "placeholder": "Enter Color Code",
+        "type": "string"
     },
     {
         "property": "uc.urlbar.icon.zoom.removed",
@@ -63,5 +96,10 @@
         "label": "Hides the Picture-in-Picture icon",
         "type": "checkbox",
         "disabledOn": []
+    },
+    {
+        "property": "uc.urlbar.icon.show-on-hover",
+        "label": "Make all the hidden icons show when hovering the url bar",
+        "type": "checkbox"
     }
 ]
