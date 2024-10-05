@@ -49,37 +49,31 @@
   }
 
   /* Increase width of pinned tabs */
-  @media (-moz-bool-pref: "zen.view.sidebar-expanded") and (not (-moz-bool-pref: "zen.view.sidebar-expanded.on-hover")) and (not (-moz-bool-pref: "uc.pins.wide.disabled")) {
-    #vertical-pinned-tabs-container {
-      grid-template-columns: repeat(auto-fit, minmax(60px, auto)) !important;
-      gap: var(--pins-gap) calc(var(--pins-gap) + 4px) !important;
-      margin-bottom: var(--pins-gap) !important;
+  @media (-moz-bool-pref: "zen.view.sidebar-expanded") and (not (-moz-bool-pref: "zen.view.sidebar-expanded.on-hover")) {
+
+    :root:has(#theme-SuperPins[uc-pins-width="Thin"]) {
+      --pins-width: 50px;
     }
+    :root:has(#theme-SuperPins[uc-pins-width="Normal"]) {
+      --pins-width: 60px;
+    }
+    :root:has(#theme-SuperPins[uc-pins-width="Wide"]) {
+      --pins-width: 70px;
+    }
+
+    :root:has(#theme-SuperPins[uc-pins-width="Thin"],
+                   #theme-SuperPins[uc-pins-width="Normal"],
+                   #theme-SuperPins[uc-pins-width="Wide"]) {
+                    #vertical-pinned-tabs-container {
+                      grid-template-columns: repeat(auto-fit, minmax(var(--pins-width), auto)) !important;
+                      gap: var(--pins-gap) calc(var(--pins-gap) + 4px) !important;
+                      margin-bottom: var(--pins-gap) !important;
+                    }
+                  }
+
     @media (-moz-bool-pref: "uc.pins.tall") {
       .tabbrowser-tab[pinned] { 
         min-height: 43px !important;
-      }
-    }
-  }
-
-  /* Increase width of pinned tabs for expand on hover */
-  @media (-moz-bool-pref: "zen.view.sidebar-expanded") and (-moz-bool-pref: "zen.view.sidebar-expanded.on-hover") and (not (-moz-bool-pref: "uc.pins.wide.disabled")) {  
-    #navigator-toolbox[zen-has-hover],
-    #navigator-toolbox:focus-within,
-    #navigator-toolbox[movingtab],
-    #navigator-toolbox[flash-popup],
-    #navigator-toolbox[has-popup-menu],
-    #navigator-toolbox:has(.tabbrowser-tab:active),
-    #navigator-toolbox:has(*[open='true']:not(tab):not(#zen-sidepanel-button)) {
-      #vertical-pinned-tabs-container {
-        grid-template-columns: repeat(auto-fit, minmax(60px, auto)) !important;
-        gap: var(--pins-gap) calc(var(--pins-gap) + 4px) !important;
-        margin-bottom: var(--pins-gap) !important;
-      }
-      @media (-moz-bool-pref: "uc.pins.tall") {
-        .tabbrowser-tab[pinned] { 
-          min-height: 43px !important;
-        }
       }
     }
   }
