@@ -1,9 +1,25 @@
 [
     {
-        "property": "uc.pins.wide.disabled",
-        "label": "Disables the layout changes made by SuperPins",
-        "type": "checkbox",
-        "disabledOn": []
+        "property": "uc.pins.width",
+        "label": "Select the general width pinned tabs (The width before the pins start wrapping to the next row)",
+        "type": "dropdown",
+        "placeholder": "Zen Default",
+        "defaultValue": "Normal",
+        "disabledOn": [],
+        "options": [
+            {
+                "label": "Thin",
+                "value": "Thin"
+            },
+            {
+                "label": "Normal",
+                "value": "Normal"
+            },
+            {
+                "label": "Wide",
+                "value": "Wide"
+            }
+        ]
     },
     {
         "property": "uc.pins.tall",
