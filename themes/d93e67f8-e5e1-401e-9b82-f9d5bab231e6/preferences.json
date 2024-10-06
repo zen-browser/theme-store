@@ -29,6 +29,12 @@
         "disabledOn": []
     },
     {
+        "property": "uc.urlbar.move-icon-into",
+        "label": "Move 1 button that's directly next to the url bar (you can do that by using 'Customize Toolbar') into the url bar",
+        "type": "checkbox",
+        "disabledOn": []
+    },
+    {
         "property": "uc.urlbar.blur-intensity",
         "label": "Enable a Background Blur when the Url Bar is focused & select its Intensity",
         "type": "dropdown",
