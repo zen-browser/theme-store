@@ -60,7 +60,7 @@
           #theme-Super-Url-Bar[uc-urlbar-blur-intensity="Normal"],
           #theme-Super-Url-Bar[uc-urlbar-blur-intensity="RatherStrong"],
           #theme-Super-Url-Bar[uc-urlbar-blur-intensity="Strong"],
-          #theme-Super-Url-Bar[uc-urlbar-blur-intensity="ReallyStrong"]) {
+          #theme-Super-Url-Bar[uc-urlbar-blur-intensity="ReallyStrong"]:not([inDOMFullscreen='true']):not([chromehidden~='location']):not([chromehidden~='toolbar'])) {
   #urlbar:is([breakout][breakout-extend], [breakout][usertyping][focused]):after {
     content: "";
     position: fixed;
@@ -79,9 +79,7 @@
   }
   
   /* Scuffed af solution to make blur work (need to find better solution) */
-  :root:not([inDOMFullscreen='true']):not([chromehidden~='location']):not([chromehidden~='toolbar']) {
-    clip-path: inset(-5px round var(--zen-webview-border-radius, var(--zen-border-radius)));
-  }
+  clip-path: content-box;
 }
 
 /* Custom Colors for Url Bar */
