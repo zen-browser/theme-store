@@ -39,6 +39,19 @@
   }
 }
 
+@media (-moz-bool-pref: "uc.urlbar.move-icon-into") {
+  #page-action-buttons {
+    margin-right: calc(var(--urlbar-min-height) - 2px - 4 * var(--urlbar-container-padding)) !important;
+  }
+  
+  #urlbar-container+.chromeclass-toolbar-additional {
+    margin-inline-start: calc(0px - 19px - 2 * var(--urlbar-icon-padding) - var(--urlbar-margin-inline)) !important;
+    position: relative;
+    --toolbarbutton-inner-padding: var(--urlbar-icon-padding);
+    --toolbarbutton-hover-background: color-mix(in srgb, var(--uc-urlbar-custom-bg-color) 90%, light-dark(black, white)) !important;
+  }
+}
+
 /* Blurs the background when url bar is focused when toggled */
 :root:has(#theme-Super-Url-Bar[uc-urlbar-blur-intensity="Subtle"]) {
   --blur-intensity: 1px;
