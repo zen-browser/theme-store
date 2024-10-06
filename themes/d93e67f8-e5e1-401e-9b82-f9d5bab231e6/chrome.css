@@ -39,8 +39,41 @@
   }
 }
 
+@media (-moz-bool-pref: "uc.urlbar.move-icon-into") {
+  #page-action-buttons {
+    margin-right: calc(var(--urlbar-min-height) - 2px - 4 * var(--urlbar-container-padding)) !important;
+  }
+  
+  #urlbar-container+.chromeclass-toolbar-additional {
+    margin-inline-start: calc(0px - 19px - 2 * var(--urlbar-icon-padding) - var(--urlbar-margin-inline)) !important;
+    position: relative;
+    --toolbarbutton-inner-padding: var(--urlbar-icon-padding);
+    --toolbarbutton-hover-background: color-mix(in srgb, var(--uc-urlbar-custom-bg-color) 90%, light-dark(black, white)) !important;
+  }
+}
+
 /* Blurs the background when url bar is focused when toggled */
-@media (-moz-bool-pref: "uc.urlbar.blur") {
+:root:has(#theme-Super-Url-Bar[uc-urlbar-blur-intensity="Subtle"]) {
+  --blur-intensity: 1px;
+}
+:root:has(#theme-Super-Url-Bar[uc-urlbar-blur-intensity="Normal"]) {
+  --blur-intensity: 2px;
+}
+:root:has(#theme-Super-Url-Bar[uc-urlbar-blur-intensity="RatherStrong"]) {
+  --blur-intensity: 3px;
+}
+:root:has(#theme-Super-Url-Bar[uc-urlbar-blur-intensity="Strong"]) {
+  --blur-intensity: 4px;
+}
+:root:has(#theme-Super-Url-Bar[uc-urlbar-blur-intensity="ReallyStrong"]) {
+  --blur-intensity: 6px;
+}
+
+:root:has(#theme-Super-Url-Bar[uc-urlbar-blur-intensity="Subtle"],
+          #theme-Super-Url-Bar[uc-urlbar-blur-intensity="Normal"],
+          #theme-Super-Url-Bar[uc-urlbar-blur-intensity="RatherStrong"],
+          #theme-Super-Url-Bar[uc-urlbar-blur-intensity="Strong"],
+          #theme-Super-Url-Bar[uc-urlbar-blur-intensity="ReallyStrong"]:not([inDOMFullscreen='true']):not([chromehidden~='location']):not([chromehidden~='toolbar'])) {
   #urlbar:is([breakout][breakout-extend], [breakout][usertyping][focused]):after {
     content: "";
     position: fixed;
@@ -53,14 +86,28 @@
     left: 0px;
   
     background-color: rgba(0, 0, 0, 0.3);
-    backdrop-filter: blur(1px);
+    backdrop-filter: blur(var(--blur-intensity));
   
     z-index: -1;
   }
   
   /* Scuffed af solution to make blur work (need to find better solution) */
-  :root:not([inDOMFullscreen='true']):not([chromehidden~='location']):not([chromehidden~='toolbar']) {
-    clip-path: inset(0 round var(--zen-webview-border-radius, var(--zen-border-radius)));
+  clip-path: content-box;
+}
+
+/* Custom Colors for Url Bar */
+@media (-moz-bool-pref: "uc.urlbar.custom-bg-color.checkbox") {
+  :root {
+    --zen-urlbar-background: var(--uc-urlbar-custom-bg-color) !important;
+    --zen-colors-input-bg: var(--uc-urlbar-custom-bg-color) !important;
+  }
+  #identity-icon-box, #identity-permission-box {
+    background-color: color-mix(in srgb, var(--uc-urlbar-custom-bg-color) 90%, light-dark(black, white)) !important;
+  }
+  #tracking-protection-icon-container, .urlbar-page-action, #picture-in-picture-button, #reader-mode-button {
+    &:hover:not([open="true"]) {
+      background-color: color-mix(in srgb, var(--uc-urlbar-custom-bg-color) 90%, light-dark(black, white)) !important;
+    }
   }
 }
 
@@ -71,29 +118,83 @@
   }
 }
 
+/* Makes all the hidden icons appear on hover */
+@media not (-moz-bool-pref: "uc.urlbar.icon.show-on-hover") {
+  :root {
+    --position-var: absolute;
+  }
+}
+@media (-moz-bool-pref: "uc.urlbar.icon.show-on-hover") {
+
+  :root {
+    --position-var: relative;
+  }
+
+  @media (-moz-bool-pref: "uc.urlbar.icon.zoom.removed") {
+    #urlbar:hover #urlbar-zoom-button {
+      position: relative;
+      opacity: 1;
+    } 
+  }
+  @media (-moz-bool-pref: "uc.urlbar.icon.shield.removed") {
+    #urlbar:hover #tracking-protection-icon-container, #tracking-protection-icon-container[open="true"] {
+      position: relative;
+      opacity: 1;
+    } 
+  }
+  @media (-moz-bool-pref: "uc.urlbar.icon.bookmark.removed") {
+    #urlbar:hover #star-button-box, #star-button-box[open="true"] {
+      position: relative;
+      opacity: 1;
+    } 
+  }
+  @media (-moz-bool-pref: "uc.urlbar.icon.reader-mode.removed") {
+    #urlbar:hover #reader-mode-button {
+      position: relative;
+      opacity: 1;
+    } 
+  }
+  @media (-moz-bool-pref: "uc.urlbar.icon.pip.removed") {
+    #urlbar:hover #picture-in-picture-button {
+      position: relative;
+      opacity: 1;
+    } 
+  }
+}
+
 /* Removes certain buttons from the url bar (when toggled) */
 @media (-moz-bool-pref: "uc.urlbar.icon.zoom.removed") {
   #urlbar-zoom-button {
-    display: none !important;
+    opacity: 0;
+    position: var(--position-var);
+    transition: 100ms linear, opacity 200ms linear;
   }
 }
 @media (-moz-bool-pref: "uc.urlbar.icon.shield.removed") {
   #tracking-protection-icon-container {
-    display: none !important;
+    opacity: 0;
+    position: var(--position-var);
+    transition: 100ms linear, opacity 200ms linear;
   }
 }
 @media (-moz-bool-pref: "uc.urlbar.icon.bookmark.removed") {
   #star-button-box {
-    display: none !important;
+    opacity: 0;
+    position: var(--position-var);
+    transition: 100ms linear, opacity 200ms linear;
   }
 }
 @media (-moz-bool-pref: "uc.urlbar.icon.reader-mode.removed") {
   #reader-mode-button {
-    display: none !important;
+    opacity: 0;
+    position: var(--position-var);
+    transition: 100ms linear, opacity 200ms linear;
   }
 }
 @media (-moz-bool-pref: "uc.urlbar.icon.pip.removed") {
   #picture-in-picture-button {
-    display: none !important;
+    opacity: 0;
+    position: var(--position-var);
+    transition: 100ms linear, opacity 200ms linear;
   }
 }
