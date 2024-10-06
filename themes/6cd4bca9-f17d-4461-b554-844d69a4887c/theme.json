@@ -6,6 +6,7 @@
     "style": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/6cd4bca9-f17d-4461-b554-844d69a4887c/chrome.css",
     "readme": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/6cd4bca9-f17d-4461-b554-844d69a4887c/readme.md",
     "image": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/6cd4bca9-f17d-4461-b554-844d69a4887c/image.png",
+    "preferences": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/6cd4bca9-f17d-4461-b554-844d69a4887c/preferences.json",
     "author": "Dinno-DEV",
-    "version": "1.0.1"
+    "version": "1.0.2"
 }
