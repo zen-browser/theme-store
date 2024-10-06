@@ -1,1 +1,11 @@
-{"id": "906c6915-5677-48ff-9bfc-096a02a72379", "name": "Floating Status Bar", "description": "Mod for Zen Browser that detaches the status bar from the bottom left corner of the browser window.", "homepage": "https://github.com/AmirhBeigi/zen-floating-statusbar/", "style": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/906c6915-5677-48ff-9bfc-096a02a72379/chrome.css", "readme": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/906c6915-5677-48ff-9bfc-096a02a72379/readme.md", "image": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/906c6915-5677-48ff-9bfc-096a02a72379/image.png", "author": "AmirhBeigi", "version": "1.0.0"}
+{
+    "id": "906c6915-5677-48ff-9bfc-096a02a72379",
+    "name": "Floating Status Bar",
+    "description": "Mod for Zen Browser that detaches the status bar from the bottom left corner of the browser window.",
+    "homepage": "https://github.com/AmirhBeigi/zen-floating-statusbar/",
+    "style": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/906c6915-5677-48ff-9bfc-096a02a72379/chrome.css",
+    "readme": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/906c6915-5677-48ff-9bfc-096a02a72379/readme.md",
+    "image": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/906c6915-5677-48ff-9bfc-096a02a72379/image.png",
+    "author": "AmirhBeigi",
+    "version": "1.0.0"
+}
