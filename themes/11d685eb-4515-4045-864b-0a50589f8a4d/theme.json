@@ -1,1 +1,11 @@
-{"id": "11d685eb-4515-4045-864b-0a50589f8a4d", "name": "Monochrome", "description": "There is no monochrome option in theme settings, so i created this theme.", "homepage": "https://github.com/antonsizikov/zen-browser-monochrome-theme", "style": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/11d685eb-4515-4045-864b-0a50589f8a4d/chrome.css", "readme": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/11d685eb-4515-4045-864b-0a50589f8a4d/readme.md", "image": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/11d685eb-4515-4045-864b-0a50589f8a4d/image.png", "author": "antonsizikov", "version": "1.0.0"}
+{
+    "id": "11d685eb-4515-4045-864b-0a50589f8a4d",
+    "name": "Monochrome",
+    "description": "There is no monochrome option in theme settings, so i created this theme.",
+    "homepage": "https://github.com/antonsizikov/zen-browser-monochrome-theme",
+    "style": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/11d685eb-4515-4045-864b-0a50589f8a4d/chrome.css",
+    "readme": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/11d685eb-4515-4045-864b-0a50589f8a4d/readme.md",
+    "image": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/11d685eb-4515-4045-864b-0a50589f8a4d/image.png",
+    "author": "antonsizikov",
+    "version": "1.0.0"
+}
