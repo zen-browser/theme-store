@@ -1,0 +1,20 @@
+[
+    {
+        "property": "uc.right_on_hover_sidebar.stay_on_focus",
+        "label": "Stay on focus",
+        "type": "checkbox",
+        "disabledOn": []
+    },
+    {
+        "property": "uc.right_on_hover_sidebar.width",
+        "label": "Set sidebar width",
+        "type": "string",
+        "defaultValue": "300px"
+    },
+    {
+        "property": "uc.right_on_hover_sidebar.hover_width",
+        "label": "Set sidebar hover trigger width",
+        "type": "string",
+        "defaultValue": "2px"
+    }
+]
