@@ -1,0 +1,7 @@
+{
+    "isDarkMode": true,
+    "primaryColor": "color-mix(in srgb, var(--zen-secondary-color) 100%, black 100%);",
+    "secondaryColor": "color-mix(in srgb, var(--zen-primary-color) 100%, black 0%);",
+    "colorsBorder": "color-mix(in srgb, var(--zen-primary-color) 100%, black 0%);",
+    "accentColor": "#00ca65"
+}
