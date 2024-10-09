@@ -1,1 +1,12 @@
-{"id": "39907934-59e9-4e42-89f0-a254d3c5e280", "name": "Sidebery", "description": "Tweaks to support Sidebery as an alternative to Zen's native tabs and workspace implementation.", "homepage": "https://github.com/shanto/sidebery", "style": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/39907934-59e9-4e42-89f0-a254d3c5e280/chrome.css", "readme": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/39907934-59e9-4e42-89f0-a254d3c5e280/readme.md", "image": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/39907934-59e9-4e42-89f0-a254d3c5e280/image.png", "author": "shanto", "version": "1.0.0", "preferences": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/39907934-59e9-4e42-89f0-a254d3c5e280/preferences.json"}
+{
+    "id": "39907934-59e9-4e42-89f0-a254d3c5e280",
+    "name": "Sidebery",
+    "description": "Tweaks to support Sidebery as an alternative to Zen's native tabs and workspace implementation.",
+    "homepage": "https://github.com/shanto/sidebery",
+    "style": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/39907934-59e9-4e42-89f0-a254d3c5e280/chrome.css",
+    "readme": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/39907934-59e9-4e42-89f0-a254d3c5e280/readme.md",
+    "image": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/39907934-59e9-4e42-89f0-a254d3c5e280/image.png",
+    "author": "shanto",
+    "version": "1.0.0",
+    "preferences": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/39907934-59e9-4e42-89f0-a254d3c5e280/preferences.json"
+}
