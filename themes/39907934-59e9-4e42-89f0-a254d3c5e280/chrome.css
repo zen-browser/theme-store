@@ -1,137 +1,141 @@
-
-@media (-moz-bool-pref: 'theme.sidebery.hide-zen-tabbar') {
-  #zen-sidebar-splitter {
-    display: none !important;
-  }
-  #tabbrowser-tabbox,
-  #sidebar-box {
-    margin-left: calc(var(--zen-element-separation) / 2) !important;
-  }
-  #navigator-toolbox {
-    position: absolute !important;
-    top: -9999px;
-    left: -9999px;
-  }
-  html:has(#sidebar-box[hidden='true']) #tabbrowser-tabpanels {
-    padding-left: var(--zen-element-separation) !important;
-    margin-left: -2px;
-  }
-  #sidebar-box {
-    min-width: 34px !important;
-  }
-  #sidebar-splitter {
-    right: -8px;
-    z-index: 999 !important;
-    border: 2px solid transparent !important;
-  }
-}
-@media (-moz-bool-pref: 'theme.sidebery.sidebar.auto-collapse.enable') and (-moz-bool-pref: 'theme.sidebery.hide-zen-tabbar') {
-  #sidebar-box {
-    border-left-width: 0 !important;
-    border-top-left-radius: 0 !important;
-    border-bottom-left-radius: 0 !important;
-  }
-}
-@media (-moz-bool-pref: 'theme.sidebery.sidebar.auto-collapse.enable') {
-  /* credits: https://canary.discord.com/channels/1088172780480114748/1290440055126495343 */
+@-moz-document url-prefix("chrome:") {
   html {
-    --sidebery-width: 36px;
-    --sidebery-hidden-width: 8px;
-    --sidebery-open-width: 256px;
+    --sidebery-width: 35px;
+    --sidebery-hidden-width: 10px;
+    --sidebery-open-width: 250px;
+    --sidebery-border-color: color-mix(in srgb, var(--sidebar-border-color) 60%, transparent);
   }
-  html {
+  #sidebar-splitter, #sidebar-box {
+    z-index: 2;
+  }
+  #sidebar-header {
+    border-color: var(--sidebery-border-color) !important;
+  }
+  #tabbrowser-tabpanels {
+    padding-left: calc(var(--zen-element-separation) + 4px) !important;
+  }
+  @media (-moz-bool-pref: 'theme.sidebery.hide-zen-tabbar') {
     #sidebar-box {
-      margin-left: 0 !important;
-      transition:
-        width 100ms,
-        background 400ms,
-        border 200ms;
-      transition-delay: 150ms;
-      z-index: 1;
-      position: absolute;
-      border: 1px solid var(--sidebar-border-color) !important;
-      /*           border-radius: var(--zen-border-radius) !important; */
-      left: 0;
-      top: 0;
-      bottom: 2px;
-      box-shadow: none !important;
-      min-width: var(--sidebery-width) !important;
-      width: var(--sidebery-width) !important;
-      &:hover {
-        background: color-mix(in srgb, var(--zen-themed-toolbar-bg) 75%, transparent) !important;
-        width: var(--sidebery-open-width) !important;
-      }
-      &:not(:hover) #sidebar-header {
-        display: none !important;
-      }
+      margin-left: calc(var(--zen-element-separation)) !important;
     }
-    #tabbrowser-tabbox {
-      margin-left: calc(var(--sidebery-width) + var(--zen-element-separation) / 2) !important;
+    #tabbrowser-tabpanels {
+      order: 1;
+    }
+    #zen-sidebar-splitter {
+      display: none !important;
+    }
+    #navigator-toolbox {
+      position: absolute !important;
+      left: -100%;
+    }
+    #zen-expand-sidebar-button {
+      display: none !important;
     }
   }
-  html[inFullscreen='true'] {
+  @media (-moz-bool-pref: 'theme.sidebery.sidebar.auto-collapse.enable') and (-moz-bool-pref: 'theme.sidebery.hide-zen-tabbar') {
+    #sidebar-box {
+      border-left-width: 0 !important;
+      border-top-left-radius: 0 !important;
+      border-bottom-left-radius: 0 !important;
+    }
+  }
+  @media (-moz-bool-pref: 'theme.sidebery.sidebar.auto-collapse.enable') {
+    /* credits: https://canary.discord.com/channels/1088172780480114748/1290440055126495343 */
+    html {
+      #sidebar-box {
+        margin-left: 0 !important;
+        transition:
+          width 50ms,
+          border 50ms,
+          background-color 50ms;
+        transition-delay: 50ms;
+        z-index: 1;
+        position: absolute;
+        border: 1px solid var(--sidebery-border-color) !important;
+        left: 0;
+        top: 1px;
+        bottom: 1px;
+        box-shadow: none !important;
+        min-width: var(--sidebery-width) !important;
+        width: var(--sidebery-width) !important;
+        &:hover {
+          transition-delay: 50ms;
+          background-color: color-mix(
+            in srgb,
+            var(--zen-themed-toolbar-bg) 75%,
+            transparent
+          ) !important;
+          width: var(--sidebery-open-width) !important;
+        }
+        &:not(:hover) #sidebar-header {
+          display: none !important;
+        }
+      }
+      #sidebar-splitter {
+        display: none;
+      }
+      #tabbrowser-tabpanels {
+        padding-left: calc(var(--zen-element-separation) + var(--sidebery-width)) !important;
+      }
+      #tabbrowser-tabbox:has(#sidebar-box[hidden=true]) {
+        #tabbrowser-tabpanels {
+          padding-left: var(--zen-element-separation) !important;
+        }
+      }
+    }
+    html[inFullscreen='true'] {
+      #sidebar-box {
+        border-color: transparent !important;
+        opacity: 0;
+        width: var(--sidebery-hidden-width) !important;
+        min-width: var(--sidebery-hidden-width) !important;
+        &:hover {
+          border-color: var(--sidebery-border-color) !important;
+          opacity: 1;
+          width: var(--sidebery-open-width) !important;
+        }
+      }
+      #tabbrowser-tabpanels {
+        padding-left: calc(var(--zen-element-separation)) !important;
+      }
+    }
+  }
+  @media (-moz-bool-pref: 'browser.tabs.allow_transparent_browser') {
+    html {
+      --lwt-sidebar-background-color: transparent !important;
+      --sidebar-background-color: transparent !important;
+    }
+    window.sidebar-panel,
+    window#webextpanels-window {
+      /*           background: var(--sidebar-background-color) !important; */
+      background: transparent !important;
+    }
     #sidebar-box {
       border-color: transparent !important;
-      opacity: 0;
-      width: var(--sidebery-hidden-width) !important;
-      min-width: var(--sidebery-hidden-width) !important;
-      &:hover {
-        border: 1px solid var(--sidebar-border-color) !important;
-        opacity: 1;
-        width: var(--sidebery-open-width) !important;
+      box-shadow: none !important;
+      #sidebar-header {
+        opacity: 0.75;
+        order: 0;
+        border: none !important;
+        border-bottom: 1px solid var(--sidebery-border-color) !important;
+        font-size: 1em !important;
       }
     }
-    #tabbrowser-tabbox {
-      margin-left: calc(
-        var(--sidebery-hidden-width) + var(--zen-element-separation)
-      ) !important;
-    }
   }
-}
-@media (-moz-bool-pref: 'browser.tabs.allow_transparent_browser') {
-  html {
-    --lwt-sidebar-background-color: transparent !important;
-    --sidebar-background-color: transparent !important;
-  }
-  window.sidebar-panel,
-  window#webextpanels-window {
-    /*           background: var(--sidebar-background-color) !important; */
-    background: transparent !important;
-  }
-  #sidebar-box {
-    border-color: transparent !important;
-    box-shadow: none !important;
-    #sidebar-header {
-      order: 0;
+  @media (-moz-bool-pref: 'theme.sidebery.sidebar-header.bottom-layout') {
+    #sidebar-box #sidebar-header {
+      order: 1;
       border: none !important;
-      border-bottom: 1px solid var(--sidebar-border-color) !important;
+      border-top: 1px solid var(--sidebery-border-color) !important;
       font-size: 1em !important;
+      #sidebar-switcher-arrow {
+        list-style-image: url('chrome://global/skin/icons/arrow-up-12.svg') !important;
+      }
     }
   }
-}
-@media not (-moz-bool-pref: 'theme.sidebery.hide-zen-tabbar') {
-  #tabbrowser-tabbox {
-    margin-left: calc(var(--zen-element-separation) / 2) !important;
-  }
-  @media not (-moz-bool-pref: 'browser.tabs.allow_transparent_browser') {
-    #tabbrowser-tabbox {
-      margin-left: calc(var(--zen-element-separation) / 1.5) !important;
+  @media (-moz-bool-pref: 'theme.sidebery.sidebar-header.hide') {
+    #sidebar-header {
+      display: none !important;
     }
-  }
-}
-@media (-moz-bool-pref: 'theme.sidebery.sidebar-header.bottom-layout') {
-  #sidebar-box #sidebar-header {
-    order: 1;
-    border: none !important;
-    border-top: 1px solid var(--sidebar-border-color) !important;
-    font-size: 1em !important;
-    #sidebar-switcher-arrow {
-      list-style-image: url('chrome://global/skin/icons/arrow-up-12.svg') !important;
-    }
-  }
-}
-@media (-moz-bool-pref: 'theme.sidebery.sidebar-header.hide') {
-  #sidebar-header {
-    display: none !important;
   }
 }
