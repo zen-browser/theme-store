@@ -78,23 +78,14 @@
 }
 
 
-.zen-split-view-splitter {
-  position: relative !important;
-  z-index: 1 !important;
-  padding: var(--zen-element-separation) !important;
-}
-
-.zen-split-view-splitter[orient="horizontal"] {
-  top: calc(calc(var(--zen-element-separation) / -2) - 1px) !important;
-}
-
-.zen-split-view-splitter[orient="vertical"] {
-  left: calc(calc(var(--zen-element-separation) / -2) - 1px) !important;
-}
-
 /* Makes Zen Sidebar Boxy */
 #zen-sidebar-add-panel-wrapper * {
   border-radius: 0px !important;
+}
+
+#zen-splitview-overlay {
+  padding: 0px !important;
+  margin: 0px !important;
 }
 
 #zen-sidebar-web-panel-wrapper {
@@ -193,4 +184,26 @@
   border: 0px !important;
   border-radius: 0px !important;
   border-bottom: 1px solid var(--zen-colors-border) !important;
+}
+
+/* Bookmark clean up */
+
+#zen-tabbox-wrapper {
+  & #sidebar-box {
+    border-radius: 0px !important;
+    margin: 0px !important;
+    margin-right: 4px !important;
+    overflow: hidden;
+    border: 0px !important;
+    border-right: 1px solid var(--zen-colors-border) !important;
+    background-color: transparent !important;
+  }
+}
+
+#sidebar-box * {
+  background-color: #0000 !important;
+}
+
+#sidebar-search-container, #bookmarks-view {
+  background-color: transparent !important;
 }
