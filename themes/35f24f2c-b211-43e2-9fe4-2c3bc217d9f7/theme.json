@@ -8,5 +8,10 @@
     "image": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/35f24f2c-b211-43e2-9fe4-2c3bc217d9f7/image.png",
     "author": "Tc-001",
     "version": "1.0.0",
-    "preferences": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/35f24f2c-b211-43e2-9fe4-2c3bc217d9f7/preferences.json"
+    "preferences": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/35f24f2c-b211-43e2-9fe4-2c3bc217d9f7/preferences.json",
+    "tags": [
+        "tabs"
+    ],
+    "createdAt": "2024-08-28",
+    "updatedAt": "2024-09-07"
 }

@@ -1,0 +1,14 @@
+{
+    "id": "f50841b2-5e4a-4534-985d-b7f7b96088c2",
+    "name": "NoHighlightSplit",
+    "description": "Removes the border highlight around the active tab while using split view.",
+    "homepage": "https://github.com/JtdeGraaf/zen-remove-split-view-tab-highlight",
+    "style": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/f50841b2-5e4a-4534-985d-b7f7b96088c2/chrome.css",
+    "readme": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/f50841b2-5e4a-4534-985d-b7f7b96088c2/readme.md",
+    "image": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/f50841b2-5e4a-4534-985d-b7f7b96088c2/image.png",
+    "author": "JtdeGraaf",
+    "version": "1.0.0",
+    "tags": [],
+    "createdAt": "2024-10-06",
+    "updatedAt": "2024-10-06"
+}

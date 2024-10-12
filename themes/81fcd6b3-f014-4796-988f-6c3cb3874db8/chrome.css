@@ -1,0 +1,117 @@
+
+/* Only use “Copy Link Without Site Tracking” */
+@media (-moz-bool-pref: "uc.hidecontext.copylink") {
+  #context-copylink {
+    display: none !important;
+  }
+}
+/* Hide "Menu Bar" toggle */
+@media (-moz-bool-pref: "uc.hidecontext.menubar") {
+  #toggle_toolbar-menubar {
+    display: none !important;
+  }
+}
+/* Hide "Bookmark Tab/Link” */
+@media (-moz-bool-pref: "uc.hidecontext.bookmark") {
+  #toolbar-context-bookmarkSelectedTab, 
+  #toolbar-context-bookmarkSelectedTabs,
+  #context_bookmarkTab,
+  #context-bookmarklink {
+    display: none !important;
+  }
+}
+/* Hide “Open Tab/Link in New Container Tab” */
+@media (-moz-bool-pref: "uc.hidecontext.newcontainer") {
+  #context_reopenInContainer,
+  #context-openlinkinusercontext-menu {
+    display: none !important;
+  }
+}
+/* Hide “Send Tab/Link to Device” */
+@media (-moz-bool-pref: "uc.hidecontext.sendtodevice") {
+  #context_sendTabToDevice,
+  #context-sendpagetodevice,
+  #context-sendlinktodevice,
+  #context-sep-sendlinktodevice {
+    display: none !important;
+  }
+}
+/* Hide “Search Keywords" with your preferred search engine */
+@media (-moz-bool-pref: "uc.hidecontext.search") {
+  #context-searchselect {
+    display: none !important;
+  }
+}
+/* Hide “Search Keywords in a Private Window” */
+@media (-moz-bool-pref: "uc.hidecontext.searchinpriv") {
+  #context-searchselect-private {
+    display: none !important;
+  }
+}
+/* Hide Firefox's "Translate Selection/Link" options */
+@media (-moz-bool-pref: "uc.hidecontext.translate") {
+  #context-translate-selection,
+  #frame-sep {
+    display: none !important;
+  }
+}
+/* Hide “Email Image”, “Set Image as Desktop Background”, and “View Image Info” options */
+@media (-moz-bool-pref: "uc.hidecontext.image") {
+  #context-saveimage,
+  #context-sep-setbackground,
+  #context-setDesktopBackground,
+  #context-sep-sharing,
+  #context-viewimageinfo {
+    display: none !important;
+  }
+}
+/* Hide “Select All Text” option */
+@media (-moz-bool-pref: "uc.hidecontext.selectalltext") {
+  #context-selectall {
+    display: none !important;
+  }
+}
+/* Hide “Select All Tabs" option */
+@media (-moz-bool-pref: "uc.hidecontext.selectalltabs") {
+  #context_selectAllTabs,
+  #toolbar-context-selectAllTabs {
+    display: none !important;
+  }
+}
+/* Hide “Reload Tab” option */
+@media (-moz-bool-pref: "uc.hidecontext.reloadtab") {
+  #context_reloadTab,
+  #toolbar-context-reloadSelectedTab,
+  #toolbar-context-reloadSelectedTabs {
+    display: none !important;
+  }
+}
+/* Hide “Tab Unloader Actions” */
+@media (-moz-bool-pref: "uc.hidecontext.unloadactions") {
+  #context_zenTabActions {
+    display: none !important;
+  }
+}
+/* Hide “View Page Source” and “Inspect” options */
+@media (-moz-bool-pref: "uc.hidecontext.inspect") {
+  #context-viewsource,
+  #context-inspect-a11y,
+  #context-inspect,
+  #context-media-eme-separator {
+    display: none !important;
+  }
+}
+/* Hide “Save Link As” */
+@media (-moz-bool-pref: "uc.hidecontext.savelink") {
+  #context-savelink {
+    display: none !important;
+  }
+}
+/* Hide "Take Screenshot" option */
+@media (-moz-bool-pref: "uc.hidecontext.screenshot") {
+  #context-take-screenshot,
+  #context-sep-screenshots,
+  #frame-sep {
+    display: none !important;
+  }
+}

@@ -1,0 +1,57 @@
+name: Update Theme Timestamps
+
+on:
+  pull_request:
+    types: [closed]
+  push:
+    branches:
+      - main
+
+jobs:
+  update-timestamp:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v2
+        with:
+          fetch-depth: 2
+
+      - name: Get changes
+        run: git diff --name-only HEAD^1 HEAD
+
+      - name: Set up Python
+        uses: actions/setup-python@v2
+        with:
+          python-version: '3.x'
+
+      - name: Detect changed themes
+        id: get_changes
+        run: |
+          changed_themes=$(git diff --name-only HEAD^1 HEAD | grep '^themes/' | awk -F/ '{print $2}' | sort -u)
+          echo "CHANGED_THEMES=$changed_themes" >> $GITHUB_ENV
+
+      - name: Setup python modules
+        run: |
+          pip3 install requests
+  
+      - name: Setup Git
+        run: |
+          git config --global user.name "github-actions[bot]"
+          git config --global user.email "github-actions[bot]@users.noreply.github.com"
+
+      - name: Update theme date
+        if: env.CHANGED_THEMES != ''
+        run: |
+          for theme in $CHANGED_THEMES; do
+            python3 scripts/update_theme_date.py "themes/$theme"
+          done
+
+      - name: Commit changes
+        if: env.CHANGED_THEMES != ''
+        run: |
+          for theme in $CHANGED_THEMES; do
+            git add "themes/$theme/theme.json"
+          done
+          git commit -m "Update theme.json for $CHANGED_THEMES"
+          git push

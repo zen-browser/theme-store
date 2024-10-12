@@ -49,22 +49,32 @@
   }
 
   /* Increase width of pinned tabs */
-  @media (-moz-bool-pref: "zen.view.sidebar-expanded") and (not (-moz-bool-pref: "uc.pins.wide.disabled")) {  
-    #navigator-toolbox:is(
-      #navigator-toolbox[zen-user-hover="true"]:hover,
-      #navigator-toolbox[zen-user-hover="true"]:focus-within,
-      #mainPopupSet[zen-user-hover="true"]:has(> #appMenu-popup:hover) ~ toolbox,
-      #navigator-toolbox[zen-user-hover="true"]:has(*[open="true"]:not(tab):not(#zen-sidepanel-button)), 
-      :not([zen-user-hover="true"])) {
-        #vertical-pinned-tabs-container {
-          grid-template-columns: repeat(auto-fit, minmax(60px, auto)) !important;
-          gap: var(--pins-gap) var(--pins-gap) !important;
-        }
-        @media (-moz-bool-pref: "uc.pins.tall") {
-          .tabbrowser-tab[pinned] { 
-            min-height: 43px !important;
-          }
-        }
+  @media (-moz-bool-pref: "zen.view.sidebar-expanded") and (not (-moz-bool-pref: "zen.view.sidebar-expanded.on-hover")) {
+
+    :root:has(#theme-SuperPins[uc-pins-width="Thin"]) {
+      --pins-width: 50px;
+    }
+    :root:has(#theme-SuperPins[uc-pins-width="Normal"]) {
+      --pins-width: 60px;
+    }
+    :root:has(#theme-SuperPins[uc-pins-width="Wide"]) {
+      --pins-width: 70px;
+    }
+
+    :root:has(#theme-SuperPins[uc-pins-width="Thin"],
+                   #theme-SuperPins[uc-pins-width="Normal"],
+                   #theme-SuperPins[uc-pins-width="Wide"]) {
+                    #vertical-pinned-tabs-container {
+                      grid-template-columns: repeat(auto-fit, minmax(var(--pins-width), auto)) !important;
+                      gap: var(--pins-gap) calc(var(--pins-gap) + 4px) !important;
+                      margin-bottom: var(--pins-gap) !important;
+                    }
+                  }
+
+    @media (-moz-bool-pref: "uc.pins.tall") {
+      .tabbrowser-tab[pinned] { 
+        min-height: 43px !important;
+      }
     }
   }
   
@@ -75,35 +85,22 @@
     }
   }
   
-  /* Hides the separator line between pinned tabs and normal ones (when toggled) */
-  @media (-moz-bool-pref: "uc.separator-line.hide") {
-    #newtab-button-container::before {
-      width: 0 !important;
-    }
-  }
-  
-  /* Move workspace button to the bottom (when toggled) */
-  @media (-moz-bool-pref: "uc.workspace-button.move-to-bottom") {
-    #zen-workspaces-button {
-      order: 1;
-      margin-bottom: auto !important;
-    }
-    @media (-moz-bool-pref: "zen.view.sidebar-expanded") {
-      .tabbrowser-tab[pinned] {
-        margin-top: 0px !important;
-        margin-bottom: var(--pinned-tabs-gap) !important;
+  /* Hides unloaded tabs when tab bar is collapsed (when toggled)*/
+  @media (not (-moz-bool-pref: "zen.view.sidebar-expanded")) {
+    :root:has(#theme-SuperPins[uc-pins-only-show-active="Normal"]) {
+      .tabbrowser-tab[pinned][pending="true"] {
+        position: absolute !important; /* Using position: absolute and visibility: hidden instead of display:none stops the icons of unloaded tabs from loading when sidebar expands */
+        visibility: hidden !important;
       }
     }
-  }
-  
-  /* Hides unloaded tabs when tab bar is collapsed (when toggled)*/
-  @media (-moz-bool-pref: "uc.pins.only-show-active") and (not (-moz-bool-pref: "zen.view.sidebar-expanded")) {
-    .tabbrowser-tab[pinned][pending="true"] {
-      position: absolute !important; /* Using position: absolute and visibility: hidden instead of display:none stops the icons of unloaded tabs from loading when sidebar expands */
-      visibility: hidden !important;
-    }
+
     /* Shows all pins when user is hovering over them when tab bar is collapsed */
-    @media (-moz-bool-pref: "uc.pins.only-show-active.on-hover") {
+    :root:has(#theme-SuperPins[uc-pins-only-show-active="OnHover"]) {
+      .tabbrowser-tab[pinned][pending="true"] {
+        position: absolute !important; /* Using position: absolute and visibility: hidden instead of display:none stops the icons of unloaded tabs from loading when sidebar expands */
+        visibility: hidden !important;
+      }
+
       #vertical-pinned-tabs-container:hover .tabbrowser-tab[pinned][pending="true"] {
         position: relative !important;
         visibility: visible !important;
@@ -130,26 +127,24 @@
     }
   }
   
-  /* Hides unloaded tabs when tab bar is collapsed when in "Expand on hove" mode (when toggled)*/
-  @media (-moz-bool-pref: "uc.pins.only-show-active"){  
-  #navigator-toolbox:not(
-    :is(
-    #navigator-toolbox[zen-user-hover="true"]:hover,
-    #navigator-toolbox[zen-user-hover="true"]:focus-within,
-    #mainPopupSet[zen-user-hover="true"]:has(> #appMenu-popup:hover) ~ toolbox,
-    #navigator-toolbox[zen-user-hover="true"]:has(*[open="true"]:not(tab):not(#zen-sidepanel-button)), 
-    :not([zen-user-hover="true"]))) {
-      .tabbrowser-tab[pinned][pending="true"] {
-        position: absolute !important; /* Using position: absolute and visibility: hidden instead of display:none stops the icons of unloaded tabs from loading when sidebar expands */
-        visibility: hidden !important;
+  /* Hides unloaded tabs when tab bar is collapsed when in "Expand on hove" mode (when toggled) */
+  @media (-moz-bool-pref: "zen.view.sidebar-expanded") and (-moz-bool-pref: "zen.view.sidebar-expanded.on-hover") {
+    :root:has(#theme-SuperPins[uc-pins-only-show-active="Normal"]),
+    :root:has(#theme-SuperPins[uc-pins-only-show-active="OnHover"]) { 
+      #navigator-toolbox:not(
+        :is( 
+        #navigator-toolbox[zen-has-hover],
+        #navigator-toolbox:focus-within,
+        #navigator-toolbox[movingtab],
+        #navigator-toolbox[flash-popup],
+        #navigator-toolbox[has-popup-menu],
+        #navigator-toolbox:has(.tabbrowser-tab:active),
+        #navigator-toolbox:has(*[open='true']:not(tab):not(#zen-sidepanel-button)))) {
+          .tabbrowser-tab[pinned][pending="true"] {
+            position: absolute !important; /* Using position: absolute and visibility: hidden instead of display:none stops the icons of unloaded tabs from loading when sidebar expands */
+            visibility: hidden !important;
+          }
       }
-    }
-  }
-  
-  /* Remove the border of the workspace button if enabled (when toggled) */
-  @media (-moz-bool-pref: "uc.workspace-button.remove-border") {
-    #zen-workspaces-button {
-      border: hidden !important;
     }
   }
 }

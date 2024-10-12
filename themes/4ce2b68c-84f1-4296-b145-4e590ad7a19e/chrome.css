@@ -1,0 +1,30 @@
+.browserContainer > findbar {
+  position: fixed;
+  bottom: 0px;
+  margin-bottom: var(--zen-element-separation);
+  margin-left: var(--zen-element-separation);
+  margin-right: var(--zen-element-separation);
+  background: var(--zen-colors-tertiary) !important;
+  border-radius: var(--zen-border-radius);
+  width: calc( 100% - var(--zen-element-separation) * 2);
+}
+
+.browserContainer > findbar,
+.findbar-textbox {
+  border: 1px solid var(--zen-colors-border) !important;
+}
+
+/* Increase space around edge of browser window and find bar */
+@media (-moz-bool-pref: "uc.floatingfindbar.increase.spacing") {
+  #main-window {
+    --zen-element-separation: 10px !important;
+  }
+}
+
+/* Enable compact findbar, similar to Smaller Compact Mode by n7itro */
+@media (-moz-bool-pref: "uc.floatingfindbar.compact.enabled") {
+  .browserContainer > findbar {
+    width: 75% !important;
+    margin-left: calc( 12.5% - var(--zen-element-separation) ) !important;
+  }
+}

@@ -1,0 +1,27 @@
+
+#zen-sidebar-web-panel:not([pinned="true"]) {
+    width: var(--uc-right_on_hover_sidebar-width)!important;
+}
+
+#zen-sidebar-web-panel-wrapper:not(:has(#zen-sidebar-web-panel[pinned="true"])) {
+    transition: all 0.2s ease-in-out!important;
+    height: 100%;
+    z-index: 1;
+    opacity: 0;
+    width: var(--uc-right_on_hover_sidebar-width);
+    position:absolute!important;
+    right: calc(0px - var(--uc-right_on_hover_sidebar-width) + var(--uc-right_on_hover_sidebar-hover_width));
+    top: 0;
+    &:hover {
+        opacity: 1;
+        transform: translateX(var(--zen-element-separation));
+        right:0;
+    }
+    @media (-moz-bool-pref: "uc.right_on_hover_sidebar.stay_on_focus") {
+        &:focus-within {
+            opacity: 1;
+            transform: translateX(var(--zen-element-separation));
+            right:0;
+        }
+    }
+}

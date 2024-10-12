@@ -1,9 +1,25 @@
 [
     {
-        "property": "uc.pins.wide.disabled",
-        "label": "Disables the layout changes made by SuperPins",
-        "type": "checkbox",
-        "disabledOn": []
+        "property": "uc.pins.width",
+        "label": "Select the general width pinned tabs (The width before the pins start wrapping to the next row)",
+        "type": "dropdown",
+        "placeholder": "Zen Default",
+        "defaultValue": "Normal",
+        "disabledOn": [],
+        "options": [
+            {
+                "label": "Thin",
+                "value": "Thin"
+            },
+            {
+                "label": "Normal",
+                "value": "Normal"
+            },
+            {
+                "label": "Wide",
+                "value": "Wide"
+            }
+        ]
     },
     {
         "property": "uc.pins.tall",
@@ -25,15 +41,19 @@
     },
     {
         "property": "uc.pins.only-show-active",
-        "label": "Only shows loaded tabs when the tab bar is collapsed",
-        "type": "checkbox",
-        "disabledOn": []
-    },
-    {
-        "property": "uc.pins.only-show-active.on-hover",
-        "label": "Only shows loaded tabs when the tab bar is collapsed, except when hovering over them (Only works with the above option enabled!)",
-        "type": "checkbox",
-        "disabledOn": []
+        "label": "Only shows loaded pinned tabs (when the tab bar is collapsed)",
+        "type": "dropdown",
+        "disabledOn": [],
+        "options": [
+            {
+                "label": "Normal",
+                "value": "Normal"
+            },
+            {
+                "label": "Also show them on hover",
+                "value": "OnHover"
+            }
+        ]
     },
     {
         "property": "uc.pins.bg-color.pop",
@@ -44,24 +64,6 @@
     {
         "property": "uc.pins.disable-bg-color",
         "label": "Disables the background color of pinned tabs",
-        "type": "checkbox",
-        "disabledOn": []
-    },
-    {
-        "property": "uc.separator-line.hide",
-        "label": "Hides the seperator line between pinned tabs and the first normal tab",
-        "type": "checkbox",
-        "disabledOn": []
-    },
-    {
-        "property": "uc.workspace-button.remove-border",
-        "label": "Removes the border of the workspace button",
-        "type": "checkbox",
-        "disabledOn": []
-    },
-    {
-        "property": "uc.workspace-button.move-to-bottom",
-        "label": "Moves the workspace button to the bottom of the tab bar",
         "type": "checkbox",
         "disabledOn": []
     },

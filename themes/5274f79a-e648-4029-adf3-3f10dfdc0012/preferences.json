@@ -1,8 +1,0 @@
-[
-    {
-        "property": "uc.theme.hide-sidebar-header.enabled",
-        "label": "Hide Sidebar Header",
-        "type": "checkbox",
-        "disabledOn": []
-    }
-]
