@@ -1,1 +1,12 @@
-{"id": "7ba20fe1-7286-4b1f-9bf6-39d40bec8ae0", "name": "Crimson", "description": "A crimson red theme for Zen :)", "homepage": "", "style": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/7ba20fe1-7286-4b1f-9bf6-39d40bec8ae0/chrome.css", "readme": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/7ba20fe1-7286-4b1f-9bf6-39d40bec8ae0/readme.md", "image": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/7ba20fe1-7286-4b1f-9bf6-39d40bec8ae0/image.png", "author": "shaeriz", "version": "1.0.0", "updatedAt": "2024-10-12"}
+{
+    "id": "7ba20fe1-7286-4b1f-9bf6-39d40bec8ae0",
+    "name": "Crimson",
+    "description": "A crimson red theme for Zen :)",
+    "homepage": "",
+    "style": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/7ba20fe1-7286-4b1f-9bf6-39d40bec8ae0/chrome.css",
+    "readme": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/7ba20fe1-7286-4b1f-9bf6-39d40bec8ae0/readme.md",
+    "image": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/7ba20fe1-7286-4b1f-9bf6-39d40bec8ae0/image.png",
+    "author": "shaeriz",
+    "version": "1.0.0",
+    "updatedAt": "2024-10-12"
+}
