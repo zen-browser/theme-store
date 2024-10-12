@@ -1,0 +1,38 @@
+[
+    {
+        "property": "theme.ayu.accent-color",
+        "label": "Ayu Accent Color",
+        "type": "dropdown",
+        "defaultValue": "red",
+        "options": [
+            {
+                "label": "Red",
+                "value": "red"
+            },
+            {
+                "label": "Green",
+                "value": "green"
+            },
+            {
+                "label": "Yellow",
+                "value": "yellow"
+            },
+            {
+                "label": "Blue",
+                "value": "blue"
+            },
+            {
+                "label": "Purple",
+                "value": "purple"
+            },
+            {
+                "label": "Cyan",
+                "value": "cyan"
+            },
+            {
+                "label": "White",
+                "value": "white"
+            }
+        ]
+    }
+]
