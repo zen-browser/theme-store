@@ -1,0 +1,42 @@
+[
+    {
+        "property": "uc.tabs.preferred_color",
+        "label": "Preferred color for tab border",
+        "type": "dropdown",
+        "options": [
+            {
+                "label": "Zen primary",
+                "value": "primary"
+            },
+            {
+                "label": "Zen secondary",
+                "value": "secondary"
+            },
+            {
+                "label": "Zen tertiary",
+                "value": "tertiary"
+            },
+            {
+                "label": "Zen border",
+                "value": "border"
+            },
+            {
+                "label": "Custom color",
+                "value": "custom"
+            }
+        ]
+    },
+    {
+        "property": "uc.tabs.custom_color_hex",
+        "label": "Custom Color (Hex)",
+        "type": "string",
+        "defaultValue": "#ffffff",
+        "placeholder": "#ffffff"
+    },
+    {
+        "property": "uc.tabs.dim_unloaded",
+        "label": "Dim Unloaded Tabs",
+        "type": "checkbox",
+        "defaultValue": false
+    }
+]
