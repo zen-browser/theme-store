@@ -10,7 +10,7 @@ on:
 jobs:
   update-timestamp:
     runs-on: ubuntu-latest
-
+    permissions: write-all
     steps:
       - name: Checkout repository
         uses: actions/checkout@v2
