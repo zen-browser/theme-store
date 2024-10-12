@@ -7,5 +7,13 @@
     "readme": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/e4faf306-61b1-4785-8678-7bdee9dc2564/readme.md",
     "image": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/e4faf306-61b1-4785-8678-7bdee9dc2564/image.png",
     "author": "ZweTyy",
-    "version": "1.0.1"
+    "version": "1.0.1",
+    "isDarkMode": true,
+    "isColorTheme": true,
+    "tags": [
+        "color scheme",
+        "dark"
+    ],
+    "createdAt": "2024-09-15",
+    "updatedAt": "2024-09-15"
 }

@@ -2,6 +2,7 @@ import os
 import re
 import argparse
 import json
+import time
 import uuid
 import sys
 import requests
@@ -352,6 +353,9 @@ Just joking, you can do whatever you want. You're the boss.
         "image": get_static_asset(theme_id, IMAGE_FILE),
         "author": author,
         "version": "1.0.0",
+        "tags": [],
+        "createdAt": time.strftime("%Y-%m-%d"),
+        "updatedAt": time.strftime("%Y-%m-%d"),
     }
 
     os.makedirs(f"themes/{theme_id}")

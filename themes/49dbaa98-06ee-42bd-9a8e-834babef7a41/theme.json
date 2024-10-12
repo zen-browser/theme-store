@@ -7,5 +7,10 @@
     "readme": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/49dbaa98-06ee-42bd-9a8e-834babef7a41/readme.md",
     "image": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/49dbaa98-06ee-42bd-9a8e-834babef7a41/image.png",
     "author": "burnt0rice",
-    "version": "1.0.0"
+    "version": "1.0.0",
+    "tags": [
+        "tabs"
+    ],
+    "createdAt": "2024-08-31",
+    "updatedAt": "2024-09-07"
 }
