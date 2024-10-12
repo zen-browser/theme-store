@@ -1,6 +1,7 @@
 /* Makes Browser Tab Zooms edge to edge */
 #tabbrowser-tabbox, #tabbrowser-tabpanels {
   padding: 0px !important;
+  margin: 0px !important;
 }
 
 #tabbrowser-tabpanels {
@@ -18,15 +19,25 @@
 }
 
 @media (-moz-bool-pref: "zen.view.compact") {
-:root:not([customizing]) {
-  @media (-moz-bool-pref: "zen.view.compact.hide-tabbar") {
-    & #tabbrowser-tabpanels {
-      :root:not([inDOMFullscreen="true"]) #browser:has(#navigator-toolbox:not([zen-right-side="true"])) & {
-        padding-left: 0px !important;
+  :root:not([customizing]):not([inDOMFullscreen="true"]) {
+    @media (-moz-bool-pref: "zen.view.compact.hide-tabbar") {
+      & #tabbrowser-tabpanels {
+        :root:not([inDOMFullscreen="true"]) #browser:has(#navigator-toolbox:not([zen-right-side="true"])) & {
+          padding-left: 0px !important;
+        }
       }
     }
   }
 }
+
+@media (-moz-bool-pref: "zen.view.compact") {
+  :root:not([customizing]):not([inDOMFullscreen="true"]) {
+    @media (-moz-bool-pref: "zen.view.compact.hide-toolbar") {
+      &:not([inDOMFullscreen="true"]) #tabbrowser-tabpanels {
+        padding-top: 0px !important;
+      }
+    }
+  }
 }
 
 @media (-moz-bool-pref: "zen.view.compact") {
@@ -50,7 +61,15 @@
 :root:not([inDOMFullscreen="true"]):not([chromehidden~="location"]):not([chromehidden~="toolbar"]) {
 & #tabbrowser-tabbox #tabbrowser-tabpanels .browserSidebarContainer[zen-split-active="true"] {
   box-shadow: 0 0 0 0px transparent !important;
+  padding: 0px !important;
 }
+}
+
+:root:not([inDOMFullscreen="true"]):not([chromehidden~="location"]):not([chromehidden~="toolbar"]) {
+  & #tabbrowser-tabbox #tabbrowser-tabpanels .browserSidebarContainer {
+    box-shadow: none !important;
+    margin: 0px !important;
+  }
 }
 
 #tabbrowser-tabpanels:has(> [zen-split="true"]) {
@@ -59,23 +78,14 @@
 }
 
 
-.zen-split-view-splitter {
-  position: relative !important;
-  z-index: 1 !important;
-  padding: var(--zen-element-separation) !important;
-}
-
-.zen-split-view-splitter[orient="horizontal"] {
-  top: calc(calc(var(--zen-element-separation) / -2) - 1px) !important;
-}
-
-.zen-split-view-splitter[orient="vertical"] {
-  left: calc(calc(var(--zen-element-separation) / -2) - 1px) !important;
-}
-
 /* Makes Zen Sidebar Boxy */
 #zen-sidebar-add-panel-wrapper * {
   border-radius: 0px !important;
+}
+
+#zen-splitview-overlay {
+  padding: 0px !important;
+  margin: 0px !important;
 }
 
 #zen-sidebar-web-panel-wrapper {
@@ -87,6 +97,7 @@
 
 #zen-sidebar-web-panel {
   box-shadow: 0 0 0 0px transparent !important;
+  border: none;
 }
 
 #zen-sidebar-web-panel-wrapper:has(#zen-sidebar-web-panel[hidden="true"]) {
@@ -114,7 +125,6 @@
 }
 
 #navigator-toolbox[zen-right-side="true"]:not([zen-expanded="true"]) {
-  
   border-left: 1px solid var(--zen-colors-border) !important;
   border-right: 0px none transparent !important;
 }
@@ -135,6 +145,17 @@
 #navigator-toolbox[zen-user-hover="true"][zen-right-side="true"]:not([zen-has-hover="true"]) {
   border-left: 1px solid var(--zen-colors-border) !important;
   border-right: 0px none transparent !important;
+}
+
+@media (-moz-bool-pref: "zen.view.compact"){
+  #navigator-toolbox:not([zen-expanded="true"]) {
+    border-right: 0px none transparent !important;
+  }
+
+  #navigator-toolbox[zen-right-side="true"]:not([zen-expanded="true"]) {
+    border-left: 0px none transparent !important;
+    border-right: 0px none transparent !important;
+  }
 }
 
 #TabsToolbar {
@@ -163,4 +184,26 @@
   border: 0px !important;
   border-radius: 0px !important;
   border-bottom: 1px solid var(--zen-colors-border) !important;
+}
+
+/* Bookmark clean up */
+
+#zen-tabbox-wrapper {
+  & #sidebar-box {
+    border-radius: 0px !important;
+    margin: 0px !important;
+    margin-right: 4px !important;
+    overflow: hidden;
+    border: 0px !important;
+    border-right: 1px solid var(--zen-colors-border) !important;
+    background-color: transparent !important;
+  }
+}
+
+#sidebar-box * {
+  background-color: #0000 !important;
+}
+
+#sidebar-search-container, #bookmarks-view {
+  background-color: transparent !important;
 }
