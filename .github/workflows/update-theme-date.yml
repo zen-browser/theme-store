@@ -15,6 +15,7 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v2
         with:
+          token: ${{ secrets.GITHUB_TOKEN }}
           fetch-depth: 2
 
       - name: Get changes
