@@ -1,0 +1,24 @@
+name: Update Theme Metadata
+
+on:
+  workflow_dispatch:
+
+jobs:
+  updateThemes:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+
+      - name: Install Python
+        uses: actions/setup-python@v2
+        with:
+          python-version: '3.x'
+
+      - name: Install dependencies
+        run: |
+          pip install requests
+
+      - name: Update theme.json files
+        run: python scripts/update_theme_files.py themes.json
