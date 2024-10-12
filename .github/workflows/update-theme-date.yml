@@ -56,5 +56,5 @@ jobs:
           for theme in $CHANGED_THEMES; do
             git add "themes/$theme/theme.json"
           done
-          git commit -m "Update theme.json for $CHANGED_THEMES"
+          git commit -m "Update \`updated at\` field for \`$CHANGED_THEMES\`"
           git push

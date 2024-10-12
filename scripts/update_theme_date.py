@@ -27,7 +27,7 @@ def update_theme_date(theme_path):
 
     # Write the changes back to theme.json
     with open(theme_file, "w") as f:
-        json.dump(theme_data, f, indent=2)
+        json.dump(theme_data, f)
 
     print(f"Updated `updatedAt` for {theme_path} to {theme_data['updatedAt']}")
 
