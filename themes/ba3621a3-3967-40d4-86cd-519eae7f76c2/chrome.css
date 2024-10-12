@@ -1,0 +1,8 @@
+
+@-moz-document url-prefix("chrome:") {
+    @media (-moz-bool-pref: "uc.unifiedExtensions-hide.hide-unifiedExtensions.enabled") {
+        #unified-extensions-button {
+            display: none !important;
+        }
+    }
+}
