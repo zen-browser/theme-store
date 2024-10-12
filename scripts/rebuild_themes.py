@@ -72,11 +72,16 @@ def main():
                     theme_colors_output = os.path.join(theme_folder, "chrome.css")
                     colors = write_colors(theme_colors_file, theme_colors_output)
 
-                    if "isDarkMode" in colors:
-                        theme_data["isDarkMode"] = colors["isDarkMode"]
+                    if "tags" not in theme_data:
+                        theme_data["tags"] = []
 
-                    theme_data["isColorTheme"] = True
+                    # Add 'color theme' tag if colors.json is present
+                    theme_data["tags"].append("color theme")
 
+                    # Add 'dark' tag if colors.json specifies dark mode
+                    if "isDarkMode" in colors and colors["isDarkMode"]:
+                        theme_data["tags"].append("dark")
+                        
                 themes_data[theme] = theme_data
 
                 with open(THEMES_DATA_FILE, "w") as f:
