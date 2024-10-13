@@ -21,9 +21,18 @@ def update_theme_date(theme_path):
             theme_data = json.load(f)
         except json.JSONDecodeError as e:
             panic("Error reading theme.json: " + str(e))
+            
+    # Get the current date
+    current_date = time.strftime("%Y-%m-%d")
+            
+    # Set `createdAt` to the current date if it doesn't exist
+    if "createdAt" not in theme_data:
+        theme_data["createdAt"] = current_date
+        print(f"Set `createdAt` for {theme_path} to {theme_data['createdAt']}")
 
     # Update the `updatedAt` field to the current date
-    theme_data["updatedAt"] = time.strftime("%Y-%m-%d")
+    theme_data["updatedAt"] = current_date
+    print(f"Updated `updatedAt` for {theme_path} to {theme_data['updatedAt']}")
 
     # Write the changes back to theme.json
     with open(theme_file, "w") as f:
