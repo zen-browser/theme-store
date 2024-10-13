@@ -29,7 +29,7 @@ jobs:
       - name: Detect changed themes
         id: get_changes
         run: |
-          changed_themes=$(git diff --name-only HEAD^1 HEAD | grep '^themes/' | awk -F/ '{print $2}' | sort -u)
+          changed_themes=$(git diff --name-only HEAD^1 HEAD | grep '^themes/' | awk -F/ '{print $2}' | sort -u | tr '\n' ' ')
           echo "CHANGED_THEMES=$changed_themes" >> $GITHUB_ENV
 
       - name: Setup python modules
