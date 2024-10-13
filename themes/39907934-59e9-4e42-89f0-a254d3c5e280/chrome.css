@@ -161,19 +161,4 @@
       display: none !important;
     }
   }
-  #zen-sidebar-web-panel-wrapper:has(#zen-sidebar-web-panel[pinned=true]) {
-    position: unset !important;
-    width: unset !important;
-    margin: unset !important;
-    height: unset !important;
-    padding-bottom: var(--zen-element-separation) !important;
-  }
-  #zen-sidebar-web-panel[pinned=true] {
-    position: unset !important;
-    height: unset !important;
-    margin-right: var(--zen-element-separation) !important;
-  }
-  .zen-sidebar-web-panel-splitter {
-    display: unset !important;
-  }
 }/*# sourceMappingURL=chrome.css.map */
