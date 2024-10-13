@@ -28,10 +28,26 @@
         "disabledOn": []
     },
     {
-        "property": "uc.pins.margins.compact",
-        "label": "Decreases the gap between pinned tabs",
-        "type": "checkbox",
-        "disabledOn": []
+        "property": "uc.pins.gap",
+        "label": "Select the gap between pinned tabs",
+        "type": "dropdown",
+        "placeholder": "Zen Default",
+        "defaultValue": "Normal",
+        "disabledOn": [],
+        "options": [
+            {
+                "label": "Small",
+                "value": "Small"
+            },
+            {
+                "label": "Normal",
+                "value": "Normal"
+            },
+            {
+                "label": "Big",
+                "value": "Big"
+            }
+        ]
     },
     {
         "property": "uc.pins.box-like-corners",
