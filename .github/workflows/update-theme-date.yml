@@ -1,13 +1,11 @@
 name: Update Theme Timestamps
 
 on:
-  pull_request:
-    branches:
-      - main
-    types: [closed]
   push:
     branches:
       - main
+    paths:
+      - 'themes/**'
 
 jobs:
   update-timestamp:
