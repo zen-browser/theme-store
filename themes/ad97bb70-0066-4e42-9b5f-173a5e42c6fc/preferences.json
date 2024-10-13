@@ -56,6 +56,12 @@
         "disabledOn": []
     },
     {
+        "property": "uc.pins.border",
+        "label": "Creates a border around pinned tabs",
+        "type": "checkbox",
+        "disabledOn": []
+    },
+    {
         "property": "uc.pins.only-show-active",
         "label": "Only shows loaded pinned tabs (when the tab bar is collapsed)",
         "type": "dropdown",
