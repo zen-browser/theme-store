@@ -89,6 +89,13 @@
       border-radius: 5px !important;
     }
   }
+
+  /* Adds border to pinned tabs (when toggled) */
+  @media (-moz-bool-pref: "uc.pins.border") {
+    .tabbrowser-tab[pinned] .tab-stack .tab-background{
+      border: 1px solid var(--zen-colors-border) !important;
+    }
+  }
   
   /* Hides unloaded tabs when tab bar is collapsed (when toggled)*/
   @media (not (-moz-bool-pref: "zen.view.sidebar-expanded")) {
