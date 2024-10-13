@@ -57,4 +57,5 @@ jobs:
             git add "themes/$theme/theme.json"
           done
           git commit -m "Update \`updated at\` field for \`$CHANGED_THEMES\`"
-          git push
+          git pull origin main --strategy-option=theirs
+          git push origin main
