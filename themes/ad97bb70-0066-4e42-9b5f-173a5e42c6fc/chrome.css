@@ -36,21 +36,9 @@
     }
   }  
   
-  /* Set margin between pinned tabs (when toggled) */
-  @media (-moz-bool-pref: "uc.pins.margins.compact") {
-    :root {
-      --pins-gap: 1px;
-    }
-  }
-  @media (not (-moz-bool-pref: "uc.pins.margins.compact")) {
-    :root {
-      --pins-gap: 6px;
-    }
-  }
-
-  /* Increase width of pinned tabs */
   @media (-moz-bool-pref: "zen.view.sidebar-expanded") and (not (-moz-bool-pref: "zen.view.sidebar-expanded.on-hover")) {
 
+    /* Set width of pinned tabs (Dropdown) */
     :root:has(#theme-SuperPins[uc-pins-width="Thin"]) {
       --pins-width: 50px;
     }
@@ -62,14 +50,31 @@
     }
 
     :root:has(#theme-SuperPins[uc-pins-width="Thin"],
-                   #theme-SuperPins[uc-pins-width="Normal"],
-                   #theme-SuperPins[uc-pins-width="Wide"]) {
-                    #vertical-pinned-tabs-container {
-                      grid-template-columns: repeat(auto-fit, minmax(var(--pins-width), auto)) !important;
-                      gap: var(--pins-gap) calc(var(--pins-gap) + 4px) !important;
-                      margin-bottom: var(--pins-gap) !important;
-                    }
-                  }
+              #theme-SuperPins[uc-pins-width="Normal"],
+              #theme-SuperPins[uc-pins-width="Wide"]) {
+              #vertical-pinned-tabs-container {
+                grid-template-columns: repeat(auto-fit, minmax(var(--pins-width), auto)) !important;
+              }
+    }
+
+    /* Set margin between pinned tabs (Dropdown) */
+    :root:has(#theme-SuperPins[uc-pins-gap="Small"]) {
+      --pins-gap: 1px;
+    }
+    :root:has(#theme-SuperPins[uc-pins-gap="Normal"]) {
+      --pins-gap: 3.5px;
+    }
+    :root:has(#theme-SuperPins[uc-pins-gap="Big"]) {
+      --pins-gap: 6px;
+    }
+
+    :root:has(#theme-SuperPins[uc-pins-gap="Small"],
+              #theme-SuperPins[uc-pins-gap="Normal"],
+              #theme-SuperPins[uc-pins-gap="Big"]) {
+                #vertical-pinned-tabs-container {
+                  gap: var(--pins-gap) calc(var(--pins-gap) + 3.5px) !important;
+                }
+    }
 
     @media (-moz-bool-pref: "uc.pins.tall") {
       .tabbrowser-tab[pinned] { 
