@@ -75,11 +75,12 @@ def main():
                     if "tags" not in theme_data:
                         theme_data["tags"] = []
 
-                    # Add 'color theme' tag if colors.json is present
-                    theme_data["tags"].append("color theme")
+                    # Add 'color theme' tag if colors.json is present and tag isn't already in tags list
+                    if "color scheme" not in theme_data["tags"]:
+                        theme_data["tags"].append("color scheme")
 
-                    # Add 'dark' tag if colors.json specifies dark mode
-                    if "isDarkMode" in colors and colors["isDarkMode"]:
+                    # Add 'dark' tag if colors.json specifies dark mode and tag isn't already in tags list
+                    if "isDarkMode" in colors and colors["isDarkMode"] and "dark" not in theme_data["tags"]:
                         theme_data["tags"].append("dark")
                         
                 themes_data[theme] = theme_data
