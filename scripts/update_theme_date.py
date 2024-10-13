@@ -33,6 +33,11 @@ def update_theme_date(theme_path):
     # Update the `updatedAt` field to the current date
     theme_data["updatedAt"] = current_date
     print(f"Updated `updatedAt` for {theme_path} to {theme_data['updatedAt']}")
+    
+    # Add `tags` as an empty list if it doesn't exist
+    if "tags" not in theme_data:
+        theme_data["tags"] = []
+        print(f"Initialized `tags` for {theme_path} as an empty list")
 
     # Write the changes back to theme.json
     with open(theme_file, "w") as f:
