@@ -86,7 +86,7 @@ def main():
                 themes_data[theme] = theme_data
 
                 with open(THEMES_DATA_FILE, "w") as f:
-                    json.dump(themes_data, f)
+                    json.dump(themes_data, f, indent=4)
                     del themes_data
 
             preferences_data_file = os.path.join(theme_folder, "preferences.json")

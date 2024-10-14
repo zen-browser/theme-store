@@ -384,7 +384,7 @@ Just joking, you can do whatever you want. You're the boss.
     download_image(image, f"themes/{theme_id}/{IMAGE_FILE}")
 
     with open(f"themes/{theme_id}/theme.json", "w") as f:
-        json.dump(theme, f)
+        json.dump(theme, f, indent=4)
 
     print(f"Theme submitted with ID: {theme_id}")
     for key, value in theme.items():
