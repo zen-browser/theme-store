@@ -41,11 +41,11 @@
 
 @media (-moz-bool-pref: "uc.urlbar.move-icon-into") {
   #page-action-buttons {
-    margin-right: calc(var(--urlbar-min-height) - 2px - 4 * var(--urlbar-container-padding)) !important;
+    margin-right: calc(var(--urlbar-min-height) - 1px - 4 * var(--urlbar-container-padding)) !important;
   }
   
   #urlbar-container+.chromeclass-toolbar-additional {
-    margin-inline-start: calc(0px - 19px - 2 * var(--urlbar-icon-padding) - var(--urlbar-margin-inline)) !important;
+    margin-inline-start: calc(-21px - 2 * var(--urlbar-icon-padding) - var(--urlbar-margin-inline)) !important;
     position: relative;
     --toolbarbutton-inner-padding: var(--urlbar-icon-padding);
     --toolbarbutton-hover-background: color-mix(in srgb, var(--uc-urlbar-custom-bg-color) 90%, light-dark(black, white)) !important;
@@ -96,11 +96,17 @@
 }
 
 /* Custom Colors for Url Bar */
-@media (-moz-bool-pref: "uc.urlbar.custom-bg-color.checkbox") {
-  :root {
-    --zen-urlbar-background: var(--uc-urlbar-custom-bg-color) !important;
-    --zen-colors-input-bg: var(--uc-urlbar-custom-bg-color) !important;
-  }
+:root:has(#theme-Super-Url-Bar[uc-urlbar-custom-bg-color-enabled="Normal"]) {
+  --zen-colors-input-bg: var(--uc-urlbar-custom-bg-color) !important;
+}
+
+:root:has(#theme-Super-Url-Bar[uc-urlbar-custom-bg-color-enabled="Advanced"]) {
+  --zen-urlbar-background: var(--uc-urlbar-custom-bg-color) !important;
+  --zen-colors-input-bg: var(--uc-urlbar-custom-bg-color) !important;
+}
+
+:root:has(#theme-Super-Url-Bar[uc-urlbar-custom-bg-color-enabled="Normal"],
+          #theme-Super-Url-Bar[uc-urlbar-custom-bg-color-enabled="Advanced"]) {
   #identity-icon-box, #identity-permission-box {
     background-color: color-mix(in srgb, var(--uc-urlbar-custom-bg-color) 90%, light-dark(black, white)) !important;
   }
@@ -160,6 +166,18 @@
       opacity: 1;
     } 
   }
+  @media (-moz-bool-pref: "uc.urlbar.icon.container.removed") {
+    #urlbar:hover #userContext-icons {
+      position: relative;
+      opacity: 1;
+    } 
+  }
+  @media (-moz-bool-pref: "uc.urlbar.icon.left-side.removed") {
+    #urlbar:hover #identity-box {
+      position: relative;
+      opacity: 1;
+    } 
+  }
 }
 
 /* Removes certain buttons from the url bar (when toggled) */
@@ -193,6 +211,20 @@
 }
 @media (-moz-bool-pref: "uc.urlbar.icon.pip.removed") {
   #picture-in-picture-button {
+    opacity: 0;
+    position: var(--position-var);
+    transition: 100ms linear, opacity 200ms linear;
+  }
+}
+@media (-moz-bool-pref: "uc.urlbar.icon.container.removed") {
+  #userContext-icons {
+    opacity: 0;
+    position: var(--position-var);
+    transition: 100ms linear, opacity 200ms linear;
+  }
+}
+@media (-moz-bool-pref: "uc.urlbar.icon.left-side.removed") {
+  #identity-box {
     opacity: 0;
     position: var(--position-var);
     transition: 100ms linear, opacity 200ms linear;
