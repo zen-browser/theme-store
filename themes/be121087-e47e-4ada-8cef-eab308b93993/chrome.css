@@ -1,0 +1,21 @@
+
+.tab-background[selected='']::before {
+    content: '';
+    position: absolute;
+    display: block;
+    height: 70%;
+    width: 4px;
+    border-radius: 5px;
+    margin-top: 10%;
+    background-color: var(--zen-primary-color);
+}
+@media (-moz-bool-pref: "zen.view.sidebar-expanded") {
+     .tab-background[selected='']::before {
+         margin-top: 3%;
+     }
+}
+@media (-moz-bool-pref: "theme.bat-indicator.on-right"){
+    .tab-background[selected='']::before {
+        right: 0px;
+    }
+}
