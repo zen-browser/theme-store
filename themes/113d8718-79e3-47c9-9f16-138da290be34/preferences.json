@@ -1,0 +1,30 @@
+[
+    {
+        "property": "theme.nord.accent-color",
+        "label": "Accent Color",
+        "type": "dropdown",
+        "defaultValue": "red",
+        "options": [
+            {
+                "label": "Red",
+                "value": "red"
+            },
+            {
+                "label": "Orange",
+                "value": "orange"
+            },
+            {
+                "label": "Yellow",
+                "value": "yellow"
+            },
+            {
+                "label": "Green",
+                "value": "green"
+            },
+            {
+                "label": "Purple",
+                "value": "purple"
+            }
+        ]
+    }
+]
