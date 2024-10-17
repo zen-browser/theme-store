@@ -1,0 +1,15 @@
+
+:root {
+    --zen-colors-primary: #88c0d0 !important;
+    --zen-colors-secondary: #88c0d0 !important;
+    --zen-colors-tertiary: #3b4252 !important;
+    --zen-colors-border: #4c566a !important;
+    --zen-dialog-background: #2e3440 !important;
+    --tab-selected-textcolor: #2e3440 !important;
+    --toolbar-field-background-color: #2e3440 !important;
+    --toolbar-field-focus-background-color: #2e3440 !important;
+      }
+   
+.urlbar-input {
+  text-align: center;
+}
