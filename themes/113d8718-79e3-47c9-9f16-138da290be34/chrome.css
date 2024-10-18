@@ -1,0 +1,89 @@
+
+:root {
+  /* Theming Variables */
+  /* Accent Color Variations Based on Theme Setting */
+  body:has(#theme-nord[theme-nord-accent-color="red"]) {
+    --accent-color: #bf616a !important; /* nord11 */
+  }
+  
+  body:has(#theme-nord[theme-nord-accent-color="green"]) {
+    --accent-color: #a3be8c !important;
+  }
+
+body:has(#theme-nord[theme-nord-accent-color="yellow"]) {
+    --accent-color: #ebcb8b !important;
+  }
+
+body:has(#theme-nord[theme-nord-accent-color="orange"]) {
+    --accent-color: #d08770 !important;
+  }
+
+body:has(#theme-nord[theme-nord-accent-color="purple"]) {
+    --accent-color: #b48ead !important;
+  }
+
+--zen-colors-primary: var(--accent-color) !important; 
+  --zen-colors-secondary: #3B4252 !important; 
+  --zen-colors-tertiary: #2E3440 !important; 
+  --zen-colors-border: var(--accent-color) !important; 
+  --zen-primary-color: var(--accent-color) !important;
+
+/* Base Color Variables */
+  --zen-dark-color-mix-base: #2E3440 !important; /* nord0 */
+  --zen-colors-primary-foreground: #D8DEE9 !important; /* nord4 */
+
+/* Background Colors */
+  --zen-main-browser-background: var(--zen-dark-color-mix-base) !important;
+  --zen-in-content-dialog-background: var(--zen-dark-color-mix-base) !important;
+  --zen-urlbar-background: var(--zen-dark-color-mix-base) !important;
+  --in-content-page-background: var(--zen-dark-color-mix-base) !important;
+  --in-content-box-background: var(--zen-dark-color-mix-base) !important;
+  --in-content-table-background: var(--zen-dark-color-mix-base) !important;
+  --card-background-color: #3B4252 !important; /* nord1 */
+  --in-content-button-background: #4C566A !important; /* nord3 */
+  
+  /* Hover, Input, and Interactive States */
+  --zen-colors-hover-bg: color-mix(in srgb, var(--zen-primary-color) 70%, var(--zen-dark-color-mix-base) 30%) !important;
+  --zen-colors-input-bg: var(--zen-dark-color-mix-base) !important;
+  --zen-input-border-color: var(--zen-colors-border) !important;
+  
+  /* Active/Selected States */
+  --toolbarbutton-active-background: var(--zen-colors-primary) !important;
+  --zen-browser-gradient-base: var(--zen-colors-secondary) !important;
+  --in-content-primary-button-text-color: var(--zen-dark-color-mix-base) !important;
+
+/* Secondary UI Elements */
+  --toolbarbutton-icon-fill-attention: var(--in-content-primary-button-background) !important;
+  --zen-settings-secondary-background: var(--zen-dark-color-mix-base) !important;
+  --in-content-box-info-background: var(--zen-dark-color-mix-base) !important;
+
+/* New Tab Page */
+  --newtab-background-color: var(--zen-dark-color-mix-base) !important;
+  --newtab-background-color-secondary: #3B4252 !important; /* nord1 */
+  --newtab-text-primary-color: var(--zen-colors-primary-foreground) !important;
+
+/* Fix for Pinned Tab Colors */
+  :host(:is(.anonymous-content-host, notification-message)), :root, .zenLooksAndFeelColorOption {
+    .tabbrowser-tab[pinned] .tab-stack .tab-background {
+      background: color-mix(in srgb, var(--zen-colors-secondary) 30%, transparent 70%) !important;
+    }
+    .tabbrowser-tab[pinned][selected="true"] .tab-stack .tab-background, 
+    .tabbrowser-tab[pinned][multiselected="true"] .tab-stack .tab-background {
+      background-color: var(--zen-colors-primary) !important;
+    }
+  }
+
+/* Browser and Settings Pages */
+  @-moz-document url-prefix(about:), url-prefix(chrome:), url(https://www.mozilla.org/credits/) {
+    html, body, #mount {
+      background-color: var(--zen-dark-color-mix-base) !important;
+    }
+    
+    :where(groupbox) button, .default-button {
+      background-color: var(--zen-main-browser-background) !important;
+    }
+    .navigation, .moz-card, groupbox {
+      background-color: #3B4252 !important; /* nord1 */
+    }
+  }
+}
