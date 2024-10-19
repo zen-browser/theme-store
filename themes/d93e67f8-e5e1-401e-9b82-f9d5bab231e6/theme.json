@@ -7,9 +7,11 @@
     "readme": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/d93e67f8-e5e1-401e-9b82-f9d5bab231e6/readme.md",
     "image": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/d93e67f8-e5e1-401e-9b82-f9d5bab231e6/image.png",
     "author": "JLBlk",
-    "version": "1.3.0",
+    "version": "1.4.0",
     "preferences": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/d93e67f8-e5e1-401e-9b82-f9d5bab231e6/preferences.json",
-    "tags": [],
+    "tags": [
+        "urlbar"
+    ],
     "createdAt": "2024-08-31",
     "updatedAt": "2024-10-06"
 }
