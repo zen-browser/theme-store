@@ -63,9 +63,26 @@
         ]
     },
     {
-        "property": "uc.urlbar.custom-bg-color.checkbox",
-        "label": "Enable Custom Colors for the Url Bar",
+        "property": "browser.urlbar.openintab",
+        "label": "Always open websites in a new tab when using url bar",
         "type": "checkbox"
+    },
+    {
+        "property": "uc.urlbar.custom-bg-color.enabled",
+        "label": "Enables Custom Colors for the Url Bar",
+        "type": "dropdown",
+        "placeholder": "Disabled",
+        "disabledOn": [],
+        "options": [
+            {
+                "label": "Only color url bar when not in focus",
+                "value": "Normal"
+            },
+            {
+                "label": "Always color url bar (not focused + focused)",
+                "value": "Advanced"
+            }
+        ]
     },
     {
         "property": "uc.urlbar.custom-bg-color",
@@ -100,6 +117,18 @@
     {
         "property": "uc.urlbar.icon.pip.removed",
         "label": "Hides the Picture-in-Picture icon",
+        "type": "checkbox",
+        "disabledOn": []
+    },
+    {
+        "property": "uc.urlbar.icon.container.removed",
+        "label": "Hides the Container Tab icon and text",
+        "type": "checkbox",
+        "disabledOn": []
+    },
+    {
+        "property": "uc.urlbar.icon.left-side.removed",
+        "label": "Hides all the icons/buttons on the left side",
         "type": "checkbox",
         "disabledOn": []
     },

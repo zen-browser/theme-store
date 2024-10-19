@@ -1,4 +1,3 @@
-
 .titlebar-buttonbox {
   padding: 9px !important;
 }
@@ -13,7 +12,7 @@
   border-radius: var(--uc-contextmenu-menuitem-border-radius) !important;
 }
 
-.titlebar-max {
+.titlebar-max, .titlebar-restore {
   padding-left: 10px !important;
   padding-right: 10px !important;
   margin-left: 5px !important;
