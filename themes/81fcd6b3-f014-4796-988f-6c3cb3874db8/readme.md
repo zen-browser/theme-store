@@ -1,5 +1,3 @@
-
-
 What can you do with this Mod:
 - Hide all separators in context menu _**NEW!**_
 - Hide all icons, excluding checkboxes & extension context menu _**NEW!**_
@@ -28,4 +26,4 @@ What can you do with this Mod:
 
 Go to Settings, Zen Mods, look up "Zen Context Menu", click the gear ⚙️ button, and check your desired preferences.
 
-[Star the repo](https://github.com/KiKaraage/ZenMods/) if you appreciate this Mod! You can also report issues or give suggestions related to this mod.
+[Star the repo](https://github.com/KiKaraage/ZenMods/) if you appreciate this Mod! You can also report issues or give suggestions for future updates.
