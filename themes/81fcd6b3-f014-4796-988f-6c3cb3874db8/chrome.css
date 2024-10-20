@@ -1,4 +1,46 @@
+/* Zen Context Menu v1.1 by KiKaraage */
 
+/* Hide all separators */
+@media (-moz-bool-pref: "uc.hidecontext.separators") {
+  menuseparator::before {
+    border-top: none !important;
+  }
+  menuseparator {
+    padding-block: none !Important;
+  }
+
+/* Hide all icons (Won't work for extension & checkbox context menu options) */
+@media (-moz-bool-pref: "uc.hidecontext.optionicons") {
+   :not(:not(menubar) > menu, #ContentSelectDropdown) > menupopup > menuitem:not(.menuitem-iconic, [type="checkbox"], [type="radio"], .in-menulist, .in-menulist menuitem, .unified-nav-current), :not(:not(menubar) > menu, #ContentSelectDropdown) > menupopup > menu:not(.menu-iconic, [type="checkbox"], [type="radio"], .in-menulist, .in-menulist menu, .unified-nav-current), :not(:not(menubar) > menu, #ContentSelectDropdown) > menupopup > menucaption {
+     padding-inline-start: var(--fp-contextmenu-menuicon-margin-inline) !important;
+   }
+  :not(:not(menubar) > menu, #ContentSelectDropdown) > menupopup > menuitem:not(.menuitem-iconic, [type="checkbox"], [type="radio"], .in-menulist, .in-menulist menuitem, .unified-nav-current), :not(:not(menubar) > menu, #ContentSelectDropdown) > menupopup > menu:not(.menu-iconic, [type="checkbox"], [type="radio"], .in-menulist, .in-menulist menu, .unified-nav-current), #toggle_toolbar-menubar, #PanelUI-history toolbarbutton, #unified-extensions-context-menu menuitem {
+    background-image: none !important;
+  } 
+}
+  
+@media (-moz-bool-pref: "uc.fixcontext.extensionmargins") {
+/* Fix margin for extensions-related context menu, on Windows */
+  .menu-iconic > .menu-iconic-left, .menuitem-iconic > .menu-iconic-left {
+    margin-inline-end: -2px !important;
+    padding-top: 0px !important;
+  }
+/* Fix "Tabs on the right" position when unchecked, on Windows */
+  menupopup[needsgutter] menuitem:not([checked="true"]) {
+    padding-inline-start: 21px !important;
+  }
+  #toolbar-context-customize.viewCustomizeToolbar {
+    padding-inline-start: 38px !important;
+  }
+/* Fix "Tabs on the right" position when checked, on Windows */
+  menuitem[checked="true"] {
+    padding-inline-start: 6px !important;
+  }
+  menuitem[checked="true"] > .menu-iconic-text {
+      padding-inline-start: 10px !important;
+  }
+}
+  
 /* Only use “Copy Link Without Site Tracking” */
 @media (-moz-bool-pref: "uc.hidecontext.copylink") {
   #context-copylink {
@@ -20,6 +62,24 @@
     display: none !important;
   }
 }
+/* Hide "Mute Tab" option */
+@media (-moz-bool-pref: "uc.hidecontext.mutetab") {
+  #context_toggleMuteTab {
+    display: none !important;
+  }
+}
+/* Hide "New Tab" option */
+@media (-moz-bool-pref: "uc.hidecontext.newtab") {
+  #context_openANewTab {
+    display: none !important;
+  }
+}
+/* Hide "Move Tab" options */
+@media (-moz-bool-pref: "uc.hidecontext.movetaboptions") {
+  #context_moveTabOptions {
+    display: none !important;
+  }
+}
 /* Hide “Open Tab/Link in New Container Tab” */
 @media (-moz-bool-pref: "uc.hidecontext.newcontainer") {
   #context_reopenInContainer,
@@ -36,6 +96,13 @@
     display: none !important;
   }
 }
+/* Hide close tab options (Close Tabs, Close Duplicate Tabs, Close Multiple Tabs) */
+@media (-moz-bool-pref: "uc.hidecontext.closetab") {
+  #context_closeTab, 
+  #context_closeDuplicateTabs, 
+  #context_closeTabOptions {
+    display: none !important;
+  }
 /* Hide “Search Keywords" with your preferred search engine */
 @media (-moz-bool-pref: "uc.hidecontext.search") {
   #context-searchselect {
@@ -55,13 +122,26 @@
     display: none !important;
   }
 }
+/* Hide "Print Selection” */
+@media (-moz-bool-pref: "uc.hidecontext.printselection") {
+  #context-print-selection {
+    display: none !important;
+  }
+}
 /* Hide “Email Image”, “Set Image as Desktop Background”, and “View Image Info” options */
 @media (-moz-bool-pref: "uc.hidecontext.image") {
-  #context-saveimage,
+  #context-sendimage,
   #context-sep-setbackground,
   #context-setDesktopBackground,
   #context-sep-sharing,
   #context-viewimageinfo {
+    display: none !important;
+  }
+}
+/* Hide "Check Spelling" option while typing in text fields */
+@media (-moz-bool-pref: "uc.hidecontext.checkspelling") {
+  #spell-check-enabled,
+  #context-sep-bidi {
     display: none !important;
   }
 }
@@ -83,6 +163,12 @@
   #context_reloadTab,
   #toolbar-context-reloadSelectedTab,
   #toolbar-context-reloadSelectedTabs {
+    display: none !important;
+  }
+}
+/* Hide "Duplicate Tab" */
+@media (-moz-bool-pref: "uc.hidecontext.duplicatetab") {
+  #context_duplicateTab {
     display: none !important;
   }
 }
