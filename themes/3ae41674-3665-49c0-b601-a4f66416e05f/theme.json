@@ -1,0 +1,14 @@
+{
+    "id": "3ae41674-3665-49c0-b601-a4f66416e05f",
+    "name": "MaterialFox",
+    "description": "A Material Design-inspired userChrome.css theme for Firefox",
+    "homepage": "https://github.com/muckSponge/MaterialFox",
+    "style": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/3ae41674-3665-49c0-b601-a4f66416e05f/chrome.css",
+    "readme": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/3ae41674-3665-49c0-b601-a4f66416e05f/readme.md",
+    "image": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/3ae41674-3665-49c0-b601-a4f66416e05f/image.png",
+    "author": "universish",
+    "version": "1.0.0",
+    "tags": [],
+    "createdAt": "2024-10-20",
+    "updatedAt": "2024-10-20"
+}
