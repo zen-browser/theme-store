@@ -8,6 +8,7 @@
   menuseparator {
     padding-block: none !Important;
   }
+}
 
 /* Hide all icons (Won't work for extension & checkbox context menu options) */
 @media (-moz-bool-pref: "uc.hidecontext.optionicons") {
@@ -110,6 +111,7 @@
   #context_closeTabOptions {
     display: none !important;
   }
+}
 /* Hide “Search Keywords" with your preferred search engine */
 @media (-moz-bool-pref: "uc.hidecontext.search") {
   #context-searchselect {
