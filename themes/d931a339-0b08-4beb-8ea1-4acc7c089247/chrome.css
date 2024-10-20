@@ -1,0 +1,69 @@
+
+#zen-main-app-wrapper {
+    background-color: #191724 !important;
+}
+
+#appMenu-mainView {
+    background-color: #26233a !important;
+}
+
+#appmenu-moreTools {
+    background-color: #26233a !important;
+}
+
+#PanelUI-button {
+    --button-active-bgcolor: #eb6f92 !important;
+}
+
+toolbox#navigator-toolbox {
+    background-color: #191724 !important;
+}
+
+#zen-appcontent-navbar-container {
+    background-color: #191724 !important;
+}
+.menu-text {
+    color: #e0def4 !important;
+}
+
+.menuitem-iconic {
+    color: #ebbcba !important;
+}
+
+:not(:not(menubar) > menu, #ContentSelectDropdown) > menupopup > menuitem:not(.menuitem-iconic, [type="checkbox"], [type="radio"], .in-menulist, .in-menulist menuitem, .unified-nav-current), :not(:not(menubar) > menu, #ContentSelectDropdown) > menupopup > menu:not(.menu-iconic, [type="checkbox"], [type="radio"], .in-menulist, .in-menulist menu, .unified-nav-current), #toggle_toolbar-menubar, #PanelUI-history toolbarbutton, #unified-extensions-context-menu menuitem {
+    fill: #e0def4 !important;
+}
+
+.tabbrowser-tab .tab-content {
+    color: #908caa !important;
+}
+.tabbrowser-tab:hover .tab-content {
+    color: #6e6a86 !important;
+}
+.tabbrowser-tab[selected] .tab-content {
+    color: #e0def4 !important;
+}
+.tab-background[selected] {
+    background: #403d52 !important;
+}
+
+html#main-window {
+    --lwt-toolbar-field-highlight-text: #908caa !important;
+    --lwt-toolbar-field-highlight: #403d52 !important;
+    --lwt-text-color: #908caa !important;
+    --toolbarbutton-icon-fill: #ebbcba !important;
+    --toolbar-field-color: #e0def4 !important;
+    --toolbar-field-focus-color: #e0def4 !important;
+    --toolbar-field-background-color: #1f1d2e !important;
+    --toolbar-field-focus-background-color: #26233a !important;
+    
+    --zen-colors-primary: #191724 !important;
+    --zen-colors-secondary: #1f1d2e !important;
+    --zen-colors-tertiary: #26233a !important;
+    --zen-colors-border: null !important;
+    --zen-dialog-background: #26233a !important;
+    
+    
+    
+    --arrowpanel-color: #e0def4 !important;
+}
