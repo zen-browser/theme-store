@@ -9,7 +9,9 @@
     "author": "KiKaraage",
     "version": "1.1.0",
     "preferences": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/81fcd6b3-f014-4796-988f-6c3cb3874db8/preferences.json",
-    "tags": ["context menu"],
+    "tags": [
+        "context menu"
+    ],
     "createdAt": "2024-10-06",
     "updatedAt": "2024-10-20"
 }
