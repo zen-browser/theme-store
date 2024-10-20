@@ -20,24 +20,31 @@
 }
   
 @media (-moz-bool-pref: "uc.fixcontext.extensionmargins") {
-/* Fix margin for extensions-related context menu, on Windows */
-  .menu-iconic > .menu-iconic-left, .menuitem-iconic > .menu-iconic-left {
-    margin-inline-end: -2px !important;
-    padding-top: 0px !important;
+/* Fix padding for extensions-related context menu on Windows */
+  menu > .menu-iconic-text, menuitem > .menu-iconic-text {
+    padding-inline-start: calc(var(--fp-contextmenu-menuicon-margin-inline) - 10px) !important;
   }
-/* Fix "Tabs on the right" position when unchecked, on Windows */
-  menupopup[needsgutter] menuitem:not([checked="true"]) {
-    padding-inline-start: 21px !important;
-  }
-  #toolbar-context-customize.viewCustomizeToolbar {
-    padding-inline-start: 38px !important;
-  }
-/* Fix "Tabs on the right" position when checked, on Windows */
-  menuitem[checked="true"] {
-    padding-inline-start: 6px !important;
-  }
+/* Fix padding for "Tabs on the right" & "Compact Mode" options on Windows */
   menuitem[checked="true"] > .menu-iconic-text {
-      padding-inline-start: 10px !important;
+    padding-inline-start: 10px !important;
+  } 
+  #zen-toolbar-context-tabs-right {
+    padding-inline-start: 34px !important;
+  }
+  #zen-toolbar-context-tabs-right[checked="true"] {
+    padding-inline-start: 8px !important;
+  }
+  #zen-context-menu-compact-mode {
+    padding-inline-start: calc( var(--fp-contextmenu-menuitem-padding-inline) + 18px + var(--fp-contextmenu-menuicon-margin-inline) ) !important;
+  }
+  #zen-context-menu-compact-mode-hide-sidebar, #zen-context-menu-compact-mode-hide-toolbar, #zen-context-menu-compact-mode-hide-both {
+    padding-inline-start: 40px !important;
+  }
+  #zen-context-menu-compact-mode-hide-sidebar[checked="true"], #zen-context-menu-compact-mode-hide-toolbar[checked="true"], #zen-context-menu-compact-mode-hide-both[checked="true"] {
+    padding-inline-start: 16px !important; 
+    & .menu-iconic-text {
+      padding-inline-start: 2px !important;
+    }
   }
 }
   
