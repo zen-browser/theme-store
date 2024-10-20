@@ -1,1 +1,13 @@
-{"id": "ba3621a3-3967-40d4-86cd-519eae7f76c2", "name": "Hide Unified Extensions", "description": "You can finally hide the unifiedExtensions button.", "homepage": "https://github.com/tangowithfoxtrot/zen-hide-unified-extensions", "style": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/ba3621a3-3967-40d4-86cd-519eae7f76c2/chrome.css", "readme": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/ba3621a3-3967-40d4-86cd-519eae7f76c2/readme.md", "image": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/ba3621a3-3967-40d4-86cd-519eae7f76c2/image.png", "author": "tangowithfoxtrot"}
+{
+    "id": "ba3621a3-3967-40d4-86cd-519eae7f76c2",
+    "name": "Hide Unified Extensions",
+    "description": "You can finally hide the unifiedExtensions button.",
+    "homepage": "https://github.com/tangowithfoxtrot/zen-hide-unified-extensions",
+    "style": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/ba3621a3-3967-40d4-86cd-519eae7f76c2/chrome.css",
+    "readme": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/ba3621a3-3967-40d4-86cd-519eae7f76c2/readme.md",
+    "image": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/ba3621a3-3967-40d4-86cd-519eae7f76c2/image.png",
+    "author": "tangowithfoxtrot",
+    "createdAt": "2024-10-20",
+    "updatedAt": "2024-10-20",
+    "tags": []
+}
