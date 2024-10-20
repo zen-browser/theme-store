@@ -1,0 +1,14 @@
+
+scrollbox:nth-child(5) {
+      scrollbar-width: thin !important;
+}
+
+@media (-moz-bool-pref: "zen.view.sidebar-expanded") {
+      scrollbox:nth-child(5) {
+            scrollbar-width: auto !important;
+      }
+}
+
+#navigator-toolbox {
+      -moz-window-dragging: no-drag; /* Disables window dragging */
+}
