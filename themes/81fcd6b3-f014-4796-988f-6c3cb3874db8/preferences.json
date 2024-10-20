@@ -6,7 +6,7 @@
     },
     {
         "property": "uc.hidecontext.optionicons",
-        "label": "Hide all icons (won't work for extension & checkbox context menu options)",
+        "label": "Hide all icons (won't work for extension and checkbox context menu options)",
         "type": "checkbox"
     },
     {
