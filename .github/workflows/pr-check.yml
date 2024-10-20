@@ -1,0 +1,27 @@
+
+name: Check PR is valid
+
+on:
+  pull_request:
+    types: [opened, synchronize]
+
+jobs:
+  check:
+    name: Rebuild themes after theme submission
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+
+      - name: Install python
+        uses: actions/setup-python@v2
+        with:
+          python-version: '3.x'
+
+      - name: Setup python modules
+        run: |
+          pip3 install requests
+
+      - name: Rebuild all themes
+        run: |
+          python3 scripts/rebuild_themes.py
