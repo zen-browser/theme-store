@@ -12,7 +12,7 @@
   {
     "property": "uc.fixcontext.extensionmargins",
     "label": "Fix margin for 'Tabs on the right' checkbox and extensions-related context menu",
-    "type": "checkbox"
+    "type": "checkbox",
     "disabledOn": ["macos", "linux"]    
   },
   {
