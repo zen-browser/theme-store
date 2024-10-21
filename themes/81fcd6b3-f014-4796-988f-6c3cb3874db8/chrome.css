@@ -6,7 +6,7 @@
     border-top: none !important;
   }
   menuseparator {
-    padding-block: none !important;
+    padding-block: 0px !important;
   }
 }
 
