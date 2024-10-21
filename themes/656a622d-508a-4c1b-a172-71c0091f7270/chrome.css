@@ -1,0 +1,10 @@
+
+:root {
+  --zen-colors-primary: #282a36 !important; /* Deep purple background */
+  --zen-colors-secondary: #44475a !important; /* Current line */
+  --zen-colors-tertiary: #6272a4 !important; /* Comment/Inactive */
+  --zen-colors-border: #8b94b2 !important; /* Accent/Borders */
+
+--zen-colors-accent: #ff79c6 !important; /* Pink accent */
+  --zen-colors-teal: #66d9ef !important; /* Teal accent */
+}
