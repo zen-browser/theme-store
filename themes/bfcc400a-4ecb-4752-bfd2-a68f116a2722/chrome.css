@@ -1,0 +1,103 @@
+
+@media (-moz-bool-pref: "theme.no_gaps.split.enabled") {
+
+#tabbrowser-tabbox{
+    --zen-split-row-gap: 0 !important;
+    --zen-split-column-gap: 0 !important;
+    padding: 0 !important;
+  }
+
+#tabbrowser-tabbox:has(> #tabbrowser-tabpanels[zen-split-view="true"]) {
+    padding: 0 1px 0 0 !important;
+  }
+
+#tabbrowser-tabpanels{
+    padding: 0 !important;
+  }
+  .zen-split-view-splitter {
+    display: none;
+  }
+
+@media (-moz-bool-pref: "theme.no_gaps.split.border") {
+    .browserSidebarContainer[zen-split="true"]{
+      padding: 1px !important;
+    }
+  }
+
+}
+
+@media not (-moz-bool-pref: "theme.no_gaps.split.enabled") {
+
+#tabbrowser-tabpanels:not([zen-split-view="true"]){
+    padding: 0 !important;
+  }
+  #tabbrowser-tabbox:has(> #tabbrowser-tabpanels:not([zen-split-view="true"])) {
+    padding: 0 !important;
+  }
+
+}
+
+@media not (-moz-bool-pref: "theme.no_gaps.border") {
+
+@media not (-moz-bool-pref: "theme.no_gaps.split.border") {
+
+.browserSidebarContainer{
+      --uc-tweak-rounded-corners-shadow-color: transparent !important;
+    }
+
+@media (-moz-bool-pref: "theme.no_gaps.split.rounded_corners") {
+      .browserSidebarContainer[zen-split="true"]{
+        overflow: visible !important;
+      }
+    }
+
+}
+
+@media (-moz-bool-pref: "theme.no_gaps.split.border") {
+    .browserSidebarContainer:not([zen-split="true"]){
+      --uc-tweak-rounded-corners-shadow-color: transparent !important;
+    }
+  }
+
+}
+
+@media (-moz-bool-pref: "theme.no_gaps.border") {
+
+@media not (-moz-bool-pref: "theme.no_gaps.split.border") {
+    .browserSidebarContainer[zen-split="true"]{
+      --uc-tweak-rounded-corners-shadow-color: transparent !important;
+    }
+
+@media (-moz-bool-pref: "theme.no_gaps.split.rounded_corners") {
+      .browserSidebarContainer[zen-split="true"]{
+        overflow: visible !important;
+      }
+    }
+
+}
+
+}
+
+@media not (-moz-bool-pref: "theme.no_gaps.rounded_corners") {
+
+@media not (-moz-bool-pref: "theme.no_gaps.split.rounded_corners") {
+    #tabbrowser-tabpanels{
+      --zen-webview-border-radius: 0;
+    }
+  }
+
+@media (-moz-bool-pref: "theme.no_gaps.split.rounded_corners") {
+    #tabbrowser-tabpanels:not([zen-split-view="true"]){
+      --zen-webview-border-radius: 0;
+    }
+  }
+
+}
+
+@media (-moz-bool-pref: "theme.no_gaps.rounded_corners") {
+  @media not (-moz-bool-pref: "theme.no_gaps.split.rounded_corners") {
+    #tabbrowser-tabpanels[zen-split-view="true"]{
+      --zen-webview-border-radius: 0;
+    }
+  }
+}
