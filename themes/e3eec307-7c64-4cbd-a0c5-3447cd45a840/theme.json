@@ -1,19 +1,17 @@
 {
     "id": "e3eec307-7c64-4cbd-a0c5-3447cd45a840",
     "name": "Catppuccin",
-    "description": "Dive into Catppuccin's, unique pastel color theme for Zen!",
-    "homepage": "https://catppuccin.com/",
+    "description": "🧘‍♂️ Soothing pastel for Zen Browser",
+    "homepage": "https://github.com/IAmJafeth/zen-browser",
     "style": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/e3eec307-7c64-4cbd-a0c5-3447cd45a840/chrome.css",
     "readme": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/e3eec307-7c64-4cbd-a0c5-3447cd45a840/readme.md",
     "image": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/e3eec307-7c64-4cbd-a0c5-3447cd45a840/image.png",
-    "author": "mauro-balades",
-    "version": "1.0.0",
-    "isDarkMode": true,
-    "isColorTheme": true,
+    "author": "IAmJafeth",
+    "version": "2.0.0",
+    "preferences": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/e3eec307-7c64-4cbd-a0c5-3447cd45a840/preferences.json",
     "tags": [
-        "color scheme",
-        "dark"
+        "color scheme"
     ],
     "createdAt": "2024-08-21",
-    "updatedAt": "2024-09-09"
+    "updatedAt": "2024-10-21"
 }
