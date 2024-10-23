@@ -1,0 +1,32 @@
+[
+    {
+        "property": "theme.no_gaps.split.enabled",
+        "label": "Remove gaps in split view",
+        "type": "checkbox",
+        "defaultValue": false
+    },
+    {
+        "property": "theme.no_gaps.border",
+        "label": "Keep border",
+        "type": "checkbox",
+        "defaultValue": true
+    },
+    {
+        "property": "theme.no_gaps.rounded_corners",
+        "label": "Keep rounded corners",
+        "type": "checkbox",
+        "defaultValue": false
+    },
+    {
+        "property": "theme.no_gaps.split.border",
+        "label": "Keep border in split view",
+        "type": "checkbox",
+        "defaultValue": true
+    },
+    {
+        "property": "theme.no_gaps.split.rounded_corners",
+        "label": "Keep rounded corners in split view",
+        "type": "checkbox",
+        "defaultValue": true
+    }
+]
