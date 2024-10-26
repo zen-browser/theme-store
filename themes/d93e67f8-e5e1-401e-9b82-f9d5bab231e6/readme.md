@@ -1,6 +1,6 @@
 # Super Url Bar
 
-## This **Zen theme** gives you 4 optional settings (in Zen's theme settings):
+## Settings:
   - Adjust border radius of the url bar (Circle like corners)
   - Center url text
   - Remove the border of the url bar
@@ -14,6 +14,7 @@
     - Bookmark (Star) icon
     - Reader-Mode icon
     - PiP icon
-    - Container Tab icon and text
+    - Container Tab icon and/or text
+    - Split-View icon
     - Left side icons
   - Show hidden icons when hovering the url bar
