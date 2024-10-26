@@ -1,0 +1,46 @@
+[
+    {
+        "property": "theme.customcursor.preset",
+        "label": "Custom Cursor Preset",
+        "type": "dropdown",
+        "placeholder": "Select a cursor",
+        "defaultValue": "Silver",
+        "options": [
+            {
+                "label": "Silver",
+                "value": "Silver"
+            },
+            {
+                "label": "Anime",
+                "value": "Anime"
+            },
+            {
+                "label": "AmongUs",
+                "value": "AmongUs"
+            },
+            {
+                "label": "Diamond",
+                "value": "Diamond"
+            },
+            {
+                "label": "Minecraft",
+                "value": "Minecraft"
+            },
+            {
+                "label": "Cat",
+                "value": "Cat"
+            },
+            {
+                "label": "Custom Cursor: Paste URL or Base64 using nimadez.github.io/base64/",
+                "value": "CustomCursor"
+            }
+        ]
+    },
+    {
+        "property": "uc.customcursor.cursor",
+        "label": "Custom Cursor (URL or Base64)",
+        "placeholder": "URL or Base64",
+        "defaultValue": "url()",
+        "type": "string"
+    }
+]
