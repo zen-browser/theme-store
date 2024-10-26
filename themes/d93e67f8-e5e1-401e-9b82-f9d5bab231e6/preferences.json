@@ -63,32 +63,41 @@
         ]
     },
     {
-        "property": "browser.urlbar.openintab",
-        "label": "Always open websites in a new tab when using url bar",
-        "type": "checkbox"
-    },
-    {
         "property": "uc.urlbar.custom-bg-color.enabled",
         "label": "Enables Custom Colors for the Url Bar",
-        "type": "dropdown",
-        "placeholder": "Disabled",
-        "disabledOn": [],
-        "options": [
-            {
-                "label": "Only color url bar when not in focus",
-                "value": "Normal"
-            },
-            {
-                "label": "Always color url bar (not focused + focused)",
-                "value": "Advanced"
-            }
-        ]
+        "type": "checkbox"
     },
     {
         "property": "uc.urlbar.custom-bg-color",
         "label": "Custom Color for the Url Bar (Checkbox above needs to be active)",
         "placeholder": "Enter Color Code",
         "type": "string"
+    },
+    {
+        "property": "browser.urlbar.openintab",
+        "label": "Always open websites in a new tab when using url bar",
+        "type": "checkbox"
+    },
+    {
+        "property": "uc.urlbar.hide.container-info",
+        "label": "Hides the container info",
+        "type": "dropdown",
+        "placeholder": "Disabled",
+        "disabledOn": [],
+        "options": [
+            {
+                "label": "Only hide the label",
+                "value": "hideLabel"
+            },
+            {
+                "label": "Only hide the icon",
+                "value": "hideIcon"
+            },
+            {
+                "label": "Hide both, icon and label",
+                "value": "hideIconLabel"
+            }
+        ]
     },
     {
         "property": "uc.urlbar.icon.zoom.removed",
@@ -121,8 +130,8 @@
         "disabledOn": []
     },
     {
-        "property": "uc.urlbar.icon.container.removed",
-        "label": "Hides the Container Tab icon and text",
+        "property": "uc.urlbar.icon.split-view.removed",
+        "label": "Hides the Split View icon",
         "type": "checkbox",
         "disabledOn": []
     },
