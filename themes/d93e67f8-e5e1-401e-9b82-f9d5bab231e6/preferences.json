@@ -23,8 +23,8 @@
         ]
     },
     {
-        "property": "uc.urlbar.border.removed",
-        "label": "Removes the border of the url bar",
+        "property": "uc.urlbar.border",
+        "label": "Adds a border to the url bar",
         "type": "checkbox",
         "disabledOn": []
     },
