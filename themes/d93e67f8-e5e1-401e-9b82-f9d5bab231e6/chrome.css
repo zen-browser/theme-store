@@ -96,31 +96,42 @@
 }
 
 /* Custom Colors for Url Bar */
-:root:has(#theme-Super-Url-Bar[uc-urlbar-custom-bg-color-enabled="Normal"]) {
-  --zen-colors-input-bg: var(--uc-urlbar-custom-bg-color) !important;
-}
+@media (-moz-bool-pref: "uc.urlbar.custom-bg-color.enabled") {
+  #urlbar-background {
+    background-color: var(--uc-urlbar-custom-bg-color) !important;
+  }
 
-:root:has(#theme-Super-Url-Bar[uc-urlbar-custom-bg-color-enabled="Advanced"]) {
-  --zen-urlbar-background: var(--uc-urlbar-custom-bg-color) !important;
-  --zen-colors-input-bg: var(--uc-urlbar-custom-bg-color) !important;
-}
-
-:root:has(#theme-Super-Url-Bar[uc-urlbar-custom-bg-color-enabled="Normal"],
-          #theme-Super-Url-Bar[uc-urlbar-custom-bg-color-enabled="Advanced"]) {
   #identity-icon-box, #identity-permission-box {
     background-color: color-mix(in srgb, var(--uc-urlbar-custom-bg-color) 90%, light-dark(black, white)) !important;
   }
-  #tracking-protection-icon-container, .urlbar-page-action, #picture-in-picture-button, #reader-mode-button {
+  #tracking-protection-icon-container, .urlbar-page-action, #picture-in-picture-button, #reader-mode-button, #zen-split-views-box {
     &:hover:not([open="true"]) {
       background-color: color-mix(in srgb, var(--uc-urlbar-custom-bg-color) 90%, light-dark(black, white)) !important;
     }
   }
 }
 
-/* Removes the border of the url bar when toggled */
-@media (-moz-bool-pref: "uc.urlbar.border.removed") {
+/* Adds a border of the url bar when toggled */
+@media (-moz-bool-pref: "uc.urlbar.border") {
   #urlbar {
-    border: none !important;
+    border: 1px solid var(--zen-colors-border) !important;
+  }
+}
+
+/* Hides the container info in url-bar */
+:root:has(#theme-Super-Url-Bar[uc-urlbar-hide-container-info="hideLabel"]) {
+  #userContext-label {
+    display: none;
+  }
+}
+:root:has(#theme-Super-Url-Bar[uc-urlbar-hide-container-info="hideIcon"]) {
+  #userContext-indicator {
+    display: none;
+  }
+}
+:root:has(#theme-Super-Url-Bar[uc-urlbar-hide-container-info="hideIconLabel"]) {
+  #userContext-icons {
+    display: none;
   }
 }
 
@@ -128,12 +139,14 @@
 @media not (-moz-bool-pref: "uc.urlbar.icon.show-on-hover") {
   :root {
     --position-var: absolute;
+    --pointer-events: none;
   }
 }
 @media (-moz-bool-pref: "uc.urlbar.icon.show-on-hover") {
 
   :root {
     --position-var: relative;
+    --pointer-events: all;
   }
 
   @media (-moz-bool-pref: "uc.urlbar.icon.zoom.removed") {
@@ -166,11 +179,11 @@
       opacity: 1;
     } 
   }
-  @media (-moz-bool-pref: "uc.urlbar.icon.container.removed") {
-    #urlbar:hover #userContext-icons {
+  @media (-moz-bool-pref: "uc.urlbar.icon.split-view.removed") {
+    #urlbar:hover #zen-split-views-box {
       position: relative;
       opacity: 1;
-    } 
+    }
   }
   @media (-moz-bool-pref: "uc.urlbar.icon.left-side.removed") {
     #urlbar:hover #identity-box {
@@ -184,6 +197,7 @@
 @media (-moz-bool-pref: "uc.urlbar.icon.zoom.removed") {
   #urlbar-zoom-button {
     opacity: 0;
+    pointer-events: var(--pointer-events) !important;
     position: var(--position-var);
     transition: 100ms linear, opacity 200ms linear;
   }
@@ -191,6 +205,7 @@
 @media (-moz-bool-pref: "uc.urlbar.icon.shield.removed") {
   #tracking-protection-icon-container {
     opacity: 0;
+    pointer-events: var(--pointer-events) !important;
     position: var(--position-var);
     transition: 100ms linear, opacity 200ms linear;
   }
@@ -198,6 +213,7 @@
 @media (-moz-bool-pref: "uc.urlbar.icon.bookmark.removed") {
   #star-button-box {
     opacity: 0;
+    pointer-events: var(--pointer-events) !important;
     position: var(--position-var);
     transition: 100ms linear, opacity 200ms linear;
   }
@@ -205,6 +221,7 @@
 @media (-moz-bool-pref: "uc.urlbar.icon.reader-mode.removed") {
   #reader-mode-button {
     opacity: 0;
+    pointer-events: var(--pointer-events) !important;
     position: var(--position-var);
     transition: 100ms linear, opacity 200ms linear;
   }
@@ -212,13 +229,15 @@
 @media (-moz-bool-pref: "uc.urlbar.icon.pip.removed") {
   #picture-in-picture-button {
     opacity: 0;
+    pointer-events: var(--pointer-events) !important;
     position: var(--position-var);
     transition: 100ms linear, opacity 200ms linear;
   }
 }
-@media (-moz-bool-pref: "uc.urlbar.icon.container.removed") {
-  #userContext-icons {
+@media (-moz-bool-pref: "uc.urlbar.icon.split-view.removed") {
+  #zen-split-views-box {
     opacity: 0;
+    pointer-events: var(--pointer-events) !important;
     position: var(--position-var);
     transition: 100ms linear, opacity 200ms linear;
   }
@@ -226,6 +245,7 @@
 @media (-moz-bool-pref: "uc.urlbar.icon.left-side.removed") {
   #identity-box {
     opacity: 0;
+    pointer-events: var(--pointer-events) !important;
     position: var(--position-var);
     transition: 100ms linear, opacity 200ms linear;
   }
