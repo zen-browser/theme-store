@@ -42,7 +42,7 @@
 @media (-moz-bool-pref: "uc.bookmarks.expand-on-search") or (-moz-bool-pref: "uc.bookmarks.expand-on-hover") {
     #PersonalToolbar[collapsed="false"]:not([customizing]) {
       position: relative;
-      margin-bottom: calc(-5px - var(--urlbar-min-height));
+      margin-bottom: calc(0px - var(--urlbar-min-height));
       transform: rotateX(90deg) !important;
       transform-origin: top;
       transition: transform 135ms linear !important;
