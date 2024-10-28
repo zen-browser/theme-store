@@ -37,7 +37,25 @@
     #PersonalToolbar:not([customizing]) {
        background-color: var(--zen-colors-tertiary) !important;
     }
-}  
+}
+
+@media (-moz-bool-pref: "uc.bookmarks.transparent") {
+    #personal-bookmarks toolbarbutton.bookmark-item {
+        background-color: var(--zen-colors-tertiary) !important;
+    }
+
+    #personal-bookmarks #PlacesToolbarItems>toolbarbutton.bookmark-item:not(.subviewbutton, [disabled="true"], [open]):hover {
+        filter: brightness(1.5)
+    }
+
+    #personal-bookmarks #PlacesToolbarItems>toolbarbutton.bookmark-item:not(.subviewbutton, [disabled="true"]):hover:active {
+        filter: brightness(3)
+    }
+
+    #personal-bookmarks #PlacesToolbarItems>toolbarbutton.bookmark-item[open="true"] {
+        filter: brightness(3)
+    }
+}
 
 @media (-moz-bool-pref: "uc.bookmarks.expand-on-search") or (-moz-bool-pref: "uc.bookmarks.expand-on-hover") {
     #PersonalToolbar[collapsed="false"]:not([customizing]) {
