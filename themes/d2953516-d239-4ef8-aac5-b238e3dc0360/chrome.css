@@ -1,7 +1,7 @@
 :root {
   --zen-colors-primary: var(--tab-loading-fill) !important;
   --zen-colors-secondary: var(--tab-loading-fill) !important;
-  --zen-colors-tertiary: color-mix(in srgb, var(--lwt-accent-color), black var(--uc-pywalzen-darkness)) !important;
+  --zen-colors-tertiary: color-mix(in srgb, var(--lwt-accent-color), black calc(var(--uc-pywalzen-darkness) * 1%)) !important;
   --toolbarbutton-icon-fill: var(--tab-loading-fill) !important;
 }
 
