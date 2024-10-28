@@ -1,55 +1,37 @@
 /* Makes Browser Tab Zooms edge to edge */
-#tabbrowser-tabbox, #tabbrowser-tabpanels {
+:root:not([inDOMFullscreen="true"]) #tabbrowser-tabbox {
   padding: 0px !important;
+}
+
+#tabbrowser-tabpanels[zen-split-view="true"] .browserSidebarContainer.deck-selected {
+  outline: none !important;
+}
+
+:root:not([inDOMFullscreen="true"]):not([chromehidden~="location"]):not([chromehidden~="toolbar"]) {
+  & #tabbrowser-tabpanels {
+    padding-right: 0px !important;
+    padding-bottom: 0px !important;
+  }
+}
+
+#tabbrowser-tabpanels:has(> [zen-split="true"]), #zen-splitview-overlay {
   margin: 0px !important;
 }
 
-#tabbrowser-tabpanels {
-  background: var(--zen-colors-border) !important;
+#tabbrowser-tabpanels[zen-split-view="true"] > [zen-split="true"], #zen-splitview-dropzone {
+  flex: 1;
+  margin: 0px;
+  position: absolute !important;
+  overflow: hidden;
 }
 
-@media (-moz-bool-pref: "zen.view.compact") {
-:root:not([customizing]) {
-  @media (-moz-bool-pref: "zen.view.compact.hide-toolbar") {
-    &:not([inDOMFullscreen="true"]) #tabbrowser-tabpanels {
-        padding: 0px !important;
+:root:not([inDOMFullscreen="true"]):not([chromehidden~="location"]):not([chromehidden~="toolbar"]) {
+  & #tabbrowser-tabbox #tabbrowser-tabpanels .browserSidebarContainer {
+    & .browserContainer {
+      overflow: hidden;
+      border-radius: 0px;
     }
   }
-}
-}
-
-@media (-moz-bool-pref: "zen.view.compact") {
-  :root:not([customizing]):not([inDOMFullscreen="true"]) {
-    @media (-moz-bool-pref: "zen.view.compact.hide-tabbar") {
-      & #tabbrowser-tabpanels {
-        :root:not([inDOMFullscreen="true"]) #browser:has(#navigator-toolbox:not([zen-right-side="true"])) & {
-          padding-left: 0px !important;
-        }
-      }
-    }
-  }
-}
-
-@media (-moz-bool-pref: "zen.view.compact") {
-  :root:not([customizing]):not([inDOMFullscreen="true"]) {
-    @media (-moz-bool-pref: "zen.view.compact.hide-toolbar") {
-      &:not([inDOMFullscreen="true"]) #tabbrowser-tabpanels {
-        padding-top: 0px !important;
-      }
-    }
-  }
-}
-
-@media (-moz-bool-pref: "zen.view.compact") {
-:root:not([customizing]) {
-  @media (-moz-bool-pref: "zen.view.compact.hide-tabbar") {
-    & #tabbrowser-tabpanels {
-      :root:not([inDOMFullscreen="true"]) #browser:has(#navigator-toolbox[zen-right-side="true"]) & {
-        padding-right: 0px !important;
-      }
-    }
-  }
-}
 }
 
 .browserSidebarContainer {
@@ -57,26 +39,6 @@
   box-shadow: 0 0 0 0px transparent !important;
   border-radius: 0px !important;
 }
-
-:root:not([inDOMFullscreen="true"]):not([chromehidden~="location"]):not([chromehidden~="toolbar"]) {
-& #tabbrowser-tabbox #tabbrowser-tabpanels .browserSidebarContainer[zen-split-active="true"] {
-  box-shadow: 0 0 0 0px transparent !important;
-  padding: 0px !important;
-}
-}
-
-:root:not([inDOMFullscreen="true"]):not([chromehidden~="location"]):not([chromehidden~="toolbar"]) {
-  & #tabbrowser-tabbox #tabbrowser-tabpanels .browserSidebarContainer {
-    box-shadow: none !important;
-    margin: 0px !important;
-  }
-}
-
-#tabbrowser-tabpanels:has(> [zen-split="true"]) {
---zen-split-row-gap: 1px !important;
---zen-split-column-gap: 1px !important;
-}
-
 
 /* Makes Zen Sidebar Boxy */
 #zen-sidebar-add-panel-wrapper * {
@@ -200,10 +162,17 @@
   }
 }
 
-#sidebar-box * {
-  background-color: #0000 !important;
-}
-
 #sidebar-search-container, #bookmarks-view {
   background-color: transparent !important;
+}
+
+#zen-tabbox-wrapper {
+  & #sidebar-box {
+    border-radius: 0px !important;
+    margin: 0px !important;
+    margin-right: 0px !important;
+    overflow: hidden;
+    border: 0px !important;
+    background-color: transparent !important;
+  }
 }
