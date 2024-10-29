@@ -9,7 +9,6 @@ This **Zen Mod** elevates your experience with pinned tabs and the tab bar in ge
   - Controllable Margins between pinned tabs (3 Options Dropdown)
   - Box like corners for pinned tabs (less rounded corners)
   - Hide unloaded pinned tabs when tab bar is collapsed (Additional option: Show all pinned tabs on hover even with tab bar collapsed)
-  - Color pop for pinned tabs (according to your accent color set in *Settings -> Look and Feel -> Theme Color*)
   - Make pinned tabs transparent
   - Load pinned tabs only when using them, instead of loading all of them on startup
   - Dim unloaded tabs
