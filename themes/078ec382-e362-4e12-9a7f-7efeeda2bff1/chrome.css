@@ -1,0 +1,54 @@
+
+:root:has(#theme-GalaxyDream-Gradient[theme-galaxydream-lightness="darker"]) {
+  --galaxydream-lightness: hsl(0, 0%, 20%);
+}
+:root:has(#theme-GalaxyDream-Gradient[theme-galaxydream-lightness="normal"]) {
+  --galaxydream-lightness: hsl(0, 0%, 40%);
+}
+:root:has(#theme-GalaxyDream-Gradient[theme-galaxydream-lightness="brighter"]) {
+  --galaxydream-lightness: hsl(0, 0%, 65%);
+}
+
+:root:not(:has(#theme-GalaxyDream-Gradient[theme-galaxydream-lightness="darker"],
+        #theme-GalaxyDream-Gradient[theme-galaxydream-lightness="normal"],
+        #theme-GalaxyDream-Gradient[theme-galaxydream-lightness="brighter"])) {
+  --galaxydream-lightness: hsl(0, 0%, 100%);
+}
+
+:root {
+  --zen-browser-gradient-base: color-mix(in srgb, var(--zen-primary-color) 50%, var(--galaxydream-lightness)) !important;
+}
+
+body {
+  --zen-main-browser-background: radial-gradient(ellipse, var(--zen-browser-gradient-base, #1B1E27) 20%, light-dark(#ffffff, #1b1b1b) 100%) !important;
+}
+
+/* Makes the gradient work in compact mode */
+@media (-moz-bool-pref:"zen.view.compact.hide-toolbar") and (-moz-bool-pref: "zen.view.compact") {
+  #nav-bar::before, #nav-bar { 
+      background: radial-gradient(ellipse at bottom, var(--zen-browser-gradient-base, #1B1E27) 0%, light-dark(#ffffff, #1b1b1b) 95%) !important;
+  }
+  #PersonalToolbar[data-l10n-id="bookmarks-toolbar"] {
+      background: radial-gradient(ellipse at top, var(--zen-browser-gradient-base, #1B1E27) 0%, light-dark(#ffffff, #1b1b1b) 95%) !important;
+  }   
+}    
+@media (-moz-bool-pref:"zen.view.compact.hide-tabbar") and (-moz-bool-pref: "zen.view.compact") {
+  #navigator-toolbox {
+      --zen-themed-toolbar-bg: radial-gradient(ellipse at right, var(--zen-browser-gradient-base, #1B1E27) 0%, light-dark(#ffffff, #1b1b1b) 95%) !important;
+  }
+}
+
+/* Make gradient work when "Expand on hover" is enabled */
+@media (-moz-bool-pref: "zen.view.sidebar-expanded.on-hover") {
+#navigator-toolbox[zen-has-hover],
+  #navigator-toolbox:focus-within,
+  #navigator-toolbox[movingtab],
+  #navigator-toolbox[flash-popup],
+  #navigator-toolbox[has-popup-menu],
+  #navigator-toolbox:has(.tabbrowser-tab:active),
+  #navigator-toolbox:has(*[open='true']:not(tab):not(#zen-sidepanel-button)) {
+      & #TabsToolbar {
+          background: radial-gradient(ellipse at right, var(--zen-browser-gradient-base, #1B1E27) 0%, light-dark(#ffffff, #1b1b1b) 95%) !important;
+      }
+  }
+}
