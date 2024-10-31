@@ -1,0 +1,15 @@
+{
+    "id": "2cdff2cc-b8bb-47b9-a18b-e0b42a2bde7e",
+    "name": "Move Scrollbar to Edge",
+    "description": "Moves the Scrollbar to the right edge of the screen. This is muscle memory for some people.",
+    "homepage": "https://github.com/tedbergstrand",
+    "style": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/2cdff2cc-b8bb-47b9-a18b-e0b42a2bde7e/chrome.css",
+    "readme": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/2cdff2cc-b8bb-47b9-a18b-e0b42a2bde7e/readme.md",
+    "image": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/2cdff2cc-b8bb-47b9-a18b-e0b42a2bde7e/image.png",
+    "author": "tedbergstrand",
+    "version": "1.0.0",
+    "tags": [],
+    "createdAt": "2024-10-31",
+    "updatedAt": "2024-10-31",
+    "preferences": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/2cdff2cc-b8bb-47b9-a18b-e0b42a2bde7e/preferences.json"
+}
