@@ -26,7 +26,7 @@
         "preferences": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/d2953516-d239-4ef8-aac5-b238e3dc0360/preferences.json",
         "tags": [],
         "createdAt": "2024-09-29",
-        "updatedAt": "2024-09-29"
+        "updatedAt": "2024-10-28"
     },
     "f4a7562f-6e54-4f1e-b835-a397fc6c15f2": {
         "id": "f4a7562f-6e54-4f1e-b835-a397fc6c15f2",
@@ -590,10 +590,10 @@
         "readme": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/753c7518-237d-480a-abfd-1f42a7eabacc/readme.md",
         "image": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/753c7518-237d-480a-abfd-1f42a7eabacc/image.png",
         "author": "Dinno-DEV",
-        "version": "1.0.2",
+        "version": "1.0.3",
         "tags": [],
         "createdAt": "2024-09-24",
-        "updatedAt": "2024-10-12"
+        "updatedAt": "2024-10-28"
     },
     "e4274cbc-c99b-411a-876d-9b943eb91282": {
         "id": "e4274cbc-c99b-411a-876d-9b943eb91282",
@@ -672,21 +672,6 @@
         "createdAt": "2024-08-31",
         "updatedAt": "2024-09-07"
     },
-    "af7ee14f-e9d4-4806-8438-c59b02b77715": {
-        "id": "af7ee14f-e9d4-4806-8438-c59b02b77715",
-        "name": "SuperGradient",
-        "description": "This Zen Theme gives you great looking gradients with many options to customize it to your liking.",
-        "homepage": "https://github.com/JLBlk/Zen-Themes/tree/main/SuperGradient",
-        "style": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/af7ee14f-e9d4-4806-8438-c59b02b77715/chrome.css",
-        "readme": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/af7ee14f-e9d4-4806-8438-c59b02b77715/readme.md",
-        "image": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/af7ee14f-e9d4-4806-8438-c59b02b77715/image.png",
-        "author": "JLBlk",
-        "version": "1.2.1",
-        "preferences": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/af7ee14f-e9d4-4806-8438-c59b02b77715/preferences.json",
-        "tags": [],
-        "createdAt": "2024-09-15",
-        "updatedAt": "2024-10-06"
-    },
     "56449583-f295-4f34-baf8-da70d3d156e7": {
         "id": "56449583-f295-4f34-baf8-da70d3d156e7",
         "name": "Solarized",
@@ -719,6 +704,21 @@
         "tags": [],
         "createdAt": "2024-09-03",
         "updatedAt": "2024-09-03"
+    },
+    "00aeb359-cce5-4eb5-8c5c-5f928a715664": {
+        "id": "00aeb359-cce5-4eb5-8c5c-5f928a715664",
+        "name": "Nyan Catto Mod",
+        "description": "Playful sidebar mod featuring Bongo Cat above and marching Nyan Cats below \ud83d\udc31",
+        "homepage": "https://github.com/RayZ3R0/nyan-catto",
+        "style": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/00aeb359-cce5-4eb5-8c5c-5f928a715664/chrome.css",
+        "readme": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/00aeb359-cce5-4eb5-8c5c-5f928a715664/readme.md",
+        "image": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/00aeb359-cce5-4eb5-8c5c-5f928a715664/image.png",
+        "author": "RayZ3R0",
+        "version": "1.0.0",
+        "tags": [],
+        "createdAt": "2024-10-29",
+        "updatedAt": "2024-10-29",
+        "preferences": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/00aeb359-cce5-4eb5-8c5c-5f928a715664/preferences.json"
     },
     "daf345ec-9a89-4b5d-9d41-47df562e29c9": {
         "id": "daf345ec-9a89-4b5d-9d41-47df562e29c9",
@@ -940,7 +940,7 @@
         "readme": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/d93e67f8-e5e1-401e-9b82-f9d5bab231e6/readme.md",
         "image": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/d93e67f8-e5e1-401e-9b82-f9d5bab231e6/image.png",
         "author": "JLBlk",
-        "version": "1.4.0",
+        "version": "1.4.1",
         "preferences": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/d93e67f8-e5e1-401e-9b82-f9d5bab231e6/preferences.json",
         "tags": [
             "urlbar"
@@ -1054,9 +1054,9 @@
         "image": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/ea1a5ace-f698-4b45-ab88-6e8bd3a563f0/image.png",
         "author": "n7itro",
         "preferences": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/ea1a5ace-f698-4b45-ab88-6e8bd3a563f0/preferences.json",
-        "version": "1.0.3",
+        "version": "1.2.0",
         "tags": [],
         "createdAt": "2024-08-19",
-        "updatedAt": "2024-10-18"
+        "updatedAt": "2024-10-26"
     }
 }
