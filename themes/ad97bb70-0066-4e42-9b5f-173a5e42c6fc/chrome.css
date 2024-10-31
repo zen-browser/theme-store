@@ -1,29 +1,6 @@
-@media (-moz-bool-pref: "zen.tabs.vertical") {
-
-  /* COLOR POP of pinned tabs (when toggled) */
-  @media (-moz-bool-pref: "uc.pins.bg-color.pop") and (not (-moz-bool-pref: "uc.pins.disable-bg-color")) {
-    /* background color of pinned tabs in a normal state (not hovered/selected) */
-    .tabbrowser-tab[pinned] .tab-stack .tab-background {
-      background-color: light-dark(hsl(from var(--zen-primary-color) h 70% 92%), hsl(from var(--zen-primary-color) h 25% 15%)) !important;
-    }
-    /* background color when hovering */
-    .tabbrowser-tab[pinned]:hover .tab-stack .tab-background{
-      background-color: light-dark(hsl(from var(--zen-primary-color) h 70% 90%), hsl(from var(--zen-primary-color) h 25% 17%)) !important;
-    }
-    /* background color when selected */
-    .tabbrowser-tab[pinned][selected="true"] .tab-stack .tab-background,
-    .tabbrowser-tab[pinned][multiselected="true"] .tab-stack .tab-background {
-      background-color: light-dark(hsl(from var(--zen-primary-color) h 70% 85%), hsl(from var(--zen-primary-color) h 25% 28%)) !important;
-    }
-    /* background color when hovering and selected */
-    .tabbrowser-tab[pinned][selected="true"]:hover .tab-stack .tab-background,
-    .tabbrowser-tab[pinned][multiselected="true"]:hover .tab-stack .tab-background{
-      background-color: light-dark(hsl(from var(--zen-primary-color) h 70% 83%), hsl(from var(--zen-primary-color) h 25% 30%)) !important;
-    }
-  }
-    
+@media (-moz-bool-pref: "zen.tabs.vertical") {   
   /* Makes pinned tabs transparent (when toggled) */
-  @media (-moz-bool-pref: "uc.pins.disable-bg-color") {
+  :root:has(#theme-SuperPins[uc-pins-color-scheme="transparent"]) {
     .tabbrowser-tab[pinned]:not(:hover):not([selected="true"]) .tab-stack .tab-background {
       background-color: transparent !important;
     }
@@ -59,20 +36,20 @@
 
     /* Set margin between pinned tabs (Dropdown) */
     :root:has(#theme-SuperPins[uc-pins-gap="Small"]) {
-      --pins-gap: 1px;
+      --pins-gap: 0px;
     }
     :root:has(#theme-SuperPins[uc-pins-gap="Normal"]) {
-      --pins-gap: 3.5px;
+      --pins-gap: 2px;
     }
     :root:has(#theme-SuperPins[uc-pins-gap="Big"]) {
-      --pins-gap: 6px;
+      --pins-gap: 5px;
     }
 
     :root:has(#theme-SuperPins[uc-pins-gap="Small"],
               #theme-SuperPins[uc-pins-gap="Normal"],
               #theme-SuperPins[uc-pins-gap="Big"]) {
                 #vertical-pinned-tabs-container {
-                  gap: var(--pins-gap) calc(var(--pins-gap) + 3.5px) !important;
+                  gap: var(--pins-gap) var(--pins-gap) !important;
                 }
     }
 
@@ -93,7 +70,7 @@
   /* Adds border to pinned tabs (when toggled) */
   @media (-moz-bool-pref: "uc.pins.border") {
     .tabbrowser-tab[pinned] .tab-stack .tab-background{
-      border: 1px solid var(--zen-colors-border) !important;
+      border: 1px solid light-dark(color-mix(in srgb, var(--zen-colors-secondary) 80%, black), color-mix(in srgb, var(--zen-colors-secondary) 80%, white)) !important;
     }
   }
   

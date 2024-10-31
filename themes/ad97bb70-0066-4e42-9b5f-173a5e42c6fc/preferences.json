@@ -78,16 +78,17 @@
         ]
     },
     {
-        "property": "uc.pins.bg-color.pop",
-        "label": "Makes the colors of pinned tabs pop more",
-        "type": "checkbox",
-        "disabledOn": []
-    },
-    {
-        "property": "uc.pins.disable-bg-color",
-        "label": "Disables the background color of pinned tabs",
-        "type": "checkbox",
-        "disabledOn": []
+        "property": "uc.pins.color-scheme",
+        "label": "Background/Color types of pinned tabs",
+        "type": "dropdown",
+        "placeholder": "Zen Default",
+        "disabledOn": [],
+        "options": [
+            {
+                "label": "Transparent Background",
+                "value": "transparent"
+            }
+        ]
     },
     {
         "property": "browser.sessionstore.restore_pinned_tabs_on_demand",
