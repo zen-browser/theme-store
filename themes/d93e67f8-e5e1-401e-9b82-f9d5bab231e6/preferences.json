@@ -63,13 +63,29 @@
         ]
     },
     {
-        "property": "uc.urlbar.custom-bg-color.enabled",
+        "property": "uc.urlbar.custom-bg-color.mode",
         "label": "Enables Custom Colors for the Url Bar",
-        "type": "checkbox"
+        "placeholder": "Disabled",
+        "type": "dropdown",
+        "disabledOn": [],
+        "options": [
+            {
+                "label": "Coloring when url bar is in focus",
+                "value": "Focus"
+            },
+            {
+                "label": "Coloring when url bar is NOT in focus",
+                "value": "noFocus"
+            },
+            {
+                "label": "Always color url bar",
+                "value": "AlwaysColor"
+            }
+        ]
     },
     {
         "property": "uc.urlbar.custom-bg-color",
-        "label": "Custom Color for the Url Bar (Checkbox above needs to be active)",
+        "label": "Custom Color for the Url Bar (Dropdown above needs to be enabled)",
         "placeholder": "Enter Color Code",
         "type": "string"
     },
