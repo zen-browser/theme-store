@@ -79,28 +79,38 @@
     position: fixed;
     pointer-events: none;
   
-    width: 100vw;
+    width: 200vw;
     height: 100vh;
   
     top: 0px;
-    left: 0px;
+    left: -50px;
   
     background-color: rgba(0, 0, 0, 0.3);
     backdrop-filter: blur(var(--blur-intensity));
   
     z-index: -1;
   }
-  
-  /* Scuffed af solution to make blur work (need to find better solution) */
-  clip-path: content-box;
 }
 
 /* Custom Colors for Url Bar */
-@media (-moz-bool-pref: "uc.urlbar.custom-bg-color.enabled") {
-  #urlbar-background {
-    background-color: var(--uc-urlbar-custom-bg-color) !important;
-  }
+:root:has(#theme-Super-Url-Bar[uc-urlbar-custom-bg-color-mode="noFocus"]) {
+    #urlbar:not([focused="true"]):not([breakout-extend="true"]) > #urlbar-background {
+        background: var(--uc-urlbar-custom-bg-color) !important;
+    }
+}
+:root:has(#theme-Super-Url-Bar[uc-urlbar-custom-bg-color-mode="Focus"]) {
+    #urlbar:is([focused], [open]) > #urlbar-background {
+        background: var(--uc-urlbar-custom-bg-color) !important;
+    }
+}
+:root:has(#theme-Super-Url-Bar[uc-urlbar-custom-bg-color-mode="AlwaysColor"]) {
+    #urlbar-background {
+        background: var(--uc-urlbar-custom-bg-color) !important;
+    }
+}
 
+:root:has(#theme-Super-Url-Bar[uc-urlbar-custom-bg-color-mode="AlwaysColor"],
+          #theme-Super-Url-Bar[uc-urlbar-custom-bg-color-mode="noFocus"]) {
   #identity-icon-box, #identity-permission-box {
     background-color: color-mix(in srgb, var(--uc-urlbar-custom-bg-color) 90%, light-dark(black, white)) !important;
   }
@@ -111,7 +121,7 @@
   }
 }
 
-/* Adds a border of the url bar when toggled */
+/* Adds a border to the url bar when toggled */
 @media (-moz-bool-pref: "uc.urlbar.border") {
   #urlbar {
     border: 1px solid var(--zen-colors-border) !important;
