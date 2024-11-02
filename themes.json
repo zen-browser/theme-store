@@ -11,7 +11,7 @@
         "version": "1.0.0",
         "tags": [],
         "createdAt": "2024-11-01",
-        "updatedAt": "2024-11-01"
+        "updatedAt": "2024-11-02"
     },
     "5941aefd-67b0-453d-9b62-9071a31cbb0d": {
         "id": "5941aefd-67b0-453d-9b62-9071a31cbb0d",
@@ -227,10 +227,10 @@
         "readme": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/c6813222-6571-4ba6-8faf-58f3343324f6/readme.md",
         "image": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/c6813222-6571-4ba6-8faf-58f3343324f6/image.png",
         "author": "gunir",
-        "version": "2.0.0",
+        "version": "3.0.0",
         "tags": [],
         "createdAt": "2024-08-19",
-        "updatedAt": "2024-10-19"
+        "updatedAt": "2024-11-02"
     },
     "664c54f9-d97d-410b-a479-23dd8a08a628": {
         "id": "664c54f9-d97d-410b-a479-23dd8a08a628",
@@ -641,20 +641,6 @@
         ],
         "createdAt": "2024-08-22",
         "updatedAt": "2024-08-22"
-    },
-    "46690a54-5eff-4141-8af8-9cd772ab6e2c": {
-        "id": "46690a54-5eff-4141-8af8-9cd772ab6e2c",
-        "name": "Floating Compact Sidebar",
-        "description": "Modifies the sidebar in compact mode to avoid overlaps.",
-        "homepage": "",
-        "style": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/46690a54-5eff-4141-8af8-9cd772ab6e2c/chrome.css",
-        "readme": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/46690a54-5eff-4141-8af8-9cd772ab6e2c/readme.md",
-        "image": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/46690a54-5eff-4141-8af8-9cd772ab6e2c/image.png",
-        "author": "Hypatech",
-        "version": "1.0.0",
-        "tags": [],
-        "createdAt": "2024-09-25",
-        "updatedAt": "2024-10-25"
     },
     "570afd9d-96fa-48b5-bad3-0c106757cce9": {
         "id": "570afd9d-96fa-48b5-bad3-0c106757cce9",
