@@ -1,4 +1,18 @@
 {
+    "a5f6a231-e3c8-4ce8-8a8e-3e93efd6adec": {
+        "id": "a5f6a231-e3c8-4ce8-8a8e-3e93efd6adec",
+        "name": "Cleaned URL bar",
+        "description": "Cleans up zen's URL bar.",
+        "homepage": "https://github.com/Dinno-DEV/zen-cleaned-url-bar",
+        "style": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/a5f6a231-e3c8-4ce8-8a8e-3e93efd6adec/chrome.css",
+        "readme": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/a5f6a231-e3c8-4ce8-8a8e-3e93efd6adec/readme.md",
+        "image": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/a5f6a231-e3c8-4ce8-8a8e-3e93efd6adec/image.png",
+        "author": "Dinno-DEV",
+        "version": "1.0.0",
+        "tags": [],
+        "createdAt": "2024-11-01",
+        "updatedAt": "2024-11-01"
+    },
     "5941aefd-67b0-453d-9b62-9071a31cbb0d": {
         "id": "5941aefd-67b0-453d-9b62-9071a31cbb0d",
         "name": "Smaller Compact Mode",
@@ -26,7 +40,7 @@
         "preferences": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/d2953516-d239-4ef8-aac5-b238e3dc0360/preferences.json",
         "tags": [],
         "createdAt": "2024-09-29",
-        "updatedAt": "2024-10-28"
+        "updatedAt": "2024-10-31"
     },
     "f4a7562f-6e54-4f1e-b835-a397fc6c15f2": {
         "id": "f4a7562f-6e54-4f1e-b835-a397fc6c15f2",
@@ -331,13 +345,13 @@
         "readme": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/ad97bb70-0066-4e42-9b5f-173a5e42c6fc/readme.md",
         "image": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/ad97bb70-0066-4e42-9b5f-173a5e42c6fc/image.png",
         "author": "JLBlk",
-        "version": "1.3.6",
+        "version": "1.3.7",
         "preferences": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/ad97bb70-0066-4e42-9b5f-173a5e42c6fc/preferences.json",
         "tags": [
             "tabs"
         ],
         "createdAt": "2024-08-28",
-        "updatedAt": "2024-10-19"
+        "updatedAt": "2024-10-31"
     },
     "d42bf02e-3411-4265-84e6-3dc2dba5fdd8": {
         "id": "d42bf02e-3411-4265-84e6-3dc2dba5fdd8",
@@ -434,10 +448,10 @@
         "readme": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/5c4d7772-d963-4672-ab03-e9d541438881/readme.md",
         "image": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/5c4d7772-d963-4672-ab03-e9d541438881/image.png",
         "author": "jvabn",
-        "version": "1.0.1",
+        "version": "1.0.2",
         "tags": [],
         "createdAt": "2024-10-12",
-        "updatedAt": "2024-10-20"
+        "updatedAt": "2024-11-02"
     },
     "1e9f3101-210b-4ff5-8830-434e4919100d": {
         "id": "1e9f3101-210b-4ff5-8830-434e4919100d",
@@ -717,7 +731,7 @@
         "version": "1.0.0",
         "tags": [],
         "createdAt": "2024-10-29",
-        "updatedAt": "2024-10-29",
+        "updatedAt": "2024-10-31",
         "preferences": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/00aeb359-cce5-4eb5-8c5c-5f928a715664/preferences.json"
     },
     "daf345ec-9a89-4b5d-9d41-47df562e29c9": {
@@ -1054,9 +1068,9 @@
         "image": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/ea1a5ace-f698-4b45-ab88-6e8bd3a563f0/image.png",
         "author": "n7itro",
         "preferences": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/ea1a5ace-f698-4b45-ab88-6e8bd3a563f0/preferences.json",
-        "version": "1.2.0",
+        "version": "1.2.1",
         "tags": [],
         "createdAt": "2024-08-19",
-        "updatedAt": "2024-10-26"
+        "updatedAt": "2024-10-31"
     }
 }
