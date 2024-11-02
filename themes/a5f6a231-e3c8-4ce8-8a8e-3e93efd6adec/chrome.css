@@ -1,0 +1,82 @@
+
+/* Shield Star Fix */
+.urlbar-page-action, #tracking-protection-icon-container {
+  margin: 2px !important;
+  margin-top: 4px !important;
+}
+
+#star-button-box {
+  margin-top: 3px !important;
+  margin-left: 1px !important;
+  margin-right: 0px !important;
+}
+
+#urlbar[breakout] {
+  & > .urlbar-input-container {
+    height: 99%;
+  }
+}
+
+#urlbar {
+  min-height: 34px !important;
+}
+
+/* Cleaner Breakout URL Bar */
+#urlbar-search-mode-indicator {
+  background: transparent !important;
+}
+
+#urlbar-background {
+  background: color-mix(in srgb, light-dark(#fff, var(--zen-colors-tertiary)) 60%, transparent 60%) !important;
+  backdrop-filter: blur(50px) !important;
+}
+
+#identity-icon-box, #identity-permission-box {
+  background: transparent !important;
+  margin: 0 8px 0 0 !important;
+}
+
+.urlbarView-body-inner {
+  #urlbar[open] > .urlbarView > .urlbarView-body-outer > & {
+    border-top: none !important;
+  }
+}
+
+.urlbarView:not([noresults]) > .search-one-offs:not([hidden]) {
+  border-top: none !important;
+}
+
+.search-one-offs {
+  padding: 4px !important;
+  margin-bottom: 8px !important;
+  opacity: 0.5 !important;
+  background: var(--urlbarView-highlight-background) !important;
+  border-radius: 8px !important;
+}
+
+.urlbarView-row {
+  border-radius: 8px !important;
+}
+
+.search-panel-one-offs-container > *, .search-panel-one-offs-container > * > * {
+  border-radius: 4px !important;
+}
+
+.urlbar-input-container {
+  padding: 0px 3.5px !important;
+}
+
+#urlbar[open] {
+  margin-top: 3px !important;
+  padding-top: 6px !important;
+}
+
+.urlbar-go-button {
+  opacity: 0.5 !important;
+  background: transparent !important;
+  margin-right: 6px !important;
+}
+
+.urlbar-go-button:hover {
+  opacity: 1 !important;
+}
