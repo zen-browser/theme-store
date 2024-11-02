@@ -280,8 +280,8 @@ def get_preferences():
 def validate_name(name):
     if len(name) == 0:
         panic("Name is required.")
-    if len(name) > 25:
-        panic("Name must be less than 25 characters.")
+    if len(name) > 50:
+        panic("Name must be less than 50 characters.")
     for char in name:
         if not char.isalnum() and char != " ":
             panic("Name must only contain letters, numbers, and spaces.")
