@@ -1,4 +1,4 @@
-{
+[
     {
         "property": "theme.zen-minimal-exit-menu.enable-macos-identic",
         "label": "Makes theme more identical to MacOS version.",
@@ -6,4 +6,4 @@
         "disabledOn": ["macos"],
         "type": "checkbox"
     }
-}
+]
