@@ -2,8 +2,9 @@
 .tab-icon-overlay {
   opacity: 1 !important;
   margin: initial !important;
+  border: none !important;
   margin-right: 32px !important;
-  transform: translate(120%, 30%) scale(1.6) !important;
+  transform: translate(120%, 50%) scale(1.6) !important;
   color: light-dark(black, white) !important;
   background-color: transparent !important;
   transition: 0.3s !important;
@@ -28,6 +29,6 @@
 @media not (-moz-bool-pref: "zen.view.sidebar-expanded") {
   .tab-icon-overlay {
     margin: auto 30px !important;
-    transform: translate(-35%, 32%) scale(1.6) !important;
+    transform: translate(-35%, 50%) scale(1.6) !important;
   }
 }
