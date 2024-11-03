@@ -36,36 +36,33 @@
 
 /*Nyan Cat and Friends*/
 
-/*Bongo Cat Start*/
-@media (-moz-bool-pref: "z0.catto.bongocat") {
-#navigator-toolbox:before {
-  position: absolute;
-  top: 100px;
-  right: 50%;
-  transform: translateX(50%);
-  width: 200px;
-  height: 40px;
-  z-index: 1;
-  content: "";
-  font-size: 20px;
-  text-align: center;
-  background-image: url("https://media.tenor.com/ZZu2QC-efdUAAAAi/cute-cat-white.gif");
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position-x: center;
-  overflow: visible;
-  pointer-events: none;
-}
-}
-
-/*Bongo Cat End*/
-
-/*Reduce the Size*/
-@media (-moz-bool-pref: "z0.catto.reduce_size") {
-  
-    #navigator-toolbox {
-      --zen-navigation-toolbar-min-width: 100px !important;
-         padding-top: 12.5vh !important;
-         height: 85vh !important;
-     }
+/* Bongo Cat Start */
+@media (-moz-bool-pref: "zen.view.compact") {
+  @media (-moz-bool-pref: "z0.catto.bongocat") {
+    #navigator-toolbox:before {
+      position: relative;
+      top: 8px;
+      right: 50%;
+      transform: translateX(50%);
+      width: 200px;
+      height: 40px;
+      z-index: 1;
+      content: "";
+      font-size: 20px;
+      text-align: center;
+      background-image: url("https://media.tenor.com/ZZu2QC-efdUAAAAi/cute-cat-white.gif");
+      background-size: contain;
+      background-repeat: no-repeat;
+      background-position-x: center;
+      overflow: visible;
+      pointer-events: none;
+    }
+  }
+  /* Bongo Cat End */
+  /* Reduce the Size */
+ #navigator-toolbox {
+    --zen-navigation-toolbar-min-width: 100px !important;
+    padding-top: 12.5vh !important;
+    height: 85vh !important;
+  }
 }
