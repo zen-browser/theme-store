@@ -6,7 +6,8 @@
     z-index: 2;
     position: fixed !important;
     bottom: auto !important;
-    top: 20vh !important;
+    top: 22vh !important;
+    padding-top: 6px !important;
     padding-left: 6px !important;
     padding-right: 8px !important;
 
