@@ -56,21 +56,6 @@
         "createdAt": "2024-10-06",
         "updatedAt": "2024-10-06"
     },
-    "4ce2b68c-84f1-4296-b145-4e590ad7a19e": {
-        "id": "4ce2b68c-84f1-4296-b145-4e590ad7a19e",
-        "name": "Floating findbar",
-        "description": "Mod for Zen Browser that detaches findbar from edge of browser window so that it appears to float.",
-        "homepage": "https://github.com/anaarkei/zen-floating-findbar",
-        "style": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/4ce2b68c-84f1-4296-b145-4e590ad7a19e/chrome.css",
-        "readme": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/4ce2b68c-84f1-4296-b145-4e590ad7a19e/readme.md",
-        "image": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/4ce2b68c-84f1-4296-b145-4e590ad7a19e/image.png",
-        "author": "anaarkei",
-        "version": "1.1.1",
-        "preferences": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/4ce2b68c-84f1-4296-b145-4e590ad7a19e/preferences.json",
-        "tags": [],
-        "createdAt": "2024-09-24",
-        "updatedAt": "2024-09-30"
-    },
     "c8f20381-388a-4b67-b640-eaa539355ea4": {
         "id": "c8f20381-388a-4b67-b640-eaa539355ea4",
         "name": "Right On Hover Sidebar",
