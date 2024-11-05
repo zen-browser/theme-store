@@ -1,24 +1,12 @@
-
 /* Shield Star Fix */
-.urlbar-page-action, #tracking-protection-icon-container {
-  margin: 2px !important;
-  margin-top: 4px !important;
+#tracking-protection-icon-container {
+  align-self: center !important;
+  margin-bottom: -1px !important;
 }
 
-#star-button-box {
-  margin-top: 3px !important;
-  margin-left: 1px !important;
-  margin-right: 0px !important;
-}
-
-#urlbar[breakout] {
-  & > .urlbar-input-container {
-    height: 99%;
-  }
-}
-
-#urlbar {
-  min-height: 34px !important;
+#page-action-buttons {
+  margin-right: -2px !important;
+  margin-bottom: -1px !important;
 }
 
 /* Cleaner Breakout URL Bar */
@@ -72,6 +60,7 @@
 }
 
 .urlbar-go-button {
+  align-self: center !important;
   opacity: 0.5 !important;
   background: transparent !important;
   margin-right: 6px !important;
