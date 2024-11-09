@@ -1,0 +1,30 @@
+
+.tab-text, #tabs-newtab-button {
+    font-size: 1.125rem !important;
+  }
+  
+.tab-icon-image {
+    width: 1.75rem !important;
+    height: 1.75rem !important;
+}
+  
+.tab-background {
+    border-radius: 1rem !important;
+}
+  
+#vertical-pinned-tabs-container {
+    grid-template-columns: repeat(3,minmax(var(--tab-pinned-min-width-expanded), auto)) !important;
+}
+  
+#vertical-pinned-tabs-container .tab-background {
+    height: inherit !important;
+    border-radius: 1.124rem !important;
+}
+  
+#vertical-pinned-tabs-container tab {
+    height: 4.5rem !important;
+}
+
+.tabbrowser-tab[pending="true"] .tab-icon-image {
+    opacity: 1 !important;
+}
