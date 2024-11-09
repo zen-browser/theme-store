@@ -1,7 +1,7 @@
 [
     {
-        "property": "uc.pins.width",
-        "label": "Select the general width pinned tabs (The width before the pins start wrapping to the next row)",
+        "property": "uc.essentials.width",
+        "label": "Select the general width of Essentials (The width before the Essentials start wrapping to the next row)",
         "type": "dropdown",
         "placeholder": "Zen Default",
         "defaultValue": "Normal",
@@ -22,14 +22,14 @@
         ]
     },
     {
-        "property": "uc.pins.tall",
-        "label": "Increases the height of pinned tabs (Disabled when tab bar not expanded)",
+        "property": "uc.pins.legacy-layout",
+        "label": "Makes pinned tabs look similar to Essentials (icon only in a grid)",
         "type": "checkbox",
         "disabledOn": []
     },
     {
-        "property": "uc.pins.gap",
-        "label": "Select the gap between pinned tabs",
+        "property": "uc.essentials.gap",
+        "label": "Select the gap between Essentials",
         "type": "dropdown",
         "placeholder": "Zen Default",
         "defaultValue": "Normal",
@@ -50,21 +50,37 @@
         ]
     },
     {
-        "property": "uc.pins.box-like-corners",
-        "label": "Makes the pinned tabs look more box like (Less rounded edges)",
+        "property": "uc.essentials.box-like-corners",
+        "label": "Makes the Essentials look more box like (Less rounded edges)",
         "type": "checkbox",
         "disabledOn": []
     },
     {
-        "property": "uc.pins.border",
-        "label": "Creates a border around pinned tabs",
-        "type": "checkbox",
-        "disabledOn": []
+        "property": "uc.superpins.border",
+        "label": "Add a border around Pins/Essentials",
+        "type": "dropdown",
+        "placeholder": "Disabled",
+        "disabledOn": [],
+        "options": [
+            {
+                "label": "Pins only",
+                "value": "pins"
+            },
+            {
+                "label": "Essentials only",
+                "value": "essentials"
+            },
+            {
+                "label": "Pins + Essentials",
+                "value": "both"
+            }
+        ]
     },
     {
         "property": "uc.pins.only-show-active",
         "label": "Only shows loaded pinned tabs (when the tab bar is collapsed)",
         "type": "dropdown",
+        "placeholder": "Disabled",
         "disabledOn": [],
         "options": [
             {
@@ -78,8 +94,8 @@
         ]
     },
     {
-        "property": "uc.pins.color-scheme",
-        "label": "Background/Color types of pinned tabs",
+        "property": "uc.essentials.color-scheme",
+        "label": "Background/Color types of Essentials",
         "type": "dropdown",
         "placeholder": "Zen Default",
         "disabledOn": [],
