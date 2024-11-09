@@ -1,139 +1,151 @@
-@media (-moz-bool-pref: "zen.tabs.vertical") {   
-  /* Makes pinned tabs transparent (when toggled) */
-  :root:has(#theme-SuperPins[uc-pins-color-scheme="transparent"]) {
-    .tabbrowser-tab[pinned]:not(:hover):not([selected="true"]) .tab-stack .tab-background {
-      background-color: transparent !important;
-    }
+@media (-moz-bool-pref: "zen.tabs.vertical") {
+
+  /* Makes essentials transparent (when toggled) */
+  :root:has(#theme-SuperPins[uc-essentials-color-scheme="transparent"]) {
+      .tabbrowser-tab[zen-essential="true"]:not(:hover):not([selected="true"]) .tab-stack .tab-background {
+          background-color: transparent !important;
+      }
   }
-  
-  /* Make pinned tabs taller (when toggled) */
-  @media (-moz-bool-pref: "uc.pins.tall") and (-moz-bool-pref: "zen.view.sidebar-expanded") and (not (-moz-bool-pref: "zen.view.sidebar-expanded.on-hover")) {
-    .tabbrowser-tab[pinned] { 
-      min-height: 43px !important;
-    }
-  }  
-  
+
   @media (-moz-bool-pref: "zen.view.sidebar-expanded") and (not (-moz-bool-pref: "zen.view.sidebar-expanded.on-hover")) {
 
-    /* Set width of pinned tabs (Dropdown) */
-    :root:has(#theme-SuperPins[uc-pins-width="Thin"]) {
-      --pins-width: 50px;
-    }
-    :root:has(#theme-SuperPins[uc-pins-width="Normal"]) {
-      --pins-width: 60px;
-    }
-    :root:has(#theme-SuperPins[uc-pins-width="Wide"]) {
-      --pins-width: 70px;
-    }
-
-    :root:has(#theme-SuperPins[uc-pins-width="Thin"],
-              #theme-SuperPins[uc-pins-width="Normal"],
-              #theme-SuperPins[uc-pins-width="Wide"]) {
-              #vertical-pinned-tabs-container {
-                grid-template-columns: repeat(auto-fit, minmax(var(--pins-width), auto)) !important;
-              }
-    }
-
-    /* Set margin between pinned tabs (Dropdown) */
-    :root:has(#theme-SuperPins[uc-pins-gap="Small"]) {
-      --pins-gap: 0px;
-    }
-    :root:has(#theme-SuperPins[uc-pins-gap="Normal"]) {
-      --pins-gap: 2px;
-    }
-    :root:has(#theme-SuperPins[uc-pins-gap="Big"]) {
-      --pins-gap: 5px;
-    }
-
-    :root:has(#theme-SuperPins[uc-pins-gap="Small"],
-              #theme-SuperPins[uc-pins-gap="Normal"],
-              #theme-SuperPins[uc-pins-gap="Big"]) {
-                #vertical-pinned-tabs-container {
-                  gap: var(--pins-gap) var(--pins-gap) !important;
-                }
-    }
-
-    @media (-moz-bool-pref: "uc.pins.tall") {
-      .tabbrowser-tab[pinned] { 
-        min-height: 43px !important;
+      /* Set width of Essentials (Dropdown) */
+      :root:has(#theme-SuperPins[uc-essentials-width="Thin"]) {
+          --essentials-width: 50px;
       }
-    }
-  }
-  
-  /* Make pinned tabs look more box like */
-  @media (-moz-bool-pref: "uc.pins.box-like-corners") {
-    .tabbrowser-tab[pinned] .tab-stack .tab-background{
-      border-radius: 5px !important;
-    }
-  }
-
-  /* Adds border to pinned tabs (when toggled) */
-  @media (-moz-bool-pref: "uc.pins.border") {
-    .tabbrowser-tab[pinned] .tab-stack .tab-background{
-      border: 1px solid light-dark(color-mix(in srgb, var(--zen-colors-secondary) 80%, black), color-mix(in srgb, var(--zen-colors-secondary) 80%, white)) !important;
-    }
-  }
-  
-  /* Hides unloaded tabs when tab bar is collapsed (when toggled)*/
-  @media (not (-moz-bool-pref: "zen.view.sidebar-expanded")) {
-    :root:has(#theme-SuperPins[uc-pins-only-show-active="Normal"]) {
-      .tabbrowser-tab[pinned][pending="true"] {
-        position: absolute !important; /* Using position: absolute and visibility: hidden instead of display:none stops the icons of unloaded tabs from loading when sidebar expands */
-        visibility: hidden !important;
+      :root:has(#theme-SuperPins[uc-essentials-width="Normal"]) {
+          --essentials-width: 60px;
       }
-    }
-
-    /* Shows all pins when user is hovering over them when tab bar is collapsed */
-    :root:has(#theme-SuperPins[uc-pins-only-show-active="OnHover"]) {
-      .tabbrowser-tab[pinned][pending="true"] {
-        position: absolute !important; /* Using position: absolute and visibility: hidden instead of display:none stops the icons of unloaded tabs from loading when sidebar expands */
-        visibility: hidden !important;
+      :root:has(#theme-SuperPins[uc-essentials-width="Wide"]) {
+          --essentials-width: 70px;
       }
 
-      #vertical-pinned-tabs-container:hover .tabbrowser-tab[pinned][pending="true"] {
-        position: relative !important;
-        visibility: visible !important;
-      }
-
-      #vertical-pinned-tabs-container {
-        position: relative;
-      }
-
-      #vertical-pinned-tabs-container::before {
-        content: '';
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 10px;
-        background-color: transparent;
-      }
-
-      #vertical-pinned-tabs-container::before:hover .tabbrowser-tab[pinned][pending="true"] {
-        position: relative !important;
-        visibility: visible !important;
-      }
-    }
-  }
-  
-  /* Hides unloaded tabs when tab bar is collapsed when in "Expand on hove" mode (when toggled) */
-  @media (-moz-bool-pref: "zen.view.sidebar-expanded") and (-moz-bool-pref: "zen.view.sidebar-expanded.on-hover") {
-    :root:has(#theme-SuperPins[uc-pins-only-show-active="Normal"]),
-    :root:has(#theme-SuperPins[uc-pins-only-show-active="OnHover"]) { 
-      #navigator-toolbox:not(
-        :is( 
-        #navigator-toolbox[zen-has-hover],
-        #navigator-toolbox:focus-within,
-        #navigator-toolbox[movingtab],
-        #navigator-toolbox[flash-popup],
-        #navigator-toolbox[has-popup-menu],
-        #navigator-toolbox:has(.tabbrowser-tab:active),
-        #navigator-toolbox:has(*[open='true']:not(tab):not(#zen-sidepanel-button)))) {
-          .tabbrowser-tab[pinned][pending="true"] {
-            position: absolute !important; /* Using position: absolute and visibility: hidden instead of display:none stops the icons of unloaded tabs from loading when sidebar expands */
-            visibility: hidden !important;
+      :root:has(#theme-SuperPins[uc-essentials-width="Thin"], #theme-SuperPins[uc-essentials-width="Normal"], #theme-SuperPins[uc-essentials-width="Wide"]) {
+          #zen-essentials-container {
+              grid-template-columns: repeat(auto-fit, minmax(var(--essentials-width), auto)) !important;
           }
       }
-    }
+
+      /* Set margin between Essentials (Dropdown) */
+      :root:has(#theme-SuperPins[uc-essentials-gap="Small"]) {
+          --essentials-gap: 0px;
+      }
+      :root:has(#theme-SuperPins[uc-essentials-gap="Normal"]) {
+          --essentials-gap: 2px;
+      }
+      :root:has(#theme-SuperPins[uc-essentials-gap="Big"]) {
+          --essentials-gap: 5px;
+      }
+
+      :root:has(#theme-SuperPins[uc-essentials-gap="Small"], #theme-SuperPins[uc-essentials-gap="Normal"], #theme-SuperPins[uc-essentials-gap="Big"]) {
+          #zen-essentials-container {
+              gap: var(--essentials-gap) var(--essentials-gap) !important;
+          }
+      }
+  }
+
+  /* Enables legacy layout for pinned tabs (icon only in grid) */
+  @media (-moz-bool-pref: "uc.pins.legacy-layout") {
+      #vertical-pinned-tabs-container {
+          display: grid !important;
+          grid-template-columns: repeat(auto-fit, minmax(var(--tab-pinned-min-width-expanded), auto)) !important;
+          overflow-y: auto !important;
+          overflow-x: hidden !important;
+          scrollbar-width: thin !important;
+      }
+          
+      .tab-close-button {
+          display: none !important;
+      }
+
+      #vertical-pinned-tabs-container .tab-label-container {
+          display: none !important;
+      }
+      
+      #vertical-pinned-tabs-container .tab-icon-image {
+          margin: 0 !important;
+      }
+  }
+
+  /* Make Essentials look more box like */
+  @media (-moz-bool-pref: "uc.essentials.box-like-corners") {
+      .tabbrowser-tab[zen-essential="true"] .tab-stack .tab-background {
+          border-radius: 5px !important;
+      }
+  }
+
+  /* Adds border to Pins/Essentials (when toggled) */
+  :root:has(#theme-SuperPins[uc-superpins-border="essentials"]) {
+      #zen-essentials-container .tabbrowser-tab[zen-essential="true"] .tab-stack .tab-background {
+          border: 1px solid light-dark(color-mix(in srgb, var(--zen-colors-secondary) 80%, black), color-mix(in srgb, var(--zen-colors-secondary) 80%, white)) !important;
+      }
+  }
+  :root:has(#theme-SuperPins[uc-superpins-border="pins"]) {
+      .tabbrowser-tab[pinned]:not([zen-essential="true"]) .tab-stack .tab-background {
+          border: 1px solid light-dark(color-mix(in srgb, var(--zen-colors-secondary) 80%, black), color-mix(in srgb, var(--zen-colors-secondary) 80%, white)) !important;
+      }
+  }
+  :root:has(#theme-SuperPins[uc-superpins-border="both"]) {
+      .tabbrowser-tab[pinned] .tab-stack .tab-background {
+          border: 1px solid light-dark(color-mix(in srgb, var(--zen-colors-secondary) 80%, black), color-mix(in srgb, var(--zen-colors-secondary) 80%, white)) !important;
+      }
+  }
+
+  /* Hides unloaded tabs when tab bar is collapsed (when toggled)*/
+  @media (not (-moz-bool-pref: "zen.view.sidebar-expanded")) {
+      :root:has(#theme-SuperPins[uc-pins-only-show-active="Normal"]) {
+          .tabbrowser-tab[pinned]:not([zen-essential="true"])[pending="true"] {
+              position: absolute !important;
+              /* Using position: absolute and visibility: hidden instead of display:none stops the icons of unloaded tabs from loading when sidebar expands */
+              visibility: hidden !important;
+          }
+      }
+
+      /* Shows all pins when user is hovering over them when tab bar is collapsed */
+      :root:has(#theme-SuperPins[uc-pins-only-show-active="OnHover"]) {
+          .tabbrowser-tab[pinned]:not([zen-essential="true"])[pending="true"] {
+              position: absolute !important;
+              /* Using position: absolute and visibility: hidden instead of display:none stops the icons of unloaded tabs from loading when sidebar expands */
+              visibility: hidden !important;
+          }
+
+          #vertical-pinned-tabs-container:hover .tabbrowser-tab[pinned]:not([zen-essential="true"])[pending="true"] {
+              position: relative !important;
+              visibility: visible !important;
+          }
+
+          #vertical-pinned-tabs-container {
+              position: relative;
+          }
+
+          #vertical-pinned-tabs-container::before {
+              content: '';
+              position: absolute;
+              top: 0;
+              left: 0;
+              width: 100%;
+              height: 10px;
+              background-color: transparent;
+          }
+
+          #vertical-pinned-tabs-container::before:hover .tabbrowser-tab[pinned]:not([zen-essential="true"])[pending="true"] {
+              position: relative !important;
+              visibility: visible !important;
+          }
+      }
+  }
+
+  /* Hides unloaded tabs when tab bar is collapsed when in "Expand on hove" mode (when toggled) */
+  @media (-moz-bool-pref: "zen.view.sidebar-expanded") and (-moz-bool-pref: "zen.view.sidebar-expanded.on-hover") {
+      :root:has(#theme-SuperPins[uc-pins-only-show-active="Normal"]),
+      :root:has(#theme-SuperPins[uc-pins-only-show-active="OnHover"]) {
+          #navigator-toolbox:not( :is(#navigator-toolbox[zen-has-hover], #navigator-toolbox:focus-within, #navigator-toolbox[movingtab], #navigator-toolbox[flash-popup], #navigator-toolbox[has-popup-menu], #navigator-toolbox:has(.tabbrowser-tab:active), #navigator-toolbox:has(*[open='true']:not(tab):not(#zen-sidepanel-button)))) {
+              .tabbrowser-tab[pinned]:not([zen-essential="true"])[pending="true"] {
+                  position: absolute !important;
+                  /* Using position: absolute and visibility: hidden instead of display:none stops the icons of unloaded tabs from loading when sidebar expands */
+                  visibility: hidden !important;
+              }
+          }
+      }
   }
 }
