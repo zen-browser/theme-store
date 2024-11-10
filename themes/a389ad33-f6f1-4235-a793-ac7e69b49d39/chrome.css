@@ -1,0 +1,227 @@
+
+#browser { --tabbar-width: 250px; }
+#browser:has(#navigator-toolbox[width="251"]) { --tabbar-width: 251px; }
+#browser:has(#navigator-toolbox[width="252"]) { --tabbar-width: 252px; }
+#browser:has(#navigator-toolbox[width="253"]) { --tabbar-width: 253px; }
+#browser:has(#navigator-toolbox[width="254"]) { --tabbar-width: 254px; }
+#browser:has(#navigator-toolbox[width="255"]) { --tabbar-width: 255px; }
+#browser:has(#navigator-toolbox[width="256"]) { --tabbar-width: 256px; }
+#browser:has(#navigator-toolbox[width="257"]) { --tabbar-width: 257px; }
+#browser:has(#navigator-toolbox[width="258"]) { --tabbar-width: 258px; }
+#browser:has(#navigator-toolbox[width="259"]) { --tabbar-width: 259px; }
+#browser:has(#navigator-toolbox[width="260"]) { --tabbar-width: 260px; }
+#browser:has(#navigator-toolbox[width="261"]) { --tabbar-width: 261px; }
+#browser:has(#navigator-toolbox[width="262"]) { --tabbar-width: 262px; }
+#browser:has(#navigator-toolbox[width="263"]) { --tabbar-width: 263px; }
+#browser:has(#navigator-toolbox[width="264"]) { --tabbar-width: 264px; }
+#browser:has(#navigator-toolbox[width="265"]) { --tabbar-width: 265px; }
+#browser:has(#navigator-toolbox[width="266"]) { --tabbar-width: 266px; }
+#browser:has(#navigator-toolbox[width="267"]) { --tabbar-width: 267px; }
+#browser:has(#navigator-toolbox[width="268"]) { --tabbar-width: 268px; }
+#browser:has(#navigator-toolbox[width="269"]) { --tabbar-width: 269px; }
+#browser:has(#navigator-toolbox[width="270"]) { --tabbar-width: 270px; }
+#browser:has(#navigator-toolbox[width="271"]) { --tabbar-width: 271px; }
+#browser:has(#navigator-toolbox[width="272"]) { --tabbar-width: 272px; }
+#browser:has(#navigator-toolbox[width="273"]) { --tabbar-width: 273px; }
+#browser:has(#navigator-toolbox[width="274"]) { --tabbar-width: 274px; }
+#browser:has(#navigator-toolbox[width="275"]) { --tabbar-width: 275px; }
+#browser:has(#navigator-toolbox[width="276"]) { --tabbar-width: 276px; }
+#browser:has(#navigator-toolbox[width="277"]) { --tabbar-width: 277px; }
+#browser:has(#navigator-toolbox[width="278"]) { --tabbar-width: 278px; }
+#browser:has(#navigator-toolbox[width="279"]) { --tabbar-width: 279px; }
+#browser:has(#navigator-toolbox[width="280"]) { --tabbar-width: 280px; }
+#browser:has(#navigator-toolbox[width="281"]) { --tabbar-width: 281px; }
+#browser:has(#navigator-toolbox[width="282"]) { --tabbar-width: 282px; }
+#browser:has(#navigator-toolbox[width="283"]) { --tabbar-width: 283px; }
+#browser:has(#navigator-toolbox[width="284"]) { --tabbar-width: 284px; }
+#browser:has(#navigator-toolbox[width="285"]) { --tabbar-width: 285px; }
+#browser:has(#navigator-toolbox[width="286"]) { --tabbar-width: 286px; }
+#browser:has(#navigator-toolbox[width="287"]) { --tabbar-width: 287px; }
+#browser:has(#navigator-toolbox[width="288"]) { --tabbar-width: 288px; }
+#browser:has(#navigator-toolbox[width="289"]) { --tabbar-width: 289px; }
+#browser:has(#navigator-toolbox[width="290"]) { --tabbar-width: 290px; }
+#browser:has(#navigator-toolbox[width="291"]) { --tabbar-width: 291px; }
+#browser:has(#navigator-toolbox[width="292"]) { --tabbar-width: 292px; }
+#browser:has(#navigator-toolbox[width="293"]) { --tabbar-width: 293px; }
+#browser:has(#navigator-toolbox[width="294"]) { --tabbar-width: 294px; }
+#browser:has(#navigator-toolbox[width="295"]) { --tabbar-width: 295px; }
+#browser:has(#navigator-toolbox[width="296"]) { --tabbar-width: 296px; }
+#browser:has(#navigator-toolbox[width="297"]) { --tabbar-width: 297px; }
+#browser:has(#navigator-toolbox[width="298"]) { --tabbar-width: 298px; }
+#browser:has(#navigator-toolbox[width="299"]) { --tabbar-width: 299px; }
+#browser:has(#navigator-toolbox[width="300"]) { --tabbar-width: 300px; }
+#browser:has(#navigator-toolbox[width="301"]) { --tabbar-width: 301px; }
+#browser:has(#navigator-toolbox[width="302"]) { --tabbar-width: 302px; }
+#browser:has(#navigator-toolbox[width="303"]) { --tabbar-width: 303px; }
+#browser:has(#navigator-toolbox[width="304"]) { --tabbar-width: 304px; }
+#browser:has(#navigator-toolbox[width="305"]) { --tabbar-width: 305px; }
+#browser:has(#navigator-toolbox[width="306"]) { --tabbar-width: 306px; }
+#browser:has(#navigator-toolbox[width="307"]) { --tabbar-width: 307px; }
+#browser:has(#navigator-toolbox[width="308"]) { --tabbar-width: 308px; }
+#browser:has(#navigator-toolbox[width="309"]) { --tabbar-width: 309px; }
+#browser:has(#navigator-toolbox[width="310"]) { --tabbar-width: 310px; }
+#browser:has(#navigator-toolbox[width="311"]) { --tabbar-width: 311px; }
+#browser:has(#navigator-toolbox[width="312"]) { --tabbar-width: 312px; }
+#browser:has(#navigator-toolbox[width="313"]) { --tabbar-width: 313px; }
+#browser:has(#navigator-toolbox[width="314"]) { --tabbar-width: 314px; }
+#browser:has(#navigator-toolbox[width="315"]) { --tabbar-width: 315px; }
+#browser:has(#navigator-toolbox[width="316"]) { --tabbar-width: 316px; }
+#browser:has(#navigator-toolbox[width="317"]) { --tabbar-width: 317px; }
+#browser:has(#navigator-toolbox[width="318"]) { --tabbar-width: 318px; }
+#browser:has(#navigator-toolbox[width="319"]) { --tabbar-width: 319px; }
+#browser:has(#navigator-toolbox[width="320"]) { --tabbar-width: 320px; }
+#browser:has(#navigator-toolbox[width="321"]) { --tabbar-width: 321px; }
+#browser:has(#navigator-toolbox[width="322"]) { --tabbar-width: 322px; }
+#browser:has(#navigator-toolbox[width="323"]) { --tabbar-width: 323px; }
+#browser:has(#navigator-toolbox[width="324"]) { --tabbar-width: 324px; }
+#browser:has(#navigator-toolbox[width="325"]) { --tabbar-width: 325px; }
+#browser:has(#navigator-toolbox[width="326"]) { --tabbar-width: 326px; }
+#browser:has(#navigator-toolbox[width="327"]) { --tabbar-width: 327px; }
+#browser:has(#navigator-toolbox[width="328"]) { --tabbar-width: 328px; }
+#browser:has(#navigator-toolbox[width="329"]) { --tabbar-width: 329px; }
+#browser:has(#navigator-toolbox[width="330"]) { --tabbar-width: 330px; }
+#browser:has(#navigator-toolbox[width="331"]) { --tabbar-width: 331px; }
+#browser:has(#navigator-toolbox[width="332"]) { --tabbar-width: 332px; }
+#browser:has(#navigator-toolbox[width="333"]) { --tabbar-width: 333px; }
+#browser:has(#navigator-toolbox[width="334"]) { --tabbar-width: 334px; }
+#browser:has(#navigator-toolbox[width="335"]) { --tabbar-width: 335px; }
+#browser:has(#navigator-toolbox[width="336"]) { --tabbar-width: 336px; }
+#browser:has(#navigator-toolbox[width="337"]) { --tabbar-width: 337px; }
+#browser:has(#navigator-toolbox[width="338"]) { --tabbar-width: 338px; }
+#browser:has(#navigator-toolbox[width="339"]) { --tabbar-width: 339px; }
+#browser:has(#navigator-toolbox[width="340"]) { --tabbar-width: 340px; }
+#browser:has(#navigator-toolbox[width="341"]) { --tabbar-width: 341px; }
+#browser:has(#navigator-toolbox[width="342"]) { --tabbar-width: 342px; }
+#browser:has(#navigator-toolbox[width="343"]) { --tabbar-width: 343px; }
+#browser:has(#navigator-toolbox[width="344"]) { --tabbar-width: 344px; }
+#browser:has(#navigator-toolbox[width="345"]) { --tabbar-width: 345px; }
+#browser:has(#navigator-toolbox[width="346"]) { --tabbar-width: 346px; }
+#browser:has(#navigator-toolbox[width="347"]) { --tabbar-width: 347px; }
+#browser:has(#navigator-toolbox[width="348"]) { --tabbar-width: 348px; }
+#browser:has(#navigator-toolbox[width="349"]) { --tabbar-width: 349px; }
+#browser:has(#navigator-toolbox[width="350"]) { --tabbar-width: 350px; }
+#browser:has(#navigator-toolbox[width="351"]) { --tabbar-width: 351px; }
+#browser:has(#navigator-toolbox[width="352"]) { --tabbar-width: 352px; }
+#browser:has(#navigator-toolbox[width="353"]) { --tabbar-width: 353px; }
+#browser:has(#navigator-toolbox[width="354"]) { --tabbar-width: 354px; }
+#browser:has(#navigator-toolbox[width="355"]) { --tabbar-width: 355px; }
+#browser:has(#navigator-toolbox[width="356"]) { --tabbar-width: 356px; }
+#browser:has(#navigator-toolbox[width="357"]) { --tabbar-width: 357px; }
+#browser:has(#navigator-toolbox[width="358"]) { --tabbar-width: 358px; }
+#browser:has(#navigator-toolbox[width="359"]) { --tabbar-width: 359px; }
+#browser:has(#navigator-toolbox[width="360"]) { --tabbar-width: 360px; }
+#browser:has(#navigator-toolbox[width="361"]) { --tabbar-width: 361px; }
+#browser:has(#navigator-toolbox[width="362"]) { --tabbar-width: 362px; }
+#browser:has(#navigator-toolbox[width="363"]) { --tabbar-width: 363px; }
+#browser:has(#navigator-toolbox[width="364"]) { --tabbar-width: 364px; }
+#browser:has(#navigator-toolbox[width="365"]) { --tabbar-width: 365px; }
+#browser:has(#navigator-toolbox[width="366"]) { --tabbar-width: 366px; }
+#browser:has(#navigator-toolbox[width="367"]) { --tabbar-width: 367px; }
+#browser:has(#navigator-toolbox[width="368"]) { --tabbar-width: 368px; }
+#browser:has(#navigator-toolbox[width="369"]) { --tabbar-width: 369px; }
+#browser:has(#navigator-toolbox[width="370"]) { --tabbar-width: 370px; }
+#browser:has(#navigator-toolbox[width="371"]) { --tabbar-width: 371px; }
+#browser:has(#navigator-toolbox[width="372"]) { --tabbar-width: 372px; }
+#browser:has(#navigator-toolbox[width="373"]) { --tabbar-width: 373px; }
+#browser:has(#navigator-toolbox[width="374"]) { --tabbar-width: 374px; }
+#browser:has(#navigator-toolbox[width="375"]) { --tabbar-width: 375px; }
+#browser:has(#navigator-toolbox[width="376"]) { --tabbar-width: 376px; }
+#browser:has(#navigator-toolbox[width="377"]) { --tabbar-width: 377px; }
+#browser:has(#navigator-toolbox[width="378"]) { --tabbar-width: 378px; }
+#browser:has(#navigator-toolbox[width="379"]) { --tabbar-width: 379px; }
+#browser:has(#navigator-toolbox[width="380"]) { --tabbar-width: 380px; }
+#browser:has(#navigator-toolbox[width="381"]) { --tabbar-width: 381px; }
+#browser:has(#navigator-toolbox[width="382"]) { --tabbar-width: 382px; }
+#browser:has(#navigator-toolbox[width="383"]) { --tabbar-width: 383px; }
+#browser:has(#navigator-toolbox[width="384"]) { --tabbar-width: 384px; }
+#browser:has(#navigator-toolbox[width="385"]) { --tabbar-width: 385px; }
+#browser:has(#navigator-toolbox[width="386"]) { --tabbar-width: 386px; }
+#browser:has(#navigator-toolbox[width="387"]) { --tabbar-width: 387px; }
+#browser:has(#navigator-toolbox[width="388"]) { --tabbar-width: 388px; }
+#browser:has(#navigator-toolbox[width="389"]) { --tabbar-width: 389px; }
+#browser:has(#navigator-toolbox[width="390"]) { --tabbar-width: 390px; }
+#browser:has(#navigator-toolbox[width="391"]) { --tabbar-width: 391px; }
+#browser:has(#navigator-toolbox[width="392"]) { --tabbar-width: 392px; }
+#browser:has(#navigator-toolbox[width="393"]) { --tabbar-width: 393px; }
+#browser:has(#navigator-toolbox[width="394"]) { --tabbar-width: 394px; }
+#browser:has(#navigator-toolbox[width="395"]) { --tabbar-width: 395px; }
+#browser:has(#navigator-toolbox[width="396"]) { --tabbar-width: 396px; }
+#browser:has(#navigator-toolbox[width="397"]) { --tabbar-width: 397px; }
+#browser:has(#navigator-toolbox[width="398"]) { --tabbar-width: 398px; }
+#browser:has(#navigator-toolbox[width="399"]) { --tabbar-width: 399px; }
+#browser:has(#navigator-toolbox[width="400"]) { --tabbar-width: 400px; }
+
+#browser > #navigator-toolbox {
+    min-width: 250px !important;
+}
+
+#browser:has(> #navigator-toolbox) #zen-sidebar-top-buttons {
+    margin-top: calc((var(--zen-toolbar-height) * 2) - 10px);
+}
+
+#browser:has(> #navigator-toolbox) #zen-appcontent-navbar-container #nav-bar {
+    overflow: visible !important;
+    position: absolute !important;
+    left: calc((var(--tabbar-width) * -1) + var(--zen-toolbox-padding));
+    width: calc(var(--tabbar-width) * 2);
+}
+
+#browser:has(> #navigator-toolbox) #nav-bar-customization-target {
+    --zen-toolbar-height: 35px;
+}
+
+#browser:has(> #navigator-toolbox) #nav-bar-customization-target > toolbarbutton:first-child {
+    margin-left: calc(var(--zen-toolbox-padding) * 2) !important;
+}
+
+#browser:has(> #navigator-toolbox) #zen-sidebar-top-buttons .toolbarbutton-icon,
+#browser:has(> #navigator-toolbox) #nav-bar-customization-target .toolbarbutton-icon {
+    --toolbarbutton-inner-padding: 2px;    
+    width: calc(2 * var(--toolbarbutton-inner-padding) + 12px) !important;
+    height: calc(2 * var(--toolbarbutton-inner-padding) + 12px) !important;
+}
+
+#browser:has(> #navigator-toolbox) toolbarspring {
+    display: none;
+}
+
+#browser:has(> #navigator-toolbox) #urlbar-container {
+    position: fixed;
+    order: -1;
+    left: var(--tabbar-width) !important;
+    top: var(--zen-toolbar-height);
+    max-width: calc(var(--tabbar-width) - var(--zen-toolbox-padding));
+}
+
+#browser:has(> #navigator-toolbox) #tabbrowser-tabpanels {
+    padding-top: var(--zen-element-separation) !important;
+}
+
+#browser:has(> #navigator-toolbox) #zen-sidebar-web-panel-wrapper {
+    margin-top: var(--zen-element-separation) !important;
+}
+
+#browser:has(> #navigator-toolbox) #PersonalToolbar[collapsed="false"] {
+    padding-top: var(--zen-element-separation) !important;
+    padding-bottom: 0 !important;
+}
+
+#customization-panelWrapper {
+  --panel-arrow-offset: 198px !important;
+}
+
+#browser:has(> #navigator-toolbox) .titlebar-buttonbox {
+    padding-inline-end: calc(var(--zen-toolbox-padding) - var(--toolbarbutton-outer-padding)) !important;
+    align-items: center;
+}
+
+#browser:has(> #navigator-toolbox) .titlebar-button {
+    padding: 0 var(--toolbarbutton-outer-padding) !important;
+}
+
+#browser:has(> #navigator-toolbox) .titlebar-button > image {
+    padding: var(--toolbarbutton-inner-padding) !important;
+    border-radius: var(--toolbarbutton-border-radius) !important;
+    width: calc(2 * var(--toolbarbutton-inner-padding) + 10px) !important;
+    height: calc(2 * var(--toolbarbutton-inner-padding) + 10px) !important;
+}

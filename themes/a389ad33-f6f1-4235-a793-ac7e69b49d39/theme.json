@@ -1,0 +1,14 @@
+{
+    "id": "a389ad33-f6f1-4235-a793-ac7e69b49d39",
+    "name": "Toolbar in Sidebar",
+    "description": "Move the toolbar to the sidebar for a different style",
+    "homepage": "",
+    "style": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/a389ad33-f6f1-4235-a793-ac7e69b49d39/chrome.css",
+    "readme": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/a389ad33-f6f1-4235-a793-ac7e69b49d39/readme.md",
+    "image": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/a389ad33-f6f1-4235-a793-ac7e69b49d39/image.png",
+    "author": "sebascontre",
+    "version": "1.0.0",
+    "tags": [],
+    "createdAt": "2024-11-10",
+    "updatedAt": "2024-11-10"
+}
