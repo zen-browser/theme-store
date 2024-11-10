@@ -1,0 +1,14 @@
+{
+    "id": "befac347-e1bf-4acd-ace5-23e7500632da",
+    "name": "Opinionated Arc UI",
+    "description": "Arc inspired UI for the Zen Browser with opinionated changes.",
+    "homepage": "https://github.com/dominiq-eu/zen-themes",
+    "style": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/befac347-e1bf-4acd-ace5-23e7500632da/chrome.css",
+    "readme": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/befac347-e1bf-4acd-ace5-23e7500632da/readme.md",
+    "image": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/befac347-e1bf-4acd-ace5-23e7500632da/image.png",
+    "author": "dominiq-eu",
+    "version": "1.0.0",
+    "tags": [],
+    "createdAt": "2024-11-10",
+    "updatedAt": "2024-11-10"
+}

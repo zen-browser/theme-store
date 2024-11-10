@@ -1,0 +1,486 @@
+
+/*
+ * Thanks and greetings to:
+ *
+ * [1] https://github.com/ahmaadaziz/zen-floating-history
+ * [2] https://github.com/zen-browser/theme-store/blob/f1504325914cf5c2ce05b0b5d3b060eda9378bc4/themes/6a51c7de-3796-4aa8-a2e4-46274f0b59a8/chrome.css
+ * [3] https://github.com/Osmagtor/zen-themes/blob/main/Restore%20navigation%20buttons/chrome.css
+ * [4] https://github.com/ocean-mars/things/blob/main/Zen%20Themes/Colored%20Container%20Tabs/chrome.css
+ * [5] https://github.com/JLBlk/Zen-Themes/tree/main/SuperUrlBar
+ */
+
+@-moz-document url-prefix("chrome:") {
+  /* Make build-in panel (history, bookmarks, synced tabs) floating [1] */
+
+@keyframes slideInFromLeft {
+    0% {
+      opacity: 0;
+      transform: translateX(-50px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateX(0px);
+    }
+  }
+  @keyframes slideOutToLeft {
+    0% {
+      opacity: 1;
+      transform: translateX(0px);
+    }
+    100% {
+      opacity: 0;
+      transform: translateX(-50px);
+      z-index: -1;
+    }
+  }
+
+@keyframes slideInFromRight {
+    0% {
+      opacity: 0;
+      transform: translateX(+50px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateX(0px);
+    }
+  }
+  @keyframes slideOutToRight {
+    0% {
+      opacity: 1;
+      transform: translateX(0px);
+    }
+    100% {
+      opacity: 0;
+      transform: translateX(+50px);
+    }
+  }
+
+@keyframes fadeIn {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  @keyframes fadeOut {
+    0% {
+      opacity: 1;
+    }
+    100% {
+      opacity: 0;
+    }
+  }
+
+#sidebar-box #sidebar-header {
+    border-bottom: 0px !important;
+  }
+
+#sidebar-box {
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px !important;
+  }
+
+window.sidebar-panel {
+    background-color: var(--zen-themed-toolbar-bg) !important;
+  }
+
+/* The sidebar should behave like a pinned web-panel */
+  #tabbrowser-tabbox {
+    --zen-default-sidebar-width: 300px;
+  }
+
+#sidebar-box[checked="true"] {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: calc(var(--zen-element-separation) + 2px);
+    bottom: 30px;
+    margin-top: 0px;
+    margin-right: var(--zen-element-separation);
+    margin-left: var(--zen-element-separation);
+    margin-bottom: 0px;
+
+width: calc(var(--zen-default-sidebar-width) + 20px) !important;
+    min-height: var(--zen-default-sidebar-width);
+    max-height: 100%;
+    pointer-events: all;
+
+background-color: var(--zen-themed-toolbar-bg) !important;
+    background: var(--zen-colors-tertiary);
+    border: 1px solid var(--zen-colors-border);
+    border-radius: var(--zen-panel-radius);
+    box-shadow: 0 0 1px 1px rgba(0, 0, 0, 0.1);
+    opacity: 0;
+
+animation-delay: 0.1s;
+    animation: slideInFromLeft 0.15s ease-in-out forwards;
+
+z-index: 1;
+  }
+  #sidebar-box[hidden="true"] {
+    display: flex;
+    position: absolute;
+    animation: slideOutToLeft 0.15s ease-in-out forwards;
+  }
+
+#sidebar-splitter {
+    display: none;
+  }
+
+/** Clear up some clutter in the sidebar */
+  #sidebar-icon {
+    display: none;
+  }
+  #sidebar-title {
+    padding-inline: 0px 0px !important;
+  }
+  #sidebar-switcher-arrow {
+    /* padding-right: 4px; */
+    padding-left: 4px;
+    width: unset;
+    height: unset;
+  }
+
+#sidebar-close {
+    opacity: 0;
+    padding: 8px;
+  }
+  #sidebar-box:hover #sidebar-close {
+    opacity: 1;
+  }
+
+/*
+   *
+   *    WEB PANEL
+   *
+   */
+
+/* force the web panel to always float ("pinned") */
+  #zen-sidebar-web-panel-wrapper:not(
+    :has(#zen-sidebar-web-panel[pinned="true"])
+  ) {
+    position: absolute !important;
+    z-index: 1;
+    width: calc(100% - var(--zen-sidebar-web-panel-spacing) * 3);
+    height: calc(100% - var(--zen-sidebar-web-panel-spacing) * 4);
+    margin: var(--zen-element-separation) !important;
+  }
+  #zen-sidebar-web-panel:not([pinned="true"]) {
+    height: calc(100% - 20px) !important;
+  }
+  #tabbrowser-tabbox {
+    padding: 0 !important;
+  }
+
+/* move web panel to the right side */
+  #zen-sidebar-web-panel:not([pinned="true"]) {
+    right: 0px !important;
+  }
+  #zen-sidebar-web-panel {
+    position: absolute;
+    right: 0px !important;
+  }
+  .zen-sidebar-web-panel-splitter[side="right"] {
+    display: none;
+  }
+  .zen-sidebar-web-panel-splitter[side="left"] {
+    display: block !important;
+  }
+
+/* add box shadow to the web-panel */
+  #zen-sidebar-web-panel {
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px !important;
+  }
+
+/* remove buttons from web panel header */
+  #zen-sidebar-web-panel-reload,
+  #zen-sidebar-web-panel-pinned,
+  #zen-sidebar-web-panel-home {
+    display: none;
+  }
+
+/* show remaining buttons on hover */
+  #zen-sidebar-web-panel-back,
+  #zen-sidebar-web-panel-forward,
+  #zen-sidebar-web-panel-close {
+    opacity: 0 !important;
+  }
+  #zen-sidebar-web-header:hover #zen-sidebar-web-panel-back,
+  #zen-sidebar-web-header:hover #zen-sidebar-web-panel-forward,
+  #zen-sidebar-web-header:hover #zen-sidebar-web-panel-close {
+    opacity: 1 !important;
+  }
+
+/* make web-panel header and footer smaller */
+  /* #zen-sidebar-web-header, #zen-sidebar-panels-wrapper { */
+  #zen-sidebar-web-header {
+    min-height: 26px !important;
+    padding: 0px !important;
+  }
+  #zen-sidebar-web-header {
+    position: relative;
+  }
+  #zen-sidebar-web-panel-back {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    padding: 0 !important;
+    height: 26px;
+  }
+  #zen-sidebar-web-panel-forward {
+    position: absolute;
+    top: 0px;
+    left: 30px;
+    padding: 0 !important;
+    height: 26px;
+  }
+  #zen-sidebar-web-panel-close {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    padding: 0 !important;
+    height: 26px;
+  }
+
+/* remove the boarder from the web-panel footer */
+  #zen-sidebar-panels-wrapper {
+    border-top-width: 0px !important;
+    border-bottom-width: 0px !important;
+  }
+
+/* make web-panel footer smaller and tweak website icons */
+  #zen-sidebar-panels-wrapper {
+    min-height: 32px !important;
+  }
+  .zen-sidebar-panel-button[selected="true"] image {
+    background-color: var(--zen-primary-color) !important;
+    border-radius: 9999px !important;
+    padding: 6px !important;
+    border: 0px !important;
+    opacity: 0.8 !important;
+  }
+  .zen-sidebar-panel-button image {
+    border-radius: 9999px !important;
+    border-radius: 9999px !important;
+    padding: 6px !important;
+    border: 0px !important;
+    opacity: 0.8 !important;
+  }
+
+/*
+   *
+   *    APP CONTENT (NAVIGATION BAR + BROWSER WINDOW)
+   *
+   */
+
+/* Make the navigation bar look like a part of the browser window (Arc Browser style) */
+  :root:not([inDOMFullscreen="true"]):not([chromehidden~="location"]):not(
+    [chromehidden~="toolbar"]
+  ) {
+    & #tabbrowser-tabbox #tabbrowser-tabpanels .browserSidebarContainer {
+      box-shadow: unset !important;
+      border-radius: 0px !important;
+    }
+  }
+  :root:not([inDOMFullscreen="true"]):not([chromehidden~="location"]):not(
+    [chromehidden~="toolbar"]
+  ) {
+    & #tabbrowser-tabbox #tabbrowser-tabpanels {
+      padding: 0px !important;
+    }
+  }
+  :root:not([inDOMFullscreen="true"]):not([chromehidden~="location"]):not(
+    [chromehidden~="toolbar"]
+  ) {
+    & #tabbrowser-tabbox #tabbrowser-tabpanels .browserSidebarContainer {
+      & .browserContainer {
+        border-radius: 0px !important;
+      }
+    }
+  }
+  #tabbrowser-tabpanels {
+    padding: 0px !important;
+  }
+  #nav-bar {
+    background: light-dark(
+      white,
+      color-mix(in srgb, var(--zen-primary-color) 10%, #1b1b1b 90%)
+    ) !important;
+  }
+
+/* Make url bar smaller */
+  toolbar {
+    /*   --toolbarbutton-border-radius: 8px; */
+    /*   min-width: 1px; */
+    /*   min-height: 20px; */
+    --zen-toolbar-height: 32px;
+  }
+  toolbar .toolbarbutton-1 {
+    & > .toolbarbutton-icon,
+    & > .toolbarbutton-text,
+    & > .toolbarbutton-badge-stack {
+      padding: 0px var(--toolbarbutton-inner-padding);
+    }
+  }
+  #nav-bar {
+    padding: 0px var(--toolbar-start-end-padding) !important;
+  }
+  #PanelUI-menu-button {
+    padding-inline-end: unset !important;
+  }
+
+/* Center url in url bar, Shorten url and show full url on hover */
+  #urlbar:not([focused]) #urlbar-input {
+    text-align: center !important;
+  }
+  #urlbar:hover #urlbar-input {
+    text-align: left;
+  }
+  #urlbar:hover #urlbar-input-box {
+    justify-content: left;
+  }
+  #urlbar-input {
+    max-width: 250px;
+  }
+  #urlbar:hover #urlbar-input {
+    max-width: 100%;
+  }
+  #urlbar-container, .urlbar-input-box {
+    justify-content: center;
+  }
+
+/* Make url input part of the url bar -> invisible */
+  #urlbar {
+    border: unset !important;
+    box-shadow: unset !important;
+    border-radius: 0px !important;
+  }
+  #urlbar[focused] > #urlbar-background {
+    box-shadow: unset !important;
+  }
+  .urlbar-input-container {
+    border-radius: 0px !important;
+  }
+
+/* Show url bar icons only on hover */
+  #page-action-buttons, #tracking-protection-icon-container {
+    display: none;
+  }
+  #urlbar-container:hover #page-action-buttons,
+  #urlbar-container:hover #tracking-protection-icon-container,
+  #page-action-buttons:has(hbox[open="true"]),
+  #tracking-protection-icon-container:has(#urlbar-container:hover),
+  #tracking-protection-icon-container[open="true"] {
+    display: flex;
+  }
+  #tracking-protection-icon-container {
+    align-self: center;
+  }
+
+/* Add rounded borders to appcontent (browser + navigation bar) */
+  #appcontent {
+    border-radius: var(--zen-panel-radius);
+  }
+  :root
+    :not([inDOMFullscreen="true"])
+    :not([chromehidden~="location"])
+    :not([chromehidden~="toolbar"]) {
+    & #tabbrowser-tabbox #tabbrowser-tabpanels .browserSidebarContainer {
+      & .browserContainer {
+        border-bottom-left-radius: var(--zen-panel-radius) !important;
+        border-bottom-right-radius: var(--zen-panel-radius) !important;
+      }
+    }
+  }
+  #nav-bar, #zen-appcontent-navbar-container {
+    border-top-left-radius: var(--zen-panel-radius);
+    border-top-right-radius: var(--zen-panel-radius);
+  }
+
+/* Add border to appcontent (browser + navigation bar) */
+  #appcontent {
+    border-width: 1px;
+    border-color: var(--zen-colors-border);
+    border-style: solid;
+  }
+
+/* Add drop shadow to appcontent (browser + navigation bar) */
+  #main-window:not([inDOMFullscreen="true"]) {
+    #browser {
+      --zen-toolbox-padding: 0px;
+      padding: 6px;
+    }
+    #zen-appcontent-wrapper {
+      box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px !important;
+      border-radius: var(--zen-panel-radius);
+    }
+  }
+  #main-window[inDOMFullscreen="true"] {
+    #browser {
+      --zen-toolbox-padding: 0px;
+      padding: 0px;
+    }
+  }
+
+/* Restore original navigation buttons [3] */
+  #forward-button,
+  #zen-sidebar-web-panel-forward {
+    list-style-image: url("chrome://browser/skin/forward.svg") !important;
+  }
+  #back-button, #zen-sidebar-web-panel-back {
+    list-style-image: url("chrome://browser/skin/back.svg") !important;
+  }
+  #reload-button, #zen-sidebar-web-panel-reload {
+    list-style-image: url("chrome://global/skin/icons/reload.svg") !important;
+  }
+  #stop-button,
+  .close-icon,
+  #zen-sidebar-web-panel-close,
+  .zen-theme-picker-custom-list-item-remove {
+    list-style-image: url("chrome://global/skin/icons/close.svg") !important;
+  }
+
+/*
+   *
+   *    BOOKMARKS BAR
+   *
+   */
+
+/* Color bookmarks toolbar to match nav-bar */
+  #PersonalToolbar {
+    background: light-dark(
+      white,
+      color-mix(in srgb, var(--zen-primary-color) 10%, #1b1b1b 90%)
+    ) !important;
+    /* transition: min-height 170ms ease-out, max-height 170ms ease-out, var(--ext-theme-background-transition); */
+  }
+
+/*
+   *
+   *    TAB BAR
+   *
+   */
+
+/* Remove container colors from tabs show them only as background color when selected  [4] */
+  .tab-context-line {
+    display: none !important;
+  }
+  #tabbrowser-tabs {
+    & .tabbrowser-tab {
+      &[selected] .tab-background {
+        box-shadow: var(--identity-icon-color, #000000) 0px 0px 3px 0px
+          !important;
+        border: 1px solid var(--identity-icon-color) !important;
+        opacity: 0.8 !important;
+      }
+    }
+  }
+
+/* Adjust rounded corners of the tabs */
+  @media (-moz-bool-pref: "zen.tabs.vertical") {
+    #navigator-toolbox {
+      --border-radius-medium: 15px !important;
+      --tab-border-radius: var(--border-radius-medium) !important;
+    }
+  }
+}
