@@ -1,0 +1,96 @@
+
+.titlebar-buttonbox {
+    padding: 9px !important;
+  }
+
+.titlebar-button:hover {
+    background-color: var(--button-hover-bgcolor) !important;
+  }
+
+.toolbarbutton-icon:hover {
+    color: #fd5754 !important;
+  }
+
+.titlebar-min {
+    width: 15px !important;
+    height: 15px !important;
+    padding: 8px !important;
+    margin-left: 8px !important;
+    margin-right: 8px !important;
+    margin-top: 4px !important;
+    border-radius: 50% !important;
+    scale: 1.2;
+    background-color: #34c648 !important;
+    color: transparent !important;
+    transition: background-color 0.2s;
+  }
+
+.titlebar-min:hover {
+    background-color: #2ba33b !important;
+    color: transparent !important;
+    transition: background-color 0.2s;
+  }
+
+.titlebar-max,
+  .titlebar-restore {
+    width: 15px !important;
+    height: 15px !important;
+    padding: 8px !important;
+    margin-left: 8px !important;
+    margin-right: 8px !important;
+    margin-top: 4px !important;
+    border-radius: 50% !important;
+
+background-color: #febb40 !important;
+    color: transparent !important;
+    scale: 1.2;
+    transition: background-color 0.2s;
+  }
+
+.titlebar-max:hover,
+  .titlebar-restore:hover {
+    background-color: #d49d35 !important;
+    color: transparent !important;
+    transition: background-color 0.2s;
+  }
+
+.titlebar-close {
+    width: 15px !important;
+    height: 15px !important;
+    padding: 8px !important;
+    margin-left: 8px !important;
+    margin-right: 8px !important;
+    margin-top: 4px !important;
+    border-radius: 50% !important;
+    scale: 1.2;
+
+background-color: #fd5754 !important;
+    color: transparent !important;
+    transition: background-color 0.2s;
+  }
+
+.titlebar-close:hover {
+    background-color: #960906 !important;
+    list-style-image: none !important;
+    transition: background-color 0.2s;
+  }
+
+@media (-moz-bool-pref: "mac-like-button-position-left.enabled") {
+
+#nav-bar {
+      flex-direction: row-reverse !important;
+      padding-right: 36px !important;
+    }
+
+#nav-bar-customization-target {
+      order: 1 !important;
+    }
+
+#PanelUI-menu-button {
+      order: 2 !important;
+    }
+
+.titlebar-buttonbox {
+      flex-direction: row-reverse !important;
+    }
+  }

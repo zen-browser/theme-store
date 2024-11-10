@@ -1,0 +1,8 @@
+[
+    {
+        "property": "mac-like-button-position-left.enabled",
+        "label": "Move the buttons to the left side of the title bar",
+        "type": "checkbox",
+        "disabledOn": []
+    }
+]

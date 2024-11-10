@@ -1,0 +1,15 @@
+{
+    "id": "8f470201-1470-43b8-adbe-13a04361ceee",
+    "name": "Mac Like Buttons",
+    "description": "With this theme, you can make your title bar buttons look like those on macOS.",
+    "homepage": "https://github.com/alpeerkaraca/zen-mac-like-buttons",
+    "style": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/8f470201-1470-43b8-adbe-13a04361ceee/chrome.css",
+    "readme": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/8f470201-1470-43b8-adbe-13a04361ceee/readme.md",
+    "image": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/8f470201-1470-43b8-adbe-13a04361ceee/image.png",
+    "author": "alpeerkaraca",
+    "version": "1.0.0",
+    "tags": [],
+    "createdAt": "2024-11-10",
+    "updatedAt": "2024-11-10",
+    "preferences": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/8f470201-1470-43b8-adbe-13a04361ceee/preferences.json"
+}
