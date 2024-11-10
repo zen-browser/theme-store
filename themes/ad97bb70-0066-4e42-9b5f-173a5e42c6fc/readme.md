@@ -5,6 +5,7 @@ This **Zen Mod** elevates your experience with pinned tabs and Essentials by mak
 ## Features (toggle in Zens Mod settings):
   - Increase the width of Essentials (This can be controlled through a dropdown)
   - Grid Layout for pinned tabs (Similar to Essentials, icon only)
+  - Subtle Background for pinned tabs
   - Border around pinned tabs and/or Essentials
   - Controllable Margins between Essentials (3 Options Dropdown)
   - Box like corners for Essentials (less rounded corners)
