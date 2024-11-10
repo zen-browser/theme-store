@@ -28,6 +28,12 @@
         "disabledOn": []
     },
     {
+        "property": "uc.pins.bg",
+        "label": "Adds a background to the pinned tabs",
+        "type": "checkbox",
+        "disabledOn": []
+    },
+    {
         "property": "uc.essentials.gap",
         "label": "Select the gap between Essentials",
         "type": "dropdown",
