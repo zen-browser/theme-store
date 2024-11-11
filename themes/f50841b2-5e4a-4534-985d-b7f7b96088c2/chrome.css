@@ -1,4 +1,4 @@
 
-#tabbrowser-tabpanels[zen-split-view='true'] .browserSidebarContainer[zen-split-active='true'] {
-    --uc-tweak-rounded-corners-shadow-color: var(--zen-colors-border) !important;
+#tabbrowser-tabpanels[zen-split-view="true"] .browserSidebarContainer.deck-selected {
+    outline:  var(--zen-colors-border) !important;
 }
