@@ -1,0 +1,14 @@
+{
+    "id": "cc36b50f-c605-484e-8cff-5030ffed8215",
+    "name": "Left Exit Padding",
+    "description": "Adds left padding for window button on the left side",
+    "homepage": "https://github.com/pc-v2/zen-mods/tree/main/WindowButtonsLeftPadding",
+    "style": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/cc36b50f-c605-484e-8cff-5030ffed8215/chrome.css",
+    "readme": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/cc36b50f-c605-484e-8cff-5030ffed8215/readme.md",
+    "image": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/cc36b50f-c605-484e-8cff-5030ffed8215/image.png",
+    "author": "pc-v2",
+    "version": "1.0.0",
+    "tags": [],
+    "createdAt": "2024-11-11",
+    "updatedAt": "2024-11-11"
+}
