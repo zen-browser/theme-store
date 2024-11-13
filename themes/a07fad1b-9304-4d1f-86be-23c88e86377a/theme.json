@@ -1,0 +1,14 @@
+{
+    "id": "a07fad1b-9304-4d1f-86be-23c88e86377a",
+    "name": "Fade off extension button",
+    "description": "Extension button hidden but visible on hover",
+    "homepage": "https://github.com/RodiAda/fade-of-extanion-button",
+    "style": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/a07fad1b-9304-4d1f-86be-23c88e86377a/chrome.css",
+    "readme": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/a07fad1b-9304-4d1f-86be-23c88e86377a/readme.md",
+    "image": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/a07fad1b-9304-4d1f-86be-23c88e86377a/image.png",
+    "author": "RodiAda",
+    "version": "1.0.0",
+    "tags": [],
+    "createdAt": "2024-11-13",
+    "updatedAt": "2024-11-13"
+}
