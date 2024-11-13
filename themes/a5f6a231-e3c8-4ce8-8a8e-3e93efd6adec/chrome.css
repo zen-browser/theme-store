@@ -14,9 +14,18 @@
   background: transparent !important;
 }
 
-#urlbar-background {
-  background: color-mix(in srgb, light-dark(#fff, var(--zen-colors-tertiary)) 60%, transparent 60%) !important;
-  backdrop-filter: blur(50px) !important;
+@media not (-moz-bool-pref: "theme.cleaned_url_bar.disable_transparency") {
+  #urlbar-background {
+    background: color-mix(in srgb, light-dark(#fff, var(--zen-colors-tertiary)) 60%, transparent 60%) !important;
+    backdrop-filter: blur(50px) !important;
+  }
+}
+
+@media (-moz-bool-pref: "theme.cleaned_url_bar.disable_transparency") {
+  #urlbar-background {
+    background: color-mix(in srgb, light-dark(#fff, var(--zen-colors-tertiary)) 100%, transparent 0%) !important;
+    backdrop-filter: blur(0px) !important;
+  }
 }
 
 #identity-icon-box, #identity-permission-box {
