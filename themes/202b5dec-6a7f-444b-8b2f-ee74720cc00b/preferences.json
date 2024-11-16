@@ -1,0 +1,23 @@
+[
+    {
+        "property": "theme.containerindicator.essentials",
+        "label": "Removes the container indicator from essetial tabs.",
+        "type": "checkbox",
+        "defaultValue": true,
+        "disabledOn": []
+    },
+    {
+        "property": "theme.containerindicator.pinedtabs",
+        "label": "Removes the container indicator from pined tabs.",
+        "type": "checkbox",
+        "defaultValue": false,
+        "disabledOn": []
+    },
+    {
+        "property": "theme.containerindicator.normaltabs",
+        "label": "Removes the container indicator from normal tabs.",
+        "type": "checkbox",
+        "defaultValue": false,
+        "disabledOn": []
+    }
+]
