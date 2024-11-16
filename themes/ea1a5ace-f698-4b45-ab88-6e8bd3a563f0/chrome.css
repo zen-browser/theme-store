@@ -33,6 +33,7 @@
   }
 }
 
+/* Make bookmarks bar transparent */
 @media (not (-moz-bool-pref: "uc.bookmarks.transparent")) {
   #PersonalToolbar:not([customizing]) {
     background-color: var(--zen-colors-tertiary) !important;
@@ -54,21 +55,6 @@
 
   #personal-bookmarks #PlacesToolbarItems>toolbarbutton.bookmark-item[open="true"] {
     filter: brightness(3)
-  }
-}
-
-@media (-moz-bool-pref: "uc.bookmarks.expand-on-search") or (-moz-bool-pref: "uc.bookmarks.expand-on-hover") {
-  #PersonalToolbar[collapsed="false"]:not([customizing]) {
-    position: relative;
-    margin-bottom: calc(0px - var(--urlbar-min-height));
-    transform: rotateX(90deg) !important;
-    transform-origin: top;
-    transition: transform 135ms linear !important;
-    z-index: 1;
-  }
-  /* Fix margin while in fullscreen */
-  :root[inFullscreen] #PersonalToolbar {
-    margin-bottom: auto !important;
   }
 }
 
@@ -98,5 +84,20 @@
 @media (-moz-bool-pref: "uc.bookmarks.expand-on-search") {
   #nav-bar:focus-within+#PersonalToolbar {
     transform: rotateX(0deg) !important;
+  }
+}
+
+@media (-moz-bool-pref: "uc.bookmarks.expand-on-search") or (-moz-bool-pref: "uc.bookmarks.expand-on-hover") {
+  #PersonalToolbar[collapsed="false"]:not([customizing]) {
+    position: relative;
+    margin-bottom: calc(0px - var(--urlbar-min-height));
+    transform: rotateX(90deg) !important;
+    transform-origin: top;
+    transition: transform 135ms linear !important;
+    z-index: 1;
+  }
+  /* Fix margin while in fullscreen */
+  :root[inFullscreen] #PersonalToolbar {
+    margin-bottom: auto !important;
   }
 }
