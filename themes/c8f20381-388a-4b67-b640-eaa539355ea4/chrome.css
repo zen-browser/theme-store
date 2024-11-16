@@ -10,7 +10,7 @@
     opacity: 0;
     width: var(--uc-right_on_hover_sidebar-width);
     position:absolute!important;
-    right: calc(0px - var(--uc-right_on_hover_sidebar-width) + var(--uc-right_on_hover_sidebar-hover_width));
+    right: calc(0px - var(--uc-right_on_hover_sidebar-width) + var(--uc-right_on_hover_sidebar-hover_width) + 12px /* scrollbar padding */);
     top: 0;
     &:hover {
         opacity: 1;
