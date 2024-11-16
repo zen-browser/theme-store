@@ -9,6 +9,7 @@
     z-index: 1;
     opacity: 0;
     width: var(--uc-right_on_hover_sidebar-width);
+    margin:0px!important;
     position:absolute!important;
     right: calc(0px - var(--uc-right_on_hover_sidebar-width) + var(--uc-right_on_hover_sidebar-hover_width));
     top: 0;
