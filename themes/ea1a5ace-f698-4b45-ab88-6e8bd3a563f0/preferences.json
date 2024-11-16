@@ -6,6 +6,12 @@
         "disabledOn": []
     },
     {
+        "property": "uc.bookmarks.keep-in-fullscreen",
+        "label": "Keep the bookmarks toolbar in fullscreen",
+        "type": "checkbox",
+        "disabledOn": []
+    },
+    {
         "property": "uc.bookmarks.hide-folder-icons",
         "label": "Hide folder icons",
         "type": "checkbox",
