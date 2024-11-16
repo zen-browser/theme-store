@@ -98,6 +98,6 @@
   }
   /* Fix margin while in fullscreen */
   :root[inFullscreen] #PersonalToolbar {
-    margin-bottom: auto !important;
+    margin-bottom: auto;
   }
 }
