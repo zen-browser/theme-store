@@ -15,6 +15,6 @@
         "property": "uc.right_on_hover_sidebar.hover_width",
         "label": "Set sidebar hover trigger width",
         "type": "string",
-        "defaultValue": "2px"
+        "defaultValue": "12px"
     }
 ]
