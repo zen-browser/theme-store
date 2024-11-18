@@ -1,0 +1,14 @@
+{
+    "id": "1622a621-7541-4bab-bae4-942b70a9fdbb",
+    "name": "Status Bar UI",
+    "description": "Enhanced Zen Browser status bar with a minimalist design, improving readability and seamless integration.",
+    "homepage": "",
+    "style": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/1622a621-7541-4bab-bae4-942b70a9fdbb/chrome.css",
+    "readme": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/1622a621-7541-4bab-bae4-942b70a9fdbb/readme.md",
+    "image": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/1622a621-7541-4bab-bae4-942b70a9fdbb/image.png",
+    "author": "admayz",
+    "version": "1.0.0",
+    "tags": [],
+    "createdAt": "2024-11-18",
+    "updatedAt": "2024-11-18"
+}
