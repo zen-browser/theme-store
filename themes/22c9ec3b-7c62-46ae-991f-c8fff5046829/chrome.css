@@ -1,0 +1,20 @@
+
+tabs {
+  counter-reset: tab-counter;
+}
+
+/* Automatically increment tab numbers for each .tab-content inside a tab */
+tab .tab-content::before {
+  counter-increment: tab-counter;
+  content: counter(tab-counter) "";
+
+position: absolute;
+  top: 5px;
+  right: 1px;
+  padding: 0px 4px;
+  border-radius: 7px;
+
+opacity: 0.7;
+  font-weight: bold;
+  font-size: 80%;
+}
