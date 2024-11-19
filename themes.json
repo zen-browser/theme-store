@@ -8,10 +8,10 @@
         "readme": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/a5f6a231-e3c8-4ce8-8a8e-3e93efd6adec/readme.md",
         "image": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/a5f6a231-e3c8-4ce8-8a8e-3e93efd6adec/image.png",
         "author": "Dinno-DEV",
-        "version": "1.0.0",
+        "version": "1.0.1",
         "tags": [],
         "createdAt": "2024-11-01",
-        "updatedAt": "2024-11-02"
+        "updatedAt": "2024-11-19"
     },
     "5941aefd-67b0-453d-9b62-9071a31cbb0d": {
         "id": "5941aefd-67b0-453d-9b62-9071a31cbb0d",
@@ -65,11 +65,11 @@
         "readme": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/c8f20381-388a-4b67-b640-eaa539355ea4/readme.md",
         "image": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/c8f20381-388a-4b67-b640-eaa539355ea4/image.png",
         "author": "p2d0",
-        "version": "1.0.0",
+        "version": "1.0.1",
         "preferences": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/c8f20381-388a-4b67-b640-eaa539355ea4/preferences.json",
         "tags": [],
         "createdAt": "2024-10-02",
-        "updatedAt": "2024-10-02"
+        "updatedAt": "2024-11-19"
     },
     "f50841b2-5e4a-4534-985d-b7f7b96088c2": {
         "id": "f50841b2-5e4a-4534-985d-b7f7b96088c2",
@@ -80,10 +80,10 @@
         "readme": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/f50841b2-5e4a-4534-985d-b7f7b96088c2/readme.md",
         "image": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/f50841b2-5e4a-4534-985d-b7f7b96088c2/image.png",
         "author": "JtdeGraaf",
-        "version": "1.0.0",
+        "version": "1.1.0",
         "tags": [],
         "createdAt": "2024-10-06",
-        "updatedAt": "2024-10-06"
+        "updatedAt": "2024-11-15"
     },
     "b51ff956-6aea-47ab-80c7-d6c047c0d510": {
         "id": "b51ff956-6aea-47ab-80c7-d6c047c0d510",
@@ -324,19 +324,19 @@
     "ad97bb70-0066-4e42-9b5f-173a5e42c6fc": {
         "id": "ad97bb70-0066-4e42-9b5f-173a5e42c6fc",
         "name": "SuperPins",
-        "description": "This Zen Mod enhances pinned tabs, by making some UI/UX changes.",
+        "description": "This Zen Mod enhances pinned tabs/Essentials, by making some UI/UX changes.",
         "homepage": "https://github.com/JLBlk/Zen-Themes/tree/main/SuperPins",
         "style": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/ad97bb70-0066-4e42-9b5f-173a5e42c6fc/chrome.css",
         "readme": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/ad97bb70-0066-4e42-9b5f-173a5e42c6fc/readme.md",
         "image": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/ad97bb70-0066-4e42-9b5f-173a5e42c6fc/image.png",
         "author": "JLBlk",
-        "version": "1.3.7",
+        "version": "1.4.1",
         "preferences": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/ad97bb70-0066-4e42-9b5f-173a5e42c6fc/preferences.json",
         "tags": [
             "tabs"
         ],
         "createdAt": "2024-08-28",
-        "updatedAt": "2024-10-31"
+        "updatedAt": "2024-11-19"
     },
     "d42bf02e-3411-4265-84e6-3dc2dba5fdd8": {
         "id": "d42bf02e-3411-4265-84e6-3dc2dba5fdd8",
@@ -365,6 +365,20 @@
         "tags": [],
         "createdAt": "2024-10-19",
         "updatedAt": "2024-10-19"
+    },
+    "22c9ec3b-7c62-46ae-991f-c8fff5046829": {
+        "id": "22c9ec3b-7c62-46ae-991f-c8fff5046829",
+        "name": "Tab Numbers",
+        "description": "Shows the Number corresponding to each Tab.",
+        "homepage": "https://github.com/philmard/tab-numbers",
+        "style": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/22c9ec3b-7c62-46ae-991f-c8fff5046829/chrome.css",
+        "readme": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/22c9ec3b-7c62-46ae-991f-c8fff5046829/readme.md",
+        "image": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/22c9ec3b-7c62-46ae-991f-c8fff5046829/image.png",
+        "author": "philmard",
+        "version": "1.0.0",
+        "tags": [],
+        "createdAt": "2024-11-09",
+        "updatedAt": "2024-11-09"
     },
     "cb15abdb-0514-4e09-8ce5-722cf1f4a20f": {
         "id": "cb15abdb-0514-4e09-8ce5-722cf1f4a20f",
@@ -733,6 +747,20 @@
         "createdAt": "2024-08-29",
         "updatedAt": "2024-08-29"
     },
+    "477bc813-c333-4747-813e-00e0420ceec0": {
+        "id": "477bc813-c333-4747-813e-00e0420ceec0",
+        "name": "Bottom Essentials",
+        "description": "Move your Essential Tabs to the bottom of the Sidebar for some Visual seperation from Pinned tabs.",
+        "homepage": "https://github.com/TheBigWazz/ZenThemes/tree/main/Bottom-Essentials",
+        "style": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/477bc813-c333-4747-813e-00e0420ceec0/chrome.css",
+        "readme": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/477bc813-c333-4747-813e-00e0420ceec0/readme.md",
+        "image": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/477bc813-c333-4747-813e-00e0420ceec0/image.png",
+        "author": "TheBigWazz",
+        "version": "1.0.0",
+        "tags": [],
+        "createdAt": "2024-11-12",
+        "updatedAt": "2024-11-19"
+    },
     "dd4f5461-1564-4e56-9f9d-f81e3c18f93c": {
         "id": "dd4f5461-1564-4e56-9f9d-f81e3c18f93c",
         "name": "Zen Sidebar At Right Side",
@@ -1024,10 +1052,10 @@
         "readme": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/4ab93b88-151c-451b-a1b7-a1e0e28fa7f8/readme.md",
         "image": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/4ab93b88-151c-451b-a1b7-a1e0e28fa7f8/image.png",
         "author": "mally8",
-        "version": "1.0.2",
+        "version": "1.0.3",
         "tags": [],
         "createdAt": "2024-09-01",
-        "updatedAt": "2024-10-12"
+        "updatedAt": "2024-11-19"
     },
     "680424a8-a818-406b-98c5-7726214e2a9f": {
         "id": "680424a8-a818-406b-98c5-7726214e2a9f",
