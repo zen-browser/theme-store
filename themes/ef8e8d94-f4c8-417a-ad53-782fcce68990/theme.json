@@ -1,0 +1,14 @@
+{
+    "id": "ef8e8d94-f4c8-417a-ad53-782fcce68990",
+    "name": "Use default font for UI",
+    "description": "Basically just changes the UI's font to the default font selected in firefox settings.",
+    "homepage": "",
+    "style": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/ef8e8d94-f4c8-417a-ad53-782fcce68990/chrome.css",
+    "readme": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/ef8e8d94-f4c8-417a-ad53-782fcce68990/readme.md",
+    "image": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/ef8e8d94-f4c8-417a-ad53-782fcce68990/image.png",
+    "author": "redactedontop",
+    "version": "1.0.0",
+    "tags": [],
+    "createdAt": "2024-11-20",
+    "updatedAt": "2024-11-20"
+}
