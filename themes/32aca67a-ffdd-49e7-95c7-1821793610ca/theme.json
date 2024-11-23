@@ -1,0 +1,15 @@
+{
+    "id": "32aca67a-ffdd-49e7-95c7-1821793610ca",
+    "name": "Custom Statusbar",
+    "description": "This Mod allows you to adjust the rounding, margin, border thickness and any color of the statusbar.",
+    "homepage": "https://github.com/Archer7x/Zen-Themes/tree/main/CustomStatusbar",
+    "style": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/32aca67a-ffdd-49e7-95c7-1821793610ca/chrome.css",
+    "readme": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/32aca67a-ffdd-49e7-95c7-1821793610ca/readme.md",
+    "image": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/32aca67a-ffdd-49e7-95c7-1821793610ca/image.png",
+    "author": "Archer7x",
+    "version": "1.0.0",
+    "tags": [],
+    "createdAt": "2024-11-19",
+    "updatedAt": "2024-11-19",
+    "preferences": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/32aca67a-ffdd-49e7-95c7-1821793610ca/preferences.json"
+}
