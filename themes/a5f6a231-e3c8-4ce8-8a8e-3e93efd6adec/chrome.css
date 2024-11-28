@@ -8,6 +8,12 @@
   background: transparent !important;
 }
 
+#identity-box.chromeUI:not([pageproxystate="invalid"]) {
+  & #identity-icon-box {
+    background: transparent !important;
+  }
+}
+
 #identity-icon-box, #identity-permission-box {
   background: transparent !important;
   margin: 0 8px 0 0 !important;
