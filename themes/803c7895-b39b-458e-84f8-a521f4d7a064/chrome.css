@@ -1,0 +1,7 @@
+
+#zen-workspaces-button .subviewbutton:not([active="true"]) {
+  display: none!important;
+}
+#zen-workspaces-button:hover .subviewbutton:not([active="true"]) {
+  display: flex!important;
+}

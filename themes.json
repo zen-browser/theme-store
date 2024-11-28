@@ -1,4 +1,18 @@
 {
+    "a5f6a231-e3c8-4ce8-8a8e-3e93efd6adec": {
+        "id": "a5f6a231-e3c8-4ce8-8a8e-3e93efd6adec",
+        "name": "Cleaned URL bar",
+        "description": "Cleans up zen's URL bar.",
+        "homepage": "https://github.com/Dinno-DEV/zen-cleaned-url-bar",
+        "style": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/a5f6a231-e3c8-4ce8-8a8e-3e93efd6adec/chrome.css",
+        "readme": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/a5f6a231-e3c8-4ce8-8a8e-3e93efd6adec/readme.md",
+        "image": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/a5f6a231-e3c8-4ce8-8a8e-3e93efd6adec/image.png",
+        "author": "Dinno-DEV",
+        "version": "1.0.1",
+        "tags": [],
+        "createdAt": "2024-11-01",
+        "updatedAt": "2024-11-19"
+    },
     "5941aefd-67b0-453d-9b62-9071a31cbb0d": {
         "id": "5941aefd-67b0-453d-9b62-9071a31cbb0d",
         "name": "Smaller Compact Mode",
@@ -26,7 +40,7 @@
         "preferences": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/d2953516-d239-4ef8-aac5-b238e3dc0360/preferences.json",
         "tags": [],
         "createdAt": "2024-09-29",
-        "updatedAt": "2024-10-28"
+        "updatedAt": "2024-10-31"
     },
     "f4a7562f-6e54-4f1e-b835-a397fc6c15f2": {
         "id": "f4a7562f-6e54-4f1e-b835-a397fc6c15f2",
@@ -42,21 +56,6 @@
         "createdAt": "2024-10-06",
         "updatedAt": "2024-10-06"
     },
-    "4ce2b68c-84f1-4296-b145-4e590ad7a19e": {
-        "id": "4ce2b68c-84f1-4296-b145-4e590ad7a19e",
-        "name": "Floating findbar",
-        "description": "Mod for Zen Browser that detaches findbar from edge of browser window so that it appears to float.",
-        "homepage": "https://github.com/anaarkei/zen-floating-findbar",
-        "style": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/4ce2b68c-84f1-4296-b145-4e590ad7a19e/chrome.css",
-        "readme": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/4ce2b68c-84f1-4296-b145-4e590ad7a19e/readme.md",
-        "image": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/4ce2b68c-84f1-4296-b145-4e590ad7a19e/image.png",
-        "author": "anaarkei",
-        "version": "1.1.1",
-        "preferences": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/4ce2b68c-84f1-4296-b145-4e590ad7a19e/preferences.json",
-        "tags": [],
-        "createdAt": "2024-09-24",
-        "updatedAt": "2024-09-30"
-    },
     "c8f20381-388a-4b67-b640-eaa539355ea4": {
         "id": "c8f20381-388a-4b67-b640-eaa539355ea4",
         "name": "Right On Hover Sidebar",
@@ -66,11 +65,11 @@
         "readme": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/c8f20381-388a-4b67-b640-eaa539355ea4/readme.md",
         "image": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/c8f20381-388a-4b67-b640-eaa539355ea4/image.png",
         "author": "p2d0",
-        "version": "1.0.0",
+        "version": "1.0.1",
         "preferences": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/c8f20381-388a-4b67-b640-eaa539355ea4/preferences.json",
         "tags": [],
         "createdAt": "2024-10-02",
-        "updatedAt": "2024-10-02"
+        "updatedAt": "2024-11-19"
     },
     "f50841b2-5e4a-4534-985d-b7f7b96088c2": {
         "id": "f50841b2-5e4a-4534-985d-b7f7b96088c2",
@@ -81,10 +80,10 @@
         "readme": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/f50841b2-5e4a-4534-985d-b7f7b96088c2/readme.md",
         "image": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/f50841b2-5e4a-4534-985d-b7f7b96088c2/image.png",
         "author": "JtdeGraaf",
-        "version": "1.0.0",
+        "version": "1.1.0",
         "tags": [],
         "createdAt": "2024-10-06",
-        "updatedAt": "2024-10-06"
+        "updatedAt": "2024-11-15"
     },
     "b51ff956-6aea-47ab-80c7-d6c047c0d510": {
         "id": "b51ff956-6aea-47ab-80c7-d6c047c0d510",
@@ -213,10 +212,10 @@
         "readme": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/c6813222-6571-4ba6-8faf-58f3343324f6/readme.md",
         "image": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/c6813222-6571-4ba6-8faf-58f3343324f6/image.png",
         "author": "gunir",
-        "version": "2.0.0",
+        "version": "3.0.0",
         "tags": [],
         "createdAt": "2024-08-19",
-        "updatedAt": "2024-10-19"
+        "updatedAt": "2024-11-02"
     },
     "664c54f9-d97d-410b-a479-23dd8a08a628": {
         "id": "664c54f9-d97d-410b-a479-23dd8a08a628",
@@ -325,19 +324,19 @@
     "ad97bb70-0066-4e42-9b5f-173a5e42c6fc": {
         "id": "ad97bb70-0066-4e42-9b5f-173a5e42c6fc",
         "name": "SuperPins",
-        "description": "This Zen Mod enhances pinned tabs, by making some UI/UX changes.",
+        "description": "This Zen Mod enhances pinned tabs/Essentials, by making some UI/UX changes.",
         "homepage": "https://github.com/JLBlk/Zen-Themes/tree/main/SuperPins",
         "style": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/ad97bb70-0066-4e42-9b5f-173a5e42c6fc/chrome.css",
         "readme": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/ad97bb70-0066-4e42-9b5f-173a5e42c6fc/readme.md",
         "image": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/ad97bb70-0066-4e42-9b5f-173a5e42c6fc/image.png",
         "author": "JLBlk",
-        "version": "1.3.6",
+        "version": "1.4.1",
         "preferences": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/ad97bb70-0066-4e42-9b5f-173a5e42c6fc/preferences.json",
         "tags": [
             "tabs"
         ],
         "createdAt": "2024-08-28",
-        "updatedAt": "2024-10-19"
+        "updatedAt": "2024-11-19"
     },
     "d42bf02e-3411-4265-84e6-3dc2dba5fdd8": {
         "id": "d42bf02e-3411-4265-84e6-3dc2dba5fdd8",
@@ -366,6 +365,20 @@
         "tags": [],
         "createdAt": "2024-10-19",
         "updatedAt": "2024-10-19"
+    },
+    "22c9ec3b-7c62-46ae-991f-c8fff5046829": {
+        "id": "22c9ec3b-7c62-46ae-991f-c8fff5046829",
+        "name": "Tab Numbers",
+        "description": "Shows the Number corresponding to each Tab.",
+        "homepage": "https://github.com/philmard/tab-numbers",
+        "style": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/22c9ec3b-7c62-46ae-991f-c8fff5046829/chrome.css",
+        "readme": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/22c9ec3b-7c62-46ae-991f-c8fff5046829/readme.md",
+        "image": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/22c9ec3b-7c62-46ae-991f-c8fff5046829/image.png",
+        "author": "philmard",
+        "version": "1.0.0",
+        "tags": [],
+        "createdAt": "2024-11-09",
+        "updatedAt": "2024-11-09"
     },
     "cb15abdb-0514-4e09-8ce5-722cf1f4a20f": {
         "id": "cb15abdb-0514-4e09-8ce5-722cf1f4a20f",
@@ -434,10 +447,10 @@
         "readme": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/5c4d7772-d963-4672-ab03-e9d541438881/readme.md",
         "image": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/5c4d7772-d963-4672-ab03-e9d541438881/image.png",
         "author": "jvabn",
-        "version": "1.0.1",
+        "version": "1.0.2",
         "tags": [],
         "createdAt": "2024-10-12",
-        "updatedAt": "2024-10-20"
+        "updatedAt": "2024-11-02"
     },
     "1e9f3101-210b-4ff5-8830-434e4919100d": {
         "id": "1e9f3101-210b-4ff5-8830-434e4919100d",
@@ -628,20 +641,6 @@
         "createdAt": "2024-08-22",
         "updatedAt": "2024-08-22"
     },
-    "46690a54-5eff-4141-8af8-9cd772ab6e2c": {
-        "id": "46690a54-5eff-4141-8af8-9cd772ab6e2c",
-        "name": "Floating Compact Sidebar",
-        "description": "Modifies the sidebar in compact mode to avoid overlaps.",
-        "homepage": "",
-        "style": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/46690a54-5eff-4141-8af8-9cd772ab6e2c/chrome.css",
-        "readme": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/46690a54-5eff-4141-8af8-9cd772ab6e2c/readme.md",
-        "image": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/46690a54-5eff-4141-8af8-9cd772ab6e2c/image.png",
-        "author": "Hypatech",
-        "version": "1.0.0",
-        "tags": [],
-        "createdAt": "2024-09-25",
-        "updatedAt": "2024-10-25"
-    },
     "570afd9d-96fa-48b5-bad3-0c106757cce9": {
         "id": "570afd9d-96fa-48b5-bad3-0c106757cce9",
         "name": "Super Sleek UI",
@@ -717,7 +716,7 @@
         "version": "1.0.0",
         "tags": [],
         "createdAt": "2024-10-29",
-        "updatedAt": "2024-10-29",
+        "updatedAt": "2024-11-03",
         "preferences": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/00aeb359-cce5-4eb5-8c5c-5f928a715664/preferences.json"
     },
     "daf345ec-9a89-4b5d-9d41-47df562e29c9": {
@@ -747,6 +746,20 @@
         "tags": [],
         "createdAt": "2024-08-29",
         "updatedAt": "2024-08-29"
+    },
+    "477bc813-c333-4747-813e-00e0420ceec0": {
+        "id": "477bc813-c333-4747-813e-00e0420ceec0",
+        "name": "Bottom Essentials",
+        "description": "Move your Essential Tabs to the bottom of the Sidebar for some Visual seperation from Pinned tabs.",
+        "homepage": "https://github.com/TheBigWazz/ZenThemes/tree/main/Bottom-Essentials",
+        "style": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/477bc813-c333-4747-813e-00e0420ceec0/chrome.css",
+        "readme": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/477bc813-c333-4747-813e-00e0420ceec0/readme.md",
+        "image": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/477bc813-c333-4747-813e-00e0420ceec0/image.png",
+        "author": "TheBigWazz",
+        "version": "1.0.0",
+        "tags": [],
+        "createdAt": "2024-11-12",
+        "updatedAt": "2024-11-19"
     },
     "dd4f5461-1564-4e56-9f9d-f81e3c18f93c": {
         "id": "dd4f5461-1564-4e56-9f9d-f81e3c18f93c",
@@ -940,13 +953,13 @@
         "readme": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/d93e67f8-e5e1-401e-9b82-f9d5bab231e6/readme.md",
         "image": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/d93e67f8-e5e1-401e-9b82-f9d5bab231e6/image.png",
         "author": "JLBlk",
-        "version": "1.4.1",
+        "version": "1.4.2",
         "preferences": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/d93e67f8-e5e1-401e-9b82-f9d5bab231e6/preferences.json",
         "tags": [
             "urlbar"
         ],
         "createdAt": "2024-08-31",
-        "updatedAt": "2024-10-19"
+        "updatedAt": "2024-11-03"
     },
     "5a007026-0801-4a5d-9740-f17dc1c3ff21": {
         "id": "5a007026-0801-4a5d-9740-f17dc1c3ff21",
@@ -962,6 +975,20 @@
         "tags": [],
         "createdAt": "2024-08-16",
         "updatedAt": "2024-08-22"
+    },
+    "803c7895-b39b-458e-84f8-a521f4d7a064": {
+        "id": "803c7895-b39b-458e-84f8-a521f4d7a064",
+        "name": "Hide Inactive Workspaces",
+        "description": "Reducing space by hiding inactive workspace icons, extremely useful if you have a lot of workspaces.",
+        "homepage": "https://github.com/GunGunGun/zenCustomCursorMod/tree/main/autohide_inactive_workspaces",
+        "style": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/803c7895-b39b-458e-84f8-a521f4d7a064/chrome.css",
+        "readme": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/803c7895-b39b-458e-84f8-a521f4d7a064/readme.md",
+        "image": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/803c7895-b39b-458e-84f8-a521f4d7a064/image.png",
+        "author": "GunGunGun",
+        "version": "1.0.0",
+        "tags": [],
+        "createdAt": "2024-11-02",
+        "updatedAt": "2024-11-02"
     },
     "5ca67725-1f43-4ff2-9fcf-0c59af71c73a": {
         "id": "5ca67725-1f43-4ff2-9fcf-0c59af71c73a",
@@ -1025,10 +1052,10 @@
         "readme": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/4ab93b88-151c-451b-a1b7-a1e0e28fa7f8/readme.md",
         "image": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/4ab93b88-151c-451b-a1b7-a1e0e28fa7f8/image.png",
         "author": "mally8",
-        "version": "1.0.2",
+        "version": "1.0.3",
         "tags": [],
         "createdAt": "2024-09-01",
-        "updatedAt": "2024-10-12"
+        "updatedAt": "2024-11-19"
     },
     "680424a8-a818-406b-98c5-7726214e2a9f": {
         "id": "680424a8-a818-406b-98c5-7726214e2a9f",
@@ -1054,9 +1081,9 @@
         "image": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/ea1a5ace-f698-4b45-ab88-6e8bd3a563f0/image.png",
         "author": "n7itro",
         "preferences": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/ea1a5ace-f698-4b45-ab88-6e8bd3a563f0/preferences.json",
-        "version": "1.2.0",
+        "version": "1.2.1",
         "tags": [],
         "createdAt": "2024-08-19",
-        "updatedAt": "2024-10-26"
+        "updatedAt": "2024-10-31"
     }
 }
