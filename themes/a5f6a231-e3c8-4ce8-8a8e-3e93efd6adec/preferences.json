@@ -1,7 +1,0 @@
-[
-    {
-        "property": "theme.cleaned_url_bar.disable_transparency",
-        "label": "Disable transparency",
-        "type": "checkbox"
-    }
-]
