@@ -1,0 +1,26 @@
+[
+    {
+        "property": "cfs.font.size.workspace.title",
+        "label": "Workspace font size \"1.5em\" or \"24px\"",
+        "type": "string",
+        "defaultValue": "1.5em"
+    },
+    {
+        "property": "cfs.font.size.tabbar.tabs",
+        "label": "Tabbar tabs font size \"1.3em\" or \"20px\"",
+        "type": "string",
+        "defaultValue": "1.3em"
+    },
+    {
+        "property": "cfs.font.size.searchbar",
+        "label": "Tabbar tabs font size \"1.4em\" or \"22px\"",
+        "type": "string",
+        "defaultValue": "1.4em"
+    },
+    {
+        "property": "cfs.font.size.footer",
+        "label": "Tabbar tabs font size \"1.5em\" or \"24px\"",
+        "type": "string",
+        "defaultValue": "1.5em"
+    }
+]
