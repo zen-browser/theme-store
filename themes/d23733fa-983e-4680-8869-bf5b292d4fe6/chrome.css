@@ -1,0 +1,16 @@
+
+#tabbrowser-tabs {
+  font-size: var(--cfs-font-size-tabbar-tabs) !important;
+}
+
+#zen-current-workspace-indicator-name {
+  font-size: var(--cfs-font-size-workspace-title) !important;
+}
+
+.findbar-container {
+  font-size: var(--cfs-font-size-searchbar) !important;
+}
+
+.zen-workspace-icon {
+  font-size: var(--cfs-icon-size-footer) !important;
+}
