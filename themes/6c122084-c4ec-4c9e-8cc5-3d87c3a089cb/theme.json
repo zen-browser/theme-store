@@ -1,0 +1,14 @@
+{
+    "id": "6c122084-c4ec-4c9e-8cc5-3d87c3a089cb",
+    "name": "NavBar Margin",
+    "description": "Adds some top- and bottom-margin to the navbar so it doesn't look too tight.",
+    "homepage": "",
+    "style": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/6c122084-c4ec-4c9e-8cc5-3d87c3a089cb/chrome.css",
+    "readme": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/6c122084-c4ec-4c9e-8cc5-3d87c3a089cb/readme.md",
+    "image": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/6c122084-c4ec-4c9e-8cc5-3d87c3a089cb/image.png",
+    "author": "jusnim",
+    "version": "1.0.0",
+    "tags": [],
+    "createdAt": "2024-12-03",
+    "updatedAt": "2024-12-03"
+}
