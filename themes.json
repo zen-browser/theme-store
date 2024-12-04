@@ -247,20 +247,6 @@
         "createdAt": "2024-10-12",
         "updatedAt": "2024-10-12"
     },
-    "83a641f7-eca9-4c0f-91af-45627bef0539": {
-        "id": "83a641f7-eca9-4c0f-91af-45627bef0539",
-        "name": "Floating URLbar",
-        "description": "Levitate the URL bar when focusing on it, with a blurred background.",
-        "homepage": "https://github.com/zen-browser/theme-components",
-        "style": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/83a641f7-eca9-4c0f-91af-45627bef0539/chrome.css",
-        "readme": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/83a641f7-eca9-4c0f-91af-45627bef0539/readme.md",
-        "image": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/83a641f7-eca9-4c0f-91af-45627bef0539/image.png",
-        "author": "mauro-balades",
-        "version": "1.0.5",
-        "tags": [],
-        "createdAt": "2024-08-15",
-        "updatedAt": "2024-09-18"
-    },
     "64cdc40f-2366-4b5b-8bad-d0524682595e": {
         "id": "64cdc40f-2366-4b5b-8bad-d0524682595e",
         "name": "Allow Toolbar Theming",
@@ -1141,6 +1127,6 @@
         "version": "1.0.0",
         "tags": [],
         "createdAt": "2024-11-24",
-        "updatedAt": "2024-11-24"
+        "updatedAt": "2024-12-04"
     }
 }
