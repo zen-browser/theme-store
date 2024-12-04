@@ -1,0 +1,20 @@
+
+.tab-content:hover {
+	gap: 4.5px;
+}
+
+.tab-content:hover .tab-icon-stack {
+	display: none;
+}
+
+.tab-content:hover .tab-close-button {
+	order: -1;
+}
+
+.tab-content[selected] .tab-close-button {
+	display: none !important;
+}
+
+.tab-content[selected]:hover .tab-close-button {
+	display: inherit !important;
+}
