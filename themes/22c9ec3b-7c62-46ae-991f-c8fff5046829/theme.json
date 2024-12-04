@@ -1,14 +1,14 @@
 {
-    "id": "22c9ec3b-7c62-46ae-991f-c8fff5046829",
-    "name": "Tab Numbers",
-    "description": "Shows the Number corresponding to each Tab.",
-    "homepage": "https://github.com/philmard/tab-numbers",
-    "style": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/22c9ec3b-7c62-46ae-991f-c8fff5046829/chrome.css",
-    "readme": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/22c9ec3b-7c62-46ae-991f-c8fff5046829/readme.md",
-    "image": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/22c9ec3b-7c62-46ae-991f-c8fff5046829/image.png",
-    "author": "philmard",
-    "version": "1.0.0",
-    "tags": [],
-    "createdAt": "2024-11-09",
-    "updatedAt": "2024-11-19"
+  "id": "22c9ec3b-7c62-46ae-991f-c8fff5046829",
+  "name": "Tab Numbers",
+  "description": "Shows the Number corresponding to each Tab.",
+  "homepage": "https://github.com/philmard/tab-numbers",
+  "style": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/22c9ec3b-7c62-46ae-991f-c8fff5046829/chrome.css",
+  "readme": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/22c9ec3b-7c62-46ae-991f-c8fff5046829/readme.md",
+  "image": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/22c9ec3b-7c62-46ae-991f-c8fff5046829/image.png",
+  "author": "philmard",
+  "version": "1.0.1",
+  "tags": [],
+  "createdAt": "2024-11-09",
+  "updatedAt": "2024-11-19"
 }

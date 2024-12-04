@@ -1,0 +1,49 @@
+[
+  {
+    "property": "uc.theme.bold-text-enable.enabled",
+    "label": "Make numbers Bold",
+    "type": "checkbox",
+    "disabledOn": []
+  },
+  {
+    "property": "uc.theme.font_size",
+    "label": "Select the Size for tab numbers",
+    "type": "dropdown",
+    "defaultValue": "Small",
+    "options": [
+      {
+        "label": "Extra Small",
+        "value": "XSmall"
+      },
+      {
+        "label": "Small",
+        "value": "Small"
+      },
+      {
+        "label": "Medium",
+        "value": "Medium"
+      },
+      {
+        "label": "Large",
+        "value": "Large"
+      },
+      {
+        "label": "Extra Large",
+        "value": "XLarge"
+      }
+    ]
+  },
+  {
+    "property": "uc.theme.custom_color_enabled",
+    "label": "(!) Press to enable custom color (!)",
+    "type": "checkbox",
+    "disabledOn": []
+  },
+  {
+    "property": "uc.theme.number_color",
+    "label": "Hex Code of Custom Color (first enable the above checkbox)",
+    "placeholder": "eg. #ff0000",
+    "type": "string",
+    "disabledOn": ["!uc.theme.custom_color_enabled"]
+  }
+]
