@@ -1,0 +1,128 @@
+
+#urlbar-results {
+    display: flex;
+    flex-direction: column;
+/*     max-height: 180px;
+    overflow: hidden !important; */
+}
+
+#urlbar-results > .urlbarView-row:nth-child(5) ~ .urlbarView-row {
+    display: none !important;
+}
+
+/* .urlbarView-row {
+    order: 2;
+}
+
+.urlbarView-row[has-action] {
+    order: 1 !important;
+} */
+
+#urlbar:is([suppress-focus-border=""][breakout][breakout-extend]) {
+    background-color: orange !important;
+}
+
+/* #urlbar:is([breakout][breakout-extend][suppress-focus-border], [breakout][usertyping][focused][suppress-focus-border]) 
+  #urlbar-input:is([aria-expanded="true"]) */
+#urlbar:is([suppress-focus-border=""][breakout][breakout-extend]) {
+      #urlbar-input {
+          font-size: 16px !important;
+      }
+
+z-index: 2;
+        position: fixed !important;
+        bottom: auto !important;
+        top: 40% !important;
+        padding-left: 6px !important;
+        padding-right: 8px !important;
+
+border: 1px solid gray;
+
+background-color: rgba(0, 0, 0, 0);
+        left: 50% !important;
+        transform: translateX(-50%) !important;
+        right: 18vw !important;
+        width: 64vw !important;
+        max-width: 750px !important;
+
+&:after {
+            content: "";
+            position: fixed;
+            pointer-events: none;
+
+width: 100vw;
+            height: 100vh;
+
+top: 0px;
+            left: 0px;
+
+background-color: rgba(0, 0, 0, 0.8);
+            /*backdrop-filter: blur(5px);*/
+
+z-index: -1;
+        }
+      }
+
+#identity-box {
+        margin: auto 0;
+        height: 30px;
+        margin-right: 10px;
+    }
+
+.urlbar-go-button {
+        margin: auto 0;
+    }
+}
+#urlbar:is([breakout][breakout-extend], [breakout][usertyping][focused]) {
+    
+    #urlbar-input {
+        font-size: 16px !important;
+    }
+
+z-index: 2;
+    position: fixed !important;
+    bottom: auto !important;
+    top: 40% !important;
+    padding-left: 6px !important;
+    padding-right: 8px !important;
+    
+    border: 1px solid gray;
+
+background-color: rgba(0, 0, 0, 0);
+    left: 50% !important;
+    transform: translateX(-50%) !important;
+    right: 18vw !important;
+    width: 64vw !important;
+    max-width: 750px !important;
+
+&:after {
+        content: "";
+        position: fixed;
+        pointer-events: none;
+
+width: 100vw;
+        height: 100vh;
+
+top: 0px;
+        left: 0px;
+
+background-color: rgba(0, 0, 0, 0.8);
+        /*backdrop-filter: blur(5px);*/
+
+z-index: -1;
+    }
+
+#identity-box {
+        margin: auto 0;
+        height: 30px;
+        margin-right: 10px;
+    }
+
+.urlbar-go-button {
+        margin: auto 0;
+    }
+}
+
+#tab-preview-panel {
+  display:  none;
+}
