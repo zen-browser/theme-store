@@ -1,4 +1,5 @@
 name: Create Theme
+
 on:
   issues:
     types: [opened]
@@ -9,16 +10,17 @@ jobs:
     name: Submit a theme
     runs-on: ubuntu-latest
     if: startsWith(github.event.issue.title, '[create-theme]:')
-    steps:
-      - name: Checkout code
-        uses: actions/checkout@v2
 
-      - name: Install python
-        uses: actions/setup-python@v2
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
         with:
           python-version: '3.x'
 
-      - name: Setup python modules
+      - name: Setup Python modules
         run: |
           pip3 install requests
 
@@ -39,28 +41,23 @@ jobs:
           echo "THEME_IS_COLOR_THEME=${{ contains(fromJson(steps.issue-parser.outputs.jsonString)['is-color-theme'], 'JSON Color Theme') }}" >> $GITHUB_ENV
 
       - name: Write styles to file
-        uses: 'DamianReeves/write-file-action@master'
+        uses: DamianReeves/write-file-action@master
         with:
           contents: ${{ fromJson(steps.issue-parser.outputs.jsonString)['styles'] }}
           path: theme-styles.css
 
       - name: Write readme to file
-        uses: 'DamianReeves/write-file-action@master'
+        uses: DamianReeves/write-file-action@master
         with:
           contents: ${{ fromJson(steps.issue-parser.outputs.jsonString)['readme'] }}
           path: theme-readme.md
 
       - name: Write preferences to file
-        uses: 'DamianReeves/write-file-action@master'
+        uses: DamianReeves/write-file-action@master
         if: fromJson(steps.issue-parser.outputs.jsonString)['preferences'] != ''
         with:
           contents: ${{ fromJson(steps.issue-parser.outputs.jsonString)['preferences'] }}
           path: theme-preferences.json
-
-      - name: Setup Git
-        run: |
-          git config --global user.name "github-actions[bot]"
-          git config --global user.email "github-actions[bot]@users.noreply.github.com"
 
       - name: Create theme content
         run: |
@@ -90,7 +87,7 @@ jobs:
 
             > ${{ env.CREATION_OUTPUT }}
 
-      - name: Create Pull Request
+      - name: Create pull request
         uses: peter-evans/create-pull-request@v3
         if: success()
         with:
@@ -112,8 +109,9 @@ jobs:
             * **Author**: @${{ env.THEME_AUTHOR }}
           branch: create-theme-${{ github.event.issue.number }}
           base: main
+          sign-commits: true
 
-      - name: Close Issue
+      - name: Close issue
         uses: peter-evans/close-issue@v3
         with:
           token: ${{ secrets.GITHUB_TOKEN }}

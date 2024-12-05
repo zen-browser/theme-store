@@ -11,9 +11,10 @@ jobs:
   update-timestamp:
     runs-on: ubuntu-latest
     permissions: write-all
+    
     steps:
       - name: Checkout repository
-        uses: actions/checkout@v2
+        uses: actions/checkout@v4
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
           fetch-depth: 2
@@ -21,8 +22,8 @@ jobs:
       - name: Get changes
         run: git diff --name-only HEAD^1 HEAD
 
-      - name: Set up Python
-        uses: actions/setup-python@v2
+      - name: Setup Python
+        uses: actions/setup-python@v5
         with:
           python-version: '3.x'
 
@@ -32,14 +33,14 @@ jobs:
           changed_themes=$(git diff --name-only HEAD^1 HEAD | grep '^themes/' | awk -F/ '{print $2}' | sort -u | tr '\n' ' ')
           echo "CHANGED_THEMES=$changed_themes" >> $GITHUB_ENV
 
-      - name: Setup python modules
+      - name: Setup Python modules
         run: |
           pip3 install requests
-  
+
       - name: Setup Git
         run: |
           git config --global user.name "github-actions[bot]"
-          git config --global user.email "github-actions[bot]@users.noreply.github.com"
+          git config --global user.email "41898282+github-actions[bot]@users.noreply.github.com"
 
       - name: Update theme date
         if: env.CHANGED_THEMES != ''
