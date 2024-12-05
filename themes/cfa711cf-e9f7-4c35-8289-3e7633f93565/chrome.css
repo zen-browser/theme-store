@@ -1,0 +1,35 @@
+
+/* Firefox URL Bar Loading Animation */
+:root {
+  --w-urlbar-bg_color: #ff6b6b66, #4ecdc466, #ff6b6b66;
+}
+
+#nav-bar {
+  #urlbar:not([breakout-extend="true"]) {
+    #urlbar-background::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(90deg, var(--w-urlbar-bg_color));
+      background-size: 200% 100%;
+      animation: urlbar-loading-gradient 1s linear reverse infinite;
+      animation-play-state: paused;
+      opacity: 0;
+      transition: opacity 0.25s;
+      z-index: -1;
+    }
+  }
+  
+  &:has(#reload-button[displaystop="true"]) {
+    #urlbar-background::before {
+      animation-play-state: running;
+      opacity: 1;
+    }
+  }
+}
+
+@keyframes urlbar-loading-gradient {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 200% 50%; }
+}
