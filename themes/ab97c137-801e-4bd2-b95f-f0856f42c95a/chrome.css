@@ -1,0 +1,8 @@
+
+/* Reset padding and margin for the tab browser's tabbox and tab panels */
+#tabbrowser-tabbox,
+#tabbrowser-tabpanels {
+    padding: 0px !important; /* Remove all padding */
+    margin: 0px !important; /* Remove all margin */
+    --zen-border-radius: 0px !important; /* Remove border radius for a square appearance */
+}
