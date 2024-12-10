@@ -114,6 +114,21 @@
         "createdAt": "2024-09-15",
         "updatedAt": "2024-09-30"
     },
+    "bd92a9a0-1c00-4187-a66e-94c389fa5a59": {
+        "id": "bd92a9a0-1c00-4187-a66e-94c389fa5a59",
+        "name": "Sidebar Expand on Hover",
+        "description": "Readds the expand on hover feature to zen with a few extra features",
+        "homepage": "https://github.com/Uiniel/zen-mods/tree/main/sidebar-expand-on-hover",
+        "style": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/bd92a9a0-1c00-4187-a66e-94c389fa5a59/chrome.css",
+        "readme": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/bd92a9a0-1c00-4187-a66e-94c389fa5a59/readme.md",
+        "image": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/bd92a9a0-1c00-4187-a66e-94c389fa5a59/image.png",
+        "author": "Uiniel",
+        "version": "1.0.0",
+        "tags": [],
+        "createdAt": "2024-12-10",
+        "updatedAt": "2024-12-10",
+        "preferences": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/bd92a9a0-1c00-4187-a66e-94c389fa5a59/preferences.json"
+    },
     "d8b79d4a-6cba-4495-9ff6-d6d30b0e94fe": {
         "id": "d8b79d4a-6cba-4495-9ff6-d6d30b0e94fe",
         "name": "Better Active Tab",
