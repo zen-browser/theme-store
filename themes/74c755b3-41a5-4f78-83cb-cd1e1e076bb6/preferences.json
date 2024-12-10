@@ -1,0 +1,28 @@
+[
+    {
+        "property": "theme.better_uniextbtn.default",
+        "label": "Select Button:",
+        "type": "dropdown",
+        "defaultValue": "Default",
+        "options": [
+        {
+            "label": "Default",
+            "value": "Default"
+        },
+        {
+            "label": "Firefox",
+            "value": "Firefox"
+        },
+        {
+            "label": "Custom",
+            "value": "Custom"
+        }
+        ]
+    },
+    {
+        "property": "theme.better_uniextbtn.custom",
+        "label": "Custom Button: url(url or base64 here)",
+        "type": "string",
+        "defaultValue": "url(chrome://branding/content/icon32.png)"
+    }
+]
