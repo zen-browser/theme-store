@@ -1,0 +1,28 @@
+
+#tabbrowser-tabs[orient='vertical']
+	.tabbrowser-tab
+	.tab-icon-overlay:not([crashed]) {
+	&:is([soundplaying], [muted], [activemedia-blocked]) {
+		background-color: #161717 !important;
+		border: 1px solid #ffffff29 !important;
+		transition: transform 100ms ease-in-out, background-color 100ms ease-in-out;
+
+&:hover {
+			transition: transform 100ms ease-in-out,
+				background-color 100ms ease-in-out !important;
+			transform: scale(1.3) translate(-8%, 14%);
+			transform-origin: center !important;
+		}
+	}
+
+/* Different background color when muted */
+	&[muted] {
+		background-color: rgb(122, 31, 31) !important;
+	}
+
+/* Revert new, zen's audio indicator */
+	&[muted],
+	&[soundplaying] {
+		list-style-image: none !important;
+	}
+}
