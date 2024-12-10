@@ -1,0 +1,52 @@
+
+/* padding in normal mode */
+
+@media (-moz-bool-pref: "uc.padding.big") {
+    @media not (-moz-bool-pref: "zen.view.compact") {
+        #tabbrowser-tabpanels {
+            padding: 2px 12px 12px 2px !important;
+        }
+    }
+}
+
+@media (-moz-bool-pref: "uc.padding.bigger") {
+    @media not (-moz-bool-pref: "zen.view.compact") {
+        #tabbrowser-tabpanels {
+            padding: 2px 16px 16px 2px !important;
+        }
+    }
+}
+
+@media (-moz-bool-pref: "uc.padding.biggest") {
+    @media not (-moz-bool-pref: "zen.view.compact") {
+        #tabbrowser-tabpanels {
+            padding: 2px 20px 20px 2px !important;
+        }
+    }
+}
+
+/* padding in compact mode */
+
+@media (-moz-bool-pref: "uc.padding.big") {
+    @media (-moz-bool-pref: "zen.view.compact") {
+        #tabbrowser-tabpanels {
+            padding: 12px !important;
+        }
+    }
+}
+
+@media (-moz-bool-pref: "uc.padding.bigger") {
+    @media (-moz-bool-pref: "zen.view.compact") {
+        #tabbrowser-tabpanels {
+            padding: 16px !important;
+        }
+    }
+}
+
+@media (-moz-bool-pref: "uc.padding.biggest") {
+    @media (-moz-bool-pref: "zen.view.compact") {
+        #tabbrowser-tabpanels {
+            padding: 20px !important;
+        }
+    }
+}
