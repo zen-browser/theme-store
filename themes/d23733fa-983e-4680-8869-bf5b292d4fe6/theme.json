@@ -1,0 +1,15 @@
+{
+    "id": "d23733fa-983e-4680-8869-bf5b292d4fe6",
+    "name": "Customize Font Size",
+    "description": "Configure Zen Browser's UI font sizes.",
+    "homepage": "https://github.com/joadr/zen-customize-fonts-size",
+    "style": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/d23733fa-983e-4680-8869-bf5b292d4fe6/chrome.css",
+    "readme": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/d23733fa-983e-4680-8869-bf5b292d4fe6/readme.md",
+    "image": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/d23733fa-983e-4680-8869-bf5b292d4fe6/image.png",
+    "author": "joadr",
+    "version": "1.0.0",
+    "tags": [],
+    "createdAt": "2024-11-29",
+    "updatedAt": "2024-12-10",
+    "preferences": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/d23733fa-983e-4680-8869-bf5b292d4fe6/preferences.json"
+}

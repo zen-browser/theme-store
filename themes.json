@@ -114,6 +114,21 @@
         "createdAt": "2024-09-15",
         "updatedAt": "2024-09-30"
     },
+    "bd92a9a0-1c00-4187-a66e-94c389fa5a59": {
+        "id": "bd92a9a0-1c00-4187-a66e-94c389fa5a59",
+        "name": "Sidebar Expand on Hover",
+        "description": "Readds the expand on hover feature to zen with a few extra features",
+        "homepage": "https://github.com/Uiniel/zen-mods/tree/main/sidebar-expand-on-hover",
+        "style": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/bd92a9a0-1c00-4187-a66e-94c389fa5a59/chrome.css",
+        "readme": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/bd92a9a0-1c00-4187-a66e-94c389fa5a59/readme.md",
+        "image": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/bd92a9a0-1c00-4187-a66e-94c389fa5a59/image.png",
+        "author": "Uiniel",
+        "version": "1.0.0",
+        "tags": [],
+        "createdAt": "2024-12-10",
+        "updatedAt": "2024-12-10",
+        "preferences": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/bd92a9a0-1c00-4187-a66e-94c389fa5a59/preferences.json"
+    },
     "d8b79d4a-6cba-4495-9ff6-d6d30b0e94fe": {
         "id": "d8b79d4a-6cba-4495-9ff6-d6d30b0e94fe",
         "name": "Better Active Tab",
@@ -217,6 +232,21 @@
         "createdAt": "2024-08-19",
         "updatedAt": "2024-11-02"
     },
+    "32aca67a-ffdd-49e7-95c7-1821793610ca": {
+        "id": "32aca67a-ffdd-49e7-95c7-1821793610ca",
+        "name": "Custom Statusbar",
+        "description": "This Mod allows you to adjust the rounding, margin, border thickness and any color of the statusbar.",
+        "homepage": "https://github.com/Archer7x/Zen-Themes/tree/main/CustomStatusbar",
+        "style": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/32aca67a-ffdd-49e7-95c7-1821793610ca/chrome.css",
+        "readme": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/32aca67a-ffdd-49e7-95c7-1821793610ca/readme.md",
+        "image": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/32aca67a-ffdd-49e7-95c7-1821793610ca/image.png",
+        "author": "Archer7x",
+        "version": "1.0.0",
+        "tags": [],
+        "createdAt": "2024-11-19",
+        "updatedAt": "2024-11-23",
+        "preferences": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/32aca67a-ffdd-49e7-95c7-1821793610ca/preferences.json"
+    },
     "664c54f9-d97d-410b-a479-23dd8a08a628": {
         "id": "664c54f9-d97d-410b-a479-23dd8a08a628",
         "name": "Better Tab Indicators",
@@ -231,20 +261,6 @@
         "tags": [],
         "createdAt": "2024-10-12",
         "updatedAt": "2024-10-12"
-    },
-    "83a641f7-eca9-4c0f-91af-45627bef0539": {
-        "id": "83a641f7-eca9-4c0f-91af-45627bef0539",
-        "name": "Floating URLbar",
-        "description": "Levitate the URL bar when focusing on it, with a blurred background.",
-        "homepage": "https://github.com/zen-browser/theme-components",
-        "style": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/83a641f7-eca9-4c0f-91af-45627bef0539/chrome.css",
-        "readme": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/83a641f7-eca9-4c0f-91af-45627bef0539/readme.md",
-        "image": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/83a641f7-eca9-4c0f-91af-45627bef0539/image.png",
-        "author": "mauro-balades",
-        "version": "1.0.5",
-        "tags": [],
-        "createdAt": "2024-08-15",
-        "updatedAt": "2024-09-18"
     },
     "64cdc40f-2366-4b5b-8bad-d0524682595e": {
         "id": "64cdc40f-2366-4b5b-8bad-d0524682595e",
@@ -375,10 +391,10 @@
         "readme": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/22c9ec3b-7c62-46ae-991f-c8fff5046829/readme.md",
         "image": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/22c9ec3b-7c62-46ae-991f-c8fff5046829/image.png",
         "author": "philmard",
-        "version": "1.0.0",
+        "version": "1.0.1",
         "tags": [],
         "createdAt": "2024-11-09",
-        "updatedAt": "2024-11-09"
+        "updatedAt": "2024-12-04"
     },
     "cb15abdb-0514-4e09-8ce5-722cf1f4a20f": {
         "id": "cb15abdb-0514-4e09-8ce5-722cf1f4a20f",
@@ -728,10 +744,10 @@
         "readme": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/daf345ec-9a89-4b5d-9d41-47df562e29c9/readme.md",
         "image": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/daf345ec-9a89-4b5d-9d41-47df562e29c9/image.png",
         "author": "mauro-balades",
-        "version": "1.0.0",
+        "version": "1.0.1",
         "tags": [],
         "createdAt": "2024-08-29",
-        "updatedAt": "2024-08-29"
+        "updatedAt": "2024-11-23"
     },
     "b430a958-cd66-4edd-b451-c6c7cfb7e160": {
         "id": "b430a958-cd66-4edd-b451-c6c7cfb7e160",
@@ -805,6 +821,20 @@
         "tags": [],
         "createdAt": "2024-08-09",
         "updatedAt": "2024-09-25"
+    },
+    "6c122084-c4ec-4c9e-8cc5-3d87c3a089cb": {
+        "id": "6c122084-c4ec-4c9e-8cc5-3d87c3a089cb",
+        "name": "NavBar Margin",
+        "description": "Adds some top- and bottom-margin to the navbar so it doesn't look too tight.",
+        "homepage": "",
+        "style": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/6c122084-c4ec-4c9e-8cc5-3d87c3a089cb/chrome.css",
+        "readme": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/6c122084-c4ec-4c9e-8cc5-3d87c3a089cb/readme.md",
+        "image": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/6c122084-c4ec-4c9e-8cc5-3d87c3a089cb/image.png",
+        "author": "jusnim",
+        "version": "1.0.0",
+        "tags": [],
+        "createdAt": "2024-12-03",
+        "updatedAt": "2024-12-04"
     },
     "abc2d6d8-ea9c-4313-a99c-fb1e76e8b3e5": {
         "id": "abc2d6d8-ea9c-4313-a99c-fb1e76e8b3e5",
@@ -907,6 +937,20 @@
         ],
         "createdAt": "2024-10-12",
         "updatedAt": "2024-10-12"
+    },
+    "6f11c932-b992-433e-8c80-56a613cc511e": {
+        "id": "6f11c932-b992-433e-8c80-56a613cc511e",
+        "name": "Left close button",
+        "description": "Move the tab close button to the left side",
+        "homepage": "",
+        "style": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/6f11c932-b992-433e-8c80-56a613cc511e/chrome.css",
+        "readme": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/6f11c932-b992-433e-8c80-56a613cc511e/readme.md",
+        "image": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/6f11c932-b992-433e-8c80-56a613cc511e/image.png",
+        "author": "markatom",
+        "version": "1.0.0",
+        "tags": [],
+        "createdAt": "2024-11-27",
+        "updatedAt": "2024-12-04"
     },
     "ecda11ae-d3fd-4052-8881-303b2504e3ce": {
         "id": "ecda11ae-d3fd-4052-8881-303b2504e3ce",
@@ -1085,5 +1129,19 @@
         "tags": [],
         "createdAt": "2024-08-19",
         "updatedAt": "2024-10-31"
+    },
+    "a6335949-4465-4b71-926c-4a52d34bc9c0": {
+        "id": "a6335949-4465-4b71-926c-4a52d34bc9c0",
+        "name": "Better Find Bar",
+        "description": "Improves the find bar, making it floating, more responsive, and moving it to the top of the page.",
+        "homepage": "https://github.com/RobotoSkunk/zen-better-findbar",
+        "style": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/a6335949-4465-4b71-926c-4a52d34bc9c0/chrome.css",
+        "readme": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/a6335949-4465-4b71-926c-4a52d34bc9c0/readme.md",
+        "image": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/a6335949-4465-4b71-926c-4a52d34bc9c0/image.png",
+        "author": "RobotoSkunk",
+        "version": "1.0.0",
+        "tags": [],
+        "createdAt": "2024-11-24",
+        "updatedAt": "2024-12-04"
     }
 }

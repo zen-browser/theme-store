@@ -6,9 +6,10 @@
     "style": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/74c755b3-41a5-4f78-83cb-cd1e1e076bb6/chrome.css",
     "readme": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/74c755b3-41a5-4f78-83cb-cd1e1e076bb6/readme.md",
     "image": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/74c755b3-41a5-4f78-83cb-cd1e1e076bb6/image.png",
+    "preferences": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/74c755b3-41a5-4f78-83cb-cd1e1e076bb6/preferences.json",
     "author": "lindongbin",
-    "version": "1.0.0",
+    "version": "1.0.1",
     "tags": [],
     "createdAt": "2024-08-30",
-    "updatedAt": "2024-08-30"
+    "updatedAt": "2024-12-10"
 }

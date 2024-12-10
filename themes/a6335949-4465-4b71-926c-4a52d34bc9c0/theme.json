@@ -1,0 +1,14 @@
+{
+    "id": "a6335949-4465-4b71-926c-4a52d34bc9c0",
+    "name": "Better Find Bar",
+    "description": "Improves the find bar, making it floating, more responsive, and moving it to the top of the page.",
+    "homepage": "https://github.com/RobotoSkunk/zen-better-findbar",
+    "style": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/a6335949-4465-4b71-926c-4a52d34bc9c0/chrome.css",
+    "readme": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/a6335949-4465-4b71-926c-4a52d34bc9c0/readme.md",
+    "image": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/a6335949-4465-4b71-926c-4a52d34bc9c0/image.png",
+    "author": "RobotoSkunk",
+    "version": "1.0.0",
+    "tags": [],
+    "createdAt": "2024-11-24",
+    "updatedAt": "2024-12-04"
+}
