@@ -1,0 +1,14 @@
+{
+    "id": "5760712f-eaa3-4e62-a5c3-d6350d049b25",
+    "name": "Firefox Theme Support",
+    "description": "Adds support for firefox themes, including images and accent colors to the toolbar and urlbar",
+    "homepage": "https://github.com/Eugenenoble2005/zenbrowser-mods/tree/main/zen-firefox-themes-support",
+    "style": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/5760712f-eaa3-4e62-a5c3-d6350d049b25/chrome.css",
+    "readme": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/5760712f-eaa3-4e62-a5c3-d6350d049b25/readme.md",
+    "image": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/5760712f-eaa3-4e62-a5c3-d6350d049b25/image.png",
+    "author": "Eugenenoble2005",
+    "version": "1.0.0",
+    "tags": [],
+    "createdAt": "2024-10-31",
+    "updatedAt": "2024-10-31"
+}
