@@ -1,6 +1,6 @@
 <div align="center">
 <picture>
-    <img src="./zen-alpha-mantis.svg" width="128px">
+    <img src="https://github.com/zen-browser/.github/blob/main/profile/logo-black.png" width="128px">
 </picture>
 </div>
 <h1 align="center">
