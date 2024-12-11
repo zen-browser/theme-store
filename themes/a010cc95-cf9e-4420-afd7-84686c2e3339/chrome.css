@@ -1,0 +1,41 @@
+
+/* revert centered URL bar */
+@media not (-moz-bool-pref: "uc.urlbar.center") {
+    #urlbar[open] {
+        top: 0 !important;
+        max-width: inherit !important;
+        min-width: inherit !important;
+        left: inherit !important;
+        --urlbar-container-height: 36px !important;
+
+& #identity-box {
+            margin-inline-end: 0 !important;
+        }
+    }
+
+@media not ((-moz-bool-pref: "browser.urlbar.searchModeSwitcher.featureGate") or (-moz-bool-pref: "browser.urlbar.scotchBonnet.enableOverride")) {
+        #urlbar[open] #identity-box[pageproxystate="valid"]:is(.notSecureText, .chromeUI, .extensionPage) {
+            margin-inline-end: 8px !important;
+        }
+    }
+}
+
+/* revert URL bar "breakout" (expansion on-click) */
+@media not (-moz-bool-pref: "uc.urlbar.breakout") {
+    #urlbar[open] {
+        font-size: 1.05em !important;
+    }
+
+#urlbar[breakout][breakout-extend] {
+        width: var(--urlbar-width) !important;
+        margin-left: 0 !important;
+
+& > .urlbar-input-container {
+            padding-inline: var(--urlbar-container-padding) !important;
+        }
+    }
+
+#urlbar #identity-box.chromeUI:not([pageproxystate="invalid"]) #identity-icon-box {
+        border-radius: 10px !important;
+    }
+}

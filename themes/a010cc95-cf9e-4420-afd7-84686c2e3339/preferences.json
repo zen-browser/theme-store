@@ -1,0 +1,14 @@
+[
+    {
+        "property": "uc.urlbar.breakout",
+        "label": "Toggle \"breakout\" (expansion on click). When disabled, the URL bar will look more akin to standard Firefox.",
+        "type": "checkbox",
+        "defaultValue": false
+    },
+    {
+        "property": "uc.urlbar.center",
+        "label": "Toggle centering.",
+        "type": "checkbox",
+        "defaultValue": false
+    }
+]

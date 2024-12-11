@@ -1,0 +1,15 @@
+{
+    "id": "a010cc95-cf9e-4420-afd7-84686c2e3339",
+    "name": "Uncenter URL Bar",
+    "description": "Reverts the centering of the URL bar on-click",
+    "homepage": "",
+    "style": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/a010cc95-cf9e-4420-afd7-84686c2e3339/chrome.css",
+    "readme": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/a010cc95-cf9e-4420-afd7-84686c2e3339/readme.md",
+    "image": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/a010cc95-cf9e-4420-afd7-84686c2e3339/image.png",
+    "author": "BowDown097",
+    "version": "1.0.0",
+    "tags": [],
+    "createdAt": "2024-12-11",
+    "updatedAt": "2024-12-11",
+    "preferences": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/a010cc95-cf9e-4420-afd7-84686c2e3339/preferences.json"
+}
