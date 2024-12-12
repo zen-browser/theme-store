@@ -448,11 +448,12 @@
         "style": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/74c755b3-41a5-4f78-83cb-cd1e1e076bb6/chrome.css",
         "readme": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/74c755b3-41a5-4f78-83cb-cd1e1e076bb6/readme.md",
         "image": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/74c755b3-41a5-4f78-83cb-cd1e1e076bb6/image.png",
+        "preferences": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/74c755b3-41a5-4f78-83cb-cd1e1e076bb6/preferences.json",
         "author": "lindongbin",
-        "version": "1.0.0",
+        "version": "1.0.1",
         "tags": [],
         "createdAt": "2024-08-30",
-        "updatedAt": "2024-08-30"
+        "updatedAt": "2024-12-10"
     },
     "5c4d7772-d963-4672-ab03-e9d541438881": {
         "id": "5c4d7772-d963-4672-ab03-e9d541438881",
@@ -836,6 +837,21 @@
         "createdAt": "2024-12-03",
         "updatedAt": "2024-12-04"
     },
+    "d23733fa-983e-4680-8869-bf5b292d4fe6": {
+        "id": "d23733fa-983e-4680-8869-bf5b292d4fe6",
+        "name": "Customize Font Size",
+        "description": "Configure Zen Browser's UI font sizes.",
+        "homepage": "https://github.com/joadr/zen-customize-fonts-size",
+        "style": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/d23733fa-983e-4680-8869-bf5b292d4fe6/chrome.css",
+        "readme": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/d23733fa-983e-4680-8869-bf5b292d4fe6/readme.md",
+        "image": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/d23733fa-983e-4680-8869-bf5b292d4fe6/image.png",
+        "author": "joadr",
+        "version": "1.0.0",
+        "tags": [],
+        "createdAt": "2024-11-29",
+        "updatedAt": "2024-12-10",
+        "preferences": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/d23733fa-983e-4680-8869-bf5b292d4fe6/preferences.json"
+    },
     "abc2d6d8-ea9c-4313-a99c-fb1e76e8b3e5": {
         "id": "abc2d6d8-ea9c-4313-a99c-fb1e76e8b3e5",
         "name": "Drop Shadow",
@@ -971,6 +987,20 @@
         "createdAt": "2024-08-23",
         "updatedAt": "2024-08-24"
     },
+    "c45c4894-d6bd-47fc-997a-0c4d015334f1": {
+        "id": "c45c4894-d6bd-47fc-997a-0c4d015334f1",
+        "name": "No pinned tab reset btn",
+        "description": "Hides the reset button that appears when hovering over pinned tabs.",
+        "homepage": "https://github.com/spicybackend/zen-browser-no-pinned-url-reset",
+        "style": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/c45c4894-d6bd-47fc-997a-0c4d015334f1/chrome.css",
+        "readme": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/c45c4894-d6bd-47fc-997a-0c4d015334f1/readme.md",
+        "image": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/c45c4894-d6bd-47fc-997a-0c4d015334f1/image.png",
+        "author": "spicybackend",
+        "version": "1.0.0",
+        "tags": [],
+        "createdAt": "2024-12-12",
+        "updatedAt": "2024-12-12"
+    },
     "81fcd6b3-f014-4796-988f-6c3cb3874db8": {
         "id": "81fcd6b3-f014-4796-988f-6c3cb3874db8",
         "name": "Zen Context Menu",
@@ -1100,6 +1130,20 @@
         "tags": [],
         "createdAt": "2024-09-01",
         "updatedAt": "2024-11-19"
+    },
+    "2317fd93-c3ed-4f37-b55a-304c1816819e": {
+        "id": "2317fd93-c3ed-4f37-b55a-304c1816819e",
+        "name": "Audio Indicator Enhanced",
+        "description": "Enhanced audio indicator, with more polished style",
+        "homepage": "https://github.com/Kaedriz/ZenMods/tree/main/AudioIndicatorEnhanced",
+        "style": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/2317fd93-c3ed-4f37-b55a-304c1816819e/chrome.css",
+        "readme": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/2317fd93-c3ed-4f37-b55a-304c1816819e/readme.md",
+        "image": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/2317fd93-c3ed-4f37-b55a-304c1816819e/image.png",
+        "author": "Kaedriz",
+        "version": "1.0.0",
+        "tags": [],
+        "createdAt": "2024-12-06",
+        "updatedAt": "2024-12-10"
     },
     "680424a8-a818-406b-98c5-7726214e2a9f": {
         "id": "680424a8-a818-406b-98c5-7726214e2a9f",

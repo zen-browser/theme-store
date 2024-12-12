@@ -5,18 +5,18 @@
         "type": "dropdown",
         "defaultValue": "Default",
         "options": [
-        {
-            "label": "Default",
-            "value": "Default"
-        },
-        {
-            "label": "Firefox",
-            "value": "Firefox"
-        },
-        {
-            "label": "Custom",
-            "value": "Custom"
-        }
+            {
+                "label": "Default",
+                "value": "Default"
+            },
+            {
+                "label": "Firefox",
+                "value": "Firefox"
+            },
+            {
+                "label": "Custom",
+                "value": "Custom"
+            }
         ]
     },
     {
