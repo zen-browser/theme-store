@@ -1,0 +1,140 @@
+
+#zen-tabbox-wrapper {
+    padding-top: 36px
+}
+
+#TabsToolbar {
+    padding: 0px !important;
+    margin: 0px !important;
+}
+
+#zen-sidebar-icons-wrapper {
+    display: none !important;
+}
+
+#navigator-toolbox {
+    width: 100% !important;
+    max-width: 100% !important;
+    height: 50px !important;
+    position: absolute !important;
+    left: 0 !important;
+    top: -8px !important;
+}
+
+.scrollbox-clip>scrollbox>slot {
+    display: flex !important;
+    flex-direction: row !important;
+    justify-content: flex-start !important;
+    flex-wrap: nowrap !important;
+    flex: 1 !important;
+    overflow-y: scroll;
+    scrollbar-width: none;
+}
+
+.scrollbox-clip>scrollbox {
+    flex: 1 !important;
+    display: flex !important;
+    ;
+}
+
+.scrollbox-clip>scrollbox {
+    padding-left: 5px !important;
+}
+
+#TabsToolbar-customization-target {
+    flex-direction: row !important;
+    align-items: flex-start !important;
+    flex: 1 !important;
+}
+
+#zen-workspaces-button {
+    width: 40px !important;
+    border-radius: 6px !important;
+    margin-top: 5px !important;
+    margin-left: 4px !important;
+    margin-right: -4px !important;
+    height: 27px !important;
+}
+
+#alltabs-button {
+    display: none !important;
+}
+
+.tabbrowser-tab {
+    max-width: 180px !important;
+    margin: 0px 1px !important;
+    min-height: 32px !important;
+    height: 32px !important;
+    min-width: 64px !important;
+    background-color: color-mix(in srgb, var(--zen-primary-color) 15%, black 30%) !important;
+    ;
+    opacity: 1 !important;
+    border-radius: 5px !important;
+}
+
+.tabbrowser-tab:hover,
+.tabbrowser-tab[selected="true"],
+.tabbrowser-tab[multiselected="true"] {
+    background-color: color-mix(in srgb, var(--zen-primary-color) 40%, black 30%) !important;
+    ;
+}
+
+.tabbrowser-tab[pinned="true"] {
+    width: 38px !important;
+    min-width: 38px !important;
+}
+
+#tabs-newtab-button {
+    height: 32px !important;
+}
+
+#zen-sidebar-splitter {
+    display: none !important;
+}
+
+#tabbrowser-tabbox {
+    padding-left: 6px !important;
+}
+
+.menupopup-arrowscrollbox slot {
+    display: flex !important;
+    flex-direction: column !important;
+}
+
+@media (-moz-bool-pref: "zen.view.compact") {
+    #navigator-toolbox {
+        width: 100% !important;
+        max-width: 100% !important;
+        height: 50px !important;
+        position: absolute !important;
+        left: 0 !important;
+        top: -4.5px !important;
+        padding: 0px 0px !important;
+
+}
+
+#navigator-toolbox {
+        & #titlebar {
+            background: none !important;
+            border: none !important;
+        }
+    }
+
+#tabbrowser-tabbox {
+        padding-left: 0px !important;
+    }
+
+#zen-tabbox-wrapper {
+        padding-top: 0px
+    }
+
+@media (-moz-bool-pref: "zen.view.compact.hide-toolbar") {
+        html:has(#navigator-toolbox[zen-user-show]) #zen-appcontent-navbar-container {
+            top: 44px !important;
+        }
+
+html:has(#navigator-toolbox[zen-user-show]) #zen-tabbox-wrapper {
+            padding-top: 38px
+        }
+    }
+}
