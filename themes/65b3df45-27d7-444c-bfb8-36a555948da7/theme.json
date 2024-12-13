@@ -1,0 +1,14 @@
+{
+    "id": "65b3df45-27d7-444c-bfb8-36a555948da7",
+    "name": "Better Active Workspace",
+    "description": "Makes the active workspace indicator more cohesive for the rounded pill mode UI .",
+    "homepage": "https://github.com/Tanay-Kar/Zen-Themes/tree/df6fcf4f10e95d1c1a08bcfd03f958d32d35c8cb/Better%20Workspace%20Indicator%20Pill%20mode",
+    "style": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/65b3df45-27d7-444c-bfb8-36a555948da7/chrome.css",
+    "readme": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/65b3df45-27d7-444c-bfb8-36a555948da7/readme.md",
+    "image": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/65b3df45-27d7-444c-bfb8-36a555948da7/image.png",
+    "author": "Tanay-Kar",
+    "version": "1.0.0",
+    "tags": [],
+    "createdAt": "2024-12-13",
+    "updatedAt": "2024-12-13"
+}
