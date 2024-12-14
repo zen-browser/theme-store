@@ -1,11 +1,18 @@
 .tab-background {
-  position: relative;
+    position: relative;
 }
 
 .tab-background[selected='']::after {
-  content: '';
-  position: absolute;
-  width: 3px;
-  height: 100%;
-  background-color: var(--zen-primary-color);
+    content: '';
+    position: absolute;
+    top: 0px;
+    width: 3px;
+    height: 100%;
+    background-color: var(--zen-primary-color);
+}
+
+@media (-moz-bool-pref: "theme.better-active-tab.on-right"){
+    .tab-background[selected='']::after {
+        right: 0px;
+    }
 }
