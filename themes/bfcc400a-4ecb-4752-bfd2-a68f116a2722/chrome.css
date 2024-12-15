@@ -1,21 +1,3 @@
-@media (-moz-bool-pref: "theme.no_gaps.fixes.urlbar_hides_outline_fix")
-and (-moz-bool-pref: "zen.view.compact.hide-toolbar")
-and (-moz-bool-pref: "zen.view.compact") {
-
-  :root:not([customizing], [inDOMFullscreen="true"], [zen-single-toolbar="true"]){
-
-    & #zen-appcontent-navbar-container:not(
-    :hover, [zen-has-hover], :focus-within, [zen-user-show],
-    [has-popup-menu], :has([open="true"]))
-    > #nav-bar > #nav-bar-customization-target
-    > #urlbar-container{
-
-      display: unset;
-
-    }
-  }
-}
-
 @media (-moz-bool-pref: "theme.no_gaps.split.gaps")
 and (-moz-bool-pref: "theme.no_gaps.fixes.center_split_view") {
 
