@@ -7,8 +7,7 @@
         "options": [
             {
                 "label": "Default Gradient",
-                "value": "#ff6b6b66, #4ecdc466, #ff6b6b66",
-                "default": true
+                "value": "#ff6b6b66, #4ecdc466, #ff6b6b66"
             },
             {
                 "label": "Blue Gradient",
@@ -35,18 +34,14 @@
                 "value": "#ff1a7566, #00ff8c66, #ff1a7566"
             },
             {
-                "label": "Sunset Gradient",
-                "value": "#ff471a66, #ff8c1a66, #ff471a66"
-            },
-            {
-                "label": "Custom",
-                "value": "custom"
+               "label": "Sunset Gradient",
+               "value": "#ff471a66, #ff8c1a66, #ff471a66"
             }
         ]
     },
     {
         "property": "w.urlbar.bg_color",
-        "label": "Custom Color for URL Bar Gradient",
+        "label": "Custom Color for URL Bar Gradient (the above selection will be overridden)",
         "placeholder": "Enter comma-separated colors (e.g., #ff6b6b66, #4ecdc466, #ff6b6b66)",
         "type": "string"
     }
