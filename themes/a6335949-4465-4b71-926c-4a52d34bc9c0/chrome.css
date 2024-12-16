@@ -1,66 +1,53 @@
 
-:root {
-	--rs-findbar-open-pos: 15px;
-	--rs-findbar-closed-pos: -85px;
-	--rs-findbar-transition-duration: 0.35s;
-}
-
-@keyframes rs-findbar-open {
-	from {
-		top: var(--rs-findbar-closed-pos);
-	}
-
-to {
-		top: var(--rs-findbar-open-pos);
-	}
-}
-
 findbar {
 	display: flex;
 
-border-radius: var(--zen-border-radius) !important;
+	border-radius: var(--zen-border-radius) !important;
 	margin: 0px !important;
 
-width: 90% !important;
+	width: 90% !important;
 	max-width: 800px;
 
-/* height: 50px !important; */
 	height: auto !important;
 
-position: absolute !important;
-	top: var(--rs-findbar-open-pos);
+	position: absolute !important;
+	top: 15px;
 	left: 50%;
 	transform: translateX(-50%);
 
-overflow: unset !important;
+	overflow: unset !important;
 	box-shadow: var(--box-shadow-10);
 
-background: var(--zen-colors-tertiary) !important;
+	background: var(--zen-colors-tertiary) !important;
 	border: 1px solid var(--zen-colors-border) !important;
 
-animation-name: rs-findbar-open !important;
-	animation-duration: var(--rs-findbar-transition-duration) !important;
-	animation-timing-function: ease !important;
+	transition: top 0.35s ease !important;
 
-transition: all var(--rs-findbar-transition-duration) ease !important;
+	visibility: visible !important;
+	opacity: 1 !important;
 
-& .findbar-container {
+
+	& .findbar-container {
 		flex-wrap: wrap;
 		overflow-x: auto !important;
 		height: auto !important;
 
-row-gap: 10px;
+		row-gap: 10px;
 
-& > :first-child {
+		& > :first-child {
 			width: 100% !important;
 		}
 
-& .findbar-textbox {
+		& .findbar-textbox {
 			flex-grow: 1;
 		}
 	}
 
-&[hidden="true"] {
-		top: var(--rs-findbar-closed-pos);
+	&[hidden="true"] {
+		top: -85px;
+	}
+
+	@starting-style {
+		top: -85px;
 	}
 }
