@@ -1,0 +1,9 @@
+
+:root:has(#theme-Tab-Text-Size[uc-tabtextsize-textsize="8"]) { .tab-text.tab-label{ font-size: 8px; }}
+:root:has(#theme-Tab-Text-Size[uc-tabtextsize-textsize="10"]) { .tab-text.tab-label{ font-size: 10px; }}
+:root:has(#theme-Tab-Text-Size[uc-tabtextsize-textsize="default"]) { .tab-text.tab-label{ font-size: 12px; }}
+:root:has(#theme-Tab-Text-Size[uc-tabtextsize-textsize="14"]) { .tab-text.tab-label{ font-size: 14px; }}
+:root:has(#theme-Tab-Text-Size[uc-tabtextsize-textsize="16"]) { .tab-text.tab-label{ font-size: 16px; }}
+:root:has(#theme-Tab-Text-Size[uc-tabtextsize-textsize="18"]) { .tab-text.tab-label{ font-size: 18px; }}
+:root:has(#theme-Tab-Text-Size[uc-tabtextsize-textsize="20"]) { .tab-text.tab-label{ font-size: 20px; }}
+:root:has(#theme-Tab-Text-Size[uc-tabtextsize-textsize="22"]) { .tab-text.tab-label{ font-size: 22px; }}

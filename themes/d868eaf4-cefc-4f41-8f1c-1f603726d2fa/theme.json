@@ -1,0 +1,15 @@
+{
+    "id": "d868eaf4-cefc-4f41-8f1c-1f603726d2fa",
+    "name": "Tab Text Size",
+    "description": "Change tab text size",
+    "homepage": "https://github.com/ajkuftic/Zen-TabTextSize",
+    "style": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/d868eaf4-cefc-4f41-8f1c-1f603726d2fa/chrome.css",
+    "readme": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/d868eaf4-cefc-4f41-8f1c-1f603726d2fa/readme.md",
+    "image": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/d868eaf4-cefc-4f41-8f1c-1f603726d2fa/image.png",
+    "author": "ajkuftic",
+    "version": "1.0.0",
+    "tags": [],
+    "createdAt": "2024-12-16",
+    "updatedAt": "2024-12-16",
+    "preferences": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/d868eaf4-cefc-4f41-8f1c-1f603726d2fa/preferences.json"
+}
