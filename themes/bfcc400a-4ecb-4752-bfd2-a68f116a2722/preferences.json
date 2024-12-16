@@ -42,20 +42,8 @@
         "defaultValue": true
     },
     {
-        "property": "theme.no_gaps.fixes.urlbar_hides_outline_fix",
-        "label": "Fix: Fix URL bar outline issue (1.0.2-b.1)",
-        "type": "checkbox",
-        "defaultValue": false
-    },
-    {
         "property": "theme.no_gaps.fixes.center_split_view",
         "label": "Fix: Make margin in different view modes consistent",
-        "type": "checkbox",
-        "defaultValue": false
-    },
-    {
-        "property": "zen.view.use-deprecated-urlbar",
-        "label": "Misc: Bring back old URL bar behaviour",
         "type": "checkbox",
         "defaultValue": false
     }
