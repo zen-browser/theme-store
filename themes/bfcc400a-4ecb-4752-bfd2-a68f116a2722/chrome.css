@@ -1,92 +1,68 @@
+@media (-moz-bool-pref: "theme.no_gaps.split.gaps")
+and (-moz-bool-pref: "theme.no_gaps.fixes.center_split_view") {
 
-@media (-moz-bool-pref: "theme.no_gaps.split.enabled") {
+  #zen-appcontent-wrapper:has(
+  > #zen-tabbox-wrapper > #tabbrowser-tabbox
+  > #tabbrowser-tabpanels[zen-split-view="true"]){
 
-#tabbrowser-tabbox{
-    --zen-split-row-gap: 0 !important;
-    --zen-split-column-gap: 0 !important;
-    padding: 0 !important;
-  }
+    margin-top: 1px;
 
-#tabbrowser-tabbox:has(> #tabbrowser-tabpanels[zen-split-view="true"]) {
-    padding: 0 1px 0 0 !important;
-  }
-
-#tabbrowser-tabpanels{
-    padding: 0 !important;
-  }
-  .zen-split-view-splitter {
-    display: none;
-  }
-
-@media (-moz-bool-pref: "theme.no_gaps.split.border") {
-    .browserSidebarContainer[zen-split="true"]{
-      padding: 1px !important;
-    }
-  }
-
-}
-
-@media not (-moz-bool-pref: "theme.no_gaps.split.enabled") {
-
-#tabbrowser-tabpanels:not([zen-split-view="true"]){
-    padding: 0 !important;
-  }
-  #tabbrowser-tabbox:has(> #tabbrowser-tabpanels:not([zen-split-view="true"])) {
-    padding: 0 !important;
-  }
-
-}
-
-@media not (-moz-bool-pref: "theme.no_gaps.border") {
-
-@media not (-moz-bool-pref: "theme.no_gaps.split.border") {
-
-.browserSidebarContainer{
-      --uc-tweak-rounded-corners-shadow-color: transparent !important;
+    & > #zen-tabbox-wrapper {
+      margin-bottom: 5px !important;
+      margin-right: 7px !important;
     }
 
-@media (-moz-bool-pref: "theme.no_gaps.split.rounded_corners") {
-      .browserSidebarContainer[zen-split="true"]{
-        overflow: visible !important;
+    @media (-moz-bool-pref: "zen.view.compact"){
+      @media (-moz-bool-pref: "zen.view.compact.hide-toolbar") {
+        margin-top: 3px !important;
+      }
+      @media (-moz-bool-pref: "zen.view.compact.hide-tabbar") {
+        margin-left: 2px !important;
       }
     }
 
+  }
 }
 
-@media (-moz-bool-pref: "theme.no_gaps.split.border") {
-    .browserSidebarContainer:not([zen-split="true"]){
-      --uc-tweak-rounded-corners-shadow-color: transparent !important;
+@media not (-moz-bool-pref: "theme.no_gaps.split.outline") {
+  hbox.browserSidebarContainer{
+    outline: none !important;
+  }
+}
+
+
+@media not (-moz-bool-pref: "theme.no_gaps.shadow"){
+  @media not (-moz-bool-pref: "theme.no_gaps.split.shadow") {
+    hbox.browserSidebarContainer{
+      box-shadow: none !important;
     }
   }
 
-}
-
-@media (-moz-bool-pref: "theme.no_gaps.border") {
-
-@media not (-moz-bool-pref: "theme.no_gaps.split.border") {
-    .browserSidebarContainer[zen-split="true"]{
-      --uc-tweak-rounded-corners-shadow-color: transparent !important;
+  @media (-moz-bool-pref: "theme.no_gaps.split.shadow") {
+    hbox.browserSidebarContainer:not([zen-split="true"]){
+      box-shadow: none !important;
     }
+  }
+}
 
-@media (-moz-bool-pref: "theme.no_gaps.split.rounded_corners") {
-      .browserSidebarContainer[zen-split="true"]{
-        overflow: visible !important;
-      }
+@media (-moz-bool-pref: "theme.no_gaps.shadow") {
+  @media not (-moz-bool-pref: "theme.no_gaps.split.shadow") {
+    hbox.browserSidebarContainer[zen-split="true"]{
+      box-shadow: none !important;
     }
-
+  }
 }
 
-}
 
 @media not (-moz-bool-pref: "theme.no_gaps.rounded_corners") {
 
-@media not (-moz-bool-pref: "theme.no_gaps.split.rounded_corners") {
+  @media not (-moz-bool-pref: "theme.no_gaps.split.rounded_corners") {
     #tabbrowser-tabpanels{
       --zen-webview-border-radius: 0;
     }
   }
 
-@media (-moz-bool-pref: "theme.no_gaps.split.rounded_corners") {
+  @media (-moz-bool-pref: "theme.no_gaps.split.rounded_corners") {
     #tabbrowser-tabpanels:not([zen-split-view="true"]){
       --zen-webview-border-radius: 0;
     }
@@ -99,5 +75,80 @@
     #tabbrowser-tabpanels[zen-split-view="true"]{
       --zen-webview-border-radius: 0;
     }
+  }
+}
+
+
+@media not (-moz-bool-pref: "theme.no_gaps.gaps") {
+
+  hbox.browserSidebarContainer:not([zen-split="true"]){
+    margin: 0 !important;
+  }
+
+  @media not (-moz-bool-pref: "theme.no_gaps.split.gaps") {
+
+    tabbox#tabbrowser-tabbox{
+      --zen-split-row-gap: 0 !important;
+      --zen-split-column-gap: 0 !important;
+    }
+
+    #zen-appcontent-wrapper {
+      margin: 0 !important;
+    }
+    #zen-tabbox-wrapper {
+      margin: 0 !important;
+    }
+
+    @media (-moz-bool-pref: "theme.no_gaps.split.outline") {
+      hbox.browserSidebarContainer[zen-split="true"]{
+        margin: 1px !important;
+      }
+    }
+
+  }
+
+  @media (-moz-bool-pref: "theme.no_gaps.split.gaps") {
+
+    #zen-appcontent-wrapper:not(:has(
+    > #zen-tabbox-wrapper > #tabbrowser-tabbox
+    > #tabbrowser-tabpanels[zen-split-view="true"])){
+
+      margin: 0 !important;
+
+      & > #zen-tabbox-wrapper {
+        margin: 0 !important;
+      }
+
+    }
+
+  }
+}
+
+@media (-moz-bool-pref: "theme.no_gaps.gaps") {
+  @media not (-moz-bool-pref: "theme.no_gaps.split.gaps") {
+
+    tabbox#tabbrowser-tabbox{
+      --zen-split-row-gap: 0 !important;
+      --zen-split-column-gap: 0 !important;
+    }
+
+    @media (-moz-bool-pref: "theme.no_gaps.split.outline") {
+      hbox.browserSidebarContainer[zen-split="true"]{
+        margin: 1px !important;
+      }
+    }
+
+    #zen-appcontent-wrapper:has(
+    > #zen-tabbox-wrapper > #tabbrowser-tabbox
+    > #tabbrowser-tabpanels[zen-split-view="true"]){
+
+      margin: 0 !important;
+
+      & > #zen-tabbox-wrapper {
+        margin: 0 !important;
+      }
+
+    }
+
   }
 }
