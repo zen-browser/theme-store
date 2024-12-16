@@ -71,6 +71,21 @@
         "createdAt": "2024-10-02",
         "updatedAt": "2024-11-19"
     },
+    "5bb07b6e-c89f-4f4a-a0ed-e483cc535594": {
+        "id": "5bb07b6e-c89f-4f4a-a0ed-e483cc535594",
+        "name": "Custom MenuButton",
+        "description": "Custom MenuButton",
+        "homepage": "",
+        "style": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/5bb07b6e-c89f-4f4a-a0ed-e483cc535594/chrome.css",
+        "readme": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/5bb07b6e-c89f-4f4a-a0ed-e483cc535594/readme.md",
+        "image": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/5bb07b6e-c89f-4f4a-a0ed-e483cc535594/image.png",
+        "author": "lindongbin",
+        "version": "1.0.0",
+        "tags": [],
+        "createdAt": "2024-12-14",
+        "updatedAt": "2024-12-16",
+        "preferences": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/5bb07b6e-c89f-4f4a-a0ed-e483cc535594/preferences.json"
+    },
     "f50841b2-5e4a-4534-985d-b7f7b96088c2": {
         "id": "f50841b2-5e4a-4534-985d-b7f7b96088c2",
         "name": "NoHighlightSplit",
@@ -406,10 +421,13 @@
         "readme": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/22c9ec3b-7c62-46ae-991f-c8fff5046829/readme.md",
         "image": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/22c9ec3b-7c62-46ae-991f-c8fff5046829/image.png",
         "author": "philmard",
-        "version": "1.0.1",
-        "tags": [],
+        "version": "1.0.2",
+        "preferences": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/22c9ec3b-7c62-46ae-991f-c8fff5046829/preferences.json",
+        "tags": [
+            "tabs"
+        ],
         "createdAt": "2024-11-09",
-        "updatedAt": "2024-12-04"
+        "updatedAt": "2024-12-16"
     },
     "cb15abdb-0514-4e09-8ce5-722cf1f4a20f": {
         "id": "cb15abdb-0514-4e09-8ce5-722cf1f4a20f",
@@ -527,6 +545,20 @@
         "createdAt": "2024-09-25",
         "updatedAt": "2024-09-25"
     },
+    "ae051a40-3e3a-429a-a6f4-199a28b18a75": {
+        "id": "ae051a40-3e3a-429a-a6f4-199a28b18a75",
+        "name": "Only Reset On Hover",
+        "description": "Show pinned tab's reset button only on hover, even on the active tab.",
+        "homepage": "",
+        "style": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/ae051a40-3e3a-429a-a6f4-199a28b18a75/chrome.css",
+        "readme": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/ae051a40-3e3a-429a-a6f4-199a28b18a75/readme.md",
+        "image": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/ae051a40-3e3a-429a-a6f4-199a28b18a75/image.png",
+        "author": "TheCatRiX",
+        "version": "1.0.0",
+        "tags": [],
+        "createdAt": "2024-12-16",
+        "updatedAt": "2024-12-16"
+    },
     "a7125691-139e-4a62-aad9-06c6e9f2e5ba": {
         "id": "a7125691-139e-4a62-aad9-06c6e9f2e5ba",
         "name": "CustomCursor",
@@ -614,16 +646,16 @@
     "bfcc400a-4ecb-4752-bfd2-a68f116a2722": {
         "id": "bfcc400a-4ecb-4752-bfd2-a68f116a2722",
         "name": "No Gaps",
-        "description": "Removes the gaps when the view isn't split.",
-        "homepage": "",
+        "description": "Removes the gaps in single-tab view.",
+        "homepage": "https://github.com/zen-browser/theme-store/tree/main/themes/bfcc400a-4ecb-4752-bfd2-a68f116a2722",
         "style": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/bfcc400a-4ecb-4752-bfd2-a68f116a2722/chrome.css",
         "readme": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/bfcc400a-4ecb-4752-bfd2-a68f116a2722/readme.md",
         "image": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/bfcc400a-4ecb-4752-bfd2-a68f116a2722/image.png",
         "author": "Peleret",
-        "version": "1.0.0",
+        "version": "1.1.1",
         "tags": [],
         "createdAt": "2024-10-21",
-        "updatedAt": "2024-10-23",
+        "updatedAt": "2024-12-16",
         "preferences": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/bfcc400a-4ecb-4752-bfd2-a68f116a2722/preferences.json"
     },
     "753c7518-237d-480a-abfd-1f42a7eabacc": {
