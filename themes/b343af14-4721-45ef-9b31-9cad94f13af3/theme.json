@@ -1,0 +1,14 @@
+{
+    "id": "b343af14-4721-45ef-9b31-9cad94f13af3",
+    "name": "Hide Workspaces Indicator",
+    "description": "Hides current workspace indicator, saving space for more tabs.",
+    "homepage": "",
+    "style": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/b343af14-4721-45ef-9b31-9cad94f13af3/chrome.css",
+    "readme": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/b343af14-4721-45ef-9b31-9cad94f13af3/readme.md",
+    "image": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/b343af14-4721-45ef-9b31-9cad94f13af3/image.png",
+    "author": "TheCatRiX",
+    "version": "1.0.0",
+    "tags": [],
+    "createdAt": "2024-12-16",
+    "updatedAt": "2024-12-16"
+}
