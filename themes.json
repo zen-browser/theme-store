@@ -40,7 +40,7 @@
         "preferences": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/d2953516-d239-4ef8-aac5-b238e3dc0360/preferences.json",
         "tags": [],
         "createdAt": "2024-09-29",
-        "updatedAt": "2024-10-31"
+        "updatedAt": "2024-12-16"
     },
     "f4a7562f-6e54-4f1e-b835-a397fc6c15f2": {
         "id": "f4a7562f-6e54-4f1e-b835-a397fc6c15f2",
@@ -218,6 +218,21 @@
         "createdAt": "2024-10-06",
         "updatedAt": "2024-10-06"
     },
+    "cfa711cf-e9f7-4c35-8289-3e7633f93565": {
+        "id": "cfa711cf-e9f7-4c35-8289-3e7633f93565",
+        "name": "Fluid URL",
+        "description": "A minimalist mod that adds a smooth gradient animation to the URL bar for a calming effect.",
+        "homepage": "https://github.com/wysh3/Zen-Mods/tree/main/Fluid%20URL",
+        "style": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/cfa711cf-e9f7-4c35-8289-3e7633f93565/chrome.css",
+        "readme": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/cfa711cf-e9f7-4c35-8289-3e7633f93565/readme.md",
+        "image": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/cfa711cf-e9f7-4c35-8289-3e7633f93565/image.png",
+        "author": "wysh3",
+        "version": "1.0.0",
+        "tags": [],
+        "createdAt": "2024-11-20",
+        "updatedAt": "2024-11-20",
+        "preferences": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/cfa711cf-e9f7-4c35-8289-3e7633f93565/preferences.json"
+    },
     "c6813222-6571-4ba6-8faf-58f3343324f6": {
         "id": "c6813222-6571-4ba6-8faf-58f3343324f6",
         "name": "Disable Rounded Corners",
@@ -346,13 +361,13 @@
         "readme": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/ad97bb70-0066-4e42-9b5f-173a5e42c6fc/readme.md",
         "image": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/ad97bb70-0066-4e42-9b5f-173a5e42c6fc/image.png",
         "author": "JLBlk",
-        "version": "1.4.1",
+        "version": "1.4.2",
         "preferences": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/ad97bb70-0066-4e42-9b5f-173a5e42c6fc/preferences.json",
         "tags": [
             "tabs"
         ],
         "createdAt": "2024-08-28",
-        "updatedAt": "2024-11-19"
+        "updatedAt": "2024-12-16"
     },
     "d42bf02e-3411-4265-84e6-3dc2dba5fdd8": {
         "id": "d42bf02e-3411-4265-84e6-3dc2dba5fdd8",
