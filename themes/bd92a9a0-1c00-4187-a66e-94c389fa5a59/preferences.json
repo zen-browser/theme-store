@@ -18,9 +18,21 @@
         "defaultValue": true
     },
     {
+        "property": "theme.sidebar_expand_on_hover.default_tab_background_shape",
+        "label": "Default Tab Background Shape",
+        "type": "checkbox",
+        "defaultValue": false
+    },
+    {
         "property": "theme.sidebar_expand_on_hover.expanded_width",
         "label": "Width of the expanded sidebar",
         "type": "string",
         "defaultValue": "300px"
+    },
+    {
+        "property": "theme.sidebar_expand_on_hover.transition_speed",
+        "label": "Transition speed of the sidebar",
+        "type": "string",
+        "defaultValue": "120ms"
     }
 ]
