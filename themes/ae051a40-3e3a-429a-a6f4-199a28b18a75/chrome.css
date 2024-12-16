@@ -1,0 +1,4 @@
+
+#tabbrowser-tabs .tabbrowser-tab:is([visuallyselected]):not(:hover) .tab-reset-button {
+  display: none !important;
+}
