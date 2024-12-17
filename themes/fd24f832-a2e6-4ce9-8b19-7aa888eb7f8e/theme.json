@@ -1,0 +1,14 @@
+{
+    "id": "fd24f832-a2e6-4ce9-8b19-7aa888eb7f8e",
+    "name": "Quietify",
+    "description": "quietify adds a calm visualizer type of animation to mute button to use with style and ease",
+    "homepage": "https://github.com/wysh3/Zen-Mods/tree/main/Quietify",
+    "style": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/fd24f832-a2e6-4ce9-8b19-7aa888eb7f8e/chrome.css",
+    "readme": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/fd24f832-a2e6-4ce9-8b19-7aa888eb7f8e/readme.md",
+    "image": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/fd24f832-a2e6-4ce9-8b19-7aa888eb7f8e/image.png",
+    "author": "wysh3",
+    "version": "1.0.0",
+    "tags": [],
+    "createdAt": "2024-12-17",
+    "updatedAt": "2024-12-17"
+}
