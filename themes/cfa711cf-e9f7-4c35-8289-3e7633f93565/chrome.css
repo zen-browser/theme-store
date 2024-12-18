@@ -4,7 +4,7 @@
         --w-urlbar-bg_color: #0066ff66, #00ffff66, #0066ff66;
     }
 
-    #urlbar:not([breakout-extend="true"]) {
+    #urlbar {
     .urlbar-input-container::before {
         content: '';
         position: absolute;
