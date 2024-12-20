@@ -1,53 +1,87 @@
 
-findbar {
-	display: flex;
+@-moz-document url-prefix("chrome:") {
+	findbar {
+		display: flex !important;
 
-	border-radius: var(--zen-border-radius) !important;
-	margin: 0px !important;
+		border-radius: var(--zen-border-radius) !important;
+		margin: 0px !important;
 
-	width: 90% !important;
-	max-width: 800px;
+		width: 90% !important;
+		max-width: 800px;
 
-	height: auto !important;
-
-	position: absolute !important;
-	top: 15px;
-	left: 50%;
-	transform: translateX(-50%);
-
-	overflow: unset !important;
-	box-shadow: var(--box-shadow-10);
-
-	background: var(--zen-colors-tertiary) !important;
-	border: 1px solid var(--zen-colors-border) !important;
-
-	transition: top 0.35s ease !important;
-
-	visibility: visible !important;
-	opacity: 1 !important;
-
-
-	& .findbar-container {
-		flex-wrap: wrap;
-		overflow-x: auto !important;
 		height: auto !important;
 
-		row-gap: 10px;
+		position: absolute !important;
+		top: 15px;
+		left: 50%;
+		transform: translateX(-50%);
 
-		& > :first-child {
-			width: 100% !important;
+		overflow: unset !important;
+		box-shadow: var(--box-shadow-10);
+
+		background: var(--zen-colors-tertiary) !important;
+		border: 1px solid var(--zen-colors-border) !important;
+
+		transition: top 0.35s ease, bottom 0.35s ease !important;
+
+		visibility: visible !important;
+		opacity: 1 !important;
+
+
+		& .findbar-container {
+			flex-wrap: wrap;
+			overflow-x: auto !important;
+			height: auto !important;
+
+			row-gap: 10px;
+
+			& > :first-child {
+				width: 100% !important;
+			}
+	
+			& .findbar-textbox {
+				flex-grow: 1;
+			}
 		}
 
-		& .findbar-textbox {
-			flex-grow: 1;
+
+		&[hidden="true"] {
+			top: -150px;
+		}
+
+		@starting-style {
+			top: -150px;
+		}
+	}
+	
+	
+	/* Horizontal Position */
+	body:has(#theme-Better-Find-Bar[theme-better_find_bar-horizontal_position="left"]) {
+		findbar {
+			left: 15px;
+			transform: translateX(0%);
 		}
 	}
 
-	&[hidden="true"] {
-		top: -150px;
+	body:has(#theme-Better-Find-Bar[theme-better_find_bar-horizontal_position="right"]) {
+		findbar {
+			left: unset !important;
+			right: 15px;
+			transform: translateX(0%);
+		}
 	}
 
-	@starting-style {
-		top: -150px;
+
+	/* Background blur */
+	@media (-moz-bool-pref: "theme.better_find_bar.transparent_background") {
+		findbar, findbar .findbar-textbox:not([status="notfound"]) {
+			backdrop-filter: blur(15px);
+
+			background: color-mix(in hsl, var(--zen-colors-tertiary), transparent 50%) !important;
+		}
+
+		findbar .findbar-textbox:not([status="notfound"]) {
+			background: color-mix(in hsl, var(--zen-colors-tertiary), transparent 20%) !important;
+		}
 	}
 }
