@@ -1,0 +1,29 @@
+
+.titlebar-buttonbox{
+    margin-top: 5px;
+    margin-right: 5px;
+  }
+
+.titlebar-button {
+    height: 25px;
+    width: 25px;
+    margin: 2px;
+    border-radius: var(--toolbarbutton-border-radius);
+    cursor: pointer;
+  }
+
+.titlebar-min:hover{
+    background-color: #02751e;
+  }
+
+.titlebar-restore:hover{
+    background-color: #A27A05;
+  }
+
+.titlebar-max:hover{
+    background-color: #A27A05;
+  }
+
+.titlebar-close:hover {
+    background-color: #C64F46;
+  }
