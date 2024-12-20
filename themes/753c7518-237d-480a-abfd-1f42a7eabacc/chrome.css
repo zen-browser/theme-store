@@ -34,6 +34,28 @@
   }
 }
 
+@media (-moz-bool-pref: "zen.view.compact") {
+  :root:not([customizing]):not([inDOMFullscreen="true"]) {
+    @media (-moz-bool-pref: "zen.view.compact.hide-tabbar") {
+      & #tabbrowser-tabpanels {
+        :root:not([inDOMFullscreen="true"]) #browser:has(#navigator-toolbox:not([zen-right-side="true"])) & {
+          padding-left: 0px !important;
+        }
+      }
+    }
+  }
+}
+
+@media (-moz-bool-pref: "zen.view.compact") {
+  :root:not([customizing]):not([inDOMFullscreen="true"]) {
+    @media (-moz-bool-pref: "zen.view.compact.hide-toolbar") {
+      &:not([inDOMFullscreen="true"]) #tabbrowser-tabpanels {
+        padding-top: 0px !important;
+      }
+    }
+  }
+}
+
 .browserSidebarContainer {
   padding: 0px !important;
   box-shadow: 0 0 0 0px transparent !important;
