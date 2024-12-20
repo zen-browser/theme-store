@@ -20,22 +20,6 @@
 		]
 	},
 	{
-		"property": "theme.better_find_bar.vertical_position",
-		"label": "Changes the vertical position of the find bar.",
-		"type": "dropdown",
-		"disabledOn": [],
-		"options": [
-			{
-				"label": "Top",
-				"value": "top"
-			},
-			{
-				"label": "Bottom",
-				"value": "bottom"
-			}
-		]
-	},
-	{
 		"property": "theme.better_find_bar.transparent_background",
 		"label": "Makes the background of the find bar to be transparent.",
 		"type": "checkbox"
