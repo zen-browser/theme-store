@@ -1,0 +1,14 @@
+{
+    "id": "0c3d77bf-44fc-47a6-a183-39205dfa5f7e",
+    "name": "Hidden Reset Button",
+    "description": "Hide the reset button behind the tab icon unless hovered.",
+    "homepage": "",
+    "style": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/0c3d77bf-44fc-47a6-a183-39205dfa5f7e/chrome.css",
+    "readme": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/0c3d77bf-44fc-47a6-a183-39205dfa5f7e/readme.md",
+    "image": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/0c3d77bf-44fc-47a6-a183-39205dfa5f7e/image.png",
+    "author": "AlexCookieDev",
+    "version": "1.0.0",
+    "tags": [],
+    "createdAt": "2024-12-20",
+    "updatedAt": "2024-12-20"
+}
