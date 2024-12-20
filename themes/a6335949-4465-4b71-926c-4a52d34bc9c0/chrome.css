@@ -77,11 +77,11 @@
 		findbar, findbar .findbar-textbox:not([status="notfound"]) {
 			backdrop-filter: blur(15px);
 
-			background: color-mix(in hsl, var(--zen-colors-tertiary), transparent 50%) !important;
+			background: color-mix(in hsl, var(--zen-colors-tertiary), transparent 30%) !important;
 		}
 
 		findbar .findbar-textbox:not([status="notfound"]) {
-			background: color-mix(in hsl, var(--zen-colors-tertiary), transparent 20%) !important;
+			background: color-mix(in hsl, var(--zen-colors-tertiary), transparent 10%) !important;
 		}
 	}
 }
