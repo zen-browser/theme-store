@@ -1,4 +1,3 @@
-
 #tabbrowser-tabs[orient='vertical']
 	.tabbrowser-tab
 	.tab-icon-overlay:not([crashed]) {
@@ -7,7 +6,7 @@
 		border: 1px solid #ffffff29 !important;
 		transition: transform 100ms ease-in-out, background-color 100ms ease-in-out;
 
-&:hover {
+		&:hover {
 			transition: transform 100ms ease-in-out,
 				background-color 100ms ease-in-out !important;
 			transform: scale(1.3) translate(-8%, 14%);
@@ -15,12 +14,25 @@
 		}
 	}
 
-/* Different background color when muted */
 	&[muted] {
+		/* Different background color when muted */
 		background-color: rgb(122, 31, 31) !important;
+
+		/* Revert old icon */
+		background-image: url("chrome://browser/skin/tabbrowser/tab-audio-muted-small.svg") !important;
 	}
 
-/* Revert new, zen's audio indicator */
+	&[soundplaying] {
+		/* Revert old icon */
+		background-image: url("chrome://browser/skin/tabbrowser/tab-audio-playing-small.svg") !important;
+	}
+
+	&[activemedia-blocked] {
+		/* Revert old icon */
+		background-image: url("chrome://browser/skin/tabbrowser/tab-audio-blocked-small.svg") !important;
+	}
+
+    /* Revert new, zen's audio indicator */
 	&[muted],
 	&[soundplaying] {
 		list-style-image: none !important;

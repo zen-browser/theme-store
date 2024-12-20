@@ -1,0 +1,32 @@
+@-moz-document url-prefix("chrome:") {
+    /* Firefox URL Bar Loading Animation */
+    :root {
+        --w-urlbar-bg_color: #0066ff66, #00ffff66, #0066ff66;
+    }
+
+    #urlbar {
+    .urlbar-input-container::before {
+        content: '';
+        position: absolute;
+        inset: 0;
+        background: linear-gradient(90deg, var(--w-urlbar-bg_color));
+        background-size: 200% 100%;
+        animation: urlbar-loading-gradient 1s linear reverse infinite;
+        animation-play-state: paused;
+        opacity: 0;
+        transition: opacity 0.25s;
+        z-index: -1;
+    }
+    }
+
+    :has(#reload-button[displaystop="true"]) .urlbar-input-container::before {
+        animation-play-state: running;
+        opacity: 1;
+    }
+
+    @keyframes urlbar-loading-gradient {
+        0% { background-position: 0% 50%; }
+        50% { background-position: 100% 50%; }
+        100% { background-position: 200% 50%; }
+    }
+}

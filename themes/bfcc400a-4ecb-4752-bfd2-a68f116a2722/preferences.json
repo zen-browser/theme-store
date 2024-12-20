@@ -1,32 +1,50 @@
 [
     {
-        "property": "theme.no_gaps.split.enabled",
-        "label": "Remove gaps in split view",
+        "property": "theme.no_gaps.gaps",
+        "label": "Gaps in single-tab view",
         "type": "checkbox",
         "defaultValue": false
     },
     {
-        "property": "theme.no_gaps.border",
-        "label": "Keep border",
+        "property": "theme.no_gaps.split.gaps",
+        "label": "Gaps in multi-tab view",
         "type": "checkbox",
         "defaultValue": true
     },
     {
         "property": "theme.no_gaps.rounded_corners",
-        "label": "Keep rounded corners",
+        "label": "Rounded corners in single-tab view",
         "type": "checkbox",
         "defaultValue": false
     },
     {
-        "property": "theme.no_gaps.split.border",
-        "label": "Keep border in split view",
+        "property": "theme.no_gaps.split.rounded_corners",
+        "label": "Rounded corners in multi-tab view",
         "type": "checkbox",
         "defaultValue": true
     },
     {
-        "property": "theme.no_gaps.split.rounded_corners",
-        "label": "Keep rounded corners in split view",
+        "property": "theme.no_gaps.shadow",
+        "label": "Shadow in single-tab view",
         "type": "checkbox",
         "defaultValue": true
+    },
+    {
+        "property": "theme.no_gaps.split.shadow",
+        "label": "Shadow in multi-tab view",
+        "type": "checkbox",
+        "defaultValue": true
+    },
+    {
+        "property": "theme.no_gaps.split.outline",
+        "label": "Outline in multi-tab view",
+        "type": "checkbox",
+        "defaultValue": true
+    },
+    {
+        "property": "theme.no_gaps.fixes.center_split_view",
+        "label": "Fix: Make margin in different view modes consistent",
+        "type": "checkbox",
+        "defaultValue": false
     }
 ]

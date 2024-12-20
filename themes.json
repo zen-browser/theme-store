@@ -8,10 +8,10 @@
         "readme": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/a5f6a231-e3c8-4ce8-8a8e-3e93efd6adec/readme.md",
         "image": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/a5f6a231-e3c8-4ce8-8a8e-3e93efd6adec/image.png",
         "author": "Dinno-DEV",
-        "version": "1.0.1",
+        "version": "1.0.2",
         "tags": [],
         "createdAt": "2024-11-01",
-        "updatedAt": "2024-11-19"
+        "updatedAt": "2024-12-16"
     },
     "5941aefd-67b0-453d-9b62-9071a31cbb0d": {
         "id": "5941aefd-67b0-453d-9b62-9071a31cbb0d",
@@ -36,11 +36,11 @@
         "readme": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/d2953516-d239-4ef8-aac5-b238e3dc0360/readme.md",
         "image": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/d2953516-d239-4ef8-aac5-b238e3dc0360/image.png",
         "author": "Axenide",
-        "version": "1.0.2",
+        "version": "1.0.3",
         "preferences": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/d2953516-d239-4ef8-aac5-b238e3dc0360/preferences.json",
         "tags": [],
         "createdAt": "2024-09-29",
-        "updatedAt": "2024-10-31"
+        "updatedAt": "2024-12-16"
     },
     "f4a7562f-6e54-4f1e-b835-a397fc6c15f2": {
         "id": "f4a7562f-6e54-4f1e-b835-a397fc6c15f2",
@@ -70,6 +70,21 @@
         "tags": [],
         "createdAt": "2024-10-02",
         "updatedAt": "2024-11-19"
+    },
+    "5bb07b6e-c89f-4f4a-a0ed-e483cc535594": {
+        "id": "5bb07b6e-c89f-4f4a-a0ed-e483cc535594",
+        "name": "Custom MenuButton",
+        "description": "Custom MenuButton",
+        "homepage": "",
+        "style": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/5bb07b6e-c89f-4f4a-a0ed-e483cc535594/chrome.css",
+        "readme": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/5bb07b6e-c89f-4f4a-a0ed-e483cc535594/readme.md",
+        "image": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/5bb07b6e-c89f-4f4a-a0ed-e483cc535594/image.png",
+        "author": "lindongbin",
+        "version": "1.0.0",
+        "tags": [],
+        "createdAt": "2024-12-14",
+        "updatedAt": "2024-12-16",
+        "preferences": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/5bb07b6e-c89f-4f4a-a0ed-e483cc535594/preferences.json"
     },
     "f50841b2-5e4a-4534-985d-b7f7b96088c2": {
         "id": "f50841b2-5e4a-4534-985d-b7f7b96088c2",
@@ -123,10 +138,10 @@
         "readme": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/bd92a9a0-1c00-4187-a66e-94c389fa5a59/readme.md",
         "image": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/bd92a9a0-1c00-4187-a66e-94c389fa5a59/image.png",
         "author": "Uiniel",
-        "version": "1.0.0",
+        "version": "1.1.0",
         "tags": [],
         "createdAt": "2024-12-10",
-        "updatedAt": "2024-12-10",
+        "updatedAt": "2024-12-16",
         "preferences": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/bd92a9a0-1c00-4187-a66e-94c389fa5a59/preferences.json"
     },
     "d8b79d4a-6cba-4495-9ff6-d6d30b0e94fe": {
@@ -217,6 +232,21 @@
         "tags": [],
         "createdAt": "2024-10-06",
         "updatedAt": "2024-10-06"
+    },
+    "cfa711cf-e9f7-4c35-8289-3e7633f93565": {
+        "id": "cfa711cf-e9f7-4c35-8289-3e7633f93565",
+        "name": "Fluid URL",
+        "description": "A minimalist mod that adds a smooth gradient animation to the URL bar for a calming effect.",
+        "homepage": "https://github.com/wysh3/Zen-Mods/tree/main/Fluid%20URL",
+        "style": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/cfa711cf-e9f7-4c35-8289-3e7633f93565/chrome.css",
+        "readme": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/cfa711cf-e9f7-4c35-8289-3e7633f93565/readme.md",
+        "image": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/cfa711cf-e9f7-4c35-8289-3e7633f93565/image.png",
+        "author": "wysh3",
+        "version": "1.0.2",
+        "tags": [],
+        "createdAt": "2024-11-20",
+        "updatedAt": "2024-12-18",
+        "preferences": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/cfa711cf-e9f7-4c35-8289-3e7633f93565/preferences.json"
     },
     "c6813222-6571-4ba6-8faf-58f3343324f6": {
         "id": "c6813222-6571-4ba6-8faf-58f3343324f6",
@@ -346,13 +376,13 @@
         "readme": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/ad97bb70-0066-4e42-9b5f-173a5e42c6fc/readme.md",
         "image": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/ad97bb70-0066-4e42-9b5f-173a5e42c6fc/image.png",
         "author": "JLBlk",
-        "version": "1.4.1",
+        "version": "1.4.2",
         "preferences": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/ad97bb70-0066-4e42-9b5f-173a5e42c6fc/preferences.json",
         "tags": [
             "tabs"
         ],
         "createdAt": "2024-08-28",
-        "updatedAt": "2024-11-19"
+        "updatedAt": "2024-12-16"
     },
     "d42bf02e-3411-4265-84e6-3dc2dba5fdd8": {
         "id": "d42bf02e-3411-4265-84e6-3dc2dba5fdd8",
@@ -391,10 +421,13 @@
         "readme": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/22c9ec3b-7c62-46ae-991f-c8fff5046829/readme.md",
         "image": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/22c9ec3b-7c62-46ae-991f-c8fff5046829/image.png",
         "author": "philmard",
-        "version": "1.0.1",
-        "tags": [],
+        "version": "1.0.2",
+        "preferences": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/22c9ec3b-7c62-46ae-991f-c8fff5046829/preferences.json",
+        "tags": [
+            "tabs"
+        ],
         "createdAt": "2024-11-09",
-        "updatedAt": "2024-12-04"
+        "updatedAt": "2024-12-16"
     },
     "cb15abdb-0514-4e09-8ce5-722cf1f4a20f": {
         "id": "cb15abdb-0514-4e09-8ce5-722cf1f4a20f",
@@ -448,11 +481,12 @@
         "style": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/74c755b3-41a5-4f78-83cb-cd1e1e076bb6/chrome.css",
         "readme": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/74c755b3-41a5-4f78-83cb-cd1e1e076bb6/readme.md",
         "image": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/74c755b3-41a5-4f78-83cb-cd1e1e076bb6/image.png",
+        "preferences": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/74c755b3-41a5-4f78-83cb-cd1e1e076bb6/preferences.json",
         "author": "lindongbin",
-        "version": "1.0.0",
+        "version": "1.0.1",
         "tags": [],
         "createdAt": "2024-08-30",
-        "updatedAt": "2024-08-30"
+        "updatedAt": "2024-12-10"
     },
     "5c4d7772-d963-4672-ab03-e9d541438881": {
         "id": "5c4d7772-d963-4672-ab03-e9d541438881",
@@ -511,6 +545,20 @@
         "createdAt": "2024-09-25",
         "updatedAt": "2024-09-25"
     },
+    "ae051a40-3e3a-429a-a6f4-199a28b18a75": {
+        "id": "ae051a40-3e3a-429a-a6f4-199a28b18a75",
+        "name": "Only Reset On Hover",
+        "description": "Show pinned tab's reset button only on hover, even on the active tab.",
+        "homepage": "",
+        "style": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/ae051a40-3e3a-429a-a6f4-199a28b18a75/chrome.css",
+        "readme": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/ae051a40-3e3a-429a-a6f4-199a28b18a75/readme.md",
+        "image": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/ae051a40-3e3a-429a-a6f4-199a28b18a75/image.png",
+        "author": "TheCatRiX",
+        "version": "1.0.0",
+        "tags": [],
+        "createdAt": "2024-12-16",
+        "updatedAt": "2024-12-16"
+    },
     "a7125691-139e-4a62-aad9-06c6e9f2e5ba": {
         "id": "a7125691-139e-4a62-aad9-06c6e9f2e5ba",
         "name": "CustomCursor",
@@ -525,6 +573,20 @@
         "createdAt": "2024-10-26",
         "updatedAt": "2024-10-26",
         "preferences": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/a7125691-139e-4a62-aad9-06c6e9f2e5ba/preferences.json"
+    },
+    "f4866f39-cfd6-4498-ab92-54213b8279dc": {
+        "id": "f4866f39-cfd6-4498-ab92-54213b8279dc",
+        "name": "Animations Plus",
+        "description": "A nice animation pack for Zen Browser",
+        "homepage": "https://github.com/Anoms12/Animations-plus",
+        "style": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/f4866f39-cfd6-4498-ab92-54213b8279dc/chrome.css",
+        "readme": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/f4866f39-cfd6-4498-ab92-54213b8279dc/readme.md",
+        "image": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/f4866f39-cfd6-4498-ab92-54213b8279dc/image.png",
+        "author": "Anoms12",
+        "version": "1.0.0",
+        "tags": [],
+        "createdAt": "2024-12-01",
+        "updatedAt": "2024-12-16"
     },
     "7ba20fe1-7286-4b1f-9bf6-39d40bec8ae0": {
         "id": "7ba20fe1-7286-4b1f-9bf6-39d40bec8ae0",
@@ -598,16 +660,16 @@
     "bfcc400a-4ecb-4752-bfd2-a68f116a2722": {
         "id": "bfcc400a-4ecb-4752-bfd2-a68f116a2722",
         "name": "No Gaps",
-        "description": "Removes the gaps when the view isn't split.",
-        "homepage": "",
+        "description": "Removes the gaps in single-tab view.",
+        "homepage": "https://github.com/zen-browser/theme-store/tree/main/themes/bfcc400a-4ecb-4752-bfd2-a68f116a2722",
         "style": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/bfcc400a-4ecb-4752-bfd2-a68f116a2722/chrome.css",
         "readme": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/bfcc400a-4ecb-4752-bfd2-a68f116a2722/readme.md",
         "image": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/bfcc400a-4ecb-4752-bfd2-a68f116a2722/image.png",
         "author": "Peleret",
-        "version": "1.0.0",
+        "version": "1.1.2",
         "tags": [],
         "createdAt": "2024-10-21",
-        "updatedAt": "2024-10-23",
+        "updatedAt": "2024-12-18",
         "preferences": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/bfcc400a-4ecb-4752-bfd2-a68f116a2722/preferences.json"
     },
     "753c7518-237d-480a-abfd-1f42a7eabacc": {
@@ -720,6 +782,36 @@
         "createdAt": "2024-09-03",
         "updatedAt": "2024-09-03"
     },
+    "ed742dfd-e7e0-4b1b-a0aa-e0905b14d817": {
+        "id": "ed742dfd-e7e0-4b1b-a0aa-e0905b14d817",
+        "name": "Pinned Tabs Max Height",
+        "description": "Change max height of pinned tabs.",
+        "homepage": "",
+        "style": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/ed742dfd-e7e0-4b1b-a0aa-e0905b14d817/chrome.css",
+        "readme": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/ed742dfd-e7e0-4b1b-a0aa-e0905b14d817/readme.md",
+        "image": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/ed742dfd-e7e0-4b1b-a0aa-e0905b14d817/image.png",
+        "author": "TheCatRiX",
+        "version": "1.0.0",
+        "tags": [],
+        "createdAt": "2024-12-16",
+        "updatedAt": "2024-12-16",
+        "preferences": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/ed742dfd-e7e0-4b1b-a0aa-e0905b14d817/preferences.json"
+    },
+    "d868eaf4-cefc-4f41-8f1c-1f603726d2fa": {
+        "id": "d868eaf4-cefc-4f41-8f1c-1f603726d2fa",
+        "name": "Tab Text Size",
+        "description": "Change tab text size",
+        "homepage": "https://github.com/ajkuftic/Zen-TabTextSize",
+        "style": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/d868eaf4-cefc-4f41-8f1c-1f603726d2fa/chrome.css",
+        "readme": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/d868eaf4-cefc-4f41-8f1c-1f603726d2fa/readme.md",
+        "image": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/d868eaf4-cefc-4f41-8f1c-1f603726d2fa/image.png",
+        "author": "ajkuftic",
+        "version": "1.0.0",
+        "tags": [],
+        "createdAt": "2024-12-16",
+        "updatedAt": "2024-12-18",
+        "preferences": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/d868eaf4-cefc-4f41-8f1c-1f603726d2fa/preferences.json"
+    },
     "00aeb359-cce5-4eb5-8c5c-5f928a715664": {
         "id": "00aeb359-cce5-4eb5-8c5c-5f928a715664",
         "name": "Nyan Catto Mod",
@@ -734,6 +826,20 @@
         "createdAt": "2024-10-29",
         "updatedAt": "2024-11-03",
         "preferences": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/00aeb359-cce5-4eb5-8c5c-5f928a715664/preferences.json"
+    },
+    "fd24f832-a2e6-4ce9-8b19-7aa888eb7f8e": {
+        "id": "fd24f832-a2e6-4ce9-8b19-7aa888eb7f8e",
+        "name": "Quietify",
+        "description": "quietify adds a calm visualizer type of animation to mute button to use with style and ease",
+        "homepage": "https://github.com/wysh3/Zen-Mods/tree/main/Quietify",
+        "style": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/fd24f832-a2e6-4ce9-8b19-7aa888eb7f8e/chrome.css",
+        "readme": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/fd24f832-a2e6-4ce9-8b19-7aa888eb7f8e/readme.md",
+        "image": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/fd24f832-a2e6-4ce9-8b19-7aa888eb7f8e/image.png",
+        "author": "wysh3",
+        "version": "1.0.0",
+        "tags": [],
+        "createdAt": "2024-12-17",
+        "updatedAt": "2024-12-18"
     },
     "daf345ec-9a89-4b5d-9d41-47df562e29c9": {
         "id": "daf345ec-9a89-4b5d-9d41-47df562e29c9",
@@ -836,6 +942,21 @@
         "createdAt": "2024-12-03",
         "updatedAt": "2024-12-04"
     },
+    "d23733fa-983e-4680-8869-bf5b292d4fe6": {
+        "id": "d23733fa-983e-4680-8869-bf5b292d4fe6",
+        "name": "Customize Font Size",
+        "description": "Configure Zen Browser's UI font sizes.",
+        "homepage": "https://github.com/joadr/zen-customize-fonts-size",
+        "style": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/d23733fa-983e-4680-8869-bf5b292d4fe6/chrome.css",
+        "readme": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/d23733fa-983e-4680-8869-bf5b292d4fe6/readme.md",
+        "image": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/d23733fa-983e-4680-8869-bf5b292d4fe6/image.png",
+        "author": "joadr",
+        "version": "1.0.0",
+        "tags": [],
+        "createdAt": "2024-11-29",
+        "updatedAt": "2024-12-10",
+        "preferences": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/d23733fa-983e-4680-8869-bf5b292d4fe6/preferences.json"
+    },
     "abc2d6d8-ea9c-4313-a99c-fb1e76e8b3e5": {
         "id": "abc2d6d8-ea9c-4313-a99c-fb1e76e8b3e5",
         "name": "Drop Shadow",
@@ -876,19 +997,6 @@
         "version": "1.0.0",
         "createdAt": "2024-10-14",
         "updatedAt": "2024-10-19",
-        "tags": []
-    },
-    "ba3621a3-3967-40d4-86cd-519eae7f76c2": {
-        "id": "ba3621a3-3967-40d4-86cd-519eae7f76c2",
-        "name": "Hide Unified Extensions",
-        "description": "You can finally hide the unifiedExtensions button.",
-        "homepage": "https://github.com/tangowithfoxtrot/zen-hide-unified-extensions",
-        "style": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/ba3621a3-3967-40d4-86cd-519eae7f76c2/chrome.css",
-        "readme": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/ba3621a3-3967-40d4-86cd-519eae7f76c2/readme.md",
-        "image": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/ba3621a3-3967-40d4-86cd-519eae7f76c2/image.png",
-        "author": "tangowithfoxtrot",
-        "createdAt": "2024-10-20",
-        "updatedAt": "2024-10-20",
         "tags": []
     },
     "c5f7fb68-cc75-4df0-8b02-dc9ee13aa773": {
@@ -970,6 +1078,20 @@
         ],
         "createdAt": "2024-08-23",
         "updatedAt": "2024-08-24"
+    },
+    "c45c4894-d6bd-47fc-997a-0c4d015334f1": {
+        "id": "c45c4894-d6bd-47fc-997a-0c4d015334f1",
+        "name": "No pinned tab reset btn",
+        "description": "Hides the reset button that appears when hovering over pinned tabs.",
+        "homepage": "https://github.com/spicybackend/zen-browser-no-pinned-url-reset",
+        "style": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/c45c4894-d6bd-47fc-997a-0c4d015334f1/chrome.css",
+        "readme": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/c45c4894-d6bd-47fc-997a-0c4d015334f1/readme.md",
+        "image": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/c45c4894-d6bd-47fc-997a-0c4d015334f1/image.png",
+        "author": "spicybackend",
+        "version": "1.0.0",
+        "tags": [],
+        "createdAt": "2024-12-12",
+        "updatedAt": "2024-12-12"
     },
     "81fcd6b3-f014-4796-988f-6c3cb3874db8": {
         "id": "81fcd6b3-f014-4796-988f-6c3cb3874db8",
@@ -1101,6 +1223,20 @@
         "createdAt": "2024-09-01",
         "updatedAt": "2024-11-19"
     },
+    "2317fd93-c3ed-4f37-b55a-304c1816819e": {
+        "id": "2317fd93-c3ed-4f37-b55a-304c1816819e",
+        "name": "Audio Indicator Enhanced",
+        "description": "Enhanced audio indicator, with more polished style",
+        "homepage": "https://github.com/Kaedriz/ZenMods/tree/main/AudioIndicatorEnhanced",
+        "style": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/2317fd93-c3ed-4f37-b55a-304c1816819e/chrome.css",
+        "readme": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/2317fd93-c3ed-4f37-b55a-304c1816819e/readme.md",
+        "image": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/2317fd93-c3ed-4f37-b55a-304c1816819e/image.png",
+        "author": "Kaedriz",
+        "version": "1.0.0",
+        "tags": [],
+        "createdAt": "2024-12-06",
+        "updatedAt": "2024-12-18"
+    },
     "680424a8-a818-406b-98c5-7726214e2a9f": {
         "id": "680424a8-a818-406b-98c5-7726214e2a9f",
         "name": "Remove Browser Padding",
@@ -1139,9 +1275,9 @@
         "readme": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/a6335949-4465-4b71-926c-4a52d34bc9c0/readme.md",
         "image": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/a6335949-4465-4b71-926c-4a52d34bc9c0/image.png",
         "author": "RobotoSkunk",
-        "version": "1.0.0",
+        "version": "1.0.1",
         "tags": [],
         "createdAt": "2024-11-24",
-        "updatedAt": "2024-12-04"
+        "updatedAt": "2024-12-16"
     }
 }
