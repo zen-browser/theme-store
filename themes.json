@@ -500,7 +500,7 @@
         "version": "1.0.0",
         "tags": [],
         "createdAt": "2024-12-20",
-        "updatedAt": "2024-12-20"
+        "updatedAt": "2024-12-22"
     },
     "5c4d7772-d963-4672-ab03-e9d541438881": {
         "id": "5c4d7772-d963-4672-ab03-e9d541438881",
@@ -1120,6 +1120,20 @@
         "tags": [],
         "createdAt": "2024-12-12",
         "updatedAt": "2024-12-12"
+    },
+    "87196c08-8ca1-4848-b13b-7ea41ee830e7": {
+        "id": "87196c08-8ca1-4848-b13b-7ea41ee830e7",
+        "name": "Tab Preview Enhanced",
+        "description": "Enhanced tab preview, respecting user background color and padding",
+        "homepage": "https://github.com/Kaedriz/ZenMods/tree/main/TabPreviewEnhanced",
+        "style": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/87196c08-8ca1-4848-b13b-7ea41ee830e7/chrome.css",
+        "readme": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/87196c08-8ca1-4848-b13b-7ea41ee830e7/readme.md",
+        "image": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/87196c08-8ca1-4848-b13b-7ea41ee830e7/image.png",
+        "author": "Kaedriz",
+        "version": "1.0.0",
+        "tags": [],
+        "createdAt": "2024-12-20",
+        "updatedAt": "2024-12-20"
     },
     "81fcd6b3-f014-4796-988f-6c3cb3874db8": {
         "id": "81fcd6b3-f014-4796-988f-6c3cb3874db8",
