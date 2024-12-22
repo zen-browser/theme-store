@@ -3,26 +3,176 @@ and (-moz-bool-pref: "theme.no_gaps.fixes.center_split_view") {
 
   #zen-appcontent-wrapper:has(
   > #zen-tabbox-wrapper > #tabbrowser-tabbox
-  > #tabbrowser-tabpanels[zen-split-view="true"]){
+  > #tabbrowser-tabpanels[zen-split-view="true"]) 
+  > #zen-tabbox-wrapper{
 
-    margin-top: 1px;
-
-    & > #zen-tabbox-wrapper {
-      margin-bottom: 5px !important;
-      margin-right: 7px !important;
-    }
-
+    margin-top: 1px !important;
+    margin-bottom: 5px !important;
+    margin-right: 7px !important;
+    
     @media (-moz-bool-pref: "zen.view.compact"){
       @media (-moz-bool-pref: "zen.view.compact.hide-toolbar") {
-        margin-top: 3px !important;
+        margin-top: -3px !important;
       }
       @media (-moz-bool-pref: "zen.view.compact.hide-tabbar") {
-        margin-left: 2px !important;
+        margin-left: -3px !important;
       }
     }
-
+    
   }
 }
+
+
+:root[zen-single-toolbar="true"]:not([customizing]) {
+  @media (-moz-bool-pref: "zen.view.hide-window-controls") {
+    
+    @media (-moz-bool-pref: "theme.no_gaps.single_toolbar.disable_navbar"){
+      
+      @media (-moz-bool-pref: "theme.no_gaps.split.single_toolbar.disable_navbar"){
+        #zen-appcontent-navbar-container{
+          display: none !important;
+        }
+      }
+      
+      @media not (-moz-bool-pref: "theme.no_gaps.split.single_toolbar.disable_navbar"){
+        #zen-appcontent-wrapper:has(
+        > #zen-tabbox-wrapper > #tabbrowser-tabbox
+        > #tabbrowser-tabpanels:not([zen-split-view="true"])) 
+        > #zen-appcontent-navbar-container {
+          display: none !important;
+        }
+
+        @media (-moz-bool-pref: "theme.no_gaps.split.single_toolbar.hide_navbar"){
+          #zen-appcontent-wrapper:has(
+          > #zen-tabbox-wrapper > #tabbrowser-tabbox
+          > #tabbrowser-tabpanels[zen-split-view="true"]) {
+            height: calc(100% + var(--zen-element-separation));
+            transition: height 0.2s ease;
+
+            & > #zen-tabbox-wrapper{
+              top: calc(-1 * var(--zen-element-separation));
+              z-index: -1 !important;
+              transition: top 0.2s ease;
+            }
+            
+            &:not(:has(> #zen-appcontent-navbar-container:not(
+            [zen-has-hover="true"], [has-popup-menu], :focus-within)))
+            > #zen-tabbox-wrapper{
+              top: 0;
+            }
+            
+          }
+        }
+        
+      }
+      
+    }
+    
+    @media not (-moz-bool-pref: "theme.no_gaps.single_toolbar.disable_navbar"){
+      
+      @media (-moz-bool-pref: "theme.no_gaps.split.single_toolbar.disable_navbar"){
+        
+        #zen-appcontent-wrapper:has(
+        > #zen-tabbox-wrapper > #tabbrowser-tabbox
+        > #tabbrowser-tabpanels[zen-split-view="true"]) 
+        > #zen-appcontent-navbar-container {
+          display: none !important;
+        }
+        
+        @media (-moz-bool-pref: "theme.no_gaps.single_toolbar.hide_navbar"){
+          #zen-appcontent-wrapper:has(
+          > #zen-tabbox-wrapper > #tabbrowser-tabbox
+          > #tabbrowser-tabpanels:not([zen-split-view="true"])) {
+            height: calc(100% + var(--zen-element-separation));
+            transition: height 0.2s ease;
+
+            & > #zen-tabbox-wrapper{
+              top: calc(-1 * var(--zen-element-separation));
+              z-index: -1 !important;
+              transition: top 0.2s ease;
+            }
+            
+            &:not(:has(> #zen-appcontent-navbar-container:not(
+            [zen-has-hover="true"], [has-popup-menu], :focus-within)))
+            > #zen-tabbox-wrapper{
+              top: 0;
+            }
+          }
+        }
+        
+      }
+      
+      @media not (-moz-bool-pref: "theme.no_gaps.split.single_toolbar.disable_navbar"){
+        
+        @media (-moz-bool-pref: "theme.no_gaps.single_toolbar.hide_navbar"){
+          @media (-moz-bool-pref: "theme.no_gaps.split.single_toolbar.hide_navbar"){
+            #zen-appcontent-wrapper{
+              height: calc(100% + var(--zen-element-separation));
+              transition: height 0.2s ease;
+              
+              & > #zen-tabbox-wrapper{
+                top: calc(-1 * var(--zen-element-separation));
+                z-index: -1 !important;
+                transition: top 0.2s ease;
+              }
+              
+              &:not(:has(> #zen-appcontent-navbar-container:not(
+              [zen-has-hover="true"], [has-popup-menu], :focus-within)))
+              > #zen-tabbox-wrapper{
+                top: 0;
+              }
+            }
+          }
+          @media not (-moz-bool-pref: "theme.no_gaps.split.single_toolbar.hide_navbar"){
+            #zen-appcontent-wrapper:has(
+            > #zen-tabbox-wrapper > #tabbrowser-tabbox
+            > #tabbrowser-tabpanels:not([zen-split-view="true"])) {
+              height: calc(100% + var(--zen-element-separation));
+              transition: height 0.2s ease;
+
+              & > #zen-tabbox-wrapper{
+                top: calc(-1 * var(--zen-element-separation));
+                z-index: -1 !important;
+                transition: top 0.2s ease;
+              }
+              
+              &:not(:has(> #zen-appcontent-navbar-container:not(
+              [zen-has-hover="true"], [has-popup-menu], :focus-within)))
+              > #zen-tabbox-wrapper{
+                top: 0;
+              }
+            }
+          }
+        }
+
+        @media not (-moz-bool-pref: "theme.no_gaps.single_toolbar.hide_navbar"){
+          @media (-moz-bool-pref: "theme.no_gaps.split.single_toolbar.hide_navbar"){
+            #zen-appcontent-wrapper:has(
+            > #zen-tabbox-wrapper > #tabbrowser-tabbox
+            > #tabbrowser-tabpanels[zen-split-view="true"]) {
+              height: calc(100% + var(--zen-element-separation));
+              transition: height 0.2s ease;
+
+              & > #zen-tabbox-wrapper{
+                top: calc(-1 * var(--zen-element-separation));
+                z-index: -1 !important;
+                transition: top 0.2s ease;
+              }
+              &:not(:has(> #zen-appcontent-navbar-container:not(
+              [zen-has-hover="true"], [has-popup-menu], :focus-within)))
+              > #zen-tabbox-wrapper{
+                top: 0;
+              }
+            }
+          }
+        }
+        
+      }
+    }
+    
+  }
+}
+
 
 @media not (-moz-bool-pref: "theme.no_gaps.split.outline") {
   hbox.browserSidebarContainer{
@@ -91,6 +241,15 @@ and (-moz-bool-pref: "theme.no_gaps.fixes.center_split_view") {
       --zen-split-row-gap: 0 !important;
       --zen-split-column-gap: 0 !important;
     }
+    
+    div.zen-split-view-splitter[orient="vertical"]{
+      margin-left: calc(-1 * var(--zen-element-separation) + 1px) !important;
+    }
+    
+    div.zen-split-view-splitter[orient="horizontal"]{
+      height: calc(var(--zen-element-separation) * 2 - 3px) !important;
+      margin-top: calc(-1 * var(--zen-element-separation) + 1px) !important;
+    }
 
     #zen-appcontent-wrapper {
       margin: 0 !important;
@@ -130,6 +289,15 @@ and (-moz-bool-pref: "theme.no_gaps.fixes.center_split_view") {
     tabbox#tabbrowser-tabbox{
       --zen-split-row-gap: 0 !important;
       --zen-split-column-gap: 0 !important;
+    }
+    
+    div.zen-split-view-splitter[orient="vertical"]{
+      margin-left: calc(-1 * var(--zen-element-separation) + 1px) !important;
+    }
+    
+    div.zen-split-view-splitter[orient="horizontal"]{
+      height: calc(var(--zen-element-separation) * 2 - 3px) !important;
+      margin-top: calc(-1 * var(--zen-element-separation) + 1px) !important;
     }
 
     @media (-moz-bool-pref: "theme.no_gaps.split.outline") {
