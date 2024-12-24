@@ -1,0 +1,14 @@
+{
+    "id": "e3b0839a-93d6-4dbf-ae98-100d0c7533f3",
+    "name": "Unfocused Fade",
+    "description": "Fade your text and window slightly when Zen loses focus.",
+    "homepage": "https://github.com/TheBigWazz/ZenThemes/tree/main/Unfocused-Fade",
+    "style": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/e3b0839a-93d6-4dbf-ae98-100d0c7533f3/chrome.css",
+    "readme": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/e3b0839a-93d6-4dbf-ae98-100d0c7533f3/readme.md",
+    "image": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/e3b0839a-93d6-4dbf-ae98-100d0c7533f3/image.png",
+    "author": "TheBigWazz",
+    "version": "1.0.0",
+    "tags": [],
+    "createdAt": "2024-11-12",
+    "updatedAt": "2024-11-12"
+}
