@@ -1,6 +1,6 @@
 
 findbar {
-	display: flex;
+	display: flex !important;
 
 	border-radius: var(--zen-border-radius) !important;
 	margin: 0px !important;
@@ -21,7 +21,7 @@ findbar {
 	background: var(--zen-colors-tertiary) !important;
 	border: 1px solid var(--zen-colors-border) !important;
 
-	transition: top 0.35s ease !important;
+	transition: top 0.35s ease, bottom 0.35s ease !important;
 
 	visibility: visible !important;
 	opacity: 1 !important;
@@ -43,11 +43,43 @@ findbar {
 		}
 	}
 
+
 	&[hidden="true"] {
-		top: -85px;
+		top: -150px;
 	}
 
 	@starting-style {
-		top: -85px;
+		top: -150px;
+	}
+}
+
+
+/* Horizontal Position */
+body:has(#theme-Better-Find-Bar[theme-better_find_bar-horizontal_position="left"]) {
+	findbar {
+		left: 15px;
+		transform: translateX(0%);
+	}
+}
+
+body:has(#theme-Better-Find-Bar[theme-better_find_bar-horizontal_position="right"]) {
+	findbar {
+		left: unset !important;
+		right: 15px;
+		transform: translateX(0%);
+	}
+}
+
+
+/* Background blur */
+@media (-moz-bool-pref: "theme.better_find_bar.transparent_background") {
+	findbar, findbar .findbar-textbox:not([status="notfound"]) {
+		backdrop-filter: blur(15px);
+
+		background: color-mix(in hsl, var(--zen-colors-tertiary), transparent 30%) !important;
+	}
+
+	findbar .findbar-textbox:not([status="notfound"]) {
+		background: color-mix(in hsl, var(--zen-colors-tertiary), transparent 10%) !important;
 	}
 }
