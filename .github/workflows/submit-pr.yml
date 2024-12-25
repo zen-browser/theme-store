@@ -1,8 +1,7 @@
 name: Submit PR
+
 on:
   pull_request:
-    branches:
-      - main
     types: [closed]
   workflow_dispatch:
 
@@ -11,25 +10,26 @@ jobs:
     permissions: write-all
     name: Rebuild themes after theme submission
     runs-on: ubuntu-latest
+
     steps:
-      - name: Checkout code
-        uses: actions/checkout@v2
+      - name: Checkout repository
+        uses: actions/checkout@v4
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
 
-      - name: Install python
-        uses: actions/setup-python@v2
+      - name: Setup Python
+        uses: actions/setup-python@v5
         with:
           python-version: '3.x'
 
-      - name: Setup python modules
+      - name: Setup Python modules
         run: |
           pip3 install requests
 
       - name: Setup Git
         run: |
           git config --global user.name "github-actions[bot]"
-          git config --global user.email "github-actions[bot]@users.noreply.github.com"
+          git config --global user.email "41898282+github-actions[bot]@users.noreply.github.com"
 
       - name: Rebuild all themes
         run: |
