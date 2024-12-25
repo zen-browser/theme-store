@@ -9,7 +9,6 @@ import requests
 import urllib.parse
 from enum import StrEnum
 
-
 class PreferenceFields(StrEnum):
     PROPERTY = "property"
     LABEL = "label"
@@ -18,7 +17,6 @@ class PreferenceFields(StrEnum):
     DEFAULT_VALUE = "defaultValue"
     DISABLED_ON = "disabledOn"
     PLACEHOLDER = "placeholder"
-
 
 class PreferenceTypes(StrEnum):
     CHECKBOX = "checkbox"
@@ -36,7 +34,6 @@ class PreferenceTypes(StrEnum):
             case self.STRING:
                 return [str]
 
-
 STYLES_FILE = "chrome.css"
 COLORS_FILE = "colors.json"
 README_FILE = "readme.md"
@@ -53,7 +50,6 @@ REQUIRED_FIELDS = set(
     [PreferenceFields.PROPERTY, PreferenceFields.LABEL, PreferenceFields.TYPE]
 )
 
-
 def panic(string: str, error=None):
     print(string, file=sys.stderr)
 
@@ -62,36 +58,31 @@ def panic(string: str, error=None):
 
     exit(1)
 
-
 def create_theme_id():
     return str(uuid.uuid4())
-
 
 def get_static_asset(theme_id, asset):
     return f"https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/{theme_id}/{asset}"
 
-
 def get_styles(is_color_theme, theme_id):
     with open(TEMPLATE_STYLES_FILE, "r") as f:
         content = f.read()
-        content = content[len("```css") :]
+        content = content[len("```css"): ]
         content = content[: -len("```")]
 
-        # we actually have a JSON file here that needs to be generated
+        # We actually have a JSON file here that needs to be generated
         if is_color_theme:
             with open(f"themes/{theme_id}/{COLORS_FILE}", "w") as f:
                 json.dump(json.loads(content), f, indent=4)
             return "/* This is a color theme. */"
         return content
 
-
 def get_readme():
     with open(TEMPLATE_README_FILE, "r") as f:
         content = f.read()
-        content = content[len("```markdown") :]
+        content = content[len("```markdown"): ]
         content = content[: -len("```")]
         return content
-
 
 def validate_url(url, allow_empty=False):
     if allow_empty and len(url) == 0:
@@ -103,10 +94,8 @@ def validate_url(url, allow_empty=False):
     except Exception as e:
         panic("URL is invalid.", e)
 
-
 def get_enum_error(value, Enum: StrEnum):
     return f"Field must be one of {', '.join(Enum._value2member_map_)} but received \"{value}\""
-
 
 def parse_field_to_enum(key: tuple[str, any]) -> tuple[PreferenceFields, any]:
     try:
@@ -116,7 +105,6 @@ def parse_field_to_enum(key: tuple[str, any]) -> tuple[PreferenceFields, any]:
         panic(key[0], PreferenceFields)
         exit(1)
 
-
 def parse_type(value: str) -> PreferenceTypes:
     try:
         converted_value = re.sub(r"(?<!^)(?=[A-Z])", "_", value).upper()
@@ -124,23 +112,18 @@ def parse_type(value: str) -> PreferenceTypes:
     except:
         panic(get_enum_error(value, PreferenceTypes))
 
-
 def check_value_type(value, arr_types: list[type]):
     return type(value) in arr_types
-
 
 def is_value_in_enum(value, Enum: StrEnum) -> bool:
     try:
         Enum[value.upper()]
-
         return True
     except:
         return False
 
-
 def is_empty_str(value: str) -> bool:
     return not isinstance(value, str) or len(value) == 0
-
 
 def validate_preferences(preferences):
     for entry in preferences:
@@ -154,7 +137,7 @@ def validate_preferences(preferences):
         if not len(set(properties).intersection(REQUIRED_FIELDS)) == len(
             REQUIRED_FIELDS
         ):
-            panic(f"Required fields ({", ".join(REQUIRED_FIELDS)}) are not in {entry}.")
+            panic(f"Required fields ({', '.join(REQUIRED_FIELDS)}) are not in {entry}.")
 
         current_type = parse_type(properties[PreferenceFields.TYPE])
         valid_type_list = current_type.valid_types()
@@ -195,13 +178,13 @@ def validate_preferences(preferences):
 
                             if not check_value_type(option_value, valid_type_list):
                                 panic(
-                                    f"Option {option_label} in {current_property} was expecting value of any type in {", ".join(map(lambda type: type.__name__, valid_type_list))}, but received {type(option_value).__name__}"
+                                    f"Option {option_label} in {current_property} was expecting value of any type in {', '.join(map(lambda type: type.__name__, valid_type_list))}, but received {type(option_value).__name__}"
                                 )
 
                 case PreferenceFields.DEFAULT_VALUE:
                     if not check_value_type(value, valid_type_list):
                         panic(
-                            f"Field defaultValue in {current_property} was expecting value with any type in {", ".join(map(lambda type: type.__name__, valid_type_list))} but received {value}"
+                            f"Field defaultValue in {current_property} was expecting value with any type in {', '.join(map(lambda type: type.__name__, valid_type_list))} but received {value}"
                         )
 
                 case PreferenceFields.DISABLED_ON:
@@ -213,20 +196,19 @@ def validate_preferences(preferences):
                         for possibleOs in value:
                             if possibleOs not in VALID_OS:
                                 panic(
-                                    f"Field disabledOn in {current_property} is expecting one or more of {", ".join(VALID_OS)} but received {possibleOs}"
+                                    f"Field disabledOn in {current_property} is expecting one or more of {', '.join(VALID_OS)} but received {possibleOs}"
                                 )
 
                 case PreferenceFields.PLACEHOLDER:
                     if not current_type in PLACEHOLDER_TYPES:
                         panic(
-                            f"Placeholder in {current_property} can only be used for types {", ".join(PLACEHOLDER_TYPES)}"
+                            f"Placeholder in {current_property} can only be used for types {', '.join(PLACEHOLDER_TYPES)}"
                         )
 
                 case _:
                     panic("This should be unreachable.")
 
     return preferences
-
 
 def convert_legacy_preferences(preferences):
     key_regex = re.compile(r"(!?)(?:(macos|windows|linux):)?([A-z0-9-_.]+)")
@@ -254,7 +236,6 @@ def convert_legacy_preferences(preferences):
 
     return new_preferences
 
-
 def get_preferences():
     with open(TEMPLATE_PREFERENCES_FILE, "r") as f:
         try:
@@ -276,7 +257,6 @@ def get_preferences():
         except json.JSONDecodeError as e:
             panic("Preferences file is invalid.", e)
 
-
 def validate_name(name):
     if len(name) == 0:
         panic("Name is required.")
@@ -286,13 +266,11 @@ def validate_name(name):
         if not char.isalnum() and char != " ":
             panic("Name must only contain letters, numbers, and spaces.")
 
-
 def validate_description(description):
     if len(description) == 0:
         panic("Description is required.")
     if len(description) > 120:
         panic("Description must be less than 100 characters.")
-
 
 def download_image(image_url, image_path):
     response = requests.get(image_url, headers={"User-Agent": "Epicture"})
@@ -303,7 +281,6 @@ def download_image(image_url, image_path):
         panic("Image must be a PNG.")
     with open(image_path, "wb") as f:
         f.write(response.content)
-
 
 def main():
     parser = argparse.ArgumentParser(description="Submit a theme to the theme repo.")
@@ -389,7 +366,6 @@ Just joking, you can do whatever you want. You're the boss.
     print(f"Theme submitted with ID: {theme_id}")
     for key, value in theme.items():
         print(f"\t{key}: {value}")
-
 
 if __name__ == "__main__":
     main()
