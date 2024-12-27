@@ -40,7 +40,7 @@
         "preferences": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/d2953516-d239-4ef8-aac5-b238e3dc0360/preferences.json",
         "tags": [],
         "createdAt": "2024-09-29",
-        "updatedAt": "2024-12-16"
+        "updatedAt": "2024-12-27"
     },
     "f4a7562f-6e54-4f1e-b835-a397fc6c15f2": {
         "id": "f4a7562f-6e54-4f1e-b835-a397fc6c15f2",
@@ -203,6 +203,20 @@
         "tags": [],
         "createdAt": "2024-09-18",
         "updatedAt": "2024-10-19"
+    },
+    "d7076c31-f6c1-4f28-b2e8-15b95f5a3d6f": {
+        "id": "d7076c31-f6c1-4f28-b2e8-15b95f5a3d6f",
+        "name": "No Search Shortcut Icons",
+        "description": "Hides search shortcuts that appears at the bottom of the focused URL bar in the Zen browser.",
+        "homepage": "https://github.com/itsfaizankhan/zen-browser-mods/tree/main/No-Search-Shortcut-Icons",
+        "style": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/d7076c31-f6c1-4f28-b2e8-15b95f5a3d6f/chrome.css",
+        "readme": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/d7076c31-f6c1-4f28-b2e8-15b95f5a3d6f/readme.md",
+        "image": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/d7076c31-f6c1-4f28-b2e8-15b95f5a3d6f/image.png",
+        "author": "itsfaizankhan",
+        "version": "1.0.0",
+        "tags": [],
+        "createdAt": "2024-12-27",
+        "updatedAt": "2024-12-27"
     },
     "bed8c922-616a-4165-8c86-6822ccf478ad": {
         "id": "bed8c922-616a-4165-8c86-6822ccf478ad",
@@ -1184,6 +1198,21 @@
         "createdAt": "2024-08-16",
         "updatedAt": "2024-08-22"
     },
+    "5f12d02a-c692-4f9c-b1f3-cd92782bab02": {
+        "id": "5f12d02a-c692-4f9c-b1f3-cd92782bab02",
+        "name": "Winter Spirit",
+        "description": "Adds an animated snowflake overlay",
+        "homepage": "https://github.com/Kaedriz/ZenMods/tree/main/WinterSpirit",
+        "style": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/5f12d02a-c692-4f9c-b1f3-cd92782bab02/chrome.css",
+        "readme": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/5f12d02a-c692-4f9c-b1f3-cd92782bab02/readme.md",
+        "image": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/5f12d02a-c692-4f9c-b1f3-cd92782bab02/image.png",
+        "author": "Kaedriz",
+        "version": "1.0.0",
+        "tags": [],
+        "createdAt": "2024-12-24",
+        "updatedAt": "2024-12-27",
+        "preferences": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/5f12d02a-c692-4f9c-b1f3-cd92782bab02/preferences.json"
+    },
     "803c7895-b39b-458e-84f8-a521f4d7a064": {
         "id": "803c7895-b39b-458e-84f8-a521f4d7a064",
         "name": "Hide Inactive Workspaces",
@@ -1317,9 +1346,9 @@
         "readme": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/a6335949-4465-4b71-926c-4a52d34bc9c0/readme.md",
         "image": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/a6335949-4465-4b71-926c-4a52d34bc9c0/image.png",
         "author": "RobotoSkunk",
-        "version": "1.0.1",
+        "version": "1.1.0",
         "tags": [],
         "createdAt": "2024-11-24",
-        "updatedAt": "2024-12-16"
+        "updatedAt": "2024-12-24"
     }
 }
