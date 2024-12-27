@@ -9,6 +9,7 @@
   --zen-colors-tertiary: var(--lwt-accent-color) !important;
   --zen-main-browser-background: var(--lwt-accent-color) !important;
   --zen-themed-toolbar-bg: var(--lwt-accent-color) !important;
+  --arrowpanel-background: var(--lwt-accent-color) !important;
   #urlbar[breakout-extend="true"] > #urlbar-background {
     background: var(--lwt-accent-color) !important;
   }
@@ -18,6 +19,7 @@
   --zen-colors-tertiary: color-mix(in srgb, var(--lwt-accent-color), black 25%) !important;
   --zen-main-browser-background: color-mix(in srgb, var(--lwt-accent-color), black 25%) !important;
   --zen-themed-toolbar-bg: color-mix(in srgb, var(--lwt-accent-color), black 25%) !important;
+  --arrowpanel-background: color-mix(in srgb, var(--lwt-accent-color), black 25%) !important;
   #urlbar[breakout-extend="true"] > #urlbar-background {
     background: color-mix(in srgb, var(--lwt-accent-color), black 25%) !important;
   }
@@ -27,6 +29,7 @@
   --zen-colors-tertiary: color-mix(in srgb, var(--lwt-accent-color), black 50%) !important;
   --zen-main-browser-background: color-mix(in srgb, var(--lwt-accent-color), black 50%) !important;
   --zen-themed-toolbar-bg: color-mix(in srgb, var(--lwt-accent-color), black 50%) !important;
+  --arrowpanel-background: color-mix(in srgb, var(--lwt-accent-color), black 50%) !important;
   #urlbar[breakout-extend="true"] > #urlbar-background {
     background: color-mix(in srgb, var(--lwt-accent-color), black 50%) !important;
   }
@@ -36,6 +39,7 @@
   --zen-colors-tertiary: color-mix(in srgb, var(--lwt-accent-color), black 75%) !important;
   --zen-main-browser-background: color-mix(in srgb, var(--lwt-accent-color), black 75%) !important;
   --zen-themed-toolbar-bg: color-mix(in srgb, var(--lwt-accent-color), black 75%) !important;
+  --arrowpanel-background: color-mix(in srgb, var(--lwt-accent-color), black 75%) !important;
   #urlbar[breakout-extend="true"] > #urlbar-background {
     background: color-mix(in srgb, var(--lwt-accent-color), black 75%) !important;
   }
@@ -45,6 +49,7 @@
   --zen-colors-tertiary: black !important;
   --zen-main-browser-background: black !important;
   --zen-themed-toolbar-bg: black !important;
+  --arrowpanel-background: black !important;
   #urlbar[breakout-extend="true"] > #urlbar-background {
     background: black !important;
   }
