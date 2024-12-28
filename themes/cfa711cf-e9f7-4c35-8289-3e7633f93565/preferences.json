@@ -6,42 +6,42 @@
         "type": "dropdown",
         "options": [
             {
-                "label": "Default Gradient",
+                "label": "Coral Mint",
                 "value": "#ff6b6b66, #4ecdc466, #ff6b6b66"
             },
             {
-                "label": "Blue Gradient",
+                "label": "Ocean Breeze",
                 "value": "#0066ff66, #00ffff66, #0066ff66"
             },
             {
-                "label": "Purple Gradient",
+                "label": "Lavender Dream",
                 "value": "#9933ff66, #ff33cc66, #9933ff66"
             },
             {
-                "label": "Green Gradient",
+                "label": "Soft Meadow",
                 "value": "#33cc3366, #99ff6666, #33cc3366"
             },
             {
-                "label": "Black Gradient",
+                "label": "Charcoal Fade",
                 "value": "#00000099, #88888899, #88888899, #00000099"
             },
             {
-                "label": "Rainbow Gradient",
+                "label": "Spectrum",
                 "value": "#ff000066, #ffa50066, #ffff0066, #00ff0066, #0000ff66, #ff000066"
             },
             {
-                "label": "Neon Gradient",
+                "label": "Neon Pulse",
                 "value": "#ff1a7566, #00ff8c66, #ff1a7566"
             },
             {
-                "label": "Sunset Gradient",
-                "value": "#ff471a66, #ff8c1a66, #ff471a66"
+               "label": "Golden Hour",
+               "value": "#ff471a66, #ff8c1a66, #ff471a66"
             }
         ]
     },
     {
         "property": "w.urlbar.bg_color",
-        "label": "Custom Color for URL Bar Gradient (the above selection will be overridden)",
+        "label": "Custom Color for URL Bar Gradient (above selection will be overridden only after the settings page is reloaded)",
         "placeholder": "Enter comma-separated colors (e.g., #ff6b6b66, #4ecdc466, #ff6b6b66)",
         "type": "string"
     }
