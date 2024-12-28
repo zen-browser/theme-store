@@ -1,0 +1,7 @@
+[
+    {
+        "property": "theme.bettergrain.alt_blend",
+        "label": "Alternate blend mode for noise (may look better on some themes)",
+        "type": "checkbox"
+    }
+]

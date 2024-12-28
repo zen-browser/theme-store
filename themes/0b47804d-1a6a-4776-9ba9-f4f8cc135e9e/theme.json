@@ -1,0 +1,15 @@
+{
+    "id": "0b47804d-1a6a-4776-9ba9-f4f8cc135e9e",
+    "name": "BetterGrain",
+    "description": "Replaces the default grain texture and blending mode to not distort your carefully-picked colors.",
+    "homepage": "https://github.com/different55/bettergrain",
+    "style": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/0b47804d-1a6a-4776-9ba9-f4f8cc135e9e/chrome.css",
+    "readme": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/0b47804d-1a6a-4776-9ba9-f4f8cc135e9e/readme.md",
+    "image": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/0b47804d-1a6a-4776-9ba9-f4f8cc135e9e/image.png",
+    "author": "different55",
+    "version": "1.0.0",
+    "tags": [],
+    "createdAt": "2024-12-28",
+    "updatedAt": "2024-12-28",
+    "preferences": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/0b47804d-1a6a-4776-9ba9-f4f8cc135e9e/preferences.json"
+}
