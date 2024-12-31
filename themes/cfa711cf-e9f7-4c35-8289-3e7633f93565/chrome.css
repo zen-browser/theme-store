@@ -1,4 +1,4 @@
-@-moz-document url-prefix("chrome:") {
+
 /* Firefox URL Bar Loading Animation */
 :root {
   --w-urlbar-bg_color: #ff6b6b66, #4ecdc466, #ff6b6b66;
@@ -29,4 +29,4 @@
   50% { background-position: 100% 50%; }
   100% { background-position: 200% 50%; }
  }
-}
+
