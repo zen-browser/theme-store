@@ -1,4 +1,4 @@
-@-moz-document url-prefix("chrome:") {
+
   html {
     --sidebery-width: 40px;
     --sidebery-hidden-width: 10px;
@@ -161,4 +161,3 @@
       display: none !important;
     }
   }
-}/*# sourceMappingURL=chrome.css.map */
