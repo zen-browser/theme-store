@@ -256,10 +256,10 @@
         "readme": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/cfa711cf-e9f7-4c35-8289-3e7633f93565/readme.md",
         "image": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/cfa711cf-e9f7-4c35-8289-3e7633f93565/image.png",
         "author": "wysh3",
-        "version": "1.0.2",
+        "version": "1.0.4",
         "tags": [],
         "createdAt": "2024-11-20",
-        "updatedAt": "2024-12-18",
+        "updatedAt": "2024-12-31",
         "preferences": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/cfa711cf-e9f7-4c35-8289-3e7633f93565/preferences.json"
     },
     "c6813222-6571-4ba6-8faf-58f3343324f6": {
@@ -825,6 +825,20 @@
         "updatedAt": "2024-12-16",
         "preferences": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/ed742dfd-e7e0-4b1b-a0aa-e0905b14d817/preferences.json"
     },
+    "13696593-837d-464d-adf4-ff13bd0e0545": {
+        "id": "13696593-837d-464d-adf4-ff13bd0e0545",
+        "name": "Download BG",
+        "description": "Add a background to the active download indicator.",
+        "homepage": "https://github.com/different55/download.bg",
+        "style": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/13696593-837d-464d-adf4-ff13bd0e0545/chrome.css",
+        "readme": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/13696593-837d-464d-adf4-ff13bd0e0545/readme.md",
+        "image": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/13696593-837d-464d-adf4-ff13bd0e0545/image.png",
+        "author": "different55",
+        "version": "1.0.0",
+        "tags": [],
+        "createdAt": "2024-12-29",
+        "updatedAt": "2024-12-31"
+    },
     "d868eaf4-cefc-4f41-8f1c-1f603726d2fa": {
         "id": "d868eaf4-cefc-4f41-8f1c-1f603726d2fa",
         "name": "Tab Text Size",
@@ -935,11 +949,11 @@
         "readme": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/39907934-59e9-4e42-89f0-a254d3c5e280/readme.md",
         "image": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/39907934-59e9-4e42-89f0-a254d3c5e280/image.png",
         "author": "Shaan",
-        "version": "1.0.1",
+        "version": "1.0.2",
         "preferences": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/39907934-59e9-4e42-89f0-a254d3c5e280/preferences.json",
         "tags": [],
         "createdAt": "2024-10-09",
-        "updatedAt": "2024-10-19"
+        "updatedAt": "2024-12-31"
     },
     "58649066-2b6f-4a5b-af6d-c3d21d16fc00": {
         "id": "58649066-2b6f-4a5b-af6d-c3d21d16fc00",
@@ -968,7 +982,7 @@
         "version": "1.0.0",
         "tags": [],
         "createdAt": "2024-12-21",
-        "updatedAt": "2024-12-22"
+        "updatedAt": "2024-12-31"
     },
     "6c122084-c4ec-4c9e-8cc5-3d87c3a089cb": {
         "id": "6c122084-c4ec-4c9e-8cc5-3d87c3a089cb",
