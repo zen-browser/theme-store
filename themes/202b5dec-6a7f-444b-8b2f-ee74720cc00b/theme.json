@@ -1,0 +1,15 @@
+{
+    "id": "202b5dec-6a7f-444b-8b2f-ee74720cc00b",
+    "name": "Container Indicator",
+    "description": "This Mod removes the container indicator from Essentials, pinned and normal tabs.",
+    "homepage": "https://github.com/Archer7x/Zen-Themes/tree/main/ContainerIndicator",
+    "style": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/202b5dec-6a7f-444b-8b2f-ee74720cc00b/chrome.css",
+    "readme": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/202b5dec-6a7f-444b-8b2f-ee74720cc00b/readme.md",
+    "image": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/202b5dec-6a7f-444b-8b2f-ee74720cc00b/image.png",
+    "author": "Archer7x",
+    "version": "1.0.0",
+    "tags": [],
+    "createdAt": "2024-11-16",
+    "updatedAt": "2024-11-16",
+    "preferences": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/202b5dec-6a7f-444b-8b2f-ee74720cc00b/preferences.json"
+}
