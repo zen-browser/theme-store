@@ -1,0 +1,173 @@
+
+window.sidebar-panel {
+  background-color: var(--zen-themed-toolbar-bg) !important;
+}
+
+search-textbox#search-box {
+  appearance: none !important;
+  background-color: var(--zen-colors-tertiary) !important;
+  border: 1px solid var(--zen-colors-border) !important;
+  padding: 0.5rem !important;
+  border-radius: 5px !important;
+}
+
+search-textbox#search-box:hover {
+  border: 1px solid var(--zen-colors-secondary) !important;
+}
+
+search-textbox#search-box:hover:active {
+  border: 1px solid var(--zen-colors-secondary) !important;
+}
+
+button#viewButton {
+  appearance: none;
+  color: inherit;
+  background-color: transparent !important;
+  border-radius: var(--toolbarbutton-border-radius);
+  border: 1px solid transparent !important;
+}
+
+button#viewButton:hover {
+  background-color: var(--zen-colors-border) !important;
+}
+
+button#viewButton:hover:active {
+  background-color: var(--zen-colors-border) !important;
+}
+
+#sidebar-box[positionend="true"]{
+ right: 0.6vw !important;
+ left: unset !important;
+}
+#sidebar-box:not([positionend="true"]){
+  right: unset !important;
+  left: 0.6vw !important;
+ }
+
+@media (-moz-bool-pref: "uc.floating-side-bar.Bookmarks") {
+  #sidebar-box[sidebarcommand="viewBookmarksSidebar"] #sidebar-header {
+    border-bottom: 0px !important; 
+  }
+
+#sidebar-box[sidebarcommand="viewBookmarksSidebar"] {
+    background-color: var(--zen-themed-toolbar-bg) !important;
+    border-radius: var(--zen-border-radius);
+    box-shadow: 0 0 2px 2px rgba(0,0,0,.1);
+    border: 1px solid var(--zen-colors-border);
+    padding: var(--zen-toolbox-padding) !important;
+    position: fixed;
+    z-index: 1;
+    height: auto !important;
+    width: 20em !important;
+    top: 10vh !important;
+    bottom: 10vh !important;
+    transform: translateX(105%);
+    transition: all 0.2s ease-in-out;
+  }
+
+#sidebar-box[hidden=true][sidebarcommand="viewBookmarksSidebar"] {
+    display: flex !important;
+    opacity: 0 !important;
+    transform: translateX(105%);
+  }
+
+#sidebar-box[checked=true][sidebarcommand="viewBookmarksSidebar"] {
+    transform: translateX(0);
+  }
+}
+
+@media (-moz-bool-pref: "uc.floating-side-bar.History") {
+  #sidebar-box[sidebarcommand="viewHistorySidebar"] #sidebar-header {
+    border-bottom: 0px !important; 
+  }
+
+#sidebar-box[sidebarcommand="viewHistorySidebar"] {
+    background-color: var(--zen-themed-toolbar-bg) !important;
+    border-radius: var(--zen-border-radius);
+    box-shadow: 0 0 2px 2px rgba(0,0,0,.1);
+    border: 1px solid var(--zen-colors-border);
+    padding: var(--zen-toolbox-padding) !important;
+    position: fixed;
+    z-index: 1;
+    height: auto !important;
+    width: 20em !important;
+    top: 10vh !important;
+    bottom: 10vh !important;
+    transform: translateX(105%);
+    transition: all 0.2s ease-in-out;
+  }
+
+#sidebar-box[hidden=true][sidebarcommand="viewHistorySidebar"] {
+    display: flex !important;
+    opacity: 0 !important;
+    transform: translateX(105%);
+  }
+
+#sidebar-box[checked=true][sidebarcommand="viewHistorySidebar"] {
+    transform: translateX(0);
+  }
+}
+
+@media (-moz-bool-pref: "uc.floating-side-bar.Synced-Tabs") {
+  #sidebar-box[sidebarcommand="viewTabsSidebar"] #sidebar-header {
+    border-bottom: 0px !important; 
+  }
+
+#sidebar-box[sidebarcommand="viewTabsSidebar"] {
+    background-color: var(--zen-themed-toolbar-bg) !important;
+    border-radius: var(--zen-border-radius);
+    box-shadow: 0 0 2px 2px rgba(0,0,0,.1);
+    border: 1px solid var(--zen-colors-border);
+    padding: var(--zen-toolbox-padding) !important;
+    position: fixed;
+    z-index: 1;
+    height: auto !important;
+    width: 20em !important;
+    top: 10vh !important;
+    bottom: 10vh !important;
+    transform: translateX(105%);
+    transition: all 0.2s ease-in-out;
+  }
+
+#sidebar-box[hidden=true][sidebarcommand="viewTabsSidebar"] {
+    display: flex !important;
+    opacity: 0 !important;
+    transform: translateX(105%);
+  }
+
+#sidebar-box[checked=true][sidebarcommand="viewTabsSidebar"] {
+    transform: translateX(0);
+  }
+}
+
+@media (-moz-bool-pref: "uc.floating-side-bar.Others") {
+  #sidebar-box:not([sidebarcommand="viewHistorySidebar"]):not([sidebarcommand="viewBookmarksSidebar"]):not([sidebarcommand="viewTabsSidebar"]) #sidebar-header {
+    border-bottom: 0px !important;
+  }
+
+#sidebar-box:not([sidebarcommand="viewHistorySidebar"]):not([sidebarcommand="viewBookmarksSidebar"]):not([sidebarcommand="viewTabsSidebar"]) {
+    background-color: var(--zen-themed-toolbar-bg) !important;
+    border-radius: var(--zen-border-radius);
+    box-shadow: 0 0 2px 2px rgba(0,0,0,.1);
+    border: 1px solid var(--zen-colors-border);
+    padding: var(--zen-toolbox-padding) !important;
+    position: fixed;
+    z-index: 1;
+    height: auto !important;
+    width: 20em !important;
+    top: 10vh !important;
+    bottom: 10vh !important;
+    transform: translateX(105%);
+    transition: all 0.2s ease-in-out;
+  }
+
+#sidebar-box[hidden=true]:not([sidebarcommand="viewHistorySidebar"]):not([sidebarcommand="viewBookmarksSidebar"]):not([sidebarcommand="viewTabsSidebar"]) {
+    display: flex !important;
+    opacity: 0 !important;
+    transform: translateX(105%);
+  }
+
+#sidebar-box[checked=true]:not([sidebarcommand="viewHistorySidebar"]):not([sidebarcommand="viewBookmarksSidebar"]):not([sidebarcommand="viewTabsSidebar"]) {
+    transform: translateX(0);
+  }
+}
