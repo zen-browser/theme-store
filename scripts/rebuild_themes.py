@@ -5,7 +5,6 @@ from submit_theme import convert_legacy_preferences
 THEMES_FOLDER = "./themes"
 THEMES_DATA_FILE = "./themes.json"
 
-
 def get_color_css_variable(color):
     if color == "primaryColor":
         return "--zen-colors-primary"
@@ -19,9 +18,9 @@ def get_color_css_variable(color):
         return "--zen-dialog-background"
     if color == "accentColor":
         return "--zen-primary-color"
+    
     print(f"Unknown color: {color}")
     exit(1)
-
 
 def write_colors(colors_file, output_file):
     with open(colors_file, "r") as f:
@@ -34,17 +33,16 @@ def write_colors(colors_file, output_file):
             for color in colors:
                 if color == "isDarkMode":
                     continue
-                f.write(
-                    f"    {get_color_css_variable(color)}: {colors[color]} !important;\n"
-                )
+                f.write(f"    {get_color_css_variable(color)}: {colors[color]} !important;\n")
 
             f.write("}\n")
-        return colors
 
+        return colors
 
 def main():
     with open(THEMES_DATA_FILE, "w") as f:
         json.dump({}, f, indent=4)
+
     for theme in os.listdir(THEMES_FOLDER):
         theme_folder = os.path.join(THEMES_FOLDER, theme)
 
@@ -82,7 +80,7 @@ def main():
                     # Add 'dark' tag if colors.json specifies dark mode and tag isn't already in tags list
                     if "isDarkMode" in colors and colors["isDarkMode"] and "dark" not in theme_data["tags"]:
                         theme_data["tags"].append("dark")
-                        
+
                 themes_data[theme] = theme_data
 
                 with open(THEMES_DATA_FILE, "w") as f:
@@ -108,8 +106,8 @@ def main():
                         del preferences_data
 
         print(f"Rebuilt theme: {theme}")
-    print("Rebuilt all themes!")
 
+    print("Rebuilt all themes!")
 
 if __name__ == "__main__":
     main()

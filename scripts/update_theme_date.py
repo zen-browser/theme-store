@@ -3,11 +3,9 @@ import time
 import os
 import sys
 
-
 def panic(message: str):
     print(message, file=sys.stderr)
     exit(1)
-
 
 def update_theme_date(theme_path):
     theme_file = os.path.join(theme_path, "theme.json")
@@ -44,7 +42,6 @@ def update_theme_date(theme_path):
         json.dump(theme_data, f, indent=4)
 
     print(f"Updated `updatedAt` for {theme_path} to {theme_data['updatedAt']}")
-
 
 if __name__ == "__main__":
     # Make sure the script is run with the theme path as an argument
