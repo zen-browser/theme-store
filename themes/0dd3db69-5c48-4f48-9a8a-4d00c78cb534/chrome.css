@@ -1,0 +1,9 @@
+
+.tabbrowser-tab:is([soundplaying], [muted], [activemedia-blocked]) img {
+      opacity: unset !important;
+  }
+  #zen-essentials-container {
+      .tabbrowser-tab:is([soundplaying], [muted], [activemedia-blocked]) img {
+          opacity: unset !important;
+      }
+  }
