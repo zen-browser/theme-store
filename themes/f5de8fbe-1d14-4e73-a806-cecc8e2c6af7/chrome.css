@@ -1,0 +1,81 @@
+
+@keyframes bounce {
+    0% {
+      left: calc(-1 * var(--zen-sidebar-width));
+      opacity: 1;
+    }
+  
+    50% {
+      left: 0;
+    }
+  
+    100% {
+      left:-8px;
+    }
+  }
+  
+  @keyframes right-bounce {
+    0% {
+      right: calc(-1 * var(--zen-sidebar-width));
+      opacity: 1;
+    }
+  
+    50% {
+      right: 0;
+    }
+  
+    100% {
+      right: -14px;
+    }
+  }
+  
+  @keyframes fadeout {
+    0% {
+      left: -8px;
+      opacity: 1;
+    }
+  
+    100% {
+      left: calc(-1 * var(--zen-sidebar-width) + 5px);
+      opacity: 1;
+    }
+  }
+  
+  @keyframes fadeout-right {
+    0% {
+      right: -8px;
+      opacity: 1;
+    }
+  
+    100% {
+      right: calc(-1 * var(--zen-sidebar-width));
+      opacity: 1;
+    }
+  }
+  
+  @media (-moz-bool-pref: "zen.view.compact") {
+      #navigator-toolbox {
+        box-sizing: content-box !important;
+        animation: fadeout 0.2s cubic-bezier(0.25, 0.8, 0.5, 1) !important;
+        animation-fill-mode: forwards !important;
+        padding-left: 14px !important;
+  
+        @media (-moz-bool-pref: "zen.tabs.vertical.right-side") {
+          padding-left: 6px !important;
+          padding-right: 14px !important;
+         
+          animation: fadeout-right 0.2s cubic-bezier(0.25, 0.8, 0.5, 1) !important;
+          animation-fill-mode: forwards !important;
+        }
+  
+        &:is([zen-user-show], [zen-has-hover]), &:hover {
+          animation: bounce 0.3s cubic-bezier(0.25, 0.8, 0.5, 1) !important;
+          animation-fill-mode: forwards !important;
+  
+          @media (-moz-bool-pref: "zen.tabs.vertical.right-side") {
+            animation: right-bounce 0.3s cubic-bezier(0.25, 0.8, 0.5, 1) !important;
+            animation-fill-mode: forwards !important;
+          }
+        }
+      }
+    }
