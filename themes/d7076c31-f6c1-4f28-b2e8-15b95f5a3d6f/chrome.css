@@ -2,3 +2,7 @@
 .search-one-offs {
   display: none !important;
 }
+
+.search-one-offs:has(.searchbar-engine-one-off-item[selected]) {
+  display: flex !important;
+}
