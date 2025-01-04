@@ -1,7 +1,7 @@
 {
     "id": "d7076c31-f6c1-4f28-b2e8-15b95f5a3d6f",
     "name": "No Search Shortcut Icons",
-    "description": "Hides search shortcuts that appears at the bottom of the focused URL bar in the Zen browser.",
+    "description": "Hides search shortcuts in the Zen browser URL bar, showing them only when the bar is focused.",
     "homepage": "https://github.com/itsfaizankhan/zen-browser-mods/tree/main/No-Search-Shortcut-Icons",
     "style": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/d7076c31-f6c1-4f28-b2e8-15b95f5a3d6f/chrome.css",
     "readme": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/d7076c31-f6c1-4f28-b2e8-15b95f5a3d6f/readme.md",
