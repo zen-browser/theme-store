@@ -12,6 +12,19 @@
   }
 }
 
+/* Positioning bookmarks toolbar direction */
+:root:has(#theme-Bookmark-Toolbar-Tweaks[uc-bookmarks-position-toolbar="left"]) {
+  #PlacesToolbarItems {
+    direction: ltr;
+  }
+}
+
+:root:has(#theme-Bookmark-Toolbar-Tweaks[uc-bookmarks-position-toolbar="right"]) {
+  #PlacesToolbarItems {
+    direction: rtl;
+  }
+}
+
 /* Hide folder icons in the bookmarks toolbar */
 @media (-moz-bool-pref: "uc.bookmarks.hide-folder-icons") {
   .bookmark-item[container="true"] .toolbarbutton-icon {
