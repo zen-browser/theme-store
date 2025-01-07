@@ -207,16 +207,16 @@
     "d7076c31-f6c1-4f28-b2e8-15b95f5a3d6f": {
         "id": "d7076c31-f6c1-4f28-b2e8-15b95f5a3d6f",
         "name": "No Search Shortcut Icons",
-        "description": "Hides search shortcuts that appears at the bottom of the focused URL bar in the Zen browser.",
+        "description": "Hides search shortcuts in the Zen browser URL bar, showing them only when the bar is focused.",
         "homepage": "https://github.com/itsfaizankhan/zen-browser-mods/tree/main/No-Search-Shortcut-Icons",
         "style": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/d7076c31-f6c1-4f28-b2e8-15b95f5a3d6f/chrome.css",
         "readme": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/d7076c31-f6c1-4f28-b2e8-15b95f5a3d6f/readme.md",
         "image": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/d7076c31-f6c1-4f28-b2e8-15b95f5a3d6f/image.png",
         "author": "itsfaizankhan",
-        "version": "1.0.0",
+        "version": "1.0.1",
         "tags": [],
         "createdAt": "2024-12-27",
-        "updatedAt": "2024-12-27"
+        "updatedAt": "2025-01-07"
     },
     "bed8c922-616a-4165-8c86-6822ccf478ad": {
         "id": "bed8c922-616a-4165-8c86-6822ccf478ad",
@@ -1346,10 +1346,10 @@
         "image": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/ea1a5ace-f698-4b45-ab88-6e8bd3a563f0/image.png",
         "author": "n7itro",
         "preferences": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/ea1a5ace-f698-4b45-ab88-6e8bd3a563f0/preferences.json",
-        "version": "1.2.1",
+        "version": "1.2.2",
         "tags": [],
         "createdAt": "2024-08-19",
-        "updatedAt": "2024-10-31"
+        "updatedAt": "2025-01-07"
     },
     "a6335949-4465-4b71-926c-4a52d34bc9c0": {
         "id": "a6335949-4465-4b71-926c-4a52d34bc9c0",
