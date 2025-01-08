@@ -1,153 +1,150 @@
-
-/* Base styles for pinned tab backgrounds (zen-essential="false") Animations */
-.tabbrowser-tab[pinned]:not([zen-essential="false"]) .tab-stack .tab-background {
-    transition: background-color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
-}
-
-/* Hover state (zen-essential="false") */
-.tabbrowser-tab[pinned]:not([zen-essential="false"]):hover .tab-stack .tab-background {
-    transition: background-color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
-}
-
-/* Selected state (zen-essential="false") */
-.tabbrowser-tab[pinned]:not([zen-essential="false"])[selected="true"] .tab-stack .tab-background,
-.tabbrowser-tab[pinned]:not([zen-essential="false"])[multiselected="true"] .tab-stack .tab-background {
-    transition: background-color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
-}
-
-/* Selected and hovering state (zen-essential="false") */
-.tabbrowser-tab[pinned]:not([zen-essential="false"])[selected="true"]:hover .tab-stack .tab-background,
-.tabbrowser-tab[pinned]:not([zen-essential="false"])[multiselected="true"]:hover .tab-stack .tab-background {
-    transition: background-color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
-}
-
-/* Base styles for pinned tab backgrounds (zen-essential="true") */
-.tabbrowser-tab[pinned][zen-essential="true"] .tab-stack .tab-background {
-    transition: background-color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
-}
-
-/* Hover state (zen-essential="true") */
-.tabbrowser-tab[pinned][zen-essential="true"]:hover .tab-stack .tab-background {
-    transition: background-color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
-}
-
-/* Selected state (zen-essential="true") */
-.tabbrowser-tab[pinned][zen-essential="true"][selected="true"] .tab-stack .tab-background,
-.tabbrowser-tab[pinned][zen-essential="true"][multiselected="true"] .tab-stack .tab-background {
-    transition: background-color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
-}
-
-/* Selected and hovering state (zen-essential="true") */
-.tabbrowser-tab[pinned][zen-essential="true"][selected="true"]:hover .tab-stack .tab-background,
-.tabbrowser-tab[pinned][zen-essential="true"][multiselected="true"]:hover .tab-stack .tab-background {
-    transition: background-color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
-}
-
-/* Transition properties for tab background */
 .tab-background {
-    transition: background-color 0.4s ease, box-shadow 0.4s ease, background 0.5s ease;
+    transition: background-color 0.4s ease, box-shadow 0.4s ease, background 0.5s ease !important;
 }
 
-/* For toolbarbutton-1 */
-toolbar .toolbarbutton-1 {
-  &:not([disabled]) {
-    /* Add transition for background and outline color changes */
+.tab-group-label-container {
+    transition: background-color 0.4s ease, box-shadow 0.4s ease, background 0.5s ease !important;
+}
+
+
+.toolbarbutton-1 {
+
     &:hover > :is(.toolbarbutton-icon, .toolbarbutton-text, .toolbarbutton-badge-stack) {
       transition: background-color 0.3s ease-in-out, 
                   outline-color 0.3s ease-in-out; /* Smooth transition */
     }
-
-/* Ensure the default state also includes the transition for smooth exit */
+    
     > :is(.toolbarbutton-icon, .toolbarbutton-text, .toolbarbutton-badge-stack) {
       transition: background-color 0.3s ease-in-out, 
                   outline-color 0.3s ease-in-out;
     }
   }
-}
 
-/* For identity-box-button and tracking-protection-icon-container */
-.identity-box-button, 
-#tracking-protection-icon-container {
-  /* Transition only for animating properties (without color changes) */
+.identity-box-button {
   transition: background-color 0.3s ease-in-out, 
-              outline-color 0.3s ease-in-out;
+              outline-color 1.3s ease-in-out;
 }
 
-.identity-box-button:hover:not([open="true"]), 
-#tracking-protection-icon-container:hover:not([open="true"]) {
-  /* Only animate background and outline changes (no color changes) */
+
+
+
+/* Apply transition to urlbar controls, this is what I found worked...*/
+#reader-mode-button, 
+#star-button-box, 
+#zen-split-views-box, 
+#pageActionButton, 
+#urlbar-zoom-button, 
+#shopping-sidebar-button, 
+#translations-button, 
+#picture-in-picture-button, 
+#page-action-buttons, 
+#urlbar-go-button, 
+#urlbar-revert-button-container {
   transition: background-color 0.3s ease-in-out, 
-              outline-color 0.3s ease-in-out;
+              outline-color 0.3s ease-in-out !important;
 }
 
-#navigator-toolbox[zen-sidebar-expanded="true"] {
-  & #TabsToolbar-customization-target {
-    & > :not(tabs):not(#search-container):not(#zen-workspaces-button), 
-    & #tabbrowser-arrowscrollbox-periphery > toolbarbutton {
-      /* Apply the transition to animate the background and outline */
-      transition: background-color 0.3s ease-in-out, outline-color 0.3s ease-in-out;
 
-}
-  }
-}
 
-@media not (forced-colors) {
+
+/* Animate the tab function icons */
   .close-icon {
     transition: background-color 0.3s ease-in-out; /* Smooth transition for background-color */
   }
 
+
+
+  .tab-reset-button {
+    transition: background-color 0.3s ease-in-out; /* Smooth transition for background-color */
+  }/* Transition properties for tab background */
+.tab-background {
+    transition: background-color 0.4s ease, box-shadow 0.4s ease, background 0.5s ease !important;
 }
 
-@media not (forced-colors) {
+.tab-group-label-container {
+    /* Transition properties for tab background */
+    transition: background-color 0.4s ease, box-shadow 0.4s ease, background 0.5s ease !important;
+}
+
+
+/* For toolbarbutton-1 */
+.toolbarbutton-1 {
+
+    &:hover > :is(.toolbarbutton-icon, .toolbarbutton-text, .toolbarbutton-badge-stack) {
+      transition: background-color 0.3s ease-in-out, 
+                  outline-color 0.3s ease-in-out; /* Smooth transition */
+    }
+    
+    > :is(.toolbarbutton-icon, .toolbarbutton-text, .toolbarbutton-badge-stack) {
+      transition: background-color 0.3s ease-in-out, 
+                  outline-color 0.3s ease-in-out;
+    }
+  }
+
+.identity-box-button {
+  transition: background-color 0.3s ease-in-out, 
+              outline-color 1.3s ease-in-out;
+}
+
+
+
+
+/* Apply transition to urlbar controls, this is what I found worked...*/
+#reader-mode-button, 
+#star-button-box, 
+#zen-split-views-box, 
+#pageActionButton, 
+#urlbar-zoom-button, 
+#shopping-sidebar-button, 
+#translations-button, 
+#picture-in-picture-button, 
+#page-action-buttons, 
+#urlbar-go-button, 
+#urlbar-revert-button-container {
+  transition: background-color 0.3s ease-in-out, 
+              outline-color 0.3s ease-in-out !important;
+}
+
+
+
+
+/* Animate the tab function icons */
+  .close-icon {
+    transition: background-color 0.3s ease-in-out; /* Smooth transition for background-color */
+  }
+
+
+
   .tab-reset-button {
     transition: background-color 0.3s ease-in-out; /* Smooth transition for background-color */
   }
 
+/* This was not being applied properly by class for some reason */
+#tabs-newtab-button {
+    transition: background-color 0.3s ease-in-out; /* Smooth transition for background-color */
 }
 
-:is(panelview .toolbarbutton-1, 
-    toolbarbutton.subviewbutton, 
-    .widget-overflow-list .toolbarbutton-1, 
-    .toolbaritem-combined-buttons:is(:not([cui-areatype="toolbar"]), [overflowedItem="true"]) > toolbarbutton) {
-  
-  /* Ensure smooth animation */
-  transition: background-color 0.3s ease-in-out; /* Add transition for smooth background change */
-  
+
+/* Other things that needed to be animated/transitioned */
+.subviewbutton {
+    transition: background-color 0.3s ease-in-out !important; /* Smooth transition for background-color */ 
 }
 
-.urlbarView-row {
-  /* Add transition to the background-color for smooth animation */
-  transition: background-color 0.3s ease-in-out; /* Smooth background color change */
+.urlbarView-row-inner {
+    transition: background-color 0.3s ease-in-out !important; /* Smooth transition for background-color */ 
 }
 
-:is(panelview .toolbarbutton-1, 
-    toolbarbutton.subviewbutton, 
-    .widget-overflow-list .toolbarbutton-1, 
-    .toolbaritem-combined-buttons:is(:not([cui-areatype="toolbar"]), [overflowedItem="true"]) > toolbarbutton) {
-
-/* Add transition to background-color for smooth animation */
-  transition: background-color 0.3s ease-in-out;
-
+/* This was not being applied properly by class for some reason */
+#tabs-newtab-button {
+    transition: background-color 0.3s ease-in-out; /* Smooth transition for background-color */
 }
 
-/* Define the general transition for the background color */
-@media (-moz-bool-pref: "zen.tabs.vertical") {
-  #navigator-toolbox:is(#navigator-toolbox[zen-user-hover="true"][zen-has-hover], 
-                        #navigator-toolbox[zen-user-hover="true"]:focus-within, 
-                        #navigator-toolbox[zen-user-hover="true"][movingtab], 
-                        #navigator-toolbox[zen-user-hover="true"][flash-popup], 
-                        #navigator-toolbox[zen-user-hover="true"][has-popup-menu], 
-                        #navigator-toolbox[zen-user-hover="true"]:has([open="true"]:not(tab):not(.zen-compact-mode-ignore)), 
-                        #navigator-toolbox[zen-expanded="true"]:not([zen-user-hover="true"])) {
-    
-    #TabsToolbar-customization-target {
-      & > :not(tabs):not(#search-container):not(#zen-workspaces-button), 
-      & #tabbrowser-arrowscrollbox-periphery > toolbarbutton {
 
-/* Add transition for background-color */
-        transition: background-color 0.3s ease-in-out;
-
+/* Other things that needed to be animated/transitioned */
+.subviewbutton {
+    transition: background-color 0.3s ease-in-out !important; /* Smooth transition for background-color */ 
 }
-    }
-  }
+
+.urlbarView-row-inner {
+    transition: background-color 0.3s ease-in-out !important; /* Smooth transition for background-color */ 
 }
