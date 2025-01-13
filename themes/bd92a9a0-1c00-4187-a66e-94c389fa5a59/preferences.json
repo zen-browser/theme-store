@@ -21,6 +21,12 @@
         "property": "theme.sidebar_expand_on_hover.default_tab_background_shape",
         "label": "Default Tab Background Shape",
         "type": "checkbox",
+        "defaultValue": true
+    },
+    {
+        "property": "theme.sidebar_expand_on_hover.inverted_tabs",
+        "label": "Inverted Tab Direction",
+        "type": "checkbox",
         "defaultValue": false
     },
     {

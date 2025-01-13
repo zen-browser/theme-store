@@ -11,6 +11,7 @@ Addionally this mod collapses the buttons below the tabs to provide a smoother e
 - **Hide top workspace indicator**: since the active workspace is already shown below, this theme hides the workspace indicator at the top, if you don't want this: deactivate this setting. *(default: on)*
 - **My theme overwrites the #TabsToolbar background (e.g. catppuccin)**: Some themes overwrite the background property of #TabsToolbar (e.g. catppuccin). If you notice some visual issues while the sidebar is expanded due to the use of a theme: try activating this settings and hope that is helps *(default: off)*
 - **Collapse the buttons to only show current workspace**: If you don't wish for your buttons to only show your current workspace when collapsed: deactivate this setting and it shows the first button instead when collapsed *(default: on)*
-- **Default Tab Background Shape**: When turned on every corner of the tab background is rounded (like in default zen) *(default: off)*
+- **Default Tab Background Shape**: When turned on every corner of the tab background is rounded (like in default zen) *(default: on)*
+- **Inverted Tab Direction**: Favicon on the right, title in the middle, close button on the left. Less moving parts when the sidebar is on the right. *(default: off)*
 - **Width of the expanded sidebar**: Here you can change the width of the expanded sidebar *(default: 300px)*
 - **Transition speed of the sidebar**: Speed of the collapsing/expanding animation *(default: 120ms)*
