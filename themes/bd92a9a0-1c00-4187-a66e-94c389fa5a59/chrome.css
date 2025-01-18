@@ -16,7 +16,7 @@
     
     
     /* Move topbar buttons in the now empty space */
-    @media not (-moz-bool-pref: "zen.view.compact") {
+    @media (not (-moz-bool-pref: "zen.view.compact")) and (not (-moz-platform: macos)) {
         #browser:has(#navigator-toolbox:not([zen-right-side="true"])) {
             #zen-appcontent-wrapper {
                 overflow: visible !important;
