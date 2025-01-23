@@ -7,8 +7,8 @@
  }
  
 /* Reduced height */
-@media (-moz-bool-pref: "zen.view.compact") and (-moz-bool-pref: "zen.view.compact.hide-tabbar") {
-     #navigator-toolbox {
+@media (-moz-bool-pref: "zen.view.compact.hide-tabbar") {
+     :root[zen-compact-mode="true"] #navigator-toolbox {
         margin-top: 9.375vh !important;
         height: 75vh !important;
      }
