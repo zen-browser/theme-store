@@ -2,6 +2,10 @@
 
 Shows the Number corresponding to each Tab. This can help you navigate between Tabs faster by pressing Cmd + Number of the Tab. (or Ctrl + Number on Windows)
 
+Additions (v1.0.4 - current version):
+
+- Tab Numbers are replaced with Close button on Hover (in Expanded Mode)
+
 Additions (v1.0.3 - current version):
 
 - Nicer Design for Expanded Tabs Mode
