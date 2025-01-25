@@ -31,12 +31,7 @@
 
     /* Hide the "X" close button by default */
     tab .tab-close-button {
-      visibility: hidden;
-      opacity: 0;
-      /* In order to not hide the tab title. [Can't make this work. It still hides the title] */
-      /* Also, display: none; doesn't seem to work */
-      width: 0;
-      margin: 0;
+      display: none !important;
     }
 
     /*  Hide tab numbers on the right side when hovering over */
@@ -48,8 +43,7 @@
 
     /* Show the "X" close button on hover */
     tab:hover .tab-close-button {
-      visibility: visible;
-      opacity: 1;
+      display: inline !important;
     }
 
     /* put tab numbers on the left side when expanded_side="Left" (AND in expanded mode) */
