@@ -1,15 +1,15 @@
 {
-  "id": "dd4f5461-1564-4e56-9f9d-f81e3c18f93c",
-  "name": "Zen Sidebar At Right Side",
-  "description": "Pin or float the Zen Sidebar at the right side.",
-  "homepage": "",
-  "style": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/dd4f5461-1564-4e56-9f9d-f81e3c18f93c/chrome.css",
-  "readme": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/dd4f5461-1564-4e56-9f9d-f81e3c18f93c/readme.md",
-  "image": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/dd4f5461-1564-4e56-9f9d-f81e3c18f93c/image.png",
-  "author": "AntonioSTM",
-  "version": "1.0.2",
-  "preferences": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/dd4f5461-1564-4e56-9f9d-f81e3c18f93c/preferences.json",
-  "tags": [],
-  "createdAt": "2024-09-03",
-  "updatedAt": "2024-09-03"
+    "id": "dd4f5461-1564-4e56-9f9d-f81e3c18f93c",
+    "name": "Zen Sidebar At Right Side",
+    "description": "Pin or float the Zen Sidebar at the right side.",
+    "homepage": "",
+    "style": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/dd4f5461-1564-4e56-9f9d-f81e3c18f93c/chrome.css",
+    "readme": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/dd4f5461-1564-4e56-9f9d-f81e3c18f93c/readme.md",
+    "image": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/dd4f5461-1564-4e56-9f9d-f81e3c18f93c/image.png",
+    "author": "AntonioSTM",
+    "version": "1.0.2",
+    "preferences": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/dd4f5461-1564-4e56-9f9d-f81e3c18f93c/preferences.json",
+    "tags": [],
+    "createdAt": "2024-09-03",
+    "updatedAt": "2025-01-26"
 }

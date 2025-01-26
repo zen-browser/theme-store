@@ -1,14 +1,14 @@
 {
-  "id": "570afd9d-96fa-48b5-bad3-0c106757cce9",
-  "name": "Super Sleek UI",
-  "description": "A sleek & minimalistic UI with grid-style quick access, smaller navbar, no border padding & more.",
-  "homepage": "https://github.com/lingais/Zen-Broswer-Super-Sleek-UI-Theme.git",
-  "style": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/570afd9d-96fa-48b5-bad3-0c106757cce9/chrome.css",
-  "readme": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/570afd9d-96fa-48b5-bad3-0c106757cce9/readme.md",
-  "image": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/570afd9d-96fa-48b5-bad3-0c106757cce9/image.png",
-  "author": "lingais",
-  "version": "1.0.1",
-  "tags": [],
-  "createdAt": "2024-08-28",
-  "updatedAt": "2024-08-28"
+    "id": "570afd9d-96fa-48b5-bad3-0c106757cce9",
+    "name": "Super Sleek UI",
+    "description": "A sleek & minimalistic UI with grid-style quick access, smaller navbar, no border padding & more.",
+    "homepage": "https://github.com/lingais/Zen-Broswer-Super-Sleek-UI-Theme.git",
+    "style": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/570afd9d-96fa-48b5-bad3-0c106757cce9/chrome.css",
+    "readme": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/570afd9d-96fa-48b5-bad3-0c106757cce9/readme.md",
+    "image": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/570afd9d-96fa-48b5-bad3-0c106757cce9/image.png",
+    "author": "lingais",
+    "version": "1.0.1",
+    "tags": [],
+    "createdAt": "2024-08-28",
+    "updatedAt": "2025-01-26"
 }

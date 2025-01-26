@@ -1,15 +1,15 @@
 {
-  "id": "c8f20381-388a-4b67-b640-eaa539355ea4",
-  "name": "Right On Hover Sidebar",
-  "description": "Web Panels sidebar that popups on hover on the right (like compact mode)",
-  "homepage": "",
-  "style": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/c8f20381-388a-4b67-b640-eaa539355ea4/chrome.css",
-  "readme": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/c8f20381-388a-4b67-b640-eaa539355ea4/readme.md",
-  "image": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/c8f20381-388a-4b67-b640-eaa539355ea4/image.png",
-  "author": "p2d0",
-  "version": "1.0.1",
-  "preferences": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/c8f20381-388a-4b67-b640-eaa539355ea4/preferences.json",
-  "tags": [],
-  "createdAt": "2024-10-02",
-  "updatedAt": "2024-11-19"
+    "id": "c8f20381-388a-4b67-b640-eaa539355ea4",
+    "name": "Right On Hover Sidebar",
+    "description": "Web Panels sidebar that popups on hover on the right (like compact mode)",
+    "homepage": "",
+    "style": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/c8f20381-388a-4b67-b640-eaa539355ea4/chrome.css",
+    "readme": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/c8f20381-388a-4b67-b640-eaa539355ea4/readme.md",
+    "image": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/c8f20381-388a-4b67-b640-eaa539355ea4/image.png",
+    "author": "p2d0",
+    "version": "1.0.1",
+    "preferences": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/c8f20381-388a-4b67-b640-eaa539355ea4/preferences.json",
+    "tags": [],
+    "createdAt": "2024-10-02",
+    "updatedAt": "2025-01-26"
 }

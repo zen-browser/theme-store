@@ -1,14 +1,14 @@
 {
-  "id": "dbe05f83-b471-4278-a3f9-e5ed244b0d6c",
-  "name": "Old navigation buttons",
-  "description": "Restore the original Firefox navigation buttons.",
-  "homepage": "https://github.com/Osmagtor/zen-themes/tree/main/Restore%20navigation%20buttons",
-  "style": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/dbe05f83-b471-4278-a3f9-e5ed244b0d6c/chrome.css",
-  "readme": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/dbe05f83-b471-4278-a3f9-e5ed244b0d6c/readme.md",
-  "image": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/dbe05f83-b471-4278-a3f9-e5ed244b0d6c/image.png",
-  "author": "Osmagtor",
-  "version": "1.0.0",
-  "tags": [],
-  "createdAt": "2024-09-25",
-  "updatedAt": "2024-09-25"
+    "id": "dbe05f83-b471-4278-a3f9-e5ed244b0d6c",
+    "name": "Old navigation buttons",
+    "description": "Restore the original Firefox navigation buttons.",
+    "homepage": "https://github.com/Osmagtor/zen-themes/tree/main/Restore%20navigation%20buttons",
+    "style": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/dbe05f83-b471-4278-a3f9-e5ed244b0d6c/chrome.css",
+    "readme": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/dbe05f83-b471-4278-a3f9-e5ed244b0d6c/readme.md",
+    "image": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/dbe05f83-b471-4278-a3f9-e5ed244b0d6c/image.png",
+    "author": "Osmagtor",
+    "version": "1.0.0",
+    "tags": [],
+    "createdAt": "2024-09-25",
+    "updatedAt": "2025-01-26"
 }

@@ -1,14 +1,14 @@
 {
-  "id": "4ab93b88-151c-451b-a1b7-a1e0e28fa7f8",
-  "name": "No Sidebar Scrollbar",
-  "description": "This theme removes the Sidebar Scrollbar while retaining the scroll functionality.",
-  "homepage": "https://github.com/mally8/zen-browser-no-sidebar-scrollbar",
-  "style": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/4ab93b88-151c-451b-a1b7-a1e0e28fa7f8/chrome.css",
-  "readme": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/4ab93b88-151c-451b-a1b7-a1e0e28fa7f8/readme.md",
-  "image": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/4ab93b88-151c-451b-a1b7-a1e0e28fa7f8/image.png",
-  "author": "mally8",
-  "version": "1.0.3",
-  "tags": [],
-  "createdAt": "2024-09-01",
-  "updatedAt": "2024-11-19"
+    "id": "4ab93b88-151c-451b-a1b7-a1e0e28fa7f8",
+    "name": "No Sidebar Scrollbar",
+    "description": "This theme removes the Sidebar Scrollbar while retaining the scroll functionality.",
+    "homepage": "https://github.com/mally8/zen-browser-no-sidebar-scrollbar",
+    "style": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/4ab93b88-151c-451b-a1b7-a1e0e28fa7f8/chrome.css",
+    "readme": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/4ab93b88-151c-451b-a1b7-a1e0e28fa7f8/readme.md",
+    "image": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/4ab93b88-151c-451b-a1b7-a1e0e28fa7f8/image.png",
+    "author": "mally8",
+    "version": "1.0.3",
+    "tags": [],
+    "createdAt": "2024-09-01",
+    "updatedAt": "2025-01-26"
 }

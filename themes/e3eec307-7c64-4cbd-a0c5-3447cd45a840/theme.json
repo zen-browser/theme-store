@@ -1,16 +1,19 @@
 {
-  "id": "e3eec307-7c64-4cbd-a0c5-3447cd45a840",
-  "name": "Catppuccin",
-  "description": "Dive into Catppuccin's, unique pastel color theme for Zen!",
-  "homepage": "https://catppuccin.com/",
-  "style": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/e3eec307-7c64-4cbd-a0c5-3447cd45a840/chrome.css",
-  "readme": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/e3eec307-7c64-4cbd-a0c5-3447cd45a840/readme.md",
-  "image": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/e3eec307-7c64-4cbd-a0c5-3447cd45a840/image.png",
-  "author": "mauro-balades",
-  "version": "1.0.0",
-  "isDarkMode": true,
-  "isColorTheme": true,
-  "tags": ["color scheme", "dark"],
-  "createdAt": "2024-08-21",
-  "updatedAt": "2024-09-09"
+    "id": "e3eec307-7c64-4cbd-a0c5-3447cd45a840",
+    "name": "Catppuccin",
+    "description": "Dive into Catppuccin's, unique pastel color theme for Zen!",
+    "homepage": "https://catppuccin.com/",
+    "style": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/e3eec307-7c64-4cbd-a0c5-3447cd45a840/chrome.css",
+    "readme": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/e3eec307-7c64-4cbd-a0c5-3447cd45a840/readme.md",
+    "image": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/e3eec307-7c64-4cbd-a0c5-3447cd45a840/image.png",
+    "author": "mauro-balades",
+    "version": "1.0.0",
+    "isDarkMode": true,
+    "isColorTheme": true,
+    "tags": [
+        "color scheme",
+        "dark"
+    ],
+    "createdAt": "2024-08-21",
+    "updatedAt": "2025-01-26"
 }

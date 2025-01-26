@@ -1,14 +1,14 @@
 {
-  "id": "803c7895-b39b-458e-84f8-a521f4d7a064",
-  "name": "Hide Inactive Workspaces",
-  "description": "Reducing space by hiding inactive workspace icons, extremely useful if you have a lot of workspaces.",
-  "homepage": "https://github.com/GunGunGun/zenCustomCursorMod/tree/main/autohide_inactive_workspaces",
-  "style": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/803c7895-b39b-458e-84f8-a521f4d7a064/chrome.css",
-  "readme": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/803c7895-b39b-458e-84f8-a521f4d7a064/readme.md",
-  "image": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/803c7895-b39b-458e-84f8-a521f4d7a064/image.png",
-  "author": "GunGunGun",
-  "version": "1.0.0",
-  "tags": [],
-  "createdAt": "2024-11-02",
-  "updatedAt": "2024-11-02"
+    "id": "803c7895-b39b-458e-84f8-a521f4d7a064",
+    "name": "Hide Inactive Workspaces",
+    "description": "Reducing space by hiding inactive workspace icons, extremely useful if you have a lot of workspaces.",
+    "homepage": "https://github.com/GunGunGun/zenCustomCursorMod/tree/main/autohide_inactive_workspaces",
+    "style": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/803c7895-b39b-458e-84f8-a521f4d7a064/chrome.css",
+    "readme": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/803c7895-b39b-458e-84f8-a521f4d7a064/readme.md",
+    "image": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/803c7895-b39b-458e-84f8-a521f4d7a064/image.png",
+    "author": "GunGunGun",
+    "version": "1.0.0",
+    "tags": [],
+    "createdAt": "2024-11-02",
+    "updatedAt": "2025-01-26"
 }

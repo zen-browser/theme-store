@@ -1,15 +1,15 @@
 {
-  "id": "664c54f9-d97d-410b-a479-23dd8a08a628",
-  "name": "Better Tab Indicators",
-  "description": "This Zen Theme provides some alternative styling for the tabs on the sidebar.",
-  "homepage": "https://github.com/TheRealMG/zen-themes/tree/main/BetterTabIndicators",
-  "style": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/664c54f9-d97d-410b-a479-23dd8a08a628/chrome.css",
-  "readme": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/664c54f9-d97d-410b-a479-23dd8a08a628/readme.md",
-  "image": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/664c54f9-d97d-410b-a479-23dd8a08a628/image.png",
-  "author": "TheRealMG",
-  "version": "1.0.0",
-  "preferences": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/664c54f9-d97d-410b-a479-23dd8a08a628/preferences.json",
-  "tags": [],
-  "createdAt": "2024-10-12",
-  "updatedAt": "2024-10-12"
+    "id": "664c54f9-d97d-410b-a479-23dd8a08a628",
+    "name": "Better Tab Indicators",
+    "description": "This Zen Theme provides some alternative styling for the tabs on the sidebar.",
+    "homepage": "https://github.com/TheRealMG/zen-themes/tree/main/BetterTabIndicators",
+    "style": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/664c54f9-d97d-410b-a479-23dd8a08a628/chrome.css",
+    "readme": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/664c54f9-d97d-410b-a479-23dd8a08a628/readme.md",
+    "image": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/664c54f9-d97d-410b-a479-23dd8a08a628/image.png",
+    "author": "TheRealMG",
+    "version": "1.0.0",
+    "preferences": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/664c54f9-d97d-410b-a479-23dd8a08a628/preferences.json",
+    "tags": [],
+    "createdAt": "2024-10-12",
+    "updatedAt": "2025-01-26"
 }

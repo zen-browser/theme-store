@@ -1,14 +1,14 @@
 {
-  "id": "4596d8f9-f0b7-4aeb-aa92-851222dc1888",
-  "name": "Only Close On Hover",
-  "description": "Show tab's close button only on hover, even on the active tab.",
-  "homepage": "",
-  "style": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/4596d8f9-f0b7-4aeb-aa92-851222dc1888/chrome.css",
-  "readme": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/4596d8f9-f0b7-4aeb-aa92-851222dc1888/readme.md",
-  "image": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/4596d8f9-f0b7-4aeb-aa92-851222dc1888/image.png",
-  "author": "p-sw",
-  "version": "1.0.0",
-  "tags": [],
-  "createdAt": "2024-10-12",
-  "updatedAt": "2024-10-12"
+    "id": "4596d8f9-f0b7-4aeb-aa92-851222dc1888",
+    "name": "Only Close On Hover",
+    "description": "Show tab's close button only on hover, even on the active tab.",
+    "homepage": "",
+    "style": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/4596d8f9-f0b7-4aeb-aa92-851222dc1888/chrome.css",
+    "readme": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/4596d8f9-f0b7-4aeb-aa92-851222dc1888/readme.md",
+    "image": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/4596d8f9-f0b7-4aeb-aa92-851222dc1888/image.png",
+    "author": "p-sw",
+    "version": "1.0.0",
+    "tags": [],
+    "createdAt": "2024-10-12",
+    "updatedAt": "2025-01-26"
 }
