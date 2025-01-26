@@ -1,4 +1,3 @@
-
 Enhanced tab preview, which matches browser background color.
 
 Also adds padding around tab preview image, to synergize with the rest of the browser.

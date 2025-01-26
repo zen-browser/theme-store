@@ -1,4 +1,3 @@
-
 # Vesper
 
 Peppermint and orange flavored dark theme for Zen broser. This theme makes use of a wise selection of orange and dark colors to create a visually appealing and easy-to-read theme.

@@ -1,14 +1,14 @@
 {
-    "id": "f7c71d9a-bce2-420f-ae44-a64bd92975ab",
-    "name": "Better Unloaded Tabs",
-    "description": "Makes unloaded tabs easier to notice by making them greyscale and transparent.",
-    "homepage": "https://github.com/Felkazz/zen-browser-better-unloaded-tabs",
-    "style": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/f7c71d9a-bce2-420f-ae44-a64bd92975ab/chrome.css",
-    "readme": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/f7c71d9a-bce2-420f-ae44-a64bd92975ab/readme.md",
-    "image": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/f7c71d9a-bce2-420f-ae44-a64bd92975ab/image.png",
-    "author": "Felkazz",
-    "version": "1.0.1",
-    "tags": [],
-    "createdAt": "2024-10-12",
-    "updatedAt": "2024-10-12"
+  "id": "f7c71d9a-bce2-420f-ae44-a64bd92975ab",
+  "name": "Better Unloaded Tabs",
+  "description": "Makes unloaded tabs easier to notice by making them greyscale and transparent.",
+  "homepage": "https://github.com/Felkazz/zen-browser-better-unloaded-tabs",
+  "style": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/f7c71d9a-bce2-420f-ae44-a64bd92975ab/chrome.css",
+  "readme": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/f7c71d9a-bce2-420f-ae44-a64bd92975ab/readme.md",
+  "image": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/f7c71d9a-bce2-420f-ae44-a64bd92975ab/image.png",
+  "author": "Felkazz",
+  "version": "1.0.1",
+  "tags": [],
+  "createdAt": "2024-10-12",
+  "updatedAt": "2024-10-12"
 }

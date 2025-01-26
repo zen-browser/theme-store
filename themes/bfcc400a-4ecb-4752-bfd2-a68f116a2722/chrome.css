@@ -1,16 +1,15 @@
-@media (-moz-bool-pref: "theme.no_gaps.split.gaps")
-and (-moz-bool-pref: "theme.no_gaps.fixes.center_split_view") {
-
+@media (-moz-bool-pref: "theme.no_gaps.split.gaps") and (-moz-bool-pref: "theme.no_gaps.fixes.center_split_view") {
   #zen-appcontent-wrapper:has(
-  > #zen-tabbox-wrapper > #tabbrowser-tabbox
-  > #tabbrowser-tabpanels[zen-split-view="true"]) 
-  > #zen-tabbox-wrapper{
-
+      > #zen-tabbox-wrapper
+        > #tabbrowser-tabbox
+        > #tabbrowser-tabpanels[zen-split-view="true"]
+    )
+    > #zen-tabbox-wrapper {
     margin-top: 1px !important;
     margin-bottom: 5px !important;
     margin-right: 7px !important;
-    
-    @media (-moz-bool-pref: "zen.view.compact"){
+
+    :root[zen-compact-mode="true"] & {
       @media (-moz-bool-pref: "zen.view.compact.hide-toolbar") {
         margin-top: -3px !important;
       }
@@ -18,178 +17,210 @@ and (-moz-bool-pref: "theme.no_gaps.fixes.center_split_view") {
         margin-left: -3px !important;
       }
     }
-    
   }
 }
-
 
 :root[zen-single-toolbar="true"]:not([customizing]) {
   @media (-moz-bool-pref: "zen.view.hide-window-controls") {
-    
-    @media (-moz-bool-pref: "theme.no_gaps.single_toolbar.disable_navbar"){
-      
-      @media (-moz-bool-pref: "theme.no_gaps.split.single_toolbar.disable_navbar"){
-        #zen-appcontent-navbar-container{
+    @media (-moz-bool-pref: "theme.no_gaps.single_toolbar.disable_navbar") {
+      @media (-moz-bool-pref: "theme.no_gaps.split.single_toolbar.disable_navbar") {
+        #zen-appcontent-navbar-container {
           display: none !important;
         }
       }
-      
-      @media not (-moz-bool-pref: "theme.no_gaps.split.single_toolbar.disable_navbar"){
+
+      @media not (-moz-bool-pref: "theme.no_gaps.split.single_toolbar.disable_navbar") {
         #zen-appcontent-wrapper:has(
-        > #zen-tabbox-wrapper > #tabbrowser-tabbox
-        > #tabbrowser-tabpanels:not([zen-split-view="true"])) 
-        > #zen-appcontent-navbar-container {
+            > #zen-tabbox-wrapper
+              > #tabbrowser-tabbox
+              > #tabbrowser-tabpanels:not([zen-split-view="true"])
+          )
+          > #zen-appcontent-navbar-container {
           display: none !important;
         }
 
-        @media (-moz-bool-pref: "theme.no_gaps.split.single_toolbar.hide_navbar"){
+        @media (-moz-bool-pref: "theme.no_gaps.split.single_toolbar.hide_navbar") {
           #zen-appcontent-wrapper:has(
-          > #zen-tabbox-wrapper > #tabbrowser-tabbox
-          > #tabbrowser-tabpanels[zen-split-view="true"]) {
+              > #zen-tabbox-wrapper
+                > #tabbrowser-tabbox
+                > #tabbrowser-tabpanels[zen-split-view="true"]
+            ) {
             height: calc(100% + var(--zen-element-separation));
             transition: height 0.2s ease;
 
-            & > #zen-tabbox-wrapper{
+            & > #zen-tabbox-wrapper {
               top: calc(-1 * var(--zen-element-separation));
               z-index: -1 !important;
               transition: top 0.2s ease;
             }
-            
-            &:not(:has(> #zen-appcontent-navbar-container:not(
-            [zen-has-hover="true"], [has-popup-menu], :focus-within)))
-            > #zen-tabbox-wrapper{
+
+            &:not(
+                :has(
+                    > #zen-appcontent-navbar-container:not(
+                        [zen-has-hover="true"],
+                        [has-popup-menu],
+                        :focus-within
+                      )
+                  )
+              )
+              > #zen-tabbox-wrapper {
               top: 0;
             }
-            
           }
         }
-        
       }
-      
     }
-    
-    @media not (-moz-bool-pref: "theme.no_gaps.single_toolbar.disable_navbar"){
-      
-      @media (-moz-bool-pref: "theme.no_gaps.split.single_toolbar.disable_navbar"){
-        
+
+    @media not (-moz-bool-pref: "theme.no_gaps.single_toolbar.disable_navbar") {
+      @media (-moz-bool-pref: "theme.no_gaps.split.single_toolbar.disable_navbar") {
         #zen-appcontent-wrapper:has(
-        > #zen-tabbox-wrapper > #tabbrowser-tabbox
-        > #tabbrowser-tabpanels[zen-split-view="true"]) 
-        > #zen-appcontent-navbar-container {
+            > #zen-tabbox-wrapper
+              > #tabbrowser-tabbox
+              > #tabbrowser-tabpanels[zen-split-view="true"]
+          )
+          > #zen-appcontent-navbar-container {
           display: none !important;
         }
-        
-        @media (-moz-bool-pref: "theme.no_gaps.single_toolbar.hide_navbar"){
+
+        @media (-moz-bool-pref: "theme.no_gaps.single_toolbar.hide_navbar") {
           #zen-appcontent-wrapper:has(
-          > #zen-tabbox-wrapper > #tabbrowser-tabbox
-          > #tabbrowser-tabpanels:not([zen-split-view="true"])) {
+              > #zen-tabbox-wrapper
+                > #tabbrowser-tabbox
+                > #tabbrowser-tabpanels:not([zen-split-view="true"])
+            ) {
             height: calc(100% + var(--zen-element-separation));
             transition: height 0.2s ease;
 
-            & > #zen-tabbox-wrapper{
+            & > #zen-tabbox-wrapper {
               top: calc(-1 * var(--zen-element-separation));
               z-index: -1 !important;
               transition: top 0.2s ease;
             }
-            
-            &:not(:has(> #zen-appcontent-navbar-container:not(
-            [zen-has-hover="true"], [has-popup-menu], :focus-within)))
-            > #zen-tabbox-wrapper{
+
+            &:not(
+                :has(
+                    > #zen-appcontent-navbar-container:not(
+                        [zen-has-hover="true"],
+                        [has-popup-menu],
+                        :focus-within
+                      )
+                  )
+              )
+              > #zen-tabbox-wrapper {
               top: 0;
             }
           }
         }
-        
       }
-      
-      @media not (-moz-bool-pref: "theme.no_gaps.split.single_toolbar.disable_navbar"){
-        
-        @media (-moz-bool-pref: "theme.no_gaps.single_toolbar.hide_navbar"){
-          @media (-moz-bool-pref: "theme.no_gaps.split.single_toolbar.hide_navbar"){
-            #zen-appcontent-wrapper{
+
+      @media not (-moz-bool-pref: "theme.no_gaps.split.single_toolbar.disable_navbar") {
+        @media (-moz-bool-pref: "theme.no_gaps.single_toolbar.hide_navbar") {
+          @media (-moz-bool-pref: "theme.no_gaps.split.single_toolbar.hide_navbar") {
+            #zen-appcontent-wrapper {
               height: calc(100% + var(--zen-element-separation));
               transition: height 0.2s ease;
-              
-              & > #zen-tabbox-wrapper{
+
+              & > #zen-tabbox-wrapper {
                 top: calc(-1 * var(--zen-element-separation));
                 z-index: -1 !important;
                 transition: top 0.2s ease;
               }
-              
-              &:not(:has(> #zen-appcontent-navbar-container:not(
-              [zen-has-hover="true"], [has-popup-menu], :focus-within)))
-              > #zen-tabbox-wrapper{
+
+              &:not(
+                  :has(
+                      > #zen-appcontent-navbar-container:not(
+                          [zen-has-hover="true"],
+                          [has-popup-menu],
+                          :focus-within
+                        )
+                    )
+                )
+                > #zen-tabbox-wrapper {
                 top: 0;
               }
             }
           }
-          @media not (-moz-bool-pref: "theme.no_gaps.split.single_toolbar.hide_navbar"){
+          @media not (-moz-bool-pref: "theme.no_gaps.split.single_toolbar.hide_navbar") {
             #zen-appcontent-wrapper:has(
-            > #zen-tabbox-wrapper > #tabbrowser-tabbox
-            > #tabbrowser-tabpanels:not([zen-split-view="true"])) {
+                > #zen-tabbox-wrapper
+                  > #tabbrowser-tabbox
+                  > #tabbrowser-tabpanels:not([zen-split-view="true"])
+              ) {
               height: calc(100% + var(--zen-element-separation));
               transition: height 0.2s ease;
 
-              & > #zen-tabbox-wrapper{
+              & > #zen-tabbox-wrapper {
                 top: calc(-1 * var(--zen-element-separation));
                 z-index: -1 !important;
                 transition: top 0.2s ease;
               }
-              
-              &:not(:has(> #zen-appcontent-navbar-container:not(
-              [zen-has-hover="true"], [has-popup-menu], :focus-within)))
-              > #zen-tabbox-wrapper{
+
+              &:not(
+                  :has(
+                      > #zen-appcontent-navbar-container:not(
+                          [zen-has-hover="true"],
+                          [has-popup-menu],
+                          :focus-within
+                        )
+                    )
+                )
+                > #zen-tabbox-wrapper {
                 top: 0;
               }
             }
           }
         }
 
-        @media not (-moz-bool-pref: "theme.no_gaps.single_toolbar.hide_navbar"){
-          @media (-moz-bool-pref: "theme.no_gaps.split.single_toolbar.hide_navbar"){
+        @media not (-moz-bool-pref: "theme.no_gaps.single_toolbar.hide_navbar") {
+          @media (-moz-bool-pref: "theme.no_gaps.split.single_toolbar.hide_navbar") {
             #zen-appcontent-wrapper:has(
-            > #zen-tabbox-wrapper > #tabbrowser-tabbox
-            > #tabbrowser-tabpanels[zen-split-view="true"]) {
+                > #zen-tabbox-wrapper
+                  > #tabbrowser-tabbox
+                  > #tabbrowser-tabpanels[zen-split-view="true"]
+              ) {
               height: calc(100% + var(--zen-element-separation));
               transition: height 0.2s ease;
 
-              & > #zen-tabbox-wrapper{
+              & > #zen-tabbox-wrapper {
                 top: calc(-1 * var(--zen-element-separation));
                 z-index: -1 !important;
                 transition: top 0.2s ease;
               }
-              &:not(:has(> #zen-appcontent-navbar-container:not(
-              [zen-has-hover="true"], [has-popup-menu], :focus-within)))
-              > #zen-tabbox-wrapper{
+              &:not(
+                  :has(
+                      > #zen-appcontent-navbar-container:not(
+                          [zen-has-hover="true"],
+                          [has-popup-menu],
+                          :focus-within
+                        )
+                    )
+                )
+                > #zen-tabbox-wrapper {
                 top: 0;
               }
             }
           }
         }
-        
       }
     }
-    
   }
 }
 
-
 @media not (-moz-bool-pref: "theme.no_gaps.split.outline") {
-  hbox.browserSidebarContainer{
+  hbox.browserSidebarContainer {
     outline: none !important;
   }
 }
 
-
-@media not (-moz-bool-pref: "theme.no_gaps.shadow"){
+@media not (-moz-bool-pref: "theme.no_gaps.shadow") {
   @media not (-moz-bool-pref: "theme.no_gaps.split.shadow") {
-    hbox.browserSidebarContainer{
+    hbox.browserSidebarContainer {
       box-shadow: none !important;
     }
   }
 
   @media (-moz-bool-pref: "theme.no_gaps.split.shadow") {
-    hbox.browserSidebarContainer:not([zen-split="true"]){
+    hbox.browserSidebarContainer:not([zen-split="true"]) {
       box-shadow: none !important;
     }
   }
@@ -197,56 +228,50 @@ and (-moz-bool-pref: "theme.no_gaps.fixes.center_split_view") {
 
 @media (-moz-bool-pref: "theme.no_gaps.shadow") {
   @media not (-moz-bool-pref: "theme.no_gaps.split.shadow") {
-    hbox.browserSidebarContainer[zen-split="true"]{
+    hbox.browserSidebarContainer[zen-split="true"] {
       box-shadow: none !important;
     }
   }
 }
 
-
 @media not (-moz-bool-pref: "theme.no_gaps.rounded_corners") {
-
   @media not (-moz-bool-pref: "theme.no_gaps.split.rounded_corners") {
-    #tabbrowser-tabpanels{
+    #tabbrowser-tabpanels {
       --zen-webview-border-radius: 0;
     }
   }
 
   @media (-moz-bool-pref: "theme.no_gaps.split.rounded_corners") {
-    #tabbrowser-tabpanels:not([zen-split-view="true"]){
+    #tabbrowser-tabpanels:not([zen-split-view="true"]) {
       --zen-webview-border-radius: 0;
     }
   }
-
 }
 
 @media (-moz-bool-pref: "theme.no_gaps.rounded_corners") {
   @media not (-moz-bool-pref: "theme.no_gaps.split.rounded_corners") {
-    #tabbrowser-tabpanels[zen-split-view="true"]{
+    #tabbrowser-tabpanels[zen-split-view="true"] {
       --zen-webview-border-radius: 0;
     }
   }
 }
 
-
 @media not (-moz-bool-pref: "theme.no_gaps.gaps") {
-
-  hbox.browserSidebarContainer:not([zen-split="true"]){
+  hbox.browserSidebarContainer:not([zen-split="true"]) {
     margin: 0 !important;
   }
 
   @media not (-moz-bool-pref: "theme.no_gaps.split.gaps") {
-
-    tabbox#tabbrowser-tabbox{
+    tabbox#tabbrowser-tabbox {
       --zen-split-row-gap: 0 !important;
       --zen-split-column-gap: 0 !important;
     }
-    
-    div.zen-split-view-splitter[orient="vertical"]{
+
+    div.zen-split-view-splitter[orient="vertical"] {
       margin-left: calc(-1 * var(--zen-element-separation) + 1px) !important;
     }
-    
-    div.zen-split-view-splitter[orient="horizontal"]{
+
+    div.zen-split-view-splitter[orient="horizontal"] {
       height: calc(var(--zen-element-separation) * 2 - 3px) !important;
       margin-top: calc(-1 * var(--zen-element-separation) + 1px) !important;
     }
@@ -259,64 +284,61 @@ and (-moz-bool-pref: "theme.no_gaps.fixes.center_split_view") {
     }
 
     @media (-moz-bool-pref: "theme.no_gaps.split.outline") {
-      hbox.browserSidebarContainer[zen-split="true"]{
+      hbox.browserSidebarContainer[zen-split="true"] {
         margin: 1px !important;
       }
     }
-
   }
 
   @media (-moz-bool-pref: "theme.no_gaps.split.gaps") {
-
-    #zen-appcontent-wrapper:not(:has(
-    > #zen-tabbox-wrapper > #tabbrowser-tabbox
-    > #tabbrowser-tabpanels[zen-split-view="true"])){
-
+    #zen-appcontent-wrapper:not(
+        :has(
+            > #zen-tabbox-wrapper
+              > #tabbrowser-tabbox
+              > #tabbrowser-tabpanels[zen-split-view="true"]
+          )
+      ) {
       margin: 0 !important;
 
       & > #zen-tabbox-wrapper {
         margin: 0 !important;
       }
-
     }
-
   }
 }
 
 @media (-moz-bool-pref: "theme.no_gaps.gaps") {
   @media not (-moz-bool-pref: "theme.no_gaps.split.gaps") {
-
-    tabbox#tabbrowser-tabbox{
+    tabbox#tabbrowser-tabbox {
       --zen-split-row-gap: 0 !important;
       --zen-split-column-gap: 0 !important;
     }
-    
-    div.zen-split-view-splitter[orient="vertical"]{
+
+    div.zen-split-view-splitter[orient="vertical"] {
       margin-left: calc(-1 * var(--zen-element-separation) + 1px) !important;
     }
-    
-    div.zen-split-view-splitter[orient="horizontal"]{
+
+    div.zen-split-view-splitter[orient="horizontal"] {
       height: calc(var(--zen-element-separation) * 2 - 3px) !important;
       margin-top: calc(-1 * var(--zen-element-separation) + 1px) !important;
     }
 
     @media (-moz-bool-pref: "theme.no_gaps.split.outline") {
-      hbox.browserSidebarContainer[zen-split="true"]{
+      hbox.browserSidebarContainer[zen-split="true"] {
         margin: 1px !important;
       }
     }
 
     #zen-appcontent-wrapper:has(
-    > #zen-tabbox-wrapper > #tabbrowser-tabbox
-    > #tabbrowser-tabpanels[zen-split-view="true"]){
-
+        > #zen-tabbox-wrapper
+          > #tabbrowser-tabbox
+          > #tabbrowser-tabpanels[zen-split-view="true"]
+      ) {
       margin: 0 !important;
 
       & > #zen-tabbox-wrapper {
         margin: 0 !important;
       }
-
     }
-
   }
 }

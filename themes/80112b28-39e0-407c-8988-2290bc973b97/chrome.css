@@ -1,30 +1,53 @@
-
 @media (prefers-color-scheme: dark) {
   :root {
     --zen-colors-primary: #437030 !important;
-    --zen-colors-secondary: #407A27 !important;
-    --zen-colors-tertiary: #14210E !important;
-    --zen-colors-border: #2B471F !important;
-    --zen-primary-color: #407A27 !important;
-    --zen-dialog-background: #0D160A !important;
-    --toolbarbutton-icon-fill: color-mix(in srgb, var(--zen-primary-color) 70%, white 30%) !important;
-    --toolbar-field-color: color-mix(in srgb, var(--zen-primary-color) 40%, white 60%) !important;
-    .tabbrowser-tab { color: #ADC694 !important; }
-    .tabbrowser-tab:is([visuallyselected], [multiselected]) { color: #EDFFE5 !important; }
+    --zen-colors-secondary: #407a27 !important;
+    --zen-colors-tertiary: #14210e !important;
+    --zen-colors-border: #2b471f !important;
+    --zen-primary-color: #407a27 !important;
+    --zen-dialog-background: #0d160a !important;
+    --toolbarbutton-icon-fill: color-mix(
+      in srgb,
+      var(--zen-primary-color) 70%,
+      white 30%
+    ) !important;
+    --toolbar-field-color: color-mix(
+      in srgb,
+      var(--zen-primary-color) 40%,
+      white 60%
+    ) !important;
+    .tabbrowser-tab {
+      color: #adc694 !important;
+    }
+    .tabbrowser-tab:is([visuallyselected], [multiselected]) {
+      color: #edffe5 !important;
+    }
   }
 }
 
 @media (prefers-color-scheme: light) {
   :root {
     --zen-colors-primary: #437030 !important;
-    --zen-colors-secondary: #73C351 !important;
-    --zen-colors-tertiary: #D8FAB5 !important;
-    --zen-colors-border: #68B647 !important;
-    --zen-primary-color: #73C351 !important;
-    --zen-dialog-background: #F1FAE7 !important;
-    --toolbarbutton-icon-fill: color-mix(in srgb, var(--zen-primary-color) 70%, black 30%) !important;
-    --toolbar-field-color: color-mix(in srgb, var(--zen-primary-color) 40%, black 60%) !important;
-    .tabbrowser-tab { color: #2B5718 !important; }
-    .tabbrowser-tab:is([visuallyselected], [multiselected]) { color: #0A1F00 !important; }
+    --zen-colors-secondary: #73c351 !important;
+    --zen-colors-tertiary: #d8fab5 !important;
+    --zen-colors-border: #68b647 !important;
+    --zen-primary-color: #73c351 !important;
+    --zen-dialog-background: #f1fae7 !important;
+    --toolbarbutton-icon-fill: color-mix(
+      in srgb,
+      var(--zen-primary-color) 70%,
+      black 30%
+    ) !important;
+    --toolbar-field-color: color-mix(
+      in srgb,
+      var(--zen-primary-color) 40%,
+      black 60%
+    ) !important;
+    .tabbrowser-tab {
+      color: #2b5718 !important;
+    }
+    .tabbrowser-tab:is([visuallyselected], [multiselected]) {
+      color: #0a1f00 !important;
+    }
   }
 }

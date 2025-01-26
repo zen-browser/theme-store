@@ -1,9 +1,9 @@
 /* This is an auto generated color theme. */
 :root {
-    --zen-colors-primary: #8f77f2 !important;
-    --zen-colors-secondary: #393061 !important;
-    --zen-colors-tertiary: #13121c !important;
-    --zen-colors-border: #514480 !important;
-    --zen-primary-color: #8f77f2 !important;
-    --zen-dialog-background: #13121c !important;
+  --zen-colors-primary: #8f77f2 !important;
+  --zen-colors-secondary: #393061 !important;
+  --zen-colors-tertiary: #13121c !important;
+  --zen-colors-border: #514480 !important;
+  --zen-primary-color: #8f77f2 !important;
+  --zen-dialog-background: #13121c !important;
 }

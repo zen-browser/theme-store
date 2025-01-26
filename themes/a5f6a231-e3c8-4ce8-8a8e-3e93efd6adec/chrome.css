@@ -14,7 +14,8 @@
   }
 }
 
-#identity-icon-box, #identity-permission-box {
+#identity-icon-box,
+#identity-permission-box {
   background: transparent !important;
   margin: 0 8px 0 0 !important;
 }
@@ -41,7 +42,8 @@
   border-radius: 8px !important;
 }
 
-.search-panel-one-offs-container > *, .search-panel-one-offs-container > * > * {
+.search-panel-one-offs-container > *,
+.search-panel-one-offs-container > * > * {
   border-radius: 4px !important;
 }
 

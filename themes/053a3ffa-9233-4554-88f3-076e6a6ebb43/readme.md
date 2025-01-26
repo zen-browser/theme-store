@@ -1,4 +1,3 @@
-
 # Hide tab mute
 
 Hides the "Mute"/"Unmute" button if the sidebar is collapsed.

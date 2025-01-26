@@ -1,15 +1,15 @@
 {
-    "id": "5bb07b6e-c89f-4f4a-a0ed-e483cc535594",
-    "name": "Custom MenuButton",
-    "description": "Custom MenuButton",
-    "homepage": "",
-    "style": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/5bb07b6e-c89f-4f4a-a0ed-e483cc535594/chrome.css",
-    "readme": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/5bb07b6e-c89f-4f4a-a0ed-e483cc535594/readme.md",
-    "image": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/5bb07b6e-c89f-4f4a-a0ed-e483cc535594/image.png",
-    "author": "lindongbin",
-    "version": "1.0.0",
-    "tags": [],
-    "createdAt": "2024-12-14",
-    "updatedAt": "2024-12-16",
-    "preferences": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/5bb07b6e-c89f-4f4a-a0ed-e483cc535594/preferences.json"
+  "id": "5bb07b6e-c89f-4f4a-a0ed-e483cc535594",
+  "name": "Custom MenuButton",
+  "description": "Custom MenuButton",
+  "homepage": "",
+  "style": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/5bb07b6e-c89f-4f4a-a0ed-e483cc535594/chrome.css",
+  "readme": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/5bb07b6e-c89f-4f4a-a0ed-e483cc535594/readme.md",
+  "image": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/5bb07b6e-c89f-4f4a-a0ed-e483cc535594/image.png",
+  "author": "lindongbin",
+  "version": "1.0.0",
+  "tags": [],
+  "createdAt": "2024-12-14",
+  "updatedAt": "2024-12-16",
+  "preferences": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/5bb07b6e-c89f-4f4a-a0ed-e483cc535594/preferences.json"
 }

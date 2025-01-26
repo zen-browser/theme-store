@@ -1,49 +1,49 @@
 [
-    {
-        "property": "theme.sidebery.layout",
-        "label": "Auto-hide the sidebar",
-        "type": "dropdown",
-        "placeholder": "Do not hide",
-        "defaultValue": "auto-hide-fs",
-        "options": [
-            {
-                "label": "Auto-hide, expand on hover",
-                "value": "auto-hide"
-            },
-            {
-                "label": "Auto-hide in full-screen mode only",
-                "value": "auto-hide-fs"
-            }
-        ]
-    },
-    {
-        "property": "theme.sidebery.compact-view",
-        "label": "Compact mode",
-        "type": "checkbox",
-        "defaultValue": false
-    },
-    {
-        "property": "browser.tabs.allow_transparent_browser",
-        "label": "Allow Transparent Browser Tabs",
-        "type": "checkbox",
-        "defaultValue": true
-    },
-    {
-        "property": "theme.sidebery.hide-zen-tabbar",
-        "label": "Hide Native Zen Tab UI",
-        "type": "checkbox",
-        "defaultValue": true
-    },
-    {
-        "property": "theme.sidebery.sidebar-header.hide",
-        "label": "Hide Browser Sidebar Header",
-        "type": "checkbox",
-        "defaultValue": false
-    },
-    {
-        "property": "theme.sidebery.sidebar-header.bottom-layout",
-        "label": "Push Browser Sidebar Header Down",
-        "type": "checkbox",
-        "defaultValue": true
-    }
+  {
+    "property": "theme.sidebery.layout",
+    "label": "Auto-hide the sidebar",
+    "type": "dropdown",
+    "placeholder": "Do not hide",
+    "defaultValue": "auto-hide-fs",
+    "options": [
+      {
+        "label": "Auto-hide, expand on hover",
+        "value": "auto-hide"
+      },
+      {
+        "label": "Auto-hide in full-screen mode only",
+        "value": "auto-hide-fs"
+      }
+    ]
+  },
+  {
+    "property": "theme.sidebery.compact-view",
+    "label": "Compact mode",
+    "type": "checkbox",
+    "defaultValue": false
+  },
+  {
+    "property": "browser.tabs.allow_transparent_browser",
+    "label": "Allow Transparent Browser Tabs",
+    "type": "checkbox",
+    "defaultValue": true
+  },
+  {
+    "property": "theme.sidebery.hide-zen-tabbar",
+    "label": "Hide Native Zen Tab UI",
+    "type": "checkbox",
+    "defaultValue": true
+  },
+  {
+    "property": "theme.sidebery.sidebar-header.hide",
+    "label": "Hide Browser Sidebar Header",
+    "type": "checkbox",
+    "defaultValue": false
+  },
+  {
+    "property": "theme.sidebery.sidebar-header.bottom-layout",
+    "label": "Push Browser Sidebar Header Down",
+    "type": "checkbox",
+    "defaultValue": true
+  }
 ]

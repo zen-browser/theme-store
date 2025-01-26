@@ -1,12 +1,11 @@
-
 #back-button {
-	list-style-image: url("chrome://browser/skin/back.svg") !important;
+  list-style-image: url("chrome://browser/skin/back.svg") !important;
 }
 
 #forward-button {
-	list-style-image: url("chrome://browser/skin/forward.svg") !important;
+  list-style-image: url("chrome://browser/skin/forward.svg") !important;
 }
 
 #reload-button {
-	list-style-image: url("chrome://global/skin/icons/reload.svg") !important;
+  list-style-image: url("chrome://global/skin/icons/reload.svg") !important;
 }

@@ -1,4 +1,3 @@
-
 .tab-icon-overlay {
   -moz-box-ordinal-group: 0 !important;
   border-radius: 50% !important;
@@ -11,7 +10,7 @@
   background-color: light-dark(black, white) !important;
 }
 
-@media ( -moz-bool-pref: "uc.audio-tabicon.left-side") {
+@media (-moz-bool-pref: "uc.audio-tabicon.left-side") {
   .tab-icon-overlay {
     transform: translate(-50%, -35%) scale(0.7) !important;
   }

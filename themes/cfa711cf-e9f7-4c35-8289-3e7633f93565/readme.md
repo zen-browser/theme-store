@@ -1,4 +1,3 @@
-
 # Fluid URL
 
 A minimalist mod that enhances the URL bar with a smooth, gradient-based loading animation for a refined, calming browsing experience.

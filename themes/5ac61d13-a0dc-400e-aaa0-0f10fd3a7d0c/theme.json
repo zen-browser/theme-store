@@ -1,14 +1,14 @@
 {
-    "id": "5ac61d13-a0dc-400e-aaa0-0f10fd3a7d0c",
-    "name": "Uniform Workspaces Button",
-    "description": "Make the workspaces button consistent with the other sidebar buttons, while remaining unique.",
-    "homepage": "https://github.com/andrewbellucci/zen-uniform-workspaces-button",
-    "style": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/5ac61d13-a0dc-400e-aaa0-0f10fd3a7d0c/chrome.css",
-    "readme": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/5ac61d13-a0dc-400e-aaa0-0f10fd3a7d0c/readme.md",
-    "image": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/5ac61d13-a0dc-400e-aaa0-0f10fd3a7d0c/image.png",
-    "author": "andrewbellucci",
-    "version": "1.0.0",
-    "tags": [],
-    "createdAt": "2024-08-24",
-    "updatedAt": "2024-08-24"
+  "id": "5ac61d13-a0dc-400e-aaa0-0f10fd3a7d0c",
+  "name": "Uniform Workspaces Button",
+  "description": "Make the workspaces button consistent with the other sidebar buttons, while remaining unique.",
+  "homepage": "https://github.com/andrewbellucci/zen-uniform-workspaces-button",
+  "style": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/5ac61d13-a0dc-400e-aaa0-0f10fd3a7d0c/chrome.css",
+  "readme": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/5ac61d13-a0dc-400e-aaa0-0f10fd3a7d0c/readme.md",
+  "image": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/5ac61d13-a0dc-400e-aaa0-0f10fd3a7d0c/image.png",
+  "author": "andrewbellucci",
+  "version": "1.0.0",
+  "tags": [],
+  "createdAt": "2024-08-24",
+  "updatedAt": "2024-08-24"
 }

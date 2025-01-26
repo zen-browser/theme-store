@@ -1,14 +1,14 @@
 {
-    "id": "cb15abdb-0514-4e09-8ce5-722cf1f4a20f",
-    "name": "Hide Extension Name",
-    "description": "Hides the name of the extension on tabs loaded from the extension",
-    "homepage": "https://github.com/ch4og/zenbrowser-themes/tree/main/Hide%20Extension%20Name",
-    "style": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/cb15abdb-0514-4e09-8ce5-722cf1f4a20f/chrome.css",
-    "readme": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/cb15abdb-0514-4e09-8ce5-722cf1f4a20f/readme.md",
-    "image": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/cb15abdb-0514-4e09-8ce5-722cf1f4a20f/image.png",
-    "author": "ch4og",
-    "version": "1.0.0",
-    "tags": [],
-    "createdAt": "2024-08-24",
-    "updatedAt": "2024-08-24"
+  "id": "cb15abdb-0514-4e09-8ce5-722cf1f4a20f",
+  "name": "Hide Extension Name",
+  "description": "Hides the name of the extension on tabs loaded from the extension",
+  "homepage": "https://github.com/ch4og/zenbrowser-themes/tree/main/Hide%20Extension%20Name",
+  "style": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/cb15abdb-0514-4e09-8ce5-722cf1f4a20f/chrome.css",
+  "readme": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/cb15abdb-0514-4e09-8ce5-722cf1f4a20f/readme.md",
+  "image": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/cb15abdb-0514-4e09-8ce5-722cf1f4a20f/image.png",
+  "author": "ch4og",
+  "version": "1.0.0",
+  "tags": [],
+  "createdAt": "2024-08-24",
+  "updatedAt": "2024-08-24"
 }

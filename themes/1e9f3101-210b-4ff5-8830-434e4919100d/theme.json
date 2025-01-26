@@ -1,14 +1,14 @@
 {
-    "id": "1e9f3101-210b-4ff5-8830-434e4919100d",
-    "name": "Better Letterboxing",
-    "description": "More pleasant, theme-friendly, and most importantly, rounded letterboxing.",
-    "homepage": "",
-    "style": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/1e9f3101-210b-4ff5-8830-434e4919100d/chrome.css",
-    "readme": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/1e9f3101-210b-4ff5-8830-434e4919100d/readme.md",
-    "image": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/1e9f3101-210b-4ff5-8830-434e4919100d/image.png",
-    "author": "qtchaos",
-    "version": "1.0.0",
-    "tags": [],
-    "createdAt": "2024-08-28",
-    "updatedAt": "2024-08-28"
+  "id": "1e9f3101-210b-4ff5-8830-434e4919100d",
+  "name": "Better Letterboxing",
+  "description": "More pleasant, theme-friendly, and most importantly, rounded letterboxing.",
+  "homepage": "",
+  "style": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/1e9f3101-210b-4ff5-8830-434e4919100d/chrome.css",
+  "readme": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/1e9f3101-210b-4ff5-8830-434e4919100d/readme.md",
+  "image": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/1e9f3101-210b-4ff5-8830-434e4919100d/image.png",
+  "author": "qtchaos",
+  "version": "1.0.0",
+  "tags": [],
+  "createdAt": "2024-08-28",
+  "updatedAt": "2024-08-28"
 }

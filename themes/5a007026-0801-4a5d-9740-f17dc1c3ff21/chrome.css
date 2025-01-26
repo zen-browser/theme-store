@@ -23,11 +23,11 @@
 }
 
 @media (-moz-bool-pref: "uc.hide-window-buttons") {
-  .titlebar-buttonbox-container { 
-      display: none !important; 
+  .titlebar-buttonbox-container {
+    display: none !important;
   }
 
-  .window-controls{
+  .window-controls {
     display: none;
   }
 }

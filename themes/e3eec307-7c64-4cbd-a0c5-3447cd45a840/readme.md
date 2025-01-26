@@ -1,6 +1,5 @@
-
 # Catppuccin
 
 Catppuccin color pallete ported into Zen!
 
-~ *Not affiliated with `Catppuccin`*
+~ _Not affiliated with `Catppuccin`_

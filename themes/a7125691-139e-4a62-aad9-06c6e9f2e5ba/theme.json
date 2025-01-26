@@ -1,15 +1,15 @@
 {
-    "id": "a7125691-139e-4a62-aad9-06c6e9f2e5ba",
-    "name": "CustomCursor",
-    "description": "Choose your custom cursor!",
-    "homepage": "https://github.com/GunGunGun/zenCustomCursorMod",
-    "style": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/a7125691-139e-4a62-aad9-06c6e9f2e5ba/chrome.css",
-    "readme": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/a7125691-139e-4a62-aad9-06c6e9f2e5ba/readme.md",
-    "image": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/a7125691-139e-4a62-aad9-06c6e9f2e5ba/image.png",
-    "author": "GunGunGun",
-    "version": "1.0.0",
-    "tags": [],
-    "createdAt": "2024-10-26",
-    "updatedAt": "2024-10-26",
-    "preferences": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/a7125691-139e-4a62-aad9-06c6e9f2e5ba/preferences.json"
+  "id": "a7125691-139e-4a62-aad9-06c6e9f2e5ba",
+  "name": "CustomCursor",
+  "description": "Choose your custom cursor!",
+  "homepage": "https://github.com/GunGunGun/zenCustomCursorMod",
+  "style": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/a7125691-139e-4a62-aad9-06c6e9f2e5ba/chrome.css",
+  "readme": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/a7125691-139e-4a62-aad9-06c6e9f2e5ba/readme.md",
+  "image": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/a7125691-139e-4a62-aad9-06c6e9f2e5ba/image.png",
+  "author": "GunGunGun",
+  "version": "1.0.0",
+  "tags": [],
+  "createdAt": "2024-10-26",
+  "updatedAt": "2024-10-26",
+  "preferences": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/a7125691-139e-4a62-aad9-06c6e9f2e5ba/preferences.json"
 }

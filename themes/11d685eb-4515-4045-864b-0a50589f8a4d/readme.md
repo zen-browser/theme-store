@@ -1,4 +1,3 @@
-
 # Monochrome theme for [Zen Browser](https://github.com/zen-browser/desktop)
 
 There is no monochrome option in theme settings, so i created this theme.

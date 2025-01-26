@@ -27,7 +27,7 @@
   #nav-bar,
   #PersonalToolbar {
     width: 75vw !important;
-    margin-left: calc( 12.5vw - var(--zen-element-separation) * 2) !important;
+    margin-left: calc(12.5vw - var(--zen-element-separation) * 2) !important;
   }
 }
 
@@ -38,7 +38,7 @@
   }
   #PersonalToolbar,
   .bookmark-item {
-    padding: calc( var(--zen-element-separation) / 2 ) !important;
+    padding: calc(var(--zen-element-separation) / 2) !important;
   }
 }
 

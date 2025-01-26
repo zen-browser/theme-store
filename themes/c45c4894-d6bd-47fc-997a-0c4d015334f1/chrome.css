@@ -1,4 +1,3 @@
-
 #tabbrowser-tabs {
   & .tabbrowser-tab {
     &[pinned]:not([zen-essential]):hover .tab-reset-button,

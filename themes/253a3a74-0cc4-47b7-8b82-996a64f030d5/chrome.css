@@ -1,4 +1,3 @@
-
 window.sidebar-panel {
   background-color: var(--zen-themed-toolbar-bg) !important;
 }
@@ -35,14 +34,14 @@ button#viewButton:hover:active {
   background-color: var(--zen-colors-border) !important;
 }
 
-#sidebar-box[sidebarcommand=viewHistorySidebar] #sidebar-header {
-  border-bottom: 0px !important; 
+#sidebar-box[sidebarcommand="viewHistorySidebar"] #sidebar-header {
+  border-bottom: 0px !important;
 }
 
 #sidebar-box[sidebarcommand="viewHistorySidebar"] {
   background-color: var(--zen-themed-toolbar-bg) !important;
   border-radius: var(--zen-border-radius);
-  box-shadow: 0 0 2px 2px rgba(0,0,0,.1);
+  box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.1);
   border: 1px solid var(--zen-colors-border);
   padding: var(--zen-toolbox-padding) !important;
   position: fixed;
@@ -55,12 +54,12 @@ button#viewButton:hover:active {
   transition: all 0.2s ease-in-out;
 }
 
-#sidebar-box[hidden=true][sidebarcommand="viewHistorySidebar"] {
+#sidebar-box[hidden="true"][sidebarcommand="viewHistorySidebar"] {
   display: flex !important;
   opacity: 0 !important;
   transform: translateX(105%);
 }
 
-#sidebar-box[checked=true][sidebarcommand="viewHistorySidebar"] {
+#sidebar-box[checked="true"][sidebarcommand="viewHistorySidebar"] {
   transform: translateX(0);
 }

@@ -1,4 +1,4 @@
-@media not (-moz-bool-pref: "zen.view.compact") {
+:root:not([zen-compact-mode="true"]) {
   #navigator-toolbox {
     --zen-navigator-toolbox-background: var(
         --lwt-header-image,
@@ -8,12 +8,9 @@
       var(--lwt-accent-color);
   }
 }
-@media (-moz-bool-pref: "zen.view.compact") {
+:root[zen-compact-mode="true"] {
   #titlebar {
-    --zen-colors-tertiary: var(
-        --lwt-header-image,
-        var(--lwt-additional-images)
-      )
+    --zen-colors-tertiary: var(--lwt-header-image, var(--lwt-additional-images))
       no-repeat var(--lwt-background-tiling) var(--lwt-background-alignment)
       var(--lwt-accent-color);
   }

@@ -1,14 +1,14 @@
 {
-    "id": "ae051a40-3e3a-429a-a6f4-199a28b18a75",
-    "name": "Only Reset On Hover",
-    "description": "Show pinned tab's reset button only on hover, even on the active tab.",
-    "homepage": "",
-    "style": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/ae051a40-3e3a-429a-a6f4-199a28b18a75/chrome.css",
-    "readme": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/ae051a40-3e3a-429a-a6f4-199a28b18a75/readme.md",
-    "image": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/ae051a40-3e3a-429a-a6f4-199a28b18a75/image.png",
-    "author": "TheCatRiX",
-    "version": "1.0.0",
-    "tags": [],
-    "createdAt": "2024-12-16",
-    "updatedAt": "2024-12-16"
+  "id": "ae051a40-3e3a-429a-a6f4-199a28b18a75",
+  "name": "Only Reset On Hover",
+  "description": "Show pinned tab's reset button only on hover, even on the active tab.",
+  "homepage": "",
+  "style": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/ae051a40-3e3a-429a-a6f4-199a28b18a75/chrome.css",
+  "readme": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/ae051a40-3e3a-429a-a6f4-199a28b18a75/readme.md",
+  "image": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/ae051a40-3e3a-429a-a6f4-199a28b18a75/image.png",
+  "author": "TheCatRiX",
+  "version": "1.0.0",
+  "tags": [],
+  "createdAt": "2024-12-16",
+  "updatedAt": "2024-12-16"
 }

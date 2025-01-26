@@ -1,36 +1,39 @@
-
 /* Hidden Reset Button - Hide the reset button behind the tab icon unless hovered. */
-.tab-icon-stack, .tab-reset-button {
-    transition: scale .2s cubic-bezier(0.175, 0.885, 0.320, 1.275), opacity .1s ease-in-out, transform .3s cubic-bezier(0.175, 0.885, 0.320, 1.275);
+.tab-icon-stack,
+.tab-reset-button {
+  transition:
+    scale 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275),
+    opacity 0.1s ease-in-out,
+    transform 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
 }
 .tab-reset-button {
-    transform: rotate(-.5turn);
-    width: 24px !important;
-    margin: 0;
-    margin-right: -24px;
-    order: -1;
-    z-index: 1;
-    opacity: 0;
-    scale: .5;
-    overflow: hidden !important;
+  transform: rotate(-0.5turn);
+  width: 24px !important;
+  margin: 0;
+  margin-right: -24px;
+  order: -1;
+  z-index: 1;
+  opacity: 0;
+  scale: 0.5;
+  overflow: hidden !important;
 }
 .tab-reset-button:hover {
-    transform: rotate(0);
-    opacity: 1;
-    scale: 1;
+  transform: rotate(0);
+  opacity: 1;
+  scale: 1;
 }
 .tab-label-container {
-    padding-left: 6px;
+  padding-left: 6px;
 }
 .tab-icon-stack:has(~ .tab-reset-button:hover) {
-    opacity: 0;
-    scale: 0;
+  opacity: 0;
+  scale: 0;
 }
 .tab-content .tab-icon-stack {
-    padding: 4px;
-    width: 24px;
+  padding: 4px;
+  width: 24px;
 }
 .tab-icon-stack .tab-icon-image {
-    padding: 0;
-    margin: 0 !important;
+  padding: 0;
+  margin: 0 !important;
 }

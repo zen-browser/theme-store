@@ -3,29 +3,36 @@
   padding: 0px !important;
 }
 
-#tabbrowser-tabpanels[zen-split-view="true"] .browserSidebarContainer.deck-selected {
+#tabbrowser-tabpanels[zen-split-view="true"]
+  .browserSidebarContainer.deck-selected {
   outline: none !important;
 }
 
-:root:not([inDOMFullscreen="true"]):not([chromehidden~="location"]):not([chromehidden~="toolbar"]) {
+:root:not([inDOMFullscreen="true"]):not([chromehidden~="location"]):not(
+    [chromehidden~="toolbar"]
+  ) {
   & #tabbrowser-tabpanels {
     padding-right: 0px !important;
     padding-bottom: 0px !important;
   }
 }
 
-#tabbrowser-tabpanels:has(> [zen-split="true"]), #zen-splitview-overlay {
+#tabbrowser-tabpanels:has(> [zen-split="true"]),
+#zen-splitview-overlay {
   margin: 0px !important;
 }
 
-#tabbrowser-tabpanels[zen-split-view="true"] > [zen-split="true"], #zen-splitview-dropzone {
+#tabbrowser-tabpanels[zen-split-view="true"] > [zen-split="true"],
+#zen-splitview-dropzone {
   flex: 1;
   margin: 0px;
   position: absolute !important;
   overflow: hidden;
 }
 
-:root:not([inDOMFullscreen="true"]):not([chromehidden~="location"]):not([chromehidden~="toolbar"]) {
+:root:not([inDOMFullscreen="true"]):not([chromehidden~="location"]):not(
+    [chromehidden~="toolbar"]
+  ) {
   & #tabbrowser-tabbox #tabbrowser-tabpanels .browserSidebarContainer {
     & .browserContainer {
       overflow: hidden;
@@ -104,12 +111,14 @@
   border-right: 1px solid var(--zen-colors-border) !important;
 }
 
-#navigator-toolbox[zen-user-hover="true"][zen-right-side="true"]:not([zen-has-hover="true"]) {
+#navigator-toolbox[zen-user-hover="true"][zen-right-side="true"]:not(
+    [zen-has-hover="true"]
+  ) {
   border-left: 1px solid var(--zen-colors-border) !important;
   border-right: 0px none transparent !important;
 }
 
-@media (-moz-bool-pref: "zen.view.compact"){
+:root[zen-compact-mode="true"] {
   #navigator-toolbox:not([zen-expanded="true"]) {
     border-right: 0px none transparent !important;
   }
@@ -131,7 +140,8 @@
   border-right: 1px solid var(--zen-colors-border) !important;
 }
 
-#zen-tabbox-wrapper:has(#navigator-toolbox[zen-right-side="true"]) > #zen-sidebar-splitter {
+#zen-tabbox-wrapper:has(#navigator-toolbox[zen-right-side="true"])
+  > #zen-sidebar-splitter {
   border-left: 1px solid var(--zen-colors-border) !important;
   border-right: 0px none transparent !important;
 }
@@ -162,7 +172,8 @@
   }
 }
 
-#sidebar-search-container, #bookmarks-view {
+#sidebar-search-container,
+#bookmarks-view {
   background-color: transparent !important;
 }
 

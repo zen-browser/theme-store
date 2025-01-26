@@ -1,4 +1,3 @@
-
 /*Nyan Cat and Friends*/
 
 @media (-moz-bool-pref: "z0.catto.nyancats") {
@@ -6,7 +5,7 @@
     overflow: hidden !important;
   }
 
-#zen-sidebar-icons-wrapper:before {
+  #zen-sidebar-icons-wrapper:before {
     content: "";
     position: absolute;
     bottom: 100%;
@@ -24,7 +23,7 @@
     background-position-y: 0, 0, 0;
   }
 
-@keyframes autoRun {
+  @keyframes autoRun {
     from {
       right: 0%;
     }
@@ -37,7 +36,7 @@
 /*Nyan Cat and Friends*/
 
 /* Bongo Cat Start */
-@media (-moz-bool-pref: "zen.view.compact") {
+:root[zen-compact-mode="true"] {
   @media (-moz-bool-pref: "z0.catto.bongocat") {
     #navigator-toolbox:before {
       position: relative;
@@ -60,7 +59,7 @@
   }
   /* Bongo Cat End */
   /* Reduce the Size */
- #navigator-toolbox {
+  #navigator-toolbox {
     --zen-navigation-toolbar-min-width: 100px !important;
     padding-top: 12.5vh !important;
     height: 85vh !important;

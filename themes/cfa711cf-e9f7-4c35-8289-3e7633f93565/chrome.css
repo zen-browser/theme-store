@@ -1,4 +1,3 @@
-
 /* Firefox URL Bar Loading Animation */
 :root {
   --w-urlbar-bg_color: #ff6b6b66, #4ecdc466, #ff6b6b66;
@@ -6,7 +5,7 @@
 
 #urlbar {
   .urlbar-input-container::before {
-    content: '';
+    content: "";
     position: absolute;
     inset: 0;
     background: linear-gradient(90deg, var(--w-urlbar-bg_color));
@@ -19,14 +18,20 @@
   }
 }
 
-#main-window:has(.tabbrowser-tab[selected][busy]) .urlbar-input-container::before {
+#main-window:has(.tabbrowser-tab[selected][busy])
+  .urlbar-input-container::before {
   animation-play-state: running;
   opacity: 1;
 }
 
 @keyframes urlbar-loading-gradient {
-  0% { background-position: 0% 50%; }
-  50% { background-position: 100% 50%; }
-  100% { background-position: 200% 50%; }
- }
-
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 200% 50%;
+  }
+}

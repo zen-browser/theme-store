@@ -1,4 +1,5 @@
 What can you do with this Mod:
+
 - Hide all separators in context menu _**NEW!**_
 - Hide all icons, excluding checkboxes & extension context menu _**NEW!**_
 - Fix margins for checkboxes & extension context menu on Windows, including "Tabs on the right" and "Compact Mode" options _**NEW!**_

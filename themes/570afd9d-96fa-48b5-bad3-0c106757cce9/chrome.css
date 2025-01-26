@@ -1,4 +1,3 @@
-
 /* Remove border from the URL bar when not focused */
 #urlbar:not([focused]) {
   border: none !important;
@@ -15,15 +14,15 @@
   position: fixed;
   pointer-events: none;
 
-width: 100vw;
+  width: 100vw;
   height: 100vh;
 
-top: 0;
+  top: 0;
   left: 0;
 
-backdrop-filter: blur(2px);
+  backdrop-filter: blur(2px);
 
-z-index: -1;
+  z-index: -1;
 }
 
 /* set navbar height to super compact density */
@@ -39,25 +38,30 @@ z-index: -1;
 }
 
 /* Remove border padding */
-:root:not([inDOMFullscreen="true"]):not([chromehidden~="location"]):not([chromehidden~="toolbar"]) {
+:root:not([inDOMFullscreen="true"]):not([chromehidden~="location"]):not(
+    [chromehidden~="toolbar"]
+  ) {
   & #tabbrowser-tabbox #tabbrowser-tabpanels .browserSidebarContainer {
     margin: 0 !important;
     border-radius: 0 !important;
   }
 }
-@media not (-moz-bool-pref: "zen.view.compact") {   
-  :root:not([inDOMFullscreen="true"]):not([chromehidden~="location"]):not([chromehidden~="toolbar"]) {
-    & #tabbrowser-tabbox #tabbrowser-tabpanels .browserSidebarContainer {
-      margin: 0 !important;
-      border-radius: var(--zen-webview-border-radius, var(--zen-border-radius)) !important;
-      border-bottom-left-radius: 0 !important;
-      border-bottom-right-radius: 0 !important;
-    }
+:root:not([zen-compact-mode="true"]):not([inDOMFullscreen="true"]):not(
+    [chromehidden~="location"]
+  ):not([chromehidden~="toolbar"]) {
+  & #tabbrowser-tabbox #tabbrowser-tabpanels .browserSidebarContainer {
+    margin: 0 !important;
+    border-radius: var(
+      --zen-webview-border-radius,
+      var(--zen-border-radius)
+    ) !important;
+    border-bottom-left-radius: 0 !important;
+    border-bottom-right-radius: 0 !important;
   }
 }
 
 /* Reduce sidebar gap in compact mode */
-@media (-moz-bool-pref: "zen.view.compact") {
+:root[zen-compact-mode="true"] {
   #navigator-toolbox {
     padding: 5px !important;
   }
@@ -67,36 +71,38 @@ z-index: -1;
 #urlbar:not([usertyping]) {
   .urlbarView-results {
     padding-inline: 10px !important;
-    display: grid !important; 
-    grid-template-rows: repeat(2, auto) !important; 
-    grid-template-columns: repeat(auto-fill, minmax(100px, 1fr)) !important; 
-    gap: 10px; 
+    display: grid !important;
+    grid-template-rows: repeat(2, auto) !important;
+    grid-template-columns: repeat(auto-fill, minmax(100px, 1fr)) !important;
+    gap: 10px;
     justify-content: space-evenly !important;
-    white-space: normal !important; 
+    white-space: normal !important;
   }
-  
-  .urlbarView-row-inner{
+
+  .urlbarView-row-inner {
     justify-content: center !important;
-    padding: 10px  !important;
-    width: 100px  !important;
+    padding: 10px !important;
+    width: 100px !important;
     mask-image: linear-gradient(to left, transparent, black 3ch);
   }
 
-.urlbarView-no-wrap{
+  .urlbarView-no-wrap {
     display: flex !important;
     flex-direction: column !important;
     max-width: 100% !important;
     overflow: hidden;
   }
 
-.urlbarView-favicon {
+  .urlbarView-favicon {
     width: 32px !important;
     height: 32px !important;
     margin: 0px !important;
     margin-bottom: 8px !important;
   }
 
-.urlbarView-url, .urlbarView-title-separator, .urlbarView-type-icon {
+  .urlbarView-url,
+  .urlbarView-title-separator,
+  .urlbarView-type-icon {
     display: none !important;
   }
 }

@@ -1,14 +1,14 @@
 {
-    "id": "ae7868dc-1fa1-469e-8b89-a5edf7ab1f24",
-    "name": "Load Bar",
-    "description": "Creates a sleek loading bar and mute status for single toolbar mode.",
-    "homepage": "https://github.com/Tanay-Kar/Zen-Themes/tree/main/LoadBar",
-    "style": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/ae7868dc-1fa1-469e-8b89-a5edf7ab1f24/chrome.css",
-    "readme": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/ae7868dc-1fa1-469e-8b89-a5edf7ab1f24/readme.md",
-    "image": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/ae7868dc-1fa1-469e-8b89-a5edf7ab1f24/image.png",
-    "author": "Tanay-Kar",
-    "version": "1.0.0",
-    "tags": [],
-    "createdAt": "2024-12-21",
-    "updatedAt": "2024-12-31"
+  "id": "ae7868dc-1fa1-469e-8b89-a5edf7ab1f24",
+  "name": "Load Bar",
+  "description": "Creates a sleek loading bar and mute status for single toolbar mode.",
+  "homepage": "https://github.com/Tanay-Kar/Zen-Themes/tree/main/LoadBar",
+  "style": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/ae7868dc-1fa1-469e-8b89-a5edf7ab1f24/chrome.css",
+  "readme": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/ae7868dc-1fa1-469e-8b89-a5edf7ab1f24/readme.md",
+  "image": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/ae7868dc-1fa1-469e-8b89-a5edf7ab1f24/image.png",
+  "author": "Tanay-Kar",
+  "version": "1.0.0",
+  "tags": [],
+  "createdAt": "2024-12-21",
+  "updatedAt": "2024-12-31"
 }

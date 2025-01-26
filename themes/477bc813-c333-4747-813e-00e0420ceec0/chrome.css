@@ -1,6 +1,5 @@
-
 /* Move #zen-essentials-container to the bottom of the sidebar */
 #zen-essentials-container {
-   margin-top: auto; /* Pushes #zen-essentials-container to the bottom */
-   order: 999; /* In case flexbox is used, ensure it's last */
+  margin-top: auto; /* Pushes #zen-essentials-container to the bottom */
+  order: 999; /* In case flexbox is used, ensure it's last */
 }

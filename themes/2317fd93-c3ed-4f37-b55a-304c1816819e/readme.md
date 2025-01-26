@@ -1,4 +1,3 @@
-
 Enhanced audio indicator on tabs, visible when playing videos.
 
 Currently, mod is tailored to dark theme.

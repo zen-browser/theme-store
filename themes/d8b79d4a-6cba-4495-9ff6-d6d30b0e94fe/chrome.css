@@ -2,8 +2,8 @@
   position: relative;
 }
 
-.tab-background[selected='']::after {
-  content: '';
+.tab-background[selected=""]::after {
+  content: "";
   position: absolute;
   width: 3px;
   height: 100%;

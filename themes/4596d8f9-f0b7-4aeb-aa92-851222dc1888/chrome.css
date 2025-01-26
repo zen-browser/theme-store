@@ -1,4 +1,5 @@
-
-#tabbrowser-tabs .tabbrowser-tab:not([pinned]):is([visuallyselected]):not(:hover) .tab-close-button {
-    display: none !important;
+#tabbrowser-tabs
+  .tabbrowser-tab:not([pinned]):is([visuallyselected]):not(:hover)
+  .tab-close-button {
+  display: none !important;
 }

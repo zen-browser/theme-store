@@ -1,15 +1,15 @@
 {
-    "id": "ab9b529c-63d6-48c0-a59a-4a407c5c3129",
-    "name": "Minimal sidebar",
-    "description": "With this Zen theme, you can remove the buttons from the sidebar and make more space for your tabs",
-    "homepage": "https://github.com/Venca321/Zen-Minimal-Sidebar-Theme",
-    "style": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/ab9b529c-63d6-48c0-a59a-4a407c5c3129/chrome.css",
-    "readme": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/ab9b529c-63d6-48c0-a59a-4a407c5c3129/readme.md",
-    "image": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/ab9b529c-63d6-48c0-a59a-4a407c5c3129/image.png",
-    "author": "Venca321",
-    "preferences": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/ab9b529c-63d6-48c0-a59a-4a407c5c3129/preferences.json",
-    "version": "1.1.0",
-    "tags": [],
-    "createdAt": "2024-08-23",
-    "updatedAt": "2024-09-10"
+  "id": "ab9b529c-63d6-48c0-a59a-4a407c5c3129",
+  "name": "Minimal sidebar",
+  "description": "With this Zen theme, you can remove the buttons from the sidebar and make more space for your tabs",
+  "homepage": "https://github.com/Venca321/Zen-Minimal-Sidebar-Theme",
+  "style": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/ab9b529c-63d6-48c0-a59a-4a407c5c3129/chrome.css",
+  "readme": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/ab9b529c-63d6-48c0-a59a-4a407c5c3129/readme.md",
+  "image": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/ab9b529c-63d6-48c0-a59a-4a407c5c3129/image.png",
+  "author": "Venca321",
+  "preferences": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/ab9b529c-63d6-48c0-a59a-4a407c5c3129/preferences.json",
+  "version": "1.1.0",
+  "tags": [],
+  "createdAt": "2024-08-23",
+  "updatedAt": "2024-09-10"
 }

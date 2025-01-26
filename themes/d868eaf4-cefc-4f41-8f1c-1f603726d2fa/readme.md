@@ -1,4 +1,3 @@
-
 # Tab Text Size
 
 Set the text size for tabs in the sidebar

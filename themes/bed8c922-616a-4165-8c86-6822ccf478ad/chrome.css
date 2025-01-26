@@ -1,4 +1,3 @@
-
 :root {
   --ezuitb-darken-background: rgba(0, 0, 0, 0.1);
   --ezuitb-darken-background-hover: rgba(0, 0, 0, 0.18);
@@ -55,7 +54,7 @@
     ) !important;
   }
 
-#commonDialogWindow {
+  #commonDialogWindow {
     background-color: var(--ezuitb-popup-background) !important;
   }
 }
@@ -74,12 +73,12 @@
     padding-right: var(--ezuitb-page-canvas-spacing) !important;
     padding-bottom: var(--ezuitb-page-canvas-spacing) !important;
 
-& .browserSidebarContainer {
+    & .browserSidebarContainer {
       box-shadow: var(--ezuitb-web-page-canvas-shadow) !important;
 
-margin: 0 !important;
+      margin: 0 !important;
 
-/* Darken active canvas when split */
+      /* Darken active canvas when split */
       &[zen-split-active="true"] {
         box-shadow: var(--ezuitb-web-page-canvas-shadow-active) !important;
       }
@@ -106,13 +105,13 @@ margin: 0 !important;
     }
   }
 
-/* URL Bar black transparent background */
+  /* URL Bar black transparent background */
 
-#urlbar-background {
+  #urlbar-background {
     background-color: var(--ezuitb-url-bar-background) !important;
   }
 
-/* SSL icon background */
+  /* SSL icon background */
   #identity-icon-box {
     background-color: var(--ezuitb-darken-background) !important;
   }
@@ -125,10 +124,10 @@ margin: 0 !important;
       background-color: var(--ezuitb-floating-url-bar-background) !important;
     }
 
-box-shadow: var(--ezuitb-floating-url-bar-shadow) !important;
+    box-shadow: var(--ezuitb-floating-url-bar-shadow) !important;
   }
 
-/* Floating URL Bar item hover */
+  /* Floating URL Bar item hover */
   .urlbarView-row:hover {
     background-color: var(--ezuitb-darken-background) !important;
   }
@@ -159,7 +158,7 @@ box-shadow: var(--ezuitb-floating-url-bar-shadow) !important;
     position: relative;
   }
 
-/* The separator */
+  /* The separator */
   .tabbrowser-tab[pinned]
     + #tabbrowser-arrowscrollbox-periphery
     > #tabs-newtab-button::before {
@@ -198,7 +197,7 @@ box-shadow: var(--ezuitb-floating-url-bar-shadow) !important;
     background-color: var(--ezuitb-darken-background-hover) !important;
   }
 
-.tabbrowser-tab[pinned][selected="true"],
+  .tabbrowser-tab[pinned][selected="true"],
   .tabbrowser-tab[pinned][multiselected="true"] {
     background-color: var(--ezuitb-tab-background-active) !important;
     box-shadow: var(--ezuitb-tab-background-active-shadow) !important;
@@ -217,19 +216,19 @@ box-shadow: var(--ezuitb-floating-url-bar-shadow) !important;
     aspect-ratio: 1 / 1;
   }
 
-/* Zen workspace button - Hover */
+  /* Zen workspace button - Hover */
   #zen-workspaces-button:hover {
     background-color: var(--ezuitb-darken-background-hover) !important;
   }
 
-/* Zen workspace button - space from tabs when collapsed */
+  /* Zen workspace button - space from tabs when collapsed */
   @media not (-moz-bool-pref: "zen.view.sidebar-expanded") {
     #zen-workspaces-button {
       margin-bottom: var(--zen-element-separation) !important;
     }
   }
 
-/* Zen workspace button - width when expanded */
+  /* Zen workspace button - width when expanded */
   @media (-moz-bool-pref: "zen.view.sidebar-expanded") {
     #zen-workspaces-button {
       width: calc(
@@ -248,7 +247,7 @@ box-shadow: var(--ezuitb-floating-url-bar-shadow) !important;
     background-color: var(--ezuitb-darken-background-hover) !important;
   }
 
-#tabs-newtab-button:hover > .toolbarbutton-icon {
+  #tabs-newtab-button:hover > .toolbarbutton-icon {
     background-color: transparent !important;
   }
 }
@@ -260,7 +259,7 @@ box-shadow: var(--ezuitb-floating-url-bar-shadow) !important;
     background-color: var(--ezuitb-tab-background-hover) !important;
   }
 
-/* Tab - Selected */
+  /* Tab - Selected */
   .tabbrowser-tab:not([pinned])[selected="true"],
   .tabbrowser-tab:not([pinned])[multiselected="true"] {
     background-color: var(--ezuitb-tab-background-active) !important;

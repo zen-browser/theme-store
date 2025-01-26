@@ -1,94 +1,62 @@
-
-  html {
-    --sidebery-width: 40px;
-    --sidebery-hidden-width: 10px;
-    --sidebery-open-width: 250px;
-    --sidebery-border-color: color-mix(in srgb, var(--sidebar-border-color) 60%, transparent);
-    --sidebery-background-color: var(--zen-colors-tertiary);
-    --lwt-sidebar-background-color: var(--zen-colors-tertiary);
-    --sidebar-background-color: var(--zen-colors-tertiary);
-    --tabbrowser-padding: var(--zen-element-separation);
+html {
+  --sidebery-width: 40px;
+  --sidebery-hidden-width: 10px;
+  --sidebery-open-width: 250px;
+  --sidebery-border-color: color-mix(
+    in srgb,
+    var(--sidebar-border-color) 60%,
+    transparent
+  );
+  --sidebery-background-color: var(--zen-colors-tertiary);
+  --lwt-sidebar-background-color: var(--zen-colors-tertiary);
+  --sidebar-background-color: var(--zen-colors-tertiary);
+  --tabbrowser-padding: var(--zen-element-separation);
+}
+#sidebar-splitter {
+  margin: 0 -2px 0 -2px !important;
+}
+#sidebar-box {
+  background-color: var(--zen-colors-tertiary) !important;
+  left: calc(var(--zen-element-separation));
+  border: 1px solid var(--sidebery-border-color) !important;
+  margin-left: 0 !important;
+  margin-right: var(--zen-element-separation) !important;
+}
+#sidebar-header {
+  padding: var(--zen-element-separation) !important;
+  border-color: var(--sidebery-border-color) !important;
+  font-size: 1em !important;
+  border-width: 1px !important;
+}
+#tabbrowser-tabbox {
+  padding-left: var(--tabbrowser-padding) !important;
+}
+@media (-moz-bool-pref: "theme.sidebery.hide-zen-tabbar") {
+  #navigator-toolbox {
+    position: absolute;
+    left: -100%;
   }
-  #sidebar-splitter {
-    margin: 0 -2px 0 -2px !important;
-  }
-  #sidebar-box {
-    background-color: var(--zen-colors-tertiary) !important;
-    left: calc(var(--zen-element-separation));
-    border: 1px solid var(--sidebery-border-color) !important;
-    margin-left: 0 !important;
-    margin-right: var(--zen-element-separation) !important;
-  }
-  #sidebar-header {
-    padding: var(--zen-element-separation) !important;
-    border-color: var(--sidebery-border-color) !important;
-    font-size: 1em !important;
-    border-width: 1px !important;
-  }
-  #tabbrowser-tabbox {
-    padding-left: var(--tabbrowser-padding) !important;
-  }
-  @media (-moz-bool-pref: 'theme.sidebery.hide-zen-tabbar') {
-    #navigator-toolbox {
-      position: absolute;
-      left: -100%;
-    }
-    #zen-sidebar-splitter {
-      display: none;
-    }
-  }
-  @media (-moz-bool-pref: 'theme.sidebery.hide-zen-tabbar') and (-moz-bool-pref: 'theme.sidebery.compact-view') {
-    #sidebar-box {
-      border-left-width: 0 !important;
-      border-top-left-radius: 0 !important;
-      border-bottom-left-radius: 0 !important;
-    }
-  }
-  @media (-moz-bool-pref: 'theme.sidebery.compact-view') {
-    #tabbrowser-tabbox {
-      --tabbrowser-padding: calc(var(--sidebery-width) + var(--zen-element-separation));
-    }
-    #sidebar-splitter {
-      display: none;
-    }
-    #sidebar-box {
-      z-index: 2;
-      position: absolute;
-      left: 0 !important;
-      top: 1px;
-      bottom: 1px;
-      box-shadow: none !important;
-      min-width: var(--sidebery-width) !important;
-      width: var(--sidebery-width) !important;
-    }
-    #sidebar-box:hover {
-      transition: width 150ms;
-      transition-delay: 50ms;
-      background-color: var(--zen-colors-tertiary) !important;
-      border-color: var(--zen-colors-border) !important;
-      width: var(--sidebery-open-width) !important;
-    }
-    #sidebar-box #sidebar-header {
-      display: none !important;
-    }
-    #sidebar-box #sidebar {
-      margin-left: var(--zen-element-separation) !important;
-    }
-  }
-  :root:has(#theme-Sidebery[theme-sidebery-layout=auto-hide]),
-  :root[inFullscreen=true]:has(#theme-Sidebery[theme-sidebery-layout=auto-hide-fs]) {
-    --sidebery-width: var(--sidebery-hidden-width);
-  }
-  :root:has(#theme-Sidebery[theme-sidebery-layout=auto-hide]) #tabbrowser-tabbox,
-  :root[inFullscreen=true]:has(#theme-Sidebery[theme-sidebery-layout=auto-hide-fs]) #tabbrowser-tabbox {
-    --tabbrowser-padding: calc(var(--sidebery-width) + var(--zen-element-separation));
-  }
-  :root:has(#theme-Sidebery[theme-sidebery-layout=auto-hide]) #sidebar-splitter,
-  :root[inFullscreen=true]:has(#theme-Sidebery[theme-sidebery-layout=auto-hide-fs]) #sidebar-splitter {
+  #zen-sidebar-splitter {
     display: none;
   }
-  :root:has(#theme-Sidebery[theme-sidebery-layout=auto-hide]) #sidebar-box,
-  :root[inFullscreen=true]:has(#theme-Sidebery[theme-sidebery-layout=auto-hide-fs]) #sidebar-box {
+}
+@media (-moz-bool-pref: "theme.sidebery.hide-zen-tabbar") and (-moz-bool-pref: "theme.sidebery.compact-view") {
+  #sidebar-box {
+    border-left-width: 0 !important;
+    border-top-left-radius: 0 !important;
+    border-bottom-left-radius: 0 !important;
+  }
+}
+@media (-moz-bool-pref: "theme.sidebery.compact-view") {
+  #tabbrowser-tabbox {
+    --tabbrowser-padding: calc(
+      var(--sidebery-width) + var(--zen-element-separation)
+    );
+  }
+  #sidebar-splitter {
+    display: none;
+  }
+  #sidebar-box {
     z-index: 2;
     position: absolute;
     left: 0 !important;
@@ -98,66 +66,144 @@
     min-width: var(--sidebery-width) !important;
     width: var(--sidebery-width) !important;
   }
-  :root:has(#theme-Sidebery[theme-sidebery-layout=auto-hide]) #sidebar-box:hover,
-  :root[inFullscreen=true]:has(#theme-Sidebery[theme-sidebery-layout=auto-hide-fs]) #sidebar-box:hover {
+  #sidebar-box:hover {
     transition: width 150ms;
     transition-delay: 50ms;
     background-color: var(--zen-colors-tertiary) !important;
     border-color: var(--zen-colors-border) !important;
     width: var(--sidebery-open-width) !important;
   }
-  :root:has(#theme-Sidebery[theme-sidebery-layout=auto-hide]) #sidebar-box #sidebar-header,
-  :root[inFullscreen=true]:has(#theme-Sidebery[theme-sidebery-layout=auto-hide-fs]) #sidebar-box #sidebar-header {
+  #sidebar-box #sidebar-header {
     display: none !important;
   }
-  :root:has(#theme-Sidebery[theme-sidebery-layout=auto-hide]) #sidebar-box #sidebar,
-  :root[inFullscreen=true]:has(#theme-Sidebery[theme-sidebery-layout=auto-hide-fs]) #sidebar-box #sidebar {
+  #sidebar-box #sidebar {
     margin-left: var(--zen-element-separation) !important;
   }
-  :root:has(#theme-Sidebery[theme-sidebery-layout=auto-hide]) #tabbrowser-tabbox,
-  :root[inFullscreen=true]:has(#theme-Sidebery[theme-sidebery-layout=auto-hide-fs]) #tabbrowser-tabbox {
-    --tabbrowser-padding: calc(var(--zen-element-separation) + 2px) !important;
+}
+:root:has(#theme-Sidebery[theme-sidebery-layout="auto-hide"]),
+:root[inFullscreen="true"]:has(
+    #theme-Sidebery[theme-sidebery-layout="auto-hide-fs"]
+  ) {
+  --sidebery-width: var(--sidebery-hidden-width);
+}
+:root:has(#theme-Sidebery[theme-sidebery-layout="auto-hide"])
+  #tabbrowser-tabbox,
+:root[inFullscreen="true"]:has(
+    #theme-Sidebery[theme-sidebery-layout="auto-hide-fs"]
+  )
+  #tabbrowser-tabbox {
+  --tabbrowser-padding: calc(
+    var(--sidebery-width) + var(--zen-element-separation)
+  );
+}
+:root:has(#theme-Sidebery[theme-sidebery-layout="auto-hide"]) #sidebar-splitter,
+:root[inFullscreen="true"]:has(
+    #theme-Sidebery[theme-sidebery-layout="auto-hide-fs"]
+  )
+  #sidebar-splitter {
+  display: none;
+}
+:root:has(#theme-Sidebery[theme-sidebery-layout="auto-hide"]) #sidebar-box,
+:root[inFullscreen="true"]:has(
+    #theme-Sidebery[theme-sidebery-layout="auto-hide-fs"]
+  )
+  #sidebar-box {
+  z-index: 2;
+  position: absolute;
+  left: 0 !important;
+  top: 1px;
+  bottom: 1px;
+  box-shadow: none !important;
+  min-width: var(--sidebery-width) !important;
+  width: var(--sidebery-width) !important;
+}
+:root:has(#theme-Sidebery[theme-sidebery-layout="auto-hide"])
+  #sidebar-box:hover,
+:root[inFullscreen="true"]:has(
+    #theme-Sidebery[theme-sidebery-layout="auto-hide-fs"]
+  )
+  #sidebar-box:hover {
+  transition: width 150ms;
+  transition-delay: 50ms;
+  background-color: var(--zen-colors-tertiary) !important;
+  border-color: var(--zen-colors-border) !important;
+  width: var(--sidebery-open-width) !important;
+}
+:root:has(#theme-Sidebery[theme-sidebery-layout="auto-hide"])
+  #sidebar-box
+  #sidebar-header,
+:root[inFullscreen="true"]:has(
+    #theme-Sidebery[theme-sidebery-layout="auto-hide-fs"]
+  )
+  #sidebar-box
+  #sidebar-header {
+  display: none !important;
+}
+:root:has(#theme-Sidebery[theme-sidebery-layout="auto-hide"])
+  #sidebar-box
+  #sidebar,
+:root[inFullscreen="true"]:has(
+    #theme-Sidebery[theme-sidebery-layout="auto-hide-fs"]
+  )
+  #sidebar-box
+  #sidebar {
+  margin-left: var(--zen-element-separation) !important;
+}
+:root:has(#theme-Sidebery[theme-sidebery-layout="auto-hide"])
+  #tabbrowser-tabbox,
+:root[inFullscreen="true"]:has(
+    #theme-Sidebery[theme-sidebery-layout="auto-hide-fs"]
+  )
+  #tabbrowser-tabbox {
+  --tabbrowser-padding: calc(var(--zen-element-separation) + 2px) !important;
+}
+:root:has(#theme-Sidebery[theme-sidebery-layout="auto-hide"]) #sidebar-box,
+:root[inFullscreen="true"]:has(
+    #theme-Sidebery[theme-sidebery-layout="auto-hide-fs"]
+  )
+  #sidebar-box {
+  opacity: 0;
+}
+:root:has(#theme-Sidebery[theme-sidebery-layout="auto-hide"])
+  #sidebar-box:hover,
+:root[inFullscreen="true"]:has(
+    #theme-Sidebery[theme-sidebery-layout="auto-hide-fs"]
+  )
+  #sidebar-box:hover {
+  opacity: 1;
+}
+:root[inDOMFullscreen="true"] #tabbrowser-tabbox {
+  --zen-element-separation: 0 !important;
+}
+@media (-moz-bool-pref: "browser.tabs.allow_transparent_browser") {
+  window.sidebar-panel,
+  window#webextpanels-window {
+    background-color: transparent !important;
   }
-  :root:has(#theme-Sidebery[theme-sidebery-layout=auto-hide]) #sidebar-box,
-  :root[inFullscreen=true]:has(#theme-Sidebery[theme-sidebery-layout=auto-hide-fs]) #sidebar-box {
-    opacity: 0;
+  #sidebar-box {
+    background-color: transparent !important;
+    border-color: transparent !important;
+    box-shadow: none !important;
   }
-  :root:has(#theme-Sidebery[theme-sidebery-layout=auto-hide]) #sidebar-box:hover,
-  :root[inFullscreen=true]:has(#theme-Sidebery[theme-sidebery-layout=auto-hide-fs]) #sidebar-box:hover {
-    opacity: 1;
+  #sidebar-box #sidebar-header {
+    opacity: 0.75;
+    order: 0;
+    border-style: none !important;
+    border-bottom-style: solid !important;
   }
-  :root[inDOMFullscreen=true] #tabbrowser-tabbox {
-    --zen-element-separation: 0 !important;
+}
+@media (-moz-bool-pref: "theme.sidebery.sidebar-header.bottom-layout") {
+  #sidebar-box #sidebar-header {
+    order: 1;
+    border-style: none !important;
+    border-top-style: solid !important;
   }
-  @media (-moz-bool-pref: 'browser.tabs.allow_transparent_browser') {
-    window.sidebar-panel,
-    window#webextpanels-window {
-      background-color: transparent !important;
-    }
-    #sidebar-box {
-      background-color: transparent !important;
-      border-color: transparent !important;
-      box-shadow: none !important;
-    }
-    #sidebar-box #sidebar-header {
-      opacity: 0.75;
-      order: 0;
-      border-style: none !important;
-      border-bottom-style: solid !important;
-    }
+  #sidebar-box #sidebar-header #sidebar-switcher-arrow {
+    list-style-image: url("chrome://global/skin/icons/arrow-up-12.svg") !important;
   }
-  @media (-moz-bool-pref: 'theme.sidebery.sidebar-header.bottom-layout') {
-    #sidebar-box #sidebar-header {
-      order: 1;
-      border-style: none !important;
-      border-top-style: solid !important;
-    }
-    #sidebar-box #sidebar-header #sidebar-switcher-arrow {
-      list-style-image: url("chrome://global/skin/icons/arrow-up-12.svg") !important;
-    }
+}
+@media (-moz-bool-pref: "theme.sidebery.sidebar-header.hide") {
+  #sidebar-box #sidebar-header {
+    display: none !important;
   }
-  @media (-moz-bool-pref: 'theme.sidebery.sidebar-header.hide') {
-    #sidebar-box #sidebar-header {
-      display: none !important;
-    }
-  }
+}

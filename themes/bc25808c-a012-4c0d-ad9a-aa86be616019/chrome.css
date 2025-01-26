@@ -1,9 +1,8 @@
-
 :root {
-   --sno-colors-border: #e8e8e80f;
-   --sno-colors-border-hover: #3e3e3eb2;
+  --sno-colors-border: #e8e8e80f;
+  --sno-colors-border-hover: #3e3e3eb2;
 
-#urlbar {
+  #urlbar {
     transform-origin: right;
     transition: all 0.2s linear !important;
     --toolbarbutton-border-radius: 10px;
@@ -15,36 +14,38 @@
     overflow: hidden;
     padding: 1px;
   }
-  
+
   #urlbar:hover {
-     border: 1px solid var(--sno-colors-border-hover);
+    border: 1px solid var(--sno-colors-border-hover);
   }
- 
+
   #urlbar[breakout][breakout-extend] {
     top: 10%;
   }
-  
-  #urlbar:is([focused], [open]) > #urlbar-background, #searchbar:focus-within {
-   background: #000000e5;
-  }
 
+  #urlbar:is([focused], [open]) > #urlbar-background,
+  #searchbar:focus-within {
+    background: #000000e5;
+  }
 }
 
-:root:not([inDOMFullscreen='true']):not([chromehidden~='location']):not([chromehidden~='toolbar']) {
+:root:not([inDOMFullscreen="true"]):not([chromehidden~="location"]):not(
+    [chromehidden~="toolbar"]
+  ) {
   & #tabbrowser-tabbox #tabbrowser-tabpanels .browserSidebarContainer {
     width: -moz-available;
     border-radius: var(--zen-webview-border-radius, var(--zen-border-radius));
     transform: translate3d(0, 0, 0);
     position: relative;
 
---uc-tweak-rounded-corners-shadow-color: var(--sno-colors-border);
+    --uc-tweak-rounded-corners-shadow-color: var(--sno-colors-border);
 
---uc-tweak-rounded-corners-shadow:
-      0 0 0 1px var(--uc-tweak-rounded-corners-shadow-color);
+    --uc-tweak-rounded-corners-shadow: 0 0 0 1px
+      var(--uc-tweak-rounded-corners-shadow-color);
 
-box-shadow: var(--uc-tweak-rounded-corners-shadow) !important;
+    box-shadow: var(--uc-tweak-rounded-corners-shadow) !important;
 
-/* Use pseudo element overlay to simulate rounded corners, similar to the
+    /* Use pseudo element overlay to simulate rounded corners, similar to the
      * tab corners, fixes bug with backdrop-filter. */
     &::after {
       content: "";

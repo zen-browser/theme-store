@@ -1,26 +1,26 @@
 [
-    {
-        "property": "uc.theme.comptitle-one-char-title.enabled",
-        "label": "Shorter title (1 character)",
-        "type": "checkbox",
-        "disabledOn": []
-    },
-    {
-        "property": "uc.theme.comptitle-three-char-title.enabled",
-        "label": "Longer title (3 characters)",
-        "type": "checkbox",
-        "disabledOn": []
-    },
-    {
-        "property": "uc.theme.comptitle-enable-pinned.enabled",
-        "label": "Enable in pinned tabs",
-        "type": "checkbox",
-        "disabledOn": []
-    },
-    {
-        "property": "uc.theme.comptitle-default-text.enabled",
-        "label": "More contrast-y text, may be harder to look at",
-        "type": "checkbox",
-        "disabledOn": []
-    }
+  {
+    "property": "uc.theme.comptitle-one-char-title.enabled",
+    "label": "Shorter title (1 character)",
+    "type": "checkbox",
+    "disabledOn": []
+  },
+  {
+    "property": "uc.theme.comptitle-three-char-title.enabled",
+    "label": "Longer title (3 characters)",
+    "type": "checkbox",
+    "disabledOn": []
+  },
+  {
+    "property": "uc.theme.comptitle-enable-pinned.enabled",
+    "label": "Enable in pinned tabs",
+    "type": "checkbox",
+    "disabledOn": []
+  },
+  {
+    "property": "uc.theme.comptitle-default-text.enabled",
+    "label": "More contrast-y text, may be harder to look at",
+    "type": "checkbox",
+    "disabledOn": []
+  }
 ]

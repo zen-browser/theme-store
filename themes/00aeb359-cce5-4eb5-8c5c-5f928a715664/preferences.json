@@ -1,14 +1,14 @@
 [
-    {
-        "property": "z0.catto.nyancats",
-        "label": "Enable Nyan Cat and friends.",
-        "type": "checkbox",
-        "defaultValue": true
-    },
-    {
-        "property": "z0.catto.bongocat",
-        "label": "Enable Bongocat at the top.",
-        "type": "checkbox",
-        "defaultValue": false
-    }
+  {
+    "property": "z0.catto.nyancats",
+    "label": "Enable Nyan Cat and friends.",
+    "type": "checkbox",
+    "defaultValue": true
+  },
+  {
+    "property": "z0.catto.bongocat",
+    "label": "Enable Bongocat at the top.",
+    "type": "checkbox",
+    "defaultValue": false
+  }
 ]

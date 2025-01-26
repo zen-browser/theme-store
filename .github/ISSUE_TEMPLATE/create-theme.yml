@@ -47,7 +47,7 @@ body:
     attributes:
       label: Theme Styles
       render: css
-      
+
       description: The CSS styles for the theme. If the theme is a color theme, the styles should be a JSON object with the color values.
       placeholder: |
         /* Remember to strip @-moz-document url-prefix('chrome://') {... */

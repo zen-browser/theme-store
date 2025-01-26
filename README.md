@@ -11,10 +11,10 @@
 
 To submit a theme, please follow these steps:
 
-* Open an issue in [this template](https://github.com/zen-browser/theme-store/issues/new?assignees=&labels=new-theme&projects=&template=create-theme.yml&title=%5Bcreate-theme%5D%3A+) with the title `[create-theme]: <theme-name>`
-* Fill out the template with the necessary information
-* Submit the issue
-* Let us take care of the rest!
+- Open an issue in [this template](https://github.com/zen-browser/theme-store/issues/new?assignees=&labels=new-theme&projects=&template=create-theme.yml&title=%5Bcreate-theme%5D%3A+) with the title `[create-theme]: <theme-name>`
+- Fill out the template with the necessary information
+- Submit the issue
+- Let us take care of the rest!
 
 ## Important notice
 
@@ -24,10 +24,10 @@ To submit a theme, please follow these steps:
 
 To update a theme, please follow these steps:
 
-* Create a new pull request with the updated theme
-* Make sure to include the theme name in the title
-* Submit the pull request
-* Let us take care of the rest!
+- Create a new pull request with the updated theme
+- Make sure to include the theme name in the title
+- Submit the pull request
+- Let us take care of the rest!
 
 > This applied to any other actions you want to take with the themes in this repository, such as deleting a theme.
 

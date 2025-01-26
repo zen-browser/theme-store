@@ -1,4 +1,3 @@
-
 # Zen Sidebar At Right Side
 
 Pin or float the **Zen Sidebar** at the right side.

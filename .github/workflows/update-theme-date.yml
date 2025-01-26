@@ -5,7 +5,7 @@ on:
     branches:
       - main
     paths:
-      - 'themes/**'
+      - "themes/**"
 
 jobs:
   update-timestamp:
@@ -24,7 +24,7 @@ jobs:
       - name: Set up Python
         uses: actions/setup-python@v2
         with:
-          python-version: '3.x'
+          python-version: "3.x"
 
       - name: Detect changed themes
         id: get_changes
@@ -35,7 +35,7 @@ jobs:
       - name: Setup python modules
         run: |
           pip3 install requests
-  
+
       - name: Setup Git
         run: |
           git config --global user.name "github-actions[bot]"

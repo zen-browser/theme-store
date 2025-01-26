@@ -1,8 +1,8 @@
 {
-    "isDarkMode": true,
-    "primaryColor": "#ebdbb2",
-    "secondaryColor": "#504945",
-    "tertiaryColor": "#1d2021",
-    "colorsBorder": "#504945",
-    "dialogBg": "#1d2021"
+  "isDarkMode": true,
+  "primaryColor": "#ebdbb2",
+  "secondaryColor": "#504945",
+  "tertiaryColor": "#1d2021",
+  "colorsBorder": "#504945",
+  "dialogBg": "#1d2021"
 }

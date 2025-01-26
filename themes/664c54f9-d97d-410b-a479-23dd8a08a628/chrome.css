@@ -1,4 +1,3 @@
-
 @media (-moz-bool-pref: "zen.tabs.vertical") {
   /* Tab Borders Based on Preference */
   .tabbrowser-tab:not([pinned]):is([multiselected="true"], [selected]) {
@@ -24,7 +23,7 @@
     }
   }
 
-/* Background Modification for Selected Tab */
+  /* Background Modification for Selected Tab */
   #tabbrowser-tabs {
     & .tabbrowser-tab {
       &[selected] .tab-background {
@@ -37,7 +36,7 @@
     }
   }
 
-/* Dimming Tab Text When Unloaded */
+  /* Dimming Tab Text When Unloaded */
   @media (-moz-bool-pref: "uc.tabs.dim_unloaded") {
     #tabbrowser-tabs {
       & .tabbrowser-tab {

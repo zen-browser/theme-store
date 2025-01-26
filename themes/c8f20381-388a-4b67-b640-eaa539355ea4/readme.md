@@ -1,4 +1,3 @@
-
 # Right On Hover Sidebar
 
 Web Panels sidebar that popups on hover on the right (like compact mode)

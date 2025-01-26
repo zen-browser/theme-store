@@ -3,18 +3,25 @@
   #urlbar {
     border-radius: 20px !important;
   }
-          
+
   #notification-popup-box {
     border-radius: 20px !important;
   }
-        
+
   /* Border radius on hover */
-  #urlbar .urlbar-page-action, #urlbar #tracking-protection-icon-container, #urlbar:not([breakout-extend="true"]) #identity-box:is(:not(.chromeUI), [pageproxystate="invalid"]) #identity-icon-box {
-    border-radius: 20px !important;;
+  #urlbar .urlbar-page-action,
+  #urlbar #tracking-protection-icon-container,
+  #urlbar:not([breakout-extend="true"])
+    #identity-box:is(:not(.chromeUI), [pageproxystate="invalid"])
+    #identity-icon-box {
+    border-radius: 20px !important;
   }
-        
+
   /* Border radius of boxes on the left */
-  #identity-box:has(#identity-permission-box:is([hasPermissions], [hasSharingIcon])):not([pageproxystate="invalid"]) #identity-icon-box {
+  #identity-box:has(
+      #identity-permission-box:is([hasPermissions], [hasSharingIcon])
+    ):not([pageproxystate="invalid"])
+    #identity-icon-box {
     border-top-left-radius: 20px !important;
     border-bottom-left-radius: 20px !important;
     border-top-right-radius: 0 !important;
@@ -22,7 +29,9 @@
   }
 
   /* Extensions or similar */
-  #urlbar:not([breakout-extend="true"]) #identity-box.chromeUI:not([pageproxystate="invalid"]) #identity-icon-box {
+  #urlbar:not([breakout-extend="true"])
+    #identity-box.chromeUI:not([pageproxystate="invalid"])
+    #identity-icon-box {
     border-radius: 20px 20px 20px 20px !important;
   }
 }
@@ -30,25 +39,33 @@
 /* Centers the url text when enabled in dropdown: 1.Option: Centers the text unless url bar is focused; 2.Option: Centers the text always*/
 :root:has(#theme-Super-Url-Bar[uc-urltext-center="normal"]) {
   #urlbar:not([focused]) .urlbar-input {
-    text-align: center !important; 
+    text-align: center !important;
   }
 }
 :root:has(#theme-Super-Url-Bar[uc-urltext-center="advanced"]) {
   #urlbar .urlbar-input {
-    text-align: center !important; 
+    text-align: center !important;
   }
 }
 
 @media (-moz-bool-pref: "uc.urlbar.move-icon-into") {
   #page-action-buttons {
-    margin-right: calc(var(--urlbar-min-height) - 1px - 4 * var(--urlbar-container-padding)) !important;
+    margin-right: calc(
+      var(--urlbar-min-height) - 1px - 4 * var(--urlbar-container-padding)
+    ) !important;
   }
-  
-  #urlbar-container+.chromeclass-toolbar-additional {
-    margin-inline-start: calc(-21px - 2 * var(--urlbar-icon-padding) - var(--urlbar-margin-inline)) !important;
+
+  #urlbar-container + .chromeclass-toolbar-additional {
+    margin-inline-start: calc(
+      -21px - 2 * var(--urlbar-icon-padding) - var(--urlbar-margin-inline)
+    ) !important;
     position: relative;
     --toolbarbutton-inner-padding: var(--urlbar-icon-padding);
-    --toolbarbutton-hover-background: color-mix(in srgb, var(--uc-urlbar-custom-bg-color) 90%, light-dark(black, white)) !important;
+    --toolbarbutton-hover-background: color-mix(
+      in srgb,
+      var(--uc-urlbar-custom-bg-color) 90%,
+      light-dark(black, white)
+    ) !important;
   }
 }
 
@@ -69,54 +86,77 @@
   --blur-intensity: 6px;
 }
 
-:root:has(#theme-Super-Url-Bar[uc-urlbar-blur-intensity="Subtle"],
-          #theme-Super-Url-Bar[uc-urlbar-blur-intensity="Normal"],
-          #theme-Super-Url-Bar[uc-urlbar-blur-intensity="RatherStrong"],
-          #theme-Super-Url-Bar[uc-urlbar-blur-intensity="Strong"],
-          #theme-Super-Url-Bar[uc-urlbar-blur-intensity="ReallyStrong"]:not([inDOMFullscreen='true']):not([chromehidden~='location']):not([chromehidden~='toolbar'])) {
-  #urlbar:is([breakout][breakout-extend], [breakout][usertyping][focused]):after {
+:root:has(
+    #theme-Super-Url-Bar[uc-urlbar-blur-intensity="Subtle"],
+    #theme-Super-Url-Bar[uc-urlbar-blur-intensity="Normal"],
+    #theme-Super-Url-Bar[uc-urlbar-blur-intensity="RatherStrong"],
+    #theme-Super-Url-Bar[uc-urlbar-blur-intensity="Strong"],
+    #theme-Super-Url-Bar[uc-urlbar-blur-intensity="ReallyStrong"]:not(
+        [inDOMFullscreen="true"]
+      ):not([chromehidden~="location"]):not([chromehidden~="toolbar"])
+  ) {
+  #urlbar:is(
+      [breakout][breakout-extend],
+      [breakout][usertyping][focused]
+    ):after {
     content: "";
     position: fixed;
     pointer-events: none;
-  
+
     width: 200vw;
     height: 100vh;
-  
+
     top: 0px;
     left: -50px;
-  
+
     background-color: rgba(0, 0, 0, 0.3);
     backdrop-filter: blur(var(--blur-intensity));
-  
+
     z-index: -1;
   }
 }
 
 /* Custom Colors for Url Bar */
 :root:has(#theme-Super-Url-Bar[uc-urlbar-custom-bg-color-mode="noFocus"]) {
-    #urlbar:not([focused="true"]):not([breakout-extend="true"]) > #urlbar-background {
-        background: var(--uc-urlbar-custom-bg-color) !important;
-    }
+  #urlbar:not([focused="true"]):not([breakout-extend="true"])
+    > #urlbar-background {
+    background: var(--uc-urlbar-custom-bg-color) !important;
+  }
 }
 :root:has(#theme-Super-Url-Bar[uc-urlbar-custom-bg-color-mode="Focus"]) {
-    #urlbar:is([focused], [open]) > #urlbar-background {
-        background: var(--uc-urlbar-custom-bg-color) !important;
-    }
+  #urlbar:is([focused], [open]) > #urlbar-background {
+    background: var(--uc-urlbar-custom-bg-color) !important;
+  }
 }
 :root:has(#theme-Super-Url-Bar[uc-urlbar-custom-bg-color-mode="AlwaysColor"]) {
-    #urlbar-background {
-        background: var(--uc-urlbar-custom-bg-color) !important;
-    }
+  #urlbar-background {
+    background: var(--uc-urlbar-custom-bg-color) !important;
+  }
 }
 
-:root:has(#theme-Super-Url-Bar[uc-urlbar-custom-bg-color-mode="AlwaysColor"],
-          #theme-Super-Url-Bar[uc-urlbar-custom-bg-color-mode="noFocus"]) {
-  #identity-icon-box, #identity-permission-box {
-    background-color: color-mix(in srgb, var(--uc-urlbar-custom-bg-color) 90%, light-dark(black, white)) !important;
+:root:has(
+    #theme-Super-Url-Bar[uc-urlbar-custom-bg-color-mode="AlwaysColor"],
+    #theme-Super-Url-Bar[uc-urlbar-custom-bg-color-mode="noFocus"]
+  ) {
+  #identity-icon-box,
+  #identity-permission-box {
+    background-color: color-mix(
+      in srgb,
+      var(--uc-urlbar-custom-bg-color) 90%,
+      light-dark(black, white)
+    ) !important;
   }
-  #tracking-protection-icon-container, .urlbar-page-action, #picture-in-picture-button, #reader-mode-button, #zen-split-views-box {
+  #tracking-protection-icon-container,
+  .urlbar-page-action,
+  #picture-in-picture-button,
+  #reader-mode-button,
+  #zen-split-views-box {
     &:hover:not([open="true"]) {
-      background-color: color-mix(in srgb, var(--uc-urlbar-custom-bg-color) 90%, light-dark(black, white)) !important;
+      background-color: color-mix(
+        in srgb,
+        var(--uc-urlbar-custom-bg-color) 90%,
+        light-dark(black, white)
+      ) !important;
     }
   }
 }
@@ -153,7 +193,6 @@
   }
 }
 @media (-moz-bool-pref: "uc.urlbar.icon.show-on-hover") {
-
   :root {
     --position-var: relative;
     --pointer-events: all;
@@ -163,31 +202,33 @@
     #urlbar:hover #urlbar-zoom-button {
       position: relative;
       opacity: 1;
-    } 
+    }
   }
   @media (-moz-bool-pref: "uc.urlbar.icon.shield.removed") {
-    #urlbar:hover #tracking-protection-icon-container, #tracking-protection-icon-container[open="true"] {
+    #urlbar:hover #tracking-protection-icon-container,
+    #tracking-protection-icon-container[open="true"] {
       position: relative;
       opacity: 1;
-    } 
+    }
   }
   @media (-moz-bool-pref: "uc.urlbar.icon.bookmark.removed") {
-    #urlbar:hover #star-button-box, #star-button-box[open="true"] {
+    #urlbar:hover #star-button-box,
+    #star-button-box[open="true"] {
       position: relative;
       opacity: 1;
-    } 
+    }
   }
   @media (-moz-bool-pref: "uc.urlbar.icon.reader-mode.removed") {
     #urlbar:hover #reader-mode-button {
       position: relative;
       opacity: 1;
-    } 
+    }
   }
   @media (-moz-bool-pref: "uc.urlbar.icon.pip.removed") {
     #urlbar:hover #picture-in-picture-button {
       position: relative;
       opacity: 1;
-    } 
+    }
   }
   @media (-moz-bool-pref: "uc.urlbar.icon.split-view.removed") {
     #urlbar:hover #zen-split-views-box {
@@ -199,7 +240,7 @@
     #urlbar:hover #identity-box {
       position: relative;
       opacity: 1;
-    } 
+    }
   }
 }
 
@@ -209,7 +250,9 @@
     opacity: 0;
     pointer-events: var(--pointer-events) !important;
     position: var(--position-var);
-    transition: 100ms linear, opacity 200ms linear;
+    transition:
+      100ms linear,
+      opacity 200ms linear;
   }
 }
 @media (-moz-bool-pref: "uc.urlbar.icon.shield.removed") {
@@ -217,7 +260,9 @@
     opacity: 0;
     pointer-events: var(--pointer-events) !important;
     position: var(--position-var);
-    transition: 100ms linear, opacity 200ms linear;
+    transition:
+      100ms linear,
+      opacity 200ms linear;
   }
 }
 @media (-moz-bool-pref: "uc.urlbar.icon.bookmark.removed") {
@@ -225,7 +270,9 @@
     opacity: 0;
     pointer-events: var(--pointer-events) !important;
     position: var(--position-var);
-    transition: 100ms linear, opacity 200ms linear;
+    transition:
+      100ms linear,
+      opacity 200ms linear;
   }
 }
 @media (-moz-bool-pref: "uc.urlbar.icon.reader-mode.removed") {
@@ -233,7 +280,9 @@
     opacity: 0;
     pointer-events: var(--pointer-events) !important;
     position: var(--position-var);
-    transition: 100ms linear, opacity 200ms linear;
+    transition:
+      100ms linear,
+      opacity 200ms linear;
   }
 }
 @media (-moz-bool-pref: "uc.urlbar.icon.pip.removed") {
@@ -241,7 +290,9 @@
     opacity: 0;
     pointer-events: var(--pointer-events) !important;
     position: var(--position-var);
-    transition: 100ms linear, opacity 200ms linear;
+    transition:
+      100ms linear,
+      opacity 200ms linear;
   }
 }
 @media (-moz-bool-pref: "uc.urlbar.icon.split-view.removed") {
@@ -249,7 +300,9 @@
     opacity: 0;
     pointer-events: var(--pointer-events) !important;
     position: var(--position-var);
-    transition: 100ms linear, opacity 200ms linear;
+    transition:
+      100ms linear,
+      opacity 200ms linear;
   }
 }
 @media (-moz-bool-pref: "uc.urlbar.icon.left-side.removed") {
@@ -257,6 +310,8 @@
     opacity: 0;
     pointer-events: var(--pointer-events) !important;
     position: var(--position-var);
-    transition: 100ms linear, opacity 200ms linear;
+    transition:
+      100ms linear,
+      opacity 200ms linear;
   }
 }

@@ -1,6 +1,5 @@
-
 #downloads-indicator-progress-outer::after {
-  content: '';
+  content: "";
   display: block;
   position: absolute;
   inset: 0;

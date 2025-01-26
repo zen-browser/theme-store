@@ -1,7 +1,7 @@
 {
-    "isDarkMode": true,
-    "primaryColor": "#24273a",
-    "secondaryColor": "#1e2030",
-    "tertiaryColor": "#181926",
-    "colorsBorder": "#363a4f"
+  "isDarkMode": true,
+  "primaryColor": "#24273a",
+  "secondaryColor": "#1e2030",
+  "tertiaryColor": "#181926",
+  "colorsBorder": "#363a4f"
 }

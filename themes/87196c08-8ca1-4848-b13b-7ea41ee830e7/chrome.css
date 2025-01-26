@@ -1,45 +1,44 @@
-
 #tab-preview-panel {
-	/* Removes default background color of panel, below tab title */
-	--panel-background: none !important;
+  /* Removes default background color of panel, below tab title */
+  --panel-background: none !important;
 
-/* Removes shadow in the margin area (dunno if actually does something, or it's just my imagination) */
-	--panel-shadow-margin: none !important;
+  /* Removes shadow in the margin area (dunno if actually does something, or it's just my imagination) */
+  --panel-shadow-margin: none !important;
 
-/* Removes border between tab title & tab preview image */
-	--arrowpanel-border-color: transparent;
+  /* Removes border between tab title & tab preview image */
+  --arrowpanel-border-color: transparent;
 
-/* Matches Zen main background color, also supports gradients */
-	background: var(--zen-main-browser-background) !important;
+  /* Matches Zen main background color, also supports gradients */
+  background: var(--zen-main-browser-background) !important;
 
-/* Matches Zen panel radius */
-	border-radius: var(--zen-panel-radius);
+  /* Matches Zen panel radius */
+  border-radius: var(--zen-panel-radius);
 
-/* Shifts panel to the slightly right */
-	/* TODO: Make customizable */
-	margin-left: 0.5em !important;
+  /* Shifts panel to the slightly right */
+  /* TODO: Make customizable */
+  margin-left: 0.5em !important;
 }
 
 .tab-preview-thumbnail-container {
-	/* Fixes proper tab preview image sizing */
-	&:has(canvas) {
-		/* TODO: Make optional */
-		padding: var(--zen-element-separation);
+  /* Fixes proper tab preview image sizing */
+  &:has(canvas) {
+    /* TODO: Make optional */
+    padding: var(--zen-element-separation);
 
-/* Hide border above preview */
-		border-top: none !important;
+    /* Hide border above preview */
+    border-top: none !important;
 
-/* Shrink preview to match added padding */
-		/* TODO: Make optional with padding as well */
-		width: calc(var(--panel-width) - (var(--zen-element-separation) * 2)) px !important;
-		height: unset !important;
+    /* Shrink preview to match added padding */
+    /* TODO: Make optional with padding as well */
+    width: calc(var(--panel-width) - (var(--zen-element-separation) * 2)) px !important;
+    height: unset !important;
 
-/* Some safety code to maintain aspect ratio */
-		aspect-ratio: 2 / 1 !important;
-	}
+    /* Some safety code to maintain aspect ratio */
+    aspect-ratio: 2 / 1 !important;
+  }
 
-canvas {
-		/* Makes tab preview image rounded */
-		border-radius: var(--zen-panel-radius) !important;
-	}
+  canvas {
+    /* Makes tab preview image rounded */
+    border-radius: var(--zen-panel-radius) !important;
+  }
 }

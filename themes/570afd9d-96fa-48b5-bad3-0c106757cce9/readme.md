@@ -1,9 +1,9 @@
-
 # Super Sleek UI Theme for Zen Browser
 
 A sleek & minimalistic UI with grid-style quick access, smaller navbar, no border padding & more.
 
 Features:
+
 - Added: Grid-style quick access shortcuts to search bar.
 - Added: Pop-out effect & slight background blur when search bar in focus.
 - Modified: Smaller navbar.

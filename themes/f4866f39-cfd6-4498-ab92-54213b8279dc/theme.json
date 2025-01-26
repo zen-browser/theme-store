@@ -1,14 +1,14 @@
 {
-    "id": "f4866f39-cfd6-4498-ab92-54213b8279dc",
-    "name": "Animations Plus",
-    "description": "A nice animation pack for Zen Browser",
-    "homepage": "https://github.com/Anoms12/Animations-plus",
-    "style": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/f4866f39-cfd6-4498-ab92-54213b8279dc/chrome.css",
-    "readme": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/f4866f39-cfd6-4498-ab92-54213b8279dc/readme.md",
-    "image": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/f4866f39-cfd6-4498-ab92-54213b8279dc/image.png",
-    "author": "Anoms12",
-    "version": "1.0.0",
-    "tags": [],
-    "createdAt": "2024-12-01",
-    "updatedAt": "2025-01-14"
+  "id": "f4866f39-cfd6-4498-ab92-54213b8279dc",
+  "name": "Animations Plus",
+  "description": "A nice animation pack for Zen Browser",
+  "homepage": "https://github.com/Anoms12/Animations-plus",
+  "style": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/f4866f39-cfd6-4498-ab92-54213b8279dc/chrome.css",
+  "readme": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/f4866f39-cfd6-4498-ab92-54213b8279dc/readme.md",
+  "image": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/f4866f39-cfd6-4498-ab92-54213b8279dc/image.png",
+  "author": "Anoms12",
+  "version": "1.0.0",
+  "tags": [],
+  "createdAt": "2024-12-01",
+  "updatedAt": "2025-01-14"
 }

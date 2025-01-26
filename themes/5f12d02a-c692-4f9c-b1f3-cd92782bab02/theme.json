@@ -1,15 +1,15 @@
 {
-    "id": "5f12d02a-c692-4f9c-b1f3-cd92782bab02",
-    "name": "Winter Spirit",
-    "description": "Adds an animated snowflake overlay",
-    "homepage": "https://github.com/Kaedriz/ZenMods/tree/main/WinterSpirit",
-    "style": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/5f12d02a-c692-4f9c-b1f3-cd92782bab02/chrome.css",
-    "readme": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/5f12d02a-c692-4f9c-b1f3-cd92782bab02/readme.md",
-    "image": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/5f12d02a-c692-4f9c-b1f3-cd92782bab02/image.png",
-    "author": "Kaedriz",
-    "version": "1.0.0",
-    "tags": [],
-    "createdAt": "2024-12-24",
-    "updatedAt": "2024-12-27",
-    "preferences": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/5f12d02a-c692-4f9c-b1f3-cd92782bab02/preferences.json"
+  "id": "5f12d02a-c692-4f9c-b1f3-cd92782bab02",
+  "name": "Winter Spirit",
+  "description": "Adds an animated snowflake overlay",
+  "homepage": "https://github.com/Kaedriz/ZenMods/tree/main/WinterSpirit",
+  "style": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/5f12d02a-c692-4f9c-b1f3-cd92782bab02/chrome.css",
+  "readme": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/5f12d02a-c692-4f9c-b1f3-cd92782bab02/readme.md",
+  "image": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/5f12d02a-c692-4f9c-b1f3-cd92782bab02/image.png",
+  "author": "Kaedriz",
+  "version": "1.0.0",
+  "tags": [],
+  "createdAt": "2024-12-24",
+  "updatedAt": "2024-12-27",
+  "preferences": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/5f12d02a-c692-4f9c-b1f3-cd92782bab02/preferences.json"
 }

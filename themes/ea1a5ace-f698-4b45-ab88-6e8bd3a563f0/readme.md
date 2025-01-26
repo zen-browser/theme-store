@@ -1,5 +1,5 @@
-
 This theme contains a few small tweaks to the bookmarks toolbar:
+
 - Center the toolbar
 - Hide bookmark or bookmark folder icons
 - Expand the toolbar on hover or search (only works with bookmarks toolbar enabled)

@@ -1,2 +1,1 @@
-
 Choose your custom cursor!

@@ -1,4 +1,3 @@
-
 #zen-workspaces-button {
   border-radius: 8px !important;
   box-sizing: border-box;
@@ -6,7 +5,9 @@
   width: 34px !important;
   border-width: 1px;
   aspect-ratio: 1 / 1;
-  transition: min-width 100ms ease-out, max-width 100ms ease-out;
+  transition:
+    min-width 100ms ease-out,
+    max-width 100ms ease-out;
   font-weight: 500;
 }
 

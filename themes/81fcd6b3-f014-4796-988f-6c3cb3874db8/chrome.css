@@ -12,23 +12,70 @@
 
 /* Hide all icons (Won't work for extension & checkbox context menu options) */
 @media (-moz-bool-pref: "uc.hidecontext.optionicons") {
-   :not(:not(menubar) > menu, #ContentSelectDropdown) > menupopup > menuitem:not(.menuitem-iconic, [type="checkbox"], [type="radio"], .in-menulist, .in-menulist menuitem, .unified-nav-current), :not(:not(menubar) > menu, #ContentSelectDropdown) > menupopup > menu:not(.menu-iconic, [type="checkbox"], [type="radio"], .in-menulist, .in-menulist menu, .unified-nav-current), :not(:not(menubar) > menu, #ContentSelectDropdown) > menupopup > menucaption {
-     padding-inline-start: var(--fp-contextmenu-menuicon-margin-inline) !important;
-   }
-  :not(:not(menubar) > menu, #ContentSelectDropdown) > menupopup > menuitem:not(.menuitem-iconic, [type="checkbox"], [type="radio"], .in-menulist, .in-menulist menuitem, .unified-nav-current), :not(:not(menubar) > menu, #ContentSelectDropdown) > menupopup > menu:not(.menu-iconic, [type="checkbox"], [type="radio"], .in-menulist, .in-menulist menu, .unified-nav-current), #toggle_toolbar-menubar, #PanelUI-history toolbarbutton, #unified-extensions-context-menu menuitem {
-    background-image: none !important;
-  } 
-}
-  
-@media (-moz-bool-pref: "uc.fixcontext.extensionmargins") {
-/* Fix padding for extensions-related context menu on Windows */
-  menu > .menu-iconic-text, menuitem > .menu-iconic-text {
-    padding-inline-start: calc(var(--fp-contextmenu-menuicon-margin-inline) - 10px) !important;
+  :not(:not(menubar) > menu, #ContentSelectDropdown)
+    > menupopup
+    > menuitem:not(
+      .menuitem-iconic,
+      [type="checkbox"],
+      [type="radio"],
+      .in-menulist,
+      .in-menulist menuitem,
+      .unified-nav-current
+    ),
+  :not(:not(menubar) > menu, #ContentSelectDropdown)
+    > menupopup
+    > menu:not(
+      .menu-iconic,
+      [type="checkbox"],
+      [type="radio"],
+      .in-menulist,
+      .in-menulist menu,
+      .unified-nav-current
+    ),
+  :not(:not(menubar) > menu, #ContentSelectDropdown) > menupopup > menucaption {
+    padding-inline-start: var(
+      --fp-contextmenu-menuicon-margin-inline
+    ) !important;
   }
-/* Fix padding for "Tabs on the right" & "Compact Mode" options on Windows */
+  :not(:not(menubar) > menu, #ContentSelectDropdown)
+    > menupopup
+    > menuitem:not(
+      .menuitem-iconic,
+      [type="checkbox"],
+      [type="radio"],
+      .in-menulist,
+      .in-menulist menuitem,
+      .unified-nav-current
+    ),
+  :not(:not(menubar) > menu, #ContentSelectDropdown)
+    > menupopup
+    > menu:not(
+      .menu-iconic,
+      [type="checkbox"],
+      [type="radio"],
+      .in-menulist,
+      .in-menulist menu,
+      .unified-nav-current
+    ),
+  #toggle_toolbar-menubar,
+  #PanelUI-history toolbarbutton,
+  #unified-extensions-context-menu menuitem {
+    background-image: none !important;
+  }
+}
+
+@media (-moz-bool-pref: "uc.fixcontext.extensionmargins") {
+  /* Fix padding for extensions-related context menu on Windows */
+  menu > .menu-iconic-text,
+  menuitem > .menu-iconic-text {
+    padding-inline-start: calc(
+      var(--fp-contextmenu-menuicon-margin-inline) - 10px
+    ) !important;
+  }
+  /* Fix padding for "Tabs on the right" & "Compact Mode" options on Windows */
   menuitem[checked="true"] > .menu-iconic-text {
     padding-inline-start: 10px !important;
-  } 
+  }
   #zen-toolbar-context-tabs-right {
     padding-inline-start: 34px !important;
   }
@@ -36,19 +83,26 @@
     padding-inline-start: 8px !important;
   }
   #zen-context-menu-compact-mode {
-    padding-inline-start: calc( var(--fp-contextmenu-menuitem-padding-inline) + 18px + var(--fp-contextmenu-menuicon-margin-inline) ) !important;
+    padding-inline-start: calc(
+      var(--fp-contextmenu-menuitem-padding-inline) + 18px +
+        var(--fp-contextmenu-menuicon-margin-inline)
+    ) !important;
   }
-  #zen-context-menu-compact-mode-hide-sidebar, #zen-context-menu-compact-mode-hide-toolbar, #zen-context-menu-compact-mode-hide-both {
+  #zen-context-menu-compact-mode-hide-sidebar,
+  #zen-context-menu-compact-mode-hide-toolbar,
+  #zen-context-menu-compact-mode-hide-both {
     padding-inline-start: 40px !important;
   }
-  #zen-context-menu-compact-mode-hide-sidebar[checked="true"], #zen-context-menu-compact-mode-hide-toolbar[checked="true"], #zen-context-menu-compact-mode-hide-both[checked="true"] {
-    padding-inline-start: 16px !important; 
+  #zen-context-menu-compact-mode-hide-sidebar[checked="true"],
+  #zen-context-menu-compact-mode-hide-toolbar[checked="true"],
+  #zen-context-menu-compact-mode-hide-both[checked="true"] {
+    padding-inline-start: 16px !important;
     & .menu-iconic-text {
       padding-inline-start: 2px !important;
     }
   }
 }
-  
+
 /* Only use “Copy Link Without Site Tracking” */
 @media (-moz-bool-pref: "uc.hidecontext.copylink") {
   #context-copylink {
@@ -63,7 +117,7 @@
 }
 /* Hide "Bookmark Tab/Link” */
 @media (-moz-bool-pref: "uc.hidecontext.bookmark") {
-  #toolbar-context-bookmarkSelectedTab, 
+  #toolbar-context-bookmarkSelectedTab,
   #toolbar-context-bookmarkSelectedTabs,
   #context_bookmarkTab,
   #context-bookmarklink {
@@ -106,8 +160,8 @@
 }
 /* Hide close tab options (Close Tabs, Close Duplicate Tabs, Close Multiple Tabs) */
 @media (-moz-bool-pref: "uc.hidecontext.closetab") {
-  #context_closeTab, 
-  #context_closeDuplicateTabs, 
+  #context_closeTab,
+  #context_closeDuplicateTabs,
   #context_closeTabOptions {
     display: none !important;
   }

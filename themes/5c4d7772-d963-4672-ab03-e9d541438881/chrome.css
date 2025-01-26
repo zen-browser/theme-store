@@ -1,4 +1,3 @@
-
 .tab-icon-overlay {
   opacity: 1 !important;
   margin: initial !important;
@@ -20,7 +19,7 @@
 }
 
 /* Hide sound labels */
-.tab-icon-sound-label, 
+.tab-icon-sound-label,
 .tab-icon-sound-playing-label {
   display: none !important;
 }

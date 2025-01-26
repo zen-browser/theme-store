@@ -1,150 +1,158 @@
 .tab-background {
-    transition: background-color 0.4s ease, box-shadow 0.4s ease, background 0.5s ease !important;
+  transition:
+    background-color 0.4s ease,
+    box-shadow 0.4s ease,
+    background 0.5s ease !important;
 }
 
 .tab-group-label-container {
-    transition: background-color 0.4s ease, box-shadow 0.4s ease, background 0.5s ease !important;
+  transition:
+    background-color 0.4s ease,
+    box-shadow 0.4s ease,
+    background 0.5s ease !important;
 }
-
 
 .toolbarbutton-1 {
-
-    &:hover > :is(.toolbarbutton-icon, .toolbarbutton-text, .toolbarbutton-badge-stack) {
-      transition: background-color 0.3s ease-in-out, 
-                  outline-color 0.3s ease-in-out; /* Smooth transition */
-    }
-    
-    > :is(.toolbarbutton-icon, .toolbarbutton-text, .toolbarbutton-badge-stack) {
-      transition: background-color 0.3s ease-in-out, 
-                  outline-color 0.3s ease-in-out;
-    }
+  &:hover
+    > :is(
+      .toolbarbutton-icon,
+      .toolbarbutton-text,
+      .toolbarbutton-badge-stack
+    ) {
+    transition:
+      background-color 0.3s ease-in-out,
+      outline-color 0.3s ease-in-out; /* Smooth transition */
   }
+
+  > :is(.toolbarbutton-icon, .toolbarbutton-text, .toolbarbutton-badge-stack) {
+    transition:
+      background-color 0.3s ease-in-out,
+      outline-color 0.3s ease-in-out;
+  }
+}
 
 .identity-box-button {
-  transition: background-color 0.3s ease-in-out, 
-              outline-color 1.3s ease-in-out;
+  transition:
+    background-color 0.3s ease-in-out,
+    outline-color 1.3s ease-in-out;
 }
-
-
-
 
 /* Apply transition to urlbar controls, this is what I found worked...*/
-#reader-mode-button, 
-#star-button-box, 
-#zen-split-views-box, 
-#pageActionButton, 
-#urlbar-zoom-button, 
-#shopping-sidebar-button, 
-#translations-button, 
-#picture-in-picture-button, 
-#page-action-buttons, 
-#urlbar-go-button, 
+#reader-mode-button,
+#star-button-box,
+#zen-split-views-box,
+#pageActionButton,
+#urlbar-zoom-button,
+#shopping-sidebar-button,
+#translations-button,
+#picture-in-picture-button,
+#page-action-buttons,
+#urlbar-go-button,
 #urlbar-revert-button-container {
-  transition: background-color 0.3s ease-in-out, 
-              outline-color 0.3s ease-in-out !important;
+  transition:
+    background-color 0.3s ease-in-out,
+    outline-color 0.3s ease-in-out !important;
 }
 
-
-
-
 /* Animate the tab function icons */
-  .close-icon {
-    transition: background-color 0.3s ease-in-out; /* Smooth transition for background-color */
-  }
+.close-icon {
+  transition: background-color 0.3s ease-in-out; /* Smooth transition for background-color */
+}
 
-
-
-  .tab-reset-button {
-    transition: background-color 0.3s ease-in-out; /* Smooth transition for background-color */
-  }/* Transition properties for tab background */
+.tab-reset-button {
+  transition: background-color 0.3s ease-in-out; /* Smooth transition for background-color */
+} /* Transition properties for tab background */
 .tab-background {
-    transition: background-color 0.4s ease, box-shadow 0.4s ease, background 0.5s ease !important;
+  transition:
+    background-color 0.4s ease,
+    box-shadow 0.4s ease,
+    background 0.5s ease !important;
 }
 
 .tab-group-label-container {
-    /* Transition properties for tab background */
-    transition: background-color 0.4s ease, box-shadow 0.4s ease, background 0.5s ease !important;
+  /* Transition properties for tab background */
+  transition:
+    background-color 0.4s ease,
+    box-shadow 0.4s ease,
+    background 0.5s ease !important;
 }
-
 
 /* For toolbarbutton-1 */
 .toolbarbutton-1 {
-
-    &:hover > :is(.toolbarbutton-icon, .toolbarbutton-text, .toolbarbutton-badge-stack) {
-      transition: background-color 0.3s ease-in-out, 
-                  outline-color 0.3s ease-in-out; /* Smooth transition */
-    }
-    
-    > :is(.toolbarbutton-icon, .toolbarbutton-text, .toolbarbutton-badge-stack) {
-      transition: background-color 0.3s ease-in-out, 
-                  outline-color 0.3s ease-in-out;
-    }
+  &:hover
+    > :is(
+      .toolbarbutton-icon,
+      .toolbarbutton-text,
+      .toolbarbutton-badge-stack
+    ) {
+    transition:
+      background-color 0.3s ease-in-out,
+      outline-color 0.3s ease-in-out; /* Smooth transition */
   }
+
+  > :is(.toolbarbutton-icon, .toolbarbutton-text, .toolbarbutton-badge-stack) {
+    transition:
+      background-color 0.3s ease-in-out,
+      outline-color 0.3s ease-in-out;
+  }
+}
 
 .identity-box-button {
-  transition: background-color 0.3s ease-in-out, 
-              outline-color 1.3s ease-in-out;
+  transition:
+    background-color 0.3s ease-in-out,
+    outline-color 1.3s ease-in-out;
 }
-
-
-
 
 /* Apply transition to urlbar controls, this is what I found worked...*/
-#reader-mode-button, 
-#star-button-box, 
-#zen-split-views-box, 
-#pageActionButton, 
-#urlbar-zoom-button, 
-#shopping-sidebar-button, 
-#translations-button, 
-#picture-in-picture-button, 
-#page-action-buttons, 
-#urlbar-go-button, 
+#reader-mode-button,
+#star-button-box,
+#zen-split-views-box,
+#pageActionButton,
+#urlbar-zoom-button,
+#shopping-sidebar-button,
+#translations-button,
+#picture-in-picture-button,
+#page-action-buttons,
+#urlbar-go-button,
 #urlbar-revert-button-container {
-  transition: background-color 0.3s ease-in-out, 
-              outline-color 0.3s ease-in-out !important;
+  transition:
+    background-color 0.3s ease-in-out,
+    outline-color 0.3s ease-in-out !important;
 }
-
-
-
 
 /* Animate the tab function icons */
-  .close-icon {
-    transition: background-color 0.3s ease-in-out; /* Smooth transition for background-color */
-  }
-
-
-
-  .tab-reset-button {
-    transition: background-color 0.3s ease-in-out; /* Smooth transition for background-color */
-  }
-
-/* This was not being applied properly by class for some reason */
-#tabs-newtab-button {
-    transition: background-color 0.3s ease-in-out; /* Smooth transition for background-color */
+.close-icon {
+  transition: background-color 0.3s ease-in-out; /* Smooth transition for background-color */
 }
 
-
-/* Other things that needed to be animated/transitioned */
-.subviewbutton {
-    transition: background-color 0.3s ease-in-out !important; /* Smooth transition for background-color */ 
-}
-
-.urlbarView-row-inner {
-    transition: background-color 0.3s ease-in-out !important; /* Smooth transition for background-color */ 
+.tab-reset-button {
+  transition: background-color 0.3s ease-in-out; /* Smooth transition for background-color */
 }
 
 /* This was not being applied properly by class for some reason */
 #tabs-newtab-button {
-    transition: background-color 0.3s ease-in-out; /* Smooth transition for background-color */
+  transition: background-color 0.3s ease-in-out; /* Smooth transition for background-color */
 }
-
 
 /* Other things that needed to be animated/transitioned */
 .subviewbutton {
-    transition: background-color 0.3s ease-in-out !important; /* Smooth transition for background-color */ 
+  transition: background-color 0.3s ease-in-out !important; /* Smooth transition for background-color */
 }
 
 .urlbarView-row-inner {
-    transition: background-color 0.3s ease-in-out !important; /* Smooth transition for background-color */ 
+  transition: background-color 0.3s ease-in-out !important; /* Smooth transition for background-color */
+}
+
+/* This was not being applied properly by class for some reason */
+#tabs-newtab-button {
+  transition: background-color 0.3s ease-in-out; /* Smooth transition for background-color */
+}
+
+/* Other things that needed to be animated/transitioned */
+.subviewbutton {
+  transition: background-color 0.3s ease-in-out !important; /* Smooth transition for background-color */
+}
+
+.urlbarView-row-inner {
+  transition: background-color 0.3s ease-in-out !important; /* Smooth transition for background-color */
 }

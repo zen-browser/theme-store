@@ -4,14 +4,14 @@
     --uc-compact-tab-close-button-bg-hover-color: rgb(254, 254, 254);
   }
 }
-  
+
 @media (prefers-color-scheme: dark) {
   :root {
     --uc-compact-tab-close-button-bg-color: rgb(28, 28, 32);
     --uc-compact-tab-close-button-bg-hover-color: rgb(0, 0, 0);
   }
 }
-  
+
 @media not (-moz-bool-pref: "zen.view.sidebar-expanded") {
   & .tabbrowser-tab {
     &:not([pinned]) {

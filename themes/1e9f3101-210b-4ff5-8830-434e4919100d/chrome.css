@@ -1,6 +1,9 @@
-
 .browserContainer {
-  background: linear-gradient(90deg, var(--zen-colors-secondary) 0%, var(--zen-colors-primary) 100%);
+  background: linear-gradient(
+    90deg,
+    var(--zen-colors-secondary) 0%,
+    var(--zen-colors-primary) 100%
+  );
 }
 
 stack > browser {

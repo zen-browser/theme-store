@@ -1,4 +1,3 @@
-
 # Collapsed Tab Close Button
 
 This theme adds a close button to the collapsed tabs in Zen Browser.
