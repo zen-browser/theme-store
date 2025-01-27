@@ -6,20 +6,10 @@
     }
 }
 
-/* only use mod in collapsed toolbar mode */
-:root:has(#navigator-toolbox:not([zen-sidebar-expanded="true"])) {
-    /* Width of the collapsed sidebar */
-    --zen-toolbox-max-width: 44px !important;
-    /* For automatic tab icon centering? */
-    --tab-collapsed-width: var(--zen-toolbox-max-width) !important;
-
-    #navigator-toolbox {
-        z-index: 4 !important;
-    }
-
-
+/* Compact mode detection changed, so it got moved here */
+:root:not([zen-compact-mode="true"]):has(#navigator-toolbox:not([zen-sidebar-expanded="true"])) {
     /* Move topbar buttons in the now empty space */
-    @media (not (-moz-bool-pref: "zen.view.compact")) and (not (-moz-platform: macos)) {
+    @media (not (-moz-platform: macos)) {
         #browser:has(#navigator-toolbox:not([zen-right-side="true"])) {
             #zen-appcontent-wrapper {
                 overflow: visible !important;
@@ -34,9 +24,27 @@
             }
         }
     }
+    #navigator-toolbox {
+        margin-top: var(--zen-toolbar-height) !important;
+    }
 
-    @media not (-moz-bool-pref: "zen.view.compact.hide-toolbar"),
-    (not (-moz-bool-pref: "zen.view.compact")) {
+    #browser:has(#PersonalToolbar[collapsed=false]) #navigator-toolbox {
+        margin-top: calc(var(--zen-toolbar-height) + 2.2em) !important;
+    }
+}
+
+/* only use mod in collapsed toolbar mode */
+:root:has(#navigator-toolbox:not([zen-sidebar-expanded="true"])) {
+    /* Width of the collapsed sidebar */
+    --zen-toolbox-max-width: 44px !important;
+    /* For automatic tab icon centering? */
+    --tab-collapsed-width: var(--zen-toolbox-max-width) !important;
+
+    #navigator-toolbox {
+        z-index: 4 !important;
+    }
+
+    @media not (-moz-bool-pref: "zen.view.compact.hide-toolbar") {
 
         #navigator-toolbox {
             margin-top: var(--zen-toolbar-height) !important;
