@@ -31,16 +31,9 @@
 			/* Add padding around tab preview image */
 			padding: var(--zen-element-separation);
 		}
-		@media (-moz-bool-pref: 'zen.mods.TabPreviewEnhanced.enabledMargins') {
-			/* Add padding around tab preview image */
-			padding: var(--zen-element-separation);
-		}
 
 		/* Hide border above preview */
 		border-top: none !important;
-
-		/* Hides padding between tab preview image and tab preview title */
-		padding-top: 0 !important;
 
 		/* Hides padding between tab preview image and tab preview title */
 		padding-top: 0 !important;
