@@ -1,0 +1,8 @@
+[
+    {
+        "property": "theme.nosidebarscrollbar.twilight",
+        "label": "Enable if you are on twilight.",
+        "type": "checkbox",
+        "disabledOn": []
+    }
+]
