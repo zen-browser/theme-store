@@ -1,8 +1,9 @@
 [
     {
-        "property": "theme.nosidebarscrollbar.twilight",
-        "label": "Enable if you are on twilight.",
+        "property": "theme.nosidebarscrollbar.before173b",
+        "label": "Enable if you are on version 1.7.2b or lower.",
         "type": "checkbox",
-        "disabledOn": []
+        "disabledOn": [],
+        "defaultValue": false
     }
 ]
