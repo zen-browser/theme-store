@@ -263,6 +263,8 @@ def get_preferences():
                 return {}
             content = re.sub(r"```json\n*", "", content)
             content = re.sub(r"\n*```\n*", "", content)
+            if content.strip() == "":
+                return {}
 
             if content.startswith("{") and content.endswith("}"):
                 print(
