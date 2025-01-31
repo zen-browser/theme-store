@@ -1,9 +1,0 @@
-[
-    {
-        "property": "theme.pinnedtabsmaxheight.number_of_tabs",
-        "label": "Number of pinned tabs to fit",
-        "type": "string",
-        "placeholder": "Number of tabs",
-        "defaultValue": "5"
-    }
-]
