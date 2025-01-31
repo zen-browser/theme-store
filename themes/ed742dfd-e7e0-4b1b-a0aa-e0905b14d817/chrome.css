@@ -1,6 +1,0 @@
-#vertical-pinned-tabs-container {
-  max-height: calc(
-    var(--theme-pinnedtabsmaxheight-number_of_tabs) *
-      (var(--tab-min-height) + 2 * var(--tab-block-margin))
-  ) !important;
-}
