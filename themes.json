@@ -171,11 +171,14 @@
         "style": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/4ab93b88-151c-451b-a1b7-a1e0e28fa7f8/chrome.css",
         "readme": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/4ab93b88-151c-451b-a1b7-a1e0e28fa7f8/readme.md",
         "image": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/4ab93b88-151c-451b-a1b7-a1e0e28fa7f8/image.png",
+        "preferences": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/4ab93b88-151c-451b-a1b7-a1e0e28fa7f8/preferences.json",
         "author": "mally8",
-        "version": "1.0.3",
-        "tags": [],
+        "version": "1.0.5",
+        "tags": [
+            "sidebar"
+        ],
         "createdAt": "2024-09-01",
-        "updatedAt": "2025-01-26"
+        "updatedAt": "2025-01-31"
     },
     "c8f20381-388a-4b67-b640-eaa539355ea4": {
         "id": "c8f20381-388a-4b67-b640-eaa539355ea4",
@@ -952,21 +955,6 @@
         "createdAt": "2024-10-06",
         "updatedAt": "2025-01-26"
     },
-    "ed742dfd-e7e0-4b1b-a0aa-e0905b14d817": {
-        "id": "ed742dfd-e7e0-4b1b-a0aa-e0905b14d817",
-        "name": "Pinned Tabs Max Height",
-        "description": "Change max height of pinned tabs.",
-        "homepage": "",
-        "style": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/ed742dfd-e7e0-4b1b-a0aa-e0905b14d817/chrome.css",
-        "readme": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/ed742dfd-e7e0-4b1b-a0aa-e0905b14d817/readme.md",
-        "image": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/ed742dfd-e7e0-4b1b-a0aa-e0905b14d817/image.png",
-        "author": "TheCatRiX",
-        "version": "1.0.0",
-        "tags": [],
-        "createdAt": "2024-12-16",
-        "updatedAt": "2025-01-26",
-        "preferences": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/ed742dfd-e7e0-4b1b-a0aa-e0905b14d817/preferences.json"
-    },
     "1e86cf37-a127-4f24-b919-d265b5ce29a0": {
         "id": "1e86cf37-a127-4f24-b919-d265b5ce29a0",
         "name": "Cleaner Extension Menu",
@@ -1200,10 +1188,11 @@
         "readme": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/a6335949-4465-4b71-926c-4a52d34bc9c0/readme.md",
         "image": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/a6335949-4465-4b71-926c-4a52d34bc9c0/image.png",
         "author": "RobotoSkunk",
-        "version": "1.1.0",
+        "preferences": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/a6335949-4465-4b71-926c-4a52d34bc9c0/preferences.json",
+        "version": "1.1.1",
         "tags": [],
         "createdAt": "2024-11-24",
-        "updatedAt": "2025-01-26"
+        "updatedAt": "2025-01-31"
     },
     "2e3369c7-e450-46ba-8794-75ccb0de5e48": {
         "id": "2e3369c7-e450-46ba-8794-75ccb0de5e48",
