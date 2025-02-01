@@ -1,0 +1,8 @@
+[
+  {
+    "property": "theme.collapsed.mode",
+    "label": "Toggle easy tab switching in collapsed mode (optional)",
+    "type": "checkbox",
+    "defaultValue": false
+  }
+]
