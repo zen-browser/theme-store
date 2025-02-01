@@ -1,0 +1,26 @@
+[
+    {
+        "property": "zen.mods.TabPreviewEnhanced.enabledMargins",
+        "label": "Put margins around tab preview image",
+        "type": "checkbox",
+        "defaultValue": true
+    },
+    {
+        "property": "zen.mods.TabPreviewEnhanced.enabledBackgroundNative",
+        "label": "Follows background color of Zen main browser (Workspaces included)",
+        "type": "checkbox",
+        "defaultValue": true
+    },
+    {
+        "property": "zen.mods.TabPreviewEnhanced.enabledCustomBorderRadius",
+        "label": "Enables custom border radius for tab preview",
+        "type": "checkbox",
+        "defaultValue": true
+    },
+    {
+        "property": "zen.mods.TabPreviewEnhanced.borderRadiusAmount",
+        "label": "Amount of custom border radius (Only active if above is enabled)",
+        "type": "string",
+        "defaultValue": "10px"
+    }
+]
