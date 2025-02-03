@@ -23,12 +23,6 @@
     "defaultValue": false
   },
   {
-    "property": "browser.tabs.allow_transparent_browser",
-    "label": "Allow Transparent Browser Tabs",
-    "type": "checkbox",
-    "defaultValue": true
-  },
-  {
     "property": "theme.sidebery.hide-zen-tabbar",
     "label": "Hide Native Zen Tab UI",
     "type": "checkbox",
