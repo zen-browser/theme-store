@@ -47,7 +47,36 @@
     height: 16px !important;
   }
 }
+@media not (-moz-bool-pref: "zen.view.sidebar-expanded") {
+    .tabbrowser-tab:is([soundplaying], [muted], [activemedia-blocked]):hover img {
+        opacity: 1 !important;
+        transition: opacity 0.1s ease-out !important;
+    }
 
+    .tabbrowser-tab:is([soundplaying], [muted], [activemedia-blocked]):hover .tab-icon-overlay {
+        &:is([soundplaying]) {
+            list-style-image: url("chrome://browser/skin/tabbrowser/tab-audio-playing-small.svg") !important;
+            background-image: none !important;
+        }
+
+        &:is([muted]) {
+            list-style-image: url("chrome://browser/skin/tabbrowser/tab-audio-muted-small.svg") !important;
+            background-image: none !important;
+        }
+
+        &:is([activemedia-blocked]) {
+            list-style-image: url("chrome://browser/skin/tabbrowser/tab-audio-blocked-small.svg") !important;
+            background-image: none !important;
+        }
+
+        background: none !important;
+        border-radius: 0px !important;
+        opacity: 1 !important;
+        margin: 0px !important;
+        transition: opacity 0.1s ease-out, transform 0.1s ease-out !important;
+        transform: translate(6.9px, -6.9px) scale(0.69) !important;
+    }
+  }
 #zen-essentials-container {
   .tab-icon-overlay:is([soundplaying], [muted]) {
     margin: 0px !important;
