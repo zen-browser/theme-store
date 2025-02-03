@@ -1,14 +1,14 @@
 {
-  "id": "180d9426-a020-4bd7-98ec-63f957291119",
-  "name": "TitleBarButton UI Tweaks",
-  "description": "Small UI tweaks to the titlebar buttons to make them more coherent with the Zen Browser design philosophy.",
-  "homepage": "",
-  "style": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/180d9426-a020-4bd7-98ec-63f957291119/chrome.css",
-  "readme": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/180d9426-a020-4bd7-98ec-63f957291119/readme.md",
-  "image": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/180d9426-a020-4bd7-98ec-63f957291119/image.png",
-  "author": "DaitiDay",
-  "version": "1.0.1",
-  "tags": [],
-  "createdAt": "2024-09-18",
-  "updatedAt": "2024-10-19"
+    "id": "180d9426-a020-4bd7-98ec-63f957291119",
+    "name": "TitleBarButton UI Tweaks",
+    "description": "Small UI tweaks to the titlebar buttons to make them more coherent with the Zen Browser design philosophy.",
+    "homepage": "",
+    "style": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/180d9426-a020-4bd7-98ec-63f957291119/chrome.css",
+    "readme": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/180d9426-a020-4bd7-98ec-63f957291119/readme.md",
+    "image": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/180d9426-a020-4bd7-98ec-63f957291119/image.png",
+    "author": "DaitiDay",
+    "version": "1.0.1",
+    "tags": [],
+    "createdAt": "2024-09-18",
+    "updatedAt": "2025-01-26"
 }

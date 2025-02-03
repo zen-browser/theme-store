@@ -1,14 +1,16 @@
 {
-  "id": "d8b79d4a-6cba-4495-9ff6-d6d30b0e94fe",
-  "name": "Better Active Tab",
-  "description": "Adds a bright line next to the active tab to better highlight it.",
-  "homepage": "https://github.com/HliasOuzounis/zen-browser-better-active-tab-indicator",
-  "style": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/d8b79d4a-6cba-4495-9ff6-d6d30b0e94fe/chrome.css",
-  "readme": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/d8b79d4a-6cba-4495-9ff6-d6d30b0e94fe/readme.md",
-  "image": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/d8b79d4a-6cba-4495-9ff6-d6d30b0e94fe/image.png",
-  "author": "HliasOuzounis",
-  "version": "1.0.3",
-  "tags": ["tabs"],
-  "createdAt": "2024-09-07",
-  "updatedAt": "2024-09-24"
+    "id": "d8b79d4a-6cba-4495-9ff6-d6d30b0e94fe",
+    "name": "Better Active Tab",
+    "description": "Adds a bright line next to the active tab to better highlight it.",
+    "homepage": "https://github.com/HliasOuzounis/zen-browser-better-active-tab-indicator",
+    "style": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/d8b79d4a-6cba-4495-9ff6-d6d30b0e94fe/chrome.css",
+    "readme": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/d8b79d4a-6cba-4495-9ff6-d6d30b0e94fe/readme.md",
+    "image": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/d8b79d4a-6cba-4495-9ff6-d6d30b0e94fe/image.png",
+    "author": "HliasOuzounis",
+    "version": "1.0.3",
+    "tags": [
+        "tabs"
+    ],
+    "createdAt": "2024-09-07",
+    "updatedAt": "2025-01-26"
 }

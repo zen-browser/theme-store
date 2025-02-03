@@ -1,14 +1,14 @@
 {
-  "id": "1207efa9-fce4-439f-a673-9d3c0e4e8820",
-  "name": "Clickable Scrollbar",
-  "description": "Makes Sidebar Scrollbar clickable",
-  "homepage": "",
-  "style": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/1207efa9-fce4-439f-a673-9d3c0e4e8820/chrome.css",
-  "readme": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/1207efa9-fce4-439f-a673-9d3c0e4e8820/readme.md",
-  "image": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/1207efa9-fce4-439f-a673-9d3c0e4e8820/image.png",
-  "author": "tahawael",
-  "version": "1.0.0",
-  "tags": [],
-  "createdAt": "2024-10-19",
-  "updatedAt": "2024-10-19"
+    "id": "1207efa9-fce4-439f-a673-9d3c0e4e8820",
+    "name": "Clickable Scrollbar",
+    "description": "Makes Sidebar Scrollbar clickable",
+    "homepage": "",
+    "style": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/1207efa9-fce4-439f-a673-9d3c0e4e8820/chrome.css",
+    "readme": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/1207efa9-fce4-439f-a673-9d3c0e4e8820/readme.md",
+    "image": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/1207efa9-fce4-439f-a673-9d3c0e4e8820/image.png",
+    "author": "tahawael",
+    "version": "1.0.0",
+    "tags": [],
+    "createdAt": "2024-10-19",
+    "updatedAt": "2025-01-26"
 }

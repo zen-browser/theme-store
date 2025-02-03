@@ -1,14 +1,14 @@
 {
-  "id": "c45c4894-d6bd-47fc-997a-0c4d015334f1",
-  "name": "No pinned tab reset btn",
-  "description": "Hides the reset button that appears when hovering over pinned tabs.",
-  "homepage": "https://github.com/spicybackend/zen-browser-no-pinned-url-reset",
-  "style": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/c45c4894-d6bd-47fc-997a-0c4d015334f1/chrome.css",
-  "readme": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/c45c4894-d6bd-47fc-997a-0c4d015334f1/readme.md",
-  "image": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/c45c4894-d6bd-47fc-997a-0c4d015334f1/image.png",
-  "author": "spicybackend",
-  "version": "1.0.0",
-  "tags": [],
-  "createdAt": "2024-12-12",
-  "updatedAt": "2024-12-12"
+    "id": "c45c4894-d6bd-47fc-997a-0c4d015334f1",
+    "name": "No pinned tab reset btn",
+    "description": "Hides the reset button that appears when hovering over pinned tabs.",
+    "homepage": "https://github.com/spicybackend/zen-browser-no-pinned-url-reset",
+    "style": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/c45c4894-d6bd-47fc-997a-0c4d015334f1/chrome.css",
+    "readme": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/c45c4894-d6bd-47fc-997a-0c4d015334f1/readme.md",
+    "image": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/c45c4894-d6bd-47fc-997a-0c4d015334f1/image.png",
+    "author": "spicybackend",
+    "version": "1.0.0",
+    "tags": [],
+    "createdAt": "2024-12-12",
+    "updatedAt": "2025-01-26"
 }

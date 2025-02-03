@@ -1,14 +1,16 @@
 {
-  "id": "053a3ffa-9233-4554-88f3-076e6a6ebb43",
-  "name": "Hide tab mute",
-  "description": "Hides the mute/unmute button when the sidebar is collapsed to make clicking on tabs easier.",
-  "homepage": "",
-  "style": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/053a3ffa-9233-4554-88f3-076e6a6ebb43/chrome.css",
-  "readme": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/053a3ffa-9233-4554-88f3-076e6a6ebb43/readme.md",
-  "image": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/053a3ffa-9233-4554-88f3-076e6a6ebb43/image.png",
-  "author": "Tc-001",
-  "version": "1.0.1",
-  "tags": ["tabs"],
-  "createdAt": "2024-08-21",
-  "updatedAt": "2024-09-18"
+    "id": "053a3ffa-9233-4554-88f3-076e6a6ebb43",
+    "name": "Hide tab mute",
+    "description": "Hides the mute/unmute button when the sidebar is collapsed to make clicking on tabs easier.",
+    "homepage": "",
+    "style": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/053a3ffa-9233-4554-88f3-076e6a6ebb43/chrome.css",
+    "readme": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/053a3ffa-9233-4554-88f3-076e6a6ebb43/readme.md",
+    "image": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/053a3ffa-9233-4554-88f3-076e6a6ebb43/image.png",
+    "author": "Tc-001",
+    "version": "1.0.1",
+    "tags": [
+        "tabs"
+    ],
+    "createdAt": "2024-08-21",
+    "updatedAt": "2025-01-26"
 }

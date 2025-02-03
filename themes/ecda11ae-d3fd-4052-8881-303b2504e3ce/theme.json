@@ -1,16 +1,19 @@
 {
-  "id": "ecda11ae-d3fd-4052-8881-303b2504e3ce",
-  "name": "Gruvbox",
-  "description": "A gruvbox based theme",
-  "homepage": "",
-  "style": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/ecda11ae-d3fd-4052-8881-303b2504e3ce/chrome.css",
-  "readme": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/ecda11ae-d3fd-4052-8881-303b2504e3ce/readme.md",
-  "image": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/ecda11ae-d3fd-4052-8881-303b2504e3ce/image.png",
-  "author": "Blaster4385",
-  "version": "1.0.0",
-  "isDarkMode": true,
-  "isColorTheme": true,
-  "tags": ["color scheme", "dark"],
-  "createdAt": "2024-08-23",
-  "updatedAt": "2024-08-24"
+    "id": "ecda11ae-d3fd-4052-8881-303b2504e3ce",
+    "name": "Gruvbox",
+    "description": "A gruvbox based theme",
+    "homepage": "",
+    "style": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/ecda11ae-d3fd-4052-8881-303b2504e3ce/chrome.css",
+    "readme": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/ecda11ae-d3fd-4052-8881-303b2504e3ce/readme.md",
+    "image": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/ecda11ae-d3fd-4052-8881-303b2504e3ce/image.png",
+    "author": "Blaster4385",
+    "version": "1.0.0",
+    "isDarkMode": true,
+    "isColorTheme": true,
+    "tags": [
+        "color scheme",
+        "dark"
+    ],
+    "createdAt": "2024-08-23",
+    "updatedAt": "2025-01-26"
 }

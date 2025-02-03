@@ -1,14 +1,14 @@
 {
-  "id": "80112b28-39e0-407c-8988-2290bc973b97",
-  "name": "Matcha",
-  "description": "Sweet and peaceful vibrant theme, supported light and dark mode",
-  "homepage": "https://github.com/KiKaraage/ZenMods",
-  "style": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/80112b28-39e0-407c-8988-2290bc973b97/chrome.css",
-  "readme": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/80112b28-39e0-407c-8988-2290bc973b97/readme.md",
-  "image": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/80112b28-39e0-407c-8988-2290bc973b97/image.png",
-  "author": "KiKaraage",
-  "version": "1.0.0",
-  "tags": [],
-  "createdAt": "2024-09-24",
-  "updatedAt": "2024-09-24"
+    "id": "80112b28-39e0-407c-8988-2290bc973b97",
+    "name": "Matcha",
+    "description": "Sweet and peaceful vibrant theme, supported light and dark mode",
+    "homepage": "https://github.com/KiKaraage/ZenMods",
+    "style": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/80112b28-39e0-407c-8988-2290bc973b97/chrome.css",
+    "readme": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/80112b28-39e0-407c-8988-2290bc973b97/readme.md",
+    "image": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/80112b28-39e0-407c-8988-2290bc973b97/image.png",
+    "author": "KiKaraage",
+    "version": "1.0.0",
+    "tags": [],
+    "createdAt": "2024-09-24",
+    "updatedAt": "2025-01-26"
 }

@@ -1,44 +1,63 @@
 #tab-preview-panel {
-  /* Removes default background color of panel, below tab title */
-  --panel-background: none !important;
+	/* Matches Zen main background color, also supports gradients */
+	@media (-moz-bool-pref: 'zen.mods.TabPreviewEnhanced.enabledBackgroundNative') {
+		--panel-background: var(--zen-main-browser-background-toolbar) !important;
+	}
 
-  /* Removes shadow in the margin area (dunno if actually does something, or it's just my imagination) */
-  --panel-shadow-margin: none !important;
+	/* Matches Zen panel radius */
+	@media not (-moz-bool-pref: 'zen.mods.TabPreviewEnhanced.enabledCustomBorderRadius') {
+		border-radius: var(--panel-border-radius) !important;
+	}
 
-  /* Removes border between tab title & tab preview image */
-  --arrowpanel-border-color: transparent;
+	/* Custom border radius for tab preview*/
+	@media (-moz-bool-pref: 'zen.mods.TabPreviewEnhanced.enabledCustomBorderRadius') {
+		--panel-border-radius: var(
+			--zen-mods-TabPreviewEnhanced-borderRadiusAmount
+		) !important;
+	}
 
-  /* Matches Zen main background color, also supports gradients */
-  background: var(--zen-main-browser-background) !important;
+	/* Removes border around tab preview */
+	--zen-appcontent-border: transparent !important;
 
-  /* Matches Zen panel radius */
-  border-radius: var(--zen-panel-radius);
-
-  /* Shifts panel to the slightly right */
-  /* TODO: Make customizable */
-  margin-left: 0.5em !important;
+	/* Shifts panel to the slightly right */
+	/* TODO: Make customizable */
+	margin-left: 0.5em !important;
 }
 
 .tab-preview-thumbnail-container {
-  /* Fixes proper tab preview image sizing */
-  &:has(canvas) {
-    /* TODO: Make optional */
-    padding: var(--zen-element-separation);
+	/* Fixes proper tab preview image sizing */
+	&:has(canvas) {
+		@media (-moz-bool-pref: 'zen.mods.TabPreviewEnhanced.enabledMargins') {
+			/* Add padding around tab preview image */
+			padding: var(--zen-element-separation);
+		}
 
-    /* Hide border above preview */
-    border-top: none !important;
+		/* Hide border above preview */
+		border-top: none !important;
 
-    /* Shrink preview to match added padding */
-    /* TODO: Make optional with padding as well */
-    width: calc(var(--panel-width) - (var(--zen-element-separation) * 2)) px !important;
-    height: unset !important;
+		/* Hides padding between tab preview image and tab preview title */
+		padding-top: 0 !important;
 
-    /* Some safety code to maintain aspect ratio */
-    aspect-ratio: 2 / 1 !important;
-  }
+		/* Shrink preview to match added padding */
+		/* TODO: Make optional */
+		width: calc(var(--panel-width) - (var(--zen-element-separation) * 2)) px !important;
+		height: unset !important;
 
-  canvas {
-    /* Makes tab preview image rounded */
-    border-radius: var(--zen-panel-radius) !important;
-  }
+		/* Some safety code to maintain aspect ratio */
+		aspect-ratio: 2 / 1 !important;
+	}
+
+	canvas {
+		/* Matches Zen panel radius */
+		@media not (-moz-bool-pref: 'zen.mods.TabPreviewEnhanced.enabledCustomBorderRadius') {
+			border-radius: calc(var(--panel-border-radius) / 1.3) !important;
+		}
+
+		/* Custom border radius for tab preview image */
+		@media (-moz-bool-pref: 'zen.mods.TabPreviewEnhanced.enabledCustomBorderRadius') {
+			border-radius: calc(
+				var(--zen-mods-TabPreviewEnhanced-borderRadiusAmount) / 1.3
+			) !important;
+		}
+	}
 }
