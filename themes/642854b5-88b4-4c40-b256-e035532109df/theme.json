@@ -1,0 +1,15 @@
+{
+    "id": "642854b5-88b4-4c40-b256-e035532109df",
+    "name": "Transparent Zen",
+    "description": "Make the Zen Browser's background transparent on macOS and Windows.",
+    "homepage": "https://github.com/sameerasw/zen-themes/tree/main/TransparentZen",
+    "style": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/642854b5-88b4-4c40-b256-e035532109df/chrome.css",
+    "readme": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/642854b5-88b4-4c40-b256-e035532109df/readme.md",
+    "image": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/642854b5-88b4-4c40-b256-e035532109df/image.png",
+    "author": "sameerasw",
+    "version": "1.0.0",
+    "tags": [],
+    "createdAt": "2025-02-04",
+    "updatedAt": "2025-02-04",
+    "preferences": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/642854b5-88b4-4c40-b256-e035532109df/preferences.json"
+}

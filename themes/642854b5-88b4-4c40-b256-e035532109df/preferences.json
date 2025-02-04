@@ -1,0 +1,26 @@
+[
+    {
+        "property": "property",
+        "label": "browser.tabs.allow_transparent_browser",
+        "type": "checkbox",
+        "disabledOn": []
+    },
+    {
+        "property": "label",
+        "label": "Allow zen browser to be transparent",
+        "type": "checkbox",
+        "disabledOn": []
+    },
+    {
+        "property": "type",
+        "label": "checkbox",
+        "type": "checkbox",
+        "disabledOn": []
+    },
+    {
+        "property": "defaultValue",
+        "label": "true",
+        "type": "checkbox",
+        "disabledOn": []
+    }
+]
