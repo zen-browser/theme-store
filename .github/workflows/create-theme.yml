@@ -20,7 +20,7 @@ jobs:
         with:
           python-version: "3.x"
 
-      - name: Setup python modules
+      - name: Install dependencies
         run: |
           pip3 install requests
 
