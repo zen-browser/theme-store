@@ -9,7 +9,6 @@
     padding-block: 0px !important;
   }
 }
-
 /* Hide all icons (Won't work for extension & checkbox context menu options) */
 @media (-moz-bool-pref: "uc.hidecontext.optionicons") {
   :not(:not(menubar) > menu, #ContentSelectDropdown)
@@ -63,7 +62,16 @@
     background-image: none !important;
   }
 }
-
+/* Apply Zen workspace colors to all context menu, panels, and confirmation pop-ups */
+@media (-moz-bool-pref: "uc.fixcontext.applyzencolors") {
+  menupopup, panel {
+    --panel-background: var(--zen-main-browser-background) !important;
+  }
+  /* Fix text color on confirmation pop-ups when applying Zen colors on light mode */
+  #confirmation-hint {
+    --arrowpanel-color: var(--sidebar-text-color) !important;
+  }
+}
 @media (-moz-bool-pref: "uc.fixcontext.extensionmargins") {
   /* Fix padding for extensions-related context menu on Windows */
   menu > .menu-iconic-text,
@@ -102,11 +110,19 @@
     }
   }
 }
-
 /* Only use “Copy Link Without Site Tracking” */
 @media (-moz-bool-pref: "uc.hidecontext.copylink") {
   #context-copylink {
-    display: none !important;
+    opacity: 0 !important;
+    padding: 0 !important;
+    height: 1px !important;
+  }
+  
+  #context-copylink:hover {
+    opacity: 1 !important;
+    padding-block: 0.5em !important;
+    padding-inline-start: calc( var(--fp-contextmenu-menuitem-padding-inline) + 16px + var(--fp-contextmenu-menuicon-margin-inline) ) !important;
+    height: inherit !important;
   }
 }
 /* Hide "Menu Bar" toggle */
@@ -126,13 +142,24 @@
 }
 /* Hide "Mute Tab" option */
 @media (-moz-bool-pref: "uc.hidecontext.mutetab") {
-  #context_toggleMuteTab {
+  #context_toggleMuteTab,
+  #context_toggleMuteSelectedTabs,
+  #context_playTab,
+  #context_playSelectedTabs {
     display: none !important;
   }
 }
-/* Hide "New Tab" option */
+/* Hide "New Tab" options */
 @media (-moz-bool-pref: "uc.hidecontext.newtab") {
-  #context_openANewTab {
+  #context_openANewTab,
+  #toolbar-context-openANewTab,
+  #toolbarNavigatorItemsMenuSeparator {
+    display: none !important;
+  }
+}
+/* Hide 'Add to Web Panel' option" */
+@media (-moz-bool-pref: "uc.hidecontext.addtowebpanel") {
+  #context-zenAddToWebPanel {
     display: none !important;
   }
 }
@@ -201,10 +228,15 @@
     display: none !important;
   }
 }
-/* Hide "Check Spelling" option while typing in text fields */
+/* Hide "Check Spelling" and "Text/Page Direction" option while typing in text fields */
 @media (-moz-bool-pref: "uc.hidecontext.checkspelling") {
+  #spell-separator,
   #spell-check-enabled,
-  #context-sep-bidi {
+  #spell-add-dictionaries-main,
+  #spell-dictionaries,
+  #context-sep-bidi,
+  #context-bidi-text-direction-toggle,
+  #context-bidi-page-direction-toggle {
     display: none !important;
   }
 }
@@ -217,6 +249,7 @@
 /* Hide “Select All Tabs" option */
 @media (-moz-bool-pref: "uc.hidecontext.selectalltabs") {
   #context_selectAllTabs,
+  #context_selectedAllTabs,
   #toolbar-context-selectAllTabs {
     display: none !important;
   }
@@ -224,6 +257,7 @@
 /* Hide “Reload Tab” option */
 @media (-moz-bool-pref: "uc.hidecontext.reloadtab") {
   #context_reloadTab,
+  #context_reloadSelectedTabs,
   #toolbar-context-reloadSelectedTab,
   #toolbar-context-reloadSelectedTabs {
     display: none !important;
@@ -231,7 +265,8 @@
 }
 /* Hide "Duplicate Tab" */
 @media (-moz-bool-pref: "uc.hidecontext.duplicatetab") {
-  #context_duplicateTab {
+  #context_duplicateTab,
+  #context_duplicateTabs {
     display: none !important;
   }
 }
@@ -241,12 +276,14 @@
     display: none !important;
   }
 }
-/* Hide “View Page Source” and “Inspect” options */
+/* Hide “View Page Source”, "View Selection Source" and “Inspect” options */
 @media (-moz-bool-pref: "uc.hidecontext.inspect") {
   #context-viewsource,
   #context-inspect-a11y,
   #context-inspect,
-  #context-media-eme-separator {
+  #inspect-separator,
+  #context-media-eme-separator,
+  #context-viewpartialsource-selection {
     display: none !important;
   }
 }
@@ -261,6 +298,23 @@
   #context-take-screenshot,
   #context-sep-screenshots,
   #frame-sep {
+    display: none !important;
+  }
+}
+/* Hide "Pin Tab" and "Add to Essentials" options */
+@media (-moz-bool-pref: "uc.hidecontext.pin") {
+  #context_pinTab,
+  #context_unpinTab,
+  #context_pinSelectedTabs,
+  #context_unpinSelectedTabs,
+  #context_zen-add-essential,
+  #context_zen-remove-essential {
+    display: none !important;
+  }
+}
+/* Hide "This Frame" option */
+@media (-moz-bool-pref: "uc.hidecontext.frame") {
+  #frame-sep, #frame {
     display: none !important;
   }
 }
