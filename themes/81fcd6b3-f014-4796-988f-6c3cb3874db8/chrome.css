@@ -115,7 +115,7 @@
   #context-copylink {
     opacity: 0 !important;
     padding: 0 !important;
-    height: 1px !important;
+    height: 2px !important;
   }
   
   #context-copylink:hover {
