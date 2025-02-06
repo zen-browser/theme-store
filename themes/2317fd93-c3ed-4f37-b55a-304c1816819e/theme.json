@@ -1,13 +1,13 @@
 {
     "id": "2317fd93-c3ed-4f37-b55a-304c1816819e",
     "name": "Audio Indicator Enhanced",
-    "description": "Enhanced audio indicator, with more polished style",
+    "description": "Enhanced audio indicator, with more polished style (New Visualizer Mode)",
     "homepage": "https://github.com/Kaedriz/ZenMods/tree/main/AudioIndicatorEnhanced",
     "style": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/2317fd93-c3ed-4f37-b55a-304c1816819e/chrome.css",
     "readme": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/2317fd93-c3ed-4f37-b55a-304c1816819e/readme.md",
     "image": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/2317fd93-c3ed-4f37-b55a-304c1816819e/image.png",
     "author": "Kaedriz",
-    "version": "1.0.0",
+    "version": "1.1.0",
     "tags": [],
     "createdAt": "2024-12-06",
     "updatedAt": "2025-01-26"

@@ -1,0 +1,209 @@
+<?xml version='1.0' encoding='utf-8'?>
+<svg width='1000' height='120' viewBox='0 0 1000 120' fill='none' xmlns='http://www.w3.org/2000/svg'>
+  <rect width='1000' height='120' />
+  <g class="g" transform="translate(20 130) rotate(180)">
+    <rect class="test fill8" width="20" height="60" rx="5">
+      <animateTransform attributeName="transform" type="scale" values="1 0.85" dur="1s" repeatCount="indefinite" />
+    </rect>
+  </g>
+  <g class="g" transform="translate(45 130) rotate(180)">
+    <rect class="test fill8" width="20" height="60" rx="5">
+      <animateTransform attributeName="transform" type="scale" values="1 0.85" dur="1s" repeatCount="indefinite" />
+    </rect>
+  </g>
+  <g class="g" transform="translate(70 130) rotate(180)">
+    <rect class="test fill8" width="20" height="60" rx="5">
+      <animateTransform attributeName="transform" type="scale" values="1 0.85" dur="1s" repeatCount="indefinite" />
+    </rect>
+  </g>
+  <g class="g" transform="translate(95 130) rotate(180)">
+    <rect class="test fill8" width="20" height="60" rx="5">
+      <animateTransform attributeName="transform" type="scale" values="1 0.85" dur="1s" repeatCount="indefinite" />
+    </rect>
+  </g>
+  <g class="g" transform="translate(120 130) rotate(180)">
+    <rect class="test fill8" width="20" height="60" rx="5">
+      <animateTransform attributeName="transform" type="scale" values="1 0.85" dur="1s" repeatCount="indefinite" />
+    </rect>
+  </g>
+  <g class="g" transform="translate(145 130) rotate(180)">
+    <rect class="test fill8" width="20" height="60" rx="5">
+      <animateTransform attributeName="transform" type="scale" values="1 0.85" dur="1s" repeatCount="indefinite" />
+    </rect>
+  </g>
+  <g class="g" transform="translate(170 130) rotate(180)">
+    <rect class="test fill8" width="20" height="60" rx="5">
+      <animateTransform attributeName="transform" type="scale" values="1 0.85" dur="1s" repeatCount="indefinite" />
+    </rect>
+  </g>
+  <g class="g" transform="translate(195 130) rotate(180)">
+    <rect class="test fill8" width="20" height="60" rx="5">
+      <animateTransform attributeName="transform" type="scale" values="1 0.85" dur="1s" repeatCount="indefinite" />
+    </rect>
+  </g>
+  <g class="g" transform="translate(220 130) rotate(180)">
+    <rect class="test fill8" width="20" height="60" rx="5">
+      <animateTransform attributeName="transform" type="scale" values="1 0.85" dur="1s" repeatCount="indefinite" />
+    </rect>
+  </g>
+  <g class="g" transform="translate(245 130) rotate(180)">
+    <rect class="test fill8" width="20" height="60" rx="5">
+      <animateTransform attributeName="transform" type="scale" values="1 0.85" dur="1s" repeatCount="indefinite" />
+    </rect>
+  </g>
+  <g class="g" transform="translate(270 130) rotate(180)">
+    <rect class="test fill8" width="20" height="60" rx="5">
+      <animateTransform attributeName="transform" type="scale" values="1 0.85" dur="1s" repeatCount="indefinite" />
+    </rect>
+  </g>
+  <g class="g" transform="translate(295 130) rotate(180)">
+    <rect class="test fill8" width="20" height="60" rx="5">
+      <animateTransform attributeName="transform" type="scale" values="1 0.85" dur="1s" repeatCount="indefinite" />
+    </rect>
+  </g>
+  <g class="g" transform="translate(320 130) rotate(180)">
+    <rect class="test fill8" width="20" height="60" rx="5">
+      <animateTransform attributeName="transform" type="scale" values="1 0.85" dur="1s" repeatCount="indefinite" />
+    </rect>
+  </g>
+  <g class="g" transform="translate(345 130) rotate(180)">
+    <rect class="test fill8" width="20" height="60" rx="5">
+      <animateTransform attributeName="transform" type="scale" values="1 0.85" dur="1s" repeatCount="indefinite" />
+    </rect>
+  </g>
+  <g class="g" transform="translate(370 130) rotate(180)">
+    <rect class="test fill8" width="20" height="60" rx="5">
+      <animateTransform attributeName="transform" type="scale" values="1 0.85" dur="1s" repeatCount="indefinite" />
+    </rect>
+  </g>
+  <g class="g" transform="translate(395 130) rotate(180)">
+    <rect class="test fill8" width="20" height="60" rx="5">
+      <animateTransform attributeName="transform" type="scale" values="1 0.85" dur="1s" repeatCount="indefinite" />
+    </rect>
+  </g>
+  <g class="g" transform="translate(420 130) rotate(180)">
+    <rect class="test fill8" width="20" height="60" rx="5">
+      <animateTransform attributeName="transform" type="scale" values="1 0.85" dur="1s" repeatCount="indefinite" />
+    </rect>
+  </g>
+  <g class="g" transform="translate(445 130) rotate(180)">
+    <rect class="test fill8" width="20" height="60" rx="5">
+      <animateTransform attributeName="transform" type="scale" values="1 0.85" dur="1s" repeatCount="indefinite" />
+    </rect>
+  </g>
+  <g class="g" transform="translate(470 130) rotate(180)">
+    <rect class="test fill8" width="20" height="60" rx="5">
+      <animateTransform attributeName="transform" type="scale" values="1 0.85" dur="1s" repeatCount="indefinite" />
+    </rect>
+  </g>
+  <g class="g" transform="translate(495 130) rotate(180)">
+    <rect class="test fill8" width="20" height="60" rx="5">
+      <animateTransform attributeName="transform" type="scale" values="1 0.85" dur="1s" repeatCount="indefinite" />
+    </rect>
+  </g>
+  <g class="g" transform="translate(520 130) rotate(180)">
+    <rect class="test fill8" width="20" height="60" rx="5">
+      <animateTransform attributeName="transform" type="scale" values="1 0.85" dur="1s" repeatCount="indefinite" />
+    </rect>
+  </g>
+  <g class="g" transform="translate(545 130) rotate(180)">
+    <rect class="test fill8" width="20" height="60" rx="5">
+      <animateTransform attributeName="transform" type="scale" values="1 0.85" dur="1s" repeatCount="indefinite" />
+    </rect>
+  </g>
+  <g class="g" transform="translate(570 130) rotate(180)">
+    <rect class="test fill8" width="20" height="60" rx="5">
+      <animateTransform attributeName="transform" type="scale" values="1 0.85" dur="1s" repeatCount="indefinite" />
+    </rect>
+  </g>
+  <g class="g" transform="translate(595 130) rotate(180)">
+    <rect class="test fill8" width="20" height="60" rx="5">
+      <animateTransform attributeName="transform" type="scale" values="1 0.85" dur="1s" repeatCount="indefinite" />
+    </rect>
+  </g>
+  <g class="g" transform="translate(620 130) rotate(180)">
+    <rect class="test fill8" width="20" height="60" rx="5">
+      <animateTransform attributeName="transform" type="scale" values="1 0.85" dur="1s" repeatCount="indefinite" />
+    </rect>
+  </g>
+  <g class="g" transform="translate(645 130) rotate(180)">
+    <rect class="test fill8" width="20" height="60" rx="5">
+      <animateTransform attributeName="transform" type="scale" values="1 0.85" dur="1s" repeatCount="indefinite" />
+    </rect>
+  </g>
+  <g class="g" transform="translate(670 130) rotate(180)">
+    <rect class="test fill8" width="20" height="60" rx="5">
+      <animateTransform attributeName="transform" type="scale" values="1 0.85" dur="1s" repeatCount="indefinite" />
+    </rect>
+  </g>
+  <g class="g" transform="translate(695 130) rotate(180)">
+    <rect class="test fill8" width="20" height="60" rx="5">
+      <animateTransform attributeName="transform" type="scale" values="1 0.85" dur="1s" repeatCount="indefinite" />
+    </rect>
+  </g>
+  <g class="g" transform="translate(720 130) rotate(180)">
+    <rect class="test fill8" width="20" height="60" rx="5">
+      <animateTransform attributeName="transform" type="scale" values="1 0.85" dur="1s" repeatCount="indefinite" />
+    </rect>
+  </g>
+  <g class="g" transform="translate(745 130) rotate(180)">
+    <rect class="test fill8" width="20" height="60" rx="5">
+      <animateTransform attributeName="transform" type="scale" values="1 0.85" dur="1s" repeatCount="indefinite" />
+    </rect>
+  </g>
+  <g class="g" transform="translate(770 130) rotate(180)">
+    <rect class="test fill8" width="20" height="60" rx="5">
+      <animateTransform attributeName="transform" type="scale" values="1 0.85" dur="1s" repeatCount="indefinite" />
+    </rect>
+  </g>
+  <g class="g" transform="translate(795 130) rotate(180)">
+    <rect class="test fill8" width="20" height="60" rx="5">
+      <animateTransform attributeName="transform" type="scale" values="1 0.85" dur="1s" repeatCount="indefinite" />
+    </rect>
+  </g>
+  <g class="g" transform="translate(820 130) rotate(180)">
+    <rect class="test fill8" width="20" height="60" rx="5">
+      <animateTransform attributeName="transform" type="scale" values="1 0.85" dur="1s" repeatCount="indefinite" />
+    </rect>
+  </g>
+  <g class="g" transform="translate(845 130) rotate(180)">
+    <rect class="test fill8" width="20" height="60" rx="5">
+      <animateTransform attributeName="transform" type="scale" values="1 0.85" dur="1s" repeatCount="indefinite" />
+    </rect>
+  </g>
+  <g class="g" transform="translate(870 130) rotate(180)">
+    <rect class="test fill8" width="20" height="60" rx="5">
+      <animateTransform attributeName="transform" type="scale" values="1 0.85" dur="1s" repeatCount="indefinite" />
+    </rect>
+  </g>
+  <g class="g" transform="translate(895 130) rotate(180)">
+    <rect class="test fill8" width="20" height="60" rx="5">
+      <animateTransform attributeName="transform" type="scale" values="1 0.85" dur="1s" repeatCount="indefinite" />
+    </rect>
+  </g>
+  <g class="g" transform="translate(920 130) rotate(180)">
+    <rect class="test fill8" width="20" height="60" rx="5">
+      <animateTransform attributeName="transform" type="scale" values="1 0.85" dur="1s" repeatCount="indefinite" />
+    </rect>
+  </g>
+  <g class="g" transform="translate(945 130) rotate(180)">
+    <rect class="test fill8" width="20" height="60" rx="5">
+      <animateTransform attributeName="transform" type="scale" values="1 0.85" dur="1s" repeatCount="indefinite" />
+    </rect>
+  </g>
+  <g class="g" transform="translate(970 130) rotate(180)">
+    <rect class="test fill8" width="20" height="60" rx="5">
+      <animateTransform attributeName="transform" type="scale" values="1 0.85" dur="1s" repeatCount="indefinite" />
+    </rect>
+  </g>
+  <g class="g" transform="translate(995 130) rotate(180)">
+    <rect class="test fill8" width="20" height="60" rx="5">
+      <animateTransform attributeName="transform" type="scale" values="1 0.85" dur="1s" repeatCount="indefinite" />
+    </rect>
+  </g>
+  <style>
+    .test {
+      fill: context-fill;
+    }
+  </style>
+</svg>
