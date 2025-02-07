@@ -1,0 +1,316 @@
+
+/*
+Interesting advanced settings:
+- zen.view.sidebar-collapsed.hide-mute-button => false
+- browser.tabs.allow_transparent_browser => false
+- zen.workspaces.show-workspace-indicator => false
+- zen.urlbar.replace-newtab
+*/
+
+/* ----- Typeahead Find ----- */
+
+/* Open full find with all options */
+.findbar-container > checkbox[hidden] {
+  display: flex !important;
+}
+
+/* ----- Urlbar ----- */
+
+/* Center url in (non floating) urlbar */
+#urlbar-input:not([aria-expanded="true"]) {
+  text-align: center !important;
+}
+
+/* ----- Mute Tab Button ----- */
+
+/* Resize */
+.tab-icon-overlay {
+  width: 14px !important;
+  height: 14px !important;
+}
+
+/* Reposition */
+.tab-icon-overlay {
+  top: -8px !important;
+  right: -6px !important;
+}
+
+/* ----- Close Tab Button ----- */
+
+/* Close tab button in the style of the mute button */
+:root:not([zen-sidebar-expanded]) tab:hover .tab-close-button {
+  display: inline-flex !important;
+  
+  width: 0.1px !important;
+  height: 0.1px !important;
+  padding: 0.02px !important;
+  transform: scale(140);
+  
+  position: relative;
+  top: -9px;
+  right: 2.5px;
+  
+  background: #ffffff;
+  margin-inline: 0 !important;
+}
+
+:root:not([zen-sidebar-expanded]) tab:hover .tab-close-button:hover {
+  background: #ffffff !important;
+}
+
+/* Rescale */
+:root:not([zen-sidebar-expanded]) tab:hover .tab-close-button {
+  transform: scale(140);
+}
+
+/* Reposition */
+:root:not([zen-sidebar-expanded]) tab:hover .tab-close-button {
+  top: -9px;
+  right: 2.5px;
+}
+
+/* ----- Clean up spacing ----- */
+
+/* Add vertical spacing around the toolbar */
+:root:not([zen-single-toolbar]) #zen-appcontent-navbar-container {
+  padding-top: 4px;
+  padding-bottom: 4px;
+}
+
+/* Horizontally align the toolbar */
+:root:not([zen-sidebar-expanded]) #nav-bar {
+  margin-left: 0 !important;
+}
+
+:root:not([zen-sidebar-expanded]) #PersonalToolbar,
+:root:not([zen-right-side="true"]) #PersonalToolbar {
+  padding-inline-start: 0px !important;
+}
+
+:root:not([zen-compact-mode="true"]) #PersonalToolbar {
+  padding-inline-end: 0px !important;
+}
+
+#nav-bar #PanelUI-button:last-of-type toolbarbutton {
+  padding-right: 0 !important;
+}
+
+#nav-bar #nav-bar-overflow-button {
+  padding-right: 0px !important;  
+}
+
+/* Add horizontal spacing around the sidebar */
+:root:not([zen-sidebar-expanded]) {
+  --zen-toolbox-padding: 5px !important;
+}
+
+:root[zen-right-side="true"] #zen-tabbox-wrapper {
+  padding-right: 2px;
+}
+
+:root:not([zen-right-side="true"]) #zen-tabbox-wrapper {
+  padding-left: 2px;
+}
+
+/* Vertically align the sidebar */
+#zen-main-app-wrapper:has(#PersonalToolbar[collapsed="true"]) {
+  --personal-toolbar-height: 0px;
+}
+
+#zen-main-app-wrapper:has(#PersonalToolbar[collapsed="false"]) {
+  --personal-toolbar-height: 28px;
+}
+
+:root:not([zen-single-toolbar]):not([zen-sidebar-expanded]) #navigator-toolbox {
+  padding-top: calc(8px + var(--personal-toolbar-height)) !important;
+}
+
+:root:not([zen-single-toolbar])[zen-sidebar-expanded] #zen-sidebar-top-buttons {
+  margin-bottom: calc(4px + var(--personal-toolbar-height)) !important;
+}
+
+/* Add small spacing on the right of the window buttons */
+.titlebar-buttonbox-container {
+  padding-right: 4px;
+}
+
+/* ----- Hide Anything ----- */
+
+/* 
+#back-button {
+  display: none;
+}
+
+#forward-button {
+  display: none;
+}
+
+#identity-box {
+  display: none;
+}
+
+.urlbar-input-box {
+  padding-left: 6px;
+}
+
+#nav-bar {
+  margin-left: 0 !important;;
+}
+
+#tracking-protection-icon-container {
+  display: none;
+}
+
+#unified-extensions-button {
+  display: none;
+}
+
+#PanelUI-menu-button {
+  display: none;
+}
+
+.titlebar-min {
+  display: none;
+}
+
+.titlebar-restore {
+  display: none;
+}
+
+.titlebar-close {
+  display: none;
+}
+
+#contextual-feature-recommendation {
+  display: none;
+}
+
+#userContext-label {
+  display: none;
+}
+
+#userContext-indicator {
+  display: none;
+}
+ */
+#userContext-icons {
+  display: none;
+}
+/* 
+#reader-mode-button {
+  display: none;
+}
+
+#picture-in-picture-button {
+  display: none;
+}
+
+#translations-button {
+  display: none;
+}
+
+#shopping-sidebar-button {
+  display: none;
+}
+
+#urlbar-zoom-button {
+  display: none;
+}
+
+#pageActionButton {
+  display: none;
+}
+
+#zen-split-views-button {
+  display: none;
+}
+
+#star-button-box {
+  display: none;
+} */
+
+/* remove workspace button from toolbar */
+/* #zen-workspaces-button {
+  display: none !important;
+} */
+
+/* hide pinned tab reset button */
+/* .tab-reset-button {
+  display: none !important;
+} */
+
+/* hide close tab button */
+/* .tab-close-button {
+  display: none !important;
+} */
+
+.tab-icon-pending {
+/*   display: none !important; */
+}
+
+.tab-throbber {
+/*   display: none !important; */
+}
+
+.tab-icon-image[sharing] {
+/*   animation: none !important; */
+}
+
+.tab-sharing-icon-overlay {
+/*   display: none !important; */
+}
+
+.tab-icon-overlay {
+/*   display: none !important; */
+}
+
+.tab-icon-stack {
+/*   display: none !important; */
+}
+
+.tab-content {
+/*   background: none !important; */
+/*   padding-left: 10px !important; */
+}
+
+/* ----- WIP macos window buttons ----- */
+
+/* macos inspired window buttons */
+/* .titlebar-buttonbox {
+  padding-right: 12px;
+  
+  display: flex !important;
+  align-items: center;
+  gap: 6px;
+} */
+
+/* macos inspired window buttons */
+/* .titlebar-button {
+  padding: 0 !important;
+  
+  height: 14px;
+  width: 14px;
+  
+  border-radius: 100%;
+  background: #aaaaaa !important;
+} */
+
+/* macos inspired window buttons */
+/* .titlebar-min:hover {
+  background: #1aab29 !important;
+}
+ */
+/* macos inspired window buttons */
+/* .titlebar-restore:hover {
+  background: #ffbd2e !important;
+}
+ */
+/* macos inspired window buttons */
+/* .titlebar-close:hover {
+  background: #e0443e !important;
+}
+ */
+/* macos inspired window buttons */
+/* .titlebar-button .toolbarbutton-icon {
+  display: none !important;
+} */

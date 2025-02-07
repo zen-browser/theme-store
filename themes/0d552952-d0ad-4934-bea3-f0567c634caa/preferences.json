@@ -1,0 +1,159 @@
+[
+    {
+        "property": "lancear.inner-peace.typeahead-find",
+        "label": "\u00b7 Typeahead Find \u00b7",
+        "type": "checkbox",
+        "defaultValue": true,
+        "disabledOn": [
+            "windows",
+            "linux",
+            "macos"
+        ]
+    },
+    {
+        "property": "lancear.inner-peace.typeahead-find.show-full-find",
+        "label": "Open full find with all options",
+        "type": "checkbox"
+    },
+    {
+        "property": "lancear.inner-peace.urlbar",
+        "label": "\u00b7 Urlbar \u00b7",
+        "type": "checkbox",
+        "defaultValue": true,
+        "disabledOn": [
+            "windows",
+            "linux",
+            "macos"
+        ]
+    },
+    {
+        "property": "lancear.inner-peace.urlbar.center-url",
+        "label": "Center url in (non floating) urlbar",
+        "type": "checkbox"
+    },
+    {
+        "property": "lancear.inner-peace.mute-tab-button",
+        "label": "\u00b7 Mute Tab Button \u00b7",
+        "type": "checkbox",
+        "defaultValue": true,
+        "disabledOn": [
+            "windows",
+            "linux",
+            "macos"
+        ]
+    },
+    {
+        "property": "lancear.inner-peace.mute-tab-button.resize",
+        "label": "Resize",
+        "type": "checkbox"
+    },
+    {
+        "property": "lancear.inner-peace.mute-tab-button.size",
+        "label": "Size",
+        "type": "string",
+        "defaultValue": "16px"
+    },
+    {
+        "property": "lancear.inner-peace.mute-tab-button.reposition",
+        "label": "Reposition",
+        "type": "checkbox"
+    },
+    {
+        "property": "lancear.inner-peace.mute-tab-button.resize",
+        "label": "Top",
+        "type": "string",
+        "defaultValue": "-8px"
+    },
+    {
+        "property": "lancear.inner-peace.mute-tab-button.resize",
+        "label": "Right",
+        "type": "string",
+        "defaultValue": "-6px"
+    },
+    {
+        "property": "lancear.inner-peace.close-tab-button",
+        "label": "\u00b7 Mute Tab Button \u00b7",
+        "type": "checkbox",
+        "defaultValue": true,
+        "disabledOn": [
+            "windows",
+            "linux",
+            "macos"
+        ]
+    },
+    {
+        "property": "lancear.inner-peace.close-tab-button.show",
+        "label": "Show",
+        "type": "checkbox"
+    },
+    {
+        "property": "lancear.inner-peace.close-tab-button.resize",
+        "label": "Resize",
+        "type": "checkbox"
+    },
+    {
+        "property": "lancear.inner-peace.close-tab-button.size",
+        "label": "Size (px * 10 without 'px' suffix)",
+        "type": "string",
+        "defaultValue": "140"
+    },
+    {
+        "property": "lancear.inner-peace.close-tab-button.reposition",
+        "label": "Reposition",
+        "type": "checkbox"
+    },
+    {
+        "property": "lancear.inner-peace.close-tab-button.resize",
+        "label": "Top",
+        "type": "string",
+        "defaultValue": "-9px"
+    },
+    {
+        "property": "lancear.inner-peace.close-tab-button.resize",
+        "label": "Right",
+        "type": "string",
+        "defaultValue": "2.5px"
+    },
+    {
+        "property": "lancear.inner-peace.clean-up-spacing",
+        "label": "\u00b7 Clean Up Spacing \u00b7",
+        "type": "checkbox",
+        "defaultValue": true,
+        "disabledOn": [
+            "windows",
+            "linux",
+            "macos"
+        ]
+    },
+    {
+        "property": "lancear.inner-peace.clean-up-spacing.vertical-toolbar-spacing",
+        "label": "Add vertical spacing around the toolbar",
+        "type": "checkbox"
+    },
+    {
+        "property": "lancear.inner-peace.clean-up-spacing.horizontal-toolbar-alignment",
+        "label": "Horizontally align the toolbar",
+        "type": "checkbox"
+    },
+    {
+        "property": "lancear.inner-peace.clean-up-spacing.horizontal-sidebar-spacing",
+        "label": "Add horizontal spacing around the sidebar",
+        "type": "checkbox"
+    },
+    {
+        "property": "lancear.inner-peace.clean-up-spacing.vertical-sidebar-alignment",
+        "label": "Vertically align the sidebar",
+        "type": "checkbox"
+    },
+    {
+        "property": "lancear.inner-peace.clean-up-spacing.horizontal-sidebar-spacing",
+        "label": "Personal / Bookmarks toolbar height",
+        "type": "string",
+        "defaultValue": "28px"
+    },
+    {
+        "property": "lancear.inner-peace.clean-up-spacing.right-window-buttons-spacing",
+        "label": "Add small spacing on the right of the window buttons",
+        "type": "checkbox"
+    }
+]
