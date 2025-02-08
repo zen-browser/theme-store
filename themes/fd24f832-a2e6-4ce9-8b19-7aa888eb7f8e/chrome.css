@@ -73,3 +73,4 @@
   .tabbrowser-tab:is([soundplaying], [muted], [activemedia-blocked]) img {
     opacity: 0 !important;
   }
+}
