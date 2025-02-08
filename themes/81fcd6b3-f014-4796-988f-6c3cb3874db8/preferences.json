@@ -144,7 +144,7 @@
     },
     {
         "property": "uc.hidecontext.savelink",
-        "label": "[Link] Hide 'Save Link As' option",
+        "label": "[Page] [Link] Hide 'Save Page As' and 'Save Link As' option",
         "type": "checkbox"
     },
     {
