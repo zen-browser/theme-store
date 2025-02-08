@@ -1,0 +1,15 @@
+{
+    "id": "f45d250e-b607-4f31-a476-8e4502623a6c",
+    "name": "Inner Peace",
+    "description": "Easily unify, hide, and tweak the most common features in Zen. \u00b7 Fully customizable \u00b7 See GitHub for details \u00b7",
+    "homepage": "https://github.com/Lancear/zen-inner-peace",
+    "style": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/f45d250e-b607-4f31-a476-8e4502623a6c/chrome.css",
+    "readme": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/f45d250e-b607-4f31-a476-8e4502623a6c/readme.md",
+    "image": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/f45d250e-b607-4f31-a476-8e4502623a6c/image.png",
+    "author": "Lancear",
+    "version": "1.0.0",
+    "tags": [],
+    "createdAt": "2025-02-08",
+    "updatedAt": "2025-02-08",
+    "preferences": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/f45d250e-b607-4f31-a476-8e4502623a6c/preferences.json"
+}
