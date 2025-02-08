@@ -242,7 +242,8 @@
 }
 /* Hide “Select All Text” option */
 @media (-moz-bool-pref: "uc.hidecontext.selectalltext") {
-  #context-selectall {
+  #context-selectall,
+  #context-sep-selectall {
     display: none !important;
   }
 }
@@ -287,8 +288,9 @@
     display: none !important;
   }
 }
-/* Hide “Save Link As” */
+/* Hide “Save Page As and Save Link As” */
 @media (-moz-bool-pref: "uc.hidecontext.savelink") {
+  #context-savepage,
   #context-savelink {
     display: none !important;
   }
