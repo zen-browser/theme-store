@@ -1,4 +1,16 @@
-
-:root{
-	--zen-main-browser-background: #00000000 !important;
-}
+:root {
+	--zen-main-browser-background: var(
+	  --mod-sameerasw-zen_transparency_color,
+	  #00000000
+	) !important;
+  }
+  
+  #main-window {
+	@media (-moz-bool-pref: "mod.sameerasw.zen_bg_img_enabled") {
+	  background-image: url(--mod-sameerasw-zen_transparency) !important;
+	  background-position: center !important;
+	  background-repeat: no-repeat !important;
+	  background-size: cover !important;
+	}
+  }
+  
