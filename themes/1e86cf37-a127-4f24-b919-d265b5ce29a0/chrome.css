@@ -1,22 +1,48 @@
 #unified-extensions-view box.panel-header,
 #unified-extensions-description,
-#unified-extensions-messages-container {
+#unified-extensions-messages-container,
+.unified-extensions-item-message-deck {
   display: none !important;
 }
-
 #unified-extensions-view {
   width: var(--menu-panel-width) !important;
 }
-
 panelview .unified-extensions-item-action-button {
   padding-inline: 10px !important;
   padding-block: 0px !important;
 }
-
 #unified-extensions-manage-extensions {
   padding-inline: 10px !important;
 }
-
 #unified-extensions-panel .unified-extensions-item {
-  margin-block: 1px !important;
+  margin-block: 2px !important;
+}
+#unified-extensions-view .unified-extensions-item-action-button:hover {
+  background-color: transparent !important;
+}
+#unified-extensions-view .unified-extensions-item-menu-button.subviewbutton,
+.unified-extensions-item-row-wrapper {
+  padding: 0 !important;
+}
+#unified-extensions-view .unified-extensions-item-menu-button.subviewbutton > .toolbarbutton-icon {
+  opacity: 0 !important;
+  transition: 0.2s ease !important;
+}
+#unified-extensions-panel .unified-extensions-item:hover {
+  .unified-extensions-item-menu-button.subviewbutton > .toolbarbutton-icon {
+    opacity: 0.85 !important;
+  }
+}
+#unified-extensions-view .unified-extensions-item-action-button .panel-no-padding .webextension-browser-action {
+  padding: 0 !important;
+}
+#unified-extensions-view .toolbar-menupopup :is(menu, menuitem), .subview-subheader, panelview .toolbarbutton-1, .subviewbutton, .widget-overflow-list .toolbarbutton-1 {
+  max-height: 3em !important;
+}
+#unified-extensions-view .subviewbutton-iconic {
+& > .toolbarbutton-icon {
+  width: 1.2em !important;
+  height: 1.2em !important;
+  padding: 0.7em !important;
+  }
 }
