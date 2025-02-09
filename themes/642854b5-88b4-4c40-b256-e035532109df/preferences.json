@@ -1,26 +1,27 @@
 [
     {
-        "property": "property",
-        "label": "browser.tabs.allow_transparent_browser",
-        "type": "checkbox",
-        "disabledOn": []
+      "property": "browser.tabs.allow_transparent_browser",
+      "label": "Allow zen browser to be transparent",
+      "type": "checkbox",
+      "defaultvalue": true
     },
     {
-        "property": "label",
-        "label": "Allow zen browser to be transparent",
-        "type": "checkbox",
-        "disabledOn": []
+      "property": "mod.sameerasw.zen_transparency_color",
+      "label": "Set background color for Zen",
+      "type": "string",
+      "defaultvalue": "#00000000"
     },
     {
-        "property": "type",
-        "label": "checkbox",
-        "type": "checkbox",
-        "disabledOn": []
+      "property": "mod.sameerasw.zen_bg_img_enabled",
+      "label": "Enable custom background image for Zen",
+      "type": "checkbox",
+      "defaultvalue": false
     },
     {
-        "property": "defaultValue",
-        "label": "true",
-        "type": "checkbox",
-        "disabledOn": []
+      "property": "mod.sameerasw.zen_transparency",
+      "label": "Set bg image url",
+      "type": "string",
+      "defaultvalue": ""
     }
-]
+  ]
+  
