@@ -1,33 +1,31 @@
 .tab-icon-overlay {
-  opacity: 1 !important;
-  margin: initial !important;
-  border: none !important;
-  margin-right: 32px !important;
-  transform: translate(120%, 50%) scale(1.6) !important;
-  color: light-dark(black, white) !important;
-  background-color: transparent !important;
-  transition: 0.3s !important;
-}
+    opacity: 1 !important;
+    margin: initial !important;
+    border: none !important;
+    margin-right: 32px !important;
+    transform: translate(120%, 50%) scale(1.5) !important;
+    background-color: transparent !important;
+    fill: light-dark(black, white) !important;
+    transition: 0.2s;
 
-.tab-icon-overlay:hover {
-  color: var(--zen-primary-color) !important;
-  transition: 0.3s !important;
-}
+    &:hover {
+        fill: var(--zen-primary-color) !important;
+        transition: 0.2s;
+    }
 
-.tab-icon-overlay:is([soundplaying], [muted]):not([selected]) {
-  display: block !important;
-}
-
-/* Hide sound labels */
-.tab-icon-sound-label,
-.tab-icon-sound-playing-label {
-  display: none !important;
+    &:is([soundplaying], [muted]):not([selected]) {
+        display: block !important;
+    }
 }
 
 /* Mute button takes place of tab icon when tabs are not expanded */
 @media not (-moz-bool-pref: "zen.view.sidebar-expanded") {
-  .tab-icon-overlay {
-    margin: auto 30px !important;
-    transform: translate(-35%, 50%) scale(1.6) !important;
-  }
+    .tab-icon-overlay {
+        margin: 0px !important;
+        transform: translate(-35%, 50%) scale(1.5) !important;
+    }
+
+    .tabbrowser-tab:is([soundplaying], [muted]) .tab-icon-image {
+        display: none !important;
+    }
 }
