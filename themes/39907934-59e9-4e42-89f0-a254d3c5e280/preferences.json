@@ -26,7 +26,7 @@
         "property": "browser.tabs.allow_transparent_browser",
         "label": "Allow Transparent Browser Tabs",
         "type": "checkbox",
-        "defaultValue": true
+        "defaultValue": false
     },
     {
         "property": "theme.sidebery.hide-zen-tabbar",
