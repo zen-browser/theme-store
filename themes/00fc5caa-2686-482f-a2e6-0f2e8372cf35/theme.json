@@ -1,0 +1,14 @@
+{
+    "id": "00fc5caa-2686-482f-a2e6-0f2e8372cf35",
+    "name": "NoFlash",
+    "description": "Prevent white screen flashes during page loads when using dark mode extensions",
+    "homepage": "https://github.com/ndit-dev/NoFlash",
+    "style": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/00fc5caa-2686-482f-a2e6-0f2e8372cf35/chrome.css",
+    "readme": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/00fc5caa-2686-482f-a2e6-0f2e8372cf35/readme.md",
+    "image": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/00fc5caa-2686-482f-a2e6-0f2e8372cf35/image.png",
+    "author": "ndit-dev",
+    "version": "1.0.0",
+    "tags": [],
+    "createdAt": "2025-02-12",
+    "updatedAt": "2025-02-12"
+}

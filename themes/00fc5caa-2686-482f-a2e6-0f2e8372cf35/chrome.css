@@ -1,0 +1,9 @@
+
+@-moz-document url("about:newtab") {
+  body {
+    background-color: #1A1A1A !important;
+  }
+}
+@-moz-document url(chrome://browser/content/browser.xhtml) {
+  browser[type="content-primary"] {background: #1A1A1A !important}
+}
