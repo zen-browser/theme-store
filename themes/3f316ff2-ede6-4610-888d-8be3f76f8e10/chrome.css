@@ -1,4 +1,3 @@
-
 #urlbar[open][zen-floating-urlbar="true"] {
     top: 50% !important;
     transform: translateX(calc(var(--zen-sidebar-width, 273px) / 2)) translateY(-50%) !important;
@@ -20,15 +19,16 @@
     left: 0;
     width: 100%;
     height: 100%;
+    z-index: 1;
     user-select: none;
     pointer-events: none;
     border-radius: var(--zen-native-inner-radius);
 
-will-change: background-color;
-    background-color: rgba(0, 0, 0, 0);
+    will-change: background-color;
+    background-color: light-dark(rgba(255, 255, 255, 0), rgba(0, 0, 0, 0));
     transition: background-color 0.2s ease-out;
 }
 
 #zen-appcontent-wrapper:has(#urlbar[zen-floating-urlbar="true"]) #tabbrowser-tabbox::before {
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: light-dark(rgba(255, 255, 255, 0.5), rgba(0, 0, 0, 0.5));
 }
