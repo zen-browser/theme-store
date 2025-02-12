@@ -1,0 +1,5 @@
+
+#viewerContainer > #viewer > .page > .canvasWrapper > canvas {
+  background-color: #1a1a1a !important; 
+  filter: invert(94%) hue-rotate(180deg);
+}

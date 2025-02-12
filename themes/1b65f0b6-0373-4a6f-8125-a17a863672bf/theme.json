@@ -1,0 +1,14 @@
+{
+    "id": "1b65f0b6-0373-4a6f-8125-a17a863672bf",
+    "name": "PDF Dark Mode",
+    "description": "View PDFs in dark mode for comfortable reading and reduced eye strain",
+    "homepage": "https://github.com/ndit-dev/PDF-Dark-Mode",
+    "style": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/1b65f0b6-0373-4a6f-8125-a17a863672bf/chrome.css",
+    "readme": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/1b65f0b6-0373-4a6f-8125-a17a863672bf/readme.md",
+    "image": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/1b65f0b6-0373-4a6f-8125-a17a863672bf/image.png",
+    "author": "ndit-dev",
+    "version": "1.0.0",
+    "tags": [],
+    "createdAt": "2025-02-12",
+    "updatedAt": "2025-02-12"
+}
