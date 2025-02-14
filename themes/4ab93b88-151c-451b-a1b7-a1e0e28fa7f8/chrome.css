@@ -1,15 +1,15 @@
 @media not (-moz-bool-pref: "theme.nosidebarscrollbar.before173b") {
-  #zen-browser-tabs-wrapper {
-    scrollbar-width: none;
-  }
+    #zen-browser-tabs-wrapper {
+        scrollbar-width: none !important;
+    }
 }
 
 @media (-moz-bool-pref: "theme.nosidebarscrollbar.before173b") {
-  scrollbox:nth-child(5) {
-    scrollbar-width: none !important;
-  }
-  /* Pinned Tabs */
-  #vertical-pinned-tabs-container {
-    scrollbar-width: none !important;
-  }
+    scrollbox:nth-child(5) {
+        scrollbar-width: none !important;
+    }
+    /* Pinned Tabs */
+    #vertical-pinned-tabs-container {
+        scrollbar-width: none !important;
+    }
 }
