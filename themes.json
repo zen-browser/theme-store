@@ -231,10 +231,10 @@
         "readme": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/87196c08-8ca1-4848-b13b-7ea41ee830e7/readme.md",
         "image": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/87196c08-8ca1-4848-b13b-7ea41ee830e7/image.png",
         "author": "Kaedriz",
-        "version": "1.0.0",
+        "version": "1.1.0",
         "tags": [],
         "createdAt": "2024-12-20",
-        "updatedAt": "2025-01-26"
+        "updatedAt": "2025-02-07"
     },
     "58649066-2b6f-4a5b-af6d-c3d21d16fc00": {
         "id": "58649066-2b6f-4a5b-af6d-c3d21d16fc00",
@@ -735,6 +735,20 @@
         "createdAt": "2024-09-24",
         "updatedAt": "2025-01-26"
     },
+    "599a1599-e6ab-4749-ab22-de533860de2c": {
+        "id": "599a1599-e6ab-4749-ab22-de533860de2c",
+        "name": "Pimp your PiP",
+        "description": "Collection of tweaks and upgrades to PiP",
+        "homepage": "",
+        "style": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/599a1599-e6ab-4749-ab22-de533860de2c/chrome.css",
+        "readme": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/599a1599-e6ab-4749-ab22-de533860de2c/readme.md",
+        "image": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/599a1599-e6ab-4749-ab22-de533860de2c/image.png",
+        "author": "shldk",
+        "version": "1.0.0",
+        "tags": [],
+        "createdAt": "2025-02-07",
+        "updatedAt": "2025-02-07"
+    },
     "dd4f5461-1564-4e56-9f9d-f81e3c18f93c": {
         "id": "dd4f5461-1564-4e56-9f9d-f81e3c18f93c",
         "name": "Zen Sidebar At Right Side",
@@ -776,7 +790,7 @@
         "version": "1.0.0",
         "tags": [],
         "createdAt": "2024-09-03",
-        "updatedAt": "2025-01-26"
+        "updatedAt": "2025-02-09"
     },
     "a5f6a231-e3c8-4ce8-8a8e-3e93efd6adec": {
         "id": "a5f6a231-e3c8-4ce8-8a8e-3e93efd6adec",
@@ -852,16 +866,17 @@
     "2317fd93-c3ed-4f37-b55a-304c1816819e": {
         "id": "2317fd93-c3ed-4f37-b55a-304c1816819e",
         "name": "Audio Indicator Enhanced",
-        "description": "Enhanced audio indicator, with more polished style",
+        "description": "Enhanced audio indicator, with more polished style (New Visualizer Mode)",
         "homepage": "https://github.com/Kaedriz/ZenMods/tree/main/AudioIndicatorEnhanced",
         "style": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/2317fd93-c3ed-4f37-b55a-304c1816819e/chrome.css",
         "readme": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/2317fd93-c3ed-4f37-b55a-304c1816819e/readme.md",
         "image": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/2317fd93-c3ed-4f37-b55a-304c1816819e/image.png",
         "author": "Kaedriz",
-        "version": "1.0.0",
+        "version": "1.1.0",
+        "preferences": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/2317fd93-c3ed-4f37-b55a-304c1816819e/preferences.json",
         "tags": [],
         "createdAt": "2024-12-06",
-        "updatedAt": "2025-01-26"
+        "updatedAt": "2025-02-09"
     },
     "6cd4bca9-f17d-4461-b554-844d69a4887c": {
         "id": "6cd4bca9-f17d-4461-b554-844d69a4887c",
@@ -909,20 +924,6 @@
         "version": "1.0.0",
         "tags": [],
         "createdAt": "2024-12-01",
-        "updatedAt": "2025-01-26"
-    },
-    "5ac61d13-a0dc-400e-aaa0-0f10fd3a7d0c": {
-        "id": "5ac61d13-a0dc-400e-aaa0-0f10fd3a7d0c",
-        "name": "Uniform Workspaces Button",
-        "description": "Make the workspaces button consistent with the other sidebar buttons, while remaining unique.",
-        "homepage": "https://github.com/andrewbellucci/zen-uniform-workspaces-button",
-        "style": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/5ac61d13-a0dc-400e-aaa0-0f10fd3a7d0c/chrome.css",
-        "readme": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/5ac61d13-a0dc-400e-aaa0-0f10fd3a7d0c/readme.md",
-        "image": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/5ac61d13-a0dc-400e-aaa0-0f10fd3a7d0c/image.png",
-        "author": "andrewbellucci",
-        "version": "1.0.0",
-        "tags": [],
-        "createdAt": "2024-08-24",
         "updatedAt": "2025-01-26"
     },
     "c5f7fb68-cc75-4df0-8b02-dc9ee13aa773": {
@@ -1043,10 +1044,10 @@
         "readme": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/fd24f832-a2e6-4ce9-8b19-7aa888eb7f8e/readme.md",
         "image": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/fd24f832-a2e6-4ce9-8b19-7aa888eb7f8e/image.png",
         "author": "wysh3",
-        "version": "1.0.0",
+        "version": "1.1.0",
         "tags": [],
         "createdAt": "2024-12-17",
-        "updatedAt": "2025-01-26"
+        "updatedAt": "2025-02-09"
     },
     "6f11c932-b992-433e-8c80-56a613cc511e": {
         "id": "6f11c932-b992-433e-8c80-56a613cc511e",
@@ -1085,13 +1086,13 @@
         "readme": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/81fcd6b3-f014-4796-988f-6c3cb3874db8/readme.md",
         "image": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/81fcd6b3-f014-4796-988f-6c3cb3874db8/image.png",
         "author": "KiKaraage",
-        "version": "1.1.4",
+        "version": "2.0",
         "preferences": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/81fcd6b3-f014-4796-988f-6c3cb3874db8/preferences.json",
         "tags": [
             "context menu"
         ],
         "createdAt": "2024-10-06",
-        "updatedAt": "2025-01-26"
+        "updatedAt": "2025-02-09"
     },
     "5941aefd-67b0-453d-9b62-9071a31cbb0d": {
         "id": "5941aefd-67b0-453d-9b62-9071a31cbb0d",
