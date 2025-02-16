@@ -1,0 +1,98 @@
+
+#urlbar:is([breakout][breakout-extend], [breakout][usertyping][focused]):after {
+  top: -6px !important;
+}
+
+.urlbarView-body-inner {
+  #urlbar[open] > .urlbarView > .urlbarView-body-outer > & {
+    border-top: none !important;
+  }
+}
+
+.search-one-offs {
+  display: none !important;
+}
+
+#urlbar[open] {
+  top: calc(var(--zen-toolbar-height) * 3.3) !important;
+}
+
+#urlbar[breakout-extend="true"] > #urlbar-background {
+  background: rgba(10, 10, 10, 0.4) !important;
+  backdrop-filter: blur(3rem) !important;
+  border-radius: 16px !important;
+  border-color: transparent !important;
+}
+
+#urlbar[breakout-extend] {
+  #identity-permission-box,
+  #tracking-protection-icon-container,
+  #page-action-buttons {
+    display: none !important;
+  }
+
+#identity-icon-box {
+    margin: 5px !important;
+    scale: 150%;
+    border-radius: 6px !important;
+  }
+
+#identity-box {
+    margin-right: 0px !important;
+  }
+
+#urlbar-input {
+    margin-left: 5px !important;
+    margin-right: 5px !important;
+    font-size: 20px !important;
+  }
+}
+
+.urlbarView-row-inner {
+  border-radius: calc(var(--urlbarView-row-gutter) + var(--toolbarbutton-border-radius));
+  display: flex !important;
+}
+
+.urlbarView-title,
+.urlbarView-title-separator,
+.urlbarView-action,
+.urlbarView-url {
+  margin-top: auto !important;
+  margin-bottom: auto !important;
+}
+
+.urlbarView-title {
+  font-size: 16px !important;
+  font-weight: 500 !important;
+}
+
+.urlbarView-url,
+.urlbarView-title-separator::before {
+  font-weight: 500 !important;
+  color: rgba(215, 215, 215) !important;
+}
+
+.urlbarView-favicon {
+  margin-left: 3px !important;
+  margin-right: 12px !important;
+  padding: 4px !important;
+  border-radius: 6px !important;
+  transform: scale(1.5) !important;
+}
+
+.urlbarView-row:hover {
+  background: transparent !important;
+}
+
+.urlbarView-row:hover .urlbarView-favicon {
+  background-color: #f1efe2 !important;
+}
+
+.urlbarView-row:hover .urlbarView-row-inner {
+  background: color-mix(in srgb, var(--zen-colors-primary) 30%, #f1efe230) !important;
+}
+
+* {
+  --urlbarView-item-inline-padding: 8px !important;
+  --urlbarView-item-block-padding: 12px !important;
+}
