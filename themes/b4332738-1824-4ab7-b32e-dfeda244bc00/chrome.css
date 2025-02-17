@@ -1,0 +1,22 @@
+
+:root {
+    &:not([zen-single-toolbar="true"]) {
+        --zen-toolbar-height: calc(38px + var(--zen-element-separation) * 2) !important;
+
+.titlebar-button {
+            padding: calc(17px + var(--zen-element-separation)) !important;
+        }
+    }
+
+&:not([zen-sidebar-expanded="true"]) {
+        --tab-min-width: calc(36px + var(--zen-element-separation) * 2) !important;
+    }
+
+&[zen-right-side="true"] #zen-sidebar-top-buttons .titlebar-buttonbox-container {
+        margin-top: 0 !important;
+    }
+}
+
+.titlebar-button {
+    align-items: center !important;
+}
