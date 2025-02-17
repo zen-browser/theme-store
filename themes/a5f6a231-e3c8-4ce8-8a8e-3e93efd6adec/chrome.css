@@ -7,11 +7,6 @@
     backdrop-filter: blur(25px) !important;
 }
 
-#urlbar[breakout-extend="true"] .urlbar-input-container {
-    padding-top: 7px !important;
-    padding-bottom: 0px !important;
-}
-
 /* Unifies the border radius */
 .urlbarView-row {
   border-radius: 11px !important;
