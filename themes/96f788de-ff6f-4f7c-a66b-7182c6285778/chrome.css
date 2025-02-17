@@ -1,0 +1,34 @@
+
+#browser:has(#urlbar[open][zen-floating-urlbar="true"], #searchbar:focus-within) .browserContainer {
+    pointer-events: none;
+    transform-origin: center;
+    filter: blur(10px) brightness(70%) saturate(50%) opacity(70%) !important;
+    transition: all 0.3s cubic-bezier(0.19, 1, 0.22, 1) !important;
+}
+
+#urlbar[open][zen-floating-urlbar="true"],
+#searchbar:focus-within {
+    animation: urlbarFloat 0.3s cubic-bezier(0.19, 1, 0.22, 1) forwards;
+    backdrop-filter: blur(8px);
+    transform-origin: top;
+}
+
+@keyframes urlbarFloat {
+    0% {
+        transform: translateY(-5px) scale(0.98);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0) scale(1);
+        opacity: 1;
+    }
+}
+
+#urlbar[zen-floating-urlbar="true"],
+#searchbar {
+    transition: all 0.3s cubic-bezier(0.19, 1, 0.22, 1);
+}
+
+.browserContainer {
+    transition: all 0.3s cubic-bezier(0.19, 1, 0.22, 1) !important;
+}
