@@ -1,0 +1,34 @@
+
+@media not (-moz-bool-pref: "uc.zen-web-panel-sidebar-tweaks.disable-pinned-web-panel-sizebar-float-right") {
+  /* Make the web panel side bar the right-most item */
+  #zen-sidebar-web-panel-wrapper:has(#zen-sidebar-web-panel:not([pinned="true"])) {
+    order: 1000 !important;
+  }
+
+/* Enable the resize handle on the left of the web panel sidebar */
+  #zen-sidebar-web-panel:not([pinned="true"]) .zen-sidebar-web-panel-splitter[side="left"] {
+    display: inherit !important;;
+    margin: inherit !important;;
+  }
+
+/* Disable the resize handle on the right of the web panel sidebar */
+  #zen-sidebar-web-panel:not([pinned="true"]) .zen-sidebar-web-panel-splitter[side="right"] {
+    display: none !important;;
+    margin: 0 !important;;
+  }
+}
+
+@media not (-moz-bool-pref: "uc.zen-web-panel-sidebar-tweaks.disable-tweaked-sidebar-toolbar-colors") {
+  /* Make the web panel sidebar toolbar colors fit in with zen better */
+  #zen-sidebar-web-panel:not([pinned="true"]) {
+    background: color-mix(in srgb, var(--toolbarbutton-hover-background) 50%, transparent 50%) !important;
+  }
+}
+
+@media not (-moz-bool-pref: "uc.zen-web-panel-sidebar-tweaks.disable-tweaked-search-bar-margin") {
+  /* Make search bar margin the same as everything else */
+  #nav-bar {
+    margin-bottom: 2px !important;
+    margin-top: 3px !important;
+  }
+}
