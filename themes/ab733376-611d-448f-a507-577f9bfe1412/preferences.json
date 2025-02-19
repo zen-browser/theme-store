@@ -1,0 +1,38 @@
+[
+    {
+        "property": "zen.mods.ExtensionMenuEnhanced.backgroundColorNative.enabled",
+        "label": "Follows background color of Zen main browser (Workspaces included)",
+        "type": "checkbox",
+        "defaultValue": false
+    },
+    {
+        "property": "zen.mods.ExtensionMenuEnhanced.backgroundColorNative.parallax.enabled",
+        "label": "Matches background gradient of Zen main browser to extension panel (Experiment: Requires manual positioning & breaks on resizing window) (Unused for now)",
+        "type": "checkbox",
+        "defaultValue": false
+    },
+    {
+        "property": "zen.mods.ExtensionMenuEnhanced.backgroundColorNative.parallax.positionX",
+        "label": "Horizontal position of background gradient (Unused for now)",
+        "type": "string",
+        "defaultValue": "-1533px"
+    },
+    {
+        "property": "zen.mods.ExtensionMenuEnhanced.backgroundColorNative.parallax.positionY",
+        "label": "Vertical position of background gradient (Unused for now)",
+        "type": "string",
+        "defaultValue": "-30px"
+    },
+    {
+        "property": "zen.mods.ExtensionMenuEnhanced.buttons.background.enabled",
+        "label": "Show background behind extension buttons",
+        "type": "checkbox",
+        "defaultValue": true
+    },
+    {
+        "property": "zen.mods.ExtensionMenuEnhanced.buttons.disabledBackground.color",
+        "label": "Show special background behind passive extension buttons (Ones at the bottom(",
+        "type": "checkbox",
+        "defaultValue": true
+    }
+]
