@@ -33,8 +33,10 @@ html {
 }
 @media (-moz-bool-pref: "theme.sidebery.hide-zen-tabbar") {
   #navigator-toolbox {
-    position: absolute;
-    left: -100%;
+    position: absolute !important;
+    left: 0px;
+    top: 0px;
+    opacity: 0;
   }
   #zen-sidebar-splitter {
     display: none;
