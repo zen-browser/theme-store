@@ -8,7 +8,7 @@ import sys
 import requests
 import urllib.parse
 from enum import StrEnum
-
+from PIL import Image
 
 class PreferenceFields(StrEnum):
     PROPERTY = "property"
@@ -305,6 +305,13 @@ def download_image(image_url, image_path):
         panic("Image must be a PNG.")
     with open(image_path, "wb") as f:
         f.write(response.content)
+    validate_image(image_path)
+
+def validate_image(image_path):
+    # Size must be 600x400
+    image = Image.open(image_path)
+    if image.size != (600, 400):
+        panic("Image must be 600x400 pixels.")
 
 
 def main():
