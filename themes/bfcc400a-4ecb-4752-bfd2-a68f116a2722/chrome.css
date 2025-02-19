@@ -236,22 +236,22 @@
 
 @media not (-moz-bool-pref: "theme.no_gaps.rounded_corners") {
   @media not (-moz-bool-pref: "theme.no_gaps.split.rounded_corners") {
-    #tabbrowser-tabpanels {
-      --zen-webview-border-radius: 0;
+    #tabbrowser-tabpanels .browserSidebarContainer {
+      border-radius: 0 !important;
     }
   }
 
   @media (-moz-bool-pref: "theme.no_gaps.split.rounded_corners") {
-    #tabbrowser-tabpanels:not([zen-split-view="true"]) {
-      --zen-webview-border-radius: 0;
+    #tabbrowser-tabpanels:not([zen-split-view="true"]) .browserSidebarContainer {
+      border-radius: 0 !important;
     }
   }
 }
 
 @media (-moz-bool-pref: "theme.no_gaps.rounded_corners") {
   @media not (-moz-bool-pref: "theme.no_gaps.split.rounded_corners") {
-    #tabbrowser-tabpanels[zen-split-view="true"] {
-      --zen-webview-border-radius: 0;
+    #tabbrowser-tabpanels[zen-split-view="true"] .browserSidebarContainer {
+      border-radius: 0 !important;
     }
   }
 }

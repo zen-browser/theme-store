@@ -1,7 +1,12 @@
 [
     {
+        "property": "theme.better_find_bar.transparent_background",
+        "label": "Transparent background",
+        "type": "checkbox"
+    },
+    {
         "property": "theme.better_find_bar.horizontal_position",
-        "label": "Changes the horizontal position of the find bar.",
+        "label": "Horizontal position",
         "type": "dropdown",
         "disabledOn": [],
         "options": [
@@ -18,10 +23,5 @@
                 "value": "right"
             }
         ]
-    },
-    {
-        "property": "theme.better_find_bar.transparent_background",
-        "label": "Makes the background of the find bar to be transparent.",
-        "type": "checkbox"
     }
 ]
