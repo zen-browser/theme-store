@@ -79,6 +79,7 @@ def get_styles(is_color_theme, theme_id):
 
         # we actually have a JSON file here that needs to be generated
         if is_color_theme:
+            panic("Color themes have been deprecated, sorry!")
             with open(f"themes/{theme_id}/{COLORS_FILE}", "w") as f:
                 json.dump(json.loads(content), f, indent=4)
             return "/* This is a color theme. */"
