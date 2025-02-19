@@ -1,0 +1,14 @@
+{
+    "id": "c69c60d9-2173-46c8-89a8-b06aaf639475",
+    "name": "Add new tab urlbar icon",
+    "description": "Adds an icon and the text open in new tab to the urlbar if opened by pressing New Tab or Ctrl+T",
+    "homepage": "https://github.com/Evthestrike/zen-browser-add-new-tab-icon-to-urlbar",
+    "style": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/c69c60d9-2173-46c8-89a8-b06aaf639475/chrome.css",
+    "readme": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/c69c60d9-2173-46c8-89a8-b06aaf639475/readme.md",
+    "image": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/c69c60d9-2173-46c8-89a8-b06aaf639475/image.png",
+    "author": "Evthestrike",
+    "version": "1.0.0",
+    "tags": [],
+    "createdAt": "2025-02-19",
+    "updatedAt": "2025-02-19"
+}
