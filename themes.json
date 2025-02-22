@@ -42,25 +42,6 @@
         "updatedAt": "2025-01-26",
         "preferences": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/a7125691-139e-4a62-aad9-06c6e9f2e5ba/preferences.json"
     },
-    "56449583-f295-4f34-baf8-da70d3d156e7": {
-        "id": "56449583-f295-4f34-baf8-da70d3d156e7",
-        "name": "Solarized",
-        "description": "Solarized color pallete ported into Zen!",
-        "homepage": "https://github.com/mohvn/solarized-zenbrowser",
-        "style": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/56449583-f295-4f34-baf8-da70d3d156e7/chrome.css",
-        "readme": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/56449583-f295-4f34-baf8-da70d3d156e7/readme.md",
-        "image": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/56449583-f295-4f34-baf8-da70d3d156e7/image.png",
-        "author": "mohvn",
-        "version": "1.0.0",
-        "isDarkMode": true,
-        "isColorTheme": true,
-        "tags": [
-            "color scheme",
-            "dark"
-        ],
-        "createdAt": "2024-09-09",
-        "updatedAt": "2025-01-26"
-    },
     "680424a8-a818-406b-98c5-7726214e2a9f": {
         "id": "680424a8-a818-406b-98c5-7726214e2a9f",
         "name": "Remove Browser Padding",
@@ -209,25 +190,6 @@
         "createdAt": "2024-08-19",
         "updatedAt": "2025-01-26"
     },
-    "e3eec307-7c64-4cbd-a0c5-3447cd45a840": {
-        "id": "e3eec307-7c64-4cbd-a0c5-3447cd45a840",
-        "name": "Catppuccin",
-        "description": "Dive into Catppuccin's, unique pastel color theme for Zen!",
-        "homepage": "https://catppuccin.com/",
-        "style": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/e3eec307-7c64-4cbd-a0c5-3447cd45a840/chrome.css",
-        "readme": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/e3eec307-7c64-4cbd-a0c5-3447cd45a840/readme.md",
-        "image": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/e3eec307-7c64-4cbd-a0c5-3447cd45a840/image.png",
-        "author": "mauro-balades",
-        "version": "1.0.0",
-        "isDarkMode": true,
-        "isColorTheme": true,
-        "tags": [
-            "color scheme",
-            "dark"
-        ],
-        "createdAt": "2024-08-21",
-        "updatedAt": "2025-01-26"
-    },
     "ad97bb70-0066-4e42-9b5f-173a5e42c6fc": {
         "id": "ad97bb70-0066-4e42-9b5f-173a5e42c6fc",
         "name": "SuperPins",
@@ -243,25 +205,6 @@
             "tabs"
         ],
         "createdAt": "2024-08-28",
-        "updatedAt": "2025-01-26"
-    },
-    "17f70712-4530-42d0-ba0f-fa25bcbf2ddc": {
-        "id": "17f70712-4530-42d0-ba0f-fa25bcbf2ddc",
-        "name": "Vesper Dark",
-        "description": "Pepermint and orange flavored dark theme for Zen browser.",
-        "homepage": "",
-        "style": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/17f70712-4530-42d0-ba0f-fa25bcbf2ddc/chrome.css",
-        "readme": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/17f70712-4530-42d0-ba0f-fa25bcbf2ddc/readme.md",
-        "image": "https://i.imgur.com/SmQiVq7.png",
-        "author": "bdsqqq",
-        "version": "1.0.1",
-        "isDarkMode": true,
-        "isColorTheme": true,
-        "tags": [
-            "color scheme",
-            "dark"
-        ],
-        "createdAt": "2024-08-22",
         "updatedAt": "2025-01-26"
     },
     "cfa711cf-e9f7-4c35-8289-3e7633f93565": {
@@ -288,10 +231,10 @@
         "readme": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/87196c08-8ca1-4848-b13b-7ea41ee830e7/readme.md",
         "image": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/87196c08-8ca1-4848-b13b-7ea41ee830e7/image.png",
         "author": "Kaedriz",
-        "version": "1.0.0",
+        "version": "1.1.0",
         "tags": [],
         "createdAt": "2024-12-20",
-        "updatedAt": "2025-01-26"
+        "updatedAt": "2025-02-07"
     },
     "58649066-2b6f-4a5b-af6d-c3d21d16fc00": {
         "id": "58649066-2b6f-4a5b-af6d-c3d21d16fc00",
@@ -308,25 +251,6 @@
         "createdAt": "2024-08-09",
         "updatedAt": "2025-01-26"
     },
-    "e4faf306-61b1-4785-8678-7bdee9dc2564": {
-        "id": "e4faf306-61b1-4785-8678-7bdee9dc2564",
-        "name": "Tokyo Night Moon",
-        "description": "A dark theme inspired by folke's Tokyo Night Moon color palette",
-        "homepage": "https://github.com/ZweTyy/Tokyo-Night-Moon-Theme-Zen-browser",
-        "style": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/e4faf306-61b1-4785-8678-7bdee9dc2564/chrome.css",
-        "readme": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/e4faf306-61b1-4785-8678-7bdee9dc2564/readme.md",
-        "image": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/e4faf306-61b1-4785-8678-7bdee9dc2564/image.png",
-        "author": "ZweTyy",
-        "version": "1.0.1",
-        "isDarkMode": true,
-        "isColorTheme": true,
-        "tags": [
-            "color scheme",
-            "dark"
-        ],
-        "createdAt": "2024-09-15",
-        "updatedAt": "2025-01-26"
-    },
     "49dbaa98-06ee-42bd-9a8e-834babef7a41": {
         "id": "49dbaa98-06ee-42bd-9a8e-834babef7a41",
         "name": "Collapsed Tab X Button",
@@ -341,37 +265,6 @@
             "tabs"
         ],
         "createdAt": "2024-08-31",
-        "updatedAt": "2025-01-26"
-    },
-    "f4a7562f-6e54-4f1e-b835-a397fc6c15f2": {
-        "id": "f4a7562f-6e54-4f1e-b835-a397fc6c15f2",
-        "name": "Ros\u00e9 Pine Dawn",
-        "description": "Minimalist, pine, freshness for your browser!",
-        "homepage": "https://github.com/feco/zen-rose-pine-dawn",
-        "style": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/f4a7562f-6e54-4f1e-b835-a397fc6c15f2/chrome.css",
-        "readme": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/f4a7562f-6e54-4f1e-b835-a397fc6c15f2/readme.md",
-        "image": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/f4a7562f-6e54-4f1e-b835-a397fc6c15f2/image.png",
-        "author": "feco",
-        "version": "1.0.0",
-        "tags": [],
-        "createdAt": "2024-10-06",
-        "updatedAt": "2025-01-26"
-    },
-    "7ba20fe1-7286-4b1f-9bf6-39d40bec8ae0": {
-        "id": "7ba20fe1-7286-4b1f-9bf6-39d40bec8ae0",
-        "name": "Crimson",
-        "description": "A crimson red theme for Zen :)",
-        "homepage": "",
-        "style": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/7ba20fe1-7286-4b1f-9bf6-39d40bec8ae0/chrome.css",
-        "readme": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/7ba20fe1-7286-4b1f-9bf6-39d40bec8ae0/readme.md",
-        "image": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/7ba20fe1-7286-4b1f-9bf6-39d40bec8ae0/image.png",
-        "author": "shaeriz",
-        "version": "1.0.0",
-        "tags": [
-            "color scheme",
-            "dark"
-        ],
-        "createdAt": "2024-10-12",
         "updatedAt": "2025-01-26"
     },
     "1e9f3101-210b-4ff5-8830-434e4919100d": {
@@ -532,25 +425,6 @@
         "createdAt": "2024-09-03",
         "updatedAt": "2025-01-26"
     },
-    "ef16716a-58dc-42d4-99f8-b1667d32247d": {
-        "id": "ef16716a-58dc-42d4-99f8-b1667d32247d",
-        "name": "Formula 1",
-        "description": "Embrace the simplicity of black and red",
-        "homepage": "",
-        "style": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/ef16716a-58dc-42d4-99f8-b1667d32247d/chrome.css",
-        "readme": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/ef16716a-58dc-42d4-99f8-b1667d32247d/readme.md",
-        "image": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/ef16716a-58dc-42d4-99f8-b1667d32247d/image.png",
-        "author": "thejournalwriter",
-        "version": "1.0.0",
-        "isDarkMode": true,
-        "isColorTheme": true,
-        "tags": [
-            "color scheme",
-            "dark"
-        ],
-        "createdAt": "2024-08-22",
-        "updatedAt": "2025-01-26"
-    },
     "5c4d7772-d963-4672-ab03-e9d541438881": {
         "id": "5c4d7772-d963-4672-ab03-e9d541438881",
         "name": "Bigger Mute Button",
@@ -709,23 +583,6 @@
         "createdAt": "2024-09-18",
         "updatedAt": "2025-01-26"
     },
-    "bb61b145-6875-4afe-86f2-ab00024459dc": {
-        "id": "bb61b145-6875-4afe-86f2-ab00024459dc",
-        "name": "AstroTheme Dark",
-        "description": "A dark theme inspired by AstroNvim's AstroTheme color palette",
-        "homepage": "https://github.com/AstroNvim/astrotheme",
-        "style": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/bb61b145-6875-4afe-86f2-ab00024459dc/chrome.css",
-        "readme": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/bb61b145-6875-4afe-86f2-ab00024459dc/readme.md",
-        "image": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/bb61b145-6875-4afe-86f2-ab00024459dc/image.png",
-        "author": "mehalter",
-        "version": "1.0.0",
-        "tags": [
-            "color scheme",
-            "dark"
-        ],
-        "createdAt": "2024-10-12",
-        "updatedAt": "2025-01-26"
-    },
     "d93e67f8-e5e1-401e-9b82-f9d5bab231e6": {
         "id": "d93e67f8-e5e1-401e-9b82-f9d5bab231e6",
         "name": "Super Url Bar",
@@ -836,40 +693,6 @@
         "createdAt": "2024-08-16",
         "updatedAt": "2025-01-26"
     },
-    "5ca67725-1f43-4ff2-9fcf-0c59af71c73a": {
-        "id": "5ca67725-1f43-4ff2-9fcf-0c59af71c73a",
-        "name": "Midnight",
-        "description": "A dark and pleasant to the eyes purple theme :)",
-        "homepage": "",
-        "style": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/5ca67725-1f43-4ff2-9fcf-0c59af71c73a/chrome.css",
-        "readme": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/5ca67725-1f43-4ff2-9fcf-0c59af71c73a/readme.md",
-        "image": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/5ca67725-1f43-4ff2-9fcf-0c59af71c73a/image.png",
-        "author": "shaeriz",
-        "version": "1.0.0",
-        "isDarkMode": true,
-        "isColorTheme": true,
-        "tags": [
-            "color scheme",
-            "dark"
-        ],
-        "createdAt": "2024-08-31",
-        "updatedAt": "2025-01-26"
-    },
-    "d2953516-d239-4ef8-aac5-b238e3dc0360": {
-        "id": "d2953516-d239-4ef8-aac5-b238e3dc0360",
-        "name": "PywalZen",
-        "description": "Enable correct support for Pywalfox with this theme!",
-        "homepage": "https://github.com/Axenide/PywalZen",
-        "style": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/d2953516-d239-4ef8-aac5-b238e3dc0360/chrome.css",
-        "readme": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/d2953516-d239-4ef8-aac5-b238e3dc0360/readme.md",
-        "image": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/d2953516-d239-4ef8-aac5-b238e3dc0360/image.png",
-        "author": "Axenide",
-        "version": "1.0.4",
-        "preferences": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/d2953516-d239-4ef8-aac5-b238e3dc0360/preferences.json",
-        "tags": [],
-        "createdAt": "2024-09-29",
-        "updatedAt": "2025-01-26"
-    },
     "ae051a40-3e3a-429a-a6f4-199a28b18a75": {
         "id": "ae051a40-3e3a-429a-a6f4-199a28b18a75",
         "name": "Only Reset On Hover",
@@ -912,19 +735,19 @@
         "createdAt": "2024-09-24",
         "updatedAt": "2025-01-26"
     },
-    "11d685eb-4515-4045-864b-0a50589f8a4d": {
-        "id": "11d685eb-4515-4045-864b-0a50589f8a4d",
-        "name": "Monochrome",
-        "description": "There is no monochrome option in theme settings, so i created this theme.",
-        "homepage": "https://github.com/antonsizikov/zen-browser-monochrome-theme",
-        "style": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/11d685eb-4515-4045-864b-0a50589f8a4d/chrome.css",
-        "readme": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/11d685eb-4515-4045-864b-0a50589f8a4d/readme.md",
-        "image": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/11d685eb-4515-4045-864b-0a50589f8a4d/image.png",
-        "author": "antonsizikov",
+    "599a1599-e6ab-4749-ab22-de533860de2c": {
+        "id": "599a1599-e6ab-4749-ab22-de533860de2c",
+        "name": "Pimp your PiP",
+        "description": "Collection of tweaks and upgrades to PiP",
+        "homepage": "",
+        "style": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/599a1599-e6ab-4749-ab22-de533860de2c/chrome.css",
+        "readme": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/599a1599-e6ab-4749-ab22-de533860de2c/readme.md",
+        "image": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/599a1599-e6ab-4749-ab22-de533860de2c/image.png",
+        "author": "shldk",
         "version": "1.0.0",
         "tags": [],
-        "createdAt": "2024-10-06",
-        "updatedAt": "2025-01-26"
+        "createdAt": "2025-02-07",
+        "updatedAt": "2025-02-07"
     },
     "dd4f5461-1564-4e56-9f9d-f81e3c18f93c": {
         "id": "dd4f5461-1564-4e56-9f9d-f81e3c18f93c",
@@ -967,7 +790,7 @@
         "version": "1.0.0",
         "tags": [],
         "createdAt": "2024-09-03",
-        "updatedAt": "2025-01-26"
+        "updatedAt": "2025-02-09"
     },
     "a5f6a231-e3c8-4ce8-8a8e-3e93efd6adec": {
         "id": "a5f6a231-e3c8-4ce8-8a8e-3e93efd6adec",
@@ -1043,16 +866,17 @@
     "2317fd93-c3ed-4f37-b55a-304c1816819e": {
         "id": "2317fd93-c3ed-4f37-b55a-304c1816819e",
         "name": "Audio Indicator Enhanced",
-        "description": "Enhanced audio indicator, with more polished style",
+        "description": "Enhanced audio indicator, with more polished style (New Visualizer Mode)",
         "homepage": "https://github.com/Kaedriz/ZenMods/tree/main/AudioIndicatorEnhanced",
         "style": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/2317fd93-c3ed-4f37-b55a-304c1816819e/chrome.css",
         "readme": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/2317fd93-c3ed-4f37-b55a-304c1816819e/readme.md",
         "image": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/2317fd93-c3ed-4f37-b55a-304c1816819e/image.png",
         "author": "Kaedriz",
-        "version": "1.0.0",
+        "version": "1.1.0",
+        "preferences": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/2317fd93-c3ed-4f37-b55a-304c1816819e/preferences.json",
         "tags": [],
         "createdAt": "2024-12-06",
-        "updatedAt": "2025-01-26"
+        "updatedAt": "2025-02-09"
     },
     "6cd4bca9-f17d-4461-b554-844d69a4887c": {
         "id": "6cd4bca9-f17d-4461-b554-844d69a4887c",
@@ -1100,20 +924,6 @@
         "version": "1.0.0",
         "tags": [],
         "createdAt": "2024-12-01",
-        "updatedAt": "2025-01-26"
-    },
-    "5ac61d13-a0dc-400e-aaa0-0f10fd3a7d0c": {
-        "id": "5ac61d13-a0dc-400e-aaa0-0f10fd3a7d0c",
-        "name": "Uniform Workspaces Button",
-        "description": "Make the workspaces button consistent with the other sidebar buttons, while remaining unique.",
-        "homepage": "https://github.com/andrewbellucci/zen-uniform-workspaces-button",
-        "style": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/5ac61d13-a0dc-400e-aaa0-0f10fd3a7d0c/chrome.css",
-        "readme": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/5ac61d13-a0dc-400e-aaa0-0f10fd3a7d0c/readme.md",
-        "image": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/5ac61d13-a0dc-400e-aaa0-0f10fd3a7d0c/image.png",
-        "author": "andrewbellucci",
-        "version": "1.0.0",
-        "tags": [],
-        "createdAt": "2024-08-24",
         "updatedAt": "2025-01-26"
     },
     "c5f7fb68-cc75-4df0-8b02-dc9ee13aa773": {
@@ -1234,10 +1044,10 @@
         "readme": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/fd24f832-a2e6-4ce9-8b19-7aa888eb7f8e/readme.md",
         "image": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/fd24f832-a2e6-4ce9-8b19-7aa888eb7f8e/image.png",
         "author": "wysh3",
-        "version": "1.0.0",
+        "version": "1.1.0",
         "tags": [],
         "createdAt": "2024-12-17",
-        "updatedAt": "2025-01-26"
+        "updatedAt": "2025-02-09"
     },
     "6f11c932-b992-433e-8c80-56a613cc511e": {
         "id": "6f11c932-b992-433e-8c80-56a613cc511e",
@@ -1276,13 +1086,13 @@
         "readme": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/81fcd6b3-f014-4796-988f-6c3cb3874db8/readme.md",
         "image": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/81fcd6b3-f014-4796-988f-6c3cb3874db8/image.png",
         "author": "KiKaraage",
-        "version": "1.1.4",
+        "version": "2.0",
         "preferences": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/81fcd6b3-f014-4796-988f-6c3cb3874db8/preferences.json",
         "tags": [
             "context menu"
         ],
         "createdAt": "2024-10-06",
-        "updatedAt": "2025-01-26"
+        "updatedAt": "2025-02-09"
     },
     "5941aefd-67b0-453d-9b62-9071a31cbb0d": {
         "id": "5941aefd-67b0-453d-9b62-9071a31cbb0d",
