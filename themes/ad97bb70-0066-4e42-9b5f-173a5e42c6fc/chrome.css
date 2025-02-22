@@ -57,7 +57,7 @@
 
   /* Enables legacy layout for pinned tabs (icon only in grid) */
   @media (-moz-bool-pref: "uc.pins.legacy-layout") {
-    #vertical-pinned-tabs-container {
+    #vertical-pinned-tabs-container .zen-workspace-tabs-section {
       display: grid !important;
       grid-template-columns: repeat(
         auto-fit,
@@ -264,7 +264,7 @@
 
   /* Let pinned tabs have the same selected styling as essentials */
   @media (-moz-bool-pref: "uc.pins.essentials-layout") {
-    #vertical-pinned-tabs-container {
+    #vertical-pinned-tabs-container .zen-workspace-tabs-section {
       grid-template-columns: repeat(
         auto-fit,
         minmax(var(--essentials-width), auto)
