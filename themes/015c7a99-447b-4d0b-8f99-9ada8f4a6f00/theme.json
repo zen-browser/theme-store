@@ -1,0 +1,15 @@
+{
+    "id": "015c7a99-447b-4d0b-8f99-9ada8f4a6f00",
+    "name": "Zen Colored Picker",
+    "description": "Adds the rainbow color pad to the theme picker",
+    "homepage": "https://github.com/Nimit1705/zen-colored-picker",
+    "style": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/015c7a99-447b-4d0b-8f99-9ada8f4a6f00/chrome.css",
+    "readme": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/015c7a99-447b-4d0b-8f99-9ada8f4a6f00/readme.md",
+    "image": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/015c7a99-447b-4d0b-8f99-9ada8f4a6f00/image.png",
+    "author": "Nimit1705",
+    "version": "1.0.0",
+    "tags": [],
+    "createdAt": "2025-02-23",
+    "updatedAt": "2025-02-23",
+    "preferences": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/015c7a99-447b-4d0b-8f99-9ada8f4a6f00/preferences.json"
+}
