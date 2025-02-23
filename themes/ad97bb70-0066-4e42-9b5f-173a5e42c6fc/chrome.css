@@ -66,8 +66,8 @@
         width: 100%; /* Ensure enough space */
         max-width: 100%;
         
-        /* Force 3 columns */
-        grid-template-columns: repeat(3, minmax(var(--tab-pinned-min-width-expanded), 1fr)) !important;
+
+        grid-template-columns: repeat(auto-fit, minmax(var(--tab-pinned-min-width-expanded), auto)) !important;
       
         overflow: visible !important;
         flex: 1 !important;
