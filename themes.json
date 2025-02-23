@@ -636,6 +636,21 @@
         "createdAt": "2024-09-03",
         "updatedAt": "2025-02-09"
     },
+    "03a8e7ef-cf00-4f41-bf24-a90deeafc9db": {
+        "id": "03a8e7ef-cf00-4f41-bf24-a90deeafc9db",
+        "name": "Zen Colored Picker",
+        "description": "Adds the rainbow color pad to the theme picker",
+        "homepage": "https://github.com/Nimit1705/zen-colored-picker",
+        "style": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/03a8e7ef-cf00-4f41-bf24-a90deeafc9db/chrome.css",
+        "readme": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/03a8e7ef-cf00-4f41-bf24-a90deeafc9db/readme.md",
+        "image": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/03a8e7ef-cf00-4f41-bf24-a90deeafc9db/image.png",
+        "author": "Nimit1705",
+        "version": "1.0.0",
+        "tags": [],
+        "createdAt": "2025-02-23",
+        "updatedAt": "2025-02-23",
+        "preferences": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/03a8e7ef-cf00-4f41-bf24-a90deeafc9db/preferences.json"
+    },
     "6cd4bca9-f17d-4461-b554-844d69a4887c": {
         "id": "6cd4bca9-f17d-4461-b554-844d69a4887c",
         "name": "Zen Minimal Exit Menu",
