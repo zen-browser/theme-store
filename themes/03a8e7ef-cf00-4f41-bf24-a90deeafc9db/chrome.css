@@ -1,0 +1,37 @@
+
+.zen-theme-picker-gradient {
+  filter: saturate(90%) !important;
+  background: url(grad.png) no-repeat center center / cover !important;
+  position: relative;
+}
+
+#PanelUI-zen-gradient-generator-rotation-line {
+  border: 1px solid light-dark(rgba(255, 255, 255, 0.7), rgba(10, 10, 10, 0.77)) !important;
+  border-bottom-color: transparent !important;
+}
+
+@media (-moz-bool-pref: "nova.color.picker-grid") {
+  .zen-theme-picker-gradient::before {
+    content: "" !important;
+    border: 2px solid light-dark(rgba(255, 255, 255, 0.8), rgba(0, 0, 0, 0.2)) !important;
+    border-radius: 8px !important;
+    width: 100% !important;
+    background: url(grid.png) no-repeat center center / cover !important;
+    scale: 95% !important;
+    background-color: light-dark(rgba(225, 225, 225, 0.4), rgba(0, 0, 0, 0.4)) !important;
+
+}
+
+}
+
+@media (-moz-bool-pref: "nova.color.picker-frame") {
+  .zen-theme-picker-gradient::before {
+    content: "" !important;
+    border: 2px solid light-dark(rgba(0, 0, 0, 0.2), rgba(255, 255, 255, 1)) !important;
+    border-radius: 8px !important;
+    width: 100% !important;
+    scale: 95% !important;
+    background: none !important;
+    background-color: light-dark(rgba(225, 225, 225, 0.4), rgba(0, 0, 0, 0.2)) !important;
+  }
+}
