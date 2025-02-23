@@ -1,7 +1,7 @@
 
 .zen-theme-picker-gradient {
   filter: saturate(90%) !important;
-  background: url(grad.png) no-repeat center center / cover !important;
+  background: url(https://raw.githubusercontent.com/Nimit1705/zen-colored-picker/refs/heads/main/grad.png) no-repeat center center / cover !important;
   position: relative;
 }
 
@@ -16,7 +16,7 @@
     border: 2px solid light-dark(rgba(255, 255, 255, 0.8), rgba(0, 0, 0, 0.2)) !important;
     border-radius: 8px !important;
     width: 100% !important;
-    background: url(grid.png) no-repeat center center / cover !important;
+    background: url(https://raw.githubusercontent.com/Nimit1705/zen-colored-picker/refs/heads/main/grid.png) no-repeat center center / cover !important;
     scale: 95% !important;
     background-color: light-dark(rgba(225, 225, 225, 0.4), rgba(0, 0, 0, 0.4)) !important;
 
