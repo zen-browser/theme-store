@@ -1,34 +1,9 @@
 [
     {
-        "property": "property",
-        "label": "theme.zen-minimal-exit-menu.enable-macos-identic",
-        "type": "checkbox",
-        "disabledOn": []
-    },
-    {
-        "property": "label",
+        "property": "theme.zen-minimal-exit-menu.enable-macos-identic",
         "label": "Makes theme more identical to MacOS version.",
-        "type": "checkbox",
-        "disabledOn": []
-    },
-    {
-        "property": "defaultValue",
-        "label": "false",
-        "type": "checkbox",
-        "disabledOn": []
-    },
-    {
-        "property": "disabledOn",
-        "label": [
-            "macos"
-        ],
-        "type": "checkbox",
-        "disabledOn": []
-    },
-    {
-        "property": "type",
-        "label": "checkbox",
-        "type": "checkbox",
-        "disabledOn": []
+        "defaultValue": "false",
+        "disabledOn": ["macos"],
+        "type": "checkbox"
     }
 ]
