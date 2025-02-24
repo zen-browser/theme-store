@@ -10,7 +10,6 @@ This **Zen Mod** elevates your experience with pinned tabs and Essentials by mak
 - Subtle Background for pinned tabs
 - Border around pinned tabs and/or Essentials
 - Box like corners for Essentials (less rounded corners)
-- Hide unloaded pinned tabs when tab bar is collapsed (Additional option: Show all pinned tabs on hover even with tab bar collapsed)
 - Make Essentials transparent
 - Hide the workspace indicator between Essentials and Pins
 - Load pinned tabs only when using them, instead of loading all of them on startup
