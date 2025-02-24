@@ -645,7 +645,7 @@
         "readme": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/03a8e7ef-cf00-4f41-bf24-a90deeafc9db/readme.md",
         "image": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/03a8e7ef-cf00-4f41-bf24-a90deeafc9db/image.png",
         "author": "Nimit1705",
-        "version": "1.0.0",
+        "version": "1.0.1",
         "tags": [],
         "createdAt": "2025-02-23",
         "updatedAt": "2025-02-23",
@@ -830,6 +830,20 @@
         "tags": [],
         "createdAt": "2024-10-06",
         "updatedAt": "2025-01-26"
+    },
+    "272850c0-36b4-4867-be8f-7c4b5942069f": {
+        "id": "272850c0-36b4-4867-be8f-7c4b5942069f",
+        "name": "DoubleClickless",
+        "description": "Disable double clicking and middle clicking on the tab bar to open a new tab.",
+        "homepage": "",
+        "style": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/272850c0-36b4-4867-be8f-7c4b5942069f/chrome.css",
+        "readme": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/272850c0-36b4-4867-be8f-7c4b5942069f/readme.md",
+        "image": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/272850c0-36b4-4867-be8f-7c4b5942069f/image.png",
+        "author": "different55",
+        "version": "1.0.0",
+        "tags": [],
+        "createdAt": "2025-02-24",
+        "updatedAt": "2025-02-24"
     },
     "b51ff956-6aea-47ab-80c7-d6c047c0d510": {
         "id": "b51ff956-6aea-47ab-80c7-d6c047c0d510",
