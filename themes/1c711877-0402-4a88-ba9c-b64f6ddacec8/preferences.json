@@ -1,0 +1,26 @@
+[
+    {
+        "property": "theme.biggerspace.selector_size",
+        "label": "Workspace Selector Size",
+        "type": "string",
+        "defaultValue": "18px"
+    },
+    {
+        "property": "theme.biggerspace.indicator_size",
+        "label": "Current Indicator Size",
+        "type": "string",
+        "defaultValue": "24px"
+    },
+    {
+        "property": "theme.biggerspace.indicator_bg",
+        "label": "Add Indicator Background",
+        "type": "checkbox",
+        "defaultValue": true
+    },
+    {
+        "property": "theme.biggerspace.picker_size",
+        "label": "Icon Picker Size",
+        "type": "string",
+        "defaultValue": "24px"
+    }
+]
