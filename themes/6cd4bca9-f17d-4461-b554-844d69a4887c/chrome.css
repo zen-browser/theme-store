@@ -1,3 +1,7 @@
+#navigator-toolbox[zen-right-side="true"] > #zen-sidebar-top-buttons > .titlebar-buttonbox-container > .titlebar-buttonbox {
+    margin-top: 11px !important;
+}
+
 .titlebar-buttonbox {
     margin-right: 20px;
 }
