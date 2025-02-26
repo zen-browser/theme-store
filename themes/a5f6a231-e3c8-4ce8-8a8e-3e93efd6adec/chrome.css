@@ -3,8 +3,16 @@
 #urlbar[breakout-extend="true"] #urlbar-background {
     border: solid 3px color-mix(in hsl, hsl(0 0 50), transparent 90%) !important;
     border-radius: 15px !important;
-    background-color: color-mix(in hsl, hsl(0 0 10), transparent 40%) !important;
-    backdrop-filter: blur(25px) !important;
+    background-color: color-mix(in hsl, var(--mod-cleanedurlbar-customcolor), transparent var(--mod-cleanedurlbar-customtransparency)) !important;
+    backdrop-filter: blur(25px) saturate(2) !important;
+}
+
+/* Custom URL result selected color */
+.urlbarView-row {
+  &[selected] {
+    background-color: var(--mod-cleanedurlbar-customselectcolor) !important;
+    color: var(--mod-cleanedurlbar-customselectfontcolor) !important;
+  }
 }
 
 /* Unifies the border radius */
