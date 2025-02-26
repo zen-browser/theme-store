@@ -2,6 +2,10 @@
     margin-right: 20px;
 }
 
+#zen-sidebar-top-buttons .titlebar-buttonbox {
+  margin-top: 10px;
+}
+
 .titlebar-button {
     padding: 0px !important;
     min-height: 13px !important;
