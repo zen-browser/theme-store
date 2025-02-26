@@ -1,0 +1,4 @@
+
+#browser {
+  --zen-element-separation: calc(6px * var(--letterbox-multiply-factor, 3)) !important;
+}
