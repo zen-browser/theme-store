@@ -1,0 +1,50 @@
+
+.titlebar-button {
+  height: 18px;
+  width: 18px;
+  margin-left: 3px !important;
+  margin-right: 3px !important;
+  transition: all ease-out 300ms;
+  align-self: center;
+  opacity: 0.9;
+  border-radius: 5px;
+}
+
+.titlebar-button:hover {
+  height: 25px;
+}
+
+.titlebar-min {
+  background-color: rgba(0,0,0,0.2) !important;
+  border: 2px solid var(--color-green-30);
+}
+
+.titlebar-min:hover {
+  background-color: var(--color-green-30) !important;
+}
+
+.titlebar-max, .titlebar-restore {
+  background-color: rgba(0,0,0,0.2) !important;
+  border: 2px solid var(--color-yellow-30);
+}
+
+.titlebar-max:hover, .titlebar-restore:hover {
+  background-color: var(--color-yellow-30) !important;
+}
+
+.titlebar-close {
+  background-color: rgba(0,0,0,0.2) !important;
+  border: 2px solid var(--color-red-30);
+}
+
+.titlebar-close:hover {
+  background-color: var(--color-red-30) !important;
+}
+
+.titlebar-button > .toolbarbutton-icon {
+  display: none;
+}
+
+.titlebar-buttonbox {
+  margin-right: 16px;
+}
