@@ -1,0 +1,14 @@
+{
+    "id": "b8b7d77f-c732-4068-b003-809bd6c8a8a4",
+    "name": "Inactive tab opacity",
+    "description": "This config lowers the opacity of the inactive tabs.",
+    "homepage": "https://github.com/benstone326/zen-mods/",
+    "style": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/b8b7d77f-c732-4068-b003-809bd6c8a8a4/chrome.css",
+    "readme": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/b8b7d77f-c732-4068-b003-809bd6c8a8a4/readme.md",
+    "image": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/b8b7d77f-c732-4068-b003-809bd6c8a8a4/image.png",
+    "author": "benstone326",
+    "version": "1.0.0",
+    "tags": [],
+    "createdAt": "2024-10-29",
+    "updatedAt": "2024-10-29"
+}
