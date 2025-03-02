@@ -25,6 +25,7 @@ jobs:
       - name: Setup python modules
         run: |
           pip3 install requests
+          pip3 install pillow
 
       - name: Setup Git
         run: |
