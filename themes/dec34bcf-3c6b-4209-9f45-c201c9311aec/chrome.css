@@ -1,0 +1,115 @@
+
+@media (-moz-bool-pref: "zen.view.sidebar-expanded") {
+  :root:not([customizing]) {
+    /* Main container setup - creates a 3-column grid with extended hover area */
+    #zen-sidebar-bottom-buttons:has(> :nth-child(4)) {
+      display: grid !important;
+      grid-template-columns: repeat(3, auto) !important;
+      position: relative !important;
+      z-index: 10 !important;
+      overflow: visible !important;
+    }
+
+/* Position the three always-visible buttons */
+    #zen-sidebar-bottom-buttons:has(> :nth-child(4)) > *:nth-last-child(1),
+    #zen-sidebar-bottom-buttons:has(> :nth-child(4)) > *:nth-last-child(2),
+    #zen-sidebar-bottom-buttons:has(> :nth-child(4)) > *:nth-last-child(3) {
+      grid-column: auto !important;
+    }
+
+/* Position all overflow buttons in the dropdown */
+    #zen-sidebar-bottom-buttons:has(> :nth-child(4))
+      > *:not(:nth-last-child(-n + 3)) {
+      position: absolute !important;
+      z-index: 11 !important;
+      width: calc(100% / 3) !important;
+
+/* Hide by default, show on hover */
+      opacity: 0 !important;
+      visibility: hidden !important;
+      transition: opacity 0.2s ease, visibility 0.2s ease !important;
+    }
+
+/* Show overflow items on hover */
+    #zen-sidebar-bottom-buttons:has(> :nth-child(4)):hover
+      > *:not(:nth-last-child(-n + 3)),
+    #zen-sidebar-bottom-buttons:has(> :nth-child(4)):has(
+        *:not(:nth-last-child(-n + 3))[open="true"]
+      )
+      > *:not(:nth-last-child(-n + 3)) {
+      opacity: 1 !important;
+      visibility: visible !important;
+      pointer-events: auto !important;
+    }
+
+/* Column positioning for overflow items */
+    #zen-sidebar-bottom-buttons:has(> :nth-child(4))
+      > *:nth-child(3n + 1):not(:nth-last-child(-n + 3)) {
+      left: 0 !important;
+    }
+    #zen-sidebar-bottom-buttons:has(> :nth-child(4))
+      > *:nth-child(3n + 2):not(:nth-last-child(-n + 3)) {
+      left: calc(100% / 3) !important;
+    }
+    #zen-sidebar-bottom-buttons:has(> :nth-child(4))
+      > *:nth-child(3n + 3):not(:nth-last-child(-n + 3)) {
+      left: calc(2 * 100% / 3) !important;
+    }
+
+/* Apply specific row positioning for each group */
+    #zen-sidebar-bottom-buttons
+      > *:nth-child(-n + 3):not(:nth-last-child(-n + 3)) {
+      bottom: calc(100% + 20px) !important; /* Row 2 */
+    }
+    #zen-sidebar-bottom-buttons
+      > *:nth-child(n + 4):nth-child(-n + 6):not(:nth-last-child(-n + 3)) {
+      bottom: calc(100% + 60px) !important; /* Row 3 */
+    }
+    #zen-sidebar-bottom-buttons
+      > *:nth-child(n + 7):nth-child(-n + 9):not(:nth-last-child(-n + 3)) {
+      bottom: calc(100% + 100px) !important; /* Row 4 */
+    }
+    #zen-sidebar-bottom-buttons
+      > *:nth-child(n + 10):nth-child(-n + 12):not(:nth-last-child(-n + 3)) {
+      bottom: calc(100% + 140px) !important; /* Row 5 */
+    }
+    #zen-sidebar-bottom-buttons
+      > *:nth-child(n + 13):nth-child(-n + 15):not(:nth-last-child(-n + 3)) {
+      bottom: calc(100% + 140px) !important; /* Row 6 */
+    }
+    #zen-sidebar-bottom-buttons
+      > *:nth-child(n + 16):nth-child(-n + 18):not(:nth-last-child(-n + 3)) {
+      bottom: calc(100% + 140px) !important; /* Row 7 */
+    }
+    #zen-sidebar-bottom-buttons
+      > *:nth-child(n + 19):nth-child(-n + 21):not(:nth-last-child(-n + 3)) {
+      bottom: calc(100% + 140px) !important; /* Row 8 */
+    }
+    #zen-sidebar-bottom-buttons
+      > *:nth-child(n + 22):nth-child(-n + 24):not(:nth-last-child(-n + 3)) {
+      bottom: calc(100% + 140px) !important; /* Row 9 */
+    }
+    #zen-sidebar-bottom-buttons
+      > *:nth-child(n + 25):nth-child(-n + 27):not(:nth-last-child(-n + 3)) {
+      bottom: calc(100% + 140px) !important; /* Row 10 */
+    }
+
+/* Extended hover area with blur effect */
+    #zen-sidebar-bottom-buttons:has(> :nth-child(4)):hover::after,
+    #zen-sidebar-bottom-buttons:has(> :nth-child(4)):has(
+        *:not(:nth-last-child(-n + 3))[open="true"]
+      )::after {
+      content: "";
+      position: absolute !important;
+      top: -300px !important; /* Change height according to number of buttons */
+      left: 1px !important;
+      right: 1px !important;
+      bottom: 0 !important;
+      z-index: -1 !important;
+      pointer-events: auto !important;
+      mask: linear-gradient(to top, black, black, transparent);
+      border-radius: var(--zen-native-inner-radius);
+      backdrop-filter: blur(20px);
+    }
+  }
+}
