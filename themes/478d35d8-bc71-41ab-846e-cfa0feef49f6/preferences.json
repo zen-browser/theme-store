@@ -1,0 +1,9 @@
+[
+    {
+        "property": "letterbox.multiply-factor",
+        "label": "Multiply Factor (number)",
+        "type": "string",
+        "defaultValue": "3",
+        "placeholder": "0.5, 1, 2, ..."
+    }
+]
