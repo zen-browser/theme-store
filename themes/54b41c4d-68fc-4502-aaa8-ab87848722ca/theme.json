@@ -1,0 +1,14 @@
+{
+    "id": "54b41c4d-68fc-4502-aaa8-ab87848722ca",
+    "name": "Single Workspace Selector",
+    "description": "Hides the workspace selector at the top of the sidebar, keeping just the one at the bottom.",
+    "homepage": "https://codeberg.org/ky/zen-singular-workspace-selector/",
+    "style": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/54b41c4d-68fc-4502-aaa8-ab87848722ca/chrome.css",
+    "readme": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/54b41c4d-68fc-4502-aaa8-ab87848722ca/readme.md",
+    "image": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/54b41c4d-68fc-4502-aaa8-ab87848722ca/image.png",
+    "author": "miqo-te",
+    "version": "1.0.0",
+    "tags": [],
+    "createdAt": "2025-03-06",
+    "updatedAt": "2025-03-06"
+}
