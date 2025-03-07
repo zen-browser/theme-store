@@ -1,0 +1,14 @@
+{
+    "id": "b3c200a8-22f3-465a-9902-adf18c3fca43",
+    "name": "Cleaner Downloads",
+    "description": "Clean up the recent downloads menu.",
+    "homepage": "https://github.com/MihkelMK/zen-mods/tree/main/cleaner_downloads",
+    "style": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/b3c200a8-22f3-465a-9902-adf18c3fca43/chrome.css",
+    "readme": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/b3c200a8-22f3-465a-9902-adf18c3fca43/readme.md",
+    "image": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/b3c200a8-22f3-465a-9902-adf18c3fca43/image.png",
+    "author": "MihkelMK",
+    "version": "1.0.0",
+    "tags": [],
+    "createdAt": "2025-03-07",
+    "updatedAt": "2025-03-07"
+}
