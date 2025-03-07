@@ -1,0 +1,77 @@
+
+#preferences-root {
+  @media screen and (max-width: 820px) {
+    --category-icon-size: 20px; /* Taken from browser CSS, don't change here */
+    --category-icon-padding: 10px;
+    --category-icon-padding-total: calc(
+      2 * calc(var(--category-icon-padding) + 2px)
+    );
+    /* This additional 2px is a magic number, that was necessary  */
+    /* even though the icon is 20px * 20px and padding is 10px on both sides. */
+
+--category-sidebar-inline-padding: 2%; /* Default is 4% */
+    --category-sidebar-inline-padding-total: calc(
+      2 * var(--category-sidebar-inline-padding)
+    );
+
+--category-icon-total-width: calc(
+      var(--category-icon-size) + var(--category-icon-padding-total)
+    );
+    --category-sidebar-total-width: calc(
+      var(--category-icon-total-width) +
+        var(--category-sidebar-inline-padding-total)
+    );
+
+/* Reduce sidebar padding */
+    .navigation {
+      padding: 4% var(--category-sidebar-inline-padding) !important;
+    }
+
+/* Reduce icon padding */
+    & #categories > .category {
+      padding-inline: var(--category-icon-padding) !important;
+    }
+
+& .sidebar-footer-link,
+    #categories,
+    #categories > .category {
+      width: fit-content !important;
+    }
+
+/* Hide sidebar button labels */
+    & .category-name,
+    .sidebar-footer-label {
+      display: none !important;
+    }
+
+/* Remove margin that separated icon and title */
+    & .category-icon {
+      margin-right: 0 !important;
+    }
+
+/* Visually separate footer buttons from other buttons */
+    .sidebar-footer-list {
+      margin-top: var(--space-medium) !important;
+    }
+
+/* Push main content down to compensate for the floating search bar */
+    .main-content .pane-container {
+      margin-top: var(--space-xlarge) !important;
+    }
+
+/* Float the search bar in the middle of main content */
+    search-textbox#searchInput {
+      position: fixed;
+      z-index: 2;
+      top: 0;
+      width: min(70%, var(--in-content-sidebar-width)) !important;
+      background: var(--zen-colors-tertiary) !important;
+      box-shadow: var(--zen-big-shadow);
+      translate: -50% 0;
+
+/* compensate for relative location */
+      margin-left: var(--category-sidebar-total-width) !important;
+      left: calc(50% - var(--category-sidebar-inline-padding-total));
+    }
+  }
+}
