@@ -1,0 +1,14 @@
+{
+    "id": "1d799825-77fb-4a32-9788-b62e3f7a4e12",
+    "name": "Thin Settings Sidebar",
+    "description": "Collapse settings sidebar into icons only with a floating search box on smaller screens.",
+    "homepage": "https://github.com/MihkelMK/zen-mods/tree/main/thin_settings_sidebar",
+    "style": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/1d799825-77fb-4a32-9788-b62e3f7a4e12/chrome.css",
+    "readme": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/1d799825-77fb-4a32-9788-b62e3f7a4e12/readme.md",
+    "image": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/1d799825-77fb-4a32-9788-b62e3f7a4e12/image.png",
+    "author": "MihkelMK",
+    "version": "1.0.0",
+    "tags": [],
+    "createdAt": "2025-03-07",
+    "updatedAt": "2025-03-07"
+}
