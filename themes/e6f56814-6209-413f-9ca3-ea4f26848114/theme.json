@@ -1,0 +1,15 @@
+{
+    "id": "e6f56814-6209-413f-9ca3-ea4f26848114",
+    "name": "Workspace Tweaks",
+    "description": "Change spacing, placement and backgrounds of the top and bottom workspace indicators.",
+    "homepage": "https://github.com/MihkelMK/zen-mods/tree/main/workspace_tweaks",
+    "style": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/e6f56814-6209-413f-9ca3-ea4f26848114/chrome.css",
+    "readme": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/e6f56814-6209-413f-9ca3-ea4f26848114/readme.md",
+    "image": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/e6f56814-6209-413f-9ca3-ea4f26848114/image.png",
+    "author": "MihkelMK",
+    "version": "1.0.0",
+    "tags": [],
+    "createdAt": "2025-03-07",
+    "updatedAt": "2025-03-07",
+    "preferences": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/e6f56814-6209-413f-9ca3-ea4f26848114/preferences.json"
+}
