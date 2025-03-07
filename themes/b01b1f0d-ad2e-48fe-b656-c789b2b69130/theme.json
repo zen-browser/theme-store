@@ -1,0 +1,14 @@
+{
+    "id": "b01b1f0d-ad2e-48fe-b656-c789b2b69130",
+    "name": "Collapsed Close Tab",
+    "description": "Shows a close tab button when hovering over tabs when the tab bar is collapsed",
+    "homepage": "https://github.com/thatcomputerguy0101/zen-collapsed-close-tab",
+    "style": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/b01b1f0d-ad2e-48fe-b656-c789b2b69130/chrome.css",
+    "readme": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/b01b1f0d-ad2e-48fe-b656-c789b2b69130/readme.md",
+    "image": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/b01b1f0d-ad2e-48fe-b656-c789b2b69130/image.png",
+    "author": "thatcomputerguy0101",
+    "version": "1.0.0",
+    "tags": [],
+    "createdAt": "2024-11-09",
+    "updatedAt": "2024-11-09"
+}
