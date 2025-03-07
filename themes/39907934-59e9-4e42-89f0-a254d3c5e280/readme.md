@@ -21,9 +21,11 @@ All features are optional and configurable from the UI.
 ### Operation Tips
 
 - You must download, install and activate Sidebery on your own.
+- You must select the "Multiple/Collapsed Toolbars" layout, otherwise some feature might not work correctly.
 - To bring Sidebery in view or to hide again, press F1 anytime.
 - Some changes, in rare cases, require you toggle Sidebery visibility or restart the browser.
-- Rememeber to clear your userChrome.css entries and Sidebery style customizations if things appear broken.
+- If you turn on "Hide Native Zen Tab UI", some items might get stuck in the tab bar, you can turn it off to move them.
+- Remember to clear your userChrome.css entries and Sidebery style customizations if things appear broken.
 - If you manage to shrink the sidebar too much while playing with settings, you can always drag it back to original size.
 - Feel free to report issues and feature requests.
 
