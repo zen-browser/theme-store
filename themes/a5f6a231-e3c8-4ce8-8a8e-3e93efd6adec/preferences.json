@@ -1,0 +1,26 @@
+[
+    {
+        "property": "mod.cleanedurlbar.customcolor",
+        "label": "Cleaned URL Bar Color (HSL only)",
+        "type": "string",
+        "defaultValue": "hsl(0 0 10)"
+    },
+    {
+        "property": "mod.cleanedurlbar.customtransparency",
+        "label": "Transparency (In percentage ex. 100%)",
+        "type": "string",
+        "defaultValue": "40%"
+    },
+    {
+        "property": "mod.cleanedurlbar.customselectcolor",
+        "label": "Selected URL color (rgb, hsl, hex)",
+        "type": "string",
+        "defaultValue": "rgba(80, 80, 250, 0.75)"
+    },
+    {
+        "property": "mod.cleanedurlbar.customselectfontcolor",
+        "label": "Selected URL font color (rgb, hsl, hex)",
+        "type": "string",
+        "defaultValue": "rgba(255,255,255,1)"
+    }
+]
