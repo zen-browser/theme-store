@@ -1,0 +1,22 @@
+[
+    {
+        "property": "theme.galaxydream.lightness",
+        "label": "Gradient Lightness",
+        "type": "dropdown",
+        "placeholder": "Legacy Default",
+        "options": [
+            {
+                "label": "Darker",
+                "value": "darker"
+            },
+            {
+                "label": "Normal",
+                "value": "normal"
+            },
+            {
+                "label": "Brighter",
+                "value": "brighter"
+            }
+        ]
+    }
+]
