@@ -1,0 +1,47 @@
+
+.zen-view-splitter-header {
+  background: transparent !important;  
+  border-radius: 0 0 34px 34px !important;
+  padding-top: 0 !important;
+  padding-bottom: 0.8rem !important;
+  justify-content: center !important;
+  align-items: center !important;
+}
+
+.zen-view-splitter-header > toolbarbutton {
+  color: red !important;
+  position: relative;
+}
+
+.zen-tab-rearrange-button::before {
+  content:"";
+  width: 30px; height: 30px;
+  top: 0px; right: 0px;
+  position: absolute;
+}
+
+.zen-tab-rearrange-button:hover::after {
+  content:"";
+  width: 28px;
+   height: 28px;
+  right: -4px; top: 0px;
+  position: absolute;
+   border-radius: 0 0 0 28px !important;
+   box-shadow: 0 0 25px 15px rgba(0,0,0,0.5) !important;
+}
+
+.zen-tab-unsplit-button::before {
+  content:"";
+  width: 30px; height: 30px;
+  left: 0px; top: 0px;
+  position: absolute;
+}
+
+.zen-tab-unsplit-button:hover::after {
+  content:"";
+  width: 28px; height: 28px;
+  left: -4px; top: 0px;
+  position: absolute;
+   border-radius: 0 0 24px 0 !important;
+   box-shadow: 0 0 25px 15px rgba(0,0,0,0.5) !important;
+}
