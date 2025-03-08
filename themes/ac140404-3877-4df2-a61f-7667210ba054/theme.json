@@ -1,0 +1,15 @@
+{
+    "id": "ac140404-3877-4df2-a61f-7667210ba054",
+    "name": "Web Panel Sidebar Tweaks",
+    "description": "Pins web panel sidebar to the right and tweaks web panel sidebar toolbar color and search bar margin",
+    "homepage": "https://github.com/tywil04/zen-web-panel-sidebar-tweaks",
+    "style": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/ac140404-3877-4df2-a61f-7667210ba054/chrome.css",
+    "readme": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/ac140404-3877-4df2-a61f-7667210ba054/readme.md",
+    "image": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/ac140404-3877-4df2-a61f-7667210ba054/image.png",
+    "author": "tywil04",
+    "version": "1.0.0",
+    "tags": [],
+    "createdAt": "2025-02-19",
+    "updatedAt": "2025-02-19",
+    "preferences": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/ac140404-3877-4df2-a61f-7667210ba054/preferences.json"
+}
