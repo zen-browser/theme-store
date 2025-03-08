@@ -1,13 +1,13 @@
 [
     {
       "property": "browser.tabs.allow_transparent_browser",
-      "label": "Allow zen browser to be transparent",
+      "label": "Allow zen browser to be transparent (Turn off before uninstall)",
       "type": "checkbox",
       "defaultvalue": true
     },
     {
       "property": "mod.sameerasw.zen_transparency_color",
-      "label": "Set background color for Zen",
+      "label": "Set background color for Zen (Overrides default theme colors)",
       "type": "string",
       "defaultvalue": "#00000000"
     },
