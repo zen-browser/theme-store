@@ -1,0 +1,14 @@
+{
+    "id": "f70c5ccc-33f8-4bd4-80ae-a18eae98662f",
+    "name": "Square Tabs",
+    "description": "Removes rounded corners from tabs in the tab bar",
+    "homepage": "https://github.com/M-Borer/zen-mods/tree/master/square-tabs",
+    "style": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/f70c5ccc-33f8-4bd4-80ae-a18eae98662f/chrome.css",
+    "readme": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/f70c5ccc-33f8-4bd4-80ae-a18eae98662f/readme.md",
+    "image": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/f70c5ccc-33f8-4bd4-80ae-a18eae98662f/image.png",
+    "author": "M-Borer",
+    "version": "1.0.0",
+    "tags": [],
+    "createdAt": "2025-03-09",
+    "updatedAt": "2025-03-09"
+}
