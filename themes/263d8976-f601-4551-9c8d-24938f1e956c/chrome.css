@@ -1,0 +1,17 @@
+
+.zen-current-workspace-indicator-icon {
+    display: none !important;
+}
+
+.zen-workspace-icon {
+    position: relative;
+    color: transparent;
+}
+
+.zen-workspace-icon::before {
+    position: absolute;
+    inset: 6px;
+    content: '';
+    background-color: white;
+    border-radius: 50%;
+}
