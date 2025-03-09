@@ -1,0 +1,105 @@
+
+/* These are for the popups */
+menupopup, panel {
+  &::part(content) {
+    display: flex;
+    box-sizing: border-box;
+    padding: 6px !important;
+    color: var(--panel-color);
+/*   
+    background: var(--panel-background);
+*/
+    border-radius: 15px;
+    border: 2px solid color-mix(in hsl,var(--panel-border-color), transparent 70%);
+    width: var(--panel-width);
+    box-shadow: var(--panel-shadow);
+    margin: var(--panel-shadow-margin);
+    min-width: 0;
+    min-height: 0;
+    max-height: round(up, 100% - 2 * var(--panel-shadow-margin), 1px);
+    max-width: round(up, 100% - 2 * var(--panel-shadow-margin), 1px);
+    overflow: clip;
+    scrollbar-color: transparent !important;
+  }
+}
+
+panel toolbarseparator {
+  appearance: none;
+  min-height: 0;
+  border-top: 3px solid color-mix(in hsl,var(--panel-border-color), transparent 100%);
+  margin: 8px 4px;
+  padding: 0;
+}
+
+:is(panelview .toolbarbutton-1, toolbarbutton.subviewbutton, .widget-overflow-list .toolbarbutton-1, .toolbaritem-combined-buttons:is(:not([cui-areatype="toolbar"]), [overflowedItem="true"]) > toolbarbutton) {
+  &:not([disabled]) {
+    padding: 5px 10px !important;
+    border-radius: 8px !important;
+  }
+}
+
+@media (-moz-bool-pref: "mod.tidypopup.usecustomhovercolor") {
+  :is(panelview .toolbarbutton-1, toolbarbutton.subviewbutton, .widget-overflow-list .toolbarbutton-1, .toolbaritem-combined-buttons:is(:not([cui-areatype="toolbar"]), [overflowedItem="true"]) > toolbarbutton) {
+    &:not([disabled]):hover {
+      background-color: var(--mod-tidypopup-hovercolor); 
+    }
+  }
+}
+
+@media not (-moz-bool-pref: "mod.tidypopup.usecustomhovercolor") {
+  :is(panelview .toolbarbutton-1, toolbarbutton.subviewbutton, .widget-overflow-list .toolbarbutton-1, .toolbaritem-combined-buttons:is(:not([cui-areatype="toolbar"]), [overflowedItem="true"]) > toolbarbutton) {
+    &:not([disabled]):hover {
+      background-color: rgba(80, 80, 250, 1); 
+    }
+  }
+}
+  
+#appMenu-zoom-controls {
+  border-top: 3px solid color-mix(in hsl,var(--panel-border-color), transparent 100%);
+  padding-top: 12px !important;
+  padding-inline: calc(var(--arrowpanel-menuitem-padding-inline) + var(--uc-arrowpanel-menuitem-margin-inline)) var(--uc-arrowpanel-menuitem-margin-inline);
+  padding-block: var(--uc-panel-zoom-padding-block);
+  margin: var(--panel-separator-margin-vertical) 0 calc(var(--panel-separator-margin-vertical) * -1);
+}
+
+#appMenu-zoom-controls > #appMenu-fullscreen-button2::before {
+  border-inline-start: 3px none color-mix(in hsl,var(--panel-border-color), transparent 100%);
+}
+
+menu, menuitem, menucaption {
+  border-radius: 8px !important;
+  padding: 5px 10px !important;
+  margin: 2px !important;
+  border-radius: 8px !important;
+}
+
+@media (-moz-bool-pref: "mod.tidypopup.usecustomhovercolor"){
+  menu, menuitem, menucaption {
+    &:not([disabled]):hover {
+      background-color: var(--mod-tidypopup-hovercolor); 
+    }
+  }
+}
+
+@media not (-moz-bool-pref: "mod.tidypopup.usecustomhovercolor"){
+  menu, menuitem, menucaption {
+    &:not([disabled]):hover {
+      background-color: rgba(80, 80, 250, 1); 
+    }
+  } 
+}
+
+menuseparator::before {
+  border-top: 3px solid color-mix(in hsl,var(--panel-border-color), transparent 100%);
+}
+
+.panel-view-body-unscrollable {
+  border-radius: 8px !important; 
+  background: var(--button-background-color-hover) !important;
+  align-items: center;
+  padding: 3px !important;
+}
+
+.downloadMainArea {
+  padding-left: 10px !important;
+}
