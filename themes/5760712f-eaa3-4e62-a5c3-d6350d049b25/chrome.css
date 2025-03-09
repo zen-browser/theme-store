@@ -1,0 +1,9 @@
+
+#nav-bar, #navigator-toolbox{
+ background: var(
+        --lwt-header-image,
+        var(--lwt-additional-images), var(--lwt-accent-color)) !important;
+  background-position: var(--lwt-background-alignment) !important;
+  background-repeat: var(--lwt-background-tiling) !important;
+  background-attachment: fixed;
+}
