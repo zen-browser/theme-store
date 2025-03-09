@@ -1,3 +1,48 @@
+/** Globals styles, regardless of mode */
+
+/* Resizes the glance tab indicator on essential tabs */
+#navigator-toolbox
+	#tabbrowser-tabs[orient='vertical']
+	.tabbrowser-tab[zen-essential='true']
+	.tabbrowser-tab[zen-glance-tab='true'] {
+	--tab-collapsed-width: 24px !important;
+	--tab-min-width: 16px !important;
+
+	& .tab-icon-stack {
+		align-content: center;
+	}
+}
+
+/* Centers & resizes the glance tab indicator, to be more cohesive across essential & pinned tabs */
+#navigator-toolbox
+	#tabbrowser-tabs[orient='vertical']
+	.tabbrowser-tab[zen-glance-tab='true'] {
+	& .tab-content {
+		padding: 0px !important;
+	}
+
+	& .tab-icon-stack {
+		height: var(--tab-min-height, 24px) !important;
+		width: var(--tab-min-width, 24px) !important;
+
+		& .tab-icon-image,
+		.tab-throbber {
+			place-self: center;
+		}
+	}
+}
+
+/* Centers the tab icon on essential tabs */
+#navigator-toolbox
+	#tabbrowser-tabs[orient='vertical']
+	.tabbrowser-tab[zen-essential='true'] {
+	& .tab-icon-image,
+	.tab-throbber {
+		justify-self: center;
+	}
+}
+
+/** Legacy Mode - Round circle */
 @media not (-moz-bool-pref: 'zen.mods.AudioIndicatorEnhanced.audioWave.enabled') {
 	#tabbrowser-tabs[orient='vertical']
 		.tabbrowser-tab
@@ -49,6 +94,58 @@
 			&[activemedia-blocked] {
 				list-style-image: none !important;
 			}
+		}
+	}
+
+	/* Patches for essential tabs indicator */
+	#navigator-toolbox[zen-sidebar-expanded='true']
+		#tabbrowser-tabs[orient='vertical']
+		.tabbrowser-tab[zen-essential='true']
+		.tab-icon-stack {
+		width: 100% !important;
+		height: 100% !important;
+
+		& .tab-icon-image,
+		.tab-throbber {
+			place-self: center;
+		}
+
+		/* Some stylistic changes for essential tabs indicator */
+		& .tab-icon-overlay:not([crashed]) {
+			width: 24px !important;
+			height: 24px !important;
+			margin: 5px !important;
+
+			background-color: hsl(180, 2%, 9%, 50%) !important;
+			border: 1px solid hsla(0, 0%, 100%, 10%) !important;
+			background-size: 75% !important;
+			border-radius: 7px !important;
+			transform-origin: top right !important;
+
+			&[muted] {
+				background-color: hsl(0, 59%, 30%, 50%) !important;
+			}
+
+			@media (-moz-bool-pref: 'zen.mods.AudioIndicatorEnhanced.hoverScaleAnimationEnabled') {
+				&:hover {
+					transform: scale(1.2);
+				}
+			}
+		}
+	}
+
+	/* Change positioning of indicator on essential tabs */
+	#navigator-toolbox[zen-sidebar-expanded='true']
+		#tabbrowser-tabs[orient='vertical']
+		.tabbrowser-tab[zen-essential='true'] {
+		--tab-inline-padding: 0px !important;
+
+		& .tab-icon-overlay:not([crashed]) {
+			/* position: absolute !important; */
+			top: 0px !important;
+			right: 0px !important;
+			margin: 4px !important;
+			place-self: start end;
 		}
 	}
 }
@@ -129,48 +226,6 @@
 		& .tab-icon-image,
 		.tab-throbber {
 			place-self: center;
-		}
-	}
-
-	/* Centers the tab icon on essential tabs */
-	#navigator-toolbox
-		#tabbrowser-tabs[orient='vertical']
-		.tabbrowser-tab[zen-essential='true'] {
-		& .tab-icon-image,
-		.tab-throbber {
-			justify-self: center;
-		}
-	}
-
-	/* Centers & resizes the glance tab indicator, to be more cohesive across essential & pinned tabs */
-	#navigator-toolbox
-		#tabbrowser-tabs[orient='vertical']
-		.tabbrowser-tab[zen-glance-tab='true'] {
-		& .tab-content {
-			padding: 0px !important;
-		}
-
-		& .tab-icon-stack {
-			height: var(--tab-min-height, 24px) !important;
-			width: var(--tab-min-width, 24px) !important;
-
-			& .tab-icon-image,
-			.tab-throbber {
-				place-self: center;
-			}
-		}
-	}
-
-	/* Resizes the glance tab indicator on essential tabs */
-	#navigator-toolbox
-		#tabbrowser-tabs[orient='vertical']
-		.tabbrowser-tab[zen-essential='true']
-		.tabbrowser-tab[zen-glance-tab='true'] {
-		--tab-collapsed-width: 24px !important;
-		--tab-min-width: 16px !important;
-
-		& .tab-icon-stack {
-			align-content: center;
 		}
 	}
 
@@ -274,7 +329,7 @@
 		transition: fill 1000ms ease-in-out, opacity 1000ms ease-in-out;
 	}
 
-	/* Compability patch for hidden tab bar */
+	/* Compatibility patch for hidden tab bar */
 	#zen-main-app-wrapper[zen-compact-mode='true']
 		.tabbrowser-tab
 		.tab-icon-stack::before {

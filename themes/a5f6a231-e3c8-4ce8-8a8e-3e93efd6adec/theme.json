@@ -7,8 +7,9 @@
     "readme": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/a5f6a231-e3c8-4ce8-8a8e-3e93efd6adec/readme.md",
     "image": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/a5f6a231-e3c8-4ce8-8a8e-3e93efd6adec/image.png",
     "author": "Dinno-DEV",
-    "version": "1.0.3",
+    "preferences": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/a5f6a231-e3c8-4ce8-8a8e-3e93efd6adec/preferences.json",
+    "version": "1.0.4",
     "tags": [],
     "createdAt": "2024-11-01",
-    "updatedAt": "2025-02-23"
+    "updatedAt": "2025-03-09"
 }
