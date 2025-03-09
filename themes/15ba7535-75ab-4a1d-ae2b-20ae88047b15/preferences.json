@@ -1,0 +1,61 @@
+[
+    {
+        "property": "uc.container-tweaks.align.right",
+        "label": "Align container color to the right",
+        "type": "checkbox"
+    },
+    {
+        "property": "uc.container-tweaks.essentials",
+        "label": "Underline essential tabs with their container color",
+        "type": "dropdown",
+        "placeholder": "Disabled",
+        "defaultValue": "expanded",
+        "disabledOn": [],
+        "options": [
+            {
+                "label": "Always",
+                "value": "always"
+            },
+            {
+                "label": "Expanded only",
+                "value": "expanded"
+            }
+        ]
+    },
+    {
+        "property": "uc.container-tweaks.pins",
+        "label": "Underline pinned tabs with their container color",
+        "type": "dropdown",
+        "placeholder": "Disabled",
+        "defaultValue": "disabled",
+        "disabledOn": [],
+        "options": [
+            {
+                "label": "Always",
+                "value": "always"
+            },
+            {
+                "label": "Expanded only",
+                "value": "expanded"
+            }
+        ]
+    },
+    {
+        "property": "uc.container-tweaks.width",
+        "label": "Select the width of container colored line",
+        "type": "dropdown",
+        "placeholder": "Zen Default",
+        "defaultValue": "default",
+        "disabledOn": [],
+        "options": [
+            {
+                "label": "Thin",
+                "value": "thin"
+            },
+            {
+                "label": "Thick",
+                "value": "thick"
+            }
+        ]
+    }
+]
