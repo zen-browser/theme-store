@@ -1,3 +1,4 @@
+/* transparency */
 :root {
 	--zen-main-browser-background: var(
 	  --mod-sameerasw-zen_transparency_color,
@@ -5,12 +6,32 @@
 	) !important;
   }
   
-  #main-window {
+  /* background image */
+  #browser:has([zen-empty-tab="true"][selected="true"]) .browserStack {
 	@media (-moz-bool-pref: "mod.sameerasw.zen_bg_img_enabled") {
 	  background-image: url(--mod-sameerasw-zen_transparency) !important;
 	  background-position: center !important;
 	  background-repeat: no-repeat !important;
 	  background-size: cover !important;
+	}
+  }
+  
+  /* Remove new tab background color added in 1.8b */
+  .browserStack {
+	browser {
+	  @media (-moz-bool-pref: "mod.sameerasw.zen_light_tint_disabled") {
+		background-color: transparent !important;
+	  }
+	}
+  }
+  
+  /* removed tab bg added in 1.9b */
+  #browser:has([zen-empty-tab="true"][selected="true"]) .browserStack {
+	browser {
+	  @media (-moz-bool-pref: "mod.sameerasw.zen_empty_page_transparency") {
+		background-color: transparent !important;
+		opacity: 0 !important;
+	  }
 	}
   }
   
