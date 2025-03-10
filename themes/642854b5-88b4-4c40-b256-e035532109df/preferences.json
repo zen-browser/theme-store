@@ -6,22 +6,22 @@
         "defaultvalue": true
     },
     {
+        "property": "mod.sameerasw.zen_bg_color_enabled",
+        "label": "Enable custom background color for Zen",
+        "type": "checkbox",
+        "defaultvalue": false
+    },
+    {
         "property": "mod.sameerasw.zen_transparency_color",
         "label": "Set background color for Zen (Overrides default theme colors)",
         "type": "string",
         "defaultvalue": "#00000000"
     },
     {
-        "property": "mod.sameerasw.zen_bg_img_enabled",
-        "label": "Enable custom background image for Zen empty page",
+        "property": "mod.sameerasw.zen_light_tint_flip",
+        "label": "Flip light tint for Zen after 1.8b to dark",
         "type": "checkbox",
         "defaultvalue": false
-    },
-    {
-        "property": "mod.sameerasw.zen_transparency",
-        "label": "Set bg image url",
-        "type": "string",
-        "defaultvalue": ""
     },
     {
         "property": "mod.sameerasw.zen_light_tint_disabled",
@@ -34,5 +34,11 @@
         "label": "Make the empty page transparent after Zen 1.9b",
         "type": "checkbox",
         "defaultvalue": true
+    },
+    {
+        "property": "mod.sameerasw.zen_no_shadow",
+        "label": "Remove the shadow around the web page",
+        "type": "checkbox",
+        "defaultvalue": false
     }
 ]
