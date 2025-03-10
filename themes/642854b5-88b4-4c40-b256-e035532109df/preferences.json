@@ -1,44 +1,85 @@
 [
-    {
-        "property": "browser.tabs.allow_transparent_browser",
-        "label": "Allow zen browser to be transparent (Turn off before uninstall)",
-        "type": "checkbox",
-        "defaultvalue": true
-    },
-    {
-        "property": "mod.sameerasw.zen_bg_color_enabled",
-        "label": "Enable custom background color for Zen",
-        "type": "checkbox",
-        "defaultvalue": false
-    },
-    {
-        "property": "mod.sameerasw.zen_transparency_color",
-        "label": "Set background color for Zen (Overrides default theme colors)",
-        "type": "string",
-        "defaultvalue": "#00000000"
-    },
-    {
-        "property": "mod.sameerasw.zen_light_tint_flip",
-        "label": "Flip light tint for Zen after 1.8b to dark",
-        "type": "checkbox",
-        "defaultvalue": false
-    },
-    {
-        "property": "mod.sameerasw.zen_light_tint_disabled",
-        "label": "Disable light tint for Zen after 1.8b",
-        "type": "checkbox",
-        "defaultvalue": true
-    },
-    {
-        "property": "mod.sameerasw.zen_empty_page_transparency",
-        "label": "Make the empty page transparent after Zen 1.9b",
-        "type": "checkbox",
-        "defaultvalue": true
-    },
-    {
-        "property": "mod.sameerasw.zen_no_shadow",
-        "label": "Remove the shadow around the web page",
-        "type": "checkbox",
-        "defaultvalue": false
-    }
+  {
+    "property": "browser.tabs.allow_transparent_browser",
+    "label": "Allow zen browser to be transparent (Turn off before uninstall)",
+    "type": "checkbox",
+    "defaultvalue": true
+  },
+  {
+    "property": "mod.sameerasw.zen_bg_color_enabled",
+    "label": "Enable custom background color for Zen",
+    "type": "checkbox",
+    "defaultvalue": false
+  },
+  {
+    "property": "mod.sameerasw.zen_transparency_color",
+    "label": "Set background color for Zen (Overrides default theme colors)",
+    "type": "string",
+    "defaultvalue": "#00000000"
+  },
+  {
+    "property": "mod.sameerasw.zen_light_tint_flip",
+    "label": "Flip light tint for Zen after 1.8b to dark",
+    "type": "checkbox",
+    "defaultvalue": false
+  },
+  {
+    "property": "mod.sameerasw.zen_light_tint_disabled",
+    "label": "Disable light tint for Zen after 1.8b",
+    "type": "checkbox",
+    "defaultvalue": true
+  },
+  {
+    "property": "mod.sameerasw.zen_empty_page_transparency",
+    "label": "Make the empty page transparent after Zen 1.9b",
+    "type": "checkbox",
+    "defaultvalue": true
+  },
+  {
+    "property": "mod.sameerasw.zen_no_shadow",
+    "label": "Remove the shadow around the web page",
+    "type": "checkbox",
+    "defaultvalue": false
+  },
+  {
+    "property": "zen.widget.macos.window-material",
+    "label": "Modify macOS transparency (default: 2)",
+    "type": "dropdown",
+    "options": [
+      {
+        "label": "0 - transparent",
+        "value": 0
+      },
+      {
+        "label": "1",
+        "value": 1
+      },
+      {
+        "label": "2",
+        "value": 2
+      },
+      {
+        "label": "3",
+        "value": 3
+      },
+      {
+        "label": "4",
+        "value": 4
+      },
+      {
+        "label": "5",
+        "value": 5
+      },
+      {
+        "label": "6",
+        "value": 6
+      },
+      {
+        "label": "7 - opaque",
+        "value": 7
+      }
+    ],
+    "defaultvalue": 2,
+    "disabledOn": ["windows", "linux"]
+  }
 ]
