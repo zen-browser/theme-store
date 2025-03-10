@@ -8,7 +8,7 @@ import sys
 import requests
 import urllib.parse
 from enum import StrEnum
-
+from PIL import Image
 
 class PreferenceFields(StrEnum):
     PROPERTY = "property"
@@ -79,6 +79,7 @@ def get_styles(is_color_theme, theme_id):
 
         # we actually have a JSON file here that needs to be generated
         if is_color_theme:
+            panic("Color themes have been deprecated, sorry!")
             with open(f"themes/{theme_id}/{COLORS_FILE}", "w") as f:
                 json.dump(json.loads(content), f, indent=4)
             return "/* This is a color theme. */"
@@ -305,6 +306,13 @@ def download_image(image_url, image_path):
         panic("Image must be a PNG.")
     with open(image_path, "wb") as f:
         f.write(response.content)
+    validate_image(image_path)
+
+def validate_image(image_path):
+    # Size must be 600x400
+    image = Image.open(image_path)
+    if image.size != (600, 400):
+        panic("Image must be 600x400 pixels.")
 
 
 def main():

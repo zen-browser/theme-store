@@ -1,59 +1,62 @@
+#navigator-toolbox[zen-right-side="true"] > #zen-sidebar-top-buttons > .titlebar-buttonbox-container > .titlebar-buttonbox {
+    margin-top: 11px !important;
+}
+
 .titlebar-buttonbox {
-  margin-right: 20px;
+    margin-right: 20px;
 }
 
 .titlebar-button {
-  padding: 0px !important;
-  min-height: 13px !important;
-  min-width: 13px !important;
-  align-self: center;
-  margin-left: 5px !important;
-  border-radius: 50px;
-  transition: all 100ms;
+    padding: 0px !important;
+    min-height: 13px !important;
+    min-width: 13px !important;
+    height: 13px !important;
+    align-self: center;
+    margin-left: 5px !important;
+    border-radius: 50px;
+    transition: all 100ms;
 }
 
 .titlebar-min {
-  background-color: hsl(130, 50%, 40%) !important;
+    background-color: hsl(130, 50%, 40%) !important;
 }
 
-.titlebar-max,
-.titlebar-restore {
-  background-color: hsl(60, 50%, 50%) !important;
+.titlebar-max, .titlebar-restore {
+    background-color: hsl(60, 50%, 50%) !important;
 }
 
 .titlebar-close {
-  background-color: hsl(0, 50%, 50%) !important;
+    background-color: hsl(0, 50%, 50%) !important;
 }
 
 .titlebar-button > image {
-  visibility: collapse !important;
+    visibility: collapse !important;
 }
 
 @media (-moz-bool-pref: "theme.zen-minimal-exit-menu.enable-macos-identic") {
-  .titlebar-button:hover {
-    opacity: 0.25 !important;
-  }
+    .titlebar-button:hover {
+        opacity: 0.25 !important;
+    }
 }
 
 @media not (-moz-bool-pref: "theme.zen-minimal-exit-menu.enable-macos-identic") {
-  .titlebar-button {
-    background-color: var(--zen-colors-border) !important;
-  }
+    .titlebar-button {
+        background-color: var(--zen-colors-border) !important;
+    }
+    
+    .titlebar-min:hover {
+        background-color: hsl(130, 50%, 40%) !important;
+    }
 
-  .titlebar-min:hover {
-    background-color: hsl(130, 50%, 40%) !important;
-  }
+    .titlebar-max:hover, .titlebar-restore:hover {
+        background-color: hsl(60, 50%, 50%) !important;
+    }
 
-  .titlebar-max:hover,
-  .titlebar-restore:hover {
-    background-color: hsl(60, 50%, 50%) !important;
-  }
-
-  .titlebar-close:hover {
-    background-color: hsl(0, 50%, 50%) !important;
-  }
-
-  .titlebar-button:hover {
-    min-height: 20px !important;
-  }
+    .titlebar-close:hover {
+        background-color: hsl(0, 50%, 50%) !important;
+    }
+    
+    .titlebar-button:hover {
+        min-height: 20px !important;
+    }
 }

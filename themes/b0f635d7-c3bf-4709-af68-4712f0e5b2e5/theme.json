@@ -1,0 +1,14 @@
+{
+    "id": "b0f635d7-c3bf-4709-af68-4712f0e5b2e5",
+    "name": "Cleaner Bookmark Menu",
+    "description": "Remove unnecessary buttons from the toolbar bookmarks button.",
+    "homepage": "https://github.com/Pkcarreno/cleaner-bookmark-menu",
+    "style": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/b0f635d7-c3bf-4709-af68-4712f0e5b2e5/chrome.css",
+    "readme": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/b0f635d7-c3bf-4709-af68-4712f0e5b2e5/readme.md",
+    "image": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/b0f635d7-c3bf-4709-af68-4712f0e5b2e5/image.png",
+    "author": "Pkcarreno",
+    "version": "1.0.0",
+    "tags": [],
+    "createdAt": "2025-02-17",
+    "updatedAt": "2025-02-23"
+}

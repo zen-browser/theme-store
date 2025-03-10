@@ -1,0 +1,38 @@
+[
+    {
+        "property": "browser.tabs.allow_transparent_browser",
+        "label": "Allow zen browser to be transparent (Turn off before uninstall)",
+        "type": "checkbox",
+        "defaultvalue": true
+    },
+    {
+        "property": "mod.sameerasw.zen_transparency_color",
+        "label": "Set background color for Zen (Overrides default theme colors)",
+        "type": "string",
+        "defaultvalue": "#00000000"
+    },
+    {
+        "property": "mod.sameerasw.zen_bg_img_enabled",
+        "label": "Enable custom background image for Zen empty page",
+        "type": "checkbox",
+        "defaultvalue": false
+    },
+    {
+        "property": "mod.sameerasw.zen_transparency",
+        "label": "Set bg image url",
+        "type": "string",
+        "defaultvalue": ""
+    },
+    {
+        "property": "mod.sameerasw.zen_light_tint_disabled",
+        "label": "Disable light tint for Zen after 1.8b",
+        "type": "checkbox",
+        "defaultvalue": true
+    },
+    {
+        "property": "mod.sameerasw.zen_empty_page_transparency",
+        "label": "Make the empty page transparent after Zen 1.9b",
+        "type": "checkbox",
+        "defaultvalue": true
+    }
+]

@@ -1,68 +1,44 @@
-/* Shield Star Fix */
-#tracking-protection-icon-container {
-  align-self: center !important;
+
+/* Blurs the background */
+#urlbar[breakout-extend="true"] #urlbar-background {
+    border: solid 3px color-mix(in hsl, hsl(0 0 50), transparent 90%) !important;
+    border-radius: 15px !important;
+    background-color: color-mix(in hsl, var(--mod-cleanedurlbar-customcolor), transparent var(--mod-cleanedurlbar-customtransparency)) !important;
+    backdrop-filter: blur(25px) saturate(2) !important;
 }
 
-/* Cleaner Breakout URL Bar */
-#urlbar-search-mode-indicator {
-  background: transparent !important;
-}
-
-#identity-box.chromeUI:not([pageproxystate="invalid"]) {
-  & #identity-icon-box {
-    background: transparent !important;
-  }
-}
-
-#identity-icon-box,
-#identity-permission-box {
-  background: transparent !important;
-  margin: 0 8px 0 0 !important;
-}
-
-.urlbarView-body-inner {
-  #urlbar[open] > .urlbarView > .urlbarView-body-outer > & {
-    border-top: none !important;
-  }
-}
-
-.urlbarView:not([noresults]) > .search-one-offs:not([hidden]) {
-  border-top: none !important;
-}
-
-.search-one-offs {
-  padding: 4px !important;
-  margin-bottom: 8px !important;
-  opacity: 0.5 !important;
-  background: var(--urlbarView-highlight-background) !important;
-  border-radius: 8px !important;
-}
-
+/* Custom URL result selected color */
 .urlbarView-row {
+  &[selected] {
+    background-color: var(--mod-cleanedurlbar-customselectcolor) !important;
+    color: var(--mod-cleanedurlbar-customselectfontcolor) !important;
+  }
+}
+
+/* Unifies the border radius */
+.urlbarView-row {
+  border-radius: 11px !important;
+}
+
+/* Deletes the border */
+.urlbarView-body-inner {
+   border: none !important;
+}
+
+/* Styles the search options */
+.search-one-offs {
+  border-top: none !important;
+  border-radius: 10px !important;
+  padding: 4px !important;
+  margin: 0px 0px 7px 0px !important;
+  backdrop-filter: brightness(130%);
+}
+
+.searchbar-engine-one-off-item {
   border-radius: 8px !important;
+  margin-right: 3px !important;
 }
 
-.search-panel-one-offs-container > *,
-.search-panel-one-offs-container > * > * {
-  border-radius: 4px !important;
-}
-
-.urlbar-input-container {
-  padding: 0px 3.5px !important;
-}
-
-#urlbar[open] {
-  margin-top: 3px !important;
-  padding-top: 6px !important;
-}
-
-.urlbar-go-button {
-  align-self: center !important;
-  opacity: 0.5 !important;
-  background: transparent !important;
-  margin-right: 6px !important;
-}
-
-.urlbar-go-button:hover {
-  opacity: 1 !important;
+#urlbar-anon-search-settings {
+  margin-right: 0px !important;
 }
