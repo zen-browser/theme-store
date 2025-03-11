@@ -1,0 +1,37 @@
+
+@-moz-document url-prefix("chrome:") {
+
+@media (-moz-bool-pref: "mod.urlbar-icons.bookmark.disable") {
+    #star-button-box {display: none;}
+  }
+  
+  @media (-moz-bool-pref: "mod.urlbar-icons.translation.disable") {
+    #translations-button {display: none;}
+  }
+  
+  @media (-moz-bool-pref: "mod.urlbar-icons.reader-mode.disable") {
+    #reader-mode-button {display: none;}
+  }
+  
+  @media (-moz-bool-pref: "mod.urlbar-icons.pip.disable") {
+    #picture-in-picture-button {display: none;}
+  }
+  
+  @media (-moz-bool-pref: "mod.urlbar-icons.addons.disable") {
+    .urlbar-addon-page-action {display: none;}
+  }
+  
+  @media (-moz-bool-pref: "mod.urlbar-icons.identity.disable") {
+    #identity-icon-box {display: none;}
+    #urlbar-input {margin-left: 4px;}
+  }
+  
+  @media (-moz-bool-pref: "mod.urlbar-icons.permissions.disable") {
+    #identity-permission-box {display: none !important;}
+  }
+  
+  @media (-moz-bool-pref: "mod.urlbar-icons.tracking-protection.disable") {
+    #tracking-protection-icon-container {display: none;}
+  }
+  
+}
