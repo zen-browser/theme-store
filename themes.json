@@ -88,6 +88,20 @@
         "updatedAt": "2025-01-26",
         "preferences": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/d868eaf4-cefc-4f41-8f1c-1f603726d2fa/preferences.json"
     },
+    "1b88a6d1-d931-45e8-b6c3-bfdca2c7e9d6": {
+        "id": "1b88a6d1-d931-45e8-b6c3-bfdca2c7e9d6",
+        "name": "Remove Tab X",
+        "description": "Removes the X from tabs which closes them.",
+        "homepage": "https://github.com/xXMacMillanXx/remove-tab-x",
+        "style": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/1b88a6d1-d931-45e8-b6c3-bfdca2c7e9d6/chrome.css",
+        "readme": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/1b88a6d1-d931-45e8-b6c3-bfdca2c7e9d6/readme.md",
+        "image": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/1b88a6d1-d931-45e8-b6c3-bfdca2c7e9d6/image.png",
+        "author": "xXMacMillanXx",
+        "version": "1.0.0",
+        "tags": [],
+        "createdAt": "2025-03-11",
+        "updatedAt": "2025-03-11"
+    },
     "bd92a9a0-1c00-4187-a66e-94c389fa5a59": {
         "id": "bd92a9a0-1c00-4187-a66e-94c389fa5a59",
         "name": "Sidebar Expand on Hover",
@@ -605,6 +619,20 @@
         "tags": [],
         "createdAt": "2024-11-02",
         "updatedAt": "2025-01-26"
+    },
+    "4c2bec61-7f6c-4e5c-bdc6-c9ad1aba1827": {
+        "id": "4c2bec61-7f6c-4e5c-bdc6-c9ad1aba1827",
+        "name": "Vertical Tab Groups",
+        "description": "Display tab groups vertically so you can still read the page names",
+        "homepage": "https://github.com/ToBinio/zen-mods/tree/main/vertical-tab-groups",
+        "style": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/4c2bec61-7f6c-4e5c-bdc6-c9ad1aba1827/chrome.css",
+        "readme": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/4c2bec61-7f6c-4e5c-bdc6-c9ad1aba1827/readme.md",
+        "image": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/4c2bec61-7f6c-4e5c-bdc6-c9ad1aba1827/image.png",
+        "author": "ToBinio",
+        "version": "1.0.0",
+        "tags": [],
+        "createdAt": "2025-03-11",
+        "updatedAt": "2025-03-11"
     },
     "39907934-59e9-4e42-89f0-a254d3c5e280": {
         "id": "39907934-59e9-4e42-89f0-a254d3c5e280",
