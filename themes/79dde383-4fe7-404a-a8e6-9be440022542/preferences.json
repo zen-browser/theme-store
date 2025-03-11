@@ -1,0 +1,14 @@
+[
+    {
+        "property": "mod.tidypopup.usecustomhovercolor",
+        "label": "Use custom hover color",
+        "type": "checkbox",
+        "defaultValue": false
+    },
+    {
+        "property": "mod.tidypopup.hovercolor",
+        "label": "Button color when hovered",
+        "type": "string",
+        "defaultValue": "rgba(80, 80, 250, 1)"
+    }
+]
