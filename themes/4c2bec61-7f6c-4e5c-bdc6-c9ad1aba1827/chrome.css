@@ -1,0 +1,32 @@
+
+tab-group[split-view-group] {
+    flex-direction: column;
+    padding: 2px 2px !important;
+    position: relative;
+
+&::after {
+        content: '';
+        width: 1px;
+        height: calc(100% - 8px);
+        background-color: light-dark(rgba(0, 0, 0, 0.1), rgba(255, 255, 255, 0.2));
+        position: absolute;
+        right: 0;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+
+&:hover, &:has(> tab:is([visuallyselected], [multiselected])){
+        &::after{
+            width: 0;
+        }
+    }
+}
+
+tab-group[split-view-group] {
+    & > .tabbrowser-tab {
+        &:not(:last-child)::after {
+            width: 0 !important;
+            height: 0 !important;
+        }
+    }
+}
