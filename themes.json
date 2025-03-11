@@ -192,6 +192,20 @@
         "updatedAt": "2025-01-26",
         "preferences": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/5bb07b6e-c89f-4f4a-a0ed-e483cc535594/preferences.json"
     },
+    "9bbaab67-a2c8-4d79-837f-90cd72a8932a": {
+        "id": "9bbaab67-a2c8-4d79-837f-90cd72a8932a",
+        "name": "Big Essentials",
+        "description": "Make the Essential tab icons big enough (32px w/ 16px padding) to be recognisable without their names.",
+        "homepage": "https://github.com/leaferiksen/zen-browser-big-essentials",
+        "style": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/9bbaab67-a2c8-4d79-837f-90cd72a8932a/chrome.css",
+        "readme": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/9bbaab67-a2c8-4d79-837f-90cd72a8932a/readme.md",
+        "image": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/9bbaab67-a2c8-4d79-837f-90cd72a8932a/image.png",
+        "author": "leaferiksen",
+        "version": "1.0.0",
+        "tags": [],
+        "createdAt": "2025-03-11",
+        "updatedAt": "2025-03-11"
+    },
     "bed8c922-616a-4165-8c86-6822ccf478ad": {
         "id": "bed8c922-616a-4165-8c86-6822ccf478ad",
         "name": "Erics Zen UI Tweak Box",
