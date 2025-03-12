@@ -1,4 +1,5 @@
 name: Create Theme
+
 on:
   issues:
     types: [opened]
@@ -9,16 +10,17 @@ jobs:
     name: Submit a theme
     runs-on: ubuntu-latest
     if: startsWith(github.event.issue.title, '[create-theme]:')
-    steps:
-      - name: Checkout code
-        uses: actions/checkout@v2
 
-      - name: Install python
-        uses: actions/setup-python@v2
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
         with:
           python-version: "3.x"
 
-      - name: Setup python modules
+      - name: Install dependencies
         run: |
           pip3 install requests
           pip3 install pillow
@@ -40,19 +42,19 @@ jobs:
           echo "THEME_IS_COLOR_THEME=${{ contains(fromJson(steps.issue-parser.outputs.jsonString)['is-color-theme'], 'JSON Color Theme') }}" >> $GITHUB_ENV
 
       - name: Write styles to file
-        uses: "DamianReeves/write-file-action@master"
+        uses: DamianReeves/write-file-action@master
         with:
           contents: ${{ fromJson(steps.issue-parser.outputs.jsonString)['styles'] }}
           path: theme-styles.css
 
       - name: Write readme to file
-        uses: "DamianReeves/write-file-action@master"
+        uses: DamianReeves/write-file-action@master
         with:
           contents: ${{ fromJson(steps.issue-parser.outputs.jsonString)['readme'] }}
           path: theme-readme.md
 
       - name: Write preferences to file
-        uses: "DamianReeves/write-file-action@master"
+        uses: DamianReeves/write-file-action@master
         if: fromJson(steps.issue-parser.outputs.jsonString)['preferences'] != ''
         with:
           contents: ${{ fromJson(steps.issue-parser.outputs.jsonString)['preferences'] }}
@@ -61,17 +63,17 @@ jobs:
       - name: Setup Git
         run: |
           git config --global user.name "github-actions[bot]"
-          git config --global user.email "github-actions[bot]@users.noreply.github.com"
+          git config --global user.email "41898282+github-actions[bot]@users.noreply.github.com"
 
       - name: Create theme content
         run: |
           python3 scripts/submit_theme.py \
-              --name "${{ env.THEME_NAME }}" \
-              --description "${{ env.THEME_DESCRIPTION }}" \
-              --author "${{ env.THEME_AUTHOR }}" \
-              --image "${{ env.THEME_IMAGE }}" \
-              --is-color-theme "${{ env.THEME_IS_COLOR_THEME }}" \
-              --homepage "${{ env.THEME_HOMEPAGE }}" 2> error.log
+            --name "${{ env.THEME_NAME }}" \
+            --description "${{ env.THEME_DESCRIPTION }}" \
+            --author "${{ env.THEME_AUTHOR }}" \
+            --image "${{ env.THEME_IMAGE }}" \
+            --is-color-theme "${{ env.THEME_IS_COLOR_THEME }}" \
+            --homepage "${{ env.THEME_HOMEPAGE }}" 2> error.log
 
       - name: Export creation output
         if: failure()
@@ -91,8 +93,8 @@ jobs:
 
             > ${{ env.CREATION_OUTPUT }}
 
-      - name: Create Pull Request
-        uses: peter-evans/create-pull-request@v3
+      - name: Create pull request
+        uses: peter-evans/create-pull-request@v7
         if: success()
         with:
           add-paths: themes/
@@ -114,7 +116,7 @@ jobs:
           branch: create-theme-${{ github.event.issue.number }}
           base: main
 
-      - name: Close Issue
+      - name: Close issue
         uses: peter-evans/close-issue@v3
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
