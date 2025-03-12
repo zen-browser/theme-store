@@ -1,0 +1,14 @@
+{
+    "id": "747ac7db-a76e-4c69-9fea-d3037725c5f0",
+    "name": "Hide Current Workspace",
+    "description": "Hide the current workspace indicator from the sidebar.",
+    "homepage": "",
+    "style": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/747ac7db-a76e-4c69-9fea-d3037725c5f0/chrome.css",
+    "readme": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/747ac7db-a76e-4c69-9fea-d3037725c5f0/readme.md",
+    "image": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/747ac7db-a76e-4c69-9fea-d3037725c5f0/image.png",
+    "author": "michaellauwereys",
+    "version": "1.0.0",
+    "tags": [],
+    "createdAt": "2025-02-07",
+    "updatedAt": "2025-02-07"
+}
