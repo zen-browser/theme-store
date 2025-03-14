@@ -1,0 +1,15 @@
+{
+    "id": "ab733376-611d-448f-a507-577f9bfe1412",
+    "name": "Extension Menu Enhanced",
+    "description": "Enhanced extension panel, providing alternative look and respecting user background color and padding",
+    "homepage": "https://github.com/Kaedriz/ZenMods",
+    "style": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/ab733376-611d-448f-a507-577f9bfe1412/chrome.css",
+    "readme": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/ab733376-611d-448f-a507-577f9bfe1412/readme.md",
+    "image": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/ab733376-611d-448f-a507-577f9bfe1412/image.png",
+    "author": "Kaedriz",
+    "version": "1.0.0",
+    "tags": [],
+    "createdAt": "2025-02-15",
+    "updatedAt": "2025-02-15",
+    "preferences": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/ab733376-611d-448f-a507-577f9bfe1412/preferences.json"
+}
