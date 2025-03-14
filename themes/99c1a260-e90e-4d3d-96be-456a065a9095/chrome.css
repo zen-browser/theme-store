@@ -1,0 +1,38 @@
+
+.titlebar-button{ --uc-caption-background: var(--uc-caption-color) }
+
+.titlebar-button { opacity: 0.6; --uc-caption-color: rgb(0, 153, 0); }
+.titlebar-min    { opacity: 0.5; --uc-caption-color: rgb(255, 255, 0); }
+.titlebar-close  { opacity: 0.7; --uc-caption-color: rgb(246, 41, 41);}
+
+.titlebar-button:hover { opacity: 1 }
+
+.titlebar-button {
+  background: transparent !important;
+  padding-inline: 2px !important;
+  transition: opacity 0.2s ease;
+}
+
+.titlebar-button > .toolbarbutton-icon {
+	list-style-image: none;
+	border-radius: 10px;
+  background: var(--uc-caption-background,currentColor) !important;
+}
+
+.tabbrowser-tab .tab-close-button{
+  display:none;
+}
+.tabbrowser-tab:not([pinned]):hover .tab-close-button{
+  display: flex !important;
+  align-items: center;
+  color:#80808000;
+}
+
+.titlebar-buttonbox .titlebar-button {
+  padding: 14px 8px !important;
+}
+
+.toolbarbutton.titlebar-button{
+  padding: 14px 8px !important;
+
+}
