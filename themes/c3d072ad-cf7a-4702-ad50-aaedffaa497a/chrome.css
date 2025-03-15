@@ -1,0 +1,106 @@
+
+#urlbar .urlbar-input {
+    text-align: center !important;
+}
+
+.identity-box-button {
+    background-color: transparent !important;
+}
+
+.titlebar-buttonbox {
+    margin-left: 10px !important;
+    margin-right: 15px !important;
+}
+
+.titlebar-button {
+    padding: 0px !important;
+    min-height: 15px !important;
+    min-width: 15px !important;
+    align-self: center;
+    margin-left: 7.5px !important;
+    border-radius: 50px;
+    transition: transform 150ms ease, background-color 150ms ease !important;
+}
+
+.titlebar-button {
+    background-color: var(--zen-colors-border) !important;
+}
+
+.titlebar-min:hover {
+    background-color: hsl(120, 60%, 50%) !important;
+}
+
+.titlebar-max:hover,
+.titlebar-restore:hover {
+    background-color: hsl(50, 100%, 50%) !important;
+}
+
+.titlebar-close:hover {
+    background-color: hsl(0, 80%, 50%) !important;
+}
+
+.titlebar-button:hover {
+    transform: scale(1.15) !important;
+}
+
+.titlebar-button>image {
+    visibility: hidden !important;
+    opacity: 0 !important;
+    transition: opacity 100ms ease-in-out, transform 100ms ease-in-out !important;
+}
+
+.titlebar-button:hover>image {
+    visibility: visible !important;
+    opacity: 1 !important;
+    filter: grayscale(0%) brightness(0) !important;
+    transform: scale(0.75) !important;
+}
+
+.titlebar-min:hover>image {
+    position: relative !important;
+    top: 0.5px;
+}
+
+#urlbar #identity-box.extensionPage #identity-icon-label,
+#PanelUI-menu-button {
+    display: none !important;
+}
+
+#unified-extensions-button {
+    padding: 0px !important;
+    min-height: 15px !important;
+    min-width: 15px !important;
+    max-width: 15px !important;
+    max-height: 15px !important;
+    margin-left: 15px !important;
+    align-self: center;
+    border-radius: 50px;
+    transition: transform 150ms ease, background-color 150ms ease !important;
+
+background-color: var(--zen-colors-border) !important;
+}
+
+#unified-extensions-button:hover>image {
+    display: block;
+    filter: grayscale(0%) brightness(0) !important;
+    transform: scale(0.65) !important;
+}
+
+#unified-extensions-button>image {
+    background-color: transparent !important;
+    display: none;
+}
+
+#unified-extensions-button:hover {
+    background-color: hsl(265, 65%, 50%) !important;
+    transform: scale(1.15) !important;
+}
+
+#titlebar {
+    width: 195px !important;
+    border-color: rgb(35, 35, 35) !important;
+}
+
+#zen-current-workspace-indicator {
+    padding-left: 9px !important;
+}
