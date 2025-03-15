@@ -1,0 +1,6 @@
+
+@-moz-document url-prefix("chrome:") {
+    & #zen-tabbox-wrapper {
+        margin: 0 !important;
+    }
+}
