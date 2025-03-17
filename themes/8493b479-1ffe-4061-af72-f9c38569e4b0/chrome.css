@@ -1,0 +1,15 @@
+
+#tabbrowser-tabs {
+  & .tabbrowser-tab {
+    &[pinned]:not([zen-essential]):hover .tab-close-button,
+    &[pinned][visuallyselected]:not([zen-essential]) .tab-close-button {
+      display: none !important;
+    }
+    &[pinned]:not([zen-essential]):hover .tab-reset-button {
+      display: block !important;
+    }
+    &[pinned]:not([zen-essential]) .tab-reset-button {
+      display: none !important;
+    }
+  }
+}
