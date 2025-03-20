@@ -1,0 +1,33 @@
+
+@-moz-document url-prefix("chrome:") {
+  :root {
+    --zen-colors-primary: #232136 !important;
+    --zen-colors-secondary: #232136 !important;
+    --zen-colors-tertiary: #232136 !important;
+    --zen-colors-border: #393552 !important;
+    --primary-color: #c4a7e7 !important;
+    --dark-color: #2a283e !important;
+    color-scheme: dark !important;
+  }
+
+toolbarbutton, titlebar-button, label{
+    color: var(--primary-color) !important;;
+    fill: var(--primary-color) !important;;
+  }
+
+#tracking-protection-icon, #star-button.urlbar-icon {
+    fill: #e0def4 !important;
+  }
+
+#identity-icon-box.identity-box-button {
+    background-color: var(--primary-color) !important;
+  }
+
+#identity-icon, #identity-icon-label {
+    color: var(--dark-color) !important;
+  }
+
+#urlbar-background {
+    background-color: var(--zen-colors-primary) !important;
+  }
+}
