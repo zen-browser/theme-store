@@ -1,0 +1,14 @@
+{
+    "id": "a4c8a291-9c1c-416e-bcd8-0bce4e23998d",
+    "name": "Pin webpanel to right",
+    "description": "To make side web panel always on right when pinned",
+    "homepage": "",
+    "style": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/a4c8a291-9c1c-416e-bcd8-0bce4e23998d/chrome.css",
+    "readme": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/a4c8a291-9c1c-416e-bcd8-0bce4e23998d/readme.md",
+    "image": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/a4c8a291-9c1c-416e-bcd8-0bce4e23998d/image.png",
+    "author": "sporocyst",
+    "version": "1.0.0",
+    "tags": [],
+    "createdAt": "2025-03-22",
+    "updatedAt": "2025-03-22"
+}
