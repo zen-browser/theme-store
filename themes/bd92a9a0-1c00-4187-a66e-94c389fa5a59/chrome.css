@@ -1,180 +1,118 @@
-:root:has(#customization-container) {
-
+:root:has(#customization-container:not([hidden])) {
     /* Show flexible space in customiation mode in top buttons, since this mod allows them there */
     #zen-sidebar-top-buttons-customization-target toolbarspring {
         display: flex !important;
     }
 }
 
-/* Compact mode detection changed, so it got moved here */
-:root:not([zen-compact-mode="true"]):has(#navigator-toolbox:not([zen-sidebar-expanded="true"])) {
+:root:not([zen-compact-mode="true"], :has(#customization-container:not([hidden]))) {
+    --tab-min-width: calc(36px) !important;
+    --zen-toolbox-padding: calc(var(--zen-element-separation) / 2 + 1px) !important;
+    --zen-toolbox-max-width: calc(var(--tab-min-width) + var(--tab-block-margin) + var(--zen-toolbox-padding) * 2) !important;
+    --zen-toolbox-min-width: 1px !important;
+    --zen-sidebar-width: var(--zen-toolbox-max-width) !important;
+    
+    @media (-moz-bool-pref: "theme.sidebar_expand_on_hover.hide_workspace_indicator") {
+        #zen-current-workspace-indicator-container {
+            display: none !important;
+        }
+    }
+    
+    #zen-sidebar-splitter {
+        display: none !important;
+    }
+    
+    /* Change tab shape to square when collapsed */
+    tab:not([zen-essential]) .tab-background {
+        min-width: var(--tab-min-width) !important;
+    }
+    
+    /* Center tab icon */
+    .tab-icon-stack > .tab-icon-image {
+        margin-inline-start: calc(calc(var(--tab-min-width) + var(--tab-block-margin) * 2 - var(--tab-inline-padding) * 2 - 16px) / 2) !important;
+    }
+
+    /* Same design as tabs for New Tab button and other toolbarbuttons */
+    #TabsToolbar-customization-target toolbarbutton {
+        margin: var(--tab-block-margin) !important;
+        padding: 0 calc(var(--tab-inline-padding) - var(--tab-block-margin)) !important;
+        justify-content: flex-start !important;
+        
+        & > .toolbarbutton-icon {
+            margin-inline-start: calc(calc(var(--tab-min-width) + var(--tab-block-margin) * 2 - var(--tab-inline-padding) * 2 - 16px) / 2) !important;
+            margin-inline-end: var(--toolbarbutton-inner-padding) !important;
+        }
+        
+        & > .toolbarbutton-text {
+            padding: 0 !important;
+            align-items: center !important;
+        }
+    }
+    
+    /* Stop New Tab button from increasing the width */
+    .zen-workspace-tabs-section {
+        width: calc(var(--tab-min-width) + var(--tab-block-margin)) !important;
+    }
+    
+    tab[pinned]:not([zen-essential]) > stack {
+        --tab-inline-padding: 8px !important;
+        & > .tab-content {
+            padding: 0 var(--tab-inline-padding) !important;
+            min-width: 0 !important;
+            justify-content: unset !important;
+        }
+    }
+
+    @media (not (-moz-bool-pref: "zen.view.use-single-toolbar")) {
+
+            #navigator-toolbox {
+                margin-top: var(--zen-toolbar-height) !important;
+            }
+
+            #browser:has(#PersonalToolbar[collapsed=false]) #navigator-toolbox {
+                margin-top: calc(var(--zen-toolbar-height) + 2.2em) !important;
+            }
+    }
+    
     /* Move topbar buttons in the now empty space */
-    @media (not (-moz-platform: macos)) {
+    @media (not (-moz-bool-pref: "zen.view.use-single-toolbar")) and (not (-moz-platform: macos)) {
         #browser:has(#navigator-toolbox:not([zen-right-side="true"])) {
             #zen-appcontent-wrapper {
                 overflow: visible !important;
 
                 #zen-appcontent-navbar-container:has(#nav-bar>.titlebar-buttonbox-container:last-child) {
                     margin-left: calc(0px - var(--zen-toolbox-max-width)) !important;
+                    padding-left: var(--zen-element-separation);
 
-                    #nav-bar-customization-target>toolbarbutton:first-child {
-                        padding-inline-start: var(--toolbarbutton-outer-padding) !important;
+                    #nav-bar {
+                        margin-inline-start: var(--zen-element-separation);
                     }
                 }
             }
         }
     }
-    #navigator-toolbox {
-        margin-top: var(--zen-toolbar-height) !important;
-    }
-
-    #browser:has(#PersonalToolbar[collapsed=false]) #navigator-toolbox {
-        margin-top: calc(var(--zen-toolbar-height) + 2.2em) !important;
-    }
-}
-
-/* only use mod in collapsed toolbar mode */
-:root:has(#navigator-toolbox:not([zen-sidebar-expanded="true"])) {
-    /* Width of the collapsed sidebar */
-    --zen-toolbox-max-width: 44px !important;
-    /* For automatic tab icon centering? */
-    --tab-collapsed-width: var(--zen-toolbox-max-width) !important;
 
     #navigator-toolbox {
         z-index: 4 !important;
-    }
-
-    @media not (-moz-bool-pref: "zen.view.compact.hide-toolbar") {
-
-        #navigator-toolbox {
-            margin-top: var(--zen-toolbar-height) !important;
-        }
-
-        #browser:has(#PersonalToolbar[collapsed=false]) #navigator-toolbox {
-            margin-top: calc(var(--zen-toolbar-height) + 2.2em) !important;
-        }
-    }
-
-    /* In compact mode (with topbar hidden) the topbar should be above the sidebar when hovered, while the sidebar should be above the page, doesn't work well with transitions but z-index is weird :c */
-    #browser:has(#zen-appcontent-navbar-container[zen-has-hover]) #navigator-toolbox {
-        z-index: 3 !important;
-    }
-
-    #PersonalToolbar[collapsed=false] {
-        height: 2.2em !important;
-    }
-
-    #tabbrowser-tabs {
-        & .tabbrowser-tab {
-            &[pinned] .tab-close-button {
-                display: none !important;
-            }
-
-            &[pinned]:not([zen-essential]):hover .tab-reset-button,
-            &[pinned][visuallyselected]:not([zen-essential]) .tab-reset-button {
-                display: block !important;
-            }
-
-            &:not([pinned]):hover .tab-close-button,
-            &[visuallyselected]:not([pinned]) .tab-close-button {
-                display: block !important;
-            }
-
-            &[zen-essential] {
-                margin: 0 !important;
-                --tab-min-height: 44px;
-            }
-
-            &:not([zen-essential]) {
-                width: 100% !important;
-                margin: 0 !important;
-
-                .tab-content {
-                    justify-content: space-between !important;
-                    padding: 0 var(--tab-inline-padding) !important;
-                    gap: var(--tab-inline-padding);
-                    width: 100% !important;
-                    align-items: center !important;
-                }
-
-                .tab-label-container {
-                    display: inline-block !important;
-                }
-
-                .tab-content {
-                    min-width: 0 !important;
-                }
-
-                @media not (-moz-bool-pref: "theme.sidebar_expand_on_hover.default_tab_background_shape") {
-                    .tab-background {
-                        width: 100% !important;
-                        transform: translateX(2px) !important;
-                        border-radius: var(--border-radius-medium) 0 0 var(--border-radius-medium) !important;
-                    }
-                }
-            }
-
-            border-radius: 8px !important;
-            overflow: hidden !important;
-
-            @media not (-moz-bool-pref: "theme.sidebar_expand_on_hover.default_tab_background_shape") {
-                border-radius: 0 !important;
-            }
-        }
-    }
-
-    #zen-essentials-container {
-        width: var(--theme-sidebar_expand_on_hover-expanded_width) !important;
-        justify-content: unset !important;
-    }
-
-    @media (-moz-bool-pref: "theme.sidebar_expand_on_hover.hide_workspace_indicator") {
-        #zen-current-workspace-indicator {
-            display: none !important;
-        }
-    }
-
-    #titlebar {
         width: var(--zen-toolbox-max-width) !important;
-        transition: var(--theme-sidebar_expand_on_hover-transition_speed) width cubic-bezier(.24, -0.01, .58, 1) !important;
-        overflow: clip;
-        position: relative;
-        /* Ensure rounded corners */
-        border-radius: 8px !important;
-        /* Ensure child elements don't overflow */
-        overflow: hidden !important;
-    }
+        max-width: var(--zen-toolbox-max-width) !important;
+        min-width: var(--zen-toolbox-max-width) !important;
+        position: relative !important;
 
-    #navigator-toolbox[zen-right-side="true"] {
-        direction: rtl !important;
-
-        #titlebar {
-            direction: ltr !important;
-        }
-    }
-
-    @media (-moz-bool-pref: "theme.sidebar_expand_on_hover.inverted_tabs") {
-        .tabbrowser-tab {
-            direction: rtl !important;
-        }
-    }
-
-    #vertical-pinned-tabs-container:has(tab:not([hidden])) {
-        & .tabbrowser-tab {
-            max-width: unset !important;
-        }
-    }
-
-    @media not (-moz-bool-pref: "theme.sidebar_expand_on_hover.custom_background") {
-        #titlebar::before {
+        /* 
+        I have no idea how to replicate the browser background, I don't know where the colors come from, the computed values in the inspector don't match anything on screen.
+        This is as close as I was able to get so far.
+        */
+        &::before {
             position: absolute;
             content: "";
-            width: 100%;
+            width: calc(var(--zen-sidebar-width) - var(--zen-toolbox-padding));
             height: 100%;
             opacity: 0.0;
-            transition: 60ms opacity ease-in calc(var(--theme-sidebar_expand_on_hover-transition_speed) - 60ms);
+            transition: 60ms opacity ease-in calc(var(--theme-sidebar_expand_on_hover-transition_speed) - 60ms), width ease-in-out var(--theme-sidebar_expand_on_hover-transition_speed);
             z-index: -1;
-            background: var(--zen-main-browser-background-toolbar) !important;
+            background-image: var(--zen-main-browser-background) !important;
+            background-color: var(--lwt-accent-color) !important;
             background-attachment: fixed !important;
             background-size: 2000px !important;
             backdrop-filter: blur(5px) !important;
@@ -182,84 +120,69 @@
             border-bottom-right-radius: 8px !important;
         }
 
-        #titlebar:hover::before,
-        #titlebar:has(toolbarbutton[open="true"]:not(#zen-sidepanel-button))::before,
-        #navigator-toolbox[zen-has-hover] #titlebar::before,
-        #navigator-toolbox[has-popup-menu] #titlebar::before,
-        #navigator-toolbox[movingtab] #titlebar::before {
-            opacity: 1.0 !important;
-            transition: 60ms opacity ease-out;
+        > #titlebar, > #zen-sidebar-top-buttons, > #nav-bar {
+            width: calc(var(--zen-sidebar-width) - var(--zen-toolbox-padding)) !important;
+            max-width: var(--zen-sidebar-width) !important;
+            min-width: var(--zen-toolbar-min-width) !important;
+            padding-right: var(--zen-toolbox-padding) !important;
         }
-    }
 
-    #titlebar:hover,
-    #titlebar:has(toolbarbutton[open="true"]:not(#zen-sidepanel-button)),
-    #navigator-toolbox[zen-has-hover] #titlebar,
-    #navigator-toolbox[has-popup-menu] #titlebar,
-    #navigator-toolbox[movingtab] #titlebar {
-        width: var(--theme-sidebar_expand_on_hover-expanded_width) !important;
-        box-shadow: 0 0 1px rgba(0, 0, 0, 0.7);
-    }
+        > #titlebar, > #zen-sidebar-top-buttons {
+            overflow: hidden !important;
+            transition: width ease-in-out var(--theme-sidebar_expand_on_hover-transition_speed), max-width ease-in-out var(--theme-sidebar_expand_on_hover-transition_speed);
+        }
 
-    .tab-background {
-        width: calc(100% - 4px) !important;
-    }
-
-    @media (-moz-bool-pref: 'zen.tabs.show-newtab-vertical') {
-        #tabs-newtab-button {
-            width: 100% !important;
+        > #nav-bar {
             margin: 0 !important;
-            display: flex !important;
-            padding: 0 var(--tab-inline-padding) !important;
-            justify-content: start !important;
-            gap: var(--tab-inline-padding) !important;
-
-            .toolbarbutton-icon {
-                background: transparent !important;
-                padding: 0 !important;
-                height: 16px !important;
-                width: 16px !important;
-            }
-
-            .toolbarbutton-text {
-                display: flex !important;
-                background: transparent !important;
-                padding: 0 !important;
-            }
-
-            .toolbarbutton-text:before {
-                text-overflow: clip !important;
-            }
+            padding-left: var(--zen-toolbox-padding) !important;
+            transition: var(--ext-theme-background-transition), width ease-in-out var(--theme-sidebar_expand_on_hover-transition_speed), max-width ease-in-out var(--theme-sidebar_expand_on_hover-transition_speed) !important;
         }
     }
-
-    #zen-sidebar-top-buttons {
-        width: 100% !important;
-        min-height: unset !important;
-
-        #zen-sidebar-top-buttons-customization-target:not(:has(*)) {
-            padding: 0 !important;
+    
+    /* Essentials */
+    #zen-essentials-container {
+        display: flex !important;
+        justify-content: center !important;
+        gap: 0 !important;
+        overflow-x: scroll !important;
+        
+        > .tabbrowser-tab {
+            flex: 1 !important;
+            /* Todo change this from hardcoded value */
+            min-width: 40px !important;
+            margin-inline: calc(var(--zen-toolbox-padding) - 2px) !important;
+            transition: flex-grow var(--theme-sidebar_expand_on_hover-transition_speed) linear, 
+                min-width var(--theme-sidebar_expand_on_hover-transition_speed) linear, 
+                margin-inline var(--theme-sidebar_expand_on_hover-transition_speed) linear !important;
         }
     }
+    
+    /* Hide empty top buttons */
+    #zen-sidebar-top-buttons:not(:has(:not(#zen-sidebar-top-buttons-separator, #zen-sidebar-top-buttons-customization-target))) {
+        display: none !important;
+    }
 
-    #zen-sidebar-icons-wrapper,
+    #zen-sidebar-bottom-buttons,
     #zen-sidebar-top-buttons-customization-target {
         justify-content: center !important;
-        display: flex;
-        flex-direction: row !important;
         gap: 0 !important;
 
-        &> :not(panel) {
+        & > :not(panel,#zen-sidebar-top-buttons-separator) {
             overflow: hidden !important;
             padding: 0 !important;
-            width: 36px !important;
-            height: 36px !important;
+            min-width: fit-content !important;
+            min-height: fit-content !important;
             flex-grow: 1 !important;
-            transition: flex-grow var(--theme-sidebar_expand_on_hover-transition_speed), width var(--theme-sidebar_expand_on_hover-transition_speed), margin-inline var(--theme-sidebar_expand_on_hover-transition_speed) linear !important;
+            transition: flex-grow var(--theme-sidebar_expand_on_hover-transition_speed) linear, 
+                width var(--theme-sidebar_expand_on_hover-transition_speed) linear, 
+                margin-inline var(--theme-sidebar_expand_on_hover-transition_speed) linear !important;
             margin-inline: 2px !important;
         }
 
         toolbarspring {
+            transition: flex-grow var(--theme-sidebar_expand_on_hover-transition_speed) cubic-bezier(.001,1,.003,0.99), 
+                width var(--theme-sidebar_expand_on_hover-transition_speed) linear, 
+                margin-inline var(--theme-sidebar_expand_on_hover-transition_speed) linear !important;;
             flex-grow: 100 !important;
             display: flex !important;
         }
@@ -275,13 +198,50 @@
         toolbarbutton {
             margin: 0 !important;
             flex-grow: 1 !important;
-            transition: flex-grow var(--theme-sidebar_expand_on_hover-transition_speed), width var(--theme-sidebar_expand_on_hover-transition_speed), margin-inline var(--theme-sidebar_expand_on_hover-transition_speed) linear !important;
+            transition: flex-grow var(--theme-sidebar_expand_on_hover-transition_speed) linear, 
+                width var(--theme-sidebar_expand_on_hover-transition_speed) linear, 
+                margin-inline var(--theme-sidebar_expand_on_hover-transition_speed) linear !important;
             margin-inline: 2px !important;
             overflow: hidden !important;
         }
     }
+    
+    #tabbrowser-arrowscrollbox-periphery {
+        margin-inline: 0 !important;
+        
+        /* Decrease the seperator line to the same length as before */
+        &::before {
+            margin-inline: var(--tab-block-margin);
+        }
+    }
 
-    #navigator-toolbox:not([zen-has-hover], [has-popup-menu], [movingtab]) #titlebar:not(#titlebar:hover, #titlebar:has(toolbarbutton[open="true"]:not(#zen-sidepanel-button))) {
+    /* Expanded bar */
+    #navigator-toolbox:is(
+        [zen-has-hover],
+        [movingtab],
+        [flash-popup],
+        [has-popup-menu],
+        :has(.tabbrowser-tab:active),
+        :has(toolbarbutton[open="true"]:not(#zen-sidepanel-button), #urlbar[open]),
+    ) {
+        --zen-sidebar-width: var(--theme-sidebar_expand_on_hover-expanded_width) !important;
+        &::before {
+            opacity: 1.0;
+            transition: 60ms opacity ease-in, width ease-in-out var(--theme-sidebar_expand_on_hover-transition_speed);
+        }
+    }
+
+    /* Collapsed bar */
+    #navigator-toolbox:not(
+        [zen-has-hover],
+        [movingtab],
+        [flash-popup],
+        [has-popup-menu],
+        :has(.tabbrowser-tab:active),
+        :has(toolbarbutton[open="true"]:not(#zen-sidepanel-button), #urlbar[open])
+    ) {
+
+        /* Show only active/first/no(todo) button*/
         #zen-workspaces-button {
             toolbarbutton:not([active="true"]) {
                 flex-grow: 0 !important;
@@ -289,11 +249,34 @@
                 margin-inline: 0 !important;
             }
         }
+        
+        #zen-essentials-container:has([selected]) > .tabbrowser-tab:not([selected]),
+        #zen-essentials-container:not(:has([selected])) > .tabbrowser-tab:not(:first-child) {
+                flex-grow: 0 !important;
+                width: 0 !important;
+                min-width: 0 !important;
+                margin-inline: 0 !important;
+        }
+        
+        toolbarspring {
+            flex-grow: 0 !important;
+            width: 0 !important;
+            min-width: 0 !important;
+            margin-inline: 0 !important;
+        }
+        
+        /*Workaround for invisible top buttons seperator*/
+        #zen-sidebar-top-buttons-customization-target > :not(:nth-child(1 of toolbarbutton, toolbaritem))
+        {
+            flex-grow: 0 !important;
+            width: 0 !important;
+            min-width: 0 !important;
+            margin-inline: 0 !important;
+        }
 
         @media not (-moz-bool-pref: "theme.sidebar_expand_on_hover.collapse_buttons") {
-
-            #zen-sidebar-icons-wrapper>toolbarbutton:not(:first-child),
-            #zen-sidebar-top-buttons-customization-target>toolbarbutton:not(:first-child) {
+            #zen-sidebar-bottom-buttons > :not(:first-child)
+            {
                 flex-grow: 0 !important;
                 width: 0 !important;
                 min-width: 0 !important;
@@ -302,17 +285,34 @@
         }
 
         @media (-moz-bool-pref: "theme.sidebar_expand_on_hover.collapse_buttons") {
-
             /* Show first child only when no visible workspace switcher */
-            #zen-sidebar-icons-wrapper:not(:has(#zen-workspaces-button:not([dont-show="true"])))>*:not(:first-child),
-            #zen-sidebar-top-buttons-customization-target:not(:has(#zen-workspaces-button:not([dont-show="true"])))>*:not(:first-child),
+            #zen-sidebar-bottom-buttons:not(:has(#zen-workspaces-button:not([dont-show="true"]))) > :not(:first-child),
             /* Show active workspace only when visible workspace switcher */
-            #zen-sidebar-icons-wrapper:has(#zen-workspaces-button:not([dont-show="true"]))>*:not(#zen-workspaces-button),
-            #zen-sidebar-top-buttons-customization-target:has(#zen-workspaces-button:not([dont-show="true"]))>*:not(#zen-workspaces-button) {
+            #zen-sidebar-bottom-buttons:has(#zen-workspaces-button:not([dont-show="true"])) > :not(#zen-workspaces-button) {
                 flex-grow: 0 !important;
                 width: 0 !important;
                 min-width: 0 !important;
                 margin-inline: 0 !important;
+            }
+        }
+    }
+
+    /* Support for tabs on the right */
+    #navigator-toolbox[zen-right-side="true"] {
+        direction: rtl !important;
+    
+        #titlebar, #zen-sidebar-top-buttons {
+            direction: ltr !important;
+        }
+
+        #titlebar {
+            padding-left: var(--zen-toolbox-padding) !important;
+            padding-right: 0 !important;
+        }
+        
+        @media (-moz-bool-pref: "zen.view.use-single-toolbar") {
+            #nav-bar {
+                direction: ltr !important;
             }
         }
     }
