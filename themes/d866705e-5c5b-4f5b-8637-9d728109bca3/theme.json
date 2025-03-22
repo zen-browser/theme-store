@@ -1,0 +1,15 @@
+{
+    "id": "d866705e-5c5b-4f5b-8637-9d728109bca3",
+    "name": "Compact URL and Sidebar",
+    "description": "A compact UI mod with a smaller, centered URL bar, a vertically centered sidebar, and Zen palette.",
+    "homepage": "https://github.com/pjhochman/zen-ui-compact",
+    "style": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/d866705e-5c5b-4f5b-8637-9d728109bca3/chrome.css",
+    "readme": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/d866705e-5c5b-4f5b-8637-9d728109bca3/readme.md",
+    "image": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/d866705e-5c5b-4f5b-8637-9d728109bca3/image.png",
+    "author": "Pjhochman",
+    "version": "1.0.0",
+    "tags": [],
+    "createdAt": "2025-03-22",
+    "updatedAt": "2025-03-22",
+    "preferences": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/d866705e-5c5b-4f5b-8637-9d728109bca3/preferences.json"
+}
