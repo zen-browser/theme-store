@@ -1,0 +1,197 @@
+
+/* ─────────────── Zen UI Tweaks ─────────────── */
+
+/* Define shared design tokens for consistency and reuse */
+:root {
+	--zen-dark-bg: rgba(31, 31, 31, 1);
+	/* Dark background used across UI */
+	--zen-light-text: rgba(242, 239, 228, 1);
+	/* Light foreground text color */
+	--zen-highlight: rgba(31, 31, 31, 1);
+	/* Highlight color (same as dark background) */
+	--zen-accent: rgba(247, 111, 83, 1);
+	/* Accent color for emphasis (e.g. borders) */
+	--border-radius: 8px;
+	/* Rounded corner radius for UI elements */
+}
+
+/* Override global Firefox variables for Zen theme */
+* {
+	--urlbarView-highlight-background: var(--zen-light-text) !important;
+	--toolbar-field-focus-color: var(--zen-light-text) !important;
+	--urlbarView-highlight-color: var(--zen-highlight) !important;
+	--toolbar-field-color: var(--zen-light-text) !important;
+	--zen-branding-bg-reverse: transparent !important;
+}
+
+/* Apply Zen UI styles only in normal browsing mode (not customizing, full-screen, etc.) */
+:root[zen-compact-mode="true"]:not([customizing]):not([inDOMFullscreen="true"]):not([zen-single-toolbar="true"]) {
+
+/* ─── URL Bar View Tweaks ─── */
+
+/* Hide URL path from suggestion rows */
+	span.urlbarView-url {
+		display: none !important;
+	}
+
+/* Highlight row background and text color on hover */
+	.urlbarView-row:hover {
+		background-color: var(--zen-light-text) !important;
+		color: var(--zen-dark-bg) !important;
+	}
+
+/* Remove separator and action labels like “- Search with Google” */
+	span.urlbarView-action,
+	span.urlbarView-title-separator {
+		display: none !important;
+	}
+
+/* ─── Tab Strip and Sidebar Cleanups ─── */
+
+/* Remove tab close buttons for a minimal tab strip */
+	.tab-close-button {
+		display: none !important;
+	}
+
+/* Hide the “Extension” label in the URL bar */
+	box#identity-icon-box {
+		display: none !important;
+	}
+
+/* ─── Navbar Styling and Layout ─── */
+
+/* Prevent navbar from showing on side-hover by positioning and hiding it */
+	#zen-appcontent-navbar-container {
+		box-shadow: unset !important;
+		background: transparent !important;
+		border: unset !important;
+		position: absolute !important;
+		width: 45% !important;
+		left: 50% !important;
+		transform: translateX(-50%) !important;
+		z-index: 10 !important;
+	}
+
+/* Shift navbar further out of view to fully hide it */
+	#zen-appcontent-navbar-container {
+		--zen-element-separation: -5px !important;
+	}
+
+/* Style the main navigation toolbar */
+	toolbar#nav-bar {
+		width: 100%;
+		top: 1vh !important;
+		background: var(--zen-dark-bg) !important;
+		box-shadow: var(--zen-big-shadow) !important;
+		border: 0 solid var(--zen-dark-bg) !important;
+		border-radius: var(--border-radius) !important;
+	}
+
+/* Center the URL bar within the toolbar */
+	#urlbar {
+		left: 50% !important;
+		transform: translateX(-50%) !important;
+	}
+
+/* Style placeholder text for both search bar and URL bar */
+	.urlbar-input::placeholder,
+	.searchbar-textbox::placeholder {
+		color: var(--zen-light-text) !important;
+	}
+
+/* Collapse URL bar when download or extension buttons are shown */
+	#urlbar-container {
+		#nav-bar:is([downloadsbuttonshown], [unifiedextensionsbuttonshown]) & {
+			width: 0 !important;
+		}
+	}
+
+/* Remove transition and background for unfocused URL bar */
+	#urlbar:not([breakout-extend="true"]) #urlbar-background {
+		transition: unset !important;
+		background: transparent !important;
+	}
+
+/* Set background when URL bar enters breakout (focused/expanded) state */
+	#urlbar[breakout][breakout-extend] #urlbar-background {
+		background: rgba(31, 31, 31, 0.9) !important;
+	}
+
+/* Center URL bar text */
+	#urlbar-container {
+		text-align: center;
+	}
+
+/* Set consistent text color in and outside breakout state */
+	#urlbar,
+	#urlbar[breakout][breakout-extend] {
+		color: var(--zen-light-text) !important;
+	}
+
+/* ─── Sidebar and Titlebar Styling ─── */
+
+/* Center the entire top toolbar horizontally */
+	toolbox#navigator-toolbox {
+		justify-content: center !important;
+	}
+
+/* Style the titlebar background and height */
+	hbox#titlebar {
+		height: 75% !important;
+		background: var(--zen-dark-bg) !important;
+		border: unset !important;
+	}
+
+/* Apply border radius to titlebar in compact Zen mode */
+	:root[zen-compact-mode="true"]:not([customizing]):not([inDOMFullscreen="true"]) #navigator-toolbox:not([animate="true"]) #titlebar {
+		border-radius: var(--border-radius) !important;
+	}
+
+/* Transparent background and rounded corners for sidebar tabs */
+	vbox.tab-background {
+		background: transparent !important;
+		border-radius: var(--border-radius) !important;
+	}
+
+/* Highlight active or multi-selected tabs with Zen accent color */
+	.tab-content {
+		&:is([selected], [multiselected]) {
+			border-left: 2px solid var(--zen-accent);
+		}
+	}
+
+/* ─── Misc Buttons and Icons ─── */
+
+/* Fine-tune menu button alignment */
+	#PanelUI-menu-button {
+		padding-inline-end: 0px !important;
+		margin-left: -5px !important;
+	}
+
+/* Apply accent color to Zen menu button icon */
+	.toolbarbutton-icon[label="Zen"] {
+		fill: var(--zen-accent) !important;
+	}
+
+/* De-emphasize starred bookmark icon */
+	#star-button[starred] {
+		fill-opacity: 0.4 !important;
+		fill: var(--toolbarbutton-icon-fill) !important;
+	}
+
+/* Hide UI elements to simplify the interface */
+	#reader-mode-button,
+	#translations-button,
+	#identity-box,
+	#identity-permission-box,
+	#star-button-box,
+	#picture-in-picture-button,
+	#PersonalToolbar {
+		display: none !important;
+	}
+
+/* Prevent collapse of customization panel */
+	#customization-panel-container {
+		width: 20% !important;
+	}
+}
