@@ -1,0 +1,14 @@
+{
+    "id": "b2a8d0eb-61eb-4bed-80db-b553bc87241c",
+    "name": "Remove Dim PiP",
+    "description": "Removes the dim effect when hovering on a video in Picture in Picture mode",
+    "homepage": "https://github.com/seanstackn/Remove-Dim-PiP",
+    "style": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/b2a8d0eb-61eb-4bed-80db-b553bc87241c/chrome.css",
+    "readme": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/b2a8d0eb-61eb-4bed-80db-b553bc87241c/readme.md",
+    "image": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/b2a8d0eb-61eb-4bed-80db-b553bc87241c/image.png",
+    "author": "seanstackn",
+    "version": "1.0.0",
+    "tags": [],
+    "createdAt": "2025-03-25",
+    "updatedAt": "2025-03-25"
+}

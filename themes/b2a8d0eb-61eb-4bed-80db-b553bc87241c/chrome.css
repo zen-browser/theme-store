@@ -1,0 +1,9 @@
+
+/* Removes dimming effect while hovering PiP (Picture in Picture) video */
+#controls:hover {
+	background-color: transparent !important;
+}
+
+#pip-window:hover {
+  opacity: 1 !important;
+}
