@@ -1,0 +1,18 @@
+[
+    {
+        "property": "uc.customized_popup.background",
+        "label": "Background style:",
+        "type": "dropdown",
+        "defaultValue": "gradient",
+        "options": [
+            {
+                "label": "Gradient",
+                "value": "gradient"
+            },
+            {
+                "label": "Solid",
+                "value": "solid"
+            }
+        ]
+    }
+]
