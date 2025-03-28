@@ -1,0 +1,14 @@
+{
+    "id": "fff2666d-f895-4b65-913a-2bcde8f66886",
+    "name": "Tab rename fix",
+    "description": "Better visibility of tab renaming by inverting the selected text colors.",
+    "homepage": "https://github.com/psu/zen-mods",
+    "style": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/fff2666d-f895-4b65-913a-2bcde8f66886/chrome.css",
+    "readme": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/fff2666d-f895-4b65-913a-2bcde8f66886/readme.md",
+    "image": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/fff2666d-f895-4b65-913a-2bcde8f66886/image.png",
+    "author": "psu",
+    "version": "1.0.0",
+    "tags": [],
+    "createdAt": "2025-03-28",
+    "updatedAt": "2025-03-28"
+}
