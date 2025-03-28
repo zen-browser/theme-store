@@ -1,0 +1,15 @@
+{
+    "id": "4c1da51b-5986-4d38-be4e-f85587698398",
+    "name": "Application Frame",
+    "description": "A small mod to add _application frame width_ as a preference in Zen.",
+    "homepage": "https://github.com/psu/zen-mods",
+    "style": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/4c1da51b-5986-4d38-be4e-f85587698398/chrome.css",
+    "readme": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/4c1da51b-5986-4d38-be4e-f85587698398/readme.md",
+    "image": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/4c1da51b-5986-4d38-be4e-f85587698398/image.png",
+    "author": "psu",
+    "version": "1.0.0",
+    "tags": [],
+    "createdAt": "2025-03-28",
+    "updatedAt": "2025-03-28",
+    "preferences": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/4c1da51b-5986-4d38-be4e-f85587698398/preferences.json"
+}

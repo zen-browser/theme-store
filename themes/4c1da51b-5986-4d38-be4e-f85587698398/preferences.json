@@ -1,0 +1,9 @@
+[
+    {
+        "label": "Width",
+        "defaultValue": "5px",
+        "placeholder": "8px",
+        "property": "psu.app_frame.width",
+        "type": "string"
+    }
+]

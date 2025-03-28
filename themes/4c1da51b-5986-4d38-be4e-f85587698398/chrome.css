@@ -1,0 +1,12 @@
+
+/**
+* Zen Mod: Application Frame
+* Add application frame width as a preference to the Zen Browser.
+* Pontus Sundén <hi@pontus.cc>
+*/
+  :root {
+    /**
+    --psu-app_frame-width: 5px;
+    /**/
+    --zen-element-separation: var(--psu-app_frame-width) !important;
+  }
