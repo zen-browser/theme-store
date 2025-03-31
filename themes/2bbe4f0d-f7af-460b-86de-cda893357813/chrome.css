@@ -1,0 +1,92 @@
+
+@-moz-document url-prefix("chrome:") {
+  /* Gradient background variant */
+  :root:has(#theme-Customized-Popup[uc-customized_popup-background="gradient"]) {
+    menupopup, 
+    panel {
+      --panel-background: var(--zen-main-browser-background-toolbar) !important;
+    }
+  }
+
+/* Solid background variant */
+  :root:has(#theme-Customized-Popup[uc-customized_popup-background="solid"]) {
+    menupopup, 
+    panel {
+      --panel-background: color-mix(
+        in srgb, 
+        var(--zen-primary-color) 30%, 
+        var(--zen-dark-color-mix-base) 100%
+      ) !important;
+    }
+  }
+
+/* Scrollbox styling */
+  arrowscrollbox {
+    box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.2) !important;
+  }
+
+/* Styling for customized popups */
+  :root:has(#theme-Customized-Popup:not([uc-customized_popup-background="none"])) {
+    panel > * {
+      box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.5) !important;
+    }
+
+menu, 
+    menuitem {
+      &:where([_moz-menuactive="true"][disabled="true"]) {
+        background-color: transparent !important;
+      }
+    }
+  
+    panel {
+      --zen-colors-tertiary: #0000002b !important;
+      --input-bgcolor: #0000002b !important;
+    }
+  }
+
+:where(#customizationui-widget-multiview) panelview:not([extension]) {
+    height: 50vh !important;
+    max-width: 20em !important;
+  }
+
+/* MENU SEPARATORS */
+  menuseparator::before {
+    border-top: none !important;
+  }
+  
+  menuseparator {
+    padding-block: 0px !important;
+  }
+  
+  /* DOWNLOADS PANEL */
+  #emptyDownloads {
+    padding: 8px !important;
+  }
+
+#downloadsFooterButtons toolbarseparator {
+    display: none !important;
+  }
+
+.downloadButton {
+    min-width: fit-content !important;
+    padding: 5px !important;
+  }
+
+.downloadTypeIcon {
+    width: 24px !important;
+    height: auto !important;
+  }
+
+#downloadsListBox {
+    width: 25em !important;
+  }
+  
+  #downloadsPanel-blockedSubview, 
+  #downloadsPanel-mainView {
+    min-width: 25em !important;
+  }
+
+#downloadsListBox > richlistitem {
+    margin: 0 !important;
+  }
+}
