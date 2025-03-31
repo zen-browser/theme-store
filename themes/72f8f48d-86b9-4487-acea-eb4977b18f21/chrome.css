@@ -1,0 +1,90 @@
+
+/**
+* Zen Mod: Better CtrlTab Panel
+* Re-style and add customization options for the Ctrl+Tab panel.
+* Pontus Sundén <hi@pontus.cc>
+*/
+  :root {
+    /**
+    --psu-better_ctrltab-width: 75vw;
+    --psu-better_ctrltab-background: light-dark(rgba(144, 144, 144, 0.94), rgba(22, 22, 22, 0.92));
+    --psu-better_ctrltab-roundness: 32px;
+    --psu-better_ctrltab-padding: 16px;
+    --psu-better_ctrltab-shadow_size: 18px;
+    --psu-better_ctrltab-preview_border_width: 1px;
+    --psu-better_ctrltab-preview_border_color: light-dark(rgba(255, 255, 255, 0.1), rgba(1, 1, 1, 0.1));
+    --psu-better_ctrltab-preview_focus_background: light-dark(rgba(77, 77, 77, 0.8), rgba(204, 204, 204, 0.33));
+    --psu-better_ctrltab-preview_focus_border_color: light-dark(rgba(255, 255, 255, 0.1), rgba(1, 1, 1, 0.1));
+    --psu-better_ctrltab-preview_font_size: 13px;
+    --psu-better_ctrltab-preview_letter_spacing: 0px;
+    --psu-better_ctrltab-preview_favicon_size: 18px;
+    /**/
+    --psu-better_ctrltab-preview_count: 7;
+    --psu-better_ctrltab-space: calc(var(--psu-better_ctrltab-padding) + var(--psu-better_ctrltab-preview_border_width));
+    --psu-better_ctrltab-innerspace: calc(var(--psu-better_ctrltab-space) * 0.75);
+  }
+
+#ctrlTab-panel {
+    position: absolute !important;
+    margin-left: calc(calc(calc(100vw - var(--psu-better_ctrltab-width)) * 0.5) - calc(var(--psu-better_ctrltab-shadow_size) * 0.5)) !important;
+    width: calc(var(--psu-better_ctrltab-width) + 2px) !important;
+    --panel-background: var(--psu-better_ctrltab-background) !important;
+    --panel-border-radius: calc(var(--psu-better_ctrltab-roundness) * 1) !important;
+    --panel-shadow: calc(var(--psu-better_ctrltab-shadow_size) * 0.1) calc(var(--psu-better_ctrltab-shadow_size) * 0.1) var(--psu-better_ctrltab-shadow_size)
+      calc(var(--psu-better_ctrltab-shadow_size) * 0.3) rgba(1, 1, 1, 0.25) !important;
+    --panel-shadow-margin: calc(var(--psu-better_ctrltab-shadow_size) * 1.5) !important;
+    --panel-padding: 0 var(--psu-better_ctrltab-padding) !important;
+
+.ctrlTab-preview {
+      margin: 0 !important;
+      padding: var(--psu-better_ctrltab-padding) !important;
+
+.ctrlTab-preview-inner {
+        border-radius: calc(var(--psu-better_ctrltab-roundness) * 0.6) !important;
+        border: 0 !important;
+        margin: 0 !important;
+        padding: var(--psu-better_ctrltab-innerspace) !important;
+        padding-bottom: calc(var(--psu-better_ctrltab-innerspace) * 0.9) !important;
+      }
+
+&:focus {
+        .ctrlTab-preview-inner {
+          background: var(--psu-better_ctrltab-preview_focus_background) !important;
+        }
+        .ctrlTab-canvas {
+          box-shadow: 0px 0px 0px var(--psu-better_ctrltab-preview_border_width) var(--psu-better_ctrltab-preview_focus_border_color) !important;
+        }
+      }
+    }
+    .ctrlTab-canvas {
+      --width_raw: calc(calc(var(--psu-better_ctrltab-width) / var(--psu-better_ctrltab-preview_count)) - calc(calc(var(--psu-better_ctrltab-space) * 0.7) + 10px));
+      --width: calc(var(--width_raw) - calc(var(--psu-better_ctrltab-space) * 1.5));
+      --height: calc(var(--width) * 0.67);
+      min-width: var(--width) !important;
+      max-width: var(--width) !important;
+      min-height: var(--height) !important;
+      max-height: var(--height) !important;
+      box-shadow: 0px 0px 0px var(--psu-better_ctrltab-preview_border_width) var(--psu-better_ctrltab-preview_border_color) !important;
+    }
+    .ctrlTab-canvas,
+    img,
+    canvas {
+      border-radius: calc(var(--psu-better_ctrltab-roundness) * 0.45) !important;
+    }
+    .ctrlTab-label {
+      text-shadow: 0.5px 0.5px 0px light-dark(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
+      font-size: var(--psu-better_ctrltab-preview_font_size);
+      margin: calc(var(--psu-better_ctrltab-innerspace) - calc(var(--psu-better_ctrltab-preview_font_size) * 0.85)) -2px calc(var(--psu-better_ctrltab-preview_font_size) * -0.15) -1px !important;
+      padding: 0 !important;
+      letter-spacing: var(--psu-better_ctrltab-preview_letter_spacing) !important;
+    }
+    .ctrlTab-favicon-container image {
+      height: var(--psu-better_ctrltab-preview_favicon_size) !important;
+      width: var(--psu-better_ctrltab-preview_favicon_size) !important;
+      background: none !important;
+      padding: 0 !important;
+      margin-right: calc(var(--psu-better_ctrltab-preview_favicon_size) * -0.33) !important;
+      margin-top: calc(calc(var(--psu-better_ctrltab-preview_favicon_size) * -1.3) + calc(var(--psu-better_ctrltab-preview_favicon_size) * 0.15)) !important;
+      box-shadow: none !important;
+    }
+  }
