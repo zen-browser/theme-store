@@ -1,0 +1,15 @@
+{
+    "id": "79dde383-4fe7-404a-a8e6-9be440022542",
+    "name": "Tidy Popup",
+    "description": "Modifies popup panels, changing divider lines with empty spacer, and makes the button more compact.",
+    "homepage": "https://github.com/Dinno-DEV/zen-tidy-popup",
+    "style": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/79dde383-4fe7-404a-a8e6-9be440022542/chrome.css",
+    "readme": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/79dde383-4fe7-404a-a8e6-9be440022542/readme.md",
+    "image": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/79dde383-4fe7-404a-a8e6-9be440022542/image.png",
+    "author": "Dinno-DEV",
+    "version": "1.0.0",
+    "tags": [],
+    "createdAt": "2025-02-26",
+    "updatedAt": "2025-02-26",
+    "preferences": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/79dde383-4fe7-404a-a8e6-9be440022542/preferences.json"
+}
