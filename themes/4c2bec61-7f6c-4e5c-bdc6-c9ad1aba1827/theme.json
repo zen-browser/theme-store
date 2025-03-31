@@ -1,8 +1,8 @@
 {
     "id": "4c2bec61-7f6c-4e5c-bdc6-c9ad1aba1827",
-    "name": "Vertical Split Views",
-    "description": "Display tab groups vertically so you can still read the page names",
-    "homepage": "https://github.com/ToBinio/zen-mods/tree/main/vertical-tab-groups",
+    "name": "Vertical Split Tab Groups",
+    "description": "Display tab groups created from split tabs as vertical lists instead of horizontal ones.",
+    "homepage": "https://github.com/ToBinio/zen-mods/tree/main/vertical-split-tab-groups",
     "style": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/4c2bec61-7f6c-4e5c-bdc6-c9ad1aba1827/chrome.css",
     "readme": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/4c2bec61-7f6c-4e5c-bdc6-c9ad1aba1827/readme.md",
     "image": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/4c2bec61-7f6c-4e5c-bdc6-c9ad1aba1827/image.png",
@@ -10,5 +10,5 @@
     "version": "1.0.0",
     "tags": [],
     "createdAt": "2025-03-11",
-    "updatedAt": "2025-03-12"
+    "updatedAt": "2025-03-31"
 }

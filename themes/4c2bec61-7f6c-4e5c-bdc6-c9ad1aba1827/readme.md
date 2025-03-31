@@ -1,4 +1,4 @@
 
-# Vertical Tab Groups
+# Vertical Split Tab Groups
 
-Display tab groups vertically so you can still read the page names.
+Display tab groups created from split tabs as vertical lists instead of horizontal ones.

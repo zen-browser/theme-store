@@ -1,0 +1,14 @@
+{
+    "id": "20e8cc78-3dac-4db0-81a4-814672fb50af",
+    "name": "Right Side Glance Buttons",
+    "description": "Move the at a glance buttons to the right side of the window.",
+    "homepage": "https://github.com/psu/zen-mods",
+    "style": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/20e8cc78-3dac-4db0-81a4-814672fb50af/chrome.css",
+    "readme": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/20e8cc78-3dac-4db0-81a4-814672fb50af/readme.md",
+    "image": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/20e8cc78-3dac-4db0-81a4-814672fb50af/image.png",
+    "author": "psu",
+    "version": "1.0.0",
+    "tags": [],
+    "createdAt": "2025-03-28",
+    "updatedAt": "2025-03-31"
+}

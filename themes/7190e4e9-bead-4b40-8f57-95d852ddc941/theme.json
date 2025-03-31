@@ -1,0 +1,15 @@
+{
+    "id": "7190e4e9-bead-4b40-8f57-95d852ddc941",
+    "name": "Tab title fixes",
+    "description": "Increase size of tab titles and add make pending tabs standing out more.",
+    "homepage": "https://github.com/psu/zen-mods",
+    "style": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/7190e4e9-bead-4b40-8f57-95d852ddc941/chrome.css",
+    "readme": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/7190e4e9-bead-4b40-8f57-95d852ddc941/readme.md",
+    "image": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/7190e4e9-bead-4b40-8f57-95d852ddc941/image.png",
+    "author": "psu",
+    "version": "1.0.0",
+    "tags": [],
+    "createdAt": "2025-03-28",
+    "updatedAt": "2025-03-31",
+    "preferences": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/7190e4e9-bead-4b40-8f57-95d852ddc941/preferences.json"
+}
