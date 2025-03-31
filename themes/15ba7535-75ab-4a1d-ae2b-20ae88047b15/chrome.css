@@ -1,0 +1,101 @@
+
+#tabbrowser-tabs {
+  & .tab-background {
+    position: relative;
+  }
+
+& .tab-context-line {
+    position: absolute;
+    width: var(--container-line-width) !important;
+    height: var(--container-line-height) !important;
+    inset: var(--container-line-inset) !important;
+  }
+}
+
+/* DEFAULTS */
+:root {
+  --container-line-thickness: 3px;
+  --container-line-length: 100%;
+  --container-underline-length: 2rem; /* expanded + on bottom */
+
+--container-line-pos-left: 0 auto 0 0;
+  --container-line-pos-right: 0 0 0 auto;
+
+--container-line-inset: var(--container-line-pos-left);
+  --container-line-width: var(--container-line-thickness);
+  --container-line-height: var(--container-line-length);
+}
+
+/* THICKNESS SETTINGS */
+:root {
+  :has(#theme-Container-Tab-Tweaks[uc-container-tweaks-width="thin"]) {
+    --container-line-thickness: 2px;
+  }
+
+&:has(#theme-Container-Tab-Tweaks[uc-container-tweaks-width="thick"]) {
+    --container-line-thickness: 5px;
+  }
+}
+
+/* RIGHT SIDE ALIGN TOGGLE */
+:root {
+  @media (-moz-bool-pref: "uc.container-tweaks.align.right") {
+    --container-line-inset: var(--container-line-pos-right);
+  }
+}
+
+/* ALIGN TO BOTTOM ALWAYS */
+:root {
+  &:has(#theme-Container-Tab-Tweaks[uc-container-tweaks-essentials="always"])
+    #zen-essentials-container {
+    --container-line-length: var(--container-underline-length);
+    --container-center-offset: calc(var(--container-line-length) / 2);
+    --container-line-pos-bottom: auto calc(50% - var(--container-center-offset))
+      0 auto;
+
+--container-line-inset: var(--container-line-pos-bottom);
+    --container-line-width: var(--container-line-length);
+    --container-line-height: var(--container-line-thickness);
+  }
+
+&:has(#theme-Container-Tab-Tweaks[uc-container-tweaks-pins="always"])
+    #vertical-pinned-tabs-container {
+    --container-line-length: var(--container-underline-length);
+    --container-center-offset: calc(var(--container-line-length) / 2);
+    --container-line-pos-bottom: auto calc(50% - var(--container-center-offset))
+      0 auto;
+
+--container-line-inset: var(--container-line-pos-bottom);
+    --container-line-width: var(--container-line-length);
+    --container-line-height: var(--container-line-thickness);
+  }
+}
+
+/* ALIGN TO BOTTOM WHEN EXPANDED */
+:root {
+  @media (-moz-bool-pref: "zen.view.sidebar-expanded") {
+    :has(#theme-Container-Tab-Tweaks[uc-container-tweaks-essentials="expanded"])
+      #zen-essentials-container {
+      --container-line-length: var(--container-underline-length);
+      --container-center-offset: calc(var(--container-line-length) / 2);
+      --container-line-pos-bottom: auto
+        calc(50% - var(--container-center-offset)) 0 auto;
+
+--container-line-inset: var(--container-line-pos-bottom);
+      --container-line-width: var(--container-line-length);
+      --container-line-height: var(--container-line-thickness);
+    }
+
+:has(#theme-Container-Tab-Tweaks[uc-container-tweaks-pins="expanded"])
+      #vertical-pinned-tabs-container {
+      --container-line-length: var(--container-underline-length);
+      --container-center-offset: calc(var(--container-line-length) / 2);
+      --container-line-pos-bottom: auto
+        calc(50% - var(--container-center-offset)) 0 auto;
+
+--container-line-inset: var(--container-line-pos-bottom);
+      --container-line-width: var(--container-line-length);
+      --container-line-height: var(--container-line-thickness);
+    }
+  }
+}
