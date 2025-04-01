@@ -33,6 +33,17 @@
     visibility: collapse !important;
 }
 
+@media (-moz-bool-pref: "theme.zen-minimal-exit-menu.enable-icon-visibility"){
+    .titlebar-button > image {
+        visibility: visible !important;
+        max-height: 8px !important;
+        max-width: 8px !important;
+        position: relative !important;
+        left: 2.55px !important;
+        filter: brightness(0) !important;
+    }
+}
+
 @media (-moz-bool-pref: "theme.zen-minimal-exit-menu.enable-macos-identic") {
     .titlebar-button:hover {
         opacity: 0.25 !important;
@@ -45,11 +56,11 @@
     }
     
     .titlebar-min:hover {
-        background-color: hsl(130, 50%, 40%) !important;
+        background-color: hsl(60, 50%, 50%) !important;
     }
 
     .titlebar-max:hover, .titlebar-restore:hover {
-        background-color: hsl(60, 50%, 50%) !important;
+        background-color: hsl(130, 50%, 40%) !important;
     }
 
     .titlebar-close:hover {
