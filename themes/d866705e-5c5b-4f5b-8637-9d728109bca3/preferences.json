@@ -1,0 +1,14 @@
+[
+    {
+        "property": "mod.zen_custom.opacity",
+        "label": "1",
+        "type": "checkbox",
+        "disabledOn": []
+    },
+    {
+        "property": "mod.zen_custom.border_radius",
+        "label": "8px",
+        "type": "checkbox",
+        "disabledOn": []
+    }
+]
