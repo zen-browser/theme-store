@@ -5,9 +5,16 @@
   visibility: visible !important;
   margin-right: -16px !important;
   opacity: 1 !important;
-  transform: translate(60%, -35%) scale(0.7) !important;
+  transform: translate(40%, -35%) scale(0.8) !important;
   color: light-dark(white, black) !important;
   background-color: light-dark(black, white) !important;
+  position: absolute !important;
+  background-image: url("chrome://browser/skin/tabbrowser/tab-audio-playing-small.svg") !important;
+  fill: none !important;
+}
+
+.tab-icon-overlay[muted] {
+  background-image: url("chrome://browser/skin/tabbrowser/tab-audio-muted-small.svg") !important;
 }
 
 @media (-moz-bool-pref: "uc.audio-tabicon.left-side") {
