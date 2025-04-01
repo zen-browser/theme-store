@@ -1,0 +1,14 @@
+{
+    "id": "06829785-addc-4e95-b06f-d3eff4a96930",
+    "name": "Kanagawa Theme",
+    "description": "Dark colorscheme inspired by Rebelot's Kanagawa theme for Neovim.",
+    "homepage": "https://github.com/Grazen0/kanagawa-zen-browser/tree/main",
+    "style": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/06829785-addc-4e95-b06f-d3eff4a96930/chrome.css",
+    "readme": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/06829785-addc-4e95-b06f-d3eff4a96930/readme.md",
+    "image": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/06829785-addc-4e95-b06f-d3eff4a96930/image.png",
+    "author": "eggplannt",
+    "version": "1.0.0",
+    "tags": [],
+    "createdAt": "2025-03-26",
+    "updatedAt": "2025-03-26"
+}
