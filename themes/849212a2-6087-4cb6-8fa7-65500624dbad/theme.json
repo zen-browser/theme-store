@@ -1,0 +1,15 @@
+{
+    "id": "849212a2-6087-4cb6-8fa7-65500624dbad",
+    "name": "SuperPin2",
+    "description": "This Zen Mod enhances pinned tabs/Essentials, by making some UI/UX changes.",
+    "homepage": "https://github.com/gabry-ts/Zen-Themes/blob/main/SuperPins/image.png",
+    "style": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/849212a2-6087-4cb6-8fa7-65500624dbad/chrome.css",
+    "readme": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/849212a2-6087-4cb6-8fa7-65500624dbad/readme.md",
+    "image": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/849212a2-6087-4cb6-8fa7-65500624dbad/image.png",
+    "author": "gabry-ts",
+    "version": "1.0.0",
+    "tags": [],
+    "createdAt": "2025-04-05",
+    "updatedAt": "2025-04-05",
+    "preferences": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/849212a2-6087-4cb6-8fa7-65500624dbad/preferences.json"
+}
