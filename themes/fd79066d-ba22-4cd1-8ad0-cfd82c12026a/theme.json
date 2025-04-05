@@ -1,0 +1,15 @@
+{
+    "id": "fd79066d-ba22-4cd1-8ad0-cfd82c12026a",
+    "name": "Zen URL Bar Tweaks",
+    "description": "A collection of tweaks for the Zen browser URL bar with options to toggle each tweak.",
+    "homepage": "https://github.com/litegral/zen-url-bar-tweaks",
+    "style": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/fd79066d-ba22-4cd1-8ad0-cfd82c12026a/chrome.css",
+    "readme": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/fd79066d-ba22-4cd1-8ad0-cfd82c12026a/readme.md",
+    "image": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/fd79066d-ba22-4cd1-8ad0-cfd82c12026a/image.png",
+    "author": "litegral",
+    "version": "1.0.0",
+    "tags": [],
+    "createdAt": "2025-04-05",
+    "updatedAt": "2025-04-05",
+    "preferences": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/fd79066d-ba22-4cd1-8ad0-cfd82c12026a/preferences.json"
+}

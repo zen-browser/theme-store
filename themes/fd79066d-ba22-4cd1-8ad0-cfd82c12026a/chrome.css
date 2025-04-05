@@ -1,0 +1,85 @@
+
+/* Base styles always applied */
+#urlbar-background {
+  border: 2px solid transparent !important;
+  border-radius: var(--mod-urlbar-border_radius) !important;
+  transition: box-shadow 0.3s ease-in-out !important;
+}
+
+/* Hide container icons when enabled */
+@media (-moz-bool-pref: "mod.urlbar.hide_elements") {
+  #userContext-identity-icon,
+  #userContext-indicator {
+    display: none !important;
+  }
+  
+  /* Hide permission icons by default */
+  #identity-permission-box {
+    opacity: 0;
+    transition: opacity 0.2s ease-in-out;
+  }
+  
+  /* Hide or reduce some elements to improve appearance */
+  #identity-box {
+    margin-inline-end: 0 !important;
+    max-width: 0 !important;
+    padding: 0 !important;
+    overflow: hidden !important;
+  }
+  
+  #page-action-buttons {
+    display: none !important;
+  }
+}
+
+/* Show elements on hover when enabled */
+@media (-moz-bool-pref: "mod.urlbar.show_on_hover") {
+  /* Show permission icons when hovering over the URL bar */
+  #urlbar:hover #identity-permission-box {
+    opacity: 1;
+  }
+  
+  /* Show these elements on hover if needed */
+  #urlbar:hover #identity-box,
+  #urlbar:focus-within #identity-box {
+    max-width: unset !important;
+    margin-inline-end: 4px !important;
+  }
+  
+  #urlbar:hover #page-action-buttons,
+  #urlbar:focus-within #page-action-buttons {
+    display: flex !important;
+  }
+}
+
+/* Center the URL in the address bar when enabled */
+@media (-moz-bool-pref: "mod.urlbar.center_url") {
+  #urlbar-input-container {
+    justify-content: center !important;
+  }
+  
+  #urlbar-input {
+    text-align: center !important;
+  }
+}
+
+/* Apply colorful border when enabled */
+@media (-moz-bool-pref: "mod.urlbar.colorful_border") {
+  #urlbar-background {
+    background-origin: border-box !important;
+    background-clip: padding-box, border-box !important;
+    background-image: linear-gradient(rgba(59, 59, 61, 0.8), rgba(59, 59, 61, 0.8)),
+                      linear-gradient(90deg, #ff7e5f, #feb47b, #7bc6cc, #8583ed) !important;
+  }
+}
+
+/* Apply glow effect on focus when enabled */
+@media (-moz-bool-pref: "mod.urlbar.glow_effect") {
+  #urlbar-background {
+    box-shadow: 0 0 8px rgba(137, 137, 186, 0.3) !important;
+  }
+  
+  #urlbar[focused="true"] #urlbar-background {
+    box-shadow: 0 0 12px rgba(99, 185, 255, 0.5) !important;
+  }
+}

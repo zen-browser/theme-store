@@ -1,0 +1,39 @@
+[
+    {
+        "property": "mod.urlbar.hide_elements",
+        "label": "Hide container and permission icons",
+        "type": "checkbox",
+        "defaultValue": true
+    },
+    {
+        "property": "mod.urlbar.show_on_hover",
+        "label": "Show hidden elements on hover",
+        "type": "checkbox",
+        "defaultValue": true
+    },
+    {
+        "property": "mod.urlbar.center_url",
+        "label": "Center the URL in address bar",
+        "type": "checkbox",
+        "defaultValue": true
+    },
+    {
+        "property": "mod.urlbar.colorful_border",
+        "label": "Use colorful gradient border",
+        "type": "checkbox",
+        "defaultValue": true
+    },
+    {
+        "property": "mod.urlbar.glow_effect",
+        "label": "Enable glow effect on focus",
+        "type": "checkbox",
+        "defaultValue": true
+    },
+    {
+        "property": "mod.urlbar.border_radius",
+        "label": "Border radius",
+        "type": "string",
+        "defaultValue": "8px",
+        "placeholder": "e.g: 8px"
+    }
+]
