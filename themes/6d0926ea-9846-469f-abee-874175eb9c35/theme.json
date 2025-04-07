@@ -1,0 +1,14 @@
+{
+    "id": "6d0926ea-9846-469f-abee-874175eb9c35",
+    "name": "Sidebar",
+    "description": "Zen mod for floating bookmark sidebar",
+    "homepage": "https://github.com/TISupe/Zen-Floating-Bookmark",
+    "style": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/6d0926ea-9846-469f-abee-874175eb9c35/chrome.css",
+    "readme": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/6d0926ea-9846-469f-abee-874175eb9c35/readme.md",
+    "image": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/6d0926ea-9846-469f-abee-874175eb9c35/image.png",
+    "author": "TISupe",
+    "version": "1.0.0",
+    "tags": [],
+    "createdAt": "2025-04-07",
+    "updatedAt": "2025-04-07"
+}
