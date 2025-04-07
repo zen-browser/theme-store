@@ -1,44 +1,67 @@
-
-/* Blurs the background */
-#urlbar[breakout-extend="true"] #urlbar-background {
-    border: solid 3px color-mix(in hsl, hsl(0 0 50), transparent 90%) !important;
+@-moz-document url-prefix("chrome:") {
+  /* Blurs the background */
+  #urlbar[breakout-extend="true"] #urlbar-background {
     border-radius: 15px !important;
-    background-color: color-mix(in hsl, var(--mod-cleanedurlbar-customcolor), transparent var(--mod-cleanedurlbar-customtransparency)) !important;
-    backdrop-filter: blur(25px) saturate(2) !important;
-}
-
-/* Custom URL result selected color */
-.urlbarView-row {
-  &[selected] {
-    background-color: var(--mod-cleanedurlbar-customselectcolor) !important;
-    color: var(--mod-cleanedurlbar-customselectfontcolor) !important;
+    border: solid 3px color-mix(in hsl, hsl(0 0 50), transparent 90%) !important;
   }
-}
 
-/* Unifies the border radius */
-.urlbarView-row {
-  border-radius: 11px !important;
-}
+  #urlbar[breakout-extend="true"] #urlbar-background {
+    backdrop-filter: blur(25px) !important;
+  }
+  
+  @media (prefers-color-scheme: dark) {
+    #urlbar[breakout-extend="true"] #urlbar-background {
+      background-color: color-mix(
+        in hsl,
+        var(--mod-cleanedurlbar-customdarkcolor),
+        transparent var(--mod-cleanedurlbar-customtransparency)
+      ) !important;
+    }
+  }
 
-/* Deletes the border */
-.urlbarView-body-inner {
-   border: none !important;
-}
+  @media (prefers-color-scheme: light) {
+    #urlbar[breakout-extend="true"] #urlbar-background {
+      background-color: color-mix(
+        in hsl,
+        var(--mod-cleanedurlbar-customlightcolor),
+        transparent var(--mod-cleanedurlbar-customtransparency)
+      ) !important;
+    }
+  }
 
-/* Styles the search options */
-.search-one-offs {
-  border-top: none !important;
-  border-radius: 10px !important;
-  padding: 4px !important;
-  margin: 0px 0px 7px 0px !important;
-  backdrop-filter: brightness(130%);
-}
+  /* Custom URL result selected color */
+  .urlbarView-row {
+    &[selected] {
+      background-color: var(--mod-cleanedurlbar-customselectcolor) !important;
+      color: var(--mod-cleanedurlbar-customselectfontcolor) !important;
+    }
+  }
 
-.searchbar-engine-one-off-item {
-  border-radius: 8px !important;
-  margin-right: 3px !important;
-}
+  /* Unifies the border radius */
+  .urlbarView-row {
+    border-radius: 11px !important;
+  }
 
-#urlbar-anon-search-settings {
-  margin-right: 0px !important;
+  /* Deletes the border */
+  .urlbarView-body-inner {
+    border: none !important;
+  }
+
+  /* Styles the search options */
+  .search-one-offs {
+    border-top: none !important;
+    border-radius: 10px !important;
+    padding: 4px !important;
+    margin: 0px 0px 7px 0px !important;
+    backdrop-filter: brightness(130%);
+  }
+
+  .searchbar-engine-one-off-item {
+    border-radius: 8px !important;
+    margin-right: 3px !important;
+  }
+
+  #urlbar-anon-search-settings {
+    margin-right: 0px !important;
+  }
 }

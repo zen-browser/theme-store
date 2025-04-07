@@ -1,9 +1,15 @@
 [
     {
-        "property": "mod.cleanedurlbar.customcolor",
-        "label": "Cleaned URL Bar Color (HSL only)",
+        "property": "mod.cleanedurlbar.customdarkcolor",
+        "label": "Cleaned URL Bar Color (HSL only) [Dark Mode]",
         "type": "string",
         "defaultValue": "hsl(0 0 10)"
+    },
+    {
+        "property": "mod.cleanedurlbar.customlightcolor",
+        "label": "Cleaned URL Bar Color (HSL only) [Light Mode]",
+        "type": "string",
+        "defaultValue": "hsl(0 0 90)"
     },
     {
         "property": "mod.cleanedurlbar.customtransparency",
