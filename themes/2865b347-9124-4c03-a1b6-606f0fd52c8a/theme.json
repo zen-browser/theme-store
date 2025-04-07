@@ -1,0 +1,14 @@
+{
+    "id": "2865b347-9124-4c03-a1b6-606f0fd52c8a",
+    "name": "Hide Workspace Tab Margin",
+    "description": "Add margin between tabs and essentials when  config is .",
+    "homepage": "https://github.com/davidambler/zen-hidden-workspace-tab-top-margin",
+    "style": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/2865b347-9124-4c03-a1b6-606f0fd52c8a/chrome.css",
+    "readme": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/2865b347-9124-4c03-a1b6-606f0fd52c8a/readme.md",
+    "image": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/2865b347-9124-4c03-a1b6-606f0fd52c8a/image.png",
+    "author": "davidambler",
+    "version": "1.0.0",
+    "tags": [],
+    "createdAt": "2025-04-07",
+    "updatedAt": "2025-04-07"
+}

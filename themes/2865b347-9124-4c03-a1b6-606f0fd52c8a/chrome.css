@@ -1,0 +1,6 @@
+
+/* Fix to tab margins when `zen.workspaces.show-workspace-indicator`
+is set to false */
+#zen-tabs-wrapper {
+    margin-top: var(--zen-toolbox-padding);
+}
