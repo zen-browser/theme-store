@@ -11,7 +11,7 @@
         "version": "1.0.0",
         "tags": [],
         "createdAt": "2025-04-05",
-        "updatedAt": "2025-04-05",
+        "updatedAt": "2025-04-09",
         "preferences": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/fd79066d-ba22-4cd1-8ad0-cfd82c12026a/preferences.json"
     },
     "c5f7fb68-cc75-4df0-8b02-dc9ee13aa773": {
@@ -249,6 +249,21 @@
         "tags": [],
         "createdAt": "2024-12-01",
         "updatedAt": "2025-01-26"
+    },
+    "72f8f48d-86b9-4487-acea-eb4977b18f21": {
+        "id": "72f8f48d-86b9-4487-acea-eb4977b18f21",
+        "name": "Better CtrlTab Panel",
+        "description": "Re-style and add customization options for the CtrlTab panel.",
+        "homepage": "https://github.com/psu/zen-mods",
+        "style": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/72f8f48d-86b9-4487-acea-eb4977b18f21/chrome.css",
+        "readme": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/72f8f48d-86b9-4487-acea-eb4977b18f21/readme.md",
+        "image": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/72f8f48d-86b9-4487-acea-eb4977b18f21/image.png",
+        "author": "psu",
+        "version": "1.0.0",
+        "tags": [],
+        "createdAt": "2025-03-28",
+        "updatedAt": "2025-04-09",
+        "preferences": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/72f8f48d-86b9-4487-acea-eb4977b18f21/preferences.json"
     },
     "2317fd93-c3ed-4f37-b55a-304c1816819e": {
         "id": "2317fd93-c3ed-4f37-b55a-304c1816819e",
@@ -525,10 +540,10 @@
         "image": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/6cd4bca9-f17d-4461-b554-844d69a4887c/image.png",
         "preferences": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/6cd4bca9-f17d-4461-b554-844d69a4887c/preferences.json",
         "author": "Dinno-DEV",
-        "version": "1.0.4",
+        "version": "1.0.5",
         "tags": [],
         "createdAt": "2024-09-19",
-        "updatedAt": "2025-03-07"
+        "updatedAt": "2025-04-09"
     },
     "87196c08-8ca1-4848-b13b-7ea41ee830e7": {
         "id": "87196c08-8ca1-4848-b13b-7ea41ee830e7",
