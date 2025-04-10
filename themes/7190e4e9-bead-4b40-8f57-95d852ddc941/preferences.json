@@ -1,0 +1,16 @@
+[
+    {
+        "label": "Tab Name Font Size",
+        "defaultValue": "13px",
+        "placeholder": "11px",
+        "property": "psu.tab_title_fixes.font_size",
+        "type": "string"
+    },
+    {
+        "label": "Icon and Name Opacity for Tabs not Loaded",
+        "defaultValue": "0.55",
+        "placeholder": "1",
+        "property": "psu.tab_title_fixes.pending_opacity",
+        "type": "string"
+    }
+]

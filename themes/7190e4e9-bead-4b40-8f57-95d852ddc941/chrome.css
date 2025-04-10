@@ -1,0 +1,34 @@
+
+/**
+* Zen Mod: Tab title fixes
+* Increase size of tab titles and add make pending tabs standing out more.
+* Pontus Sundén <hi@pontus.cc>
+*/
+  :root {
+    /**
+    --psu-tab_title_fixes-font_size: 13px;
+    --psu-tab_title_fixes-pending_opacity: 0.55;
+    /**/
+  }
+  #tabbrowser-tabs {
+    .tabbrowser-tab {
+      #tab-label-input,
+      .tab-label {
+        font-size: var(--psu-tab_title_fixes-font_size) !important;
+      }
+      .tab-icon-image,
+      .tab-label-container {
+        &:not([selected], [multiselected]) {
+          opacity: calc(var(--psu-tab_title_fixes-pending_opacity) + 0.3) !important;
+        }
+      }
+      @media (-moz-bool-pref: 'zen.tabs.dim-pending') {
+        &[pending='true'] {
+          .tab-icon-image,
+          .tab-label-container:not([selected], [multiselected]) {
+            opacity: var(--psu-tab_title_fixes-pending_opacity) !important;
+          }
+        }
+      }
+    }
+  }

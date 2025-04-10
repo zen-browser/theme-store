@@ -1,0 +1,21 @@
+
+.browserStack browser {
+  transition: transform 0.22s cubic-bezier(0.3, 1.2, 0.5, 1) !important;
+}
+
+.browserStack:has(#historySwipeAnimationPreviousArrow:not([style="translate: none;"]))
+  browser {
+  scale: 0.95 !important;
+  transform: translateX(4%) !important;
+}
+
+.browserStack:has(#historySwipeAnimationNextArrow:not([style="translate: none;"]))
+  browser {
+  scale: 0.95 !important;
+  transform: translateX(-4%) !important;
+}
+
+.browserStack browser:not(:has(#historySwipeAnimationPreviousArrow, #historySwipeAnimationNextArrow)) {
+  transition: transform 0.25s cubic-bezier(0.2, 1.4, 0.3, 1) !important;
+  transform: translateX(0) !important;
+}

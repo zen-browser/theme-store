@@ -1,0 +1,14 @@
+{
+    "id": "b44004bb-8465-47fb-9e20-0422ff321f0a",
+    "name": "Better Spacing",
+    "description": "Let Zen breathe with more margin on the URL bar & icons aligned with the browser window",
+    "homepage": "https://github.com/nalejandroveron/zen-better-spacing",
+    "style": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/b44004bb-8465-47fb-9e20-0422ff321f0a/chrome.css",
+    "readme": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/b44004bb-8465-47fb-9e20-0422ff321f0a/readme.md",
+    "image": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/b44004bb-8465-47fb-9e20-0422ff321f0a/image.png",
+    "author": "nalejandroveron",
+    "version": "1.0.0",
+    "tags": [],
+    "createdAt": "2025-03-20",
+    "updatedAt": "2025-04-09"
+}

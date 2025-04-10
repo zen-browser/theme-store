@@ -6,20 +6,8 @@
         "defaultValue": true
     },
     {
-        "property": "theme.sidebar_expand_on_hover.custom_background",
-        "label": "My theme overwrites the #TabsToolbar background (e.g. catppuccin)",
-        "type": "checkbox",
-        "defaultValue": false
-    },
-    {
         "property": "theme.sidebar_expand_on_hover.collapse_buttons",
         "label": "Collapse the buttons to only show current workspace",
-        "type": "checkbox",
-        "defaultValue": true
-    },
-    {
-        "property": "theme.sidebar_expand_on_hover.default_tab_background_shape",
-        "label": "Default Tab Background Shape",
         "type": "checkbox",
         "defaultValue": true
     },
