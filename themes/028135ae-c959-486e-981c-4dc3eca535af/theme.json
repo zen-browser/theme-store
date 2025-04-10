@@ -1,0 +1,15 @@
+{
+    "id": "028135ae-c959-486e-981c-4dc3eca535af",
+    "name": "trackpad animation",
+    "description": "adds backward and forward animation for trackpad gesture",
+    "homepage": "https://github.com/Fury7425/zen-trackpad-gesture-animation",
+    "style": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/028135ae-c959-486e-981c-4dc3eca535af/chrome.css",
+    "readme": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/028135ae-c959-486e-981c-4dc3eca535af/readme.md",
+    "image": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/028135ae-c959-486e-981c-4dc3eca535af/image.png",
+    "author": "Fury7425",
+    "version": "1.0.0",
+    "tags": [],
+    "createdAt": "2025-04-10",
+    "updatedAt": "2025-04-10",
+    "preferences": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/028135ae-c959-486e-981c-4dc3eca535af/preferences.json"
+}
