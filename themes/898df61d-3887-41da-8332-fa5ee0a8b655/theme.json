@@ -1,0 +1,14 @@
+{
+    "id": "898df61d-3887-41da-8332-fa5ee0a8b655",
+    "name": "Container Tab Zen Logo",
+    "description": "Replaces the container indicator with the Zen logo.",
+    "homepage": "https://github.com/irasnalida/Zen-Mods/tree/main/container-tab-zen-logo",
+    "style": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/898df61d-3887-41da-8332-fa5ee0a8b655/chrome.css",
+    "readme": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/898df61d-3887-41da-8332-fa5ee0a8b655/readme.md",
+    "image": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/898df61d-3887-41da-8332-fa5ee0a8b655/image.png",
+    "author": "irasnalida",
+    "version": "1.0.0",
+    "tags": [],
+    "createdAt": "2025-03-13",
+    "updatedAt": "2025-03-13"
+}
