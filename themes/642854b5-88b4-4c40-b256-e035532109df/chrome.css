@@ -40,3 +40,82 @@ hbox.browserSidebarContainer,
     }
   }
 }
+
+/* Animations */
+/* Tab switch animation */
+#tabbrowser-tabpanels
+  > hbox:not([zen-split="true"]):not(:has(.zen-glance-background)) {
+  @media (-moz-bool-pref: "mod.sameerasw.zen_tab_switch_animation") {
+    transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.35),
+      filter 0.45s ease-in-out, opacity 0.35s ease-in-out !important;
+    scale: 0.9 !important;
+    opacity: 0;
+  }
+}
+#tabbrowser-tabpanels > hbox.deck-selected:not([zen-split="true"]) {
+  @media (-moz-bool-pref: "mod.sameerasw.zen_tab_switch_animation") {
+    scale: 1 !important;
+    opacity: 1 !important;
+  }
+}
+
+/* website view animations */
+#browser:not(:has(.zen-glance-background)) #tabbrowser-tabpanels {
+  @media (-moz-bool-pref: "mod.sameerasw.zen_urlbar_zoom_anim") {
+    transition: all 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.35) !important;
+  }
+}
+
+/* URL bar page animation */
+#browser:has(#urlbar[open][zen-floating-urlbar="true"]) #tabbrowser-tabpanels {
+  @media (-moz-bool-pref: "mod.sameerasw.zen_urlbar_zoom_anim") {
+    pointer-events: none;
+    scale: 1.1 !important;
+    filter: blur(10px) brightness(70%) !important;
+  }
+}
+
+#urlbar[open][zen-floating-urlbar="true"] #urlbar-background {
+  @media (-moz-bool-pref: "mod.sameerasw.zen_urlbar_zoom_anim") {
+    border-radius: 1em !important;
+  }
+}
+
+/* trackpad gestures*/
+tabpanels .browserStack browser {
+  @media (-moz-bool-pref: "mod.sameerasw.zen_trackpad_anim") {
+    transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.1) 0.1s !important;
+    border-radius: 0.75em !important;
+  }
+}
+
+/* Previous animation*/
+.browserStack:has(
+    #historySwipeAnimationPreviousArrow:not([style="translate: none;"])
+  )
+  browser {
+  @media (-moz-bool-pref: "mod.sameerasw.zen_trackpad_anim") {
+    scale: 0.95 !important;
+    transform: translateX(3%) !important;
+    border-radius: 2em !important;
+  }
+}
+
+/* Next animation*/
+.browserStack:has(
+    #historySwipeAnimationNextArrow:not([style="translate: none;"])
+  )
+  browser {
+  @media (-moz-bool-pref: "mod.sameerasw.zen_trackpad_anim") {
+    scale: 0.95 !important;
+    transform: translateX(-3%) !important;
+    border-radius: 2em !important;
+  }
+}
+
+/* smoothen trackpad gestures */
+.browserStack browser[style*="transform: none"] {
+  @media (-moz-bool-pref: "mod.sameerasw.zen_trackpad_anim") {
+    border-radius: 0.75em !important;
+  }
+}
