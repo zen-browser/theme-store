@@ -1,21 +1,24 @@
+  :root {
+    --mod-browser-scale: var(--user-browser-scale, 0.98);
+    --mod-browser-ease-swipe: var(--user-browser-ease-swipe, 0.3, 1.2, 0.5, 1);
+    --mod-browser-ease-reset: var(--user-browser-ease-reset, 0.2, 1.4, 0.3, 1);
+  }
 
-.browserStack browser {
-  transition: transform 0.22s cubic-bezier(0.3, 1.2, 0.5, 1) !important;
-}
+  .browserStack browser {
+    transition: transform 0.22s cubic-bezier(var(--mod-browser-ease-swipe)) !important;
+  }
 
-.browserStack:has(#historySwipeAnimationPreviousArrow:not([style="translate: none;"]))
-  browser {
-  scale: 0.95 !important;
-  transform: translateX(4%) !important;
-}
+  .browserStack:has(#historySwipeAnimationPreviousArrow:not([style="translate: none;"])) browser {
+    scale: var(--mod-browser-scale) !important;
+    transform: translateX(4%) !important;
+  }
 
-.browserStack:has(#historySwipeAnimationNextArrow:not([style="translate: none;"]))
-  browser {
-  scale: 0.95 !important;
-  transform: translateX(-4%) !important;
-}
+  .browserStack:has(#historySwipeAnimationNextArrow:not([style="translate: none;"])) browser {
+    scale: var(--mod-browser-scale) !important;
+    transform: translateX(-4%) !important;
+  }
 
-.browserStack browser:not(:has(#historySwipeAnimationPreviousArrow, #historySwipeAnimationNextArrow)) {
-  transition: transform 0.25s cubic-bezier(0.2, 1.4, 0.3, 1) !important;
-  transform: translateX(0) !important;
-}
+  .browserStack browser:not(:has(#historySwipeAnimationPreviousArrow, #historySwipeAnimationNextArrow)) {
+    transition: transform 0.25s cubic-bezier(var(--mod-browser-ease-reset)) !important;
+    transform: translateX(0) !important;
+  }
