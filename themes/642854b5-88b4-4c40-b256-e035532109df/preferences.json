@@ -6,6 +6,13 @@
     "defaultvalue": true
   },
   {
+    "property": "zen.widget.linux.transparency",
+    "label": "Allow zen browser on linux to be transparent (Turn off before uninstall)",
+    "type": "checkbox",
+    "defaultvalue": true,
+    "disabledOn": ["windows", "macos"]
+  },
+  {
     "property": "mod.sameerasw.zen_bg_color_enabled",
     "label": "Enable custom background color for Zen",
     "type": "checkbox",
