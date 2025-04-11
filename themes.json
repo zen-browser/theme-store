@@ -562,16 +562,16 @@
     "642854b5-88b4-4c40-b256-e035532109df": {
         "id": "642854b5-88b4-4c40-b256-e035532109df",
         "name": "Transparent Zen",
-        "description": "Make the Zen Browser's background transparent and modify the empty tab page. Turn off transparency in mod settings before uninstallation.",
+        "description": "Make the Zen Browser's background transparent and modify the empty tab page and ahve animations that goes along with the transparency. Turn off transparency in mod settings before uninstallation.",
         "homepage": "https://github.com/sameerasw/zen-themes/tree/main/TransparentZen",
         "style": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/642854b5-88b4-4c40-b256-e035532109df/chrome.css",
         "readme": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/642854b5-88b4-4c40-b256-e035532109df/readme.md",
         "image": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/642854b5-88b4-4c40-b256-e035532109df/image.png",
         "author": "sameerasw",
-        "version": "1.9.1",
+        "version": "1.11.2",
         "tags": [],
         "createdAt": "2025-02-04",
-        "updatedAt": "2025-03-11",
+        "updatedAt": "2025-04-11",
         "preferences": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/642854b5-88b4-4c40-b256-e035532109df/preferences.json"
     },
     "22c9ec3b-7c62-46ae-991f-c8fff5046829": {
@@ -1226,10 +1226,10 @@
         "readme": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/8039de3b-72e1-41ea-83b3-5077cf0f98d1/readme.md",
         "image": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/8039de3b-72e1-41ea-83b3-5077cf0f98d1/image.png",
         "author": "Fury7425",
-        "version": "1.0.0",
+        "version": "1.1.0",
         "tags": [],
         "createdAt": "2025-04-08",
-        "updatedAt": "2025-04-09"
+        "updatedAt": "2025-04-11"
     },
     "a5f6a231-e3c8-4ce8-8a8e-3e93efd6adec": {
         "id": "a5f6a231-e3c8-4ce8-8a8e-3e93efd6adec",
