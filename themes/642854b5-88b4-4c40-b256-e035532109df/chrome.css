@@ -45,7 +45,7 @@ hbox.browserSidebarContainer,
 /* Tab switch animation */
 #tabbrowser-tabpanels
   > hbox:not([zen-split="true"]):not(:has(.zen-glance-background)) {
-  @media (-moz-bool-pref: "mod.sameerasw.zen_tab_switch_animation") {
+  @media (-moz-bool-pref: "mod.sameerasw.zen_tab_switch_anim") {
     transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.35),
       filter 0.45s ease-in-out, opacity 0.35s ease-in-out !important;
     scale: 0.9 !important;
@@ -53,7 +53,7 @@ hbox.browserSidebarContainer,
   }
 }
 #tabbrowser-tabpanels > hbox.deck-selected:not([zen-split="true"]) {
-  @media (-moz-bool-pref: "mod.sameerasw.zen_tab_switch_animation") {
+  @media (-moz-bool-pref: "mod.sameerasw.zen_tab_switch_anim") {
     scale: 1 !important;
     opacity: 1 !important;
   }
