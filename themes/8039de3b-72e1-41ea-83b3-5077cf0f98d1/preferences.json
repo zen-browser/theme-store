@@ -18,13 +18,12 @@
         "type": "string",
         "defaultValue": "0.3, 1.2, 0.5, 1",
         "placeholder": "e.g. 0.25, 0.1, 0.25, 1"
-      },
-      {
+    },
+    {
         "property": "user-browser-ease-reset",
         "label": "Reset easing curve (4 numbers)",
         "type": "string",
         "defaultValue": "0.2, 1.4, 0.3, 1",
         "placeholder": "e.g. 0.2, 0.8, 0.2, 1"
-      }
-      
+    }
 ]
