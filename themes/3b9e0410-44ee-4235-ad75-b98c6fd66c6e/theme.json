@@ -1,0 +1,14 @@
+{
+    "id": "3b9e0410-44ee-4235-ad75-b98c6fd66c6e",
+    "name": "Plus Only New Tab Button",
+    "description": "Remove New Tab label from new tab button to make it looks compact and clean",
+    "homepage": "https://github.com/GunGunGun/zenCustomCursorMod/tree/main/plusonlynewtab",
+    "style": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/3b9e0410-44ee-4235-ad75-b98c6fd66c6e/chrome.css",
+    "readme": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/3b9e0410-44ee-4235-ad75-b98c6fd66c6e/readme.md",
+    "image": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/3b9e0410-44ee-4235-ad75-b98c6fd66c6e/image.png",
+    "author": "GunGunGun",
+    "version": "1.0.0",
+    "tags": [],
+    "createdAt": "2024-11-03",
+    "updatedAt": "2024-11-03"
+}
