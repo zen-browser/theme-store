@@ -112,10 +112,3 @@ tabpanels .browserStack browser {
     border-radius: 2em !important;
   }
 }
-
-/* smoothen trackpad gestures */
-.browserStack browser[style*="transform: none"] {
-  @media (-moz-bool-pref: "mod.sameerasw.zen_trackpad_anim") {
-    border-radius: 0.75em !important;
-  }
-}
