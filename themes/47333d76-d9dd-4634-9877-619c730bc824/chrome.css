@@ -1,0 +1,30 @@
+
+/* Outlined Tab Groups */
+/* Fixes text centering on tab groups (experimental Firefox 137+ feature, can be activated now in Zen with about:config) and gives them an outline-only look, changes to solid fill color when opened */
+.tab-group-label-container {
+  padding-left: 5px;
+}
+
+.tab-group-label {
+  outline: unset;
+  background-color: var(--tab-group-color) !important;
+  color: white !important;
+  padding-right: 4px !important;
+  padding-top: 2px !important;
+}
+
+.tab-group-label {
+  tab-group[collapsed] > .tab-group-label-container > & {
+  outline-width: 1px !important;
+  outline-color: var(--tab-group-color) !important;
+  color: var(--tab-group-color) !important;
+  background-color: unset !important;
+}
+}
+
+.tab-group-label {
+  tab-group[collapsed] > .tab-group-label-container > &:hover {
+  outline-color:  color-mix(in hsl, var(--tab-group-color),white 20%) !important;
+  color: color-mix(in hsl, var(--tab-group-color),white 20%) !important;
+}
+}

@@ -1,0 +1,14 @@
+{
+    "id": "47333d76-d9dd-4634-9877-619c730bc824",
+    "name": "Outlined Tab Groups",
+    "description": "Fixes text centering on tab groups (experimental feature) and gives them an outline-only look",
+    "homepage": "https://github.com/Lu9-ST/zen-stuff",
+    "style": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/47333d76-d9dd-4634-9877-619c730bc824/chrome.css",
+    "readme": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/47333d76-d9dd-4634-9877-619c730bc824/readme.md",
+    "image": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/47333d76-d9dd-4634-9877-619c730bc824/image.png",
+    "author": "Lu9-ST",
+    "version": "1.0.0",
+    "tags": [],
+    "createdAt": "2025-04-14",
+    "updatedAt": "2025-04-14"
+}
