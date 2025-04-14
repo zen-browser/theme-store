@@ -1,0 +1,14 @@
+{
+    "id": "dbd0b205-a5d9-4c0d-887a-df8e5f988599",
+    "name": "Hide Close Button",
+    "description": "Hides the close button on all tabs.",
+    "homepage": "https://github.com/M-Borer/zen-mods/tree/master/hide-close-button",
+    "style": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/dbd0b205-a5d9-4c0d-887a-df8e5f988599/chrome.css",
+    "readme": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/dbd0b205-a5d9-4c0d-887a-df8e5f988599/readme.md",
+    "image": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/dbd0b205-a5d9-4c0d-887a-df8e5f988599/image.png",
+    "author": "M-Borer",
+    "version": "1.0.0",
+    "tags": [],
+    "createdAt": "2025-03-09",
+    "updatedAt": "2025-03-09"
+}
