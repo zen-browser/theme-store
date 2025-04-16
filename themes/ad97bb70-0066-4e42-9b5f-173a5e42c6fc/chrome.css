@@ -28,6 +28,7 @@
             #zen-essentials-container {
                 grid-template-columns: repeat(auto-fit,
                         minmax(var(--essentials-width), auto)) !important;
+                min-width: var(--essentials-width) !important;
             }
         }
 
@@ -83,33 +84,91 @@
             }
         }
 
+        /* Make pinned tabs auto-grow to span full width of row */
+        @media (-moz-bool-pref: "uc.pins.auto-grow") {
+            #vertical-pinned-tabs-container>.zen-workspace-tabs-section>.tabbrowser-tab[pinned] {
+                width: auto !important;
+                min-width: var(--tab-pinned-min-width-expanded) !important;
+                flex: 1 1 auto !important;
+            }
+
+            #vertical-pinned-tabs-container>.zen-workspace-tabs-section {
+                display: flex !important;
+                flex-wrap: wrap !important;
+                flex-direction: row !important;
+            }
+        }
+
+        @media (not (-moz-bool-pref: "uc.pins.auto-grow")) {
+            #vertical-pinned-tabs-container>.zen-workspace-tabs-section {
+                grid-template-columns: repeat(auto-fit, minmax(var(--tab-pinned-min-width-expanded), auto)) !important;
+                display: grid !important;
+            }
+        }
+
         /*The actual grid layout*/
-        #vertical-pinned-tabs-container>.zen-workspace-tabs-section {
-            grid-template-columns: repeat(auto-fit, minmax(var(--tab-pinned-min-width-expanded), auto)) !important;
-            display: grid !important;
+        #vertical-pinned-tabs-container>.zen-workspace-tabs-section:has(> :nth-child(2)) {
+            padding: 0 var(--zen-toolbox-padding) !important;
             overflow: hidden !important;
-            gap: 3px !important;
+            padding-bottom: 17px !important;
+            gap: 3px 3px !important;
         }
 
         #vertical-pinned-tabs-container>.zen-workspace-tabs-section>.tabbrowser-tab[pinned] {
             --toolbarbutton-inner-padding: 0;
         }
 
-        /*fixing the weird seperator behaviour by removing it*/
+        #vertical-pinned-tabs-container > .zen-workspace-tabs-section > * {
+            margin: 0 !important;
+        }
+
         .vertical-pinned-tabs-container-separator {
-            display: none !important;
+            position: absolute !important;
+            bottom: 7px !important;
+            left: 50% !important;
+            transform: translateX(-50%) !important;
+            width: calc(100% - var(--zen-toolbox-padding) * 2) !important;
         }
-
-        #tabbrowser-arrowscrollbox .tabbrowser-tab:first-child {
-            margin-top: 5px !important;
-        }
-
     }
 
     /* Make Essentials look more box like */
     @media (-moz-bool-pref: "uc.essentials.box-like-corners") {
         .tabbrowser-tab[zen-essential="true"] .tab-stack .tab-background {
             border-radius: 5px !important;
+        }
+    }
+
+    /* Make Essentials auto-grow to span full width of a row */
+    @media (-moz-bool-pref: "uc.essentials.auto-grow") {
+        .tabbrowser-tab[zen-essential="true"] {
+            width: auto !important;
+            min-width: var(--essentials-width) !important;
+            flex: 1 1 0 !important;
+            box-sizing: border-box !important;
+        }
+
+        #zen-essentials-container {
+            display: flex !important;
+            flex-wrap: wrap !important;
+            flex-direction: row !important;
+            box-sizing: border-box !important;
+            min-width: 0 !important;
+            height: auto !important;
+            width: 100% !important;
+        }
+
+        #navigator-toolbox {
+            min-width: min-content !important;
+        }
+    }
+
+    /* Puts Essentials at the bottom */
+    :has(#theme-SuperPins[uc-essentials-position="bottom"]) {
+        #zen-essentials-container {
+            order: 999 !important;
+            margin-top: auto !important;
+            padding-top: 5px !important;
+            padding-bottom: 4px !important;
         }
     }
 
@@ -179,5 +238,125 @@
                     minmax(var(--essentials-width), auto)) !important;
             gap: var(--essentials-gap) var(--essentials-gap) !important;
         }
+
+        #vertical-pinned-tabs-container>.zen-workspace-tabs-section>.tabbrowser-tab[pinned] {
+            min-width: var(--essentials-width) !important;
+        }
     }
+    /* pins height */
+  :root:has(#theme-SuperPins[uc-pinned-height="small"]) {
+      #navigator-toolbox[zen-sidebar-expanded="true"]
+          #vertical-pinned-tabs-container:has(tab:not([hidden]))
+          .tabbrowser-tab {
+          height: 40px !important;
+      }
+  }
+  :root:has(#theme-SuperPins[uc-pinned-height="normal"]) {
+      #navigator-toolbox[zen-sidebar-expanded="true"]
+          #vertical-pinned-tabs-container:has(tab:not([hidden]))
+          .tabbrowser-tab {
+          height: 50px !important;
+      }
+  }
+  :root:has(#theme-SuperPins[uc-pinned-height="large"]) {
+      #navigator-toolbox[zen-sidebar-expanded="true"]
+          #vertical-pinned-tabs-container:has(tab:not([hidden]))
+          .tabbrowser-tab {
+          height: 60px !important;
+      }
+  }
+  /* favicon size */
+  :root:has(#theme-SuperPins[uc-favicon-size="small"]) {
+      .tab-throbber,
+      .tab-icon-pending,
+      .tab-icon-image,
+      .tab-sharing-icon-overlay,
+      .tab-icon-overlay {
+          height: 16px !important;
+          width: 16px !important;
+      }
+  }
+  :root:has(#theme-SuperPins[uc-favicon-size="normal"]) {
+      .tab-throbber,
+      .tab-icon-pending,
+      .tab-icon-image,
+      .tab-sharing-icon-overlay,
+      .tab-icon-overlay {
+          height: 18px !important;
+          width: 18px !important;
+      }
+  }
+  :root:has(#theme-SuperPins[uc-favicon-size="large"]) {
+      .tab-throbber,
+      .tab-icon-pending,
+      .tab-icon-image,
+      .tab-sharing-icon-overlay,
+      .tab-icon-overlay {
+          height: 20px !important;
+          width: 20px !important;
+      }
+  }
+  /* workspace icons size */
+  :root:has(#theme-SuperPins[uc-workspace-icon-size="x-small"]) {
+      #zen-workspaces-button {
+          font-size: x-small !important;
+      }
+  }
+  :root:has(#theme-SuperPins[uc-workspace-icon-size="small"]) {
+      #zen-workspaces-button {
+          font-size: small !important;
+      }
+  }
+  :root:has(#theme-SuperPins[uc-workspace-icon-size="medium"]) {
+      #zen-workspaces-button {
+          font-size: medium !important;
+      }
+  }
+  :root:has(#theme-SuperPins[uc-workspace-icon-size="large"]) {
+      #zen-workspaces-button {
+          font-size: large !important;
+      }
+  }
+  /* current workspace icons size */
+  :root:has(#theme-SuperPins[uc-workspace-current-icon-size="small"]) {
+      .zen-current-workspace-indicator .zen-current-workspace-indicator-icon {
+          font-size: 12px !important;
+      }
+  }
+  :root:has(#theme-SuperPins[uc-workspace-current-icon-size="normal"]) {
+      .zen-current-workspace-indicator .zen-current-workspace-indicator-icon {
+          font-size: 14.5px !important;
+      }
+  }
+  :root:has(#theme-SuperPins[uc-workspace-current-icon-size="large"]) {
+      .zen-current-workspace-indicator .zen-current-workspace-indicator-icon {
+          font-size: 16px !important;
+      }
+  }
+    
+  /* Ensure that the browser uses SuperPins dim rather than the built-in dim-pending. */
+  .tab-icon-image[pending="true"], .tabbrowser-tab[pending="true"] .tab-text {
+    opacity: 1 !important;
+  }
+
+  /* If dim-type is set to icons. */
+  :root:has(#theme-SuperPins[uc-tabs-dim-type="icons"]) {
+    .tab-icon-image[pending="true"] {
+      opacity: 0.5 !important;
+    }
+  }
+
+  /* If dim-type is set to text. */
+  :root:has(#theme-SuperPins[uc-tabs-dim-type="text"]) {
+    .tabbrowser-tab[pending="true"] .tab-text {
+      opacity: 0.5 !important;
+    }
+  }
+
+  /* If dim-type is set to icon + text. */
+  :root:has(#theme-SuperPins[uc-tabs-dim-type="both"]) {
+    .tab-icon-image[pending="true"], .tabbrowser-tab[pending="true"] .tab-text {
+      opacity: 0.5 !important;
+    }
+  } 
 }
