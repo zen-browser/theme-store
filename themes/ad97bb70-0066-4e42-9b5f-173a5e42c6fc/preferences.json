@@ -69,6 +69,25 @@
         "disabledOn": []
     },
     {
+        "property": "uc.essentials.auto-grow",
+        "label": "Makes the Essentials auto-grow to fit the full width of its row.",
+        "type": "checkbox",
+        "disabledOn": []
+    },
+    {
+        "property": "uc.essentials.position",
+        "label": "Select the position of Essentials",
+        "type": "dropdown",
+        "placeholder": "Top",
+        "disabledOn": [],
+        "options": [
+            {
+                "label": "Bottom",
+                "value": "bottom"
+            }
+        ]
+    },
+    {
         "property": "uc.superpins.border",
         "label": "Add a border around Pins/Essentials",
         "type": "dropdown",
@@ -96,6 +115,12 @@
         "disabledOn": []
     },
     {
+        "property": "uc.pins.auto-grow",
+        "label": "Makes pinned tabs auto-grow to fit the full width of its row.",
+        "type": "checkbox",
+        "disabledOn": []
+    },
+    {
         "property": "uc.pins.bg",
         "label": "Adds a background to the pinned tabs",
         "type": "checkbox",
@@ -114,9 +139,107 @@
         "disabledOn": []
     },
     {
-        "property": "zen.tabs.dim-pending",
-        "label": "Dims unloaded tabs",
-        "type": "checkbox",
-        "disabledOn": []
+        "property": "uc.tabs.dim-type",
+        "label": "Dim the selected parts of a tab when it is unloaded",
+        "type": "dropdown",
+        "disabledOn": [],
+        "options": [
+            {
+                "label": "Icons + Text",
+                "value": "both"
+            },
+            {
+                "label": "Icons only",
+                "value": "icons"
+            },
+            {
+                "label": "Text only",
+                "value": "text"
+            }
+        ]
+    },
+    {
+        "property": "uc.pinned.height",
+        "label": "Height of Pinned tabs",
+        "type": "dropdown",
+        "placeholder": "Default",
+        "options": [
+            {
+                "label": "Small",
+                "value": "small"
+            },
+            {
+                "label": "Normal",
+                "value": "normal"
+            },
+            {
+                "label": "Large",
+                "value": "large"
+            }
+        ]
+    },
+    {
+        "property": "uc.favicon.size",
+        "label": "Size of tabs favicons",
+        "type": "dropdown",
+        "placeholder": "Default",
+        "options": [
+            {
+                "label": "Small",
+                "value": "small"
+            },
+            {
+                "label": "Normal",
+                "value": "normal"
+            },
+            {
+                "label": "Large",
+                "value": "large"
+            }
+        ]
+    },
+    {
+        "property": "uc.workspace.icon.size",
+        "label": "Size of workspace icons",
+        "type": "dropdown",
+        "placeholder": "Default",
+        "options": [
+            {
+                "label": "Extra Small",
+                "value": "x-small"
+            },
+            {
+                "label": "Small",
+                "value": "small"
+            },
+            {
+                "label": "Medium",
+                "value": "medium"
+            },
+            {
+                "label": "Large",
+                "value": "large"
+            }
+        ]
+    },
+    {
+        "property": "uc.workspace.current.icon.size",
+        "label": "Size of current workspace indicator icon",
+        "type": "dropdown",
+        "placeholder": "Default",
+        "options": [
+            {
+                "label": "Small",
+                "value": "small"
+            },
+            {
+                "label": "Normal",
+                "value": "normal"
+            },
+            {
+                "label": "Large",
+                "value": "large"
+            }
+        ]
     }
 ]
