@@ -1,0 +1,92 @@
+
+#zen-main-app-window {
+    --theme-biggerspace-selector_size: var(--theme-biggerspace-selector_size, 18px);
+    --theme-biggerspace-indicator_size: var(--theme-biggerspace-indicator_size, 24px);
+    --theme-biggerspace-picker_size: var(--theme-biggerspace-picker_size, 24px);
+}
+
+/* Workspace selector buttons */
+.zen-workspace-icon {
+    font-size: var(--theme-biggerspace-selector_size);
+}
+
+#zen-workspaces-button:not([as-button="true"]) toolbarbutton.subviewbutton:not([active]) {
+    opacity: 0.8 !important;
+}
+
+/* Workspace icon picker */
+#PanelUI-zen-workspaces #PanelUI-zen-workspaces-icon-picker .workspace-icon-button {
+    font-size: var(--theme-biggerspace-picker_size) !important;
+}
+
+/* Current workspace indicator */
+#zen-current-workspace-indicator-icon {
+    font-size: var(--theme-biggerspace-indicator_size) !important;
+    line-height: 1;
+}
+
+#zen-current-workspace-indicator-name {
+    position: static !important;
+    padding-left: 8px !important;
+}
+
+#zen-current-workspace-indicator-name {
+    opacity: 0.7 !important;
+}
+
+#zen-current-workspace-indicator:hover #zen-current-workspace-indicator-name {
+    opacity: 1 !important;
+}
+
+/* Make current workspace indicator look a bit more like tabs. */
+#zen-current-workspace-indicator {
+    min-height: 44px; /* Same value as essentials */
+    margin: 2px !important; /* Same value as normal tabs */
+    padding: 6px 10px !important; /* Just eyeballed this */
+}
+
+#zen-current-workspace-indicator {
+    /* Background */
+    &::before {
+        content: '';
+        position: absolute;
+        inset: var(--tab-block-margin);
+
+border-radius: var(--zen-border-radius);
+        @media (-moz-bool-pref: "theme.biggerspace.indicator_bg") {
+            background-color: var(--zen-toolbar-element-bg);
+        }
+
+z-index: -1;
+    }
+
+/* Background hover */
+    &:hover::before {
+        background-color: var(--tab-selected-bgcolor);
+    }
+
+/* Background active */
+    &[open=true]::before {
+        box-shadow: 0 0 1px 1px light-dark(rgba(0, 0, 0, 0.07), rgba(0, 0, 0, 0.1));
+        background-color: var(--tab-selected-bgcolor);
+    }
+}
+
+/* Collapsed sidebar overrides */
+#navigator-toolbox:not([zen-sidebar-expanded="true"]) #zen-current-workspace-indicator {
+    opacity: 1 !important;
+    min-height: 42px;
+
+&::before {
+        background-color: transparent;
+        inset: 3px;
+    }
+
+&:hover::before {
+        background-color: var(--zen-toolbar-element-bg);
+    }
+
+&[open=true]::before {
+        background-color: var(--tab-selected-bgcolor);
+    }
+}
