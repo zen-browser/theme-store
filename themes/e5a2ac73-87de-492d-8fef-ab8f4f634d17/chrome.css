@@ -1,0 +1,18 @@
+
+:root {
+  --zen-tabbox-scale: var(--zen-tabbox-user-scale, 1.07);
+  --zen-tabbox-blur: var(--zen-tabbox-user-blur, 10px);
+  --zen-tabbox-brightness: var(--zen-tabbox-user-brightness, 0.7);
+  --zen-tabbox-ease: cubic-bezier(var(--zen-tabbox-user-ease, 0.46, -0.45, 0.34, 1.69));
+}
+
+#zen-tabbox-wrapper {
+  transition: filter 0.25s ease, transform 0.25s var(--zen-tabbox-ease) !important;
+  filter: none !important;
+  transform: scale(1) !important;
+}
+
+:has(#urlbar:focus-within) #zen-tabbox-wrapper {
+  filter: blur(var(--zen-tabbox-blur)) brightness(var(--zen-tabbox-brightness)) !important;
+  transform: scale(var(--zen-tabbox-scale)) !important;
+}
