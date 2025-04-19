@@ -126,13 +126,13 @@
         "readme": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/ad97bb70-0066-4e42-9b5f-173a5e42c6fc/readme.md",
         "image": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/ad97bb70-0066-4e42-9b5f-173a5e42c6fc/image.png",
         "author": "JLBlk",
-        "version": "1.4.5",
+        "version": "1.5.0",
         "preferences": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/ad97bb70-0066-4e42-9b5f-173a5e42c6fc/preferences.json",
         "tags": [
             "tabs"
         ],
         "createdAt": "2024-08-28",
-        "updatedAt": "2025-03-12"
+        "updatedAt": "2025-04-17"
     },
     "a7125691-139e-4a62-aad9-06c6e9f2e5ba": {
         "id": "a7125691-139e-4a62-aad9-06c6e9f2e5ba",
@@ -547,16 +547,16 @@
     "642854b5-88b4-4c40-b256-e035532109df": {
         "id": "642854b5-88b4-4c40-b256-e035532109df",
         "name": "Transparent Zen",
-        "description": "Make the Zen Browser's background transparent and modify the empty tab page and ahve animations that goes along with the transparency. Turn off transparency in mod settings before uninstallation.",
+        "description": "Make the Zen Browser's background transparent and modify the empty tab page and have animations that goes along with the transparency. Turn off transparency in mod settings before uninstallation.",
         "homepage": "https://github.com/sameerasw/zen-themes/tree/main/TransparentZen",
         "style": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/642854b5-88b4-4c40-b256-e035532109df/chrome.css",
         "readme": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/642854b5-88b4-4c40-b256-e035532109df/readme.md",
         "image": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/642854b5-88b4-4c40-b256-e035532109df/image.png",
         "author": "sameerasw",
-        "version": "1.11.2",
+        "version": "1.11.2b",
         "tags": [],
         "createdAt": "2025-02-04",
-        "updatedAt": "2025-04-11",
+        "updatedAt": "2025-04-17",
         "preferences": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/642854b5-88b4-4c40-b256-e035532109df/preferences.json"
     },
     "22c9ec3b-7c62-46ae-991f-c8fff5046829": {
@@ -1172,21 +1172,6 @@
         "createdAt": "2024-08-29",
         "updatedAt": "2025-01-26"
     },
-    "bfcc400a-4ecb-4752-bfd2-a68f116a2722": {
-        "id": "bfcc400a-4ecb-4752-bfd2-a68f116a2722",
-        "name": "No Gaps",
-        "description": "Removes the gaps in single-tab view.",
-        "homepage": "https://github.com/zen-browser/theme-store/tree/main/themes/bfcc400a-4ecb-4752-bfd2-a68f116a2722",
-        "style": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/bfcc400a-4ecb-4752-bfd2-a68f116a2722/chrome.css",
-        "readme": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/bfcc400a-4ecb-4752-bfd2-a68f116a2722/readme.md",
-        "image": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/bfcc400a-4ecb-4752-bfd2-a68f116a2722/image.png",
-        "author": "Peleret",
-        "version": "1.2.2",
-        "tags": [],
-        "createdAt": "2024-10-21",
-        "updatedAt": "2025-02-09",
-        "preferences": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/bfcc400a-4ecb-4752-bfd2-a68f116a2722/preferences.json"
-    },
     "d23733fa-983e-4680-8869-bf5b292d4fe6": {
         "id": "d23733fa-983e-4680-8869-bf5b292d4fe6",
         "name": "Customize Font Size",
@@ -1210,11 +1195,12 @@
         "style": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/8039de3b-72e1-41ea-83b3-5077cf0f98d1/chrome.css",
         "readme": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/8039de3b-72e1-41ea-83b3-5077cf0f98d1/readme.md",
         "image": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/8039de3b-72e1-41ea-83b3-5077cf0f98d1/image.png",
+        "preferences": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/8039de3b-72e1-41ea-83b3-5077cf0f98d1/preferences.json",
         "author": "Fury7425",
-        "version": "1.1.0",
+        "version": "1.1.1",
         "tags": [],
         "createdAt": "2025-04-08",
-        "updatedAt": "2025-04-11"
+        "updatedAt": "2025-04-17"
     },
     "a5f6a231-e3c8-4ce8-8a8e-3e93efd6adec": {
         "id": "a5f6a231-e3c8-4ce8-8a8e-3e93efd6adec",
