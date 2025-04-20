@@ -367,20 +367,6 @@
         "createdAt": "2024-10-02",
         "updatedAt": "2025-01-26"
     },
-    "d7076c31-f6c1-4f28-b2e8-15b95f5a3d6f": {
-        "id": "d7076c31-f6c1-4f28-b2e8-15b95f5a3d6f",
-        "name": "No Search Shortcut Icons",
-        "description": "Hides search shortcuts in the Zen browser URL bar, showing them only when the bar is focused.",
-        "homepage": "https://github.com/itsfaizankhan/zen-browser-mods/tree/main/No-Search-Shortcut-Icons",
-        "style": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/d7076c31-f6c1-4f28-b2e8-15b95f5a3d6f/chrome.css",
-        "readme": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/d7076c31-f6c1-4f28-b2e8-15b95f5a3d6f/readme.md",
-        "image": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/d7076c31-f6c1-4f28-b2e8-15b95f5a3d6f/image.png",
-        "author": "itsfaizankhan",
-        "version": "1.0.1",
-        "tags": [],
-        "createdAt": "2024-12-27",
-        "updatedAt": "2025-01-26"
-    },
     "81fcd6b3-f014-4796-988f-6c3cb3874db8": {
         "id": "81fcd6b3-f014-4796-988f-6c3cb3874db8",
         "name": "Zen Context Menu",
@@ -484,35 +470,6 @@
         "version": "1.1.0",
         "tags": [],
         "createdAt": "2024-10-06",
-        "updatedAt": "2025-01-26"
-    },
-    "e4274cbc-c99b-411a-876d-9b943eb91282": {
-        "id": "e4274cbc-c99b-411a-876d-9b943eb91282",
-        "name": "Exit Button Right Padding",
-        "description": "A simple theme that adds a bit of padding to the right of the exit button",
-        "homepage": "https://github.com/ericmackrodt/zen-themes/",
-        "style": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/e4274cbc-c99b-411a-876d-9b943eb91282/chrome.css",
-        "readme": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/e4274cbc-c99b-411a-876d-9b943eb91282/readme.md",
-        "image": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/e4274cbc-c99b-411a-876d-9b943eb91282/image.png",
-        "author": "ericmackrodt",
-        "version": "1.0.0",
-        "tags": [],
-        "createdAt": "2024-08-31",
-        "updatedAt": "2025-01-26"
-    },
-    "5a007026-0801-4a5d-9740-f17dc1c3ff21": {
-        "id": "5a007026-0801-4a5d-9740-f17dc1c3ff21",
-        "name": "Hide Window Buttons",
-        "description": "Hide the minimize, maximize, and close window buttons",
-        "homepage": "https://github.com/n7itro/Zen-Themes",
-        "style": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/5a007026-0801-4a5d-9740-f17dc1c3ff21/chrome.css",
-        "readme": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/5a007026-0801-4a5d-9740-f17dc1c3ff21/readme.md",
-        "image": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/5a007026-0801-4a5d-9740-f17dc1c3ff21/image.png",
-        "author": "n7itro",
-        "preferences": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/5a007026-0801-4a5d-9740-f17dc1c3ff21/preferences.json",
-        "version": "1.0.0",
-        "tags": [],
-        "createdAt": "2024-08-16",
         "updatedAt": "2025-01-26"
     },
     "6cd4bca9-f17d-4461-b554-844d69a4887c": {
@@ -938,21 +895,6 @@
         "tags": [],
         "createdAt": "2025-02-07",
         "updatedAt": "2025-02-09"
-    },
-    "67b12475-1c26-4d13-9156-297383ed8dbf": {
-        "id": "67b12475-1c26-4d13-9156-297383ed8dbf",
-        "name": "Floating toolbar",
-        "description": "Detaches toolbar from edge of browser window so that it appears to float",
-        "homepage": "https://github.com/anaarkei/zen-floating-toolbar",
-        "style": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/67b12475-1c26-4d13-9156-297383ed8dbf/chrome.css",
-        "readme": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/67b12475-1c26-4d13-9156-297383ed8dbf/readme.md",
-        "image": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/67b12475-1c26-4d13-9156-297383ed8dbf/image.png",
-        "author": "anaarkei",
-        "preferences": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/67b12475-1c26-4d13-9156-297383ed8dbf/preferences.json",
-        "version": "2.1.2",
-        "tags": [],
-        "createdAt": "2024-09-15",
-        "updatedAt": "2025-01-26"
     },
     "477bc813-c333-4747-813e-00e0420ceec0": {
         "id": "477bc813-c333-4747-813e-00e0420ceec0",
