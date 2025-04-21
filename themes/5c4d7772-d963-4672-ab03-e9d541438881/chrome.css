@@ -1,36 +1,153 @@
-.tab-icon-overlay {
-    opacity: 1 !important;
-    margin: initial !important;
-    border: none !important;
-    margin-right: 35px !important;
-    transform: translate(130%, 45%) scale(1.5) !important;
-    background-color: transparent !important;
-    fill: light-dark(black, white) !important;
-    transition: 0.2s;
-    
-    &:hover {
-        fill: var(--zen-primary-color) !important;
-        transition: 0.2s;
-    }
-    
-    &:is([soundplaying], [muted]):not([selected]) {
-        display: block !important;
-    }
+:root {
+  --bmb-sound-icon-scale: 1.5;
+  --bmb-sound-icon-scale-essentials: 1.26;
 }
 
-/* Mute button takes place of tab icon when tabs are not expanded */
-@media not (-moz-bool-pref: "zen.view.sidebar-expanded") {
-    .tab-icon-overlay {
-        margin: 0px !important;
-        transform: translate(-35%, 50%) scale(1.5) !important;
-    
-        /* Prevent button from being toggled if tab is not selected */
-        &:is([soundplaying], [muted]):not([selected]) {
-            pointer-events: none !important;
-        }
+/* ================== General ================== */
+/* Tab icon overlay styles */
+.tab-icon-overlay {
+  border: none !important;
+  transform: translate(130%, 44%) scale(var(--bmb-sound-icon-scale)) !important;
+  background-color: transparent !important;
+  transition: 0.2s;
+
+  &:is([soundplaying], [muted], [activemedia-blocked]):not([selected]) {
+    display: block !important;
+  }
+}
+
+/* Ensure sound icon is still visible when tab not selected */
+#navigator-toolbox:not([zen-sidebar-expanded])
+  #tabbrowser-tabs
+  .tab-icon-overlay:is([soundplaying], [muted], [activemedia-blocked]):not(
+    [selected]
+  ) {
+  display: block !important;
+}
+
+/* Fill sound button on hover; ensure icon is displayed */
+#navigator-toolbox #tabbrowser-tabs .tabbrowser-tab {
+  & .tab-throbber,
+  & .tab-icon-pending,
+  & .tab-icon-image,
+  & .tab-sharing-icon-overlay,
+  & .tab-icon-overlay {
+    &:is([soundplaying], [muted]) {
+      &:hover {
+        fill: var(--zen-colors-primary) !important;
+        transition: 0.2s;
+        display: block !important;
+      }
     }
-    
-    .tabbrowser-tab:is([soundplaying], [muted]) .tab-icon-image {
-        display: none !important;
+  }
+}
+
+/* ================== Zen essentials (expanded tabs) ================== */
+#navigator-toolbox[zen-sidebar-expanded] {
+  .tabbrowser-tab[zen-essential] {
+    /* Hide tab icon image for collapsed tabs and essentials */
+    &:is([soundplaying], [muted], [activemedia-blocked]) .tab-icon-image {
+      display: none !important;
     }
+
+    & .tab-throbber,
+    & .tab-icon-pending,
+    & .tab-icon-image,
+    & .tab-sharing-icon-overlay,
+    & .tab-icon-overlay,
+    & .tab-icon-stack {
+      &:is([soundplaying], [muted], [activemedia-blocked]) {
+        transform: translate(20%, 25%)
+          scale(var(--bmb-sound-icon-scale-essentials)) !important;
+        display: block !important;
+        /* Remove extra margin created for vanilla icons */
+        margin-inline-end: -2em !important;
+        margin-inline-start: -2em !important;
+      }
+    }
+  }
+}
+
+/* ================== Pinned tab (tab page changed) ================== */
+#navigator-toolbox[zen-sidebar-expanded] {
+  .tabbrowser-tab[zen-pinned-changed] {
+    /* Add extra space for sound button when reset tab button is active */
+    &:is([soundplaying], [muted], [activemedia-blocked]) {
+      .tab-reset-pin-button {
+        margin-right: 2.8em !important;
+      }
+    }
+
+    & .tab-throbber,
+    & .tab-icon-pending,
+    & .tab-icon-image,
+    & .tab-sharing-icon-overlay,
+    & .tab-icon-overlay {
+      &:is([soundplaying], [muted], [activemedia-blocked]) {
+        transform: translate(180%, 45%) scale(var(--bmb-sound-icon-scale)) !important;
+      }
+    }
+  }
+}
+
+/* ================== Expanded tabs ================== */
+#navigator-toolbox[zen-sidebar-expanded] #tabbrowser-tabs .tabbrowser-tab {
+  & .tab-throbber,
+  & .tab-icon-pending,
+  & .tab-icon-image,
+  & .tab-sharing-icon-overlay,
+  & .tab-icon-overlay {
+    &:is([soundplaying], [muted], [activemedia-blocked]) {
+      margin-right: 36px !important;
+      margin-left: 0px !important;
+    }
+  }
+}
+
+/* ================== Split view (expanded tabs) ================== */
+#navigator-toolbox[zen-sidebar-expanded]
+  #tabbrowser-tabs
+  .tabbrowser-tab[split-view] {
+  /* Sound icon takes place of tab icon if tab is not pinned */
+  &:is([soundplaying], [muted], [activemedia-blocked]):not([pinned])
+    .tab-icon-image {
+    display: none !important;
+  }
+
+  & .tab-throbber,
+  & .tab-icon-pending,
+  & .tab-icon-image,
+  & .tab-sharing-icon-overlay,
+  & .tab-icon-overlay {
+    /* Replace tab icon image with sound button; not needed if tab is pinned or essential */
+    &:is([soundplaying], [muted], [activemedia-blocked]):not(
+        [zen-essential],
+        [pinned]
+      ) {
+      transform: translate(-40%, 46%) scale(var(--bmb-sound-icon-scale)) !important;
+      margin-right: 12px !important;
+      margin-left: 4px !important;
+    }
+
+    &:not([pinned]) {
+      margin-left: 0px !important;
+    }
+  }
+}
+
+/* ================== Collapsed tabs ================== */
+#navigator-toolbox:not([zen-sidebar-expanded]) {
+  .tab-icon-overlay {
+    transform: translate(-40%, 46%) scale(var(--bmb-sound-icon-scale)) !important;
+
+    /* Prevent sound/media button from being toggled on click when collapsed tab out of focus */
+    &:is([soundplaying], [muted], [activemedia-blocked]):not([selected]) {
+      pointer-events: none !important;
+    }
+  }
+
+  .tabbrowser-tab:is([soundplaying], [muted], [activemedia-blocked])
+    .tab-icon-image {
+    display: none !important;
+  }
 }
