@@ -1,0 +1,9 @@
+
+#navigator-toolbox[flash-popup]{
+  &:not([zen-has-hover]){
+    transition: none !important;
+    &:not([supress-primary-adjustment='true']) {
+      opacity: 0 !important;
+    }
+  } 
+}

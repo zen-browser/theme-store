@@ -1,0 +1,14 @@
+{
+    "id": "a8bf4b69-bf60-4294-8604-12db65b9bf50",
+    "name": "Quick Compact CTRL Tab",
+    "description": "Removes floating tabs sidebar when switching tabs with Ctrl + Tab in Compact mode.",
+    "homepage": "",
+    "style": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/a8bf4b69-bf60-4294-8604-12db65b9bf50/chrome.css",
+    "readme": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/a8bf4b69-bf60-4294-8604-12db65b9bf50/readme.md",
+    "image": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/a8bf4b69-bf60-4294-8604-12db65b9bf50/image.png",
+    "author": "schizokid88",
+    "version": "1.0.0",
+    "tags": [],
+    "createdAt": "2025-04-23",
+    "updatedAt": "2025-04-23"
+}
