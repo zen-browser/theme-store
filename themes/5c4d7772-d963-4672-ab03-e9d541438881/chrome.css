@@ -1,6 +1,7 @@
 :root {
   --bmb-sound-icon-scale: 1.5;
-  --bmb-sound-icon-scale-essentials: 1.26;
+  --bmb-sound-icon-scale-essentials: 1.28;
+  --bmb-sound-icon-scale-glance: 1.15;
 }
 
 /* ================== General ================== */
@@ -57,13 +58,54 @@
     & .tab-icon-overlay,
     & .tab-icon-stack {
       &:is([soundplaying], [muted], [activemedia-blocked]) {
-        transform: translate(20%, 25%)
+        transform: translate(20%, 24%)
           scale(var(--bmb-sound-icon-scale-essentials)) !important;
         display: block !important;
         /* Remove extra margin created for vanilla icons */
         margin-inline-end: -2em !important;
         margin-inline-start: -2em !important;
       }
+    }
+  }
+}
+
+/* ================== Zen glance tab (expanded tabs) ================== */
+#navigator-toolbox[zen-sidebar-expanded] {
+  .tabbrowser-tab[zen-glance-tab] {
+    /* Hide tab icon image */
+    &:is([soundplaying], [muted], [activemedia-blocked]) .tab-icon-image {
+      display: none !important;
+    }
+
+    & .tab-throbber,
+    & .tab-icon-pending,
+    & .tab-icon-image,
+    & .tab-sharing-icon-overlay,
+    & .tab-icon-overlay,
+    & .tab-icon-stack {
+      &:is([soundplaying], [muted], [activemedia-blocked]) {
+        transform: translate(-10%, 25%)
+          scale(var(--bmb-sound-icon-scale-glance)) !important;
+        display: block !important;
+        margin: 0px !important;
+      }
+    }
+  }
+}
+
+/* ================== Zen glance tab (pinned and essentials) ================== */
+#navigator-toolbox[zen-sidebar-expanded]
+  #tabbrowser-tabs
+  .tabbrowser-tab[zen-glance-tab] {
+  & .tab-throbber,
+  & .tab-icon-pending,
+  & .tab-icon-image,
+  & .tab-sharing-icon-overlay,
+  & .tab-icon-overlay {
+    &:is([soundplaying], [muted], [activemedia-blocked]) {
+      margin: 0px !important;
+      transform: translate(-35%, 25%) scale(var(--bmb-sound-icon-scale-glance)) !important;
+      display: block !important;
     }
   }
 }
