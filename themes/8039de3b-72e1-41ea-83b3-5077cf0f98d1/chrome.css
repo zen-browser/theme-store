@@ -1,24 +1,26 @@
-  :root {
-    --mod-browser-scale: var(--user-browser-scale, 0.98);
-    --mod-browser-ease-swipe: var(--user-browser-ease-swipe, 0.3, 1.2, 0.5, 1);
-    --mod-browser-ease-reset: var(--user-browser-ease-reset, 0.2, 1.4, 0.3, 1);
-  }
+:root {
+  --mod-browser-scale: var(--user-browser-scale, 0.98);
+  --mod-browser-ease-swipe: var(--user-browser-ease-swipe, 0.3, 1.2, 0.5, 1);
+  --mod-browser-ease-reset: var(--user-browser-ease-reset, 0.2, 1.4, 0.3, 1);
+  --mod-browser-radius-default: var(--user-tab-radius, 8px);
+}
 
-  .browserStack browser {
-    transition: transform 0.22s cubic-bezier(var(--mod-browser-ease-swipe)) !important;
-  }
+.browserStack browser {
+  transition: all 0.22s cubic-bezier(var(--mod-browser-ease-reset)) !important;
+  transform: translateX(0) !important;
+  border-radius: var(--mod-browser-radius-default) !important;
+}
 
-  .browserStack:has(#historySwipeAnimationPreviousArrow:not([style="translate: none;"])) browser {
-    scale: var(--mod-browser-scale) !important;
-    transform: translateX(4%) !important;
-  }
+.browserStack:has(#historySwipeAnimationPreviousArrow:not([style="translate: none;"]), #historySwipeAnimationNextArrow:not([style="translate: none;"])) browser {
+  transition: all 0.22s cubic-bezier(var(--mod-browser-ease-swipe)) !important;
+  scale: var(--mod-browser-scale) !important;
+  border-radius: calc(var(--mod-browser-radius-default) * 2) !important;
+}
 
-  .browserStack:has(#historySwipeAnimationNextArrow:not([style="translate: none;"])) browser {
-    scale: var(--mod-browser-scale) !important;
-    transform: translateX(-4%) !important;
-  }
+.browserStack:has(#historySwipeAnimationPreviousArrow:not([style="translate: none;"])) browser {
+  transform: translateX(3%) !important;
+}
 
-  .browserStack browser:not(:has(#historySwipeAnimationPreviousArrow, #historySwipeAnimationNextArrow)) {
-    transition: transform 0.25s cubic-bezier(var(--mod-browser-ease-reset)) !important;
-    transform: translateX(0) !important;
-  }
+.browserStack:has(#historySwipeAnimationNextArrow:not([style="translate: none;"])) browser {
+  transform: translateX(-3%) !important;
+}
