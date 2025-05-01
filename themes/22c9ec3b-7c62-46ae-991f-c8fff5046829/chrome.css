@@ -1,4 +1,4 @@
-@-moz-document url-prefix("chrome:") {
+
   #vertical-pinned-tabs-container > .zen-workspace-tabs-section[hidden="true"] {
     display: none !important;
   }
@@ -167,4 +167,4 @@
   :root:has(#theme-Tab-Numbers[uc-theme-background_shape="Circle"]) {
     --background_shape: 50%; /* Perfect Circle */
   }
-}
+
