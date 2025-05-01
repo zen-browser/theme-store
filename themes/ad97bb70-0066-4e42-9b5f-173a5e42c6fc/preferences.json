@@ -76,7 +76,7 @@
     },
     {
         "property": "uc.essentials.position",
-        "label": "Select the position of Essentials",
+        "label": "Select the position of Essentials (doesn't work on >1.11.5t with container-specific essentials)",
         "type": "dropdown",
         "placeholder": "Top",
         "disabledOn": [],
