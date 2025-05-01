@@ -1,9 +1,12 @@
-@-moz-document url-prefix("chrome:") {
+
+  #vertical-pinned-tabs-container > .zen-workspace-tabs-section[hidden="true"] {
+    display: none !important;
+  }
   tabs {
     counter-reset: tab-counter;
   } /* Automatically increment tab numbers for each .tab-content inside a tab */ /* Styles when the sidebar is expanded */
   @media (-moz-bool-pref: "zen.view.sidebar-expanded") {
-    tab .tab-content::after {
+    tab:not([zen-glance-tab="true"]) > .tab-stack > .tab-content::after {
       counter-increment: tab-counter;
       content: counter(
         tab-counter
@@ -31,11 +34,16 @@
 
     /* Hide the "X" close button by default */
     tab .tab-close-button {
-      display: none !important;
+      visibility: hidden;
+      opacity: 0;
+      /* In order to not hide the tab title. [Can't make this work. It still hides the title] */
+      /* Also, display: none; doesn't seem to work */
+      width: 0;
+      margin: 0;
     }
 
     /*  Hide tab numbers on the right side when hovering over */
-    tab .tab-content:hover::after {
+    tab:not([zen-glance-tab="true"]) > .tab-stack > .tab-content:hover::after {
       opacity: 0; /* Make it invisible */
       width: 0; /* In order to bring the close button to the right */
       margin: 0;
@@ -43,15 +51,16 @@
 
     /* Show the "X" close button on hover */
     tab:hover .tab-close-button {
-      display: inline !important;
+      visibility: visible;
+      opacity: 1;
     }
 
-    /* put tab numbers on the left side when expanded_side="Left" (AND in expanded mode) */
+    /* Put tab numbers on the left side when expanded_side="Left" (AND in expanded mode) */
     :root:has(#theme-Tab-Numbers[uc-theme-expanded_side="Left"]) {
-      tab .tab-content::after {
+      tab:not([zen-glance-tab="true"]) > .tab-stack > .tab-content::after {
         display: none; /* Hide the ::after pseudo-element first */
       }
-      tab .tab-content::before {
+      tab:not([zen-glance-tab="true"]) > .tab-stack > .tab-content::before {
         counter-increment: tab-counter;
         content: counter(
           tab-counter
@@ -79,7 +88,7 @@
     }
   } /* Styles when the sidebar is NOT expanded (compact mode) */
   @media not (-moz-bool-pref: "zen.view.sidebar-expanded") {
-    tab .tab-content::before {
+    tab:not([zen-glance-tab="true"]) > .tab-stack > .tab-content::before {
       counter-increment: tab-counter;
       content: counter(tab-counter) "";
       position: absolute;
@@ -93,9 +102,9 @@
         80%
       ); /* Default font size (same as "Small") */
       color: var(--number_color, inherit); /* Fallback to default color */
-    } /* put tab numbers on the left side when compact_side="Left" (AND in compact mode) */
+    } /* Put tab numbers on the left side when compact_side="Left" (AND in compact mode) */
     :root:has(#theme-Tab-Numbers[uc-theme-compact_side="Left"]) {
-      tab .tab-content::before {
+      tab:not([zen-glance-tab="true"]) > .tab-stack > .tab-content::before {
         counter-increment: tab-counter;
         content: counter(tab-counter) "";
         position: absolute;
@@ -113,12 +122,12 @@
     }
   } /* Enable bold text when the preference is enabled */
   @media (-moz-bool-pref: "uc.theme.bold-text-enable.enabled") {
-    tab .tab-content {
+    tab:not([zen-glance-tab="true"]) > .tab-stack > .tab-content {
       --bold-text: bold;
     }
   }
   @media (-moz-bool-pref: "uc.theme.custom_color_enabled") {
-    tab .tab-content {
+    tab:not([zen-glance-tab="true"]) > .tab-stack > .tab-content {
       --number_color: var(--uc-theme-number_color) !important;
       --number_background_color: var(
         --uc-theme-number_background_color
@@ -158,4 +167,4 @@
   :root:has(#theme-Tab-Numbers[uc-theme-background_shape="Circle"]) {
     --background_shape: 50%; /* Perfect Circle */
   }
-}
+
