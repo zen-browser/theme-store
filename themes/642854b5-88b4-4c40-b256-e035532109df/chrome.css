@@ -1,10 +1,14 @@
-/* transparency */
+/* variables */
 :root {
   @media (-moz-bool-pref: "mod.sameerasw.zen_bg_color_enabled") {
     --zen-main-browser-background: var(
       --mod-sameerasw-zen_transparency_color,
       #00000000
     ) !important;
+  }
+
+  @media (-moz-bool-pref: "mod.sameerasw.zen_notab_img_enabled") {
+    --notab_bg_img: image-set(var(--mod_sameerasw_zen_notab_img)) !important;
   }
 }
 
@@ -110,5 +114,30 @@ tabpanels .browserStack browser {
     scale: 0.95 !important;
     transform: translateX(-3%) !important;
     border-radius: 2em !important;
+  }
+}
+
+/* no tab image */
+#browser:has([zen-empty-tab="true"][selected="true"]) .browserStack {
+  @media (-moz-bool-pref: "mod.sameerasw.zen_notab_img_enabled") {
+    background-image: var(
+      --notab_bg_img,
+      url("https://raw.githubusercontent.com/zen-browser/branding/refs/heads/main/Official/Word%20Marks/SVG/zen_logo_icon_white.svg")
+    ) !important;
+
+    background-position: center !important;
+    background-repeat: no-repeat !important;
+
+    background-size: var(--mod_sameerasw_zen_notab_img_size, 50px) !important;
+
+    @media (-moz-bool-pref: "mod.sameerasw.zen_notab_img_enabled") {
+      filter: saturate(0) !important;
+
+      @media (-moz-bool-pref: "mod.sameerasw.zen_notab_img_enabled") {
+        @media (prefers-color-scheme: light) {
+          filter: saturate(0) invert(1) !important;
+        }
+      }
+    }
   }
 }
