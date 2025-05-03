@@ -1,0 +1,15 @@
+{
+    "id": "e74cb40a-f3b8-445a-9826-1b1b6e41b846",
+    "name": "Custom uiFont",
+    "description": "Customize the interface font, the default is consistent with the serif font in the settings.",
+    "homepage": "",
+    "style": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/e74cb40a-f3b8-445a-9826-1b1b6e41b846/chrome.css",
+    "readme": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/e74cb40a-f3b8-445a-9826-1b1b6e41b846/readme.md",
+    "image": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/e74cb40a-f3b8-445a-9826-1b1b6e41b846/image.png",
+    "author": "lindongbin",
+    "version": "1.0.0",
+    "tags": [],
+    "createdAt": "2025-05-03",
+    "updatedAt": "2025-05-03",
+    "preferences": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/e74cb40a-f3b8-445a-9826-1b1b6e41b846/preferences.json"
+}
