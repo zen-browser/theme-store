@@ -1,15 +1,15 @@
 [
   {
     "property": "browser.tabs.allow_transparent_browser",
-    "label": "Allow zen browser to be transparent (Turn off before uninstall)",
+    "label": "Allow zen browser to be transparent (TURN OFF BEFORE UNINSTALL)",
     "type": "checkbox",
-    "defaultvalue": true
+    "defaultValue": false
   },
   {
       "property": "zen.widget.linux.transparency",
-      "label": "Allow zen browser on linux to be transparent (Turn off before uninstall)",
+      "label": "Allow zen browser on linux to be transparent (TURN OFF BEFORE UNINSTALL)",
       "type": "checkbox",
-      "defaultvalue": true,
+      "defaultValue": true,
       "disabledOn": [
           "windows",
           "macos"
@@ -19,87 +19,87 @@
     "property": "mod.sameerasw.zen_bg_color_enabled",
     "label": "Enable custom background color for Zen",
     "type": "checkbox",
-    "defaultvalue": false
+    "defaultValue": false
   },
   {
     "property": "mod.sameerasw.zen_transparency_color",
     "label": "Set custom background color (Overrides default theme colors)",
     "type": "string",
-    "defaultvalue": "#00000000",
+    "defaultValue": "#00000000",
     "placeholder": "light-dark(#fff, #222) or RGBA or hex"
   },
   {
     "property": "mod.sameerasw.zen_light_tint_flip",
     "label": "Flip the light website tint to dark",
     "type": "checkbox",
-    "defaultvalue": false
+    "defaultValue": false
   },
   {
     "property": "mod.sameerasw.zen_light_tint_disabled",
     "label": "Disable the light website tint",
     "type": "checkbox",
-    "defaultvalue": true
+    "defaultValue": true
   },
   {
     "property": "mod.sameerasw.zen_empty_page_transparency",
     "label": "Transparent empty no tabs page",
     "type": "checkbox",
-    "defaultvalue": true
+    "defaultValue": true
   },
   {
     "property": "mod.sameerasw.zen_no_shadow",
     "label": "Remove the shadow around the web page",
     "type": "checkbox",
-    "defaultvalue": false
+    "defaultValue": false
   },
   {
     "property": "mod.sameerasw.zen_tab_switch_anim",
     "label": "Tab switch animation",
     "type": "checkbox",
-    "defaultvalue": true
+    "defaultValue": true
   },
   {
     "property": "mod.sameerasw.zen_urlbar_zoom_anim",
     "label": "URL bar zoom animation",
     "type": "checkbox",
-    "defaultvalue": false
+    "defaultValue": false
   },
   {
     "property": "mod.sameerasw.zen_trackpad_anim",
     "label": "Trackpad swipe animations",
     "type": "checkbox",
-    "defaultvalue": false
+    "defaultValue": false
   },
   {
     "property": "mod.sameerasw.zen_notab_img_enabled",
     "label": "Add no tab screen background image",
     "type": "checkbox",
-    "defaultvalue": false
+    "defaultValue": false
   },
   {
     "property": "mod.sameerasw.zen_notab_img",
-    "label": "Set no tab scren image URL (updating the image may need a new url)",
+    "label": "Image URL, match the format:   url('example.com/image.png')",
     "type": "string",
-    "defaultvalue": "https://github.com/sameerasw/my-internet/blob/main/wave-light.png?raw=true",
-    "placeholder": "https://example.com/image.png"
+    "defaultValue": "url('https://github.com/sameerasw/my-internet/blob/main/wave-light.png?raw=true')",
+    "placeholder": "url('link_to_image.png')"
   },
   {
     "property": "mod.sameerasw.zen_notab_img_size",
     "label": "Set no tab scren image size with unit",
     "type": "string",
-    "defaultvalue": "50px",
+    "defaultValue": "150px",
     "placeholder": "50px (include units px, % ...)"
   },
   {
     "property": "mod.sameerasw.zen_notab_img_saturate",
     "label": "Grayscale the no tab screen image",
     "type": "checkbox",
-    "defaultvalue": false
+    "defaultValue": false
   },
   {
     "property": "mod.sameerasw.zen_notab_img_invert",
     "label": "Invert the grayscaled no tab screen image in light theme (white → black)",
     "type": "checkbox",
-    "defaultvalue": true
+    "defaultValue": true
   }
 ]

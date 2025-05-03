@@ -6,10 +6,6 @@
       #00000000
     ) !important;
   }
-
-  @media (-moz-bool-pref: "mod.sameerasw.zen_notab_img_enabled") {
-    --notab_bg_img: image-set(var(--mod_sameerasw_zen_notab_img)) !important;
-  }
 }
 
 /* Remove new tab background color added in 1.8b */
@@ -121,14 +117,14 @@ tabpanels .browserStack browser {
 #browser:has([zen-empty-tab="true"][selected="true"]) .browserStack {
   @media (-moz-bool-pref: "mod.sameerasw.zen_notab_img_enabled") {
     background-image: var(
-      --notab_bg_img,
+      --mod-sameerasw-zen_notab_img,
       url("https://raw.githubusercontent.com/zen-browser/branding/refs/heads/main/Official/Word%20Marks/SVG/zen_logo_icon_white.svg")
     ) !important;
 
     background-position: center !important;
     background-repeat: no-repeat !important;
 
-    background-size: var(--mod_sameerasw_zen_notab_img_size, 50px) !important;
+    background-size: var(--mod-sameerasw-zen_notab_img_size, 150px) !important;
 
     @media (-moz-bool-pref: "mod.sameerasw.zen_notab_img_saturate") {
       filter: saturate(0) !important;
