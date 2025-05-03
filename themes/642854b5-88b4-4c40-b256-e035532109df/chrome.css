@@ -130,10 +130,10 @@ tabpanels .browserStack browser {
 
     background-size: var(--mod_sameerasw_zen_notab_img_size, 50px) !important;
 
-    @media (-moz-bool-pref: "mod.sameerasw.zen_notab_img_enabled") {
+    @media (-moz-bool-pref: "mod.sameerasw.zen_notab_img_saturate") {
       filter: saturate(0) !important;
 
-      @media (-moz-bool-pref: "mod.sameerasw.zen_notab_img_enabled") {
+      @media (-moz-bool-pref: "mod.sameerasw.zen_notab_img_invert") {
         @media (prefers-color-scheme: light) {
           filter: saturate(0) invert(1) !important;
         }
