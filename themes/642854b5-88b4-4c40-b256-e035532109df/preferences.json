@@ -79,14 +79,14 @@
   },
   {
     "property": "mod.sameerasw.zen_notab_img_size",
-    "label": "🖼️ No tab scren image size with unit",
+    "label": "🖼️ No tab screen image size with unit",
     "type": "string",
     "defaultValue": "150px",
     "placeholder": "50px (px, em, % ...)"
   },
   {
     "property": "mod.sameerasw.zen_notab_img_opacity",
-    "label": "🖼️ No tab scren image opacity (0-1)",
+    "label": "🖼️ No tab screen image opacity (0-1)",
     "type": "string",
     "defaultValue": "1",
     "placeholder": "0.75"
