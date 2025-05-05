@@ -1,54 +1,48 @@
 @media (-moz-bool-pref: "zen.view.use-single-toolbar") {
   #zen-appcontent-wrapper {
     position: relative !important;
-    background-color: transparent !important;
+    background-color: transparent !important; /* The rest of the div remains transparent */
   }
 
   #zen-appcontent-wrapper::before {
     content: "" !important;
     position: absolute !important;
-    top: 2px !important;
+    top: 0px !important;
     left: 6px !important;
-    height: 4px !important;
-    max-width: calc(100% - 16px) !important;
-    width: var(--bar-pcent) !important;
-    background-color: var(--bar-colour) !important;
-    border-radius: 4px;
+    height: 4px !important; /* Height of the top background */
+    max-width: calc(100% - 16px) !important; /* Adjust for margins */
+    width: var(--bar-pcent) !important; /* Ensure full width or customizable width */
+    background-color: var(--bar-colour) !important; /* Solid color for the bar */
+    border-radius: 4px; /* Adjust this value to control the roundness of the ends */
     pointer-events: none !important;
-    transition:
-      background-color 0.2s ease-in-out,
-      width 0.5s ease-in-out !important;
+    transition: width 0.5s ease-in-out, background 0.2s ease-in !important; /* Apply smooth transition on width and background */
   }
 
+  /* Current tab loading progress and muted status */
   #main-window {
     &:has(.tabbrowser-tab[selected][busy]) {
-      --bar-colour: white;
-      --bar-pcent: 10%;
+      --bar-colour: var(--color-accent-primary);
+      --bar-pcent: 15%;
     }
 
     &:has(.tabbrowser-tab[selected][busy][pendingicon]) {
-      --bar-colour: white;
-      --bar-pcent: 50%;
+      --bar-colour: var(--color-accent-primary);
+      --bar-pcent: 45%;
     }
 
     &:has(.tabbrowser-tab[selected][busy][pendingicon][progress]) {
-      --bar-colour: white;
-      --bar-pcent: 80%;
+      --bar-colour: var(--color-accent-primary);
+      --bar-pcent: 85%;
     }
 
     &:has(.tabbrowser-tab[selected][busy][progress]) {
-      --bar-colour: white;
-      --bar-pcent: 100%;
+      --bar-colour: var(--color-accent-primary);
+      --bar-pcent: 95%;
     }
 
     &:has(.tabbrowser-tab[selected][muted]:not([busy])) {
       --bar-colour: orangered;
       --bar-pcent: 100%;
-    }
-
-    &:has(.tabbrowser-tab[selected]:not([muted]):not([busy])) {
-      --bar-colour: transparent;
-      --bar-pcent: 0%;
     }
   }
 }
