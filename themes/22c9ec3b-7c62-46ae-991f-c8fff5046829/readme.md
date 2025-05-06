@@ -2,7 +2,11 @@
 
 Shows the Number corresponding to each Tab. This can help you navigate between Tabs faster by pressing Cmd + Number of the Tab. (or Ctrl + Number on Windows)
 
-Additions (v1.0.5 - current version):
+Additions (v1.0.6 - current version):
+
+Fixed tab numbering across workspaces.
+
+Additions (v1.0.5):
 
 - Fixed incorrect numbering of pinned tabs, removed glance tabs from the tab count.
 
