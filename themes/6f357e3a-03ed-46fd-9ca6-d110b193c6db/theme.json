@@ -1,0 +1,14 @@
+{
+    "id": "6f357e3a-03ed-46fd-9ca6-d110b193c6db",
+    "name": "Big Essentials",
+    "description": "Make the Essential tab icons big enough (32px w/ 16px padding) to be recognisable without their names.",
+    "homepage": "https://github.com/leaferiksen/zen-browser-big-essentials",
+    "style": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/6f357e3a-03ed-46fd-9ca6-d110b193c6db/chrome.css",
+    "readme": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/6f357e3a-03ed-46fd-9ca6-d110b193c6db/readme.md",
+    "image": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/6f357e3a-03ed-46fd-9ca6-d110b193c6db/image.png",
+    "author": "leaferiksen",
+    "version": "1.0.0",
+    "tags": [],
+    "createdAt": "2025-05-07",
+    "updatedAt": "2025-05-07"
+}
