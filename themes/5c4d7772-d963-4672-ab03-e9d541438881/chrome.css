@@ -108,7 +108,7 @@
   & .tab-icon-overlay {
     &:is([soundplaying], [muted], [activemedia-blocked]) {
       margin: 0px !important;
-      transform: translate(-30%, 25%) scale(var(--bmb-sound-icon-scale-glance)) !important;
+      transform: translate(-35%, 25%) scale(var(--bmb-sound-icon-scale-glance)) !important;
       display: block !important;
     }
   }
