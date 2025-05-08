@@ -1,0 +1,8 @@
+[
+    {
+        "property": "bqs.color.accent_color",
+        "label": "Accent color",
+        "type": "string",
+        "defaultValue": "purple"
+    }
+]

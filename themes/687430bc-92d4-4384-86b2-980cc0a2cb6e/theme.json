@@ -1,0 +1,15 @@
+{
+    "id": "687430bc-92d4-4384-86b2-980cc0a2cb6e",
+    "name": "Custom accent color",
+    "description": "Allows to set a custom theme accent color for the zen window.",
+    "homepage": "https://github.com/BinaryQuantumSoul/Zen-themes/tree/main/themes/custom-accent-color",
+    "style": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/687430bc-92d4-4384-86b2-980cc0a2cb6e/chrome.css",
+    "readme": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/687430bc-92d4-4384-86b2-980cc0a2cb6e/readme.md",
+    "image": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/687430bc-92d4-4384-86b2-980cc0a2cb6e/image.png",
+    "author": "BinaryQuantumSoul",
+    "version": "1.0.0",
+    "tags": [],
+    "createdAt": "2025-05-08",
+    "updatedAt": "2025-05-08",
+    "preferences": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/687430bc-92d4-4384-86b2-980cc0a2cb6e/preferences.json"
+}
