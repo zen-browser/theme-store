@@ -104,7 +104,7 @@ tabpanels .browserStack browser {
 }
 
 /* no tab image */
-#browser:has([zen-empty-tab="true"][selected="true"]) .browserStack {
+#browser:has([zen-has-empty-tab=""]) .deck-selected .browserStack {
   @media -moz-pref( "mod.sameerasw.zen_notab_img_enabled") {
     background-image: var(
       --mod-sameerasw-zen_notab_img,
