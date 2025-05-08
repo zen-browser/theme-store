@@ -1,0 +1,14 @@
+{
+    "id": "9fe46ca1-88cf-4794-8a18-a2909c7fc167",
+    "name": "Remove Pinned Tab X",
+    "description": "Removes a pinned tab's close button to prevent pinned tabs from being accidentally closed.",
+    "homepage": "https://github.com/adnval/remove-pinned-tab-x",
+    "style": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/9fe46ca1-88cf-4794-8a18-a2909c7fc167/chrome.css",
+    "readme": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/9fe46ca1-88cf-4794-8a18-a2909c7fc167/readme.md",
+    "image": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/9fe46ca1-88cf-4794-8a18-a2909c7fc167/image.png",
+    "author": "adnval",
+    "version": "1.0.0",
+    "tags": [],
+    "createdAt": "2025-05-08",
+    "updatedAt": "2025-05-08"
+}
