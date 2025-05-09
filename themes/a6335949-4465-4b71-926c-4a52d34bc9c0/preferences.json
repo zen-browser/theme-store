@@ -36,11 +36,11 @@
 		"options": [
 			{
 				"label": "Top",
-				"value": "default"
+				"value": "top"
 			},
 			{
 				"label": "Bottom",
-				"value": "bottom"
+				"value": "default"
 			}
 		]
 	}
