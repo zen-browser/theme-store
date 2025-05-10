@@ -1,27 +1,47 @@
 [
-    {
-        "property": "theme.better_find_bar.transparent_background",
-        "label": "Transparent background",
-        "type": "checkbox"
-    },
-    {
-        "property": "theme.better_find_bar.horizontal_position",
-        "label": "Horizontal position",
-        "type": "dropdown",
-        "disabledOn": [],
-        "options": [
-            {
-                "label": "Left",
-                "value": "left"
-            },
-            {
-                "label": "Center",
-                "value": "default"
-            },
-            {
-                "label": "Right",
-                "value": "right"
-            }
-        ]
-    }
+	{
+		"property": "theme.better_find_bar.transparent_background",
+		"label": "Transparent background",
+		"type": "checkbox"
+	},
+	{
+		"property": "theme.better_find_bar.horizontal_position",
+		"label": "Horizontal position",
+		"type": "dropdown",
+		"disabledOn": [],
+		"placeholder": "Select horizontal position",
+		"defaultValue": "default",
+		"options": [
+			{
+				"label": "Left",
+				"value": "left"
+			},
+			{
+				"label": "Center",
+				"value": "default"
+			},
+			{
+				"label": "Right",
+				"value": "right"
+			}
+		]
+	},
+	{
+		"property": "theme.better_find_bar.vertical_position",
+		"label": "Vertical position",
+		"type": "dropdown",
+		"disabledOn": [],
+		"placeholder": "Select vertical position",
+		"defaultValue": "default",
+		"options": [
+			{
+				"label": "Top",
+				"value": "top"
+			},
+			{
+				"label": "Bottom",
+				"value": "default"
+			}
+		]
+	}
 ]
