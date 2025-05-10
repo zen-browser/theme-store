@@ -1,0 +1,14 @@
+{
+    "id": "e51b85e6-cef5-45d4-9fff-6986637974e1",
+    "name": "smaller zen toast popup",
+    "description": "Makes the 'New background tab opened!' toast popup notification less distracting and adds hover",
+    "homepage": "https://github.com/lenzfliker/zen-mods/tree/main/%5BMOD%5D%20smaller%20zen%20toast%20popup",
+    "style": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/e51b85e6-cef5-45d4-9fff-6986637974e1/chrome.css",
+    "readme": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/e51b85e6-cef5-45d4-9fff-6986637974e1/readme.md",
+    "image": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/e51b85e6-cef5-45d4-9fff-6986637974e1/image.png",
+    "author": "lenzfliker",
+    "version": "1.0.0",
+    "tags": [],
+    "createdAt": "2025-05-09",
+    "updatedAt": "2025-05-10"
+}

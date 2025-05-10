@@ -1,0 +1,36 @@
+
+#zen-toast-container {
+  top: calc(var(--zen-element-separation) * 6) !important;
+  
+  :root:not([zen-right-side='true']) & {
+    right: calc(var(--zen-element-separation) * 2) !important;
+  }
+
+:root[zen-right-side='true'] & {
+    left: calc(var(--zen-element-separation) * 2) !important;
+  }
+
+& .zen-toast {
+
+padding: 6px !important;
+    border-radius: 12px !important;
+    font-weight: 600 !important;
+    font-size: 12px !important;
+    box-shadow: 0px !important ;
+    border: 1px solid rgba(0, 0, 0, 0.2) !important;
+    background: rgba(255, 255, 255, 0.2)  !important;
+    color: color-mix(in srgb, var(--button-primary-color) 20%, transparent) !important;
+    
+    & .description {
+        font-size: 10px !important;
+    }
+  }
+
+& .zen-toast:hover {
+    background: var(--zen-primary-color) !important;
+    color: var(--button-primary-color) !important;
+    border: 1px solid rgba(0, 0, 0, 0.0) !important;
+    transition: 0.3s !important;
+  }
+
+}
