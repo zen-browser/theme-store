@@ -1,6 +1,6 @@
-/* transparency */
+/* variables */
 :root {
-  @media (-moz-bool-pref: "mod.sameerasw.zen_bg_color_enabled") {
+  @media -moz-pref( "mod.sameerasw.zen_bg_color_enabled") {
     --zen-main-browser-background: var(
       --mod-sameerasw-zen_transparency_color,
       #00000000
@@ -8,36 +8,26 @@
   }
 }
 
-/* Remove new tab background color added in 1.8b */
+/* tab tint */
 .browserStack {
   browser {
-    @media (-moz-bool-pref: "mod.sameerasw.zen_light_tint_flip") {
+    @media -moz-pref( "mod.sameerasw.zen_light_tint_flip") {
       background-color: light-dark(
         rgba(255, 255, 255, 0.1),
         rgba(0, 0, 0, 0.1)
       ) !important;
     }
-    @media (-moz-bool-pref: "mod.sameerasw.zen_light_tint_disabled") {
+    @media -moz-pref( "mod.sameerasw.zen_light_tint_disabled") {
       background-color: transparent !important;
     }
   }
 }
 
-/* hide shadow */
+/* hide shadows */
 hbox.browserSidebarContainer,
 #zen-tabbox-wrapper {
-  @media (-moz-bool-pref: "mod.sameerasw.zen_no_shadow") {
+  @media -moz-pref( "mod.sameerasw.zen_no_shadow") {
     box-shadow: none !important;
-  }
-}
-
-/* removed tab bg added in 1.9b */
-#browser:has([zen-empty-tab="true"][selected="true"]) .browserStack {
-  browser {
-    @media (-moz-bool-pref: "mod.sameerasw.zen_empty_page_transparency") {
-      background-color: transparent !important;
-      opacity: 0 !important;
-    }
   }
 }
 
@@ -45,7 +35,7 @@ hbox.browserSidebarContainer,
 /* Tab switch animation */
 #tabbrowser-tabpanels
   > hbox:not([zen-split="true"]):not(:has(.zen-glance-background)) {
-  @media (-moz-bool-pref: "mod.sameerasw.zen_tab_switch_anim") {
+  @media -moz-pref( "mod.sameerasw.zen_tab_switch_anim") {
     transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.35),
       filter 0.45s ease-in-out, opacity 0.35s ease-in-out !important;
     scale: 0.9 !important;
@@ -53,22 +43,22 @@ hbox.browserSidebarContainer,
   }
 }
 #tabbrowser-tabpanels > hbox.deck-selected:not([zen-split="true"]) {
-  @media (-moz-bool-pref: "mod.sameerasw.zen_tab_switch_anim") {
+  @media -moz-pref( "mod.sameerasw.zen_tab_switch_anim") {
     scale: 1 !important;
     opacity: 1 !important;
   }
 }
 
-/* website view animations */
+/* website switch animations */
 #browser:not(:has(.zen-glance-background)) #tabbrowser-tabpanels {
-  @media (-moz-bool-pref: "mod.sameerasw.zen_urlbar_zoom_anim") {
+  @media -moz-pref( "mod.sameerasw.zen_urlbar_zoom_anim") {
     transition: all 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.35) !important;
   }
 }
 
-/* URL bar page animation */
+/* URL bar zoom animation */
 #browser:has(#urlbar[open][zen-floating-urlbar="true"]) #tabbrowser-tabpanels {
-  @media (-moz-bool-pref: "mod.sameerasw.zen_urlbar_zoom_anim") {
+  @media -moz-pref( "mod.sameerasw.zen_urlbar_zoom_anim") {
     pointer-events: none;
     scale: 1.1 !important;
     filter: blur(10px) brightness(70%) !important;
@@ -76,14 +66,14 @@ hbox.browserSidebarContainer,
 }
 
 #urlbar[open][zen-floating-urlbar="true"] #urlbar-background {
-  @media (-moz-bool-pref: "mod.sameerasw.zen_urlbar_zoom_anim") {
+  @media -moz-pref( "mod.sameerasw.zen_urlbar_zoom_anim") {
     border-radius: 1em !important;
   }
 }
 
 /* trackpad gestures*/
 tabpanels .browserStack browser {
-  @media (-moz-bool-pref: "mod.sameerasw.zen_trackpad_anim") {
+  @media -moz-pref( "mod.sameerasw.zen_trackpad_anim") {
     transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.1) 0.1s !important;
     border-radius: 0.75em !important;
   }
@@ -94,7 +84,7 @@ tabpanels .browserStack browser {
     #historySwipeAnimationPreviousArrow:not([style="translate: none;"])
   )
   browser {
-  @media (-moz-bool-pref: "mod.sameerasw.zen_trackpad_anim") {
+  @media -moz-pref( "mod.sameerasw.zen_trackpad_anim") {
     scale: 0.95 !important;
     transform: translateX(3%) !important;
     border-radius: 2em !important;
@@ -106,9 +96,36 @@ tabpanels .browserStack browser {
     #historySwipeAnimationNextArrow:not([style="translate: none;"])
   )
   browser {
-  @media (-moz-bool-pref: "mod.sameerasw.zen_trackpad_anim") {
+  @media -moz-pref( "mod.sameerasw.zen_trackpad_anim") {
     scale: 0.95 !important;
     transform: translateX(-3%) !important;
     border-radius: 2em !important;
+  }
+}
+
+/* no tab image */
+#browser:has([zen-has-empty-tab=""]) .deck-selected .browserStack {
+  @media -moz-pref( "mod.sameerasw.zen_notab_img_enabled") {
+    background-image: var(
+      --mod-sameerasw-zen_notab_img,
+      url("https://raw.githubusercontent.com/zen-browser/branding/refs/heads/main/Official/Word%20Marks/SVG/zen_logo_icon_white.svg")
+    ) !important;
+
+    background-position: center !important;
+    background-repeat: no-repeat !important;
+
+    background-size: var(--mod-sameerasw-zen_notab_img_size, 150px) !important;
+
+    opacity: var(--mod-sameerasw-zen_notab_img_opacity, 1) !important;
+
+    @media -moz-pref( "mod.sameerasw.zen_notab_img_saturate") {
+      filter: saturate(0) !important;
+
+      @media -moz-pref( "mod.sameerasw.zen_notab_img_invert") {
+        @media (prefers-color-scheme: light) {
+          filter: saturate(0) invert(1) !important;
+        }
+      }
+    }
   }
 }
