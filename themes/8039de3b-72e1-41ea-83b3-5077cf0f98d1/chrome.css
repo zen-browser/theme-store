@@ -5,6 +5,19 @@
   --mod-browser-radius-default: var(--user-tab-radius, 8px);
 }
 
+@media (-moz-bool-pref: "tab-shadow-enabled") {
+  .browserStack browser {
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.75);
+  }
+}
+
+@media (-moz-bool-pref: "border-shadow-disabled") {
+  hbox.browserSidebarContainer,
+  #zen-tabbox-wrapper {
+    box-shadow: none !important;
+  }
+}
+
 .browserStack browser {
   transition: all 0.22s cubic-bezier(var(--mod-browser-ease-reset)) !important;
   transform: translateX(0) !important;
