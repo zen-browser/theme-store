@@ -1,0 +1,32 @@
+[
+    {
+        "property": "theme.custom_uifont.default",
+        "label": "Select Font:",
+        "type": "dropdown",
+        "defaultValue": "Serif",
+        "options": [
+            {
+                "label": "Serif",
+                "value": "Serif"
+            },
+            {
+                "label": "Custom",
+                "value": "Custom"
+            }
+        ]
+    },
+    {
+        "property": "theme.custom_uifont.custom",
+        "label": "font-family:",
+        "type": "string",
+        "placeholder": "sans-serif",
+        "defaultValue": "sans-serif"
+    },
+    {
+        "property": "theme.custom_uifont.shadow",
+        "label": "text-shadow:",
+        "type": "string",
+        "placeholder": "0.01em 0.01em 0.05em #7C7C7C70",
+        "defaultValue": "none"
+    }
+]
