@@ -28,6 +28,13 @@
       "placeholder": "e.g. 10px"
     },
     {
+      "property": "user-tab-movement",
+      "label": "Tab movement amount (e.g. 2%)",
+      "type": "string",
+      "defaultValue": "2%",
+      "placeholder": "e.g. 2%"
+    },
+    {
       "property": "tab-shadow-enabled",
       "label": "Enable Tab Shadows(enables shadow aroung the moving page)",
       "type": "checkbox",
