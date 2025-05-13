@@ -1,0 +1,101 @@
+[
+  {
+    "property": "mod.zentoast.background_opacity",
+    "label": "Background opacity",
+    "type": "dropdown",
+    "placeholder": "Select background opacity",
+    "defaultValue": "0.3",
+    "options": [
+      {
+        "label": "10%",
+        "value": "0.1"
+      },
+      {
+        "label": "20%",
+        "value": "0.2"
+      },
+      {
+        "label": "30%",
+        "value": "0.3"
+      },
+      {
+        "label": "40%",
+        "value": "0.4"
+      },
+      {
+        "label": "50%",
+        "value": "0.5"
+      },
+      {
+        "label": "60%",
+        "value": "0.6"
+      }
+    ]
+  },
+  {
+    "property": "mod.zentoast.border_opacity",
+    "label": "Border opacity",
+    "type": "dropdown",
+    "placeholder": "Select border opacity",
+    "defaultValue": "0.3",
+    "options": [
+      {
+        "label": "10%",
+        "value": "0.1"
+      },
+      {
+        "label": "20%",
+        "value": "0.2"
+      },
+      {
+        "label": "30%",
+        "value": "0.3"
+      },
+      {
+        "label": "40%",
+        "value": "0.4"
+      },
+      {
+        "label": "50%",
+        "value": "0.5"
+      },
+      {
+        "label": "60%",
+        "value": "0.6"
+      }
+    ]
+  },
+  {
+    "property": "mod.zentoast.text_opacity",
+    "label": "Text opacity",
+    "type": "dropdown",
+    "placeholder": "Select text opacity",
+    "defaultValue": "0.3",
+    "options": [
+      {
+        "label": "10%",
+        "value": "0.1"
+      },
+      {
+        "label": "20%",
+        "value": "0.2"
+      },
+      {
+        "label": "30%",
+        "value": "0.3"
+      },
+      {
+        "label": "40%",
+        "value": "0.4"
+      },
+      {
+        "label": "50%",
+        "value": "0.5"
+      },
+      {
+        "label": "60%",
+        "value": "0.6"
+      }
+    ]
+  }
+]
