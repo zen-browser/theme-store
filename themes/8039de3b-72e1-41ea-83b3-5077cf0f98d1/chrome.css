@@ -3,6 +3,20 @@
   --mod-browser-ease-swipe: var(--user-browser-ease-swipe, 0.3, 1.2, 0.5, 1);
   --mod-browser-ease-reset: var(--user-browser-ease-reset, 0.2, 1.4, 0.3, 1);
   --mod-browser-radius-default: var(--user-tab-radius, 8px);
+  --mod-browser-translate-x: var(--user-tab-movement, 2%); 
+}
+
+@media (-moz-bool-pref: "tab-shadow-enabled") {
+  .browserStack browser {
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.75);
+  }
+}
+
+@media (-moz-bool-pref: "border-shadow-disabled") {
+  hbox.browserSidebarContainer,
+  #zen-tabbox-wrapper {
+    box-shadow: none !important;
+  }
 }
 
 .browserStack browser {
@@ -18,9 +32,9 @@
 }
 
 .browserStack:has(#historySwipeAnimationPreviousArrow:not([style="translate: none;"])) browser {
-  transform: translateX(3%) !important;
+  transform: translateX(calc(var(--mod-browser-translate-x) * 1)) !important;
 }
 
 .browserStack:has(#historySwipeAnimationNextArrow:not([style="translate: none;"])) browser {
-  transform: translateX(-3%) !important;
+  transform: translateX(calc(var(--mod-browser-translate-x) * -1)) !important;
 }
