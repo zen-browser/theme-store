@@ -1,15 +1,15 @@
 {
     "id": "642854b5-88b4-4c40-b256-e035532109df",
     "name": "Transparent Zen",
-    "description": "Make the Zen Browser's background transparent and modify the empty tab page and have animations that goes along with the transparency. Turn off transparency in mod settings before uninstallation.",
+    "description": "Make the Zen Browser's tab background transparent, get smooth animations and more. Enable  features in mod settings and visit the homepage below to learn more about the features. \ud83d\udc47",
     "homepage": "https://github.com/sameerasw/zen-themes/tree/main/TransparentZen",
     "style": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/642854b5-88b4-4c40-b256-e035532109df/chrome.css",
     "readme": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/642854b5-88b4-4c40-b256-e035532109df/readme.md",
     "image": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/642854b5-88b4-4c40-b256-e035532109df/image.png",
     "author": "sameerasw",
-    "version": "1.11.2b",
+    "version": "1.12.0",
     "tags": [],
     "createdAt": "2025-02-04",
-    "updatedAt": "2025-04-17",
+    "updatedAt": "2025-05-11",
     "preferences": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/642854b5-88b4-4c40-b256-e035532109df/preferences.json"
 }

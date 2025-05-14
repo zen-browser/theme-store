@@ -1,95 +1,105 @@
+
+:root {
+	--better-findbar-transform-translateY: 150px;
+	--better-findbar-transform-translateX: -50%;
+	--better-findbar-position-top: auto;
+	--better-findbar-position-bottom: 15px;
+	--better-findbar-position-left: 50%;
+	--better-findbar-position-right: auto;
+}
+.browserContainer {
+	overflow: clip
+}
+
 findbar {
-  display: flex !important;
+	display: flex !important;
 
-  border-radius: var(--zen-border-radius) !important;
-  margin: 0px !important;
+	border-radius: var(--zen-border-radius) !important;
+	margin: 0px !important;
 
-  width: 90% !important;
-  max-width: 800px;
+	width: 90% !important;
+	max-width: 800px;
 
-  height: auto !important;
+	height: auto !important;
 
-  position: absolute !important;
-  top: 15px;
-  left: 50%;
-  transform: translateX(-50%);
+	position: absolute !important;
+	top: var(--better-findbar-position-top);
+	bottom: var(--better-findbar-position-bottom);
+	left: var(--better-findbar-position-left);
+	right: var(--better-findbar-position-right);
+	transform: translateX(var(--better-findbar-transform-translateX)) translateY(0);
 
-  overflow: unset !important;
-  box-shadow: var(--box-shadow-10);
+	overflow: unset !important;
+	box-shadow: var(--box-shadow-10);
 
-  background: var(--zen-colors-tertiary) !important;
-  border: 1px solid var(--zen-colors-border) !important;
+	background: var(--zen-colors-tertiary) !important;
+	border: 1px solid var(--zen-colors-border) !important;
 
-  transition:
-    top 0.35s ease,
-    bottom 0.35s ease !important;
+	transition: transform 0.35s ease !important;
 
-  visibility: visible !important;
-  opacity: 1 !important;
+	visibility: visible !important;
+	opacity: 1 !important;
 
-  & .findbar-container {
-    flex-wrap: wrap;
-    overflow-x: auto !important;
-    height: auto !important;
+	& .findbar-container {
+		flex-wrap: wrap;
+		overflow-x: auto !important;
+		height: auto !important;
 
-    row-gap: 10px;
+		row-gap: 10px;
 
-    & > :first-child {
-      width: 100% !important;
-    }
+		& > :first-child {
+			width: 100% !important;
+		}
 
-    & .findbar-textbox {
-      flex-grow: 1;
-    }
-  }
+		& .findbar-textbox {
+			flex-grow: 1;
+		}
+	}
 
-  &[hidden="true"] {
-    top: -150px;
-  }
+	&[hidden="true"] {
+		transform: translateX(var(--better-findbar-transform-translateX)) translateY(var(--better-findbar-transform-translateY));
+	}
 
-  @starting-style {
-    top: -150px;
-  }
+	@starting-style {
+		transform: translateX(var(--better-findbar-transform-translateX)) translateY(var(--better-findbar-transform-translateY));
+	}
 }
 
 /* Horizontal Position */
 body:has(
-    #theme-Better-Find-Bar[theme-better_find_bar-horizontal_position="left"]
-  ) {
-  findbar {
-    left: 15px;
-    transform: translateX(0%);
-  }
+		#theme-Better-Find-Bar[theme-better_find_bar-horizontal_position="left"]
+	) {
+	--better-findbar-transform-translateX: 0%;
+	--better-findbar-position-left: 15px;
+	--better-findbar-position-right: auto;
 }
 
 body:has(
-    #theme-Better-Find-Bar[theme-better_find_bar-horizontal_position="right"]
-  ) {
-  findbar {
-    left: unset !important;
-    right: 15px;
-    transform: translateX(0%);
-  }
+		#theme-Better-Find-Bar[theme-better_find_bar-horizontal_position="right"]
+	) {
+	--better-findbar-transform-translateX: 0%;
+	--better-findbar-position-left: auto;
+	--better-findbar-position-right: 15px;
 }
+
+body:has(
+		#theme-Better-Find-Bar[theme-better_find_bar-vertical_position="top"]
+	) {
+	--better-findbar-transform-translateY: -150px;
+	--better-findbar-position-bottom: auto;
+	--better-findbar-position-top: 15px;
+}
+
 
 /* Background blur */
 @media (-moz-bool-pref: "theme.better_find_bar.transparent_background") {
-  findbar,
-  findbar .findbar-textbox:not([status="notfound"]) {
-    backdrop-filter: blur(15px);
+	findbar, findbar .findbar-textbox:not([status="notfound"]) {
+		backdrop-filter: blur(8px);
 
-    background: color-mix(
-      in hsl,
-      var(--zen-colors-tertiary),
-      transparent 30%
-    ) !important;
-  }
+		background: color-mix(in hsl, var(--zen-colors-tertiary), transparent 30%) !important;
+	}
 
-  findbar .findbar-textbox:not([status="notfound"]) {
-    background: color-mix(
-      in hsl,
-      var(--zen-colors-tertiary),
-      transparent 10%
-    ) !important;
-  }
+	findbar .findbar-textbox:not([status="notfound"]) {
+		background: color-mix(in hsl, var(--zen-colors-tertiary), transparent 10%) !important;
+	}
 }

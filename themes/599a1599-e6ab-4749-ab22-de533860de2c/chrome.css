@@ -3,7 +3,7 @@
 	background-color: rgba(0, 0, 0, 0) !important;
 }
 
-#close, #unpip {
+#close, #unpip, #minimize {
 	fill: white !important;
 	padding: 5px !important;
 	top: 2px !important;
@@ -23,6 +23,11 @@
 #unpip {
 	left: 5px !important;
 	right: auto !important;
+}
+
+#minimize {
+	left: auto !important;
+	right: 35px !important;
 }
 
 #controls {

@@ -1,0 +1,53 @@
+
+#zen-toast-container {
+  top: calc(var(--zen-element-separation) * 6) !important;
+  
+  :root:not([zen-right-side='true']) & {
+    right: calc(var(--zen-element-separation) * 2) !important;
+  }
+
+  :root[zen-right-side='true'] & {
+    left: calc(var(--zen-element-separation) * 2) !important;
+  }
+
+  & .zen-toast {
+    padding: 6px !important;
+    border-radius: 12px !important;
+    font-weight: 600 !important;
+    font-size: 12px !important;
+    box-shadow: 0px !important ;
+    
+    & .description {
+        font-size: 10px !important;
+    }
+
+    &:has(#mod-zentoast[mod-zentoast-background_opacity="0.1"]) { background: rgba(255, 255, 255, 0.1) !important; }
+    &:has(#mod-zentoast[mod-zentoast-background_opacity="0.2"]) { background: rgba(255, 255, 255, 0.2) !important; }
+    &:has(#mod-zentoast[mod-zentoast-background_opacity="0.3"]) { background: rgba(255, 255, 255, 0.3) !important; }
+    &:has(#mod-zentoast[mod-zentoast-background_opacity="0.4"]) { background: rgba(255, 255, 255, 0.4) !important; }
+    &:has(#mod-zentoast[mod-zentoast-background_opacity="0.5"]) { background: rgba(255, 255, 255, 0.5) !important; }
+    &:has(#mod-zentoast[mod-zentoast-background_opacity="0.6"]) { background: rgba(255, 255, 255, 0.6) !important; }
+
+    &:has(#mod-zentoast[mod-zentoast-border_opacity="0.1"]) { border: 1px solid rgba(0, 0, 0, 0.1) !important; }
+    &:has(#mod-zentoast[mod-zentoast-border_opacity="0.2"]) { border: 1px solid rgba(0, 0, 0, 0.2) !important; }
+    &:has(#mod-zentoast[mod-zentoast-border_opacity="0.3"]) { border: 1px solid rgba(0, 0, 0, 0.3) !important; }
+    &:has(#mod-zentoast[mod-zentoast-border_opacity="0.4"]) { border: 1px solid rgba(0, 0, 0, 0.4) !important; }
+    &:has(#mod-zentoast[mod-zentoast-border_opacity="0.5"]) { border: 1px solid rgba(0, 0, 0, 0.5) !important; }
+    &:has(#mod-zentoast[mod-zentoast-border_opacity="0.6"]) { border: 1px solid rgba(0, 0, 0, 0.6) !important; }
+
+    &:has(#mod-zentoast[mod-zentoast-text_opacity="0.1"]) { color: rgba(0, 0, 0, 0.1) !important; }
+    &:has(#mod-zentoast[mod-zentoast-text_opacity="0.2"]) { color: rgba(0, 0, 0, 0.2) !important; }
+    &:has(#mod-zentoast[mod-zentoast-text_opacity="0.3"]) { color: rgba(0, 0, 0, 0.3) !important; }
+    &:has(#mod-zentoast[mod-zentoast-text_opacity="0.4"]) { color: rgba(0, 0, 0, 0.4) !important; }
+    &:has(#mod-zentoast[mod-zentoast-text_opacity="0.5"]) { color: rgba(0, 0, 0, 0.5) !important; }
+    &:has(#mod-zentoast[mod-zentoast-text_opacity="0.6"]) { color: rgba(0, 0, 0, 0.6) !important; }
+
+    &:hover {
+      background: var(--zen-primary-color) !important;
+      color: var(--button-primary-color) !important;
+      border: 1px solid rgba(0, 0, 0, 0.0) !important;
+      transition: 0.3s !important;
+    }
+  }
+
+}

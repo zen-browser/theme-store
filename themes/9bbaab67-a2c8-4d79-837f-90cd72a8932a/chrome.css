@@ -1,14 +1,21 @@
-
-#zen-essentials-container > tab > stack:nth-child(1) > hbox:nth-child(2) > stack:nth-child(2) > img:nth-child(3) {
-  height: 32px !important;
-  width: 32px !important;
+.zen-essentials-container {
+	grid-template-columns: repeat(auto-fit, minmax(80px, auto)) !important;
 }
 
-#zen-essentials-container > tab > stack:nth-child(1) > hbox:nth-child(2) > stack:nth-child(2) {
-    padding: 16px !important;
-}
+.zen-essentials-container
+	> tab
+	> stack:nth-child(1)
+	> hbox:nth-child(2)
+	> stack:nth-child(2) {
+		padding: 16px !important;
+	}
 
-#zen-essentials-container {
-    gap: 8px 8px !important;
-    grid-template-columns: repeat(auto-fit, minmax(80px, auto)) !important;
-}
+.zen-essentials-container
+	> tab
+	> stack:nth-child(1)
+	> hbox:nth-child(2)
+	> stack:nth-child(2)
+	> img:nth-child(3) {
+		height: 32px !important;
+		width: 32px !important;
+	}
