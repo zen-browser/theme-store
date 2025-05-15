@@ -1,7 +1,6 @@
-
 .pip-wrapper[position="top-right"] {
     top: var(--pip-toggle-distanceFromVideoEdge) !important;
-    right: calc(var(--pip-icon-width-with-margins) + var(--pip-toggle-distanceFromVideoEdge));
+    right: calc(var(--pip-icon-width-with-margins) + var(--pip-toggle-distanceFromVideoEdge)) !important;
 }
 
 .pip-wrapper[position="top-left"] {
