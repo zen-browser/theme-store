@@ -1,0 +1,14 @@
+{
+    "id": "189dc27c-7cb1-447d-9a26-c8990438a948",
+    "name": "Transparent New Tab",
+    "description": "Set the blank page in new tabs to transparent for a clean new tab view.",
+    "homepage": "https://github.com/TheBigWazz/TransparentNewTabZen",
+    "style": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/189dc27c-7cb1-447d-9a26-c8990438a948/chrome.css",
+    "readme": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/189dc27c-7cb1-447d-9a26-c8990438a948/readme.md",
+    "image": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/189dc27c-7cb1-447d-9a26-c8990438a948/image.png",
+    "author": "TheBigWazz",
+    "version": "1.0.0",
+    "tags": [],
+    "createdAt": "2024-11-07",
+    "updatedAt": "2024-11-07"
+}
