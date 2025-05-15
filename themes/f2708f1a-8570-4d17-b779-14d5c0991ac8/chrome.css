@@ -1,0 +1,9 @@
+
+html[inFullscreen="true"] {
+  #zen-main-app-wrapper {
+    --zen-element-separation: 0px;
+  }
+  .browserSidebarContainer {
+    border-radius: 0px !important;
+  }
+}
