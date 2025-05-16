@@ -1,4 +1,3 @@
-
-.browserContainer {
-    clip-path: inset(0 round var(--zen-native-inner-radius));
+.browserContainer, .browserStack {
+	clip-path: inset(0 round var(--zen-native-inner-radius));
 }
