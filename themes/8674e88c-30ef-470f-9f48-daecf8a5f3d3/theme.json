@@ -1,0 +1,14 @@
+{
+    "id": "8674e88c-30ef-470f-9f48-daecf8a5f3d3",
+    "name": "Minimal Bookmarks",
+    "description": "A minimal theme that hides bookmark text in the bookmarks bar, showing only icons for a cleaner look.",
+    "homepage": "https://github.com/Ranamzes/ZenBrowser-Mods/tree/main/minimal-bookmarks",
+    "style": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/8674e88c-30ef-470f-9f48-daecf8a5f3d3/chrome.css",
+    "readme": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/8674e88c-30ef-470f-9f48-daecf8a5f3d3/readme.md",
+    "image": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/8674e88c-30ef-470f-9f48-daecf8a5f3d3/image.png",
+    "author": "Ranamzes",
+    "version": "1.0.0",
+    "tags": [],
+    "createdAt": "2025-02-13",
+    "updatedAt": "2025-02-13"
+}
