@@ -4,18 +4,19 @@ tab-group[split-view-group] {
     padding: 2px 2px !important;
     position: relative;
 
-&::after {
+    &::after {
         content: '';
-        width: 1px;
+        width: 3px;
         height: calc(100% - 8px);
-        background-color: light-dark(rgba(0, 0, 0, 0.1), rgba(255, 255, 255, 0.2));
+        background-color: var(--tab-selected-bgcolor);
         position: absolute;
-        right: 0;
+        left: 2px;
         top: 50%;
         transform: translateY(-50%);
+        border-radius: 2px
     }
 
-&:hover, &:has(> tab:is([visuallyselected], [multiselected])){
+    &:hover, &:has(> tab:is([visuallyselected], [multiselected])){
         &::after{
             width: 0;
         }
