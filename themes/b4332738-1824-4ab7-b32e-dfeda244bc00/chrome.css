@@ -1,0 +1,115 @@
+:root {
+    /* Adjust the outline to the outside of the tabs so they don't look smaller than buttons without it */
+    --tab-outline-offset: 0 !important;
+
+    &:not([zen-single-toolbar="true"]) {
+        /* Adjust the toolbar height. */
+        --zen-toolbar-height: calc(38px + var(--zen-element-separation) * 2) !important;
+
+        /* Adjust window control size to be inline with the modified sidebar width. */
+        .titlebar-button {
+            padding: calc(16px + var(--zen-element-separation)) !important;
+        }
+    }
+
+    &:not([zen-sidebar-expanded="true"]) {
+        /* Adjust the regular sidebar width */
+        --tab-min-width: calc(36px + var(--zen-element-separation) * 2) !important;
+
+        /* Adjust the padding below the tab tray in the collapsed sidebar. */
+        #TabsToolbar-customization-target {
+            padding-bottom: calc(var(--zen-element-separation) * 1.5) !important;
+        }
+
+        /* Adjust the padding above the footer icons wrapper below the tab tray. */
+        #zen-sidebar-icons-wrapper {
+            padding-top: calc(var(--zen-element-separation) * 1.5) !important;
+        }
+
+        /* Fixes a bug where the navbar is 1px shorter than it should be. */
+        #nav-bar {
+            margin-bottom: 0 !important; /* Remove the original fix. */
+            margin-top: 1px !important;
+        }
+    }
+
+    &[zen-right-side="true"] #zen-sidebar-top-buttons .titlebar-buttonbox-container {
+        /* Remove the top margin that prevents the window control icons from being centered. */
+        margin-top: 0 !important;
+
+        /* Keep the window control height inline with the toolbar height. */
+        height: var(--zen-toolbar-height) !important;
+    }
+
+    /* Adjust the compact sidebar width */
+    &[zen-compact-mode="true"]:not([customizing]):not([inDOMFullscreen="true"]) {
+        @media (-moz-bool-pref: "zen.view.compact.hide-tabbar"), (-moz-bool-pref: "zen.view.use-single-toolbar") {
+            #navigator-toolbox {
+                --zen-toolbox-max-width: calc(64px + var(--zen-element-separation)) !important;
+            }
+        }
+    }
+}
+
+/* Adjust tab tray containers top margin to prevent clipping. */
+#tabbrowser-tabs {
+    margin-top: 0 !important;
+}
+
+[zen-sidebar-expanded="true"] #tabbrowser-tabs {
+    margin-top: -1px !important;
+}
+
+/* Adjust the padding of the standard sidebar containers. */
+#navigator-toolbox, :root:not([zen-compact-mode="true"]) #TabsToolbar {
+    padding-bottom: var(--zen-element-separation) !important;
+}
+
+/* Adjust the padding of the compact sidebar container. */
+#browser {
+    --zen-toolbox-padding: calc(var(--zen-element-separation) * 1.5) !important;
+}
+
+/* Adjust the padding below the tab tray in the expanded sidebar. */
+#TabsToolbar-customization-target {
+    padding-bottom: var(--zen-element-separation) !important;
+}
+
+/* Adjust the margin of the new-tab button to match tab margins. */
+#navigator-toolbox:not([zen-sidebar-expanded="true"]) #tabbrowser-arrowscrollbox-periphery > toolbarbutton {
+    margin: auto !important;
+    margin-block: var(--tab-block-margin) !important;
+}
+
+/* Adjust the gap between sidebar footer icons. */
+#zen-sidebar-icons-wrapper {
+    padding-top: calc(var(--zen-element-separation) * 2) !important;
+    gap: var(--zen-element-separation) !important;
+}
+
+#zen-essentials-container {
+    /* Remove the fixed gap inside the essential tabs container to match the sidebar tabs tray
+       by relying on tab-block-margin. */
+    gap: 0 !important;
+}
+
+.tabbrowser-tab {
+    /* Remove redundant min-width that breaks the center alignment within the compact sidebar. */
+    min-width: auto !important;
+
+    /* Adjust the outlines of 'essential' tabs inside the 'essentials' container. */
+    &[visuallyselected] {
+        @media (-moz-bool-pref: "zen.theme.essentials-favicon-bg") {
+            .tab-background::before {
+                /* Reduce by 1px to be inline with the modified tab-outline-offset. */
+                margin: 1px !important;
+                border-radius: var(--border-radius-medium) !important;
+            }
+        }
+    }
+}
+
+/* Ensure the window control icons are always centered. */
+.titlebar-button {
+    align-items: center !important;
+}
