@@ -1,0 +1,14 @@
+{
+    "id": "bb146d39-8106-4c32-8fac-2c36fd39518d",
+    "name": "Hide workspace icon",
+    "description": "Zen mod to hide workspace icon",
+    "homepage": "https://github.com/Rafi993/zen-hide-workspace-mod",
+    "style": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/bb146d39-8106-4c32-8fac-2c36fd39518d/chrome.css",
+    "readme": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/bb146d39-8106-4c32-8fac-2c36fd39518d/readme.md",
+    "image": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/bb146d39-8106-4c32-8fac-2c36fd39518d/image.png",
+    "author": "Rafi993",
+    "version": "1.0.0",
+    "tags": [],
+    "createdAt": "2025-05-19",
+    "updatedAt": "2025-05-19"
+}
