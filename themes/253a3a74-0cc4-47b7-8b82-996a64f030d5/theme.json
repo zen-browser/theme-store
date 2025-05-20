@@ -1,7 +1,7 @@
 {
     "id": "253a3a74-0cc4-47b7-8b82-996a64f030d5",
     "name": "Floating History",
-    "description": "Detaches and moves a redesgined history sidebar to the left so that it appears to float and matches the zen aesthetic.",
+    "description": "Improves the history tab by matching the browser theme, make it floating, more responsive, and allow placing it on either side.",
     "homepage": "https://github.com/ahmaadaziz/zen-floating-history",
     "style": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/253a3a74-0cc4-47b7-8b82-996a64f030d5/chrome.css",
     "readme": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/253a3a74-0cc4-47b7-8b82-996a64f030d5/readme.md",
@@ -9,6 +9,6 @@
     "author": "ahmaadaziz",
     "createdAt": "2024-10-12",
     "updatedAt": "2025-01-26",
-    "version": "1.0.0",
+    "version": "2.0.0",
     "tags": []
 }
