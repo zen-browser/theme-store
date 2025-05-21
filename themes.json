@@ -54,7 +54,7 @@
         "version": "1.12.0",
         "tags": [],
         "createdAt": "2025-02-04",
-        "updatedAt": "2025-05-11",
+        "updatedAt": "2025-05-21",
         "preferences": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/642854b5-88b4-4c40-b256-e035532109df/preferences.json"
     },
     "13696593-837d-464d-adf4-ff13bd0e0545": {
@@ -187,17 +187,18 @@
     },
     "1e86cf37-a127-4f24-b919-d265b5ce29a0": {
         "id": "1e86cf37-a127-4f24-b919-d265b5ce29a0",
-        "name": "Cleaner Extension Menu",
+        "name": "Cleaner Extensions",
         "description": "Remove header and reduce width of the Unified Extension Menu in Zen",
         "homepage": "",
         "style": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/1e86cf37-a127-4f24-b919-d265b5ce29a0/chrome.css",
         "readme": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/1e86cf37-a127-4f24-b919-d265b5ce29a0/readme.md",
         "image": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/1e86cf37-a127-4f24-b919-d265b5ce29a0/image.png",
         "author": "KiKaraage",
-        "version": "1.0.0",
+        "version": "2.1.0",
+        "preferences": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/1e86cf37-a127-4f24-b919-d265b5ce29a0/preferences.json",
         "tags": [],
         "createdAt": "2024-09-03",
-        "updatedAt": "2025-02-09"
+        "updatedAt": "2025-05-21"
     },
     "0d218357-d5be-48f1-bbc0-5e7cb2d2e11f": {
         "id": "0d218357-d5be-48f1-bbc0-5e7cb2d2e11f",
@@ -325,7 +326,7 @@
         "version": "1.1.1",
         "tags": [],
         "createdAt": "2025-05-09",
-        "updatedAt": "2025-05-20"
+        "updatedAt": "2025-05-21"
     },
     "272850c0-36b4-4867-be8f-7c4b5942069f": {
         "id": "272850c0-36b4-4867-be8f-7c4b5942069f",
@@ -1001,7 +1002,7 @@
         "image": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/253a3a74-0cc4-47b7-8b82-996a64f030d5/image.png",
         "author": "ahmaadaziz",
         "createdAt": "2024-10-12",
-        "updatedAt": "2025-05-20",
+        "updatedAt": "2025-05-21",
         "version": "2.0.0",
         "tags": []
     },
@@ -1035,7 +1036,7 @@
         "version": "1.2.1",
         "tags": [],
         "createdAt": "2025-04-08",
-        "updatedAt": "2025-05-13"
+        "updatedAt": "2025-05-21"
     },
     "58649066-2b6f-4a5b-af6d-c3d21d16fc00": {
         "id": "58649066-2b6f-4a5b-af6d-c3d21d16fc00",
