@@ -2,14 +2,15 @@
     {
         "property": "theme.better_find_bar.transparent_background",
         "label": "Transparent background",
-        "type": "checkbox"
+        "type": "checkbox",
+        "defaultValue": true
     },
     {
         "property": "theme.better_find_bar.horizontal_position",
         "label": "Horizontal position",
         "type": "dropdown",
         "disabledOn": [],
-        "placeholder": "Select horizontal position",
+        "placeholder": "Use default",
         "defaultValue": "default",
         "options": [
             {
@@ -31,7 +32,7 @@
         "label": "Vertical position",
         "type": "dropdown",
         "disabledOn": [],
-        "placeholder": "Select vertical position",
+        "placeholder": "Use default",
         "defaultValue": "default",
         "options": [
             {
@@ -43,5 +44,95 @@
                 "value": "default"
             }
         ]
+    },
+    {
+        "property": "theme.better_find_bar.textbox_width",
+        "label": "Textbox width (px)",
+        "type": "string",
+        "defaultValue": "800"
+    },
+    {
+        "property": "theme.better_find_bar.hide_highlight",
+        "label": "Hide \"highlight\" checkbox",
+        "type": "dropdown",
+        "disabledOn": [],
+        "placeholder": "Show",
+        "defaultValue": "not_hide",
+        "options": [
+            {
+                "label": "Hide",
+                "value": "hide_immediately"
+            },
+            {
+                "label": "Show only when checked",
+                "value": "hide_on_disable"
+            }
+        ]
+    },
+    {
+        "property": "theme.better_find_bar.hide_match_case",
+        "label": "Hide \"match case\" checkbox",
+        "type": "dropdown",
+        "disabledOn": [],
+        "placeholder": "Show",
+        "defaultValue": "not_hide",
+        "options": [
+            {
+                "label": "Hide",
+                "value": "hide_immediately"
+            },
+            {
+                "label": "Show only when checked",
+                "value": "hide_on_disable"
+            }
+        ]
+    },
+    {
+        "property": "theme.better_find_bar.hide_match_diacritics",
+        "label": "Hide \"match diacritics\" checkbox",
+        "type": "dropdown",
+        "disabledOn": [],
+        "placeholder": "Show",
+        "defaultValue": "not_hide",
+        "options": [
+            {
+                "label": "Hide",
+                "value": "hide_immediately"
+            },
+            {
+                "label": "Show only when checked",
+                "value": "hide_on_disable"
+            }
+        ]
+    },
+    {
+        "property": "theme.better_find_bar.hide_whole_words",
+        "label": "Hide \"whole words\" checkbox",
+        "type": "dropdown",
+        "disabledOn": [],
+        "placeholder": "Show",
+        "defaultValue": "not_hide",
+        "options": [
+            {
+                "label": "Hide",
+                "value": "hide_immediately"
+            },
+            {
+                "label": "Show only when checked",
+                "value": "hide_on_disable"
+            }
+        ]
+    },
+    {
+        "property": "theme.better_find_bar.hide_find_status",
+        "label": "Hide find status label",
+        "type": "checkbox",
+        "defaultValue": false
+    },
+    {
+        "property": "theme.better_find_bar.hide_found_matches",
+        "label": "Hide found matches label",
+        "type": "checkbox",
+        "defaultValue": false
     }
 ]
