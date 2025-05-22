@@ -1,11 +1,11 @@
-@media not (-moz-bool-pref: "theme.nosidebarscrollbar.before180b") {
-    #zen-tabs-wrapper {
+@media not (-moz-bool-pref: "theme.nosidebarscrollbar.beforebefore125b") {
+    scrollbox:nth-child(5) {
         scrollbar-width: none !important;
     }
 }
 
-@media (-moz-bool-pref: "theme.nosidebarscrollbar.before180b") {
-    #zen-browser-tabs-wrapper {
+@media (-moz-bool-pref: "theme.nosidebarscrollbar.beforebefore125b") {
+    #zen-tabs-wrapper {
         scrollbar-width: none !important;
     }
 }
