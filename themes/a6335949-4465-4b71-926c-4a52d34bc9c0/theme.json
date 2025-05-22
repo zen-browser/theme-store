@@ -9,7 +9,13 @@
     "author": "RobotoSkunk",
     "preferences": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/a6335949-4465-4b71-926c-4a52d34bc9c0/preferences.json",
     "version": "1.3.0",
-    "tags": [ "find", "bar", "search", "searchbar", "find-bar" ],
+    "tags": [
+        "find",
+        "bar",
+        "search",
+        "searchbar",
+        "find-bar"
+    ],
     "createdAt": "2024-11-24",
     "updatedAt": "2025-05-22"
 }
