@@ -1,0 +1,35 @@
+
+:root {
+  --letterbox-multiply-calculated: calc(6px * var(--letterbox-multiply-factor));
+}
+
+:root[zen-single-toolbar='true']:not([customizing]) {
+  #zen-appcontent-navbar-container {
+    @media (-moz-bool-pref: 'zen.view.hide-window-controls') {
+      &:not([zen-has-hover='true']):not([has-popup-menu]):not(:focus-within):not(:has(*:is([panelopen='true'], [open='true']))) {
+        height: 0px !important;
+      }
+    }
+  }
+}
+
+:root:not([inDOMFullscreen='true']):not([chromehidden~='location']):not([chromehidden~='toolbar']) {
+  & #zen-tabbox-wrapper {
+    margin-bottom: var(--letterbox-multiply-calculated) !important;
+  }
+  
+  &[zen-single-toolbar='true'] {
+    & #zen-tabbox-wrapper {
+      margin-top: var(--letterbox-multiply-calculated) !important;
+      transition: margin-top 0.15s ease;
+      transition-delay: 0.2s;
+    }
+    & #zen-appcontent-navbar-container[zen-has-hover="true"] + #zen-tabbox-wrapper {
+      margin-top: 0 !important;
+    }
+  }
+  
+  &:not([zen-right-side="true"]) #zen-tabbox-wrapper {
+    margin-right: var(--letterbox-multiply-calculated) !important;
+  }
+}
