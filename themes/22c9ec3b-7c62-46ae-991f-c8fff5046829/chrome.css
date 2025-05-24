@@ -5,10 +5,7 @@ tabs {
   counter-reset: tab-counter;
 } /* Automatically increment tab numbers for each .tab-content inside a tab */ /* Styles when the sidebar is expanded */
 @media (-moz-bool-pref: "zen.view.sidebar-expanded") {
-  .zen-workspace-tabs-section[active="true"]
-    tab:not([zen-glance-tab="true"])
-    > .tab-stack
-    > .tab-content::after {
+  tab:not([zen-glance-tab="true"]) > .tab-stack > .tab-content::after {
     counter-increment: tab-counter;
     content: counter(
       tab-counter
@@ -45,10 +42,7 @@ tabs {
   }
 
   /*  Hide tab numbers on the right side when hovering over */
-  .zen-workspace-tabs-section
-    tab:not([zen-glance-tab="true"])
-    > .tab-stack
-    > .tab-content:hover::after {
+  tab:not([zen-glance-tab="true"]) > .tab-stack > .tab-content:hover::after {
     opacity: 0; /* Make it invisible */
     width: 0; /* In order to bring the close button to the right */
     margin: 0;
@@ -65,10 +59,7 @@ tabs {
     tab:not([zen-glance-tab="true"]) > .tab-stack > .tab-content::after {
       display: none; /* Hide the ::after pseudo-element first */
     }
-    .zen-workspace-tabs-section[active="true"]
-      tab:not([zen-glance-tab="true"])
-      > .tab-stack
-      > .tab-content::before {
+    tab:not([zen-glance-tab="true"]) > .tab-stack > .tab-content::before {
       counter-increment: tab-counter;
       content: counter(
         tab-counter
@@ -96,10 +87,7 @@ tabs {
   }
 } /* Styles when the sidebar is NOT expanded (compact mode) */
 @media not (-moz-bool-pref: "zen.view.sidebar-expanded") {
-  .zen-workspace-tabs-section[active="true"]
-    tab:not([zen-glance-tab="true"])
-    > .tab-stack
-    > .tab-content::before {
+  tab:not([zen-glance-tab="true"]) > .tab-stack > .tab-content::before {
     counter-increment: tab-counter;
     content: counter(tab-counter) "";
     position: absolute;
@@ -112,10 +100,7 @@ tabs {
     color: var(--number_color, inherit); /* Fallback to default color */
   } /* Put tab numbers on the left side when compact_side="Left" (AND in compact mode) */
   :root:has(#theme-Tab-Numbers[uc-theme-compact_side="Left"]) {
-    .zen-workspace-tabs-section[active="true"]
-      tab:not([zen-glance-tab="true"])
-      > .tab-stack
-      > .tab-content::before {
+    tab:not([zen-glance-tab="true"]) > .tab-stack > .tab-content::before {
       counter-increment: tab-counter;
       content: counter(tab-counter) "";
       position: absolute;
