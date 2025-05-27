@@ -1,0 +1,182 @@
+
+body:not(:has([mod-no_gaps-outline^="_"])) {
+  hbox.browserSidebarContainer {
+    outline: none !important;
+  }
+}
+
+body:not(:has([mod-no_gaps-shadow^="_"])) {
+  hbox.browserSidebarContainer {
+    box-shadow: none !important;
+  }
+}
+
+body:has([mod-no_gaps-shadow="_unsplit"]) {
+  hbox.browserSidebarContainer:not([zen-split="true"]) {
+    box-shadow: none !important;
+  }
+}
+
+body:has([mod-no_gaps-shadow="_split"]) {
+  hbox.browserSidebarContainer[zen-split="true"] {
+    box-shadow: none !important;
+  }
+}
+
+body:not(:has([mod-no_gaps-rounded_corners^="_"])) {
+  #tabbrowser-tabpanels .browserSidebarContainer {
+    border-radius: 0 !important;
+  }
+}
+
+body:has([mod-no_gaps-rounded_corners="_unsplit"]) {
+  #tabbrowser-tabpanels:not([zen-split-view="true"]) .browserSidebarContainer {
+    border-radius: 0 !important;
+  }
+}
+
+body:has([mod-no_gaps-rounded_corners="_split"]) {
+  #tabbrowser-tabpanels[zen-split-view="true"] .browserSidebarContainer {
+    border-radius: 0 !important;
+  }
+}
+
+body:not(:has([mod-no_gaps-gaps^="_"])) {
+  hbox.browserSidebarContainer:not([zen-split="true"]) {
+    margin: 0 !important;
+  }
+
+&:has([mod-no_gaps-outline="_never"]) {
+    hbox.browserSidebarContainer[zen-split="true"] {
+      margin: 1px !important;
+    }
+  }
+  
+  tabbox#tabbrowser-tabbox {
+    --zen-split-row-gap: 0 !important;
+    --zen-split-column-gap: 0 !important;
+  }
+
+div.zen-split-view-splitter[orient="vertical"] {
+    margin-left: calc(-1 * var(--zen-element-separation) + 1px) !important;
+  }
+
+div.zen-split-view-splitter[orient="horizontal"] {
+    height: calc(var(--zen-element-separation) * 2 - 3px) !important;
+    margin-top: calc(-1 * var(--zen-element-separation) + 1px) !important;
+  }
+
+#zen-appcontent-wrapper {
+    margin: 0 !important;
+  }
+  #zen-tabbox-wrapper {
+    margin: 0 !important;
+  }
+}
+
+body:has([mod-no_gaps-gaps="_unsplit"]) {
+  hbox.browserSidebarContainer:not([zen-split="true"]) {
+    margin: 0 !important;
+  }
+
+#zen-appcontent-wrapper:not(:has(
+    > #zen-tabbox-wrapper
+    > #tabbrowser-tabbox
+    > #tabbrowser-tabpanels[zen-split-view="true"]
+  )) {
+
+margin: 0 !important;
+
+& > #zen-tabbox-wrapper {
+      margin: 0 !important;
+    }
+  }
+}
+
+body:has([mod-no_gaps-gaps="_split"]) {
+
+&:has([mod-no_gaps-outline="_never"]) {
+    hbox.browserSidebarContainer[zen-split="true"] {
+      margin: 1px !important;
+    }
+  }
+  
+  tabbox#tabbrowser-tabbox {
+    --zen-split-row-gap: 0 !important;
+    --zen-split-column-gap: 0 !important;
+  }
+
+#zen-appcontent-wrapper:has(
+    > #zen-tabbox-wrapper
+    > #tabbrowser-tabbox
+    > #tabbrowser-tabpanels[zen-split-view="true"]
+  ) {
+    margin: 0 !important;
+
+& > #zen-tabbox-wrapper {
+      margin: 0 !important;
+    }
+  }
+
+div.zen-split-view-splitter[orient="vertical"] {
+    margin-left: calc(-1 * var(--zen-element-separation) + 1px) !important;
+  }
+
+div.zen-split-view-splitter[orient="horizontal"] {
+    height: calc(var(--zen-element-separation) * 2 - 3px) !important;
+    margin-top: calc(-1 * var(--zen-element-separation) + 1px) !important;
+  }    
+}
+  
+:root[zen-single-toolbar="true"]:not([customizing]) {
+    @media -moz-pref("zen.view.hide-window-controls") {
+    
+        /* Always remove top bar */
+        body:has([mod-no_gaps-remove_navbar="_always"]) {
+          #zen-appcontent-navbar-wrapper {
+            display: none !important;
+          }
+        }
+        
+        /* Only in unsplit view */
+        body:has([mod-no_gaps-remove_navbar="_unsplit"])
+            :not(:has(#tabbrowser-tabpanels[zen-split-view="true"])) {
+          #zen-appcontent-navbar-wrapper {
+            display: none !important;
+          }
+        }
+        
+        /* Only in split view */
+        body:has([mod-no_gaps-remove_navbar="_split"])
+            :has(#tabbrowser-tabpanels[zen-split-view="true"]) {
+          #zen-appcontent-navbar-wrapper {
+            display: none !important;
+          }
+        }
+        
+        body:not(:has([mod-no_gaps-remove_navbar^="_"])) {
+          &:not(:has([mod-no_gaps-hide_navbar^="_"])) {
+            #zen-appcontent-wrapper {
+            
+              height: calc(100% + var(--zen-element-separation));
+        
+              & > #zen-tabbox-wrapper {
+                top: calc(-1 * var(--zen-element-separation));
+                z-index: -1 !important;
+                transition: top 0.15s 0.2s ease;
+              }
+        
+              &:not(:has(
+                > #zen-appcontent-navbar-wrapper:not(
+                [zen-has-hover="true"],
+                [has-popup-menu],
+                :focus-within)
+              )) > #zen-tabbox-wrapper {
+                top: 0;
+              }
+              
+            }
+          }
+        }
+    }
+}
