@@ -815,11 +815,11 @@
         "readme": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/2317fd93-c3ed-4f37-b55a-304c1816819e/readme.md",
         "image": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/2317fd93-c3ed-4f37-b55a-304c1816819e/image.png",
         "author": "Kaedriz",
-        "version": "1.2.0",
+        "version": "1.3.0",
         "preferences": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/2317fd93-c3ed-4f37-b55a-304c1816819e/preferences.json",
         "tags": [],
         "createdAt": "2024-12-06",
-        "updatedAt": "2025-03-07"
+        "updatedAt": "2025-05-28"
     },
     "680424a8-a818-406b-98c5-7726214e2a9f": {
         "id": "680424a8-a818-406b-98c5-7726214e2a9f",
@@ -860,13 +860,13 @@
         "readme": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/22c9ec3b-7c62-46ae-991f-c8fff5046829/readme.md",
         "image": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/22c9ec3b-7c62-46ae-991f-c8fff5046829/image.png",
         "author": "philmard",
-        "version": "1.0.6",
+        "version": "1.0.7",
         "preferences": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/22c9ec3b-7c62-46ae-991f-c8fff5046829/preferences.json",
         "tags": [
             "tabs"
         ],
         "createdAt": "2024-11-09",
-        "updatedAt": "2025-05-14"
+        "updatedAt": "2025-05-28"
     },
     "053a3ffa-9233-4554-88f3-076e6a6ebb43": {
         "id": "053a3ffa-9233-4554-88f3-076e6a6ebb43",
