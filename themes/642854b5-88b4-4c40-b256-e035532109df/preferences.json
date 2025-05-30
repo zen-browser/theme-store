@@ -3,13 +3,13 @@
         "property": "browser.tabs.allow_transparent_browser",
         "label": "\ud83d\udc40 Allow transparency (TURN OFF BEFORE UNINSTALL)",
         "type": "checkbox",
-        "defaultValue": true
+        "defaultValue": false
     },
     {
         "property": "zen.widget.linux.transparency",
         "label": "\ud83d\udc40 Allow transparency on linux (TURN OFF BEFORE UNINSTALL)",
         "type": "checkbox",
-        "defaultValue": true,
+        "defaultValue": false,
         "disabledOn": [
             "windows",
             "macos"
