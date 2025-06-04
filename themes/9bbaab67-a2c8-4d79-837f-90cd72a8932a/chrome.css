@@ -1,21 +1,35 @@
+/* tab size */
 .zen-essentials-container {
 	grid-template-columns: repeat(auto-fit, minmax(80px, auto)) !important;
 }
 
+/* icon padding */
 .zen-essentials-container
 	> tab
 	> stack:nth-child(1)
 	> hbox:nth-child(2)
 	> stack:nth-child(2) {
-		padding: 16px !important;
-	}
+	padding: 16px !important;
+}
 
+/* main icon */
 .zen-essentials-container
 	> tab
 	> stack:nth-child(1)
 	> hbox:nth-child(2)
 	> stack:nth-child(2)
 	> img:nth-child(3) {
-		height: 32px !important;
-		width: 32px !important;
-	}
+	height: 32px !important;
+	width: 32px !important;
+}
+
+/* reload icon */
+.zen-essentials-container
+	> tab
+	> stack:nth-child(1)
+	> hbox:nth-child(2)
+	> stack:nth-child(2)
+	> hbox:nth-child(1) {
+	height: 32px !important;
+	width: 32px !important;
+}
