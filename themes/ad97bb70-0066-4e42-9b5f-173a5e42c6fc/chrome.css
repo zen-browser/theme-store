@@ -76,6 +76,19 @@
 
     /* Enables legacy layout for pinned tabs (icon only in grid) */
     @media (-moz-bool-pref: "uc.pins.legacy-layout") {
+        #navigator-toolbox[zen-sidebar-expanded="true"] {
+            & #tabbrowser-tabs {
+                & .tabbrowser-tab {
+                    &[zen-pinned-changed="true"]:not([zen-essential])
+                    > .tab-stack
+                    > .tab-content
+                    > .tab-icon-stack {
+                    position: unset !important;
+                    top: unset !important;
+                    }
+                }
+            }
+        }
 
         #vertical-pinned-tabs-container, .zen-workspace-pinned-tabs-section {
             .tabbrowser-tab[pinned]  {
@@ -241,20 +254,24 @@
 
     /* Puts Essentials at the bottom */
     :has(#theme-SuperPins[uc-essentials-position="bottom"]) {
-        #zen-essentials-container, #zen-essentials-wrapper, #zen-essentials {
-            order: 999 !important;
-            margin-top: auto !important;
-            padding-top: 5px !important;
-            padding-bottom: 4px !important;
-        }
-
         .zen-essentials-container {
             position: relative !important;
-            min-width: 100% !important;
+            margin-top: auto !important;
         }
 
-        .zen-current-workspace-indicator, #zen-tabs-wrapper {
-            margin-top: 0 !important;
+        #zen-essentials-container, #zen-essentials {
+            order: 999 !important;
+        }
+
+        #tabbrowser-arrowscrollbox > zen-workspace {
+            padding-top: 0 !important;
+        }
+
+        #navigator-toolbox[zen-sidebar-expanded="true"] {
+            .zen-essentials-container {
+                min-width: 100% !important;
+                width: 100% !important;
+            }
         }
     }
 
@@ -350,27 +367,21 @@
 
     /* pins height */
     :root:has(#theme-SuperPins[uc-pinned-height="small"]) {
-        #navigator-toolbox[zen-sidebar-expanded="true"] #vertical-pinned-tabs-container:has(> :nth-child(2)) .zen-workspace-tabs-section {
-            &>.tabbrowser-tab, &>tab-group {
-                height: 40px !important;
-            }
-        }
+        arrowscrollbox:nth-child(2) > vbox:nth-child(1) > tab {
+            height: 40px !important;
+        } 
     }
 
     :root:has(#theme-SuperPins[uc-pinned-height="normal"]) {
-        #navigator-toolbox[zen-sidebar-expanded="true"] #vertical-pinned-tabs-container:has(> :nth-child(2)) .zen-workspace-tabs-section {
-            &>.tabbrowser-tab, &>tab-group {
-                height: 50px !important;
-            }
-        }
+        arrowscrollbox:nth-child(2) > vbox:nth-child(1) > tab {
+            height: 50px !important;
+        } 
     }
 
     :root:has(#theme-SuperPins[uc-pinned-height="large"]) {
-        #navigator-toolbox[zen-sidebar-expanded="true"] #vertical-pinned-tabs-container:has(> :nth-child(2)) .zen-workspace-tabs-section {
-            &>.tabbrowser-tab, &>tab-group {
-                height: 60px !important;
-            }
-        }
+        arrowscrollbox:nth-child(2) > vbox:nth-child(1) > tab {
+            height: 60px !important;
+        } 
     }
 
     /* favicon size */
