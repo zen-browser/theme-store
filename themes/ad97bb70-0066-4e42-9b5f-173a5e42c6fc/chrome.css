@@ -203,7 +203,7 @@
 
             #vertical-pinned-tabs-container>.zen-workspace-tabs-section,
             .zen-workspace-pinned-tabs-section {
-                :has(> :nth-child(2)) {
+                &:has(> :nth-child(2)) {
                     padding-bottom: 5px !important;
                 }
             }
@@ -253,7 +253,7 @@
     }
 
     /* Puts Essentials at the bottom */
-    :has(#theme-SuperPins[uc-essentials-position="bottom"]) {
+    :root:has(#theme-SuperPins[uc-essentials-position="bottom"]) {
         .tabbrowser-tab:not([pinned]), #tabs-newtab-button {
             margin-left: var(--zen-toolbox-padding) !important;
             margin-right: var(--zen-toolbox-padding) !important;
@@ -501,6 +501,10 @@
             display: none !important;
         }
 
+        .zen-essentials-container {
+            padding-bottom: 5px;
+        }
+
         :root:has(#theme-SuperPins[uc-tabs-show-separator="essentials-shown"]) {
             #zen-essentials-container, .zen-essentials-container {
                 &:has(~ #zen-tabs-wrapper #zen-browser-tabs-container #vertical-pinned-tabs-container .zen-workspace-tabs-section[active="true"] .tabbrowser-tab) {
@@ -607,6 +611,45 @@
         .zen-workspace-tabs-section .tabbrowser-tab[pinned][selected="true"]:hover .tab-stack .tab-background {
             opacity: 0.8 !important;
             background-color: var(--mod-superpins-pins-active-bg) !important;
+        }
+    }
+
+    @media (-moz-bool-pref: "zen.workspaces.indicator-name-center") {
+        .zen-current-workspace-indicator-name {
+            position: absolute;
+            left: 0;
+            text-align: center;
+            width: 100%;
+        }
+    }
+
+    :root:has(#theme-SuperPins[zen-workspaces-indicator-position="top"]) {
+        .zen-current-workspace-indicator {
+            top: 0;
+        }
+
+        .zen-essentials-container {
+            margin-top: 48px;
+        }
+
+        .workspace-arrowscrollbox {
+            margin-top: 50px;
+        }
+
+        zen-workspace {
+            padding-top: 0 !important;
+        }
+    }
+
+    :root:has(#theme-SuperPins[zen-workspaces-indicator-position="bottom"]) {
+        .zen-current-workspace-indicator {
+            position: fixed !important;
+            bottom: 0;
+            z-index: 200;
+        }
+
+        zen-workspace {
+            margin-top: 2px;
         }
     }
 }
