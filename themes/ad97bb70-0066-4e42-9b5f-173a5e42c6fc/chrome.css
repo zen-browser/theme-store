@@ -367,19 +367,19 @@
 
     /* pins height */
     :root:has(#theme-SuperPins[uc-pinned-height="small"]) {
-        arrowscrollbox:nth-child(2) > vbox:nth-child(1) > tab {
+        .zen-workspace-pinned-tabs-section .tabbrowser-tab {
             height: 40px !important;
         } 
     }
 
     :root:has(#theme-SuperPins[uc-pinned-height="normal"]) {
-        arrowscrollbox:nth-child(2) > vbox:nth-child(1) > tab {
+        .zen-workspace-pinned-tabs-section .tabbrowser-tab {
             height: 50px !important;
         } 
     }
 
     :root:has(#theme-SuperPins[uc-pinned-height="large"]) {
-        arrowscrollbox:nth-child(2) > vbox:nth-child(1) > tab {
+        .zen-workspace-pinned-tabs-section .tabbrowser-tab {
             height: 60px !important;
         } 
     }
