@@ -389,22 +389,38 @@
     }
 
     /* pins height */
+    :root {
+        --pins-height: var(--tab-min-height);
+    }
+
     :root:has(#theme-SuperPins[uc-pinned-height="small"]) {
-        .zen-workspace-pinned-tabs-section .tabbrowser-tab {
-            height: 40px !important;
-        } 
+        --pins-height: 40px;
     }
 
     :root:has(#theme-SuperPins[uc-pinned-height="normal"]) {
-        .zen-workspace-pinned-tabs-section .tabbrowser-tab {
-            height: 50px !important;
-        } 
+        --pins-height: 50px;
     }
 
     :root:has(#theme-SuperPins[uc-pinned-height="large"]) {
+        --pins-height: 60px;
+    }
+
+    :root:has(#theme-SuperPins[uc-pinned-height="small"]),
+    :root:has(#theme-SuperPins[uc-pinned-height="normal"]),
+    :root:has(#theme-SuperPins[uc-pinned-height="large"]) {
         .zen-workspace-pinned-tabs-section .tabbrowser-tab {
-            height: 60px !important;
-        } 
+            height: var(--pins-height) !important;
+        }
+    }
+
+    @media (-moz-bool-pref: "uc.essentials.same-height") {
+        .tabbrowser-tab[zen-essential] {
+            height: var(--pins-height) !important;
+        }
+
+        .tabbrowser-tab[zen-essential] .tab-background {
+            min-height: var(--pins-height) !important;
+        }
     }
 
     /* favicon size */
@@ -568,37 +584,18 @@
     }
 
     @media (-moz-bool-pref: "uc.pins.stay-at-top") {
-        #zen-browser-tabs-container {
-            height: 100% !important;
+        zen-workspace > arrowscrollbox.workspace-arrowscrollbox {
+            overflow-y: hidden !important;
+            flex-basis: 100%;
         }
 
-        #tabbrowser-arrowscrollbox {
-            height: 100% !important;
+        #tabbrowser-arrowscrollbox .zen-workspace-pinned-tabs-section {
+            flex: 0 1 0;
         }
-
-        #tabbrowser-arrowscrollbox>.zen-workspace-tabs-section {
+        
+        #tabbrowser-arrowscrollbox .zen-workspace-normal-tabs-section {
+            flex: 1 1 0;
             overflow-y: auto !important;
-            overflow-x: hidden !important;
-            /* Calculate the height of the bottom workspace section. */
-            max-height: calc(100% - 43px) !important;
-            box-sizing: border-box !important;
-            padding-bottom: 60px !important;
-        }
-
-        /* In case workspace indicator is not visible. */
-        @media (not (-moz-bool-pref: "zen.workspaces.show-workspace-indicator")) {
-            #tabbrowser-arrowscrollbox>.zen-workspace-tabs-section {
-                max-height: calc(100% - 5px) !important;
-            }
-        }
-
-        #zen-tabs-wrapper {
-            overflow: hidden !important;
-        }
-
-        /* Ensure tab-groups never shrink. */
-        tab-group {
-            flex: 0 0 auto !important;
         }
     }
 
