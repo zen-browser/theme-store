@@ -254,6 +254,10 @@
 
     /* Puts Essentials at the bottom */
     :has(#theme-SuperPins[uc-essentials-position="bottom"]) {
+        #tabbrowser-tabs {
+            height: 100% !important;
+        }
+        
         .zen-essentials-container {
             position: relative !important;
             margin-top: auto !important;
