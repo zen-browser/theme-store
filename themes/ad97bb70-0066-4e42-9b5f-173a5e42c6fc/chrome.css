@@ -254,13 +254,32 @@
 
     /* Puts Essentials at the bottom */
     :has(#theme-SuperPins[uc-essentials-position="bottom"]) {
-        #tabbrowser-tabs {
-            height: 100% !important;
+        .tabbrowser-tab:not([pinned]), #tabs-newtab-button {
+            margin-left: var(--zen-toolbox-padding) !important;
+            margin-right: var(--zen-toolbox-padding) !important;
+        }
+
+        .zen-workspace-pinned-tabs-section {
+            max-width: calc(100% - var(--zen-toolbox-padding) * 3) !important;
+            min-width: calc(100% - var(--zen-toolbox-padding) * 3) !important;
+            width: calc(100% - var(--zen-toolbox-padding) * 3) !important;
+            padding-left: calc(var(--zen-toolbox-padding) * 2) !important;
+        }
+
+        .vertical-pinned-tabs-container-separator {
+            width: calc(100% - var(--zen-toolbox-padding) * 3) !important;
+            margin-left: calc(var(--zen-toolbox-padding) / 2) !important;
+        }
+
+        #tabbrowser-arrowscrollbox {
+            position: relative !important;
+            overflow-x: hidden !important;
         }
         
         .zen-essentials-container {
             position: relative !important;
             margin-top: auto !important;
+            padding-top: 8px !important;
         }
 
         #zen-essentials-container, #zen-essentials {
