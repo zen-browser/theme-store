@@ -130,8 +130,8 @@
         "property": "zen.workspaces.show-workspace-indicator",
         "label": "Shows the workspace-indicator between Essentials and Pins",
         "type": "checkbox",
-        "defaultValue": true,
-        "disabledOn": []
+        "disabledOn": [],
+        "defaultValue": false
     },
     {
         "property": "browser.sessionstore.restore_pinned_tabs_on_demand",
