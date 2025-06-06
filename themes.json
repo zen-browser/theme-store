@@ -266,10 +266,10 @@
         "readme": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/9bbaab67-a2c8-4d79-837f-90cd72a8932a/readme.md",
         "image": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/9bbaab67-a2c8-4d79-837f-90cd72a8932a/image.png",
         "author": "leaferiksen",
-        "version": "1.0.1",
+        "version": "1.0.2",
         "tags": [],
         "createdAt": "2025-03-11",
-        "updatedAt": "2025-05-10"
+        "updatedAt": "2025-06-06"
     },
     "c8d9e6e6-e702-4e15-8972-3596e57cf398": {
         "id": "c8d9e6e6-e702-4e15-8972-3596e57cf398",
@@ -1063,13 +1063,13 @@
         "readme": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/ad97bb70-0066-4e42-9b5f-173a5e42c6fc/readme.md",
         "image": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/ad97bb70-0066-4e42-9b5f-173a5e42c6fc/image.png",
         "author": "CosmoCreeper",
-        "version": "1.5.3",
+        "version": "1.5.4",
         "preferences": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/ad97bb70-0066-4e42-9b5f-173a5e42c6fc/preferences.json",
         "tags": [
             "tabs"
         ],
         "createdAt": "2024-08-28",
-        "updatedAt": "2025-05-20"
+        "updatedAt": "2025-06-06"
     },
     "6c122084-c4ec-4c9e-8cc5-3d87c3a089cb": {
         "id": "6c122084-c4ec-4c9e-8cc5-3d87c3a089cb",
