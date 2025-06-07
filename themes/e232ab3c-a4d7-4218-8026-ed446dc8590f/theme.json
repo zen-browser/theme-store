@@ -1,0 +1,14 @@
+{
+    "id": "e232ab3c-a4d7-4218-8026-ed446dc8590f",
+    "name": "Adaptive Zen",
+    "description": "This mod adds support for \u201cAdaptive Tab Bar Colour\u201d to the Zen browser.",
+    "homepage": "https://github.com/easonwong-de/Easons-Zen-Mod-Collection/tree/main/adaptive-zen",
+    "style": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/e232ab3c-a4d7-4218-8026-ed446dc8590f/chrome.css",
+    "readme": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/e232ab3c-a4d7-4218-8026-ed446dc8590f/readme.md",
+    "image": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/e232ab3c-a4d7-4218-8026-ed446dc8590f/image.png",
+    "author": "easonwong-de",
+    "version": "1.0.0",
+    "tags": [],
+    "createdAt": "2025-05-22",
+    "updatedAt": "2025-05-22"
+}
