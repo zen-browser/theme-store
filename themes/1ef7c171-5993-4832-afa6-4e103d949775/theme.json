@@ -1,0 +1,15 @@
+{
+    "id": "1ef7c171-5993-4832-afa6-4e103d949775",
+    "name": "Floating Compact Layout",
+    "description": "Minimalist UI for Compact Mode \u2014 uses Zen colors, centers URL bar, and removes visual clutter.",
+    "homepage": "https://github.com/pjhochman/zen-ui-compact",
+    "style": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/1ef7c171-5993-4832-afa6-4e103d949775/chrome.css",
+    "readme": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/1ef7c171-5993-4832-afa6-4e103d949775/readme.md",
+    "image": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/1ef7c171-5993-4832-afa6-4e103d949775/image.png",
+    "author": "Pjhochman",
+    "version": "1.0.0",
+    "tags": [],
+    "createdAt": "2025-03-25",
+    "updatedAt": "2025-03-25",
+    "preferences": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/1ef7c171-5993-4832-afa6-4e103d949775/preferences.json"
+}
