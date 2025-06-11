@@ -1,7 +1,7 @@
 [
     {
         "property": "mod.extension.viewgrid",
-        "label": "Xtra Clean mode: Present the extensions as grid (credits to Perseus333 and Fushiguro)",
+        "label": "Xtra Clean mode: Present the extensions as grid",
         "type": "checkbox"
     },
     {
