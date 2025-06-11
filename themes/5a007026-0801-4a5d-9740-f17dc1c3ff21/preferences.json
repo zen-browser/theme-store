@@ -1,0 +1,35 @@
+[
+    {
+        "property": "uc.hide-minimize",
+        "label": "Hide the minimize window button",
+        "type": "checkbox",
+        "disabledOn": [
+            "macos"
+        ]
+    },
+    {
+        "property": "uc.hide-maximize",
+        "label": "Hide the maximize window button",
+        "type": "checkbox",
+        "disabledOn": [
+            "macos"
+        ]
+    },
+    {
+        "property": "uc.hide-close",
+        "label": "Hide the close window button",
+        "type": "checkbox",
+        "disabledOn": [
+            "macos"
+        ]
+    },
+    {
+        "property": "uc.hide-window-buttons",
+        "label": "Hide the window buttons",
+        "type": "checkbox",
+        "disabledOn": [
+            "linux",
+            "windows"
+        ]
+    }
+]
