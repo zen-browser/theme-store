@@ -1,6 +1,7 @@
 @media not (-moz-bool-pref: "mod.extension.viewgrid") {
   /* Hide header, description, extension captions */
   #unified-extensions-view box.panel-header,
+  #unified-extensions-view > :nth-child(2),
   #unified-extensions-description,
   #unified-extensions-messages-container,
   .unified-extensions-item-message-deck {
@@ -15,13 +16,15 @@
     padding-block: 0px !important;
   }
   #unified-extensions-manage-extensions {
-    padding-inline: 10px !important;
+    margin-inline: 4px !important;
+    padding: 8px 10px !important;
+    margin-block-end: 4px !important;
   }
   #unified-extensions-panel .unified-extensions-item {
     margin-block: 2px !important;
   }
   #unified-extensions-view .unified-extensions-item-action-button:hover {
-    background-color: transparent !important;
+    background-color: color-mix(in srgb, currentColor 3%, transparent) !important;
   }
   #unified-extensions-view .unified-extensions-item-menu-button.subviewbutton,
   .unified-extensions-item-row-wrapper {
@@ -35,6 +38,7 @@
     .unified-extensions-item-menu-button.subviewbutton > .toolbarbutton-icon {
       opacity: 0.85 !important;
     }
+    background-color: transparent !important;
   }
   #unified-extensions-view .unified-extensions-item-action-button .panel-no-padding .webextension-browser-action {
     padding: 0 !important;
@@ -43,10 +47,10 @@
     max-height: 3em !important;
   }
   #unified-extensions-view .subviewbutton-iconic {
-  & > .toolbarbutton-icon {
-    width: 1.2em !important;
-    height: 1.2em !important;
-    padding: 0.7em !important;
+    & > .toolbarbutton-icon {
+      width: 1.2em !important;
+      height: 1.2em !important;
+      padding: 0.7em !important;
     }
   }
 }
@@ -56,10 +60,11 @@
   #unified-extensions-view {
     width: calc(var(--menu-panel-width) - 75px) !important;
   }
-  
+
   /* Hide the header as well as texts and settings icon for each extension, so only icons are visible */
   #unified-extensions-description,
   #unified-extensions-view .panel-header,
+  #unified-extensions-view > :nth-child(2),
   .unified-extensions-item-name,
   .unified-extensions-item-message,
   .unified-extensions-item-message-hover,
@@ -67,9 +72,9 @@
   .unified-extensions-item-menu-button {
     display: none !important;
   }
-  
+
   /* Arrange extensions in a properly centered 4-column grid */
-  #unified-extensions-area, .unified-extensions-list {
+  #overflowed-extensions-list, #unified-extensions-area, .unified-extensions-list {
     display: grid !important;
     grid-template-columns: repeat(4, 1fr) !important; /* 4 columns */
     justify-content: left !important;
@@ -78,11 +83,11 @@
     width: 0px !important;
     gap: 7px 0px;
   }
-  
+
   #unified-extensions-area {
     padding-block: 7px !important;
   }
-  
+
   /* Ensure the extensions are fully centered with squircle hover shape, and reduce unneeded margins/paddings  */
   .unified-extensions-item {
     display: flex !important;
@@ -97,27 +102,23 @@
   panelview .unified-extensions-item-action-button {
     padding: 5px 10px !important;
   }
-  .unified-extensions-item-row-wrapper .unified-extensions-item-action-button {
-    &:not([disabled]):hover {
-      color: inherit;
-      background-color: transparent !important;
-    }
+  
+  /* Set proper padding for the Manage Extensions button */
+  #unified-extensions-manage-extensions {
+    padding: 8px 16px !important;
+    margin-block-end: 4px !important;
   }
   
   /* Set lighter opacity for passive extension buttons */
   .unified-extensions-item-icon {
     opacity: 0.3;
   }
-  .unified-extensions-list .unified-extensions-item:hover {
-    background-color: color-mix(in srgb, currentColor 6%, transparent) !important;
+  .unified-extensions-item-action-button:hover {
+    background-color: color-mix(in srgb, currentColor 3%, transparent) !important;
   }
-  
-  /* Set proper padding for the Manage Extensions button */
-  #unified-extensions-manage-extensions {
-    padding: 8px 16px !important;
-  }
+
   #unified-extensions-view toolbarseparator {
-    margin-top: 12px !important;
+    margin-top: 8px !important;
   }
 }
 
