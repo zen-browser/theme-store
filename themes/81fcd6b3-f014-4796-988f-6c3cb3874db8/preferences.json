@@ -22,7 +22,7 @@
     },
     {
         "property": "uc.fixcontext.restoreicons",
-        "label": "🔣 Restore back all icons (buggy, hit me up to suggest fixes on KiKaraage/ZenMods repo",
+        "label": "🔣 Restore back all icons (buggy, hit me up to suggest fixes on KiKaraage/ZenMods repo)",
         "type": "checkbox"
     },
     {
