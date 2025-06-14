@@ -385,6 +385,8 @@ tabpanels .browserStack browser {
 
 /* Sidebar background transparency */
 #sidebar-box {
+  @media -moz-pref( "mod.sameerasw.zen_transparent_sidebar_enabled") {
   background-color: transparent !important;
   box-shadow: none !important;
+  }
 }
