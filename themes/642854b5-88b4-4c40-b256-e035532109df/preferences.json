@@ -49,24 +49,6 @@
     "defaultValue": false
   },
   {
-    "property": "mod.sameerasw.zen_tab_switch_anim",
-    "label": "✨ Tab switch animation",
-    "type": "checkbox",
-    "defaultValue": true
-  },
-  {
-    "property": "mod.sameerasw.zen_urlbar_zoom_anim",
-    "label": "✨ URL bar zoom animation",
-    "type": "checkbox",
-    "defaultValue": false
-  },
-  {
-    "property": "mod.sameerasw.zen_trackpad_anim",
-    "label": "✨ Trackpad swipe animations",
-    "type": "checkbox",
-    "defaultValue": false
-  },
-  {
     "property": "mod.sameerasw.zen_notab_img_enabled",
     "label": "🖼️ Add no tab screen background image",
     "type": "checkbox",
@@ -107,7 +89,7 @@
   },
   {
     "property": "mod.sameerasw_zen_compact_sidebar_type",
-    "label": "↔️ Compact sidebar type",
+    "label": "↔️ Compact transparent sidebar type",
     "type": "dropdown",
     "placeholder": "Select an option",
     "defaultValue": "0",
@@ -128,9 +110,52 @@
   },
   {
     "property": "mod.sameerasw.zen_compact_sidebar_width",
-    "label": "Custom compact sidebar width",
+    "label": "↔️ Custom compact sidebar width",
     "type": "string",
     "defaultValue": "165px",
     "placeholder": "165px (use px)"
+  },
+  {
+    "property": "mod.sameerasw.zen_tab_switch_anim",
+    "label": "✨ Tab switch animation",
+    "type": "checkbox",
+    "defaultValue": true
+  },
+  {
+    "property": "mod.sameerasw.zen_urlbar_zoom_anim",
+    "label": "✨ URL bar zoom animation",
+    "type": "checkbox",
+    "defaultValue": false
+  },
+  {
+    "property": "mod.sameerasw.zen_trackpad_anim",
+    "label": "✨ Trackpad swipe animations",
+    "type": "checkbox",
+    "defaultValue": false
+  },
+  {
+    "property": "mod.sameerasw_zen_animations",
+    "label": "✨ Animation smoothness",
+    "type": "dropdown",
+    "placeholder": "Select an option",
+    "defaultValue": "1",
+    "options": [
+      {
+        "label": "Quick Snap",
+        "value": "0"
+      },
+      {
+        "label": "Smooth Flow",
+        "value": "1"
+      },
+      {
+        "label": "Diabolical",
+        "value": "2"
+      },
+      {
+        "label": "Springy",
+        "value": "3"
+      }
+    ]
   }
 ]
