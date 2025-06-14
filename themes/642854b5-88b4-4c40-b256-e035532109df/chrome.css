@@ -382,3 +382,9 @@ tabpanels .browserStack browser {
   outline: none !important;
   box-shadow: none !important;
 }
+
+/* Sidebar background transparency */
+#sidebar-box {
+  background-color: transparent !important;
+  box-shadow: none !important;
+}
