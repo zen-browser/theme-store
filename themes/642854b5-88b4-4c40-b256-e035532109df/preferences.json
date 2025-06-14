@@ -20,6 +20,12 @@
     "disabledOn": ["windows", "macos"]
   },
   {
+    "property": "mod.sameerasw.zen_transparent_sidebar_enabled",
+    "label": "👀 Transparent sidebar (bookmarks, history and sync)",
+    "type": "checkbox",
+    "defaultValue": true
+  },
+  {
     "property": "mod.sameerasw.zen_bg_color_enabled",
     "label": "🎨 Enable custom background color for Zen",
     "type": "checkbox",
