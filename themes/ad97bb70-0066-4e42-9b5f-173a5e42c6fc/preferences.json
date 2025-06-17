@@ -199,6 +199,12 @@
         "disabledOn": []
     },
     {
+        "property": "uc.remove-sidebar-scrollbar",
+        "label": "Removes the sidebar scrollbar",
+        "type": "checkbox",
+        "disabledOn": []
+    },
+    {
         "property": "uc.tabs.show-separator",
         "label": "When to display separator",
         "type": "dropdown",
