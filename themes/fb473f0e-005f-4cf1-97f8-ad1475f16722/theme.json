@@ -1,0 +1,14 @@
+{
+    "id": "fb473f0e-005f-4cf1-97f8-ad1475f16722",
+    "name": "Hide pinned close button",
+    "description": "hide the close button on pinned tabs, to prevent accidental closure.",
+    "homepage": "https://github.com/Bliwi/zenhideclosepinned",
+    "style": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/fb473f0e-005f-4cf1-97f8-ad1475f16722/chrome.css",
+    "readme": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/fb473f0e-005f-4cf1-97f8-ad1475f16722/readme.md",
+    "image": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/fb473f0e-005f-4cf1-97f8-ad1475f16722/image.png",
+    "author": "Bliwi",
+    "version": "1.0.0",
+    "tags": [],
+    "createdAt": "2025-03-10",
+    "updatedAt": "2025-03-10"
+}
