@@ -1,0 +1,14 @@
+{
+    "id": "c1466e17-b19f-442e-9967-eeb00f996ee0",
+    "name": "Dark Docs",
+    "description": "Say goodbye to blinding white documents! Dark Docs applies a dark mode to PDF documents.",
+    "homepage": "https://github.com/SleepInfinity/dark-docs",
+    "style": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/c1466e17-b19f-442e-9967-eeb00f996ee0/chrome.css",
+    "readme": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/c1466e17-b19f-442e-9967-eeb00f996ee0/readme.md",
+    "image": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/c1466e17-b19f-442e-9967-eeb00f996ee0/image.png",
+    "author": "SleepInfinity",
+    "version": "1.0.0",
+    "tags": [],
+    "createdAt": "2025-03-12",
+    "updatedAt": "2025-03-12"
+}
