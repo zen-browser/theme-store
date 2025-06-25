@@ -3,7 +3,6 @@
         "property": "theme.floating_history.position",
         "label": "Position",
         "type": "dropdown",
-        "disabledOn": [],
         "defaultValue": "right",
         "options": [
             {
