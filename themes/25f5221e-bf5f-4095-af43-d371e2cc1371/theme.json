@@ -1,0 +1,14 @@
+{
+    "id": "25f5221e-bf5f-4095-af43-d371e2cc1371",
+    "name": "Shy Switchy Sidebar",
+    "description": "Prevent compact mode sidebar from popping up when switching tabs by keyboard.",
+    "homepage": "https://github.com/different55/ShySwitchySidebar",
+    "style": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/25f5221e-bf5f-4095-af43-d371e2cc1371/chrome.css",
+    "readme": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/25f5221e-bf5f-4095-af43-d371e2cc1371/readme.md",
+    "image": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/25f5221e-bf5f-4095-af43-d371e2cc1371/image.png",
+    "author": "different55",
+    "version": "1.0.0",
+    "tags": [],
+    "createdAt": "2025-02-02",
+    "updatedAt": "2025-02-02"
+}
