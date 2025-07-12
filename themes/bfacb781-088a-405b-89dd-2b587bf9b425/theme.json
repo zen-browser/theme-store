@@ -1,0 +1,14 @@
+{
+    "id": "bfacb781-088a-405b-89dd-2b587bf9b425",
+    "name": "Remove Search One Offs",
+    "description": "Clean up your search suggestions by removing the footer suggesting other search engines",
+    "homepage": "https://github.com/georg-stone/remove-search-one-offs",
+    "style": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/bfacb781-088a-405b-89dd-2b587bf9b425/chrome.css",
+    "readme": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/bfacb781-088a-405b-89dd-2b587bf9b425/readme.md",
+    "image": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/bfacb781-088a-405b-89dd-2b587bf9b425/image.png",
+    "author": "georg-stone",
+    "version": "1.0.0",
+    "tags": [],
+    "createdAt": "2024-11-16",
+    "updatedAt": "2024-11-16"
+}
