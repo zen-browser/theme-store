@@ -1,14 +1,14 @@
 {
-    "id": "7d577b21-4685-4db2-bb17-d39d08eec199",
-    "name": "Bleeding Corners Fix",
-    "description": "Fixes the white outlines (or artifacts) on the rounded corners that can appear on some pages.",
-    "homepage": "https://github.com/rsiebertdev/zen-themes",
-    "style": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/7d577b21-4685-4db2-bb17-d39d08eec199/chrome.css",
-    "readme": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/7d577b21-4685-4db2-bb17-d39d08eec199/readme.md",
-    "image": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/7d577b21-4685-4db2-bb17-d39d08eec199/image.png",
-    "author": "rsiebertdev",
-    "version": "1.0.3",
-    "tags": [],
-    "createdAt": "2025-02-17",
-    "updatedAt": "2025-05-16"
+	"id": "7d577b21-4685-4db2-bb17-d39d08eec199",
+	"name": "Bleeding Corners Fix",
+	"description": "Fixes the white outlines (or artifacts) on the rounded corners that can appear on some pages.",
+	"homepage": "https://github.com/rsiebertdev/zen-themes/tree/main/bleeding-corners-fix",
+	"style": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/7d577b21-4685-4db2-bb17-d39d08eec199/chrome.css",
+	"readme": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/7d577b21-4685-4db2-bb17-d39d08eec199/readme.md",
+	"image": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/7d577b21-4685-4db2-bb17-d39d08eec199/image.png",
+	"author": "rsiebertdev",
+	"version": "1.0.5",
+	"tags": [],
+	"createdAt": "2025-02-17",
+	"updatedAt": "2025-07-15"
 }
