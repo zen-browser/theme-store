@@ -1,3 +1,23 @@
+:root {
+    --floating-history-transform-translateX: 110%;
+    --floating-history-position-right: 15px;
+    --floating-history-position-left: auto;
+}
+
+/* Horizontal Position */
+
+:root:has(#theme-Floating-History[theme-floating_history-position="right"]) {
+    --floating-history-transform-translateX: 110%;
+    --floating-history-position-right: 15px;
+    --floating-history-position-left: auto;
+}
+
+:root:has(#theme-Floating-History[theme-floating_history-position="left"]) {
+    --floating-history-transform-translateX: -110%;
+    --floating-history-position-left: 15px;
+    --floating-history-position-right: auto;
+}
+
 /* Disable dragable splitter */
 #sidebar-box[sidebarcommand="viewHistorySidebar"] + splitter {
   display: none !important;
@@ -13,17 +33,12 @@
     order: none !important;
     height: 80% !important;
     width: 22em !important;
-    
-    body:has(#mod-floating_history[mod-floating_history-position="right"]) {
-        right: 15px;
-    }
- 
-    body:has(#mod-floating_history[mod-floating_history-position="left"]) {
-        left: 15px;
-    }
-    
   
     position: fixed !important;
+
+    right: var(--floating-history-position-right);
+    left: var(--floating-history-position-left);
+
     transform: translateX(50%) !important;
     z-index: 10;
   
@@ -42,26 +57,12 @@
   
     &[hidden="true"] {
 		display: flex !important;
-        
-        body:has(#mod-floating_history[mod-floating_history-position="right"]) {
-            transform: translateX(110%) translateY(12%) !important;
-        }
-
-        body:has(#mod-floating_history[mod-floating_history-position="left"]) {
-            transform: translateX(-110%) translateY(12%) !important;
-        }
+        transform: translateX(var(--floating-history-transform-translateX)) translateY(12%) !important;
 	}
     
     @starting-style {
         display: flex !important;
-        
-        body:has(#mod-floating_history[mod-floating_history-position="right"]) {
-            transform: translateX(110%) translateY(12%) !important;
-        }
-
-        body:has(#mod-floating_history[mod-floating_history-position="left"]) {
-            transform: translateX(-110%) translateY(12%) !important;
-        }
+        transform: translateX(var(--floating-history-transform-translateX)) translateY(12%) !important;
     }
   
     &[checked="true"] {
@@ -69,7 +70,6 @@
         transform: translateX(0%) translateY(12%) !important;
     }
 }
-
 
 /* Inner Styles of History Tab */
 
