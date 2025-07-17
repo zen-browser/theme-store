@@ -1,0 +1,12 @@
+
+.tab-background {
+  &:is([selected], [multiselected]) {
+    border-style: solid;
+    border-color: var(--zen-primary-color) !important;
+    border-width: 2px;
+  }
+}
+
+#zen-essentials-container > .tabbrowser-tab > stack >.tab-background {
+  border-width: 0px !important;
+}
