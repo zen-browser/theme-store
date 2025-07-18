@@ -7,9 +7,6 @@
 	--better-findbar-position-left: 50%;
 	--better-findbar-position-right: auto;
 }
-.browserContainer {
-	overflow: clip
-}
 
 findbar {
 	display: flex !important;
@@ -32,7 +29,7 @@ findbar {
 	overflow: unset !important;
 	box-shadow: var(--box-shadow-10);
 
-	background: var(--zen-colors-tertiary) !important;
+	background: var(--toolbar-bgcolor) !important;
 	border: 1px solid var(--zen-colors-border) !important;
 
 	transition: transform 0.35s ease !important;
