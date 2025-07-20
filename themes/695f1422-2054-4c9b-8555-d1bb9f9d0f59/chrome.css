@@ -1,0 +1,40 @@
+
+.urlbar-input-box {
+    text-align: center;
+}
+
+#identity-icon-box {
+    display: none !important;
+}
+
+#star-button-box {
+    display: none !important;
+}
+
+#identity-permission-box {
+    display: none !important;
+}
+
+#urlbar[breakout-extend="true"] {
+  & #urlbar-background {
+    --zen-urlbar-background-base: #605858a6 !important;
+  }
+  & #identity-icon-box {
+    display: flex !important;
+  }
+  & #star-button-box {
+    display: flex !important;
+  }
+  & #identity-permission-box {
+    display: flex !important;
+  }
+}
+
+#urlbar {
+    backdrop-filter: blur(9px);
+    border-radius: calc(var(--toolbarbutton-border-radius) - -7px) !important;
+}
+
+.urlbarView {
+   --urlbarView-separator-color: light-dark(hsl(320, 2.7%, 77.8%), hsl(320, 2.7%, 77.8%));
+}
