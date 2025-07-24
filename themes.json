@@ -197,7 +197,7 @@
         "readme": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/20e8cc78-3dac-4db0-81a4-814672fb50af/readme.md",
         "image": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/20e8cc78-3dac-4db0-81a4-814672fb50af/image.png",
         "author": "psu",
-        "version": "1.0.0",
+        "version": "1.0.1",
         "tags": [],
         "createdAt": "2025-03-28",
         "updatedAt": "2025-03-31"
@@ -258,21 +258,6 @@
         "version": "1.0.0",
         "tags": [],
         "createdAt": "2024-12-20",
-        "updatedAt": "2025-01-26"
-    },
-    "c8f20381-388a-4b67-b640-eaa539355ea4": {
-        "id": "c8f20381-388a-4b67-b640-eaa539355ea4",
-        "name": "Right On Hover Sidebar",
-        "description": "Web Panels sidebar that popups on hover on the right (like compact mode)",
-        "homepage": "",
-        "style": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/c8f20381-388a-4b67-b640-eaa539355ea4/chrome.css",
-        "readme": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/c8f20381-388a-4b67-b640-eaa539355ea4/readme.md",
-        "image": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/c8f20381-388a-4b67-b640-eaa539355ea4/image.png",
-        "author": "p2d0",
-        "version": "1.0.1",
-        "preferences": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/c8f20381-388a-4b67-b640-eaa539355ea4/preferences.json",
-        "tags": [],
-        "createdAt": "2024-10-02",
         "updatedAt": "2025-01-26"
     },
     "79dde383-4fe7-404a-a8e6-9be440022542": {
@@ -795,25 +780,6 @@
         "createdAt": "2024-09-18",
         "updatedAt": "2025-01-26"
     },
-    "ecda11ae-d3fd-4052-8881-303b2504e3ce": {
-        "id": "ecda11ae-d3fd-4052-8881-303b2504e3ce",
-        "name": "Gruvbox",
-        "description": "A gruvbox based theme",
-        "homepage": "",
-        "style": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/ecda11ae-d3fd-4052-8881-303b2504e3ce/chrome.css",
-        "readme": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/ecda11ae-d3fd-4052-8881-303b2504e3ce/readme.md",
-        "image": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/ecda11ae-d3fd-4052-8881-303b2504e3ce/image.png",
-        "author": "Blaster4385",
-        "version": "1.0.0",
-        "isDarkMode": true,
-        "isColorTheme": true,
-        "tags": [
-            "color scheme",
-            "dark"
-        ],
-        "createdAt": "2024-08-23",
-        "updatedAt": "2025-01-26"
-    },
     "bd92a9a0-1c00-4187-a66e-94c389fa5a59": {
         "id": "bd92a9a0-1c00-4187-a66e-94c389fa5a59",
         "name": "Sidebar Expand on Hover",
@@ -871,21 +837,6 @@
         "tags": [],
         "createdAt": "2025-04-08",
         "updatedAt": "2025-05-21"
-    },
-    "ab9b529c-63d6-48c0-a59a-4a407c5c3129": {
-        "id": "ab9b529c-63d6-48c0-a59a-4a407c5c3129",
-        "name": "Minimal sidebar",
-        "description": "With this Zen theme, you can remove the buttons from the sidebar and make more space for your tabs",
-        "homepage": "https://github.com/Venca321/Zen-Minimal-Sidebar-Theme",
-        "style": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/ab9b529c-63d6-48c0-a59a-4a407c5c3129/chrome.css",
-        "readme": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/ab9b529c-63d6-48c0-a59a-4a407c5c3129/readme.md",
-        "image": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/ab9b529c-63d6-48c0-a59a-4a407c5c3129/image.png",
-        "author": "Venca321",
-        "preferences": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/ab9b529c-63d6-48c0-a59a-4a407c5c3129/preferences.json",
-        "version": "1.1.0",
-        "tags": [],
-        "createdAt": "2024-08-23",
-        "updatedAt": "2025-01-26"
     },
     "22c9ec3b-7c62-46ae-991f-c8fff5046829": {
         "id": "22c9ec3b-7c62-46ae-991f-c8fff5046829",
@@ -1187,20 +1138,6 @@
         "version": "1.0.0",
         "tags": [],
         "createdAt": "2024-09-25",
-        "updatedAt": "2025-01-26"
-    },
-    "80112b28-39e0-407c-8988-2290bc973b97": {
-        "id": "80112b28-39e0-407c-8988-2290bc973b97",
-        "name": "Matcha",
-        "description": "Sweet and peaceful vibrant theme, supported light and dark mode",
-        "homepage": "https://github.com/KiKaraage/ZenMods",
-        "style": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/80112b28-39e0-407c-8988-2290bc973b97/chrome.css",
-        "readme": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/80112b28-39e0-407c-8988-2290bc973b97/readme.md",
-        "image": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/80112b28-39e0-407c-8988-2290bc973b97/image.png",
-        "author": "KiKaraage",
-        "version": "1.0.0",
-        "tags": [],
-        "createdAt": "2024-09-24",
         "updatedAt": "2025-01-26"
     },
     "f7c71d9a-bce2-420f-ae44-a64bd92975ab": {
