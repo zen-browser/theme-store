@@ -5,6 +5,6 @@
 * Pontus Sundén <hi@pontus.cc>
 */
 .zen-glance-sidebar-container {
-  right: 100% !important;
-  left: unset !important;
+  left: 100% !important;
+  right: unset !important;
 }
