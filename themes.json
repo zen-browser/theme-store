@@ -812,16 +812,16 @@
     "7d577b21-4685-4db2-bb17-d39d08eec199": {
         "id": "7d577b21-4685-4db2-bb17-d39d08eec199",
         "name": "Bleeding Corners Fix",
-        "description": "(May cause high GPU usage!) Fixes the white outlines (or artifacts) on the rounded corners that can appear on some pages.",
+        "description": "Fixes the white outlines (or artifacts) on the rounded corners that can appear on some pages. May cause higher GPU usage on some devices.",
         "homepage": "https://github.com/rsiebertdev/zen-themes/tree/main/bleeding-corners-fix",
         "style": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/7d577b21-4685-4db2-bb17-d39d08eec199/chrome.css",
         "readme": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/7d577b21-4685-4db2-bb17-d39d08eec199/readme.md",
         "image": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/7d577b21-4685-4db2-bb17-d39d08eec199/image.png",
         "author": "rsiebertdev",
-        "version": "1.0.5",
+        "version": "1.0.6",
         "tags": [],
         "createdAt": "2025-02-17",
-        "updatedAt": "2025-07-22"
+        "updatedAt": "2025-07-27"
     },
     "8039de3b-72e1-41ea-83b3-5077cf0f98d1": {
         "id": "8039de3b-72e1-41ea-83b3-5077cf0f98d1",
