@@ -1,0 +1,14 @@
+{
+    "id": "808bcc9e-cacb-4ebf-9faa-dc457533ecad",
+    "name": "Revive the Context Icons",
+    "description": "Brings back the now-removed icons to the various context menus, using the browser's built-in icons",
+    "homepage": "https://github.com/SivanTechDev/zen-themes/tree/main/BringBackTheContextIcons",
+    "style": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/808bcc9e-cacb-4ebf-9faa-dc457533ecad/chrome.css",
+    "readme": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/808bcc9e-cacb-4ebf-9faa-dc457533ecad/readme.md",
+    "image": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/808bcc9e-cacb-4ebf-9faa-dc457533ecad/image.png",
+    "author": "SivanTechDev",
+    "version": "1.0.0",
+    "tags": [],
+    "createdAt": "2025-08-04",
+    "updatedAt": "2025-08-04"
+}
