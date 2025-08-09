@@ -1,0 +1,16 @@
+[
+    {
+        "label": "Bookmark Menus - Text Max Width",
+        "defaultValue": "280px",
+        "placeholder": "pixel",
+        "property": "nn.compact-bookmarks.bookmarkMenuMaxWidth",
+        "type": "string"
+    },
+    {
+        "label": "Bookmark Menus - Inside Padding",
+        "defaultValue": "4px",
+        "placeholder": "pixel",
+        "property": "nn.compact-bookmarks.bookmarkMenuPadding",
+        "type": "string"
+    }
+]
