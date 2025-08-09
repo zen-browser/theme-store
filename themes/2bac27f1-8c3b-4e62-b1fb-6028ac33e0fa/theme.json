@@ -1,0 +1,14 @@
+{
+    "id": "2bac27f1-8c3b-4e62-b1fb-6028ac33e0fa",
+    "name": "Nord Zen UI",
+    "description": "Nord-inspired Zen mod with sleek UI, soft contrast, and minimalist layout.",
+    "homepage": "https://github.com/Phinixprono123/Nord-theme-Zen-browser.git",
+    "style": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/2bac27f1-8c3b-4e62-b1fb-6028ac33e0fa/chrome.css",
+    "readme": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/2bac27f1-8c3b-4e62-b1fb-6028ac33e0fa/readme.md",
+    "image": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/2bac27f1-8c3b-4e62-b1fb-6028ac33e0fa/image.png",
+    "author": "Phinixprono123",
+    "version": "1.0.0",
+    "tags": [],
+    "createdAt": "2025-08-09",
+    "updatedAt": "2025-08-09"
+}
