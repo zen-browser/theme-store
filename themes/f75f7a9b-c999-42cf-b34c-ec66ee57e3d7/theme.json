@@ -1,0 +1,15 @@
+{
+    "id": "f75f7a9b-c999-42cf-b34c-ec66ee57e3d7",
+    "name": "Tab Radius",
+    "description": "Lets you set a custom border radius for each side of the tab.",
+    "homepage": "https://github.com/rohankid1/Zen-TabRadius/",
+    "style": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/f75f7a9b-c999-42cf-b34c-ec66ee57e3d7/chrome.css",
+    "readme": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/f75f7a9b-c999-42cf-b34c-ec66ee57e3d7/readme.md",
+    "image": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/f75f7a9b-c999-42cf-b34c-ec66ee57e3d7/image.png",
+    "author": "rohankid1",
+    "version": "1.0.0",
+    "tags": [],
+    "createdAt": "2025-02-04",
+    "updatedAt": "2025-02-04",
+    "preferences": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/f75f7a9b-c999-42cf-b34c-ec66ee57e3d7/preferences.json"
+}
