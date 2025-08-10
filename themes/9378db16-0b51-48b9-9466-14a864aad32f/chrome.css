@@ -1,0 +1,21 @@
+
+.titlebar-button:hover .toolbarbutton-icon {
+  background-color: color-mix(in srgb, var(--zen-dialog-background), white 20%) !important;;
+}
+
+.titlebar-close:hover .toolbarbutton-icon {
+  background-color: color-mix(in srgb, #D71C23, #D71C23) !important; 
+}
+
+.titlebar-min .toolbarbutton-icon {
+  background-image: url("data:image/png;base64, iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAQAAABKfvVzAAAAAXNSR0IArs4c6QAAAB5JREFUOI1jYBgFo4A6gBGV+/8/FiWMmGKjYBRgAAB/+AIChVPPMwAAAABJRU5ErkJggg==") !important;
+}
+.titlebar-max .toolbarbutton-icon {
+  background-image: url("data:image/png;base64, iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAQAAABKfvVzAAAAAXNSR0IArs4c6QAAAC1JREFUOI1jYBgFNACMqNz//7EoYcQUw6MBXYSJVCeNaiAGsKALYIu6UUBzAABOaQgOrH+QDQAAAABJRU5ErkJggg==") !important;
+}
+.titlebar-restore .toolbarbutton-icon {
+  background-image: url("data:image/png;base64, iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAQAAABKfvVzAAAAAXNSR0IArs4c6QAAAERJREFUOI1jYBgFNACMmEL//6MpwaIGjwZ07SzYFCMUYZrOgi6ArATddAYGBgYmAu4bfBowfYHhaVRARChhC5lRQHMAADA0EBIceUWzAAAAAElFTkSuQmCC") !important;
+}
+.titlebar-close .toolbarbutton-icon {
+  background-image: url("data:image/png;base64, iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAQAAABKfvVzAAAAAXNSR0IArs4c6QAAADVJREFUOI1jYBgFtAf//xMWwauAoHJURUQpRygkWjlEMS7lTCSYQjUnkehpEoOVjIgbBdQAAMzsI9+wLkCcAAAAAElFTkSuQmCC") !important;
+}
