@@ -1,0 +1,14 @@
+{
+    "id": "a8720b00-0af1-4d7a-98a4-3044d7d19635",
+    "name": "Hide nav buttons",
+    "description": "This removes the annoying Forward and back button in the sidebar",
+    "homepage": "",
+    "style": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/a8720b00-0af1-4d7a-98a4-3044d7d19635/chrome.css",
+    "readme": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/a8720b00-0af1-4d7a-98a4-3044d7d19635/readme.md",
+    "image": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/a8720b00-0af1-4d7a-98a4-3044d7d19635/image.png",
+    "author": "ogYwx",
+    "version": "1.0.0",
+    "tags": [],
+    "createdAt": "2025-03-03",
+    "updatedAt": "2025-03-03"
+}
