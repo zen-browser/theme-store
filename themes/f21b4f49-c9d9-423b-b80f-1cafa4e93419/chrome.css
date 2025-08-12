@@ -1,0 +1,329 @@
+
+/* >> Zen0 - Context Menu
+ * >> CSS Style to match your theme for Menu, Context Menu, Toolbar, Download Panel
+ * >> Crédit: FF-ULTIMA, Zer0, Naёzr⁴², KiKaraage, Raysin, Tanay-Kar
+ * >> Version: 1.12.8b – 2025-05-25
+ * >> Author: Fluntek
+ */
+
+@-moz-document url-prefix("chrome:") {
+
+menu, menuitem,
+#downloadsHistory,
+#PanelUI-helpItems,
+#customization-container,
+#unified-extensions-view {
+  text-underline-offset: 10000px !important;
+}
+
+menupopup, panel, customization-container {
+  font-weight: bold !important;
+  transform: scaleX(100.8%) !important;
+  color-scheme: light dark;
+  --panel-background: var(--uc-context-menu) !important;
+  --panel-border-radius: var(--uc-all-border-radius) !important;
+  --panel-border-color: var(--uc-panel-border-ii) !important;
+  --panel-shadow: 0 0 var(--panel-shadow-margin) hsla(0,0%,0%,.2);
+}
+
+#unified-extensions-view {
+  margin-block: 2px !important;
+  min-height: 15px !important;
+  line-height: 15px !important;
+}
+
+#unified-extensions-view box.panel-header,
+#unified-extensions-description,
+#unified-extensions-messages-container,
+.unified-extensions-item-message-deck,
+toolbarseparator:not(panel toolbarseparator),
+panel toolbarseparator,
+menuseparator, menuseparator:first-of-type, menuseparator::before {
+  display: none !important;
+}
+
+#tabContextMenu {
+  --tab-button-count: 4;
+  --tab-menu-width: 230px;
+  --tab-button-gap: 4px;
+  --tab-initial-gap: calc(var(--tab-button-gap) - var(--panel-padding));
+  --tab-button-width: calc(
+    (var(--tab-menu-width) - 2 * (var(--panel-padding) + var(--panel-shadow-margin)) - 2 * var(--tab-initial-gap) + var(--tab-button-gap))
+    / var(--tab-button-count) - var(--tab-button-gap)
+  );
+  --tab-button-height: 50px;
+  --tab-button-bg-color-hover: rgba(255, 255, 255, 0.17);
+  --tab-button-bg-color-active: rgba(255, 255, 255, 0.27);
+  --zen-appcontent-border: transparent 1px solid;
+  width: var(--tab-menu-width) !important;
+}
+
+#tabContextMenu:has(#context_unpinTab[hidden]):has(#context_pinTab[hidden ~= "true"]) {
+  --tab-button-count: 3 !important;
+}
+
+#tabContextMenu > * {
+  transition: background-color 250ms ease-in-out !important;
+  border-radius: 6px !important;
+}
+
+#context_reloadTab,
+#context_pinTab,
+#context_unpinTab,
+#context_zen-add-essential,
+#context_zen-remove-essential,
+#context_bookmarkTab {
+  width: var(--tab-button-width);
+  height: var(--tab-button-height);
+  border-radius: 10px !important;
+  background-position: center !important;
+  transition: background-color 100ms ease-in-out !important;
+}
+
+#context_reloadTab:hover,
+#context_pinTab:hover,
+#context_unpinTab:hover,
+#context_zen-add-essential:hover,
+#context_zen-remove-essential:hover,
+#context_bookmarkTab:hover {
+  background-color: var(--tab-button-bg-color-hover) !important;
+}
+
+#context_reloadTab:active,
+#context_pinTab:active,
+#context_unpinTab:active,
+#context_zen-add-essential:active,
+#context_zen-remove-essential:active,
+#context_bookmarkTab:active {
+  background-color: var(--tab-button-bg-color-active) !important;
+}
+
+#context_reloadTab .menu-text,
+#context_pinTab .menu-text,
+#context_unpinTab .menu-text,
+#context_zen-add-essential .menu-text,
+#context_zen-remove-essential .menu-text,
+#context_bookmarkTab .menu-text {
+  display: none !important;
+}
+
+#context_reloadTab {
+  transform: translate(var(--tab-initial-gap), var(--tab-initial-gap));
+  order: -20;
+}
+
+#context_pinTab,
+#context_unpinTab {
+  transform: translate(calc(var(--tab-button-width) + var(--tab-button-gap) + var(--tab-initial-gap)), calc(var(--tab-initial-gap) - 30px));
+  margin: -20px 0 -30px;
+  order: -19;
+}
+
+#context_zen-add-essential,
+#context_zen-remove-essential {
+  transform: translate(calc((var(--tab-button-count) - 2) * (var(--tab-button-width) + var(--tab-button-gap)) + var(--tab-initial-gap)), calc(var(--tab-initial-gap) - 30px));
+  margin: -20px 0 -30px;
+  order: -18;
+}
+
+#context_bookmarkTab {
+  transform: translate(calc((var(--tab-button-count) - 1) * (var(--tab-button-width) + var(--tab-button-gap)) + var(--tab-initial-gap)), calc(var(--tab-initial-gap) - 30px));
+  margin: -20px 0 -30px;
+  order: -17;
+}
+
+#context_zen-add-essential {
+  display: inline !important;
+  visibility: visible !important;
+}
+
+#context_openANewTab,
+#pageAction-urlbar-copy-frame-url_jeffersonscher_com,
+#context-take-screenshot,
+#context-sep-screenshots,
+#frame-sep,
+#context-savepage,
+#context-viewsource,
+#context-inspect-a11y,
+#context-inspect,
+#inspect-separator,
+#context-media-eme-separator,
+#context-viewpartialsource-selection,
+#context_duplicateTab,
+#context_duplicateTabs,
+#context_selectAllTabs,
+#context_selectedAllTabs,
+#toolbar-context-selectAllTabs,
+#context-selectall,
+#context-sep-selectall,
+#spell-separator,
+#spell-check-enabled,
+#spell-add-dictionaries-main,
+#spell-dictionaries,
+#context-sep-bidi,
+#context-bidi-text-direction-toggle,
+#context-bidi-page-direction-toggle,
+#context-sendimage,
+#context-sep-setbackground,
+#context-setDesktopBackground,
+#context-sep-sharing,
+#context-viewimageinfo,
+#context-print-selection,
+#context-searchselect-private,
+#context_closeTab,
+#context_closeDuplicateTabs,
+#context_closeTabOptions,
+#context_sendTabToDevice,
+#context-sendpagetodevice,
+#context-sendlinktodevice,
+#context_reopenInContainer,
+#context-openlinkinusercontext-menu,
+#context_moveTabOptions,
+#context-zenAddToWebPanel,
+#context_toggleMuteTab,
+#context_toggleMuteSelectedTabs,
+#context_playTab,
+#context_playSelectedTabs {
+  display: none !important;
+}
+
+menupopup > menuitem:not(#context_reloadTab):not(#context_pinTab):not(#context_unpinTab):not(#context_zen-add-essential):not(#context_zen-remove-essential):not(#context_bookmarkTab),
+menupopup > menu:not(#context_reloadTab):not(#context_pinTab):not(#context_unpinTab):not(#context_zen-add-essential):not(#context_zen-remove-essential):not(#context_bookmarkTab) {
+  margin-block: 2px !important;
+  min-height: 20px !important;
+  line-height: 20px !important;
+  border-radius: 8px !important;
+}
+
+#customization-container {
+  font-size: 14px !important;
+  font-weight: 700 !important;
+  letter-spacing: 0.3px;
+  position: absolute;
+  top: 50% !important;
+  left: 50% !important;
+  transform: translate(-50%, -50%) !important;
+  z-index: 1;
+  height: 43% !important;
+  width: 36% !important;
+  backdrop-filter: blur(35px) saturate(130%) brightness(1.2) !important;
+  background: light-dark(rgba(255, 255, 255, 1), rgba(15, 15, 15, 0.1)) !important;
+  border-radius: 20px !important;
+  background-blend-mode: exclusion !important;
+  box-shadow:
+    0px 2px 26px -4px rgba(0, 0, 0, 0.90),
+    inset 0px 0px 5px -2.5px rgba(255, 255, 255, 1) !important;
+}
+
+#customization-container .toolbarbutton-icon {
+  width: 24px !important;
+  height: 24px !important;
+  object-fit: contain !important;
+  max-width: 100% !important;
+  max-height: 100% !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+}
+
+#customization-container toolbarbutton {
+  min-width: 20px !important;
+  min-height: 20px !important;
+  padding: 4px !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+}
+
+#customization-container #customization-panel-container {
+  padding: 10px !important;
+}
+
+#customization-container #customization-panelWrapper {
+  --panel-arrow-offset: 0px;
+}
+
+#customization-container .panel-arrowbox,
+#customization-container .panel-arrowcontent {
+  display: none !important;
+}
+
+@media (-moz-bool-pref: "zen.tabs.vertical.right-side") {
+  #customization-container {
+    left: 10px;
+  }
+
+#customization-container #customization-content-container {
+    flex-direction: row-reverse;
+  }
+}
+
+tab-group[split-view-group] > .tabbrowser-tab:not(:last-child)::after {
+  display: none !important;
+}
+ 
+#appMenu-zoom-controls {
+  border-top: none !important;
+    
+  & #appMenu-fullscreen-button2::before {
+    content: none !important;
+  } 
+}
+
+#downloadsPanel {
+  font-weight: bold !important;
+  color-scheme: light dark;
+  --panel-background: var(--uc-context-menu) !important;
+  --panel-border-radius: var(--uc-all-border-radius) !important;
+  --panel-border-color: var(--uc-panel-border-ii) !important;
+  --panel-shadow: 0 0 var(--panel-shadow-margin) hsla(0,0%,0%,.2);
+}
+
+#downloadsFooterButtons > toolbarseparator {
+  display: none !important;
+}
+
+.downloadButton {
+  min-width: 40px !important;
+}
+
+#downloadsListBox {
+  font-weight: 600 !important;
+  display: flex !important;
+  flex-wrap: wrap !important;
+  flex-direction: row !important;
+  gap: 2px !important;
+  overflow-y: auto !important;
+  overflow-x: hidden !important;
+  scrollbar-width: none !important;
+  box-sizing: border-box !important;
+}
+
+#downloadsListBox > richlistitem {
+  flex: 1 1 calc(50% - 10px) !important;
+  min-width: 100px !important;
+  box-sizing: border-box !important;
+  display: flex !important;
+  flex-direction: column !important;
+  align-items: center !important;
+  color-scheme: light dark;
+}
+
+#downloadsHistory {
+  font-size: 14px !important;
+  min-block-size: 40px !important;
+  text-underline-offset: 10000px !important;
+  font-weight: 600 !important;
+}
+
+.footer-button {
+  font-weight: 600 !important;
+  font-size: 14px !important;
+}
+
+.subviewbutton {
+  margin-block: 2px !important;
+  min-height: 35px !important;
+}
+
+}
