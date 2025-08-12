@@ -1,7 +1,7 @@
 
 :root:has(#theme-Custom-uiFont[theme-custom_uifont-default="Serif"]) {
-    * {font-family: serif !important;}
+    *:not(.titlebar-buttonbox-container *) {font-family: serif !important;}
 }
 :root:has(#theme-Custom-uiFont[theme-custom_uifont-default="Custom"]) {
-    * {font-family: var(--theme-custom_uifont-custom) !important; text-shadow: var(--theme-custom_uifont-shadow) !important;}
+    *:not(.titlebar-buttonbox-container *) {font-family: var(--theme-custom_uifont-custom) !important; text-shadow: var(--theme-custom_uifont-shadow) !important;}
 }

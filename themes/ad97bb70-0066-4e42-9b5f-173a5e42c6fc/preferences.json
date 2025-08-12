@@ -69,6 +69,12 @@
         "disabledOn": []
     },
     {
+        "property": "uc.essentials.same-height",
+        "label": "Makes the Essentials have the same height of Pinned Tabs",
+        "type": "checkbox",
+        "disabledOn": []
+    },
+    {
         "property": "uc.essentials.auto-grow",
         "label": "Makes the Essentials auto-grow to fit the full width of its row.",
         "type": "checkbox",
@@ -76,7 +82,7 @@
     },
     {
         "property": "uc.essentials.position",
-        "label": "Select the position of Essentials (doesn't work on >1.11.5t with container-specific essentials)",
+        "label": "Select the position of Essentials (doesn't work on >1.21.1b with container-specific essentials)",
         "type": "dropdown",
         "placeholder": "Top",
         "disabledOn": [],
@@ -130,8 +136,37 @@
         "property": "zen.workspaces.show-workspace-indicator",
         "label": "Shows the workspace-indicator between Essentials and Pins",
         "type": "checkbox",
+        "defaultValue": true,
+        "disabledOn": []
+    },
+    {
+        "property": "zen.workspaces.indicator-name-center",
+        "label": "Center the workspace indicator name",
+        "type": "checkbox",
+        "disabledOn": []
+    },
+    {
+        "property": "uc.superpins.essentials-below-indicator",
+        "label": "Essentials will be placed below workspace indicator when both are at the bottom",
+        "type": "checkbox",
+        "disabledOn": []
+    },
+    {
+        "property": "zen.workspaces.indicator-position",
+        "label": "Select the position of the workspace indicator",
+        "type": "dropdown",
         "disabledOn": [],
-        "defaultValue": false
+        "placeholder": "Default",
+        "options": [
+            {
+                "label": "Top",
+                "value": "top"
+            },
+            {
+                "label": "Bottom",
+                "value": "bottom"
+            }
+        ]
     },
     {
         "property": "browser.sessionstore.restore_pinned_tabs_on_demand",
@@ -160,6 +195,12 @@
     {
         "property": "uc.tabs.strikethrough-on-pending",
         "label": "Adds a strikethrough effect on unloaded tabs",
+        "type": "checkbox",
+        "disabledOn": []
+    },
+    {
+        "property": "uc.remove-sidebar-scrollbar",
+        "label": "Removes the sidebar scrollbar",
         "type": "checkbox",
         "disabledOn": []
     },

@@ -16,6 +16,22 @@
         ]
     },
     {
+        "property": "zen.view.grey-out-inactive-windows",
+        "label": "\ud83d\udc40 Keep transparency when not in focus on linux",
+        "type": "checkbox",
+        "defaultValue": false,
+        "disabledOn": [
+            "windows",
+            "macos"
+        ]
+    },
+    {
+        "property": "mod.sameerasw.zen_transparent_sidebar_enabled",
+        "label": "\ud83d\udc40 Transparent sidebar (bookmarks, history and sync)",
+        "type": "checkbox",
+        "defaultValue": true
+    },
+    {
         "property": "mod.sameerasw.zen_bg_color_enabled",
         "label": "\ud83c\udfa8 Enable custom background color for Zen",
         "type": "checkbox",
@@ -29,38 +45,25 @@
         "placeholder": "light-dark(#fff, #222) or RGBA or hex"
     },
     {
-        "property": "mod.sameerasw.zen_light_tint_flip",
-        "label": "\ud83c\udf19 Flip the light website tint to dark",
-        "type": "checkbox",
-        "defaultValue": false
-    },
-    {
-        "property": "mod.sameerasw.zen_light_tint_disabled",
-        "label": "\ud83c\udf19 Disable the light website tint",
-        "type": "checkbox",
-        "defaultValue": true
+        "property": "mod.sameerasw_zen_light_tint",
+        "label": "\ud83c\udf19 Light website tint",
+        "type": "dropdown",
+        "placeholder": "Select an option",
+        "defaultValue": "2",
+        "options": [
+            {
+                "label": "Flip",
+                "value": "1"
+            },
+            {
+                "label": "Remove",
+                "value": "2"
+            }
+        ]
     },
     {
         "property": "mod.sameerasw.zen_no_shadow",
         "label": "\ud83c\udf11 Remove the shadow around the web page",
-        "type": "checkbox",
-        "defaultValue": false
-    },
-    {
-        "property": "mod.sameerasw.zen_tab_switch_anim",
-        "label": "\u2728 Tab switch animation",
-        "type": "checkbox",
-        "defaultValue": true
-    },
-    {
-        "property": "mod.sameerasw.zen_urlbar_zoom_anim",
-        "label": "\u2728 URL bar zoom animation",
-        "type": "checkbox",
-        "defaultValue": false
-    },
-    {
-        "property": "mod.sameerasw.zen_trackpad_anim",
-        "label": "\u2728 Trackpad swipe animations",
         "type": "checkbox",
         "defaultValue": false
     },
@@ -102,5 +105,76 @@
         "label": "\ud83d\uddbc\ufe0f Invert above image in light theme (white \u2192 black)",
         "type": "checkbox",
         "defaultValue": false
+    },
+    {
+        "property": "mod.sameerasw_zen_compact_sidebar_type",
+        "label": "\u2194\ufe0f Compact transparent sidebar type",
+        "type": "dropdown",
+        "placeholder": "Select an option",
+        "defaultValue": "0",
+        "options": [
+            {
+                "label": "Default",
+                "value": "0"
+            },
+            {
+                "label": "Push",
+                "value": "1"
+            },
+            {
+                "label": "Mask",
+                "value": "2"
+            }
+        ]
+    },
+    {
+        "property": "mod.sameerasw.zen_compact_sidebar_width",
+        "label": "\u2194\ufe0f Custom compact sidebar width",
+        "type": "string",
+        "defaultValue": "165px",
+        "placeholder": "165px (use px)"
+    },
+    {
+        "property": "mod.sameerasw.zen_tab_switch_anim",
+        "label": "\u2728 Tab switch animation",
+        "type": "checkbox",
+        "defaultValue": true
+    },
+    {
+        "property": "mod.sameerasw.zen_urlbar_zoom_anim",
+        "label": "\u2728 URL bar zoom animation",
+        "type": "checkbox",
+        "defaultValue": false
+    },
+    {
+        "property": "mod.sameerasw.zen_trackpad_anim",
+        "label": "\u2728 Trackpad swipe animations",
+        "type": "checkbox",
+        "defaultValue": false
+    },
+    {
+        "property": "mod.sameerasw_zen_animations",
+        "label": "\u2728 Animation smoothness",
+        "type": "dropdown",
+        "placeholder": "Select an option",
+        "defaultValue": "1",
+        "options": [
+            {
+                "label": "Quick Snap",
+                "value": "0"
+            },
+            {
+                "label": "Smooth Flow",
+                "value": "1"
+            },
+            {
+                "label": "Diabolical",
+                "value": "2"
+            },
+            {
+                "label": "Springy",
+                "value": "3"
+            }
+        ]
     }
 ]

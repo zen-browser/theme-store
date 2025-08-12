@@ -1,7 +1,7 @@
 [
     {
         "property": "widget.macos.native-context-menus",
-        "label": "‼️ Uncheck to enable this mod in macOS, overriding native context menu. (Check this again ✅ before disabling/removing this mod)",
+        "label": "\u203c\ufe0f Uncheck to enable this mod in macOS, overriding native context menu. (Check this again \u2705 before disabling/removing this mod)",
         "type": "checkbox",
         "defaultValue": "false",
         "disabledOn": [
@@ -11,183 +11,183 @@
     },
     {
         "property": "uc.fixcontext.ergonomicsfortabs",
-        "label": "🔁 Reorder options for tab context menu to improve ergonomics (enabled by default)",
+        "label": "\ud83d\udd01 Reorder options for tab context menu to improve ergonomics (enabled by default)",
         "defaultValue": "true",
         "type": "checkbox"
     },
     {
         "property": "uc.hidecontext.separators",
-        "label": "〰️ Hide all separators",
+        "label": "\u3030\ufe0f Hide all separators",
         "type": "checkbox"
     },
     {
         "property": "uc.fixcontext.restoreicons",
-        "label": "🔣 Restore back all icons (buggy, hit me up to suggest fixes on KiKaraage/ZenMods repo)",
+        "label": "\ud83d\udd23 Restore back all icons (buggy, hit me up to suggest fixes on KiKaraage/ZenMods repo)",
         "type": "checkbox"
     },
     {
         "property": "uc.hidecontext.icons",
-        "label": "🔣 Hide all icons in context menu, except checkboxes and radio buttons, to fit current Zen styling",
+        "label": "\ud83d\udd23 Hide all icons in context menu, except checkboxes and radio buttons, to fit current Zen styling",
         "type": "checkbox"
     },
     {
         "property": "uc.fixcontext.applyzengradient",
-        "label": "🎨 Apply Zen workspace gradient (works best if your OS/DE/WM supports blur)",
+        "label": "\ud83c\udfa8 Apply Zen workspace gradient (works best if your OS/DE/WM supports blur)",
         "type": "checkbox"
     },
     {
         "property": "uc.fixcontext.applyzenaccent",
-        "label": "🎨 Apply Zen accent color (the main color on your workspace gradient)",
+        "label": "\ud83c\udfa8 Apply Zen accent color (the main color on your workspace gradient)",
         "type": "checkbox"
     },
     {
         "property": "uc.hidecontext.copylink",
-        "label": "🔗 Prioritize 'Copy Clean Link' when possible (enabled by default)",
+        "label": "\ud83d\udd17 Prioritize 'Copy Clean Link' when possible (enabled by default)",
         "defaultValue": "true",
         "type": "checkbox"
     },
     {
         "property": "uc.hidecontext.bookmark",
-        "label": "📑 🔗 Hide 'Bookmark Tab/Tabs/Link' options (enabled by default)",
+        "label": "\ud83d\udcd1 \ud83d\udd17 Hide 'Bookmark Tab/Tabs/Link' options (enabled by default)",
         "defaultValue": "true",
         "type": "checkbox"
     },
     {
         "property": "uc.hidecontext.mutetab",
-        "label": "📑 Hide 'Mute Tab' options",
+        "label": "\ud83d\udcd1 Hide 'Mute Tab' options",
         "type": "checkbox"
     },
     {
         "property": "uc.hidecontext.newtab",
-        "label": "📑 Hide 'New Tab' & 'New Tab Below' (enabled by default)",
+        "label": "\ud83d\udcd1 Hide 'New Tab' & 'New Tab Below' (enabled by default)",
         "defaultValue": "true",
         "type": "checkbox"
     },
     {
         "property": "uc.hidecontext.movetaboptions",
-        "label": "📑 Hide 'Move Tab' options (enabled by default)",
+        "label": "\ud83d\udcd1 Hide 'Move Tab' options (enabled by default)",
         "defaultValue": "true",
         "type": "checkbox"
     },
     {
         "property": "uc.hidecontext.newcontainer",
-        "label": "📑 🔗 Hide 'Open Tab/Link in New Container Tab' options",
+        "label": "\ud83d\udcd1 \ud83d\udd17 Hide 'Open Tab/Link in New Container Tab' options",
         "type": "checkbox"
     },
     {
         "property": "uc.hidecontext.sendtodevice",
-        "label": "📑 🌐 🔗 Hide 'Send Tab/Page/Link to Device' options",
+        "label": "\ud83d\udcd1 \ud83c\udf10 \ud83d\udd17 Hide 'Send Tab/Page/Link to Device' options",
         "type": "checkbox"
     },
     {
         "property": "uc.hidecontext.closetab",
-        "label": "📑 Hide 'Close Tab' & 'Close Duplicate Tabs'",
+        "label": "\ud83d\udcd1 Hide 'Close Tab' & 'Close Duplicate Tabs'",
         "type": "checkbox"
     },
-        {
+    {
         "property": "uc.hidecontext.closemultiple",
-        "label": "📑 Hide 'Close Multiple Tabs' options (enabled by default)",
+        "label": "\ud83d\udcd1 Hide 'Close Multiple Tabs' options (enabled by default)",
         "defaultValue": "true",
         "type": "checkbox"
     },
     {
         "property": "uc.hidecontext.askchatbot",
-        "label": "📑 🌐 🔤 🔗 Hide 'Ask AI chatbot' options if you enabled the feature",
+        "label": "\ud83d\udcd1 \ud83c\udf10 \ud83d\udd24 \ud83d\udd17 Hide 'Ask AI chatbot' options if you enabled the feature",
         "type": "checkbox"
     },
     {
         "property": "uc.hidecontext.search",
-        "label": "🔤 🔗 Hide 'Search Web for Selected Text/Link' options",
+        "label": "\ud83d\udd24 \ud83d\udd17 Hide 'Search Web for Selected Text/Link' options",
         "type": "checkbox"
     },
     {
         "property": "uc.hidecontext.searchinpriv",
-        "label": "🔤 🔗 Hide 'Search in a Private Window' (enabled by default)",
+        "label": "\ud83d\udd24 \ud83d\udd17 Hide 'Search in a Private Window' (enabled by default)",
         "defaultValue": "true",
         "type": "checkbox"
     },
     {
         "property": "uc.hidecontext.translate",
-        "label": "🔤 🔗 Hide 'Translate Selection/Link Text' options",
+        "label": "\ud83d\udd24 \ud83d\udd17 Hide 'Translate Selection/Link Text' options",
         "type": "checkbox"
     },
     {
         "property": "uc.hidecontext.printselection",
-        "label": "🔤 Hide 'Print Selection' (enabled by default)",
+        "label": "\ud83d\udd24 Hide 'Print Selection' (enabled by default)",
         "defaultValue": "true",
         "type": "checkbox"
     },
     {
         "property": "uc.hidecontext.image",
-        "label": "🖼️ Hide 'Email Image', 'Set Image as Desktop Background', & 'View Image Info' options",
+        "label": "\ud83d\uddbc\ufe0f Hide 'Email Image', 'Set Image as Desktop Background', & 'View Image Info' options",
         "type": "checkbox"
     },
     {
         "property": "uc.hidecontext.audiovideo",
-        "label": "🎵 📺 Hide 'Copy Video Link', 'Copy Audio Link', 'Email Video' and 'Email Audio' options",
+        "label": "\ud83c\udfb5 \ud83d\udcfa Hide 'Copy Video Link', 'Copy Audio Link', 'Email Video' and 'Email Audio' options",
         "type": "checkbox"
     },
     {
         "property": "uc.hidecontext.checkspelling",
-        "label": "⌨️ Hide 'Check Spelling' and 'Change Text/Page Direction' options while typing in text fields",
+        "label": "\u2328\ufe0f Hide 'Check Spelling' and 'Change Text/Page Direction' options while typing in text fields",
         "type": "checkbox"
     },
     {
         "property": "uc.hidecontext.selectalltext",
-        "label": "🌐 🔤 Hide 'Select All Text' option (enabled by default)",
+        "label": "\ud83c\udf10 \ud83d\udd24 Hide 'Select All Text' option (enabled by default)",
         "defaultValue": "true",
         "type": "checkbox"
     },
     {
         "property": "uc.hidecontext.selectalltabs",
-        "label": "📑 Hide 'Select All Tabs' (enabled by default)",
+        "label": "\ud83d\udcd1 Hide 'Select All Tabs' (enabled by default)",
         "defaultValue": "true",
         "type": "checkbox"
     },
     {
         "property": "uc.hidecontext.reloadtab",
-        "label": "📑 Hide 'Reload Tab' (enabled by default)",
+        "label": "\ud83d\udcd1 Hide 'Reload Tab' (enabled by default)",
         "defaultValue": "true",
         "type": "checkbox"
     },
     {
         "property": "uc.hidecontext.duplicatetab",
-        "label": "📑 Hide 'Duplicate Tab'",
+        "label": "\ud83d\udcd1 Hide 'Duplicate Tab'",
         "type": "checkbox"
     },
     {
         "property": "uc.hidecontext.unloadactions",
-        "label": "📑 Hide 'Unload Tabs'",
+        "label": "\ud83d\udcd1 Hide 'Unload Tabs'",
         "type": "checkbox"
     },
     {
         "property": "uc.hidecontext.inspect",
-        "label": "🌐 🔤 Hide 'View Page Source' & 'Inspect' options",
+        "label": "\ud83c\udf10 \ud83d\udd24 Hide 'View Page Source' & 'Inspect' options",
         "type": "checkbox"
     },
     {
         "property": "uc.hidecontext.savelink",
-        "label": "🌐 🔗 Hide 'Save Page/Link As' options",
+        "label": "\ud83c\udf10 \ud83d\udd17 Hide 'Save Page/Link As' options",
         "type": "checkbox"
     },
     {
         "property": "uc.hidecontext.screenshot",
-        "label": "🌐 Hide 'Take Screenshot'",
+        "label": "\ud83c\udf10 Hide 'Take Screenshot'",
         "type": "checkbox"
     },
     {
         "property": "uc.hidecontext.frame",
-        "label": "🖼️ 📺 Hide 'This Frame' option",
+        "label": "\ud83d\uddbc\ufe0f \ud83d\udcfa Hide 'This Frame' option",
         "type": "checkbox"
     },
     {
         "property": "uc.hidecontext.pin",
-        "label": "📑 Hide 'Pin Tab' & 'Add to Essentials' options",
+        "label": "\ud83d\udcd1 Hide 'Pin Tab' & 'Add to Essentials' options",
         "type": "checkbox"
     },
     {
         "property": "uc.hidecontext.navigation",
-        "label": "🌐 Hide 'Back', 'Forward', 'Reload' & 'Bookmark Page' options",
+        "label": "\ud83c\udf10 Hide 'Back', 'Forward', 'Reload' & 'Bookmark Page' options",
         "type": "checkbox"
     }
 ]

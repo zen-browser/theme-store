@@ -3,16 +3,16 @@
         "property": "theme.floating_history.position",
         "label": "Position",
         "type": "dropdown",
-        "disabledOn": [],
         "defaultValue": "right",
+        "placeholder": "Use Default (Right)",
         "options": [
-            {
-                "label": "Left",
-                "value": "left"
-            },
             {
                 "label": "Right",
                 "value": "right"
+            },
+            {
+                "label": "Left",
+                "value": "left"
             }
         ]
     }
