@@ -1,32 +1,4 @@
 {
-    "13696593-837d-464d-adf4-ff13bd0e0545": {
-        "id": "13696593-837d-464d-adf4-ff13bd0e0545",
-        "name": "Download BG",
-        "description": "Add a background to the active download indicator.",
-        "homepage": "https://github.com/different55/download.bg",
-        "style": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/13696593-837d-464d-adf4-ff13bd0e0545/chrome.css",
-        "readme": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/13696593-837d-464d-adf4-ff13bd0e0545/readme.md",
-        "image": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/13696593-837d-464d-adf4-ff13bd0e0545/image.png",
-        "author": "different55",
-        "version": "1.0.0",
-        "tags": [],
-        "createdAt": "2024-12-29",
-        "updatedAt": "2025-01-26"
-    },
-    "680424a8-a818-406b-98c5-7726214e2a9f": {
-        "id": "680424a8-a818-406b-98c5-7726214e2a9f",
-        "name": "Remove Browser Padding",
-        "description": "Remove the right and bottom paddings of the browser views on zen!",
-        "homepage": "https://github.com/zen-browser/theme-components",
-        "style": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/680424a8-a818-406b-98c5-7726214e2a9f/chrome.css",
-        "readme": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/680424a8-a818-406b-98c5-7726214e2a9f/readme.md",
-        "image": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/680424a8-a818-406b-98c5-7726214e2a9f/image.png",
-        "author": "mauro-balades",
-        "version": "1.0.3",
-        "tags": [],
-        "createdAt": "2024-08-17",
-        "updatedAt": "2025-01-26"
-    },
     "753c7518-237d-480a-abfd-1f42a7eabacc": {
         "id": "753c7518-237d-480a-abfd-1f42a7eabacc",
         "name": "Zen Paper Cut Theme",
@@ -39,20 +11,6 @@
         "version": "1.0.4",
         "tags": [],
         "createdAt": "2024-09-24",
-        "updatedAt": "2025-01-26"
-    },
-    "ae051a40-3e3a-429a-a6f4-199a28b18a75": {
-        "id": "ae051a40-3e3a-429a-a6f4-199a28b18a75",
-        "name": "Only Reset On Hover",
-        "description": "Show pinned tab's reset button only on hover, even on the active tab.",
-        "homepage": "",
-        "style": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/ae051a40-3e3a-429a-a6f4-199a28b18a75/chrome.css",
-        "readme": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/ae051a40-3e3a-429a-a6f4-199a28b18a75/readme.md",
-        "image": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/ae051a40-3e3a-429a-a6f4-199a28b18a75/image.png",
-        "author": "TheCatRiX",
-        "version": "1.0.0",
-        "tags": [],
-        "createdAt": "2024-12-16",
         "updatedAt": "2025-01-26"
     },
     "d8b79d4a-6cba-4495-9ff6-d6d30b0e94fe": {
@@ -71,21 +29,6 @@
         "createdAt": "2024-09-07",
         "updatedAt": "2025-01-26"
     },
-    "39907934-59e9-4e42-89f0-a254d3c5e280": {
-        "id": "39907934-59e9-4e42-89f0-a254d3c5e280",
-        "name": "Sidebery",
-        "description": "Tweaks to support Sidebery as an alternative to Zen's native tabs and workspace implementation.",
-        "homepage": "https://github.com/shanto/sidebery",
-        "style": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/39907934-59e9-4e42-89f0-a254d3c5e280/chrome.css",
-        "readme": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/39907934-59e9-4e42-89f0-a254d3c5e280/readme.md",
-        "image": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/39907934-59e9-4e42-89f0-a254d3c5e280/image.png",
-        "author": "Shaan",
-        "version": "1.0.2",
-        "preferences": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/39907934-59e9-4e42-89f0-a254d3c5e280/preferences.json",
-        "tags": [],
-        "createdAt": "2024-10-09",
-        "updatedAt": "2025-02-16"
-    },
     "570afd9d-96fa-48b5-bad3-0c106757cce9": {
         "id": "570afd9d-96fa-48b5-bad3-0c106757cce9",
         "name": "Super Sleek UI",
@@ -98,22 +41,6 @@
         "version": "1.0.1",
         "tags": [],
         "createdAt": "2024-08-28",
-        "updatedAt": "2025-01-26"
-    },
-    "053a3ffa-9233-4554-88f3-076e6a6ebb43": {
-        "id": "053a3ffa-9233-4554-88f3-076e6a6ebb43",
-        "name": "Hide tab mute",
-        "description": "Hides the mute/unmute button when the sidebar is collapsed to make clicking on tabs easier.",
-        "homepage": "",
-        "style": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/053a3ffa-9233-4554-88f3-076e6a6ebb43/chrome.css",
-        "readme": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/053a3ffa-9233-4554-88f3-076e6a6ebb43/readme.md",
-        "image": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/053a3ffa-9233-4554-88f3-076e6a6ebb43/image.png",
-        "author": "Tc-001",
-        "version": "1.0.1",
-        "tags": [
-            "tabs"
-        ],
-        "createdAt": "2024-08-21",
         "updatedAt": "2025-01-26"
     },
     "daf345ec-9a89-4b5d-9d41-47df562e29c9": {
@@ -202,21 +129,6 @@
         "createdAt": "2025-03-28",
         "updatedAt": "2025-03-31"
     },
-    "58649066-2b6f-4a5b-af6d-c3d21d16fc00": {
-        "id": "58649066-2b6f-4a5b-af6d-c3d21d16fc00",
-        "name": "Private Mode Highlighting",
-        "description": "This theme adds extra theming and an icon to the main toolbar of any private browsing window.",
-        "homepage": "https://github.com/danm36/zen-browser-private-browsing-toolbar-highlighting",
-        "style": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/58649066-2b6f-4a5b-af6d-c3d21d16fc00/chrome.css",
-        "readme": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/58649066-2b6f-4a5b-af6d-c3d21d16fc00/readme.md",
-        "image": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/58649066-2b6f-4a5b-af6d-c3d21d16fc00/image.png",
-        "author": "danm36",
-        "preferences": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/58649066-2b6f-4a5b-af6d-c3d21d16fc00/preferences.json",
-        "version": "1.0.4",
-        "tags": [],
-        "createdAt": "2024-08-09",
-        "updatedAt": "2025-01-26"
-    },
     "5c4d7772-d963-4672-ab03-e9d541438881": {
         "id": "5c4d7772-d963-4672-ab03-e9d541438881",
         "name": "Bigger Mute Button",
@@ -230,35 +142,6 @@
         "tags": [],
         "createdAt": "2024-10-12",
         "updatedAt": "2025-05-10"
-    },
-    "dd4f5461-1564-4e56-9f9d-f81e3c18f93c": {
-        "id": "dd4f5461-1564-4e56-9f9d-f81e3c18f93c",
-        "name": "Zen Sidebar At Right Side",
-        "description": "Pin or float the Zen Sidebar at the right side.",
-        "homepage": "",
-        "style": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/dd4f5461-1564-4e56-9f9d-f81e3c18f93c/chrome.css",
-        "readme": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/dd4f5461-1564-4e56-9f9d-f81e3c18f93c/readme.md",
-        "image": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/dd4f5461-1564-4e56-9f9d-f81e3c18f93c/image.png",
-        "author": "AntonioSTM",
-        "version": "1.0.2",
-        "preferences": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/dd4f5461-1564-4e56-9f9d-f81e3c18f93c/preferences.json",
-        "tags": [],
-        "createdAt": "2024-09-03",
-        "updatedAt": "2025-01-26"
-    },
-    "0c3d77bf-44fc-47a6-a183-39205dfa5f7e": {
-        "id": "0c3d77bf-44fc-47a6-a183-39205dfa5f7e",
-        "name": "Hidden Reset Button",
-        "description": "Hide the reset button behind the tab icon unless hovered.",
-        "homepage": "",
-        "style": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/0c3d77bf-44fc-47a6-a183-39205dfa5f7e/chrome.css",
-        "readme": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/0c3d77bf-44fc-47a6-a183-39205dfa5f7e/readme.md",
-        "image": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/0c3d77bf-44fc-47a6-a183-39205dfa5f7e/image.png",
-        "author": "AlexCookieDev",
-        "version": "1.0.0",
-        "tags": [],
-        "createdAt": "2024-12-20",
-        "updatedAt": "2025-01-26"
     },
     "79dde383-4fe7-404a-a8e6-9be440022542": {
         "id": "79dde383-4fe7-404a-a8e6-9be440022542",
@@ -352,23 +235,6 @@
         "createdAt": "2024-08-29",
         "updatedAt": "2025-01-26"
     },
-    "c5f7fb68-cc75-4df0-8b02-dc9ee13aa773": {
-        "id": "c5f7fb68-cc75-4df0-8b02-dc9ee13aa773",
-        "name": "Audio TabIcon Plus",
-        "description": "Enhance audio/mute tab-icon",
-        "homepage": "",
-        "style": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/c5f7fb68-cc75-4df0-8b02-dc9ee13aa773/chrome.css",
-        "readme": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/c5f7fb68-cc75-4df0-8b02-dc9ee13aa773/readme.md",
-        "image": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/c5f7fb68-cc75-4df0-8b02-dc9ee13aa773/image.png",
-        "author": "DaitiDay",
-        "preferences": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/c5f7fb68-cc75-4df0-8b02-dc9ee13aa773/preferences.json",
-        "version": "1.0.1",
-        "tags": [
-            "tabs"
-        ],
-        "createdAt": "2024-08-28",
-        "updatedAt": "2025-04-09"
-    },
     "74c755b3-41a5-4f78-83cb-cd1e1e076bb6": {
         "id": "74c755b3-41a5-4f78-83cb-cd1e1e076bb6",
         "name": "Better UniExtBtn",
@@ -397,20 +263,6 @@
         "tags": [],
         "createdAt": "2025-03-11",
         "updatedAt": "2025-05-20"
-    },
-    "b44004bb-8465-47fb-9e20-0422ff321f0a": {
-        "id": "b44004bb-8465-47fb-9e20-0422ff321f0a",
-        "name": "Better Spacing",
-        "description": "Let Zen breathe with more margin on the URL bar & icons aligned with the browser window",
-        "homepage": "https://github.com/nalejandroveron/zen-better-spacing",
-        "style": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/b44004bb-8465-47fb-9e20-0422ff321f0a/chrome.css",
-        "readme": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/b44004bb-8465-47fb-9e20-0422ff321f0a/readme.md",
-        "image": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/b44004bb-8465-47fb-9e20-0422ff321f0a/image.png",
-        "author": "nalejandroveron",
-        "version": "1.0.0",
-        "tags": [],
-        "createdAt": "2025-03-20",
-        "updatedAt": "2025-04-09"
     },
     "9bbaab67-a2c8-4d79-837f-90cd72a8932a": {
         "id": "9bbaab67-a2c8-4d79-837f-90cd72a8932a",
@@ -484,22 +336,6 @@
         "createdAt": "2024-10-12",
         "updatedAt": "2025-01-26"
     },
-    "3ff55ba7-4690-4f74-96a8-9e4416685e4e": {
-        "id": "3ff55ba7-4690-4f74-96a8-9e4416685e4e",
-        "name": "Colored container tab",
-        "description": "Changes the default container tab theme",
-        "homepage": "https://github.com/ocean-mars/things",
-        "style": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/3ff55ba7-4690-4f74-96a8-9e4416685e4e/chrome.css",
-        "readme": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/3ff55ba7-4690-4f74-96a8-9e4416685e4e/readme.md",
-        "image": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/3ff55ba7-4690-4f74-96a8-9e4416685e4e/image.png",
-        "author": "ocean-mars",
-        "version": "1.0.0",
-        "tags": [
-            "tabs"
-        ],
-        "createdAt": "2024-10-06",
-        "updatedAt": "2025-01-26"
-    },
     "6f11c932-b992-433e-8c80-56a613cc511e": {
         "id": "6f11c932-b992-433e-8c80-56a613cc511e",
         "name": "Left close button",
@@ -513,21 +349,6 @@
         "tags": [],
         "createdAt": "2024-11-27",
         "updatedAt": "2025-01-26"
-    },
-    "72f8f48d-86b9-4487-acea-eb4977b18f21": {
-        "id": "72f8f48d-86b9-4487-acea-eb4977b18f21",
-        "name": "Better CtrlTab Panel",
-        "description": "Re-style and add customization options for the CtrlTab panel.",
-        "homepage": "https://github.com/psu/zen-mods",
-        "style": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/72f8f48d-86b9-4487-acea-eb4977b18f21/chrome.css",
-        "readme": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/72f8f48d-86b9-4487-acea-eb4977b18f21/readme.md",
-        "image": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/72f8f48d-86b9-4487-acea-eb4977b18f21/image.png",
-        "author": "psu",
-        "version": "1.0.1",
-        "tags": [],
-        "createdAt": "2025-03-28",
-        "updatedAt": "2025-05-22",
-        "preferences": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/72f8f48d-86b9-4487-acea-eb4977b18f21/preferences.json"
     },
     "253a3a74-0cc4-47b7-8b82-996a64f030d5": {
         "id": "253a3a74-0cc4-47b7-8b82-996a64f030d5",
@@ -545,21 +366,6 @@
         "tags": [
             "history"
         ]
-    },
-    "cfa711cf-e9f7-4c35-8289-3e7633f93565": {
-        "id": "cfa711cf-e9f7-4c35-8289-3e7633f93565",
-        "name": "Fluid URL",
-        "description": "A minimalist mod that adds a smooth gradient animation to the URL bar for a calming effect.",
-        "homepage": "https://github.com/wysh3/Zen-Mods/tree/main/Fluid%20URL",
-        "style": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/cfa711cf-e9f7-4c35-8289-3e7633f93565/chrome.css",
-        "readme": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/cfa711cf-e9f7-4c35-8289-3e7633f93565/readme.md",
-        "image": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/cfa711cf-e9f7-4c35-8289-3e7633f93565/image.png",
-        "author": "wysh3",
-        "version": "1.0.4",
-        "tags": [],
-        "createdAt": "2024-11-20",
-        "updatedAt": "2025-01-26",
-        "preferences": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/cfa711cf-e9f7-4c35-8289-3e7633f93565/preferences.json"
     },
     "1e86cf37-a127-4f24-b919-d265b5ce29a0": {
         "id": "1e86cf37-a127-4f24-b919-d265b5ce29a0",
@@ -679,21 +485,6 @@
         "updatedAt": "2025-01-26",
         "preferences": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/5f12d02a-c692-4f9c-b1f3-cd92782bab02/preferences.json"
     },
-    "642854b5-88b4-4c40-b256-e035532109df": {
-        "id": "642854b5-88b4-4c40-b256-e035532109df",
-        "name": "Transparent Zen",
-        "description": "Make the Zen Browser's tab background transparent, get smooth animations and more. Enable  features in mod settings and visit the homepage below to learn more about the features. \ud83d\udc47",
-        "homepage": "https://github.com/sameerasw/zen-themes/tree/main/TransparentZen",
-        "style": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/642854b5-88b4-4c40-b256-e035532109df/chrome.css",
-        "readme": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/642854b5-88b4-4c40-b256-e035532109df/readme.md",
-        "image": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/642854b5-88b4-4c40-b256-e035532109df/image.png",
-        "author": "sameerasw",
-        "version": "1.13.0",
-        "tags": [],
-        "createdAt": "2025-02-04",
-        "updatedAt": "2025-06-22",
-        "preferences": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/642854b5-88b4-4c40-b256-e035532109df/preferences.json"
-    },
     "fd24f832-a2e6-4ce9-8b19-7aa888eb7f8e": {
         "id": "fd24f832-a2e6-4ce9-8b19-7aa888eb7f8e",
         "name": "Quietify",
@@ -707,35 +498,6 @@
         "tags": [],
         "createdAt": "2024-12-17",
         "updatedAt": "2025-02-09"
-    },
-    "d868eaf4-cefc-4f41-8f1c-1f603726d2fa": {
-        "id": "d868eaf4-cefc-4f41-8f1c-1f603726d2fa",
-        "name": "Tab Text Size",
-        "description": "Change tab text size",
-        "homepage": "https://github.com/ajkuftic/Zen-TabTextSize",
-        "style": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/d868eaf4-cefc-4f41-8f1c-1f603726d2fa/chrome.css",
-        "readme": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/d868eaf4-cefc-4f41-8f1c-1f603726d2fa/readme.md",
-        "image": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/d868eaf4-cefc-4f41-8f1c-1f603726d2fa/image.png",
-        "author": "ajkuftic",
-        "version": "1.0.0",
-        "tags": [],
-        "createdAt": "2024-12-16",
-        "updatedAt": "2025-01-26",
-        "preferences": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/d868eaf4-cefc-4f41-8f1c-1f603726d2fa/preferences.json"
-    },
-    "477bc813-c333-4747-813e-00e0420ceec0": {
-        "id": "477bc813-c333-4747-813e-00e0420ceec0",
-        "name": "Bottom Essentials",
-        "description": "Move your Essential Tabs to the bottom of the Sidebar for some Visual seperation from Pinned tabs.",
-        "homepage": "https://github.com/TheBigWazz/ZenThemes/tree/main/Bottom-Essentials",
-        "style": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/477bc813-c333-4747-813e-00e0420ceec0/chrome.css",
-        "readme": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/477bc813-c333-4747-813e-00e0420ceec0/readme.md",
-        "image": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/477bc813-c333-4747-813e-00e0420ceec0/image.png",
-        "author": "TheBigWazz",
-        "version": "1.0.0",
-        "tags": [],
-        "createdAt": "2024-11-12",
-        "updatedAt": "2025-01-26"
     },
     "e74cb40a-f3b8-445a-9826-1b1b6e41b846": {
         "id": "e74cb40a-f3b8-445a-9826-1b1b6e41b846",
@@ -766,20 +528,6 @@
         "createdAt": "2024-10-06",
         "updatedAt": "2025-01-26"
     },
-    "180d9426-a020-4bd7-98ec-63f957291119": {
-        "id": "180d9426-a020-4bd7-98ec-63f957291119",
-        "name": "TitleBarButton UI Tweaks",
-        "description": "Small UI tweaks to the titlebar buttons to make them more coherent with the Zen Browser design philosophy.",
-        "homepage": "",
-        "style": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/180d9426-a020-4bd7-98ec-63f957291119/chrome.css",
-        "readme": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/180d9426-a020-4bd7-98ec-63f957291119/readme.md",
-        "image": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/180d9426-a020-4bd7-98ec-63f957291119/image.png",
-        "author": "DaitiDay",
-        "version": "1.0.1",
-        "tags": [],
-        "createdAt": "2024-09-18",
-        "updatedAt": "2025-01-26"
-    },
     "bd92a9a0-1c00-4187-a66e-94c389fa5a59": {
         "id": "bd92a9a0-1c00-4187-a66e-94c389fa5a59",
         "name": "Sidebar Expand on Hover",
@@ -794,20 +542,6 @@
         "createdAt": "2024-12-10",
         "updatedAt": "2025-03-31",
         "preferences": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/bd92a9a0-1c00-4187-a66e-94c389fa5a59/preferences.json"
-    },
-    "378ba8b9-cd36-45f5-88df-595df5288795": {
-        "id": "378ba8b9-cd36-45f5-88df-595df5288795",
-        "name": "Add new tab urlbar icon",
-        "description": "Adds an icon and the text open in new tab to the urlbar if opened by pressing New Tab or Ctrl+T",
-        "homepage": "https://github.com/Evthestrike/zen-browser-add-new-tab-icon-to-urlbar",
-        "style": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/378ba8b9-cd36-45f5-88df-595df5288795/chrome.css",
-        "readme": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/378ba8b9-cd36-45f5-88df-595df5288795/readme.md",
-        "image": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/378ba8b9-cd36-45f5-88df-595df5288795/image.png",
-        "author": "Evthestrike",
-        "version": "1.0.0",
-        "tags": [],
-        "createdAt": "2025-02-20",
-        "updatedAt": "2025-02-24"
     },
     "7d577b21-4685-4db2-bb17-d39d08eec199": {
         "id": "7d577b21-4685-4db2-bb17-d39d08eec199",
@@ -869,20 +603,6 @@
         "createdAt": "2025-02-17",
         "updatedAt": "2025-02-23"
     },
-    "87196c08-8ca1-4848-b13b-7ea41ee830e7": {
-        "id": "87196c08-8ca1-4848-b13b-7ea41ee830e7",
-        "name": "Tab Preview Enhanced",
-        "description": "Enhanced tab preview, respecting user background color and padding",
-        "homepage": "https://github.com/Kaedriz/ZenMods/tree/main/TabPreviewEnhanced",
-        "style": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/87196c08-8ca1-4848-b13b-7ea41ee830e7/chrome.css",
-        "readme": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/87196c08-8ca1-4848-b13b-7ea41ee830e7/readme.md",
-        "image": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/87196c08-8ca1-4848-b13b-7ea41ee830e7/image.png",
-        "author": "Kaedriz",
-        "version": "1.1.0",
-        "tags": [],
-        "createdAt": "2024-12-20",
-        "updatedAt": "2025-02-07"
-    },
     "e51b85e6-cef5-45d4-9fff-6986637974e1": {
         "id": "e51b85e6-cef5-45d4-9fff-6986637974e1",
         "name": "smaller zen toast popup",
@@ -927,20 +647,6 @@
         "updatedAt": "2025-01-26",
         "preferences": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/32aca67a-ffdd-49e7-95c7-1821793610ca/preferences.json"
     },
-    "ae7868dc-1fa1-469e-8b89-a5edf7ab1f24": {
-        "id": "ae7868dc-1fa1-469e-8b89-a5edf7ab1f24",
-        "name": "Load Bar",
-        "description": "Creates a sleek loading bar and mute status for single toolbar mode.",
-        "homepage": "https://github.com/Tanay-Kar/Zen-Themes/tree/main/LoadBar",
-        "style": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/ae7868dc-1fa1-469e-8b89-a5edf7ab1f24/chrome.css",
-        "readme": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/ae7868dc-1fa1-469e-8b89-a5edf7ab1f24/readme.md",
-        "image": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/ae7868dc-1fa1-469e-8b89-a5edf7ab1f24/image.png",
-        "author": "Tanay-Kar",
-        "version": "1.0.0",
-        "tags": [],
-        "createdAt": "2024-12-21",
-        "updatedAt": "2025-05-10"
-    },
     "a5f6a231-e3c8-4ce8-8a8e-3e93efd6adec": {
         "id": "a5f6a231-e3c8-4ce8-8a8e-3e93efd6adec",
         "name": "Cleaned URL bar",
@@ -956,35 +662,6 @@
         "createdAt": "2024-11-01",
         "updatedAt": "2025-03-09"
     },
-    "03a8e7ef-cf00-4f41-bf24-a90deeafc9db": {
-        "id": "03a8e7ef-cf00-4f41-bf24-a90deeafc9db",
-        "name": "Zen Colored Picker",
-        "description": "Adds the rainbow color pad to the theme picker",
-        "homepage": "https://github.com/Nimit1705/zen-colored-picker",
-        "style": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/03a8e7ef-cf00-4f41-bf24-a90deeafc9db/chrome.css",
-        "readme": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/03a8e7ef-cf00-4f41-bf24-a90deeafc9db/readme.md",
-        "image": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/03a8e7ef-cf00-4f41-bf24-a90deeafc9db/image.png",
-        "author": "Nimit1705",
-        "version": "2.0.1",
-        "tags": [],
-        "createdAt": "2025-02-23",
-        "updatedAt": "2025-07-15",
-        "preferences": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/03a8e7ef-cf00-4f41-bf24-a90deeafc9db/preferences.json"
-    },
-    "272850c0-36b4-4867-be8f-7c4b5942069f": {
-        "id": "272850c0-36b4-4867-be8f-7c4b5942069f",
-        "name": "DoubleClickless",
-        "description": "Disable double clicking and middle clicking on the tab bar to open a new tab.",
-        "homepage": "",
-        "style": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/272850c0-36b4-4867-be8f-7c4b5942069f/chrome.css",
-        "readme": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/272850c0-36b4-4867-be8f-7c4b5942069f/readme.md",
-        "image": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/272850c0-36b4-4867-be8f-7c4b5942069f/image.png",
-        "author": "different55",
-        "version": "1.0.0",
-        "tags": [],
-        "createdAt": "2025-02-24",
-        "updatedAt": "2025-02-24"
-    },
     "803c7895-b39b-458e-84f8-a521f4d7a064": {
         "id": "803c7895-b39b-458e-84f8-a521f4d7a064",
         "name": "Hide Inactive Workspaces",
@@ -997,20 +674,6 @@
         "version": "1.0.0",
         "tags": [],
         "createdAt": "2024-11-02",
-        "updatedAt": "2025-01-26"
-    },
-    "c45c4894-d6bd-47fc-997a-0c4d015334f1": {
-        "id": "c45c4894-d6bd-47fc-997a-0c4d015334f1",
-        "name": "No pinned tab reset btn",
-        "description": "Hides the reset button that appears when hovering over pinned tabs.",
-        "homepage": "https://github.com/spicybackend/zen-browser-no-pinned-url-reset",
-        "style": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/c45c4894-d6bd-47fc-997a-0c4d015334f1/chrome.css",
-        "readme": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/c45c4894-d6bd-47fc-997a-0c4d015334f1/readme.md",
-        "image": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/c45c4894-d6bd-47fc-997a-0c4d015334f1/image.png",
-        "author": "spicybackend",
-        "version": "1.0.0",
-        "tags": [],
-        "createdAt": "2024-12-12",
         "updatedAt": "2025-01-26"
     },
     "b51ff956-6aea-47ab-80c7-d6c047c0d510": {
@@ -1111,21 +774,6 @@
         "createdAt": "2024-08-19",
         "updatedAt": "2025-01-26"
     },
-    "2bbe4f0d-f7af-460b-86de-cda893357813": {
-        "id": "2bbe4f0d-f7af-460b-86de-cda893357813",
-        "name": "Customized Popup",
-        "description": "The mod changes the pop-ups to more aesthetically pleasing ones.",
-        "homepage": "https://github.com/paasito/Zen-Mods/tree/main/customized-popup",
-        "style": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/2bbe4f0d-f7af-460b-86de-cda893357813/chrome.css",
-        "readme": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/2bbe4f0d-f7af-460b-86de-cda893357813/readme.md",
-        "image": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/2bbe4f0d-f7af-460b-86de-cda893357813/image.png",
-        "author": "paasito",
-        "version": "1.0.0",
-        "tags": [],
-        "createdAt": "2025-03-26",
-        "updatedAt": "2025-03-31",
-        "preferences": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/2bbe4f0d-f7af-460b-86de-cda893357813/preferences.json"
-    },
     "dbe05f83-b471-4278-a3f9-e5ed244b0d6c": {
         "id": "dbe05f83-b471-4278-a3f9-e5ed244b0d6c",
         "name": "Old navigation buttons",
@@ -1196,19 +844,5 @@
         "createdAt": "2024-10-14",
         "updatedAt": "2025-01-26",
         "tags": []
-    },
-    "0d218357-d5be-48f1-bbc0-5e7cb2d2e11f": {
-        "id": "0d218357-d5be-48f1-bbc0-5e7cb2d2e11f",
-        "name": "Revitalized devtools",
-        "description": "A calmer theme for Zen's DevTools with added transitions and compatible white/dark modes.",
-        "homepage": "https://github.com/ArjiAmin/firefox-devtools",
-        "style": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/0d218357-d5be-48f1-bbc0-5e7cb2d2e11f/chrome.css",
-        "readme": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/0d218357-d5be-48f1-bbc0-5e7cb2d2e11f/readme.md",
-        "image": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/0d218357-d5be-48f1-bbc0-5e7cb2d2e11f/image.png",
-        "author": "ArjiAmin",
-        "version": "1.0.0",
-        "tags": [],
-        "createdAt": "2025-03-30",
-        "updatedAt": "2025-03-31"
     }
 }
