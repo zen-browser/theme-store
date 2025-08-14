@@ -1,7 +1,0 @@
-
-#zen-browser-tabs-wrapper {
-  pointer-events: none;
-  & > * {
-    pointer-events: auto;
-  }
-}
