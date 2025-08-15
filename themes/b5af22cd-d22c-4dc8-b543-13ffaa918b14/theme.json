@@ -1,0 +1,14 @@
+{
+    "id": "b5af22cd-d22c-4dc8-b543-13ffaa918b14",
+    "name": "Remove Close Button",
+    "description": "Removes the close button that appears when hovering over the top area of the browser window.",
+    "homepage": "https://github.com/DanOpcode/RemoveCloseButtonZenMod",
+    "style": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/b5af22cd-d22c-4dc8-b543-13ffaa918b14/chrome.css",
+    "readme": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/b5af22cd-d22c-4dc8-b543-13ffaa918b14/readme.md",
+    "image": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/b5af22cd-d22c-4dc8-b543-13ffaa918b14/image.png",
+    "author": "DanOpcode",
+    "version": "1.0.0",
+    "tags": [],
+    "createdAt": "2025-08-15",
+    "updatedAt": "2025-08-15"
+}
