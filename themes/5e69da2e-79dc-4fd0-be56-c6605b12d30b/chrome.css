@@ -1,0 +1,10 @@
+
+.tab-icon-overlay {
+  border: none !important;
+  background-color: transparent !important;
+  transform: scale(1.4) !important;
+  &:hover {
+    transform: scale(1.7) !important;
+    transition: transform 200ms ease-in-out, fill 100ms ease-in-out
+  }
+}
