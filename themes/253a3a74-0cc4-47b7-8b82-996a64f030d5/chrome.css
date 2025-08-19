@@ -5,17 +5,20 @@
 }
 
 /* Horizontal Position */
-
-:root:has(#theme-Floating-History[theme-floating_history-position="right"]) {
-    --floating-history-transform-translateX: 110%;
-    --floating-history-position-right: 15px;
-    --floating-history-position-left: auto;
+@media (-moz-pref("theme.floating_history.position", "right")) {
+    :root {
+        --floating-history-transform-translateX: 110%;
+        --floating-history-position-right: 15px;
+        --floating-history-position-left: auto;
+    }
 }
 
-:root:has(#theme-Floating-History[theme-floating_history-position="left"]) {
-    --floating-history-transform-translateX: -110%;
-    --floating-history-position-left: 15px;
-    --floating-history-position-right: auto;
+@media (-moz-pref("theme.floating_history.position", "left")) {
+    :root {
+        --floating-history-transform-translateX: -110%;
+        --floating-history-position-left: 15px;
+        --floating-history-position-right: auto;
+    }
 }
 
 /* Disable dragable splitter */
@@ -72,7 +75,6 @@
 }
 
 /* Inner Styles of History Tab */
-
 #sidebar-box[sidebarcommand="viewHistorySidebar"] box#sidebar-header {
     border-bottom: none !important;
 }

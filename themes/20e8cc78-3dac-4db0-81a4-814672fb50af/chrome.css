@@ -4,6 +4,7 @@
 * Move the at a glance buttons to the right side of the window.
 * Pontus Sundén <hi@pontus.cc>
 */
+
 .zen-glance-sidebar-container {
   left: 100% !important;
   right: unset !important;

@@ -1,6 +1,7 @@
 .tab-context-line {
   display: none !important;
 }
+
 #tabbrowser-tabs {
   & .tabbrowser-tab {
     &[selected] .tab-background {

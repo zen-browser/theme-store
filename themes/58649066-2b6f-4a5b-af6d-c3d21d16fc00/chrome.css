@@ -21,40 +21,58 @@
 * Topbar highlighting.
 \*******************************************/
 
-:root:has(#theme-Private-Mode-Highlighting[uc-private-browsing-top-bar-color="match-zen"]) {
-    --pbmh-private-browsing-mode-base-color: var(--zen-primary-color);
+@media (-moz-pref("uc.private-browsing-top-bar.color", "match-zen")) {
+    :root {
+        --pbmh-private-browsing-mode-base-color: var(--zen-primary-color);
+    }
 }
 
-:root:has(#theme-Private-Mode-Highlighting[uc-private-browsing-top-bar-color="blue"]) {
-    --pbmh-private-browsing-mode-base-color: oklch(from #aac7ff calc(l - 0.5) c h);
+@media (-moz-pref("uc.private-browsing-top-bar.color", "blue")) {
+    :root {
+        --pbmh-private-browsing-mode-base-color: oklch(from #aac7ff calc(l - 0.5) c h);
+    }
 }
 
-:root:has(#theme-Private-Mode-Highlighting[uc-private-browsing-top-bar-color="teal"]) {
-    --pbmh-private-browsing-mode-base-color: oklch(from #74d7cb calc(l - 0.5) c h);
+@media (-moz-pref("uc.private-browsing-top-bar.color", "teal")) {
+    :root {
+        --pbmh-private-browsing-mode-base-color: oklch(from #74d7cb calc(l - 0.5) c h);
+    }
 }
 
-:root:has(#theme-Private-Mode-Highlighting[uc-private-browsing-top-bar-color="green"]) {
-    --pbmh-private-browsing-mode-base-color: oklch(from #a0d490 calc(l - 0.5) c h);
+@media (-moz-pref("uc.private-browsing-top-bar.color", "green")) {
+    :root {
+        --pbmh-private-browsing-mode-base-color: oklch(from #a0d490 calc(l - 0.5) c h);
+    }
 }
 
-:root:has(#theme-Private-Mode-Highlighting[uc-private-browsing-top-bar-color="yellow"]) {
-    --pbmh-private-browsing-mode-base-color: oklch(from #dec663 calc(l - 0.5) c h);
+@media (-moz-pref("uc.private-browsing-top-bar.color", "yellow")) {
+    :root {
+        --pbmh-private-browsing-mode-base-color: oklch(from #dec663 calc(l - 0.5) c h);
+    }
 }
 
-:root:has(#theme-Private-Mode-Highlighting[uc-private-browsing-top-bar-color="orange"]) {
-    --pbmh-private-browsing-mode-base-color: oklch(from #ffb787 calc(l - 0.5) c h);
+@media (-moz-pref("uc.private-browsing-top-bar.color", "orange")) {
+    :root {
+        --pbmh-private-browsing-mode-base-color: oklch(from #ffb787 calc(l - 0.5) c h);
+    }
 }
 
-:root:has(#theme-Private-Mode-Highlighting[uc-private-browsing-top-bar-color="brown"]) {
-    --pbmh-private-browsing-mode-base-color: oklch(from #dec1b1 calc(l - 0.5) c h);
+@media (-moz-pref("uc.private-browsing-top-bar.color", "brown")) {
+    :root {
+        --pbmh-private-browsing-mode-base-color: oklch(from #dec1b1 calc(l - 0.5) c h);
+    }
 }
 
-:root:has(#theme-Private-Mode-Highlighting[uc-private-browsing-top-bar-color="red"]) {
-    --pbmh-private-browsing-mode-base-color: oklch(from #ffb1c0 calc(l - 0.5) c h);
+@media (-moz-pref("uc.private-browsing-top-bar.color", "red")) {
+    :root {
+        --pbmh-private-browsing-mode-base-color: oklch(from #ffb1c0 calc(l - 0.5) c h);
+    }
 }
 
-:root:has(#theme-Private-Mode-Highlighting[uc-private-browsing-top-bar-color="pink"]) {
-    --pbmh-private-browsing-mode-base-color: oklch(from #f6b0ea calc(l - 0.5) c h);
+@media (-moz-pref("uc.private-browsing-top-bar.color", "pink")) {
+    :root {
+        --pbmh-private-browsing-mode-base-color: oklch(from #f6b0ea calc(l - 0.5) c h);
+    }
 }
 
 :root {
@@ -67,20 +85,23 @@
     }
 }
 
-:root:has(#theme-Private-Mode-Highlighting[uc-private-browsing-top-bar-highlighting-style="solid"]) {
-    --pbmh-private-browsing-mode-gradient-stop-color: var(--pbmh-private-browsing-mode-color);
+@media (-moz-pref("uc.private-browsing-top-bar.highlighting-style", "solid")) {
+    :root {
+        --pbmh-private-browsing-mode-gradient-stop-color: var(--pbmh-private-browsing-mode-color);
+    }
 }
 
-:root:has(#theme-Private-Mode-Highlighting[uc-private-browsing-top-bar-highlighting-style]:not([uc-private-browsing-top-bar-highlighting-style="none"])) {
-    &[privatebrowsingmode] #zen-appcontent-navbar-container,
-    &[privatebrowsingmode][zen-compact-mode="true"]:not([zen-single-toolbar="true"]) #nav-bar {
+@media not (-moz-pref("uc.private-browsing-top-bar.highlighting-style", "none")) and
+    (-moz-pref("uc.private-browsing-top-bar.highlighting-style")) {
+    :root[privatebrowsingmode] #zen-appcontent-navbar-container,
+    :root[privatebrowsingmode][zen-compact-mode="true"]:not([zen-single-toolbar="true"]) #nav-bar {
         background-image: linear-gradient(to bottom,
                 var(--pbmh-private-browsing-mode-color),
                 var(--pbmh-private-browsing-mode-gradient-stop-color) var(--pbmg-private-browsing-mode-gradient-stop-position),
                 transparent calc(var(--pbmg-private-browsing-mode-gradient-stop-position) + 1px)) !important;
     }
 
-    &[privatebrowsingmode][zen-single-toolbar="true"] #urlbar-background {
+    :root[privatebrowsingmode][zen-single-toolbar="true"] #urlbar-background {
         background-color: var(--pbmh-private-browsing-mode-color) !important;
     }
 }
@@ -89,13 +110,18 @@
 * Viewport border styling.
 \*******************************************/
 
-:root:has(#theme-Private-Mode-Highlighting[uc-private-browsing-top-bar-border-style="thin"]) {
-    --pbmg-private-browsing-mode-border-size: 1px;
+@media (-moz-pref("uc.private-browsing-top-bar.border-style", "thin")) {
+    :root {
+        --pbmg-private-browsing-mode-border-size: 1px;
+    }
 }
 
-:root[privatebrowsingmode]:not([inDOMFullscreen="true"]):not([chromehidden~="location"]):not([chromehidden~="toolbar"]):has(#theme-Private-Mode-Highlighting[uc-private-browsing-top-bar-border-style]:not([uc-private-browsing-top-bar-border-style="none"])) {
-    & #tabbrowser-tabbox #tabbrowser-tabpanels .browserSidebarContainer {
-        box-shadow: 0 0 0 var(--pbmg-private-browsing-mode-border-size) var(--pbmh-private-browsing-mode-border) !important;
+@media not (-moz-pref("uc.private-browsing-top-bar.border-style", "none")) and
+    (-moz-pref("uc.private-browsing-top-bar.border-style")) {
+    :root[privatebrowsingmode]:not([inDOMFullscreen="true"]):not([chromehidden~="location"]):not([chromehidden~="toolbar"]) {
+        & #tabbrowser-tabbox #tabbrowser-tabpanels .browserSidebarContainer {
+            box-shadow: 0 0 0 var(--pbmg-private-browsing-mode-border-size) var(--pbmh-private-browsing-mode-border) !important;
+        }
     }
 }
 
@@ -103,7 +129,7 @@
 * Private Browsing Mode Icon styling.
 \*******************************************/
 
-@media not (-moz-bool-pref: "uc.private-browsing-top-bar.hide-icon") {
+@media not (-moz-pref("uc.private-browsing-top-bar.hide-icon")) {
     [privatebrowsingmode] .zen-current-workspace-indicator-icon {
         display: block !important;
         color: transparent !important;
