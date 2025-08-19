@@ -1,47 +1,33 @@
-@media (-moz-pref("uc.tabtextsize.textsize", "8")) {
-  .tab-text.tab-label {
+.tab-text.tab-label {
+  @media (-moz-pref("uc.tabtextsize.textsize", "8")) {
     font-size: 8px;
   }
-}
 
-@media (-moz-pref("uc.tabtextsize.textsize", "10")) {
-  .tab-text.tab-label {
+  @media (-moz-pref("uc.tabtextsize.textsize", "10")) {
     font-size: 10px;
   }
-}
 
-@media (-moz-pref("uc.tabtextsize.textsize", "default")) {
-  .tab-text.tab-label {
+  @media (-moz-pref("uc.tabtextsize.textsize", "default")) {
     font-size: 12px;
   }
-}
 
-@media (-moz-pref("uc.tabtextsize.textsize", "14")) {
-  .tab-text.tab-label {
+  @media (-moz-pref("uc.tabtextsize.textsize", "14")) {
     font-size: 14px;
   }
-}
 
-@media (-moz-pref("uc.tabtextsize.textsize", "16")) {
-  .tab-text.tab-label {
+  @media (-moz-pref("uc.tabtextsize.textsize", "16")) {
     font-size: 16px;
   }
-}
 
-@media (-moz-pref("uc.tabtextsize.textsize", "18")) {
-  .tab-text.tab-label {
+  @media (-moz-pref("uc.tabtextsize.textsize", "18")) {
     font-size: 18px;
   }
-}
 
-@media (-moz-pref("uc.tabtextsize.textsize", "20")) {
-  .tab-text.tab-label {
+  @media (-moz-pref("uc.tabtextsize.textsize", "20")) {
     font-size: 20px;
   }
-}
 
-@media (-moz-pref("uc.tabtextsize.textsize", "22")) {
-  .tab-text.tab-label {
+  @media (-moz-pref("uc.tabtextsize.textsize", "22")) {
     font-size: 22px;
   }
 }
