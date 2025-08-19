@@ -1,11 +1,9 @@
-@media (-moz-pref("theme.custom_uifont.default", "Serif")) {
-    *:not(.titlebar-buttonbox-container *) {
+*:not(.titlebar-buttonbox-container *) {
+    @media (-moz-pref("theme.custom_uifont.default", "Serif")) {
         font-family: serif !important;
     }
-}
-
-@media (-moz-pref("theme.custom_uifont.default", "Custom")) {
-    *:not(.titlebar-buttonbox-container *) {
+    
+    @media (-moz-pref("theme.custom_uifont.default", "Custom")) {
         font-family: var(--theme-custom_uifont-custom) !important;
         text-shadow: var(--theme-custom_uifont-shadow) !important;
     }
