@@ -1,51 +1,46 @@
 @media (-moz-pref("zen.tabs.vertical")) {
   /* Tab Borders Based on Preference */
-  .tabbrowser-tab:not([pinned]):is([multiselected="true"], [selected]) {
-    &:has(#uc-tabs[uc-tabs-preferred_color="primary"]) .tab-background {
+  .tabbrowser-tab:not([pinned]):is([multiselected="true"], [selected]) .tab-background {
+    @media (-moz-pref("uc.tabs.preferred_color", "primary")) {
       border: 2px solid var(--zen-colors-primary) !important;
     }
-    &:has(#uc-tabs[uc-tabs-preferred_color="secondary"]) .tab-background {
+
+    @media (-moz-pref("uc.tabs.preferred_color", "secondary")) {
       border: 2px solid var(--zen-colors-secondary) !important;
     }
-    &:has(#uc-tabs[uc-tabs-preferred_color="tertiary"]) .tab-background {
+
+    @media (-moz-pref("uc.tabs.preferred_color", "tertiary")) {
       border: 2px solid var(--zen-colors-tertiary) !important;
     }
-    &:has(#uc-tabs[uc-tabs-preferred_color="border"]) .tab-background {
+
+    @media (-moz-pref("uc.tabs.preferred_color", "border")) {
       border: 2px solid var(--zen-colors-border) !important;
     }
-    &:has(#uc-tabs[uc-tabs-preferred_color="custom"]) .tab-background {
+
+    @media (-moz-pref("uc.tabs.preferred_color", "custom")) {
       @media (prefers-color-scheme: light) {
-        border: 2px solid var(--uc-tabs-preferred_color, #000000) !important; /* Fallback to black */
+        border: 2px solid var(--uc-tabs-custom_color_hex, #000000) !important; /* Fallback to black */
       }
+
       @media (prefers-color-scheme: dark) {
-        border: 2px solid var(--uc-tabs-preferred_color, #ffffff) !important; /* Fallback to white */
+        border: 2px solid var(--uc-tabs-custom_color_hex, #ffffff) !important; /* Fallback to white */
       }
     }
   }
 
   /* Background Modification for Selected Tab */
-  #tabbrowser-tabs {
-    & .tabbrowser-tab {
-      &[selected] .tab-background {
-        background: color-mix(
-          in srgb,
-          var(--zen-colors-secondary) 40%,
-          transparent
-        ) !important;
-      }
-    }
+  #tabbrowser-tabs .tabbrowser-tab[selected] .tab-background {
+    background: color-mix(
+      in srgb,
+      var(--zen-colors-secondary) 40%,
+      transparent
+    ) !important;
   }
 
   /* Dimming Tab Text When Unloaded */
-  @media (-moz-pref("uc.tabs.dim_unloaded")) {
-    #tabbrowser-tabs {
-      & .tabbrowser-tab {
-        @media (-moz-pref("zen.tabs.dim-pending")) {
-          &[pending="true"] .tab-text {
-            opacity: 0.5; /* Dimmed text for pending tabs */
-          }
-        }
-      }
+  @media (-moz-pref("uc.tabs.dim_unloaded")) and (-moz-pref("zen.tabs.dim-pending")) {
+    #tabbrowser-tabs .tabbrowser-tab[pending="true"] .tab-text {
+      opacity: 0.5; /* Dimmed text for pending tabs */
     }
   }
 }
