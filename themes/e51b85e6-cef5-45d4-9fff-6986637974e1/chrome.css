@@ -1,4 +1,3 @@
-
 #zen-toast-container {
   top: calc(var(--zen-element-separation) * 6) !important;
   
@@ -31,5 +30,4 @@
       transition: 0.3s !important;
     }
   }
-
 }

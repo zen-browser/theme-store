@@ -1,6 +1,6 @@
 /*#region  ZEN SIDEBAR AT RIGHT SIDE  */
 /*#region  RIGHT SIDE PINNED ZEN SIDEBAR  */
-@media (-moz-bool-pref: "uc.zen-sidebar.pin-at-right-side") {
+@media (-moz-pref("uc.zen-sidebar.pin-at-right-side")) {
   #zen-sidebar-web-panel-wrapper:not(
       :has(#zen-sidebar-web-panel[pinned="true"])
     ) {
@@ -10,7 +10,7 @@
 }
 /*#endregion*/
 /*#region  RIGHT SIDE FLOATING ZEN SIDEBAR  */
-@media (-moz-bool-pref: "uc.zen-sidebar.float-at-right-side") {
+@media (-moz-pref("uc.zen-sidebar.float-at-right-side")) {
   #tabbrowser-tabbox:has(#zen-sidebar-web-panel[pinned="true"]) {
     position: relative !important;
   }

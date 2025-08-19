@@ -17,7 +17,7 @@
   background-image: url("chrome://browser/skin/tabbrowser/tab-audio-muted-small.svg") !important;
 }
 
-@media (-moz-bool-pref: "uc.audio-tabicon.left-side") {
+@media (-moz-pref("uc.audio-tabicon.left-side")) {
   .tab-icon-overlay {
     transform: translate(-50%, -35%) scale(0.7) !important;
   }

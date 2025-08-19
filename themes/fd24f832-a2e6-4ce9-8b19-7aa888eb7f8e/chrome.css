@@ -10,7 +10,6 @@
 }
 
 .tab-icon-overlay {  
- 
   &:is([soundplaying], [muted], [activemedia-blocked]) {
     display: block !important;
     border: 0px !important;
@@ -53,18 +52,20 @@
     mask-image: var(--mute-svg) !important;
   }
 }
-@media not (-moz-bool-pref: "zen.view.sidebar-expanded") {
-    .tabbrowser-tab:is([soundplaying], [muted], [activemedia-blocked]):hover img {
-        opacity: 1 !important;
-        transition: opacity 0.1s ease-out !important;
-    }
 
-    .tabbrowser-tab:is([soundplaying], [muted], [activemedia-blocked]):hover .tab-icon-overlay { 
-        margin: 0px !important;
-        transition: opacity 0.1s ease-out, transform 0.1s ease-out !important;
-        transform: translate(6.9px, -6.9px) scale(0.69) !important;
-    }
+@media not (-moz-pref("zen.view.sidebar-expanded")) {
+  .tabbrowser-tab:is([soundplaying], [muted], [activemedia-blocked]):hover img {
+      opacity: 1 !important;
+      transition: opacity 0.1s ease-out !important;
   }
+
+  .tabbrowser-tab:is([soundplaying], [muted], [activemedia-blocked]):hover .tab-icon-overlay { 
+      margin: 0px !important;
+      transition: opacity 0.1s ease-out, transform 0.1s ease-out !important;
+      transform: translate(6.9px, -6.9px) scale(0.69) !important;
+  }
+}
+
 #zen-essentials-container {
   .tab-icon-overlay:is([soundplaying], [muted]) {
     margin: 0px !important;

@@ -7,7 +7,7 @@
     }
   }
 
-  @media (-moz-bool-pref: "zen.tabs.vertical.right-side") {
+  @media (-moz-pref("zen.tabs.vertical.right-side")) {
     #tabbrowser-tabpanels {
       & .browserSidebarContainer:not([zen-split="true"]) {
         --zen-webview-border-radius: 0 var(--zen-border-radius) 0 0;

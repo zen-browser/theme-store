@@ -1,4 +1,4 @@
-@media not (-moz-bool-pref: "mod.extension.viewgrid") {
+@media not (-moz-pref("mod.extension.viewgrid")) {
   /* Hide header, description, extension captions */
   #unified-extensions-view box.panel-header,
   #unified-extensions-view > :nth-child(2),
@@ -7,45 +7,57 @@
   .unified-extensions-item-message-deck {
     display: none !important;
   }
+
   /* Reduce the panel size and padding */
   #unified-extensions-view {
     width: var(--menu-panel-width) !important;
   }
+
   panelview .unified-extensions-item-action-button {
     padding-inline: 10px !important;
     padding-block: 0px !important;
   }
+
   #unified-extensions-manage-extensions {
     margin-inline: 4px !important;
     padding: 8px 10px !important;
     margin-block-end: 4px !important;
   }
+
   #unified-extensions-panel .unified-extensions-item {
     margin-block: 2px !important;
   }
+
   #unified-extensions-view .unified-extensions-item-action-button:hover {
     background-color: color-mix(in srgb, currentColor 3%, transparent) !important;
   }
+  
   #unified-extensions-view .unified-extensions-item-menu-button.subviewbutton,
   .unified-extensions-item-row-wrapper {
     padding: 0 !important;
   }
+
   #unified-extensions-view .unified-extensions-item-menu-button.subviewbutton > .toolbarbutton-icon {
     opacity: 0 !important;
     transition: 0.2s ease !important;
   }
+
   #unified-extensions-panel .unified-extensions-item:hover {
+    background-color: transparent !important;
+
     .unified-extensions-item-menu-button.subviewbutton > .toolbarbutton-icon {
       opacity: 0.85 !important;
     }
-    background-color: transparent !important;
   }
+
   #unified-extensions-view .unified-extensions-item-action-button .panel-no-padding .webextension-browser-action {
     padding: 0 !important;
   }
+
   #unified-extensions-view .toolbar-menupopup :is(menu, menuitem), .subview-subheader, panelview .toolbarbutton-1, .subviewbutton, .widget-overflow-list .toolbarbutton-1 {
     max-height: 3em !important;
   }
+
   #unified-extensions-view .subviewbutton-iconic {
     & > .toolbarbutton-icon {
       width: 1.2em !important;
@@ -55,7 +67,7 @@
   }
 }
 
-@media (-moz-bool-pref: "mod.extension.viewgrid") {
+@media (-moz-pref("mod.extension.viewgrid")) {
   /* Set width of Unified Extension View */
   #unified-extensions-view {
     width: calc(var(--menu-panel-width) - 75px) !important;
@@ -122,7 +134,7 @@
   }
 }
 
-@media (-moz-bool-pref: "mod.extension.hide") {
+@media (-moz-pref("mod.extension.hide")) {
   :root:not([customizing]){
     #unified-extensions-button {
       opacity: 0 !important;
@@ -135,7 +147,7 @@
   }
 }
 
-@media (-moz-bool-pref: "mod.extension.remove") {
+@media (-moz-pref("mod.extension.remove")) {
   :root:not([customizing]){
     #unified-extensions-button {
       display: none !important;

@@ -1,14 +1,19 @@
 #vertical-pinned-tabs-container > .zen-workspace-tabs-section[hidden="true"] {
   display: none !important;
 }
+
 tabs {
   counter-reset: tab-counter;
-} /* Automatically increment tab numbers for each tab which is essential or is in an active workspace */
+}
+
+/* Automatically increment tab numbers for each tab which is essential or is in an active workspace */
 hbox.zen-essentials-container tab:not([zen-glance-tab="true"]),
 zen-workspace[active] tab:not([zen-glance-tab="true"]) {
   counter-increment: tab-counter;
-} /* Styles when the sidebar is expanded */
-@media (-moz-bool-pref: "zen.view.sidebar-expanded") {
+}
+
+/* Styles when the sidebar is expanded */
+@media (-moz-pref("zen.view.sidebar-expanded")) {
   tab:not([zen-glance-tab="true"]) > .tab-stack > .tab-content::after {
     content: counter(
       tab-counter
@@ -58,10 +63,11 @@ zen-workspace[active] tab:not([zen-glance-tab="true"]) {
   }
 
   /* Put tab numbers on the left side when expanded_side="Left" (AND in expanded mode) */
-  :root:has(#theme-Tab-Numbers[uc-theme-expanded_side="Left"]) {
+  @media (-moz-pref("uc.theme.expanded_side", "Left")) {
     tab:not([zen-glance-tab="true"]) > .tab-stack > .tab-content::after {
       display: none; /* Hide the ::after pseudo-element first */
     }
+
     tab:not([zen-glance-tab="true"]) > .tab-stack > .tab-content::before {
       content: counter(
         tab-counter
@@ -87,8 +93,10 @@ zen-workspace[active] tab:not([zen-glance-tab="true"]) {
       margin-right: 5px;
     }
   }
-} /* Styles when the sidebar is NOT expanded (compact mode) */
-@media not (-moz-bool-pref: "zen.view.sidebar-expanded") {
+}
+
+/* Styles when the sidebar is NOT expanded (compact mode) */
+@media not (-moz-pref("zen.view.sidebar-expanded")) {
   tab:not([zen-glance-tab="true"]) > .tab-stack > .tab-content::before {
     content: counter(tab-counter) "";
     position: absolute;
@@ -99,8 +107,10 @@ zen-workspace[active] tab:not([zen-glance-tab="true"]) {
     font-weight: var(--bold-text, normal);
     font-size: var(--font_size, 80%); /* Default font size (same as "Small") */
     color: var(--number_color, inherit); /* Fallback to default color */
-  } /* Put tab numbers on the left side when compact_side="Left" (AND in compact mode) */
-  :root:has(#theme-Tab-Numbers[uc-theme-compact_side="Left"]) {
+  }
+  
+  /* Put tab numbers on the left side when compact_side="Left" (AND in compact mode) */
+  @media (-moz-pref("uc.theme.compact_side", "Left")) {
     tab:not([zen-glance-tab="true"]) > .tab-stack > .tab-content::before {
       content: counter(tab-counter) "";
       position: absolute;
@@ -116,50 +126,83 @@ zen-workspace[active] tab:not([zen-glance-tab="true"]) {
       color: var(--number_color, inherit); /* Fallback to default color */
     }
   }
-} /* Enable bold text when the preference is enabled */
-@media (-moz-bool-pref: "uc.theme.bold-text-enable.enabled") {
+}
+
+/* Enable bold text when the preference is enabled */
+@media (-moz-pref("uc.theme.bold-text-enable.enabled")) {
   tab:not([zen-glance-tab="true"]) > .tab-stack > .tab-content {
     --bold-text: bold;
   }
 }
-@media (-moz-bool-pref: "uc.theme.custom_color_enabled") {
+
+@media (-moz-pref("uc.theme.custom_color_enabled")) {
   tab:not([zen-glance-tab="true"]) > .tab-stack > .tab-content {
     --number_color: var(--uc-theme-number_color) !important;
     --number_background_color: var(
       --uc-theme-number_background_color
     ) !important;
   }
-} /* Set font size for Extra Small (Override default) */
-:root:has(#theme-Tab-Numbers[uc-theme-font_size="XSmall"]) {
-  --font_size: 70% !important; /* Extra Small font size */
-} /* Set font size for Small */
-:root:has(#theme-Tab-Numbers[uc-theme-font_size="Small"]) {
-  --font_size: 80% !important; /* Small font size */
-} /* Set font size for Medium (Override default) */
-:root:has(#theme-Tab-Numbers[uc-theme-font_size="Medium"]) {
-  --font_size: 90% !important; /* Medium font size */
-} /* Set font size for Large (Override default) */
-:root:has(#theme-Tab-Numbers[uc-theme-font_size="Large"]) {
-  --font_size: 100% !important; /* Large font size */
-} /* Set font size for Extra Large (Override default) */
-:root:has(#theme-Tab-Numbers[uc-theme-font_size="XLarge"]) {
-  --font_size: 120% !important; /* Extra Large font size */
-} /* Ensure Close X button is on top of everything. */
+}
+
+/* Set font size for Extra Small (Override default) */
+@media (-moz-pref("uc.theme.font_size", "XSmall")) {
+  :root {
+    --font_size: 70% !important; /* Extra Small font size */
+  }
+}
+/* Set font size for Small */
+@media (-moz-pref("uc.theme.font_size", "Small")) {
+  :root {
+    --font_size: 80% !important; /* Small font size */
+  }
+}
+/* Set font size for Medium (Override default) */
+@media (-moz-pref("uc.theme.font_size", "Medium")) {
+  :root {
+    --font_size: 90% !important; /* Medium font size */
+  }
+}
+/* Set font size for Large (Override default) */
+@media (-moz-pref("uc.theme.font_size", "Large")) {
+  :root {
+    --font_size: 100% !important; /* Large font size */
+  }
+}
+/* Set font size for Extra Large (Override default) */
+@media (-moz-pref("uc.theme.font_size", "XLarge")) {
+  :root {
+    --font_size: 120% !important; /* Extra Large font size */
+  }
+}
+
+/* Ensure Close X button is on top of everything. */
 .tab-close-button {
   z-index: 10;
-} /* Customize the shape based on the preference values */
-:root:has(#theme-Tab-Numbers[uc-theme-background_shape="Square"]) {
-  --background_shape: 0%; /* Square */
 }
-:root:has(#theme-Tab-Numbers[uc-theme-background_shape="SlightlyRounded"]) {
-  --background_shape: 5%; /* Slightly Rounded Square */
+
+/* Customize the shape based on the preference values */
+@media (-moz-pref("uc.theme.background_shape", "Square")) {
+  :root {
+    --background_shape: 0%; /* Square */
+  }
 }
-:root:has(#theme-Tab-Numbers[uc-theme-background_shape="ModeratelyRounded"]) {
-  --background_shape: 15%; /* Moderately Rounded Square */
+@media (-moz-pref("uc.theme.background_shape", "SlightlyRounded")) {
+  :root {
+    --background_shape: 5%; /* Slightly Rounded Square */
+  }
 }
-:root:has(#theme-Tab-Numbers[uc-theme-background_shape="FullyRounded"]) {
-  --background_shape: 30%; /* Fully Rounded Square */
+@media (-moz-pref("uc.theme.background_shape", "ModeratelyRounded")) {
+  :root {
+    --background_shape: 15%; /* Moderately Rounded Square */
+  }
 }
-:root:has(#theme-Tab-Numbers[uc-theme-background_shape="Circle"]) {
-  --background_shape: 50%; /* Perfect Circle */
+@media (-moz-pref("uc.theme.background_shape", "FullyRounded")) {
+  :root {
+    --background_shape: 30%; /* Fully Rounded Square */
+  }
+}
+@media (-moz-pref("uc.theme.background_shape", "Circle")) {
+  :root {
+    --background_shape: 50%; /* Perfect Circle */
+  }
 }

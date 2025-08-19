@@ -1,11 +1,10 @@
-
 #urlbar[zen-newtab="true"] {
   #identity-icon {
     list-style-image: url("chrome://browser/skin/zen-icons/new-tab-image.svg") !important;
     filter: opacity(0.5) !important;
   }
 
-&[open] #identity-icon-box::after {
+  &[open] #identity-icon-box::after {
     content: "open in new tab" !important;
     filter: opacity(0.5) !important;
     padding-left: 6px !important;

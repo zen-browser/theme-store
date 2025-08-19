@@ -1,4 +1,4 @@
-@media (-moz-bool-pref: "zen.tabs.vertical") {
+@media (-moz-pref("zen.tabs.vertical")) {
   /* Tab Borders Based on Preference */
   .tabbrowser-tab:not([pinned]):is([multiselected="true"], [selected]) {
     &:has(#uc-tabs[uc-tabs-preferred_color="primary"]) .tab-background {
@@ -37,10 +37,10 @@
   }
 
   /* Dimming Tab Text When Unloaded */
-  @media (-moz-bool-pref: "uc.tabs.dim_unloaded") {
+  @media (-moz-pref("uc.tabs.dim_unloaded")) {
     #tabbrowser-tabs {
       & .tabbrowser-tab {
-        @media (-moz-bool-pref: "zen.tabs.dim-pending") {
+        @media (-moz-pref("zen.tabs.dim-pending")) {
           &[pending="true"] .tab-text {
             opacity: 0.5; /* Dimmed text for pending tabs */
           }

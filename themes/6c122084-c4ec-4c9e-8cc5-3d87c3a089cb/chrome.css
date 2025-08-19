@@ -2,6 +2,7 @@
   margin-top: var(--zen-element-separation) !important;
   margin-bottom: var(--zen-element-separation) !important;
 }
+
 toolbarbutton.titlebar-button {
     height: calc(38px + 2 * var(--zen-element-separation)) !important;
     width: calc(38px + 2 * var(--zen-element-separation)) !important;

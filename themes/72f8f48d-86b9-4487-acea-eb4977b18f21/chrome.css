@@ -3,6 +3,7 @@
 * Re-style and add customization options for the Ctrl+Tab panel.
 * Pontus Sundén <hi@pontus.cc>
 */
+
 @-moz-document url-prefix("chrome:") {
   :root {
     /**

@@ -48,7 +48,7 @@
 }
 
 /** Legacy Mode - Round circle */
-@media not (-moz-bool-pref: "zen.mods.AudioIndicatorEnhanced.audioWave.enabled") {
+@media not (-moz-pref("zen.mods.AudioIndicatorEnhanced.audioWave.enabled")) {
 	#tabbrowser-tabs[orient="vertical"]
 		.tabbrowser-tab
 		.tab-icon-overlay:not([crashed]) {
@@ -61,7 +61,7 @@
 			background-repeat: no-repeat !important;
 			background-position: center !important;
 
-			@media (-moz-bool-pref: "zen.mods.AudioIndicatorEnhanced.hoverScaleAnimationEnabled") {
+			@media (-moz-pref("zen.mods.AudioIndicatorEnhanced.hoverScaleAnimationEnabled")) {
 				&:hover {
 					transition: transform 100ms ease-in-out,
 						background-color 100ms ease-in-out !important;
@@ -73,12 +73,12 @@
 
 		&[soundplaying] {
 			/* Revert old icon */
-			@media (-moz-bool-pref: "zen.mods.AudioIndicatorEnhanced.returnOldIcons") {
-				@media not (-moz-bool-pref: "zen.mods.AudioIndicatorEnhanced.reverseAudioIcons") {
+			@media (-moz-pref("zen.mods.AudioIndicatorEnhanced.returnOldIcons")) {
+				@media not (-moz-pref("zen.mods.AudioIndicatorEnhanced.reverseAudioIcons")) {
 					background-image: url("chrome://browser/skin/tabbrowser/tab-audio-playing-small.svg") !important;
 				}
 
-				@media (-moz-bool-pref: "zen.mods.AudioIndicatorEnhanced.reverseAudioIcons") {
+				@media (-moz-pref("zen.mods.AudioIndicatorEnhanced.reverseAudioIcons")) {
 					background-image: url("chrome://browser/skin/tabbrowser/tab-audio-muted-small.svg") !important;
 				}
 			}
@@ -89,12 +89,12 @@
 			background-color: rgb(122, 31, 31) !important;
 
 			/* Revert old icon */
-			@media (-moz-bool-pref: "zen.mods.AudioIndicatorEnhanced.returnOldIcons") {
-				@media not (-moz-bool-pref: "zen.mods.AudioIndicatorEnhanced.reverseAudioIcons") {
+			@media (-moz-pref("zen.mods.AudioIndicatorEnhanced.returnOldIcons")) {
+				@media not (-moz-pref("zen.mods.AudioIndicatorEnhanced.reverseAudioIcons")) {
 					background-image: url("chrome://browser/skin/tabbrowser/tab-audio-muted-small.svg") !important;
 				}
 
-				@media (-moz-bool-pref: "zen.mods.AudioIndicatorEnhanced.reverseAudioIcons") {
+				@media (-moz-pref("zen.mods.AudioIndicatorEnhanced.reverseAudioIcons")) {
 					background-image: url("chrome://browser/skin/tabbrowser/tab-audio-playing-small.svg") !important;
 				}
 			}
@@ -102,13 +102,13 @@
 
 		&[activemedia-blocked] {
 			/* Revert old icon */
-			@media (-moz-bool-pref: "zen.mods.AudioIndicatorEnhanced.returnOldIcons") {
+			@media (-moz-pref("zen.mods.AudioIndicatorEnhanced.returnOldIcons")) {
 				background-image: url("chrome://browser/skin/tabbrowser/tab-audio-blocked-small.svg") !important;
 			}
 		}
 
 		/* Revert new, zen's audio indicator */
-		@media (-moz-bool-pref: "zen.mods.AudioIndicatorEnhanced.returnOldIcons") {
+		@media (-moz-pref("zen.mods.AudioIndicatorEnhanced.returnOldIcons")) {
 			&[muted],
 			&[soundplaying],
 			&[activemedia-blocked] {
@@ -146,7 +146,7 @@
 				background-color: hsl(0, 59%, 30%, 50%) !important;
 			}
 
-			@media (-moz-bool-pref: "zen.mods.AudioIndicatorEnhanced.hoverScaleAnimationEnabled") {
+			@media (-moz-pref("zen.mods.AudioIndicatorEnhanced.hoverScaleAnimationEnabled")) {
 				&:hover {
 					transform: scale(1.2);
 				}
@@ -155,7 +155,7 @@
 	}
 
 	/* Patches for pinned tabs indicator while in SuperPins */
-	@media (-moz-bool-pref: "uc.pins.legacy-layout") {
+	@media (-moz-pref("uc.pins.legacy-layout")) {
 		#navigator-toolbox[zen-sidebar-expanded="true"]
 			#tabbrowser-tabs[orient="vertical"]
 			.tabbrowser-tab[pinned]
@@ -184,7 +184,7 @@
 					background-color: hsl(0, 59%, 30%, 50%) !important;
 				}
 
-				@media (-moz-bool-pref: "zen.mods.AudioIndicatorEnhanced.hoverScaleAnimationEnabled") {
+				@media (-moz-pref("zen.mods.AudioIndicatorEnhanced.hoverScaleAnimationEnabled")) {
 					&:hover {
 						transform: scale(1.2);
 					}
@@ -234,7 +234,7 @@
 }
 
 /** Audio Wave version */
-@media (-moz-bool-pref: "zen.mods.AudioIndicatorEnhanced.audioWave.enabled") {
+@media (-moz-pref("zen.mods.AudioIndicatorEnhanced.audioWave.enabled")) {
 	/** Variables section */
 	/* Normal tab bar */
 	#tabbrowser-tabs[orient="vertical"] {
@@ -248,7 +248,7 @@
 		}
 
 		/* Patch for SuperPins */
-		@media (-moz-bool-pref: "uc.pins.legacy-layout") {
+		@media (-moz-pref("uc.pins.legacy-layout")) {
 			/* Pinned tab */
 			& .tabbrowser-tab[pinned] {
 				--audio-button-top: -4px;
@@ -279,7 +279,7 @@
 		}
 
 		/* Patch for SuperPins */
-		@media (-moz-bool-pref: "uc.pins.legacy-layout") {
+		@media (-moz-pref("uc.pins.legacy-layout")) {
 			/* Pinned tab */
 			& .tabbrowser-tab[pinned] {
 				--audio-button-top: 0px;
@@ -308,7 +308,7 @@
 		}
 
 		/* Patch for SuperPins */
-		@media (-moz-bool-pref: "uc.pins.legacy-layout") {
+		@media (-moz-pref("uc.pins.legacy-layout")) {
 			/* Pinned tab */
 			& .tabbrowser-tab[pinned] {
 				--audio-wave-top: -2px;
@@ -328,7 +328,7 @@
 			}
 
 			/* Patch for SuperPins */
-			@media (-moz-bool-pref: "uc.pins.legacy-layout") {
+			@media (-moz-pref("uc.pins.legacy-layout")) {
 				/* Pinned tab */
 				& .tabbrowser-tab[pinned] {
 					--audio-wave-top: 1px;
@@ -372,11 +372,11 @@
 		> .tab-content
 		> .tab-icon-stack
 		> .tab-icon-overlay:not([crashed]) {
-		@media not (-moz-bool-pref: "zen.mods.AudioIndicatorEnhanced.reverseAudioIcons") {
+		@media not (-moz-pref("zen.mods.AudioIndicatorEnhanced.reverseAudioIcons")) {
 			list-style-image: url("chrome://browser/skin/tabbrowser/tab-audio-playing-small.svg") !important;
 		}
 
-		@media (-moz-bool-pref: "zen.mods.AudioIndicatorEnhanced.reverseAudioIcons") {
+		@media (-moz-pref("zen.mods.AudioIndicatorEnhanced.reverseAudioIcons")) {
 			list-style-image: url("chrome://browser/skin/tabbrowser/tab-audio-muted-small.svg") !important;
 		}
 	}
@@ -388,11 +388,11 @@
 		> .tab-content
 		> .tab-icon-stack
 		> .tab-icon-overlay:not([crashed]) {
-		@media not (-moz-bool-pref: "zen.mods.AudioIndicatorEnhanced.reverseAudioIcons") {
+		@media not (-moz-pref("zen.mods.AudioIndicatorEnhanced.reverseAudioIcons")) {
 			list-style-image: url("chrome://browser/skin/tabbrowser/tab-audio-muted-small.svg") !important;
 		}
 
-		@media (-moz-bool-pref: "zen.mods.AudioIndicatorEnhanced.reverseAudioIcons") {
+		@media (-moz-pref("zen.mods.AudioIndicatorEnhanced.reverseAudioIcons")) {
 			list-style-image: url("chrome://browser/skin/tabbrowser/tab-audio-playing-small.svg") !important;
 		}
 	}
@@ -428,7 +428,7 @@
 	}
 
 	/* Patches for SuperPins compatibility */
-	@media (-moz-bool-pref: "uc.pins.legacy-layout") {
+	@media (-moz-pref("uc.pins.legacy-layout")) {
 		/* Patch for pinned tabs with SuperPins */
 		#tabbrowser-tabs[orient="vertical"]
 			.tabbrowser-tab[pinned]
