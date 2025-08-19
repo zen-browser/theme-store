@@ -33,14 +33,9 @@
     visibility: collapse !important;
 }
 
-@media (-moz-pref("theme.zen-minimal-exit-menu.enable-icon-visibility")) {
-    .titlebar-button > image {
-        visibility: visible !important;
-        max-height: 8px !important;
-        max-width: 8px !important;
-        position: relative !important;
-        left: 2.55px !important;
-        filter: brightness(0) !important;
+@media not (-moz-pref("theme.zen-minimal-exit-menu.enable-icon-visibility")) {
+    .titlebar-button::before {
+        content: none !important;
     }
 }
 
