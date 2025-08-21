@@ -1,0 +1,15 @@
+{
+    "id": "ad4d90b6-7d64-40df-a9db-67fc66cf2118",
+    "name": "Zen Light Up",
+    "description": "Allows you to set the transparency of your background when not using a gradient.",
+    "homepage": "https://github.com/Tech5G5G/zen-light-up",
+    "style": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/ad4d90b6-7d64-40df-a9db-67fc66cf2118/chrome.css",
+    "readme": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/ad4d90b6-7d64-40df-a9db-67fc66cf2118/readme.md",
+    "image": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/ad4d90b6-7d64-40df-a9db-67fc66cf2118/image.png",
+    "author": "Tech5G5G",
+    "version": "1.0.0",
+    "tags": [],
+    "createdAt": "2025-08-21",
+    "updatedAt": "2025-08-21",
+    "preferences": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/ad4d90b6-7d64-40df-a9db-67fc66cf2118/preferences.json"
+}
