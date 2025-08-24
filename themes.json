@@ -133,20 +133,6 @@
         "createdAt": "2024-12-20",
         "updatedAt": "2025-01-26"
     },
-    "753c7518-237d-480a-abfd-1f42a7eabacc": {
-        "id": "753c7518-237d-480a-abfd-1f42a7eabacc",
-        "name": "Zen Paper Cut Theme",
-        "description": "Zen's interface be made pointy and boxy. Watchout for paper cuts!",
-        "homepage": "https://github.com/Dinno-DEV/zen-paper-cut-theme",
-        "style": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/753c7518-237d-480a-abfd-1f42a7eabacc/chrome.css",
-        "readme": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/753c7518-237d-480a-abfd-1f42a7eabacc/readme.md",
-        "image": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/753c7518-237d-480a-abfd-1f42a7eabacc/image.png",
-        "author": "Dinno-DEV",
-        "version": "1.0.4",
-        "tags": [],
-        "createdAt": "2024-09-24",
-        "updatedAt": "2025-01-26"
-    },
     "4ab93b88-151c-451b-a1b7-a1e0e28fa7f8": {
         "id": "4ab93b88-151c-451b-a1b7-a1e0e28fa7f8",
         "name": "No Sidebar Scrollbar",
