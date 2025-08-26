@@ -32,7 +32,7 @@
     },
     {
         "property": "uc.fixcontext.applyzengradient",
-        "label": "\ud83c\udfa8 Apply Zen workspace gradient (works best if your OS/DE/WM supports blur)",
+        "label": "\ud83c\udfa8 Apply Zen workspace gradient (works best in Windows 11 & macOS)",
         "type": "checkbox"
     },
     {
@@ -48,25 +48,13 @@
     },
     {
         "property": "uc.hidecontext.bookmark",
-        "label": "\ud83d\udcd1 \ud83d\udd17 Hide 'Bookmark Tab/Tabs/Link' options (enabled by default)",
+        "label": "\ud83d\udcd1 \ud83d\udd17 Hide 'Bookmark Link' option (enabled by default)",
         "defaultValue": "true",
         "type": "checkbox"
     },
     {
         "property": "uc.hidecontext.mutetab",
         "label": "\ud83d\udcd1 Hide 'Mute Tab' options",
-        "type": "checkbox"
-    },
-    {
-        "property": "uc.hidecontext.newtab",
-        "label": "\ud83d\udcd1 Hide 'New Tab' & 'New Tab Below' (enabled by default)",
-        "defaultValue": "true",
-        "type": "checkbox"
-    },
-    {
-        "property": "uc.hidecontext.movetaboptions",
-        "label": "\ud83d\udcd1 Hide 'Move Tab' options (enabled by default)",
-        "defaultValue": "true",
         "type": "checkbox"
     },
     {
@@ -82,12 +70,6 @@
     {
         "property": "uc.hidecontext.closetab",
         "label": "\ud83d\udcd1 Hide 'Close Tab' & 'Close Duplicate Tabs'",
-        "type": "checkbox"
-    },
-    {
-        "property": "uc.hidecontext.closemultiple",
-        "label": "\ud83d\udcd1 Hide 'Close Multiple Tabs' options (enabled by default)",
-        "defaultValue": "true",
         "type": "checkbox"
     },
     {
