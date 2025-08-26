@@ -1,10 +1,23 @@
-/* Zen Context Menu v3.0 by KiKaraage */
+/* Zen Context Menu v3.1 by KiKaraage */
 
 /* Fix ergonomics for tab context menu by applying some reorderings 
  * plus hiding disabled options and some separators
  * Applied by default when enabling Zen Context Menu mod */
 @media -moz-pref("uc.fixcontext.ergonomicsfortabs") {
   #tabContextMenu {
+    :nth-child(22), /* Separator below "Duplicate Tab" */
+    #context_bookmarkTab, #context_bookmarkSelectedTabs,
+    #context_moveTabOptions,
+    #context_selectAllTabs, :nth-child(31), /* Separator below "Select All Tabs" */
+    #context_selectedAllTabs, #toolbar-context-selectAllTabs,
+    #context_closeTabOptions,
+    :nth-child(37), /* Separator below "Split Tabs" */
+    #context_zen-pinned-tab-separator, /* Separator above Replace Pinned URL */
+    #context_zenSplitTabs[label="Split Tab (multiple selected tabs needed)"],
+    #context_zenSplitTabs[disabled="true"],
+    #context_closeDuplicateTabs[disabled]{
+      display: none;
+    }
     #context_toggleMuteTab,
     #context_toggleMuteSelectedTabs,
     #context_zen-add-essential,
@@ -21,7 +34,8 @@
     #context_unloadTab {
       order: -7 !important;
     }
-    :nth-child(5) {
+    :nth-child(6), /* Separator below "New Folder" */
+    #zen-context-menu-new-folder {
       order: -6 !important;
     }
     #context_moveTabToGroup,
@@ -29,30 +43,20 @@
     #context-zen-change-workspace-tab {
       order: -5 !important;
     }
-    :nth-child(32) {
-      order: -4 !important;
-    }
+    :nth-child(35), /* Separator below "Change Tabs to Workspace" */ 
+    #context_sendTabToDevice,
     #context_zenSplitTabs,
     #context_undoCloseTab {
       order: -3 !important;
     } 
     #context_closeTab,
-    #context_closeTabOptions,
     #context_closeDuplicateTabs,
     #context_zen-reset-pinned-tab,
     #context_zen-replace-pinned-url-with-current {
       order: 2;
     }
-    #context_zenSplitTabs[label="Split Tab (multiple selected tabs needed)"],
-    #context_zenSplitTabs[disabled="true"],
-    #context_closeDuplicateTabs[disabled],
-    #context_zen-pinned-tab-separator,
-    :nth-child(28), :nth-child(43) {
-      display: none;
-    }
   }
 }
-
 /* Hide all separators */
 @media -moz-pref("uc.hidecontext.separators") {
   menuseparator::before {
@@ -147,37 +151,12 @@
     display: none !important;
   }
 }
-/* Hide "Bookmark Tab/Link” */
-@media -moz-pref("uc.hidecontext.bookmark") {
-  #toolbar-context-bookmarkSelectedTab,
-  #toolbar-context-bookmarkSelectedTabs,
-  #context_bookmarkSelectedTabs,
-  #context_bookmarkTab,
-  #context-bookmarklink {
-    display: none !important;
-  }
-}
 /* Hide "Mute Tab" option */
 @media -moz-pref("uc.hidecontext.mutetab") {
   #context_toggleMuteTab,
   #context_toggleMuteSelectedTabs,
   #context_playTab,
   #context_playSelectedTabs {
-    display: none !important;
-  }
-}
-/* Hide "New Tab" options */
-@media -moz-pref("uc.hidecontext.newtab") {
-  #context_openANewTab,
-  #toolbar-context-openANewTab,
-  #toolbarNavigatorItemsMenuSeparator {
-    display: none !important;
-  }
-}
-
-/* Hide "Move Tab" options */
-@media -moz-pref("uc.hidecontext.movetaboptions") {
-  #context_moveTabOptions {
     display: none !important;
   }
 }
@@ -201,12 +180,6 @@
 @media -moz-pref("uc.hidecontext.closetab") {
   #context_closeTab,
   #context_closeDuplicateTabs {
-    display: none !important;
-  }
-}
-/* Hide "Close Multiple Tabs" */
-@media -moz-pref("uc.hidecontext.closemultiple") {
-  #context_closeTabOptions {
     display: none !important;
   }
 }
@@ -291,15 +264,6 @@
 @media -moz-pref("uc.hidecontext.selectalltext") {
   #context-selectall,
   #context-sep-selectall {
-    display: none !important;
-  }
-}
-/* Hide “Select All Tabs" option */
-@media -moz-pref("uc.hidecontext.selectalltabs") {
-  #context_selectAllTabs,
-  #context_selectedAllTabs,
-  #toolbar-context-selectAllTabs,
-  #tabContextMenu > :nth-child(28) {
     display: none !important;
   }
 }
