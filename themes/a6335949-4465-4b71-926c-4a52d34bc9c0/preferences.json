@@ -1,7 +1,7 @@
 [
     {
         "property": "theme.better_find_bar.transparent_background",
-        "label": "Transparent background",
+        "label": "Transparent background (disable it if the background blur doesn't work)",
         "type": "checkbox",
         "defaultValue": true
     },
