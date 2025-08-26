@@ -121,10 +121,11 @@
     }
   }
 }
-/* Apply Zen workspace gradient to all context menu and panels
- * Suitable if the OS, desktop environment or window manager supported blur background */
+/* Apply Zen workspace gradient to all context menu and panels.
+ * Only play nicely in Windows 11 & macOS,
+ * Linux and Windows 10 users will encounter semi-transparent backgrounds instead */
 @media -moz-pref("uc.fixcontext.applyzengradient") {
-  menupopup, panel {
+  menupopup:not(#downloadsContextMenu, #placesColumnsContext, #placesContext), panel {
     --panel-background: var(--zen-main-browser-background) !important;
   }
   /* Fix text color on Firefox confirmation pop-ups when applying Zen colors on light mode */
@@ -135,8 +136,8 @@
 }
 /* Apply Zen workspace accent color to all context menu and panels*/
 @media -moz-pref("uc.fixcontext.applyzenaccent") {
-  menupopup, panel {
-    --panel-background: color-mix(in srgb, var(--zen-primary-color) 40%, var(--zen-colors-tertiary)) !important;
+  menupopup:not(#downloadsContextMenu, #placesColumnsContext, #placesContext), panel {
+    --panel-background: var(--zen-browser-gradient-base) !important;
   }
 }
 
