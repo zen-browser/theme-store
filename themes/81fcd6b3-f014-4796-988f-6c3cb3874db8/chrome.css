@@ -731,6 +731,9 @@
   .share-tab-url-item {
     --menu-image: url('chrome://browser/skin/zen-icons/share.svg');
   }
+  #zen-context-menu-new-folder {
+    --menu-image: url('chrome://browser/skin/zen-icons/folder.svg');
+  }
   #context_moveTabToNewGroup,
   #context_moveTabToGroup,
   #context_reopenInContainer {
@@ -754,4 +757,55 @@
   .wordmark::after {
     content: 'Plus' !important;
   }
+}
+@-moz-document url-prefix("chrome://browser/content/browser.xhtml") {
+  @namespace url("http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul");
+  @media -moz-pref("uc.fixcontext.restoreicons") {
+    :root {
+      --zen-cmenu-icon-margin-inline-start: 4px !important;
+      --zen-cmenu-icon-margin-inline-end: 8px !important;
+      --zen-cmenu-icon-margin-block: 2px !important;
+      --zen-cmenu-icon-size: 16px !important;
+    }
+    menupopup > menuitem > .menu-icon,
+    menupopup > menu > .menu-icon {
+      width: var(--zen-cmenu-icon-size);
+      height: var(--zen-cmenu-icon-size);
+      margin-inline-start: var(--zen-cmenu-icon-margin-inline-start);
+      margin-inline-end: var(--zen-cmenu-icon-margin-inline-end);
+      margin-block-start: var(--zen-cmenu-icon-margin-block);
+      margin-block-end: var(--zen-cmenu-icon-margin-block);
+      padding: 0 !important;
+    }
+    menupopup > menuitem .menu-text,
+    menupopup > menu .menu-text {
+      padding-inline-start: 0 !important; 
+      margin-inline-start: 0 !important; 
+      padding-inline-start: var(--zen-cmenu-icon-margin-inline-end);
+    }
+              
+    /* Shift the text to the right to make room for the custom icon.*/  
+    :root {
+      --fp-contextmenu-menuicon-margin-inline: 12px;
+      --fp-contextmenu-menuitem-padding-inline: 10px;
+      --fp-arrowpanel-menuicon-margin-inline: 14px;
+    }
+    
+    /* Context Menu */
+    menu > .menu-iconic-text,
+    menuitem > .menu-iconic-text,
+    #context-navigation > .menuitem-iconic::after {
+      padding-inline-start: var(--fp-contextmenu-menuicon-margin-inline) !important;
+    }
+    
+    :not(:not(menubar) > menu, #ContentSelectDropdown) > menupopup > menuitem:not(.menuitem-iconic, [type="checkbox"], [type="radio"], .in-menulist, .in-menulist menuitem, .unified-nav-current),
+    :not(:not(menubar) > menu, #ContentSelectDropdown) > menupopup > menu:not(.menu-iconic, [type="checkbox"], [type="radio"], .in-menulist, .in-menulist menu, .unified-nav-current),
+    :not(:not(menubar) > menu, #ContentSelectDropdown) > menupopup > menucaption {
+      padding-inline-start: calc(
+        var(--fp-contextmenu-menuitem-padding-inline) 
+        + 8px                                 
+        + var(--fp-contextmenu-menuicon-margin-inline)
+      ) !important;
+    }
+  }       
 }
