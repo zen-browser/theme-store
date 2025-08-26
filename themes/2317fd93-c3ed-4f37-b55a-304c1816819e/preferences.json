@@ -7,7 +7,7 @@
     },
     {
         "property": "zen.mods.AudioIndicatorEnhanced.returnOldIcons",
-        "label": "Bring back default Firefox icons",
+        "label": "Bring back default Firefox icons (Not applicable to Audio Wave mode)",
         "type": "checkbox",
         "defaultValue": true
     },
@@ -16,5 +16,29 @@
         "label": "Audio Wave: Brings new look for audio indicator.",
         "type": "checkbox",
         "defaultValue": false
+    },
+    {
+        "property": "zen.mods.AudioIndicatorEnhanced.reverseAudioIcons",
+        "label": "Reverse audio icons.",
+        "type": "checkbox",
+        "defaultValue": false
+    },
+    {
+        "property": "zen.mods.AudioIndicatorEnhanced.audioWave.opacity",
+        "label": "Audio Wave: Opacity of the audio wave.",
+        "type": "string",
+        "defaultValue": "0.2"
+    },
+    {
+        "property": "zen.mods.AudioIndicatorEnhanced.audioWave.colorPlaying",
+        "label": "Audio Wave: Color of the audio wave (When audio is playing).",
+        "type": "string",
+        "defaultValue": "-moz-dialogtext"
+    },
+    {
+        "property": "zen.mods.AudioIndicatorEnhanced.audioWave.colorMuted",
+        "label": "Audio Wave: Color of the audio wave (When audio is muted).",
+        "type": "string",
+        "defaultValue": "color-mix(in srgb, -moz-dialogtext 50%, rgb(129, 0, 0) 50%)"
     }
 ]

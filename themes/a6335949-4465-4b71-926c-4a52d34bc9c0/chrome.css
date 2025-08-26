@@ -7,9 +7,6 @@
 	--better-findbar-position-left: 50%;
 	--better-findbar-position-right: auto;
 }
-.browserContainer {
-	overflow: clip
-}
 
 findbar {
 	display: flex !important;
@@ -18,7 +15,7 @@ findbar {
 	margin: 0px !important;
 
 	width: 90% !important;
-	max-width: 800px;
+	max-width: calc(var(--theme-better_find_bar-textbox_width) * 1px); 
 
 	height: auto !important;
 
@@ -32,7 +29,7 @@ findbar {
 	overflow: unset !important;
 	box-shadow: var(--box-shadow-10);
 
-	background: var(--zen-colors-tertiary) !important;
+	background: var(--zen-colors-primary) !important;
 	border: 1px solid var(--zen-colors-border) !important;
 
 	transition: transform 0.35s ease !important;
@@ -82,6 +79,7 @@ body:has(
 	--better-findbar-position-right: 15px;
 }
 
+/* Vertical Position */
 body:has(
 		#theme-Better-Find-Bar[theme-better_find_bar-vertical_position="top"]
 	) {
@@ -93,13 +91,92 @@ body:has(
 
 /* Background blur */
 @media (-moz-bool-pref: "theme.better_find_bar.transparent_background") {
-	findbar, findbar .findbar-textbox:not([status="notfound"]) {
+	findbar,
+	findbar .findbar-textbox:not([status="notfound"]) {
 		backdrop-filter: blur(8px);
 
-		background: color-mix(in hsl, var(--zen-colors-tertiary), transparent 30%) !important;
+		background: color-mix(in hsl, var(--zen-colors-primary), transparent 10%) !important;
 	}
+}
 
-	findbar .findbar-textbox:not([status="notfound"]) {
-		background: color-mix(in hsl, var(--zen-colors-tertiary), transparent 10%) !important;
+/* Hide highlight checkbox */
+body:has(
+		#theme-Better-Find-Bar[theme-better_find_bar-hide_highlight="hide_immediately"]
+	) {
+	findbar .findbar-highlight {
+		display: none !important;
+	}
+}
+
+body:has(
+		#theme-Better-Find-Bar[theme-better_find_bar-hide_highlight="hide_on_disable"]
+	) {
+	findbar checkbox.findbar-highlight:not([checked]) {
+		display: none !important;
+	}
+}
+
+/* Hide match case checkbox */
+body:has(
+		#theme-Better-Find-Bar[theme-better_find_bar-hide_match_case="hide_immediately"]
+	) {
+	findbar .findbar-case-sensitive {
+		display: none !important;
+	}
+}
+
+body:has(
+		#theme-Better-Find-Bar[theme-better_find_bar-hide_match_case="hide_on_disable"]
+	) {
+	findbar checkbox.findbar-case-sensitive:not([checked]) {
+		display: none !important;
+	}
+}
+
+/* Hide match diacritics checkbox */
+body:has(
+		#theme-Better-Find-Bar[theme-better_find_bar-hide_match_diacritics="hide_immediately"]
+	) {
+	findbar .findbar-match-diacritics {
+		display: none !important;
+	}
+}
+
+body:has(
+		#theme-Better-Find-Bar[theme-better_find_bar-hide_match_diacritics="hide_on_disable"]
+	) {
+	findbar checkbox.findbar-match-diacritics:not([checked]) {
+		display: none !important;
+	}
+}
+
+/* Hide whole words checkbox */
+body:has(
+		#theme-Better-Find-Bar[theme-better_find_bar-hide_whole_words="hide_immediately"]
+	) {
+	findbar .findbar-entire-word {
+		display: none !important;
+	}
+}
+
+body:has(
+		#theme-Better-Find-Bar[theme-better_find_bar-hide_whole_words="hide_on_disable"]
+	) {
+	findbar .findbar-entire-word:not([checked]) {
+		display: none !important;
+	}
+}
+
+/* Hide find status label */
+@media (-moz-bool-pref: "theme.better_find_bar.hide_find_status") {
+	findbar .findbar-find-status {
+		display: none !important;
+	}
+}
+
+/* Hide found matches label */
+@media (-moz-bool-pref: "theme.better_find_bar.hide_found_matches") {
+	findbar .findbar-label.found-matches {
+		display: none !important;
 	}
 }

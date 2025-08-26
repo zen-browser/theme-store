@@ -14,10 +14,10 @@
         "type": "string"
     },
     {
-        "label": "Panel - Width",
-        "defaultValue": "85vw",
-        "placeholder": "100vw",
-        "property": "psu.better_ctrltab.width",
+        "label": "General - Zoom (1.0 = Full width 0.5 = 25% space on each side)",
+        "defaultValue": "0.8",
+        "placeholder": "1.0",
+        "property": "psu.better_ctrltab.zoom",
         "type": "string"
     },
     {
@@ -42,13 +42,6 @@
         "type": "string"
     },
     {
-        "label": "Focused Item - Border Color",
-        "defaultValue": "light-dark(rgba(255, 255, 255, 0.1), rgba(1, 1, 1, 0.1))",
-        "placeholder": "light-dark(rgba(200,200,200,0.1), rgba(77,77,77,0.5))",
-        "property": "psu.better_ctrltab.preview_focus_border_color",
-        "type": "string"
-    },
-    {
         "label": "Item - Border Color",
         "defaultValue": "light-dark(rgba(255, 255, 255, 0.1), rgba(1, 1, 1, 0.1))",
         "placeholder": "light-dark(rgba(255,255,255,0.1), rgba(88,88,88,0.6))",
@@ -70,17 +63,24 @@
         "type": "string"
     },
     {
+        "label": "Item - Label Letter Spacing",
+        "defaultValue": "0px",
+        "placeholder": "0px",
+        "property": "psu.better_ctrltab.preview_letter_spacing",
+        "type": "string"
+    },
+    {
         "label": "Item - Favicon Size",
-        "defaultValue": "18px",
+        "defaultValue": "36px",
         "placeholder": "40px",
         "property": "psu.better_ctrltab.preview_favicon_size",
         "type": "string"
     },
     {
-        "label": "Item - Label Letter Spacing",
-        "defaultValue": "0px",
-        "placeholder": "0px",
-        "property": "psu.better_ctrltab.preview_letter_spacing",
+        "label": "Item - Favicon Outdent",
+        "defaultValue": "12px",
+        "placeholder": "6px",
+        "property": "psu.better_ctrltab.preview_favicon_outdent",
         "type": "string"
     }
 ]

@@ -1,10 +1,15 @@
 /** Globals styles, regardless of mode */
 
+/* Remove native audio indicator button */
+.tab-audio-button {
+	display: none !important;
+}
+
 /* Resizes the glance tab indicator on essential tabs */
 #navigator-toolbox
-	#tabbrowser-tabs[orient='vertical']
-	.tabbrowser-tab[zen-essential='true']
-	.tabbrowser-tab[zen-glance-tab='true'] {
+	#tabbrowser-tabs[orient="vertical"]
+	.tabbrowser-tab[zen-essential="true"]
+	.tabbrowser-tab[zen-glance-tab="true"] {
 	--tab-collapsed-width: 24px !important;
 	--tab-min-width: 16px !important;
 
@@ -15,8 +20,8 @@
 
 /* Centers & resizes the glance tab indicator, to be more cohesive across essential & pinned tabs */
 #navigator-toolbox
-	#tabbrowser-tabs[orient='vertical']
-	.tabbrowser-tab[zen-glance-tab='true'] {
+	#tabbrowser-tabs[orient="vertical"]
+	.tabbrowser-tab[zen-glance-tab="true"] {
 	& .tab-content {
 		padding: 0px !important;
 	}
@@ -34,8 +39,8 @@
 
 /* Centers the tab icon on essential tabs */
 #navigator-toolbox
-	#tabbrowser-tabs[orient='vertical']
-	.tabbrowser-tab[zen-essential='true'] {
+	#tabbrowser-tabs[orient="vertical"]
+	.tabbrowser-tab[zen-essential="true"] {
 	& .tab-icon-image,
 	.tab-throbber {
 		justify-self: center;
@@ -43,17 +48,20 @@
 }
 
 /** Legacy Mode - Round circle */
-@media not (-moz-bool-pref: 'zen.mods.AudioIndicatorEnhanced.audioWave.enabled') {
-	#tabbrowser-tabs[orient='vertical']
+@media not (-moz-bool-pref: "zen.mods.AudioIndicatorEnhanced.audioWave.enabled") {
+	#tabbrowser-tabs[orient="vertical"]
 		.tabbrowser-tab
 		.tab-icon-overlay:not([crashed]) {
 		&:is([soundplaying], [muted], [activemedia-blocked]) {
+			display: flex !important;
 			background-color: #161717 !important;
 			border: 1px solid #ffffff29 !important;
 			transition: transform 100ms ease-in-out,
 				background-color 100ms ease-in-out;
+			background-repeat: no-repeat !important;
+			background-position: center !important;
 
-			@media (-moz-bool-pref: 'zen.mods.AudioIndicatorEnhanced.hoverScaleAnimationEnabled') {
+			@media (-moz-bool-pref: "zen.mods.AudioIndicatorEnhanced.hoverScaleAnimationEnabled") {
 				&:hover {
 					transition: transform 100ms ease-in-out,
 						background-color 100ms ease-in-out !important;
@@ -63,32 +71,44 @@
 			}
 		}
 
+		&[soundplaying] {
+			/* Revert old icon */
+			@media (-moz-bool-pref: "zen.mods.AudioIndicatorEnhanced.returnOldIcons") {
+				@media not (-moz-bool-pref: "zen.mods.AudioIndicatorEnhanced.reverseAudioIcons") {
+					background-image: url("chrome://browser/skin/tabbrowser/tab-audio-playing-small.svg") !important;
+				}
+
+				@media (-moz-bool-pref: "zen.mods.AudioIndicatorEnhanced.reverseAudioIcons") {
+					background-image: url("chrome://browser/skin/tabbrowser/tab-audio-muted-small.svg") !important;
+				}
+			}
+		}
+
 		&[muted] {
 			/* Different background color when muted */
 			background-color: rgb(122, 31, 31) !important;
 
 			/* Revert old icon */
-			@media (-moz-bool-pref: 'zen.mods.AudioIndicatorEnhanced.returnOldIcons') {
-				background-image: url('chrome://browser/skin/tabbrowser/tab-audio-muted-small.svg') !important;
-			}
-		}
+			@media (-moz-bool-pref: "zen.mods.AudioIndicatorEnhanced.returnOldIcons") {
+				@media not (-moz-bool-pref: "zen.mods.AudioIndicatorEnhanced.reverseAudioIcons") {
+					background-image: url("chrome://browser/skin/tabbrowser/tab-audio-muted-small.svg") !important;
+				}
 
-		&[soundplaying] {
-			/* Revert old icon */
-			@media (-moz-bool-pref: 'zen.mods.AudioIndicatorEnhanced.returnOldIcons') {
-				background-image: url('chrome://browser/skin/tabbrowser/tab-audio-playing-small.svg') !important;
+				@media (-moz-bool-pref: "zen.mods.AudioIndicatorEnhanced.reverseAudioIcons") {
+					background-image: url("chrome://browser/skin/tabbrowser/tab-audio-playing-small.svg") !important;
+				}
 			}
 		}
 
 		&[activemedia-blocked] {
 			/* Revert old icon */
-			@media (-moz-bool-pref: 'zen.mods.AudioIndicatorEnhanced.returnOldIcons') {
-				background-image: url('chrome://browser/skin/tabbrowser/tab-audio-blocked-small.svg') !important;
+			@media (-moz-bool-pref: "zen.mods.AudioIndicatorEnhanced.returnOldIcons") {
+				background-image: url("chrome://browser/skin/tabbrowser/tab-audio-blocked-small.svg") !important;
 			}
 		}
 
 		/* Revert new, zen's audio indicator */
-		@media (-moz-bool-pref: 'zen.mods.AudioIndicatorEnhanced.returnOldIcons') {
+		@media (-moz-bool-pref: "zen.mods.AudioIndicatorEnhanced.returnOldIcons") {
 			&[muted],
 			&[soundplaying],
 			&[activemedia-blocked] {
@@ -98,9 +118,9 @@
 	}
 
 	/* Patches for essential tabs indicator */
-	#navigator-toolbox[zen-sidebar-expanded='true']
-		#tabbrowser-tabs[orient='vertical']
-		.tabbrowser-tab[zen-essential='true']
+	#navigator-toolbox[zen-sidebar-expanded="true"]
+		#tabbrowser-tabs[orient="vertical"]
+		.tabbrowser-tab[zen-essential="true"]
 		.tab-icon-stack {
 		width: 100% !important;
 		height: 100% !important;
@@ -117,8 +137,8 @@
 			margin: 5px !important;
 
 			background-color: hsl(180, 2%, 9%, 50%) !important;
-			border: 1px solid hsla(0, 0%, 100%, 10%) !important;
-			background-size: 75% !important;
+			border: 1px solid hsla(0, 0%, 100%, 3%) !important;
+			background-size: 65% !important;
 			border-radius: 7px !important;
 			transform-origin: top right !important;
 
@@ -126,7 +146,7 @@
 				background-color: hsl(0, 59%, 30%, 50%) !important;
 			}
 
-			@media (-moz-bool-pref: 'zen.mods.AudioIndicatorEnhanced.hoverScaleAnimationEnabled') {
+			@media (-moz-bool-pref: "zen.mods.AudioIndicatorEnhanced.hoverScaleAnimationEnabled") {
 				&:hover {
 					transform: scale(1.2);
 				}
@@ -134,10 +154,64 @@
 		}
 	}
 
+	/* Patches for pinned tabs indicator while in SuperPins */
+	@media (-moz-bool-pref: "uc.pins.legacy-layout") {
+		#navigator-toolbox[zen-sidebar-expanded="true"]
+			#tabbrowser-tabs[orient="vertical"]
+			.tabbrowser-tab[pinned]
+			.tab-icon-stack {
+			width: 100% !important;
+			height: 100% !important;
+
+			& .tab-icon-image,
+			.tab-throbber {
+				place-self: center;
+			}
+
+			/* Some stylistic changes for essential tabs indicator */
+			& .tab-icon-overlay:not([crashed]) {
+				width: 24px !important;
+				height: 24px !important;
+				margin: 5px !important;
+
+				background-color: hsl(180, 2%, 9%, 50%) !important;
+				border: 1px solid hsla(0, 0%, 100%, 10%) !important;
+				background-size: 75% !important;
+				border-radius: 7px !important;
+				transform-origin: top right !important;
+
+				&[muted] {
+					background-color: hsl(0, 59%, 30%, 50%) !important;
+				}
+
+				@media (-moz-bool-pref: "zen.mods.AudioIndicatorEnhanced.hoverScaleAnimationEnabled") {
+					&:hover {
+						transform: scale(1.2);
+					}
+				}
+			}
+		}
+
+		/* Change positioning of indicator on essential tabs */
+		#navigator-toolbox[zen-sidebar-expanded="true"]
+			#tabbrowser-tabs[orient="vertical"]
+			.tabbrowser-tab[pinned] {
+			--tab-inline-padding: 0px !important;
+
+			& .tab-icon-overlay:not([crashed]) {
+				/* position: absolute !important; */
+				top: 0px !important;
+				right: 0px !important;
+				margin: 4px !important;
+				place-self: start end;
+			}
+		}
+	}
+
 	/* Change positioning of indicator on essential tabs */
-	#navigator-toolbox[zen-sidebar-expanded='true']
-		#tabbrowser-tabs[orient='vertical']
-		.tabbrowser-tab[zen-essential='true'] {
+	#navigator-toolbox[zen-sidebar-expanded="true"]
+		#tabbrowser-tabs[orient="vertical"]
+		.tabbrowser-tab[zen-essential="true"] {
 		--tab-inline-padding: 0px !important;
 
 		& .tab-icon-overlay:not([crashed]) {
@@ -151,8 +225,8 @@
 }
 
 /* Standardize tab icon size, to prevent size flexing */
-#navigator-toolbox[zen-sidebar-expanded='true']
-	#tabbrowser-tabs[orient='vertical']
+#navigator-toolbox[zen-sidebar-expanded="true"]
+	#tabbrowser-tabs[orient="vertical"]
 	.tabbrowser-tab
 	.tab-icon-stack {
 	height: 16px;
@@ -160,10 +234,10 @@
 }
 
 /** Audio Wave version */
-@media (-moz-bool-pref: 'zen.mods.AudioIndicatorEnhanced.audioWave.enabled') {
+@media (-moz-bool-pref: "zen.mods.AudioIndicatorEnhanced.audioWave.enabled") {
 	/** Variables section */
 	/* Normal tab bar */
-	#tabbrowser-tabs[orient='vertical'] {
+	#tabbrowser-tabs[orient="vertical"] {
 		/* Normal tab */
 		& .tabbrowser-tab {
 			--audio-button-top: -4px;
@@ -173,8 +247,19 @@
 			--audio-wave-height: 17px;
 		}
 
+		/* Patch for SuperPins */
+		@media (-moz-bool-pref: "uc.pins.legacy-layout") {
+			/* Pinned tab */
+			& .tabbrowser-tab[pinned] {
+				--audio-button-top: -4px;
+				--audio-button-left: 0px;
+				--audio-wave-top: -6px;
+				--audio-wave-left: 0px;
+			}
+		}
+
 		/* Essential tab */
-		& .tabbrowser-tab[zen-essential='true'] {
+		& .tabbrowser-tab[zen-essential="true"] {
 			--audio-button-top: -4px;
 			--audio-button-left: 0px;
 			--audio-wave-top: -4px;
@@ -183,17 +268,29 @@
 	}
 
 	/* Collapsed tab bar */
-	#navigator-toolbox:not([zen-sidebar-expanded='true'])
-		#tabbrowser-tabs[orient='vertical'] {
+	#navigator-toolbox:not([zen-sidebar-expanded="true"])
+		#tabbrowser-tabs[orient="vertical"] {
 		/* Normal tab */
-		& .tabbrowser-tab:not([zen-essential='true']) {
+		& .tabbrowser-tab {
 			--audio-button-top: 0px;
-			--audio-button-left: 0px;
+			--audio-button-left: 6px;
 			--audio-wave-top: 4px;
+			--audio-wave-left: -6px;
+		}
+
+		/* Patch for SuperPins */
+		@media (-moz-bool-pref: "uc.pins.legacy-layout") {
+			/* Pinned tab */
+			& .tabbrowser-tab[pinned] {
+				--audio-button-top: 0px;
+				--audio-button-left: 0px;
+				--audio-wave-top: -2px;
+				--audio-wave-left: -6px;
+			}
 		}
 
 		/* Essential tab */
-		& .tabbrowser-tab[zen-essential='true'] {
+		& .tabbrowser-tab[zen-essential="true"] {
 			/* These 2 could be deleted, as are inherited */
 			--audio-button-top: 0px;
 			--audio-button-left: 0px;
@@ -202,8 +299,47 @@
 		}
 	}
 
+	/* Split tabs */
+	#tabbrowser-tabs[orient="vertical"] tab-group[split-view-group="true"] {
+		/* Normal tab */
+		& .tabbrowser-tab {
+			--audio-wave-top: 4px;
+			--audio-wave-left: 0px;
+		}
+
+		/* Patch for SuperPins */
+		@media (-moz-bool-pref: "uc.pins.legacy-layout") {
+			/* Pinned tab */
+			& .tabbrowser-tab[pinned] {
+				--audio-wave-top: -2px;
+				--audio-wave-left: 0px;
+			}
+		}
+	}
+
+	/* Collapsed tab bar & Split tabs */
+	#navigator-toolbox:not([zen-sidebar-expanded="true"]) {
+		#tabbrowser-tabs[orient="vertical"] tab-group[split-view-group="true"] {
+			/* Normal tab */
+			& .tabbrowser-tab {
+				--audio-button-left: 0px;
+				--audio-wave-top: 7px;
+				--audio-wave-left: 0px;
+			}
+
+			/* Patch for SuperPins */
+			@media (-moz-bool-pref: "uc.pins.legacy-layout") {
+				/* Pinned tab */
+				& .tabbrowser-tab[pinned] {
+					--audio-wave-top: 1px;
+					--audio-wave-left: -6px;
+				}
+			}
+		}
+	}
+
 	/* Some styling for mute/unmute audio button */
-	#tabbrowser-tabs[orient='vertical']
+	#tabbrowser-tabs[orient="vertical"]
 		.tabbrowser-tab
 		.tab-icon-overlay:not([crashed]) {
 		top: var(--audio-button-top, 0px) !important;
@@ -211,7 +347,7 @@
 		width: 24px !important;
 		height: 24px !important;
 
-		padding: 4px !important;
+		padding: 5px !important;
 		border-radius: 6px !important;
 		display: initial !important;
 
@@ -220,8 +356,8 @@
 	}
 
 	/* Centers the tab icon, when collapsed tab bar */
-	#navigator-toolbox:not([zen-sidebar-expanded='true'])
-		#tabbrowser-tabs[orient='vertical']
+	#navigator-toolbox:not([zen-sidebar-expanded="true"])
+		#tabbrowser-tabs[orient="vertical"]
 		.tabbrowser-tab {
 		& .tab-icon-image,
 		.tab-throbber {
@@ -230,28 +366,42 @@
 	}
 
 	/* Tab Icon to mute playing audio */
-	#tabbrowser-tabs[orient='vertical']
+	#tabbrowser-tabs[orient="vertical"]
 		.tabbrowser-tab[soundplaying]:not([zen-glance-tab]):hover
 		> .tab-stack
 		> .tab-content
 		> .tab-icon-stack
 		> .tab-icon-overlay:not([crashed]) {
-		list-style-image: url('chrome://browser/skin/tabbrowser/tab-audio-muted-small.svg') !important;
+		@media not (-moz-bool-pref: "zen.mods.AudioIndicatorEnhanced.reverseAudioIcons") {
+			list-style-image: url("chrome://browser/skin/tabbrowser/tab-audio-playing-small.svg") !important;
+		}
+
+		@media (-moz-bool-pref: "zen.mods.AudioIndicatorEnhanced.reverseAudioIcons") {
+			list-style-image: url("chrome://browser/skin/tabbrowser/tab-audio-muted-small.svg") !important;
+		}
 	}
 
 	/* Tab Icon to unmute muted audio */
-	#tabbrowser-tabs[orient='vertical']
+	#tabbrowser-tabs[orient="vertical"]
 		.tabbrowser-tab[muted]:not([zen-glance-tab]):hover
 		> .tab-stack
 		> .tab-content
 		> .tab-icon-stack
 		> .tab-icon-overlay:not([crashed]) {
-		list-style-image: url('chrome://browser/skin/tabbrowser/tab-audio-playing-small.svg') !important;
+		@media not (-moz-bool-pref: "zen.mods.AudioIndicatorEnhanced.reverseAudioIcons") {
+			list-style-image: url("chrome://browser/skin/tabbrowser/tab-audio-muted-small.svg") !important;
+		}
+
+		@media (-moz-bool-pref: "zen.mods.AudioIndicatorEnhanced.reverseAudioIcons") {
+			list-style-image: url("chrome://browser/skin/tabbrowser/tab-audio-playing-small.svg") !important;
+		}
 	}
 
 	/* Show button to mute/unmute audio, on hover, in place of tab icon */
-	#tabbrowser-tabs[orient='vertical']
-		.tabbrowser-tab:has([soundplaying], [muted]):not([zen-glance-tab]):hover {
+	#tabbrowser-tabs[orient="vertical"]
+		.tabbrowser-tab:has([soundplaying], [muted]):not(
+			[zen-glance-tab]
+		):hover {
 		&
 			> .tab-stack
 			> .tab-content
@@ -277,9 +427,51 @@
 		}
 	}
 
+	/* Patches for SuperPins compatibility */
+	@media (-moz-bool-pref: "uc.pins.legacy-layout") {
+		/* Patch for pinned tabs with SuperPins */
+		#tabbrowser-tabs[orient="vertical"]
+			.tabbrowser-tab[pinned]
+			.tab-icon-stack {
+			width: 100% !important;
+			justify-content: center;
+
+			&::before {
+				/* TODO: Take padding from variable */
+				width: calc(100% + 12px) !important;
+			}
+
+			& .tab-icon-image {
+				justify-self: center !important;
+			}
+		}
+
+		#tabbrowser-tabs[orient="vertical"]
+			.tabbrowser-tab[pinned]:not([zen-essential="true"])
+			.tab-icon-stack::before {
+			bottom: 6px !important;
+		}
+
+		.tabbrowser-tab[pinned]:not([zen-essential="true"]) .tab-content {
+			border-radius: var(--border-radius-medium) !important;
+		}
+
+		/* Patch for collapsed pinned tabs with SuperPins  */
+		#navigator-toolbox:not([zen-sidebar-expanded="true"])
+			#tabbrowser-tabs[orient="vertical"]
+			.tabbrowser-tab
+			.tab-icon-stack {
+			width: var(--tab-collapsed-background-width) !important;
+
+			&::before {
+				width: var(--tab-collapsed-background-width) !important;
+			}
+		}
+	}
+
 	/* Patch for essential tabs */
-	#tabbrowser-tabs[orient='vertical']
-		.tabbrowser-tab[zen-essential='true']
+	#tabbrowser-tabs[orient="vertical"]
+		.tabbrowser-tab[zen-essential="true"]
 		.tab-icon-stack {
 		width: 100% !important;
 		justify-content: center;
@@ -291,9 +483,9 @@
 	}
 
 	/* Patch for collapsed essential tabs */
-	#navigator-toolbox:not([zen-sidebar-expanded='true'])
-		#tabbrowser-tabs[orient='vertical']
-		.tabbrowser-tab[zen-essential='true']
+	#navigator-toolbox:not([zen-sidebar-expanded="true"])
+		#tabbrowser-tabs[orient="vertical"]
+		.tabbrowser-tab[zen-essential="true"]
 		.tab-icon-stack {
 		width: var(--tab-collapsed-background-width) !important;
 
@@ -307,7 +499,7 @@
 		> .tab-stack
 		> .tab-content
 		> .tab-icon-stack::before {
-		content: '' !important;
+		content: "" !important;
 		z-index: -1 !important;
 		position: absolute !important;
 		bottom: 0;
@@ -329,11 +521,48 @@
 		transition: fill 1000ms ease-in-out, opacity 1000ms ease-in-out;
 	}
 
+	/* Compatibility patch for collapsed split tabs */
+	tab-group[split-view-group="true"]
+		.tabbrowser-tab:not([zen-glance-tab])
+		> .tab-stack
+		> .tab-content
+		> .tab-icon-stack::before {
+		width: calc(var(--zen-sidebar-width) - 14px) !important;
+	}
+
 	/* Compatibility patch for hidden tab bar */
-	#zen-main-app-wrapper[zen-compact-mode='true']
+	#zen-main-app-wrapper[zen-compact-mode="true"]
 		.tabbrowser-tab
 		.tab-icon-stack::before {
 		width: calc(var(--zen-sidebar-width) - 30px) !important;
+	}
+
+	/* Patch for Split Tabs */
+	#navigator-toolbox[zen-sidebar-expanded="true"]
+		tab-group[split-view-group="true"]
+		.tabbrowser-tab {
+		/* Section based on how many tabs are split */
+
+		/* 2 split tabs */
+		&:nth-of-type(1):nth-last-of-type(2) .tab-icon-stack::before,
+		&:nth-of-type(2):nth-last-of-type(1) .tab-icon-stack::before {
+			width: calc(var(--zen-sidebar-width) / 2 - 11px) !important;
+		}
+
+		/* 3 split tabs */
+		&:nth-of-type(1):nth-last-of-type(3) .tab-icon-stack::before,
+		&:nth-of-type(2):nth-last-of-type(2) .tab-icon-stack::before,
+		&:nth-of-type(3):nth-last-of-type(1) .tab-icon-stack::before {
+			width: calc(var(--zen-sidebar-width) / 3 - 8px) !important;
+		}
+
+		/* 4 split tabs */
+		&:nth-of-type(1):nth-last-of-type(4) .tab-icon-stack::before,
+		&:nth-of-type(2):nth-last-of-type(3) .tab-icon-stack::before,
+		&:nth-of-type(3):nth-last-of-type(2) .tab-icon-stack::before,
+		&:nth-of-type(4):nth-last-of-type(1) .tab-icon-stack::before {
+			width: calc(var(--zen-sidebar-width) / 4 - 8px) !important;
+		}
 	}
 
 	/* TODO: Attempt at different animation for subset of tabs, will need manual re-timing of each svg animation sadly */
@@ -363,15 +592,21 @@
 		> .tab-stack
 		> .tab-content
 		.tab-icon-stack::before {
-		fill: -moz-dialogtext;
-		opacity: 0.2;
+		fill: var(
+			--zen-mods-AudioIndicatorEnhanced-audioWave-colorPlaying,
+			-moz-dialogtext
+		);
+		opacity: var(--zen-mods-AudioIndicatorEnhanced-audioWave-opacity, 0.2);
 	}
 
 	.tabbrowser-tab[muted]:not([zen-glance-tab])
 		> .tab-stack
 		> .tab-content
 		.tab-icon-stack::before {
-		fill: color-mix(in srgb, -moz-dialogtext 50%, rgb(129, 0, 0) 50%);
+		fill: var(
+			--zen-mods-AudioIndicatorEnhanced-audioWave-colorMuted,
+			color-mix(in srgb, -moz-dialogtext 50%, rgb(129, 0, 0) 50%)
+		);
 		opacity: 0.2;
 		background-image: url("data:image/svg+xml,%3C%3Fxml version='1.0' encoding='utf-8'%3F%3E%3Csvg width='1000' height='120' viewBox='0 0 1000 120' preserveAspectRatio='none' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Crect width='1000' height='120' /%3E%3Cg class='g' transform='translate(20 130) rotate(180)'%3E%3Crect class='test' width='20' height='60' rx='5'%3E%3CanimateTransform attributeName='transform' type='scale' values='1 0.85' dur='1s' repeatCount='indefinite' /%3E%3C/rect%3E%3C/g%3E%3Cg class='g' transform='translate(45 130) rotate(180)'%3E%3Crect class='test' width='20' height='60' rx='5'%3E%3CanimateTransform attributeName='transform' type='scale' values='1 0.85' dur='1s' repeatCount='indefinite' /%3E%3C/rect%3E%3C/g%3E%3Cg class='g' transform='translate(70 130) rotate(180)'%3E%3Crect class='test' width='20' height='60' rx='5'%3E%3CanimateTransform attributeName='transform' type='scale' values='1 0.85' dur='1s' repeatCount='indefinite' /%3E%3C/rect%3E%3C/g%3E%3Cg class='g' transform='translate(95 130) rotate(180)'%3E%3Crect class='test' width='20' height='60' rx='5'%3E%3CanimateTransform attributeName='transform' type='scale' values='1 0.85' dur='1s' repeatCount='indefinite' /%3E%3C/rect%3E%3C/g%3E%3Cg class='g' transform='translate(120 130) rotate(180)'%3E%3Crect class='test' width='20' height='60' rx='5'%3E%3CanimateTransform attributeName='transform' type='scale' values='1 0.85' dur='1s' repeatCount='indefinite' /%3E%3C/rect%3E%3C/g%3E%3Cg class='g' transform='translate(145 130) rotate(180)'%3E%3Crect class='test' width='20' height='60' rx='5'%3E%3CanimateTransform attributeName='transform' type='scale' values='1 0.85' dur='1s' repeatCount='indefinite' /%3E%3C/rect%3E%3C/g%3E%3Cg class='g' transform='translate(170 130) rotate(180)'%3E%3Crect class='test' width='20' height='60' rx='5'%3E%3CanimateTransform attributeName='transform' type='scale' values='1 0.85' dur='1s' repeatCount='indefinite' /%3E%3C/rect%3E%3C/g%3E%3Cg class='g' transform='translate(195 130) rotate(180)'%3E%3Crect class='test' width='20' height='60' rx='5'%3E%3CanimateTransform attributeName='transform' type='scale' values='1 0.85' dur='1s' repeatCount='indefinite' /%3E%3C/rect%3E%3C/g%3E%3Cg class='g' transform='translate(220 130) rotate(180)'%3E%3Crect class='test' width='20' height='60' rx='5'%3E%3CanimateTransform attributeName='transform' type='scale' values='1 0.85' dur='1s' repeatCount='indefinite' /%3E%3C/rect%3E%3C/g%3E%3Cg class='g' transform='translate(245 130) rotate(180)'%3E%3Crect class='test' width='20' height='60' rx='5'%3E%3CanimateTransform attributeName='transform' type='scale' values='1 0.85' dur='1s' repeatCount='indefinite' /%3E%3C/rect%3E%3C/g%3E%3Cg class='g' transform='translate(270 130) rotate(180)'%3E%3Crect class='test' width='20' height='60' rx='5'%3E%3CanimateTransform attributeName='transform' type='scale' values='1 0.85' dur='1s' repeatCount='indefinite' /%3E%3C/rect%3E%3C/g%3E%3Cg class='g' transform='translate(295 130) rotate(180)'%3E%3Crect class='test' width='20' height='60' rx='5'%3E%3CanimateTransform attributeName='transform' type='scale' values='1 0.85' dur='1s' repeatCount='indefinite' /%3E%3C/rect%3E%3C/g%3E%3Cg class='g' transform='translate(320 130) rotate(180)'%3E%3Crect class='test' width='20' height='60' rx='5'%3E%3CanimateTransform attributeName='transform' type='scale' values='1 0.85' dur='1s' repeatCount='indefinite' /%3E%3C/rect%3E%3C/g%3E%3Cg class='g' transform='translate(345 130) rotate(180)'%3E%3Crect class='test' width='20' height='60' rx='5'%3E%3CanimateTransform attributeName='transform' type='scale' values='1 0.85' dur='1s' repeatCount='indefinite' /%3E%3C/rect%3E%3C/g%3E%3Cg class='g' transform='translate(370 130) rotate(180)'%3E%3Crect class='test' width='20' height='60' rx='5'%3E%3CanimateTransform attributeName='transform' type='scale' values='1 0.85' dur='1s' repeatCount='indefinite' /%3E%3C/rect%3E%3C/g%3E%3Cg class='g' transform='translate(395 130) rotate(180)'%3E%3Crect class='test' width='20' height='60' rx='5'%3E%3CanimateTransform attributeName='transform' type='scale' values='1 0.85' dur='1s' repeatCount='indefinite' /%3E%3C/rect%3E%3C/g%3E%3Cg class='g' transform='translate(420 130) rotate(180)'%3E%3Crect class='test' width='20' height='60' rx='5'%3E%3CanimateTransform attributeName='transform' type='scale' values='1 0.85' dur='1s' repeatCount='indefinite' /%3E%3C/rect%3E%3C/g%3E%3Cg class='g' transform='translate(445 130) rotate(180)'%3E%3Crect class='test' width='20' height='60' rx='5'%3E%3CanimateTransform attributeName='transform' type='scale' values='1 0.85' dur='1s' repeatCount='indefinite' /%3E%3C/rect%3E%3C/g%3E%3Cg class='g' transform='translate(470 130) rotate(180)'%3E%3Crect class='test' width='20' height='60' rx='5'%3E%3CanimateTransform attributeName='transform' type='scale' values='1 0.85' dur='1s' repeatCount='indefinite' /%3E%3C/rect%3E%3C/g%3E%3Cg class='g' transform='translate(495 130) rotate(180)'%3E%3Crect class='test' width='20' height='60' rx='5'%3E%3CanimateTransform attributeName='transform' type='scale' values='1 0.85' dur='1s' repeatCount='indefinite' /%3E%3C/rect%3E%3C/g%3E%3Cg class='g' transform='translate(520 130) rotate(180)'%3E%3Crect class='test' width='20' height='60' rx='5'%3E%3CanimateTransform attributeName='transform' type='scale' values='1 0.85' dur='1s' repeatCount='indefinite' /%3E%3C/rect%3E%3C/g%3E%3Cg class='g' transform='translate(545 130) rotate(180)'%3E%3Crect class='test' width='20' height='60' rx='5'%3E%3CanimateTransform attributeName='transform' type='scale' values='1 0.85' dur='1s' repeatCount='indefinite' /%3E%3C/rect%3E%3C/g%3E%3Cg class='g' transform='translate(570 130) rotate(180)'%3E%3Crect class='test' width='20' height='60' rx='5'%3E%3CanimateTransform attributeName='transform' type='scale' values='1 0.85' dur='1s' repeatCount='indefinite' /%3E%3C/rect%3E%3C/g%3E%3Cg class='g' transform='translate(595 130) rotate(180)'%3E%3Crect class='test' width='20' height='60' rx='5'%3E%3CanimateTransform attributeName='transform' type='scale' values='1 0.85' dur='1s' repeatCount='indefinite' /%3E%3C/rect%3E%3C/g%3E%3Cg class='g' transform='translate(620 130) rotate(180)'%3E%3Crect class='test' width='20' height='60' rx='5'%3E%3CanimateTransform attributeName='transform' type='scale' values='1 0.85' dur='1s' repeatCount='indefinite' /%3E%3C/rect%3E%3C/g%3E%3Cg class='g' transform='translate(645 130) rotate(180)'%3E%3Crect class='test' width='20' height='60' rx='5'%3E%3CanimateTransform attributeName='transform' type='scale' values='1 0.85' dur='1s' repeatCount='indefinite' /%3E%3C/rect%3E%3C/g%3E%3Cg class='g' transform='translate(670 130) rotate(180)'%3E%3Crect class='test' width='20' height='60' rx='5'%3E%3CanimateTransform attributeName='transform' type='scale' values='1 0.85' dur='1s' repeatCount='indefinite' /%3E%3C/rect%3E%3C/g%3E%3Cg class='g' transform='translate(695 130) rotate(180)'%3E%3Crect class='test' width='20' height='60' rx='5'%3E%3CanimateTransform attributeName='transform' type='scale' values='1 0.85' dur='1s' repeatCount='indefinite' /%3E%3C/rect%3E%3C/g%3E%3Cg class='g' transform='translate(720 130) rotate(180)'%3E%3Crect class='test' width='20' height='60' rx='5'%3E%3CanimateTransform attributeName='transform' type='scale' values='1 0.85' dur='1s' repeatCount='indefinite' /%3E%3C/rect%3E%3C/g%3E%3Cg class='g' transform='translate(745 130) rotate(180)'%3E%3Crect class='test' width='20' height='60' rx='5'%3E%3CanimateTransform attributeName='transform' type='scale' values='1 0.85' dur='1s' repeatCount='indefinite' /%3E%3C/rect%3E%3C/g%3E%3Cg class='g' transform='translate(770 130) rotate(180)'%3E%3Crect class='test' width='20' height='60' rx='5'%3E%3CanimateTransform attributeName='transform' type='scale' values='1 0.85' dur='1s' repeatCount='indefinite' /%3E%3C/rect%3E%3C/g%3E%3Cg class='g' transform='translate(795 130) rotate(180)'%3E%3Crect class='test' width='20' height='60' rx='5'%3E%3CanimateTransform attributeName='transform' type='scale' values='1 0.85' dur='1s' repeatCount='indefinite' /%3E%3C/rect%3E%3C/g%3E%3Cg class='g' transform='translate(820 130) rotate(180)'%3E%3Crect class='test' width='20' height='60' rx='5'%3E%3CanimateTransform attributeName='transform' type='scale' values='1 0.85' dur='1s' repeatCount='indefinite' /%3E%3C/rect%3E%3C/g%3E%3Cg class='g' transform='translate(845 130) rotate(180)'%3E%3Crect class='test' width='20' height='60' rx='5'%3E%3CanimateTransform attributeName='transform' type='scale' values='1 0.85' dur='1s' repeatCount='indefinite' /%3E%3C/rect%3E%3C/g%3E%3Cg class='g' transform='translate(870 130) rotate(180)'%3E%3Crect class='test' width='20' height='60' rx='5'%3E%3CanimateTransform attributeName='transform' type='scale' values='1 0.85' dur='1s' repeatCount='indefinite' /%3E%3C/rect%3E%3C/g%3E%3Cg class='g' transform='translate(895 130) rotate(180)'%3E%3Crect class='test' width='20' height='60' rx='5'%3E%3CanimateTransform attributeName='transform' type='scale' values='1 0.85' dur='1s' repeatCount='indefinite' /%3E%3C/rect%3E%3C/g%3E%3Cg class='g' transform='translate(920 130) rotate(180)'%3E%3Crect class='test' width='20' height='60' rx='5'%3E%3CanimateTransform attributeName='transform' type='scale' values='1 0.85' dur='1s' repeatCount='indefinite' /%3E%3C/rect%3E%3C/g%3E%3Cg class='g' transform='translate(945 130) rotate(180)'%3E%3Crect class='test' width='20' height='60' rx='5'%3E%3CanimateTransform attributeName='transform' type='scale' values='1 0.85' dur='1s' repeatCount='indefinite' /%3E%3C/rect%3E%3C/g%3E%3Cg class='g' transform='translate(970 130) rotate(180)'%3E%3Crect class='test' width='20' height='60' rx='5'%3E%3CanimateTransform attributeName='transform' type='scale' values='1 0.85' dur='1s' repeatCount='indefinite' /%3E%3C/rect%3E%3C/g%3E%3Cg class='g' transform='translate(995 130) rotate(180)'%3E%3Crect class='test' width='20' height='60' rx='5'%3E%3CanimateTransform attributeName='transform' type='scale' values='1 0.85' dur='1s' repeatCount='indefinite' /%3E%3C/rect%3E%3C/g%3E%3Cstyle%3E .test %7B fill: context-fill; %7D %3C/style%3E%3C/svg%3E") !important;
 	}

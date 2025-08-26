@@ -7,8 +7,18 @@ On some websites, the HTML background color can sometimes bleed-through the edge
 
 ## Change log
 
+### 1.0.6
+- 🐛 Fixed clip-path being applied 1 layer too high (see issue #10).
+- 📝 Update description to mention possible increase in GPU usage.
+
+### 1.0.5
+- 🩹 Fixed rounded corners from appearing in fullscreen (see pull request #3).
+
+### 1.0.4
+- 🔧 Changed homepage URL path to point to the mod directory itself, instead of the root repository (see pull request #2).
+
 ### 1.0.3
-- 🐛 Fixed clip-path not applying to websites using the `backdrop-filter` effect (see #1).
+- 🐛 Fixed clip-path not applying to websites using the `backdrop-filter` effect (see pull request #1).
 
 ### 1.0.2
 - 📝 Updated README.

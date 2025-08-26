@@ -1,7 +1,7 @@
 [
     {
-        "property": "theme.nosidebarscrollbar.before180b",
-        "label": "Enable if you are on version 1.7.9b or lower.",
+        "property": "theme.nosidebarscrollbar.before125b",
+        "label": "Enable if you are on version 1.12.5b or lower.",
         "type": "checkbox",
         "disabledOn": [],
         "defaultValue": false
