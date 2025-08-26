@@ -131,14 +131,22 @@
   
   /* Set lighter opacity for passive extension buttons */
   .unified-extensions-item-icon {
-    opacity: 0.3;
+    opacity: 0.6;
   }
   .unified-extensions-item-action-button:hover {
-    background-color: color-mix(in srgb, currentColor 3%, transparent) !important;
+    background-color: color-mix(in srgb, currentColor 20%, transparent) !important;
   }
 
   #unified-extensions-view toolbarseparator {
     margin-top: 0px !important;
+  }
+}
+/* Invert the passive extension icons in dark mode */
+@media (prefers-color-scheme: dark) {
+  @media (-moz-bool-pref: "mod.extension.viewgrid") {
+    .unified-extensions-item-icon {
+      filter: invert(1) !important;
+    }
   }
 }
 
