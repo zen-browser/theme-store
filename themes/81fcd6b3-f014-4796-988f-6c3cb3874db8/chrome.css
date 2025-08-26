@@ -139,7 +139,6 @@
     --panel-background: color-mix(in srgb, var(--zen-primary-color) 40%, var(--zen-colors-tertiary)) !important;
   }
 }
-
 /* Prioritize “Copy Clean Link" when available, otherwise, only show "Copy Link” */
 @media -moz-pref("uc.hidecontext.copylink") {
   #contentAreaContextMenu:has(#context-stripOnShareLink[disabled="false"]) {
@@ -148,6 +147,14 @@
     }
   }
   #context-stripOnShareLink[disabled="true"] {
+    display: none !important;
+  }
+}
+/* Hide "Bookmark Link” */
+@media -moz-pref("uc.hidecontext.bookmark") {
+  #toolbar-context-bookmarkSelectedTab,
+  #toolbar-context-bookmarkSelectedTabs,
+  #context-bookmarklink {
     display: none !important;
   }
 }
