@@ -1,10 +1,23 @@
-/* Zen Context Menu v3.0 by KiKaraage */
+/* Zen Context Menu v3.1 by KiKaraage */
 
 /* Fix ergonomics for tab context menu by applying some reorderings 
- * plus hiding disabled options and some separators
- * Applied by default when enabling Zen Context Menu mod */
+* plus hiding disabled options and some separators
+* Applied by default when enabling Zen Context Menu mod */
 @media -moz-pref("uc.fixcontext.ergonomicsfortabs") {
   #tabContextMenu {
+    :nth-child(22), /* Separator below "Duplicate Tab" */
+    #context_bookmarkTab, #context_bookmarkSelectedTabs,
+    #context_moveTabOptions,
+    #context_selectAllTabs, :nth-child(31), /* Separator below "Select All Tabs" */
+    #context_selectedAllTabs, #toolbar-context-selectAllTabs,
+    #context_closeTabOptions,
+    :nth-child(37), /* Separator below "Split Tabs" */
+    #context_zen-pinned-tab-separator, /* Separator above Replace Pinned URL */
+    #context_zenSplitTabs[label="Split Tab (multiple selected tabs needed)"],
+    #context_zenSplitTabs[disabled="true"],
+    #context_closeDuplicateTabs[disabled]{
+      display: none;
+    }
     #context_toggleMuteTab,
     #context_toggleMuteSelectedTabs,
     #context_zen-add-essential,
@@ -21,7 +34,8 @@
     #context_unloadTab {
       order: -7 !important;
     }
-    :nth-child(5) {
+    :nth-child(6), /* Separator below "New Folder" */
+    #zen-context-menu-new-folder {
       order: -6 !important;
     }
     #context_moveTabToGroup,
@@ -29,30 +43,20 @@
     #context-zen-change-workspace-tab {
       order: -5 !important;
     }
-    :nth-child(32) {
-      order: -4 !important;
-    }
+    :nth-child(35), /* Separator below "Change Tabs to Workspace" */ 
+    #context_sendTabToDevice,
     #context_zenSplitTabs,
     #context_undoCloseTab {
       order: -3 !important;
     } 
     #context_closeTab,
-    #context_closeTabOptions,
     #context_closeDuplicateTabs,
     #context_zen-reset-pinned-tab,
     #context_zen-replace-pinned-url-with-current {
       order: 2;
     }
-    #context_zenSplitTabs[label="Split Tab (multiple selected tabs needed)"],
-    #context_zenSplitTabs[disabled="true"],
-    #context_closeDuplicateTabs[disabled],
-    #context_zen-pinned-tab-separator,
-    :nth-child(28), :nth-child(43) {
-      display: none;
-    }
   }
 }
-
 /* Hide all separators */
 @media -moz-pref("uc.hidecontext.separators") {
   menuseparator::before {
@@ -65,25 +69,25 @@
 /* Hide all icons in context menu, except checkboxes and radio buttons, to fit current Zen styling */
 @media -moz-pref("uc.hidecontext.icons") {
   :not(:not(menubar) > menu, #ContentSelectDropdown)
-    > menupopup
-    > menuitem:not(
-      .menuitem-iconic,
-      [type='checkbox'],
-      [type='radio'],
-      .in-menulist,
-      .in-menulist menuitem,
-      .unified-nav-current
-    ),
+  > menupopup
+  > menuitem:not(
+  .menuitem-iconic,
+  [type='checkbox'],
+  [type='radio'],
+  .in-menulist,
+  .in-menulist menuitem,
+  .unified-nav-current
+  ),
   :not(:not(menubar) > menu, #ContentSelectDropdown)
-    > menupopup
-    > menu:not(
-      .menu-iconic,
-      [type='checkbox'],
-      [type='radio'],
-      .in-menulist,
-      .in-menulist menu,
-      .unified-nav-current
-    ),
+  > menupopup
+  > menu:not(
+  .menu-iconic,
+  [type='checkbox'],
+  [type='radio'],
+  .in-menulist,
+  .in-menulist menu,
+  .unified-nav-current
+  ),
   :not(:not(menubar) > menu, #ContentSelectDropdown) > menupopup > menucaption {
     padding-inline: 6px !important;
   }
@@ -118,7 +122,7 @@
   }
 }
 /* Apply Zen workspace gradient to all context menu and panels
- * Suitable if the OS, desktop environment or window manager supported blur background */
+* Suitable if the OS, desktop environment or window manager supported blur background */
 @media -moz-pref("uc.fixcontext.applyzengradient") {
   menupopup, panel {
     --panel-background: var(--zen-main-browser-background) !important;
@@ -135,7 +139,6 @@
     --panel-background: color-mix(in srgb, var(--zen-primary-color) 40%, var(--zen-colors-tertiary)) !important;
   }
 }
-
 /* Prioritize “Copy Clean Link" when available, otherwise, only show "Copy Link” */
 @media -moz-pref("uc.hidecontext.copylink") {
   #contentAreaContextMenu:has(#context-stripOnShareLink[disabled="false"]) {
@@ -147,12 +150,10 @@
     display: none !important;
   }
 }
-/* Hide "Bookmark Tab/Link” */
+/* Hide "Bookmark Link” */
 @media -moz-pref("uc.hidecontext.bookmark") {
   #toolbar-context-bookmarkSelectedTab,
   #toolbar-context-bookmarkSelectedTabs,
-  #context_bookmarkSelectedTabs,
-  #context_bookmarkTab,
   #context-bookmarklink {
     display: none !important;
   }
@@ -163,21 +164,6 @@
   #context_toggleMuteSelectedTabs,
   #context_playTab,
   #context_playSelectedTabs {
-    display: none !important;
-  }
-}
-/* Hide "New Tab" options */
-@media -moz-pref("uc.hidecontext.newtab") {
-  #context_openANewTab,
-  #toolbar-context-openANewTab,
-  #toolbarNavigatorItemsMenuSeparator {
-    display: none !important;
-  }
-}
-
-/* Hide "Move Tab" options */
-@media -moz-pref("uc.hidecontext.movetaboptions") {
-  #context_moveTabOptions {
     display: none !important;
   }
 }
@@ -201,12 +187,6 @@
 @media -moz-pref("uc.hidecontext.closetab") {
   #context_closeTab,
   #context_closeDuplicateTabs {
-    display: none !important;
-  }
-}
-/* Hide "Close Multiple Tabs" */
-@media -moz-pref("uc.hidecontext.closemultiple") {
-  #context_closeTabOptions {
     display: none !important;
   }
 }
@@ -294,15 +274,6 @@
     display: none !important;
   }
 }
-/* Hide “Select All Tabs" option */
-@media -moz-pref("uc.hidecontext.selectalltabs") {
-  #context_selectAllTabs,
-  #context_selectedAllTabs,
-  #toolbar-context-selectAllTabs,
-  #tabContextMenu > :nth-child(28) {
-    display: none !important;
-  }
-}
 /* Hide “Reload Tab” option */
 @media -moz-pref("uc.hidecontext.reloadtab") {
   #context_reloadTab,
@@ -372,15 +343,15 @@
 
 @media -moz-pref("uc.fixcontext.restoreicons") {
   /* PART 2: Adding start inline padding to options, 
-   * For now this also affected items with existing paddings
-   * Like on toolbar context menu, or on extension options
-   * Help me fix this, hit me up on github.com/KiKaraage/ZenMods/issues */
+  * For now this also affected items with existing paddings
+  * Like on toolbar context menu, or on extension options
+  * Help me fix this, hit me up on github.com/KiKaraage/ZenMods/issues */
   .menu-text {
     @media (-moz-platform: windows) {
       padding-inline-start: 24px !important;
     }
   }   
-  
+
   /* PART 3: Adding icons back to regular context menu options */
   :not(:not(menubar) > menu, #ContentSelectDropdown)
   > menupopup
@@ -399,12 +370,12 @@
     -moz-context-properties: fill, fill-opacity !important;
     fill: currentColor !important;
   }
-  
+
   /* PART 4: Adding icons back to context menu options that has arrow */
   :not(:not(menubar) > menu, #ContentSelectDropdown)
   > menupopup > menu:not(
-    .menu-iconic, [type='checkbox'], [type='radio'],
-    .in-menulist, .in-menulist menu, .unified-nav-current
+  .menu-iconic, [type='checkbox'], [type='radio'],
+  .in-menulist, .in-menulist menu, .unified-nav-current
   ),
   #toggle_toolbar-menubar,
   #PanelUI-history toolbarbutton,
@@ -416,10 +387,10 @@
     -moz-context-properties: fill, fill-opacity !important;
     fill: currentColor !important; 
   }
-  
+
   /* PART 5: Normalize left padding for options with checkboxes, like Compact Mode options
-   * Still not applied to options like 'Tabs on the right' sadly
-   * Help me fix this, hit me up on github.com/KiKaraage/ZenMods/issues */
+  * Still not applied to options like 'Tabs on the right' sadly
+  * Help me fix this, hit me up on github.com/KiKaraage/ZenMods/issues */
   @media (-moz-platform: windows) {
     @media -moz-pref("uc.fixcontext.restoreicons") {
       menupopup > menuitem[checked='true'] {
@@ -457,13 +428,10 @@
   #context_zenSplitTabs {
     --menu-image: url('chrome://browser/skin/zen-icons/sidebars-right.svg') !important;
   }
-  #context-zen-change-workspace-tab {
-    --menu-image: url('chrome://browser/skin/zen-icons/move-tab.svg') !important;
-  }
   #context-zenSplitLink {
     --menu-image: url('chrome://browser/skin/zen-icons/split.svg') !important;
   }
-  
+
   #context_zenOpenWorkspace,
   #context_zenOpenWorkspacePanel {
     --menu-image: url('chrome://browser/skin/zen-icons/manage.svg') !important;
@@ -481,7 +449,7 @@
   #context-media-loop:not([checked='true']) .menu-iconic-icon {
     list-style-image: url('chrome://browser/skin/zen-icons/media-loop.svg') !important;
   }
-  
+
   #context-savepage {
     --menu-image: url('chrome://browser/skin/zen-icons/save.svg');
   }
@@ -512,6 +480,7 @@
   }
   #context-paste,
   .textbox-contextmenu menuitem[cmd*='paste'],
+  #placesContext_paste,
   #placesContext_paste_group {
     --menu-image: url('chrome://browser/skin/zen-icons/edit-paste.svg');
   }
@@ -587,6 +556,7 @@
   #context-pdfjs-copy {
     --menu-image: url('chrome://browser/skin/zen-icons/link.svg');
   }
+  #placesContext_open,
   #context-openlinkincurrent {
     --menu-image: url('chrome://browser/skin/zen-icons/ext-link.svg');
   }
@@ -717,7 +687,8 @@
     list-style-image: url('chrome://browser/skin/zen-icons/unpin.svg') !important;
   }
   #context_duplicateTab,
-  #context_duplicateTabs {
+  #context_duplicateTabs,
+  menuitem[data-l10n-id="zen-panel-ui-workspaces-create"] {
     --menu-image: url('chrome://browser/skin/zen-icons/duplicate-tab.svg');
   }
   #zen-context-menu-compact-mode {
@@ -760,11 +731,17 @@
     --menu-image: url('chrome://browser/skin/zen-icons/pocket-outline.svg');
   }
   #context_ungroupTab,
-  #context_moveTabOptions {
+  #context_moveTabOptions,
+  #context-zen-change-workspace-tab,
+  #context_zenReorderWorkspaces {
     --menu-image: url('chrome://browser/skin/zen-icons/move-tab.svg');
   }
   .share-tab-url-item {
     --menu-image: url('chrome://browser/skin/zen-icons/share.svg');
+  }
+  #zen-context-menu-new-folder-toolbar,
+  #zen-context-menu-new-folder {
+    --menu-image: url('chrome://browser/skin/zen-icons/folder.svg');
   }
   #context_moveTabToNewGroup,
   #context_moveTabToGroup,
@@ -788,5 +765,80 @@
   }
   .wordmark::after {
     content: 'Plus' !important;
+  }
+  #placesContext > menuitem[id="placesContext_sortBy:name"] {
+    --menu-image: url('chrome://browser/skin/zen-icons/translations.svg');
+  }
+} 
+
+
+/* PART 8: Improving the text margin one by one */
+@media -moz-pref("uc.fixcontext.restoreicons") {
+  /* 8A: Tab Context Menu */
+  #tabContextMenu {
+    menuitem:not(.menuitem-iconic) > .menu-text,
+    menu > .menu-text {
+      margin-inline-start: 24px!important;
+    }
+    #context_reopenInContainerPopupMenu,
+    #context-zen-change-workspace-tab-menu-popup,
+    #context_sendTabToDevicePopupMenu, #closeTabOptions, #moveTabOptionsMenu {
+      menuitem:not(.menuitem-iconic) > .menu-text,
+      menu > .menu-text {
+        margin-inline-start: 0 !important;
+      } 
+    } 
+  }
+  /* 8B: Workspace Context Menu */
+  #zenWorkspaceMoreActions {
+    menuitem > .menu-text,
+    menu > .menu-text {
+      margin-inline-start: 24px !important;
+    }
+    #context_zenWorkspacesOpenInContainerTab > menupopup {
+      menuitem > .menu-text,
+      menu > .menu-text {
+        margin-inline-start: 0 !important;
+      } 
+    }
+  }
+  /* 8C: Content Area Context Menu */
+  #contentAreaContextMenu {
+    menuitem:not(.menuitem-iconic,
+      #context-undo, #context-redo, #context-cut, #context-copy,
+      #context-paste, #context-delete
+    ) > .menu-text,
+    menu > .menu-text {
+      margin-inline-start: 24px!important;
+    }
+    #context-ask-chat > menupopup,
+    #context-sendpagetodevice-popup,
+    #context-sendlinktodevice-popup
+    {
+      menuitem > .menu-text,
+      menu > .menu-text {
+        margin-inline-start: 0 !important;
+      } 
+    } 
+  }
+  /* 8D: Text Context Menu */
+  .textbox-contextmenu {
+    .menu-text {
+      margin-inline-start: 24px !important;
+    }
+  }
+  /* 8E: Bookmarks Context Menu */
+  #placesContext {
+    menuitem > .menu-text,
+    menu > .menu-text {
+      margin-inline-start: 0px !important;
+    }
+    #placesContext_open_newcontainertab_popup,
+    #toggle_PersonalToolbar > menupopu {
+      menuitem > .menu-text,
+      menu > .menu-text {
+        margin-inline-start: 0 !important;
+      } 
+    }
   }
 }

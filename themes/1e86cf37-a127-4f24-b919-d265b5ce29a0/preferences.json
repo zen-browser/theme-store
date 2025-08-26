@@ -1,17 +1,52 @@
 [
     {
         "property": "mod.extension.viewgrid",
-        "label": "Xtra Clean mode: Present the extensions as grid",
+        "label": "Apply grid view to extension menu",
         "type": "checkbox"
     },
     {
-        "property": "mod.extension.hide",
-        "label": "Hyper Clean mode: Hide the extension button unless hovered",
+        "property": "mod.lean.hide-zoom",
+        "label": "Hide Zoom button in URL bar",
         "type": "checkbox"
     },
     {
-        "property": "mod.extension.remove",
-        "label": "Way Too Clean mode: Remove the extension button",
+        "property": "mod.lean.show-translation",
+        "label": "Show Translation button when hovering the URL bar in Single Toolbar mode",
+        "type": "checkbox"
+    },
+    {
+        "property": "mod.lean.show-pageactions",
+        "label": "Show page action button for extensions when hovering the URL bar in Single Toolbar mode",
+        "type": "checkbox"
+    },
+    {
+        "property": "mod.lean.top-workspace",
+        "label": "Hide top workspace indicator except when editing its name (Right click icon for current workspace at the bottom and choose 'Change Name')",
+        "type": "checkbox"
+    },
+    {
+        "property": "mod.lean.bottom-buttons",
+        "label": "Hide bottom buttons area unless tab sidebar is hovered",
+        "type": "checkbox"
+    },
+    {
+        "property": "mod.lean.ninja-top-buttons",
+        "label": "Hide top buttons area in Single Toolbar mode but still preserve 1px height so the buttons is accessible above the URL bar, Ninja-style. Works in tandem with Gesturefy extension",
+        "type": "checkbox"
+    },
+    {
+        "property": "mod.lean.bookmarks",
+        "label": "Only show bookmarks when hovering top navbar in Multiple and Collapsed Toolbar mode",
+        "type": "checkbox"
+    },
+    {
+        "property": "mod.lean.pinned-ext",
+        "label": "Repurpose the bottom buttons area as 'Pinned Extensions' below the URL bar in Single Toolbar mode",
+        "type": "checkbox"
+    },
+    {
+        "property": "mod.lean.pinned-ext.workspaces",
+        "label": "Show workspace buttons that were hidden when 'Pinned Extensions' is enabled",
         "type": "checkbox"
     }
 ]

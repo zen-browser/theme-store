@@ -1,3 +1,15 @@
+/*
+* github.com/KiKaraage/
+* ZenMods/Lean
+* Show things only when you need it: Top & bottom buttons, workspace indicator, bookmarks bar and more
+*/
+
+/* 0 - Tidy up extension menu by default */
+/* Reduce icon size in extension menu  */
+:root {
+  --uei-icon-size: 20px !important;
+}
+
 @media not (-moz-bool-pref: "mod.extension.viewgrid") {
   /* Hide header, description, extension captions */
   #unified-extensions-view box.panel-header,
@@ -11,12 +23,18 @@
   #unified-extensions-view {
     width: var(--menu-panel-width) !important;
   }
+  #overflowed-extensions-list {
+    padding-block-start: 2px !important;
+  }
+  #unified-extensions-area {
+    padding-block-end: 1px !important;
+  }
   panelview .unified-extensions-item-action-button {
-    padding-inline: 10px !important;
-    padding-block: 0px !important;
+    padding-inline: 8px !important;
+    padding-block: 4px !important;
   }
   #unified-extensions-manage-extensions {
-    margin-inline: 4px !important;
+    margin-inline: 3px !important;
     padding: 8px 10px !important;
     margin-block-end: 4px !important;
   }
@@ -48,17 +66,18 @@
   }
   #unified-extensions-view .subviewbutton-iconic {
     & > .toolbarbutton-icon {
-      width: 1.2em !important;
-      height: 1.2em !important;
-      padding: 0.7em !important;
+      width: 1em !important;
+      height: 1em !important;
+      padding: 0.6em !important;
     }
   }
 }
 
+/* 1 - Apply grid view in extension menu */
 @media (-moz-bool-pref: "mod.extension.viewgrid") {
   /* Set width of Unified Extension View */
   #unified-extensions-view {
-    width: calc(var(--menu-panel-width) - 75px) !important;
+    width: calc(var(--menu-panel-width) - 118px) !important;
   }
 
   /* Hide the header as well as texts and settings icon for each extension, so only icons are visible */
@@ -81,11 +100,13 @@
     align-items: center !important;
     margin-inline: 7px !important;
     width: 0px !important;
-    gap: 7px 0px;
   }
 
+  #overflowed-extensions-list {
+    padding-block-start: 5px !important;
+  }
   #unified-extensions-area {
-    padding-block: 7px !important;
+    padding-block-end: 10px !important;
   }
 
   /* Ensure the extensions are fully centered with squircle hover shape, and reduce unneeded margins/paddings  */
@@ -93,14 +114,13 @@
     display: flex !important;
     align-items: center !important;
     justify-content: center !important;
-    padding-block: 4px !important;
     border-radius: 12px !important;
   }
   .unified-extensions-item-icon, .unified-extensions-item .webextension-browser-action.subviewbutton > .toolbarbutton-badge-stack {
     margin: 0px !important;
   }
   panelview .unified-extensions-item-action-button {
-    padding: 5px 10px !important;
+    padding: 10px 10px !important;
   }
   
   /* Set proper padding for the Manage Extensions button */
@@ -111,34 +131,308 @@
   
   /* Set lighter opacity for passive extension buttons */
   .unified-extensions-item-icon {
-    opacity: 0.3;
+    opacity: 0.6;
   }
   .unified-extensions-item-action-button:hover {
-    background-color: color-mix(in srgb, currentColor 3%, transparent) !important;
+    background-color: color-mix(in srgb, currentColor 20%, transparent) !important;
   }
 
   #unified-extensions-view toolbarseparator {
-    margin-top: 8px !important;
+    margin-top: 0px !important;
+  }
+}
+/* Invert the passive extension icons in dark mode */
+@media (prefers-color-scheme: dark) {
+  @media (-moz-bool-pref: "mod.extension.viewgrid") {
+    .unified-extensions-item-icon {
+      filter: invert(1) !important;
+    }
   }
 }
 
-@media (-moz-bool-pref: "mod.extension.hide") {
-  :root:not([customizing]){
-    #unified-extensions-button {
-      opacity: 0 !important;
-      transition: opacity 0.2s ease;
-    }
+/* 2 - Hide Zoom button in URL bar */
+@media (-moz-bool-pref: "mod.lean.hide-zoom") {
+  #urlbar-zoom-button {
+    display: none !important;
+  }
+}
 
-    #unified-extensions-button:hover {
+/* 3 - Show translation button when hovering URL bar in Single Toolbar mode */
+:root[zen-single-toolbar='true'] {
+  @media (-moz-bool-pref: "mod.lean.show-translation") {
+    #urlbar:hover {
+      #translations-button {
+        display: inherit !important; 
+      }
+      #translations-button {
+        &[hidden="true"] {
+          #translations-button-circle-arrows, #translations-button-locale {
+            visibility: collapse !important;
+          }
+          #translations-button-icon {
+            visibility: visible !important;
+          }
+        }
+      }
+    }
+    #translations-button {
+      transition: all 0.1s ease !important;
+    }
+    & #translation-button:not([open]) {
+      margin-inline-start: calc(-8px - 2 * var(--urlbar-icon-padding));
+      transform: translateX(100%);
+      opacity: 0;
+    }
+    #urlbar:hover #translations-button {
       opacity: 1 !important;
+      margin-inline-start: 0 !important;
+      transform: none !important;
+      display: flex;
     }
   }
 }
 
-@media (-moz-bool-pref: "mod.extension.remove") {
-  :root:not([customizing]){
-    #unified-extensions-button {
-      display: none !important;
+/* 4 - Show page action button for extensions when hovering URL bar in Single Toolbar mode */
+:root[zen-single-toolbar='true'] {
+  @media (-moz-bool-pref: "mod.lean.show-pageactions") {
+    #urlbar:hover {
+      .urlbar-addon-page-action {
+        display: inherit !important;
+      }
+    }
+    #page-action-buttons {
+      order: 1 !important;
+    }
+  }
+}
+
+/* 5 - Hide top workspace indicator unless when editing space name
+ * + adjust Essentials area bottom padding */
+@media -moz-pref("mod.lean.top-workspace") {
+  .zen-current-workspace-indicator:not(:has(.tab-label-container-editing)) {
+    visibility: collapse !important;
+  }
+  @media -moz-pref("mod.lean.pinned-ext") {
+    .zen-essentials-container:not(:empty) {
+      padding-bottom: 4px !important;
+    }
+    @media not -moz-pref("mod.lean.bottom-buttons") {
+      #main-window[zen-single-toolbar="true"] {
+        .zen-essentials-container {
+          padding-bottom: 4px !important;
+          padding-top: 4px !important;
+        }
+      }
+    }
+  }
+  @media not -moz-pref("mod.lean.pinned-ext") {
+    .zen-essentials-container:not(:empty), .zen-current-workspace-indicator {
+      padding-bottom: 0px !important;
+    }
+    #main-window[zen-single-toolbar="true"] {
+      .zen-essentials-container {
+        padding-bottom: 6px !important;
+      }
+    }
+  }
+}
+
+/* 6 - Hide bottom buttons area unless tab sidebar is hovered */
+:root:not([customizing]) {
+  @media -moz-pref("mod.lean.bottom-buttons") {
+    #zen-sidebar-foot-buttons, #zen-workspaces-button, #zen-sidebar-foot-buttons toolbarbutton {
+      transition: ease 0.2s !important;
+    }
+    #titlebar:not(:hover) {
+      zen-workspace {
+        & > arrowscrollbox {
+          &[overflowing] {
+            &::after {
+              height: 0px !important;
+            }
+          }
+        }
+      }
+      #zen-sidebar-foot-buttons {
+        min-height: 3px !important;
+        gap: 1px !important;
+        padding-top: 1px !important;
+        toolbarbutton, #zen-workspaces-button {
+          opacity: 0 !important;
+          height: 0px !important;
+        }
+      }
+    }
+  }
+}
+
+/* 7 - Ninja top buttons on Single Toolbar mode
+ * You can hover slightly above URL bar to access the top buttons, but you can't see it */
+:root[zen-single-toolbar="true"] {
+  --top-toolbar-hover-opacity: 0;
+  @media -moz-pref("mod.lean.ninja-top-buttons") {
+    #zen-sidebar-top-buttons, #zen-sidebar-top-buttons-customization-target, #zen-sidebar-top-buttons toolbarbutton {
+      transition: ease 0.2s !important;
+    }
+    #navigator-toolbox {
+      & #zen-appcontent-navbar-wrapper, & #zen-sidebar-top-buttons {
+        --zen-toolbar-height: 1px !important;
+        opacity: var(--top-toolbar-hover-opacity) !important;
+        z-index: 9 !important;
+      }
+    }
+    #navigator-toolbox:not(:hover) {
+      & #zen-appcontent-navbar-wrapper, & #zen-sidebar-top-buttons {
+        opacity: 0 !important;
+      }
+    }
+  }
+}
+
+
+/* 8 - Only show bookmarks when hovering top navigation bar on Multiple & Collapsed Toolbar mode
+ * Mimicking how it works on Single Toolbar */
+:root:not([zen-single-toolbar="true"]) {
+  @media -moz-pref("mod.lean.bookmarks") {
+    #PersonalToolbar:not([collapsed="true"]) {   
+      min-height: 2px !important;
+      height: 2px !important;
+      opacity: 0;
+      transition: 0.2s ease !important;
+    }
+    &[customizing] {
+      #PersonalToolbar {
+        opacity: 1;
+        height: 30px !important;
+      }
+    }  
+    #zen-appcontent-navbar-container:hover {
+      #PersonalToolbar {
+        opacity: 1;
+        height: 30px !important;
+      }
+    }
+    #TabsToolbar {
+      margin-block-start: 2px !important;
+    }
+  }
+}
+
+/* 9 - WIP: Bottom buttons as "pinned extensions" on Single Toolbar mode
+ * Also hide the workspace buttons, and the separator below tabs area */
+
+/* Part A: When bottom buttons is always shown */
+@media -moz-pref("mod.lean.pinned-ext") {
+  #main-window[zen-single-toolbar="true"] {
+    #titlebar {
+      zen-workspace {
+        & > arrowscrollbox {
+          &[overflowing] {
+            &::after {
+              height: 0px !important;
+            }
+          }
+        }
+      }
+    }
+    #navigator-toolbox[zen-sidebar-expanded="true"] {
+      @media -moz-pref("mod.lean.bottom-buttons") {
+        .zen-essentials-container {
+          :root[zen-single-toolbar="true"] &:not(:empty) {
+            padding-top: 0px !important;
+          }
+        }
+      }
+      & #zen-sidebar-foot-buttons {
+        order: -1 !important;
+        justify-content: center !important;
+        padding-inline: calc(var(--zen-toolbox-padding) - 3px) !important;
+        gap: 4px !important;
+        padding-top: 4px !important;
+        padding-bottom: 0px !important;
+      }
+      #zen-sidebar-foot-buttons toolbarbutton {
+        .toolbarbutton-1 {
+          padding-inline: 0 !important;
+          margin: 0 !important;
+          margin-top: 0 !important;
+        }
+        padding-inline: 0px !important;
+        min-width: 40px !important;
+        &.toolbarbutton-1 {
+          &:not([disabled]) {
+            &:hover > :is(.toolbarbutton-icon, .toolbarbutton-text, .toolbarbutton-badge-stack) {
+              background-color: transparent !important;
+            }
+          }
+        }
+      }
+      #zen-sidebar-foot-buttons toolbarbutton {
+        background-color: var(--zen-toolbar-element-bg) !important;
+        border-radius: var(--tab-border-radius) !important;
+      }
+      #zen-sidebar-foot-buttons toolbarbutton:hover {
+        background-color: var(--toolbarbutton-hover-background) !important;
+      }
+      @media not -moz-pref("mod.lean.pinned-ext.workspaces") {  
+        #zen-workspaces-button {
+          display: none !important; 
+          height: 0 !important;
+          min-height: 0 !important;
+        }
+      }
+      @media -moz-pref("mod.lean.pinned-ext.workspaces") {  
+        #zen-sidebar-foot-buttons {
+          gap: 0px !important;
+        }
+      }
+    }
+  }
+}
+
+@media not -moz-pref("mod.lean.bottom-buttons") {
+  @media -moz-pref("mod.lean.pinned-ext") {
+    #main-window[zen-single-toolbar="true"] {
+      #navigator-toolbox[zen-sidebar-expanded="true"] {
+        & #zen-sidebar-foot-buttons {
+          min-height: 30px !important;
+        }
+        #zen-sidebar-foot-buttons toolbarbutton {
+          margin-block: 1px 0px !important;
+          height: 30px !important;
+        }
+        & #zen-sidebar-foot-buttons {
+          padding-top: 4px !important;
+        }
+      }
+    }
+  }
+}
+
+/* Part B: When bottom buttons are only shown in hover */
+@media -moz-pref("mod.lean.bottom-buttons") {
+  @media -moz-pref("mod.lean.pinned-ext") {
+    #main-window[zen-single-toolbar="true"] {
+      #navigator-toolbox[zen-sidebar-expanded="true"]:hover {
+        & #zen-sidebar-foot-buttons {
+          min-height: 30px !important;
+          padding-bottom: 4px !important;
+        }
+        #zen-sidebar-foot-buttons toolbarbutton {
+          margin-block: 1px 0px !important;
+          min-width: 40px !important;
+          height: 30px !important;
+        }
+      }
+      #navigator-toolbox[zen-sidebar-expanded="true"] {
+        & #zen-sidebar-foot-buttons {
+          min-height: 0px !important;
+        }
+        #zen-sidebar-foot-buttons toolbarbutton {
+          margin-block: 1px 0px !important;
+          height: 0px !important;
+        }
+      }
     }
   }
 }
