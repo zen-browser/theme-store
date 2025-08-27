@@ -1,0 +1,14 @@
+{
+    "id": "f20ecc3a-7876-43f6-8ac5-a50414eb6d11",
+    "name": "macOS inspired Titlebar",
+    "description": "A simple, macOS-inspired titlebar mod for Zen Browser",
+    "homepage": "https://github.com/ctrl-vfr/macOS-inspired-titlebar",
+    "style": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/f20ecc3a-7876-43f6-8ac5-a50414eb6d11/chrome.css",
+    "readme": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/f20ecc3a-7876-43f6-8ac5-a50414eb6d11/readme.md",
+    "image": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/f20ecc3a-7876-43f6-8ac5-a50414eb6d11/image.png",
+    "author": "ctrl-vfr",
+    "version": "1.0.0",
+    "tags": [],
+    "createdAt": "2025-08-27",
+    "updatedAt": "2025-08-27"
+}
