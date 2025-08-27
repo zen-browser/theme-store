@@ -1,0 +1,24 @@
+
+:root[zen-single-toolbar='true']:not([customizing]) {
+  #zen-appcontent-navbar-wrapper {
+    &:has(#PersonalToolbar[collapsed='false']) {
+      & {
+        transition: none !important;
+
+& > * {
+          transition: none !important;
+          opacity: 1 !important;
+        }
+      }
+
+height: var(--zen-toolbar-height) !important;
+      z-index: 1 !important;
+
+&:not([zen-has-hover='true']):not([has-popup-menu]):not(:focus-within):not(
+      :has(*:is([panelopen='true'], [open='true'])
+      )) {
+        opacity: 1 !important;
+      }
+    }
+  }
+}
