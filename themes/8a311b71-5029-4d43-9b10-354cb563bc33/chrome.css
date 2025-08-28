@@ -1,0 +1,259 @@
+
+/* Arc-like appearance for Window Controls on macOS */
+@media (-moz-platform: macos) {
+  :root[zen-single-toolbar="true"] .titlebar-buttonbox-container {
+    color: var(--toolbox-textcolor) !important;
+    background-image: radial-gradient(
+      color-mix(in oklch, var(--toolbox-textcolor) 20%, transparent) 7px,
+      transparent 7.5px ) !important;
+    background-size: 21px 22px !important;
+    background-position: 53% 50% !important;
+  }
+}
+
+/* Arc-like appearance for Tooltips */
+tooltip {
+  -moz-appearance: none !important;
+  appearance: none !important;
+  color: rgb(210, 230, 238) !important;
+  background-color: var(--zen-colors-primary) !important;
+  border-radius: 2px 15px 15px 15px !important;
+  padding: 12px !important;
+  max-width: 50em !important;
+  white-space: unset !important;
+  font-size: 14px !important;
+  font-weight: 600 !important;
+}
+
+/* Arc-like appearance for Status Bar */
+#statuspanel {
+  margin: 12px !important;
+}
+#statuspanel-label {
+  border-radius: 20px !important;
+  padding: 5px 12px !important;
+  border: 1px solid var(--zen-colors-border) !important;
+  background: var(--zen-colors-primary) !important;
+  font-size: 12px !important;
+  font-weight: 600 !important;
+}
+
+/* Arc-like Find in Page */
+findbar {
+  display: flex !important;
+  border-radius: 13px !important;
+  width: 480px !important;
+  height: 65px !important;
+  position: absolute !important;
+  top: 75px !important;
+  bottom: auto !important;
+  left: auto !important;
+  right: 30px !important;
+  border: none !important;
+  box-shadow: -5px 5px 10px rgba(0, 0, 0, 0.2) !important;
+  background: var(--zen-colors-tertiary) !important;
+}
+.findbar-closebutton {
+  position: absolute !important;
+  top: 19px !important;
+  bottom: auto !important;
+  left: auto !important;
+  right: 16px !important;
+}
+.findbar-container {
+  height: auto !important;
+}
+.findbar-textbox {
+  width: 325px !important;
+  height: 40px !important;
+  margin-left: 15px !important;
+  border: none !important;
+  outline: none !important;
+  box-shadow: none !important;
+  background-color: transparent !important;
+  font-size: 14px !important;
+  font-weight: 600 !important;
+}
+.findbar-label {
+  margin-left: -404px !important;
+  margin-top: -31px !important;
+}
+.findbar-find-previous {
+  list-style-image: url("chrome://browser/skin/back.svg") !important;
+  rotate: 90deg !important;
+  margin-right: 10px !important;
+}
+.findbar-find-next {
+  list-style-image: url("chrome://browser/skin/forward.svg") !important;
+  rotate: 90deg !important;
+}
+.findbar-highlight,
+.findbar-case-sensitive,
+.findbar-match-diacritics,
+.findbar-entire-word,
+.findbar-find-status {
+  display: none !important;
+}
+
+/* Arc-like Glance Buttons (on the right) */
+.zen-glance-sidebar-container {
+  left: 100% !important;
+}
+
+/* Arc-like Navigation Buttons (taller) */
+#back-button {
+	list-style-image: url("chrome://browser/skin/back.svg") !important;
+}
+#forward-button {
+	list-style-image: url("chrome://browser/skin/forward.svg") !important;
+}
+#reload-button {
+	list-style-image: url("chrome://global/skin/icons/reload.svg") !important;
+}
+
+/* Arc-like appearance for Tab Search */
+#zen-folder-tabs-popup {
+  font-size: 13px !important;
+}
+
+/* Arc-like appearance to URL Bar and Command Bar */
+.urlbar-input {
+  font-size: 13px !important;
+  margin-left: 4px !important;
+  opacity: 0.8 !important;
+}
+#urlbar[breakout-extend="true"] .urlbar-input {
+  font-size: 16px !important;
+  margin-left: 0px !important;
+  opacity: 1 !important;
+}
+#urlbar[breakout-extend="true"] {
+  width: 660px !important;
+}
+
+/* Arc-like appearnace to Tab Backgrounds */
+#zen-tabs-wrapper .tab-background,
+toolbarbutton#tabs-newtab-button {
+  box-shadow: none !important;
+}
+
+/* Arc-like appearance to Folder Icons */
+zen-folder {
+  --zen-folder-stroke: light-dark(
+    color-mix(in srgb, var(--zen-primary-color) 40%, black),
+    color-mix(in srgb, var(--zen-colors-primary) 0%, var(--toolbox-textcolor))) !important;
+}
+.tab-group-folder-icon rect,
+.tab-group-folder-icon path {
+  stroke-width: 1.8px !important;
+}
+.tab-group-folder-icon #folder-icon image {
+  height: 17px !important;
+  transform: translate(-180%, 11%) !important;
+}
+
+/* Arc-like font size for Tabs and Folders */
+#tabbrowser-tabs {
+  font-size: 14px !important;
+}
+
+/* Arc-like appearance to Pinned Tabs Separator */
+.pinned-tabs-container-separator {
+  width: 93% !important;
+}
+
+/* Arc-like appearance to Space Indicators */
+.zen-current-workspace-indicator-icon {
+  font-size: 18px !important;
+}
+.subviewbutton {
+  font-size: 15px !important;
+  margin: 2px !important;
+}
+
+/* Arc-like Create New Popup */
+#zenCreateNewPopup {
+  -moz-appearance: none !important;
+  appearance: none !important;
+  background-color: black !important;
+  border-radius: 15px 15px 1px 15px !important;
+  padding: 8px !important;
+  min-width: 190px !important;
+  margin-left: -160px !important;
+  margin-top: 15px !important;
+  font-size: 14px !important;
+  font-weight: 600 !important;
+}
+#zenCreateNewPopup menuitem {
+  color: white !important;
+  border-radius: 10px 10px 10px 10px !important;
+  padding-top: 10px !important;
+  padding-bottom: 10px !important;
+  padding-left: 10px !important;
+  padding-right: 10px !important;
+}
+#zenCreateNewPopup {
+  menuitem:hover, menuitem[_moz-menuactive] {
+    background-color: var(--zen-colors-primary) !important;
+  }
+}
+#zenCreateNewPopup .menu-icon {
+  width: 24px !important;
+  height: 24px !important;
+  margin-right: 15px !important;
+}
+#zenCreateNewPopup menuseparator {
+  border-bottom: 2px solid var(--zen-colors-primary) !important;
+  margin-top: 10px !important;
+  margin-bottom: 10px !important;
+  margin-left: 0px !important;
+  margin-right: 0px !important;
+}
+
+/* Arc-like Spacing */
+#zen-sidebar-top-buttons {
+  margin-top: 4px !important;
+  margin-bottom: 6px !important;
+}
+#back-button {
+  margin-right: 5px !important;
+}
+#zen-appcontent-wrapper {
+  margin: 2px !important;
+}
+#navigator-toolbox {
+  margin-top: 4px !important;
+  margin-bottom: 4px !important;
+  margin-left: 4px !important;
+  margin-right: 4px !important;
+}
+.zen-current-workspace-indicator {
+  margin-bottom: -4px !important;
+}
+:root[zen-compact-mode=true] #navigator-toolbox {
+  --zen-main-browser-background-toolbar: var(--zen-main-browser-background) !important;
+}
+:root[zen-compact-mode=true] #navigator-toolbox #titlebar {
+  margin-bottom: 10px !important;
+  padding-left: 10px !important;
+  padding-right: 10px !important;
+}
+:root[zen-compact-mode=true] .subviewbutton {
+  margin-bottom: 6px !important;
+}
+
+/* Theme Fixes */
+#customization-container {
+  color: var(--sidebar-text-color) !important;
+  background-color: var(--zen-main-browser-background) !important;
+  background-image: var(--zen-main-browser-background) !important;
+}
+#tabbrowser-tabpanels[zen-split-view="true"] .browserSidebarContainer.deck-selected {
+  outline: var(--zen-colors-border) !important;
+}
+@-moz-document url("chrome://browser/content/places/places.xhtml") {
+  * {
+    font-size: 14px !important;
+    border: none !important;
+  }
+}

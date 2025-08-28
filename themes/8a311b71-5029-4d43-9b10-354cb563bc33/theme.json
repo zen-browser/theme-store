@@ -1,0 +1,14 @@
+{
+    "id": "8a311b71-5029-4d43-9b10-354cb563bc33",
+    "name": "Arc Style",
+    "description": "Small (opinonated) tweaks that make Zen look even more like Arc",
+    "homepage": "https://gist.github.com/thebitstick/1631e4b7f78ca99993669560a8411bb8",
+    "style": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/8a311b71-5029-4d43-9b10-354cb563bc33/chrome.css",
+    "readme": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/8a311b71-5029-4d43-9b10-354cb563bc33/readme.md",
+    "image": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/8a311b71-5029-4d43-9b10-354cb563bc33/image.png",
+    "author": "thebitstick",
+    "version": "1.0.0",
+    "tags": [],
+    "createdAt": "2025-08-28",
+    "updatedAt": "2025-08-28"
+}
