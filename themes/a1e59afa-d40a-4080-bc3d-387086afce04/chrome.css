@@ -1,0 +1,7 @@
+
+.tab-content[pinned] .tab-close-button {
+  display: none !important;
+}
+.tab-content:not([pinned]) .tab-close-button {
+  display: inline-flex !important;
+}
