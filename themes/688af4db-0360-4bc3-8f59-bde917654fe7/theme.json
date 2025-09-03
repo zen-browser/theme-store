@@ -1,0 +1,14 @@
+{
+    "id": "688af4db-0360-4bc3-8f59-bde917654fe7",
+    "name": "NoTabPopup",
+    "description": "Hides the popup that appears when a new background tab is opened",
+    "homepage": "https://github.com/R1cHero/no-tab-popup",
+    "style": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/688af4db-0360-4bc3-8f59-bde917654fe7/chrome.css",
+    "readme": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/688af4db-0360-4bc3-8f59-bde917654fe7/readme.md",
+    "image": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/688af4db-0360-4bc3-8f59-bde917654fe7/image.png",
+    "author": "R1cHero",
+    "version": "1.0.0",
+    "tags": [],
+    "createdAt": "2025-09-03",
+    "updatedAt": "2025-09-03"
+}
