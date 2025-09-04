@@ -29,8 +29,8 @@ findbar {
 	overflow: unset !important;
 	box-shadow: var(--box-shadow-10);
 
-	background: var(--zen-colors-primary) !important;
-	border: 1px solid var(--zen-colors-border) !important;
+	background: var(--zen-primary-color) !important;
+	border: 1px solid var(--input-border-color) !important;
 
 	transition: transform 0.35s ease !important;
 
@@ -95,7 +95,7 @@ body:has(
 	findbar .findbar-textbox:not([status="notfound"]) {
 		backdrop-filter: blur(8px);
 
-		background: color-mix(in hsl, var(--zen-colors-primary), transparent 10%) !important;
+		background: color-mix(in hsl, var(--zen-primary-color), transparent 10%) !important;
 	}
 }
 
