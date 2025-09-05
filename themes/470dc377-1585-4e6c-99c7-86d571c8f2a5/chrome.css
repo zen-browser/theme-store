@@ -1,0 +1,128 @@
+
+@-moz-document url-prefix("chrome:") {
+
+/* ------------------------------ Workspace Button Default Style ------------------------------ */
+#zen-workspaces-button {
+  position: relative !important;
+  overflow: visible !important;
+  z-index: 1;
+  height: 30px !important;
+  width: auto !important;
+  padding: 3px !important;
+  border-radius: 8px !important;
+  background-color: transparent !important;
+  box-shadow: none !important;
+  transition: box-shadow 0.35s ease-out, background-color 0.35s ease-out;
+}
+
+html:not([zen-sidebar-expanded="true"]):not([zen-single-toolbar="true"]) #zen-workspaces-button {
+  height: auto !important;
+  width: 30px !important;
+}
+
+#zen-workspaces-button:hover {
+  background-color: transparent !important;
+  box-shadow: none !important;
+}
+
+/* ------------------------------ Subview Buttons ------------------------------ */
+#zen-workspaces-button .subviewbutton {
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  height: 40px !important;
+  border-radius: 12px !important;
+  font-size: 1.25em !important;
+  transform: scale(1) !important;
+  transform-origin: bottom center !important;
+  will-change: transform !important;
+  transition: transform 0.35s cubic-bezier(0.25, 1, 0.5, 1),
+              filter 0.35s ease,
+              opacity 0.3s ease-out,
+              color 0.3s ease-out !important;
+  color: transparent !important;
+  background-color: transparent !important;
+  box-shadow: none !important;
+  animation: none !important;
+  --toolbarbutton-hover-background: unset !important;
+}
+
+#zen-workspaces-button .subviewbutton:hover {
+  transform: scale(1.4) !important;
+  filter: grayscale(0%) !important;
+  opacity: 1 !important;
+  z-index: 3 !important;
+  color: inherit !important;
+}
+
+#zen-workspaces-button .subviewbutton:active {
+  transform: scale(1) !important;
+  filter: grayscale(var(--nebula-workspace-grayscale, 100%)) !important;
+  background-color: transparent !important;
+}
+
+#zen-workspaces-button .subviewbutton[active] {
+  position: static !important;
+  overflow: unset !important;
+  animation: none !important;
+  background-color: transparent !important;
+  box-shadow: none !important;
+  filter: grayscale(0%) !important;
+  opacity: 1 !important;
+  color: inherit !important;
+}
+
+#zen-workspaces-button .subviewbutton:hover + .subviewbutton:not([active]),
+#zen-workspaces-button .subviewbutton:has(+ .subviewbutton:hover):not([active]) {
+  transform: scale(1.15) !important;
+  z-index: 2 !important;
+  opacity: 0.9 !important;
+}
+
+#zen-workspaces-button .subviewbutton:hover + .subviewbutton + .subviewbutton:not([active]),
+#zen-workspaces-button .subviewbutton:has(+ .subviewbutton + .subviewbutton:hover):not([active]) {
+  transform: scale(1) !important;
+  z-index: 1 !important;
+  opacity: 0.85 !important;
+}
+
+#zen-workspaces-button .subviewbutton[active]:hover {
+  transform: scale(1.2) !important;
+  z-index: 2 !important;
+}
+
+/* ------------------------------ Indicator Dot ------------------------------ */
+#zen-workspaces-button .subviewbutton::before {
+  content: "•";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -56.5%);
+  font-size: 2em;
+  color: light-dark(white, rgba(255,255,255,0.35));
+  opacity: 1;
+  pointer-events: none;
+  transition: opacity 0.3s ease;
+}
+
+#zen-workspaces-button .subviewbutton:hover::before,
+#zen-workspaces-button .subviewbutton[active]::before {
+  opacity: 0;
+}
+
+/* ------------------------------ Workspace Button Style 2 (Alternative) ------------------------------ */
+@media (-moz-pref("nebula-workspace-style-alt", true)) {
+  #zen-workspaces-button {
+    container-type: initial !important;
+    width: auto !important;
+    padding: 3px !important;
+    border-radius: 8px !important;
+    background-color: var(--toolbarbutton-hover-background) !important;
+    transition: box-shadow 0.35s ease-out, background-color 0.35s ease-out;
+  }
+
+#zen-workspaces-button:hover {
+    background-color: var(--toolbarbutton-hover-background) !important;
+  }
+}
+}
