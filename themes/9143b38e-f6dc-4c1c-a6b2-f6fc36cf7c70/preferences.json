@@ -1,0 +1,14 @@
+[
+    {
+        "property": "mod.hide-tab-close.pinned",
+        "label": "Hide pinned tab close",
+        "type": "checkbox",
+        "defaultValue": true
+    },
+    {
+        "property": "mod.hide-tab-close.normal",
+        "label": "Hide normal tab close",
+        "type": "checkbox",
+        "defaultValue": false
+    }
+]
