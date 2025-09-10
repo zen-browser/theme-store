@@ -1,0 +1,19 @@
+
+@media (-moz-bool-pref: "mod.kian1991.enable") {
+  :root[zen-compact-mode="true"] {
+    --offset: 8px;
+
+#browser {
+      margin: calc(-1 * var(--offset)) !important;
+    }
+
+#nav-bar {
+      margin-top: var(--offset);
+    }
+
+.titlebar-buttonbox-container {
+      margin-left: var(--offset) !important;
+      ;
+    }
+  }
+}

@@ -1,0 +1,15 @@
+{
+    "id": "df951136-8289-43a0-abb2-eeeb027372c3",
+    "name": "Borderless Compact Mode",
+    "description": "Borderless compact mode! The sleek window to the internet is waiting for you.",
+    "homepage": "https://github.com/kian1991/bordeless-compactmode",
+    "style": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/df951136-8289-43a0-abb2-eeeb027372c3/chrome.css",
+    "readme": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/df951136-8289-43a0-abb2-eeeb027372c3/readme.md",
+    "image": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/df951136-8289-43a0-abb2-eeeb027372c3/image.png",
+    "author": "kian1991",
+    "version": "1.0.0",
+    "tags": [],
+    "createdAt": "2025-09-10",
+    "updatedAt": "2025-09-10",
+    "preferences": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/df951136-8289-43a0-abb2-eeeb027372c3/preferences.json"
+}
