@@ -53,7 +53,7 @@ findbar {
 		}
 	}
 
-	&[hidden="true"] {
+	&[hidden] {
 		transform: translateX(var(--better-findbar-transform-translateX)) translateY(var(--better-findbar-transform-translateY));
 	}
 
