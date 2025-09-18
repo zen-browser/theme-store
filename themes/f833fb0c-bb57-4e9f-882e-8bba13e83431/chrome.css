@@ -1,0 +1,14 @@
+
+/* Arc-like appearance for Tooltips */
+tooltip {
+  -moz-appearance: none !important;
+  appearance: none !important;
+  color: rgb(210, 230, 238) !important;
+  background-color: var(--zen-colors-primary) !important;
+  border-radius: 2px 15px 15px 15px !important;
+  padding: 5px 10px !important;
+  max-width: 50em !important;
+  white-space: unset !important;
+  font-size: 12px !important;
+  font-weight: 600 !important;
+}
