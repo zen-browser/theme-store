@@ -1,0 +1,14 @@
+{
+    "id": "594c8bc7-e44c-44f3-802a-52404b1e49d6",
+    "name": "Fix Sidebar Margin",
+    "description": "A hotfix for https://github.com/zen-browser/desktop/issues/10415 until the zen team fixes that.",
+    "homepage": "https://github.com/mia-cx/zen-fix-sidebar-margin",
+    "style": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/594c8bc7-e44c-44f3-802a-52404b1e49d6/chrome.css",
+    "readme": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/594c8bc7-e44c-44f3-802a-52404b1e49d6/readme.md",
+    "image": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/594c8bc7-e44c-44f3-802a-52404b1e49d6/image.png",
+    "author": "mia-riezebos",
+    "version": "1.0.0",
+    "tags": [],
+    "createdAt": "2025-09-18",
+    "updatedAt": "2025-09-18"
+}
