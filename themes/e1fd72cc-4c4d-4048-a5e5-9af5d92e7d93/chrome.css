@@ -1,0 +1,57 @@
+
+/* Arc-like Find in Page */
+findbar {
+  display: flex !important;
+  border-radius: 13px !important;
+  width: 480px !important;
+  height: 65px !important;
+  position: absolute !important;
+  top: 75px !important;
+  bottom: auto !important;
+  left: auto !important;
+  right: 30px !important;
+  border: none !important;
+  box-shadow: -5px 5px 10px rgba(0, 0, 0, 0.2) !important;
+  background: var(--zen-colors-tertiary) !important;
+}
+.findbar-closebutton {
+  position: absolute !important;
+  top: 19px !important;
+  bottom: auto !important;
+  left: auto !important;
+  right: 16px !important;
+}
+.findbar-container {
+  height: auto !important;
+}
+.findbar-textbox {
+  width: 325px !important;
+  height: 40px !important;
+  margin-left: 15px !important;
+  border: none !important;
+  outline: none !important;
+  box-shadow: none !important;
+  background-color: transparent !important;
+  font-size: 14px !important;
+  font-weight: 600 !important;
+}
+.findbar-label {
+  margin-left: -404px !important;
+  margin-top: -31px !important;
+}
+.findbar-find-previous {
+  list-style-image: url("chrome://browser/skin/back.svg") !important;
+  rotate: 90deg !important;
+  margin-right: 10px !important;
+}
+.findbar-find-next {
+  list-style-image: url("chrome://browser/skin/forward.svg") !important;
+  rotate: 90deg !important;
+}
+.findbar-highlight,
+.findbar-case-sensitive,
+.findbar-match-diacritics,
+.findbar-entire-word,
+.findbar-find-status {
+  display: none !important;
+}
