@@ -1,0 +1,13 @@
+
+#sidebar-box {
+  background: var(--zen-colors-tertiary) !important;
+  border: var(--zen-appcontent-border) !important;
+  
+  display: flex !important;
+  transition: 400ms cubic-bezier(0,0,.15,1.28) !important;
+  
+  &[hidden] {
+    width: 0 !important;
+    min-width: 0 !important;
+  }
+}
