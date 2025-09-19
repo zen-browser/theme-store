@@ -1,0 +1,10 @@
+
+/* Arc-like appearance for Tab Search */
+#zen-folder-tabs-popup {
+  .folders-tabs-list-item-label, #zen-folder-tabs-list-search {
+    font-size: 13px !important;
+  }
+  .tab-list-item-secondary-label {
+    font-size: 11px !important;
+  }
+}
