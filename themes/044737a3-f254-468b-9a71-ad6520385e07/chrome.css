@@ -1,0 +1,7 @@
+
+/* Theme Fixes */
+#customization-container {
+  color: var(--sidebar-text-color) !important;
+  background-color: var(--zen-main-browser-background) !important;
+  background-image: var(--zen-main-browser-background) !important;
+}
