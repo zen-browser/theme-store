@@ -1,0 +1,18 @@
+
+/* Arc-like appearance to Folder Icons */
+zen-folder {
+  --zen-folder-stroke: light-dark(
+  color-mix(in srgb, var(--zen-primary-color) 40%, black),
+  color-mix(in srgb, var(--zen-colors-primary) 0%, var(--toolbox-textcolor))) !important;
+}
+.tab-group-folder-icon rect,
+.tab-group-folder-icon path {
+  stroke-width: 1.8px !important;
+}
+.tab-group-folder-icon {
+  scale: 110% !important;
+}
+.tab-group-folder-icon #folder-icon image {
+  height: 16px !important;
+  transform: translate(15%, 28%) !important;
+}
