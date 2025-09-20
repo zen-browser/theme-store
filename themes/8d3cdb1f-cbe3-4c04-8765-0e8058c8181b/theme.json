@@ -1,0 +1,15 @@
+{
+    "id": "8d3cdb1f-cbe3-4c04-8765-0e8058c8181b",
+    "name": "Compact bookmarks",
+    "description": "Removes texts next to bookmarks on bookmark bar.",
+    "homepage": "https://github.com/namdomnau/zen-mods",
+    "style": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/8d3cdb1f-cbe3-4c04-8765-0e8058c8181b/chrome.css",
+    "readme": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/8d3cdb1f-cbe3-4c04-8765-0e8058c8181b/readme.md",
+    "image": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/8d3cdb1f-cbe3-4c04-8765-0e8058c8181b/image.png",
+    "author": "namdomnau",
+    "version": "1.0.0",
+    "tags": [],
+    "createdAt": "2025-08-09",
+    "updatedAt": "2025-08-09",
+    "preferences": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/8d3cdb1f-cbe3-4c04-8765-0e8058c8181b/preferences.json"
+}
