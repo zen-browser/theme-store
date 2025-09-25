@@ -1,0 +1,14 @@
+[
+    {
+        "property": "mod.nyancats.enable_nyan_cats",
+        "label": "Enable Nyan Cats Gallery",
+        "type": "checkbox",
+        "defaultValue": true
+    },
+    {
+        "property": "mod.nyancats.enable_bongo_cat",
+        "label": "Enable Bongo Cat",
+        "type": "checkbox",
+        "defaultValue": true
+    }
+]
