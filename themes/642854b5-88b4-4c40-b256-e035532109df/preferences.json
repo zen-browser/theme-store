@@ -14,7 +14,7 @@
   },
   {
     "property": "zen.view.grey-out-inactive-windows",
-    "label": "👀 Keep transparency when not in focus on linux",
+    "label": "👀 Disable transparency when not in focus on linux",
     "type": "checkbox",
     "defaultValue": false,
     "disabledOn": ["windows", "macos"]
