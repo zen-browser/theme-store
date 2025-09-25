@@ -1,0 +1,50 @@
+[
+    {
+        "property": "mod.urlbar-icons.bookmark.disable",
+        "label": "Hide Bookmark icon (you can bookmark a page by right-clicking a tab/a page and by using a keyboard shortcut [default: Ctrl+D])",
+        "type": "checkbox",
+        "defaultValue": true
+    },
+    {
+        "property": "mod.urlbar-icons.translation.disable",
+        "label": "Hide Translation icon (you can access Translation via the \u00b7\u00b7\u00b7 menu over the URL bar)",
+        "type": "checkbox",
+        "defaultValue": true
+    },
+    {
+        "property": "mod.urlbar-icons.reader-mode.disable",
+        "label": "Hide Reader Mode icon (you can activate Reader Mode when available by using a keyboard shortcut [default: F9])",
+        "type": "checkbox",
+        "defaultValue": true
+    },
+    {
+        "property": "mod.urlbar-icons.pip.disable",
+        "label": "Hide Picture-In-Picture icon (PIP automatically starts when switching tab)",
+        "type": "checkbox",
+        "defaultValue": true
+    },
+    {
+        "property": "mod.urlbar-icons.addons.disable",
+        "label": "Hide Addons icons (you can access Addons Options via the Addons button over the URL bar)",
+        "type": "checkbox",
+        "defaultValue": true
+    },
+    {
+        "property": "mod.urlbar-icons.identity.disable",
+        "label": "/!\\ Hide Website Identity icon (CAREFUL: this icon is IMPORTANT as it indicates if a website is trustable. This menu CANNOT be accessed from somewhere else. Hide it at your own risk.)",
+        "type": "checkbox",
+        "defaultValue": false
+    },
+    {
+        "property": "mod.urlbar-icons.permissions.disable",
+        "label": "/!\\ Hide Website Permissions icon (CAREFUL: this icon is important as it indicates if a website has (unusual) permissions over your device. This menu CANNOT be accessed from somewhere else. Hide it at your own risk.)",
+        "type": "checkbox",
+        "defaultValue": false
+    },
+    {
+        "property": "mod.urlbar-icons.tracking-protection.disable",
+        "label": "/!\\ Hide Website Tracking Protection icon (CAREFUL: this icon is important as it indicates if a website is tracking you. This menu CANNOT be accessed from somewhere else. Hide it at your own risk.)",
+        "type": "checkbox",
+        "defaultValue": false
+    }
+]
