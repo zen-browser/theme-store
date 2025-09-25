@@ -1,0 +1,81 @@
+
+.titlebar-buttonbox {
+    padding-inline-end: calc(var(--zen-toolbox-padding) - var(--toolbarbutton-outer-padding)) !important;
+    align-items: center;
+}
+
+.titlebar-button {
+    padding: 0 var(--toolbarbutton-outer-padding) !important;
+    height: calc(2 * var(--toolbarbutton-inner-padding) + 16px);
+}
+
+.titlebar-button > image {
+    padding: var(--toolbarbutton-inner-padding) !important;
+    border-radius: var(--toolbarbutton-border-radius) !important;
+    outline: var(--toolbarbutton-outline) !important;
+    outline-offset: var(--toolbarbutton-outline-offset) !important;
+
+width: calc(2 * var(--toolbarbutton-inner-padding) + 12px) !important;
+    height: calc(2 * var(--toolbarbutton-inner-padding) + 12px) !important;
+}
+
+.titlebar-button:hover > image {
+    background-color: var(--toolbarbutton-hover-background) !important;
+
+outline-color: var(--toolbarbutton-hover-outline-color) !important;
+}
+
+.titlebar-min:hover {
+    background: none !important;
+}
+
+.titlebar-max:hover {
+    background: none !important;
+}
+
+.titlebar-restore:hover {
+    background: none !important;
+}
+
+.titlebar-close:hover {
+    stroke: currentColor !important;
+    background: none !important;
+}
+
+@media (-moz-bool-pref: "theme.betterWindowsButtons.use_custom_icon_color_for_close") {
+    .titlebar-close:hover {
+        stroke: var(--theme-betterWindowsButtons-icon_color_for_close) !important;
+    }
+}
+
+@media (-moz-bool-pref: "theme.betterWindowsButtons.use_custom_button_color_for_close") {
+    .titlebar-close:hover > image {
+        background-color: var(--theme-betterWindowsButtons-button_color_for_close) !important;
+    }
+}
+
+@media (-moz-bool-pref: "theme.betterWindowsButtons.use_custom_icon_color_for_restore") {
+    .titlebar-restore:hover,
+    .titlebar-max:hover {
+        stroke: var(--theme-betterWindowsButtons-icon_color_for_restore) !important;
+    }
+}
+
+@media (-moz-bool-pref: "theme.betterWindowsButtons.use_custom_button_color_for_restore") {
+    .titlebar-restore:hover > image,
+    .titlebar-max:hover > image {
+        background-color: var(--theme-betterWindowsButtons-button_color_for_restore) !important;
+    }
+}
+
+@media (-moz-bool-pref: "theme.betterWindowsButtons.use_custom_icon_color_for_min") {
+    .titlebar-min:hover {
+        stroke: var(--theme-betterWindowsButtons-icon_color_for_min) !important;
+    }
+}
+
+@media (-moz-bool-pref: "theme.betterWindowsButtons.use_custom_button_color_for_min") {
+    .titlebar-min:hover > image {
+        background-color: var(--theme-betterWindowsButtons-button_color_for_min) !important;
+    }
+}
