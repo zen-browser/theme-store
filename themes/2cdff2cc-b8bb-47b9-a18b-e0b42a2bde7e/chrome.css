@@ -1,0 +1,4 @@
+
+body {
+  width: calc(var(--custom-body-width, 100.35) * 1%) !important;
+}
