@@ -1,0 +1,15 @@
+{
+    "id": "9143b38e-f6dc-4c1c-a6b2-f6fc36cf7c70",
+    "name": "Hide Tab Close",
+    "description": "A simple mod that hides the tab close button. Either for pinned tabs (default), normal tabs or both.",
+    "homepage": "https://github.com/briwi/hide-tab-close",
+    "style": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/9143b38e-f6dc-4c1c-a6b2-f6fc36cf7c70/chrome.css",
+    "readme": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/9143b38e-f6dc-4c1c-a6b2-f6fc36cf7c70/readme.md",
+    "image": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/9143b38e-f6dc-4c1c-a6b2-f6fc36cf7c70/image.png",
+    "author": "briwi",
+    "version": "1.0.0",
+    "tags": [],
+    "createdAt": "2025-08-05",
+    "updatedAt": "2025-08-05",
+    "preferences": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/9143b38e-f6dc-4c1c-a6b2-f6fc36cf7c70/preferences.json"
+}
