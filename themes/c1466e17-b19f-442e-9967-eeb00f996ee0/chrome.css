@@ -1,0 +1,6 @@
+
+@-moz-document regexp(".*\\.pdf(\\?.*)?$") {
+  .page {
+      filter: invert(1) grayscale(1) contrast(75%) !important;
+  }
+}
