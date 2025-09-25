@@ -1,0 +1,20 @@
+[
+    {
+        "property": "uc.web-panel-sidebar-tweaks.enable-pinning-web-panel-sidebar-to-right",
+        "label": "Enable pinning the web panel sidebar to the right",
+        "type": "checkbox",
+        "defaultValue": true
+    },
+    {
+        "property": "uc.web-panel-sidebar-tweaks.enable-tweaked-sidebar-toolbar-colors",
+        "label": "Enable tweaked web panel sidebar toolbar colours",
+        "type": "checkbox",
+        "defaultValue": true
+    },
+    {
+        "property": "uc.web-panel-sidebar-tweaks.enable-tweaked-searchbar-margin",
+        "label": "Enable tweaked searchbar margin",
+        "type": "checkbox",
+        "defaultValue": true
+    }
+]
