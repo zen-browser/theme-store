@@ -1,4 +1,4 @@
-@-moz-document url-prefix("chrome:") {
+{
     :root:has(#theme-Tab-Text-Size[uc-tabtextsize-textsize="8"]) {
         .tab-text.tab-label {
             font-size: 8px;
