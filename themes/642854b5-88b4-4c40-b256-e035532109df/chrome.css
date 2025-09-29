@@ -100,8 +100,9 @@ hbox.browserSidebarContainer,
   }
 }
 
-#urlbar[open][zen-floating-urlbar="true"] #urlbar-background {
+#urlbar[open][zen-floating-urlbar="true"] .urlbar-background {
   @media -moz-pref( "mod.sameerasw.zen_urlbar_zoom_anim") {
+  background-color: color-mix(in srgb, var(--zen-urlbar-background-base) 60%, transparent) !important;
     border-radius: 1em !important;
   }
 }
@@ -181,6 +182,10 @@ tabpanels .browserStack browser {
     --actual-zen-sidebar-width: var(--zen-sidebar-custom-width) !important;
     width: var(--zen-sidebar-custom-width) !important;
   }
+
+  #zen-toolbar-background, #zen-toolbar-background::after{
+  background-color: color-mix(in srgb, var(--arrowpanel-background) 30%, transparent) !important;
+}
 }
 
 /* Shared: Soft mask background and shadow */
@@ -191,15 +196,6 @@ tabpanels .browserStack browser {
     rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px,
     rgba(0, 0, 0, 0.09) 0px 32px 16px !important;
   background-color: light-dark(#fff8, #0005) !important;
-}
-
-/* Shared: Content reveal trigger condition */
-#zen-main-app-wrapper[zen-compact-mode="true"]:has(
-    [zen-user-show=""],
-    #navigator-toolbox[zen-has-hover="true"],
-    [has-popup-menu=""]
-  ) {
-  /* Content styles when sidebar is revealed */
 }
 
 /* Mask type - left sidebar */
@@ -215,8 +211,8 @@ tabpanels .browserStack browser {
   mask-image: linear-gradient(
     to right,
     transparent 0,
-    transparent calc(var(--zen-sidebar-custom-width) + 4px),
-    black calc(var(--zen-sidebar-custom-width) + 8px),
+    transparent calc(var(--zen-sidebar-custom-width) + 10px),
+    black calc(var(--zen-sidebar-custom-width) + 10px),
     black 100%
   ) !important;
 }
@@ -234,8 +230,8 @@ tabpanels .browserStack browser {
   mask-image: linear-gradient(
     to left,
     transparent 0,
-    transparent calc(var(--zen-sidebar-custom-width) + 4px),
-    black calc(var(--zen-sidebar-custom-width) + 8px),
+    transparent calc(var(--zen-sidebar-custom-width) + 10px),
+    black calc(var(--zen-sidebar-custom-width) + 10px),
     black 100%
   ) !important;
 }
@@ -250,7 +246,7 @@ tabpanels .browserStack browser {
     [has-popup-menu=""]
   )
   #zen-appcontent-wrapper {
-  transform: translateX(var(--zen-sidebar-custom-width)) !important;
+  transform: translateX(calc(var(--zen-sidebar-custom-width) + 10px)) !important;
 }
 
 /* Push type - right sidebar */
@@ -263,7 +259,7 @@ tabpanels .browserStack browser {
     [has-popup-menu=""]
   )
   #zen-appcontent-wrapper {
-  transform: translateX(calc(0px - var(--zen-sidebar-custom-width))) !important;
+  transform: translateX(calc(0px - var(--zen-sidebar-custom-width) - 10px)) !important;
 }
 
 /* Shared Push Transition (used in both left and right) */
@@ -388,5 +384,32 @@ tabpanels .browserStack browser {
   @media -moz-pref( "mod.sameerasw.zen_transparent_sidebar_enabled") {
   background-color: transparent !important;
   box-shadow: none !important;
+  }
+}
+
+/* Transparent glance */
+.zen-glance-background > vbox {
+  @media -moz-pref( "mod.sameerasw.zen_transparent_glance_enabled") {
+    mask-image: linear-gradient(
+      to right,
+      black 0%,
+      black 4%,
+      transparent 7%,
+      transparent 93.5%,
+      black 96%,
+      black 100%
+    );
+    mask-repeat: no-repeat;
+    mask-size: 100% 100%;
+  }
+}
+
+.zen-glance-overlay > vbox {
+  @media -moz-pref( "mod.sameerasw.zen_transparent_glance_enabled") {
+    background-color: light-dark(#fff7, #0007) !important;
+    margin-top: 0.5% !important;
+    margin-bottom: 0.5% !important;
+    height: 99% !important;
+    border-radius: 1.5em !important;
   }
 }
