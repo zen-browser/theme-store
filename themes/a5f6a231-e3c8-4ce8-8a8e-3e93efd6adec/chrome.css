@@ -1,6 +1,6 @@
 
 /* Blurs the background */
-#urlbar[breakout-extend="true"] #urlbar-background {
+#urlbar[breakout-extend="true"] .urlbar-background {
     border: solid 3px color-mix(in hsl, hsl(0 0 50), transparent 90%) !important;
     border-radius: 15px !important;
     background-color: color-mix(in hsl, var(--mod-cleanedurlbar-customcolor), transparent var(--mod-cleanedurlbar-customtransparency)) !important;
@@ -41,4 +41,9 @@
 
 #urlbar-anon-search-settings {
   margin-right: 0px !important;
+}
+
+/* Fixes missing blur effect */
+.browserStack browser {
+  transform: translateX(0) !important;
 }
