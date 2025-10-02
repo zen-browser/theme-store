@@ -1,0 +1,23 @@
+
+/* Ghost Tabs - Zen Browser Mod */
+/* Makes unloaded/inactive tabs appear ghost-like */
+
+:root {
+    --ghost-filter: grayscale(1);
+    --ghost-opacity: 0.5;
+}
+
+/* Pending tabs appear ghost-like */
+.tabbrowser-tab[pending="true"] {
+    filter: var(--ghost-filter);
+    opacity: var(--ghost-opacity);
+}
+
+/* Ghost folders only when every child tab is pending and not being renamed */
+zen-folder:not(:has(.tab-label-container-editing)):not(
+        :has(.tabbrowser-tab:not([pending="true"]))
+    )
+    :is(.tab-group-label, .tab-label-container, .tab-group-folder-icon) {
+    filter: var(--ghost-filter);
+    opacity: var(--ghost-opacity);
+}

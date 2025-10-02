@@ -1,0 +1,14 @@
+{
+    "id": "c01d3e22-1cee-45c1-a25e-53c0f180eea8",
+    "name": "Ghost Tabs",
+    "description": "Makes unloaded tabs & folders appear ghost-like by making them grayscale and transparent.",
+    "homepage": "https://github.com/Seismix/zen-ghost-tabs",
+    "style": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/c01d3e22-1cee-45c1-a25e-53c0f180eea8/chrome.css",
+    "readme": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/c01d3e22-1cee-45c1-a25e-53c0f180eea8/readme.md",
+    "image": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/c01d3e22-1cee-45c1-a25e-53c0f180eea8/image.png",
+    "author": "Seismix",
+    "version": "1.0.0",
+    "tags": [],
+    "createdAt": "2025-10-02",
+    "updatedAt": "2025-10-02"
+}
