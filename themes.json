@@ -668,7 +668,7 @@
         "version": "1.0.4",
         "tags": [],
         "createdAt": "2024-11-01",
-        "updatedAt": "2025-03-09"
+        "updatedAt": "2025-10-05"
     },
     "e51b85e6-cef5-45d4-9fff-6986637974e1": {
         "id": "e51b85e6-cef5-45d4-9fff-6986637974e1",
@@ -684,6 +684,20 @@
         "tags": [],
         "createdAt": "2025-05-09",
         "updatedAt": "2025-05-21"
+    },
+    "c01d3e22-1cee-45c1-a25e-53c0f180eea8": {
+        "id": "c01d3e22-1cee-45c1-a25e-53c0f180eea8",
+        "name": "Ghost Tabs",
+        "description": "Makes unloaded tabs & folders appear ghost-like by making them grayscale and transparent.",
+        "homepage": "https://github.com/Seismix/zen-ghost-tabs",
+        "style": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/c01d3e22-1cee-45c1-a25e-53c0f180eea8/chrome.css",
+        "readme": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/c01d3e22-1cee-45c1-a25e-53c0f180eea8/readme.md",
+        "image": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/c01d3e22-1cee-45c1-a25e-53c0f180eea8/image.png",
+        "author": "Seismix",
+        "version": "1.0.0",
+        "tags": [],
+        "createdAt": "2025-10-02",
+        "updatedAt": "2025-10-02"
     },
     "f7c71d9a-bce2-420f-ae44-a64bd92975ab": {
         "id": "f7c71d9a-bce2-420f-ae44-a64bd92975ab",
@@ -944,10 +958,10 @@
         "readme": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/642854b5-88b4-4c40-b256-e035532109df/readme.md",
         "image": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/642854b5-88b4-4c40-b256-e035532109df/image.png",
         "author": "sameerasw",
-        "version": "1.16.1",
+        "version": "1.16.3",
         "tags": [],
         "createdAt": "2025-02-04",
-        "updatedAt": "2025-09-29",
+        "updatedAt": "2025-10-05",
         "preferences": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/642854b5-88b4-4c40-b256-e035532109df/preferences.json"
     },
     "ea1a5ace-f698-4b45-ab88-6e8bd3a563f0": {
