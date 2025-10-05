@@ -183,7 +183,7 @@ tabpanels .browserStack browser {
     width: var(--zen-sidebar-custom-width) !important;
   }
 
-  #zen-toolbar-background, #zen-toolbar-background::after{
+  #zen-toolbar-background, #zen-toolbar-background::after, .zen-toolbar-background, .zen-toolbar-background::after{
   background-color: color-mix(in srgb, var(--arrowpanel-background) 30%, transparent) !important;
 }
 }
