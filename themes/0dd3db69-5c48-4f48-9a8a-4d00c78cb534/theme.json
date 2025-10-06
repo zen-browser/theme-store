@@ -1,0 +1,14 @@
+{
+    "id": "0dd3db69-5c48-4f48-9a8a-4d00c78cb534",
+    "name": "Quitefy ATIP Adapter",
+    "description": "Quitefy adapter for Audio TabIcon Plus. Allows to show site icon when playing/muted/paused",
+    "homepage": "",
+    "style": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/0dd3db69-5c48-4f48-9a8a-4d00c78cb534/chrome.css",
+    "readme": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/0dd3db69-5c48-4f48-9a8a-4d00c78cb534/readme.md",
+    "image": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/0dd3db69-5c48-4f48-9a8a-4d00c78cb534/image.png",
+    "author": "NikitaMikhaliuk",
+    "version": "1.0.0",
+    "tags": [],
+    "createdAt": "2025-01-02",
+    "updatedAt": "2025-01-02"
+}
