@@ -1,0 +1,53 @@
+
+:root {
+    --dense-zen-workspace-indicator-height: calc(var(--zen-workspace-indicator-height) * 0.8);
+    --dense-tab-min-height: calc(var(--tab-min-height) * 0.7);
+}
+
+.zen-current-workspace-indicator {
+    max-height: var(--dense-zen-workspace-indicator-height) !important;
+    min-height: var(--dense-zen-workspace-indicator-height) !important;
+}
+
+.tab-group-label-container {
+    min-height: var(--dense-tab-min-height) !important;
+    max-height: var(--dense-tab-min-height) !important;
+}
+
+.zen-essentials-container zen-workspace-tabs-section {
+    align-items: center;
+}
+
+.tabbrowser-tab .tab-content {
+    min-height: var(--dense-tab-min-height) !important;
+    max-height: var(--dense-tab-min-height) !important;
+    align-self: center !important;
+}
+
+.tabbrowser-tab .tab-icon-stack {
+    align-self: center !important;
+}
+
+.tab-group-label-container .tab-group-folder-icon {
+    display: flex;
+    align-self: center;
+}
+
+.tabbrowser-tab .tab-background {
+    min-height: var(--dense-tab-min-height) !important;
+    max-height: var(--dense-tab-min-height) !important;
+    display: flex !important;
+    align-items: center !important;
+}
+
+.toolbarbutton-text {
+    align-self: center !important;
+}
+
+#tabs-newtab-button, #vertical-tabs-newtab-button {
+    min-height: var(--dense-tab-min-height) !important;
+    max-height: var(--dense-tab-min-height) !important;
+    align-content: center !important;
+    align-items: center !important;
+    align-self: center !important;
+}
