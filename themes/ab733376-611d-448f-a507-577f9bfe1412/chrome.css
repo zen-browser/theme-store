@@ -1,0 +1,193 @@
+
+/* Overhauled extensions menu, much more compact */
+
+#unified-extensions-panel {
+	--button-size: 40px;
+	--gap-size: 10px;
+	--max-number-of-buttons-in-row: 8;
+	--panel-max-width: calc(
+		var(--button-size) * var(--max-number-of-buttons-in-row) + var(--gap-size) *
+			(var(--max-number-of-buttons-in-row) - 1)
+	);
+
+/* Remove border around panel */
+	--zen-appcontent-border: transparent;
+
+/* Make panel background match browser background */
+	@media (-moz-bool-pref: 'zen.mods.ExtensionMenuEnhanced.backgroundColorNative.enabled') {
+		--panel-background: var(--zen-main-browser-background) !important;
+	}
+
+@media not (-moz-bool-pref: 'zen.mods.ExtensionMenuEnhanced.backgroundColorNative.enabled') and (-moz-bool-pref: 'zen.mods.ExtensionMenuEnhanced.backgroundColorNative.parallax.enabled') {
+		--panel-background: transparent !important;
+	}
+
+/* TODO: Change to calc x8 */
+	max-height: 600px !important;
+
+/* Detach slightly panel from the top */
+	margin-top: 3px !important;
+
+& panelmultiview {
+		/* Take outside margins into account */
+		max-width: calc(var(--panel-max-width) + (var(--gap-size) * 2)) !important;
+
+position: relative !important;
+	}
+
+/* & panelmultiview::before {
+		content: '';
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		background: var(--zen-main-browser-background);
+		z-index: -1;
+		background-size: 100vw 100vh; */
+	/* Example values, should be somewhat extracted from browser */
+	/* background-position: -1533px -30px;
+	} */
+}
+
+/* Hide unnecessary elements */
+#unified-extensions-view {
+	width: fit-content !important;
+
+& .panel-header,
+    toolbarseparator,
+    #unified-extensions-manage-extensions,
+    #unified-extensions-description,
+    #unified-extensions-messages-container,
+    #overflowed-extensions-list,
+    /* Hide extension settings buttons */
+    .unified-extensions-item-menu-button,
+    /* Hide text label of extension */
+    .unified-extensions-item-contents {
+		display: none !important;
+	}
+
+& .panel-subview-body {
+		padding-top: 0 !important;
+		gap: var(--gap-size);
+		margin: var(--gap-size);
+
+overflow: visible !important;
+	}
+}
+
+:root:has(#unified-extensions-area:empty) #unified-extensions-area,
+:root:has(.unified-extensions-list:empty) .unified-extensions-list {
+	display: none !important;
+}
+
+/* List of active extensions */
+#unified-extensions-area,
+/* List of passive extensions */
+.unified-extensions-list {
+	flex-direction: row;
+	flex-wrap: wrap;
+	width: fit-content;
+	max-width: var(--panel-max-width);
+	gap: var(--gap-size);
+
+/* Extension button */
+	& .unified-extensions-item {
+		width: var(--button-size);
+		height: var(--button-size);
+
+margin: 0 !important;
+		transition: transform 150ms !important;
+
+/* Remove default hover effect */
+		&:hover {
+			background-color: initial !important;
+		}
+
+& .unified-extensions-item-action-button {
+			/* Center extension icon */
+			align-items: center;
+			justify-content: center !important;
+
+/* Make extension icon square */
+			aspect-ratio: 1 / 1;
+
+transition: background-color 150ms, transform 150ms !important;
+
+@media (-moz-bool-pref: 'zen.mods.ExtensionMenuEnhanced.buttons.background.enabled') {
+				background-color: light-dark(
+					rgba(0, 0, 0, 0.05),
+					rgba(0, 0, 0, 0.1)
+				) !important;
+			}
+
+&:hover {
+				background-color: light-dark(
+					rgba(0, 0, 0, 0.1),
+					rgba(0, 0, 0, 0.2)
+				) !important;
+			}
+
+&:active {
+				background-color: light-dark(
+					rgba(0, 0, 0, 0.15)
+					rgba(0, 0, 0, 0.25)
+				) !important;
+
+transform: scale(1.2);
+			}
+
+@media (-moz-bool-pref: 'zen.mods.ExtensionMenuEnhanced.buttons.disabledBackground.color') {
+				&[disabled] {
+					--slash-color: light-dark(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.05));
+
+background: linear-gradient(
+						45deg,
+						rgba(0, 0, 0, 0) 0%,
+						rgba(0, 0, 0, 0) 9%,
+						var(--slash-color) 10%,
+						var(--slash-color) 19%,
+						rgba(0, 0, 0, 0) 20%,
+						rgba(0, 0, 0, 0) 29%,
+						var(--slash-color) 30%,
+						var(--slash-color) 39%,
+						rgba(0, 0, 0, 0) 40%,
+						rgba(0, 0, 0, 0) 49%,
+						var(--slash-color) 50%,
+						var(--slash-color) 59%,
+						rgba(0, 0, 0, 0) 60%,
+						rgba(0, 0, 0, 0) 69%,
+						var(--slash-color) 70%,
+						var(--slash-color) 79%,
+						rgba(0, 0, 0, 0) 80%,
+						rgba(0, 0, 0, 0) 89%,
+						var(--slash-color) 90%,
+						var(--slash-color) 99%,
+						rgba(0, 0, 0, 0) 100%
+					);
+				}
+			}
+		}
+
+& .toolbarbutton-badge-stack,
+		.unified-extensions-item-icon {
+			/* Remove some margin causing icon to not be centered */
+			margin-inline-end: 0 !important;
+		}
+
+/* Style extension number badge */
+		& .toolbarbutton-badge {
+			position: absolute !important;
+			top: -5px;
+			right: -6px;
+			max-width: 40px !important;
+			padding: 3px !important;
+			box-shadow: none !important;
+			/* opacity: 0.6; */
+			border-radius: 4px !important;
+			align-content: center;
+			/* text-align: center;
+			line-height: normal !important; */
+		}
+	}
+}
