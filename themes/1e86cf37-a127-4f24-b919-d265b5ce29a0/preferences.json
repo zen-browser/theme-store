@@ -1,10 +1,5 @@
 [
     {
-        "property": "mod.extension.viewgrid",
-        "label": "Apply grid view to extension menu",
-        "type": "checkbox"
-    },
-    {
         "property": "mod.lean.hide-zoom",
         "label": "Hide Zoom button in URL bar",
         "type": "checkbox"
