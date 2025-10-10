@@ -1,0 +1,56 @@
+
+.zen-essentials-container {
+	grid-template-columns: repeat(auto-fit, minmax(55px, auto)) !important; 
+	gap: 1px !important;
+	padding: 4px !important; 
+}
+
+.zen-essentials-container > tab {
+	margin: 0px !important;
+	padding: 2px !important;
+	min-height: 50px !important;
+}
+
+.zen-essentials-container
+	> tab
+	> stack:nth-child(1)
+	> hbox:nth-child(2)
+	> stack:nth-child(2) {
+	padding: 0px !important;
+	margin: 0px !important;
+	display: flex !important;
+	align-items: center !important;
+	justify-content: center !important;
+}
+
+.zen-essentials-container
+	> tab
+	> stack:nth-child(1)
+	> hbox:nth-child(2)
+	> stack:nth-child(2)
+	> img:nth-child(3) {
+	height: 20px !important;
+	width: 20px !important;
+	margin: 0px !important;
+}
+
+.zen-essentials-container
+	> tab
+	> stack:nth-child(1)
+	> hbox:nth-child(2)
+	> stack:nth-child(2)
+	> hbox:nth-child(1) {
+	height: 20px !important;
+	width: 20px !important;
+	margin: 0px !important;
+}
+
+.zen-essentials-container > tab > stack:nth-child(1) {
+	margin: 0px !important;
+	padding: 0px !important;
+}
+
+.zen-essentials-container > tab > stack:nth-child(1) > hbox:nth-child(2) {
+	margin: 0px !important;
+	padding: 0px !important;
+}
