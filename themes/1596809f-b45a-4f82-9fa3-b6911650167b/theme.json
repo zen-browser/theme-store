@@ -1,0 +1,15 @@
+{
+    "id": "1596809f-b45a-4f82-9fa3-b6911650167b",
+    "name": "Better Search Badges",
+    "description": "Better looking search engine badges in Zen",
+    "homepage": "https://github.com/sasoder/zen-browser-better-search-badges",
+    "style": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/1596809f-b45a-4f82-9fa3-b6911650167b/chrome.css",
+    "readme": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/1596809f-b45a-4f82-9fa3-b6911650167b/readme.md",
+    "image": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/1596809f-b45a-4f82-9fa3-b6911650167b/image.png",
+    "author": "sasoder",
+    "version": "1.0.0",
+    "tags": [],
+    "createdAt": "2025-10-09",
+    "updatedAt": "2025-10-09",
+    "preferences": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/1596809f-b45a-4f82-9fa3-b6911650167b/preferences.json"
+}
