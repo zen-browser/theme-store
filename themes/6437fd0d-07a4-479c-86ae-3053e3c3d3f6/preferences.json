@@ -1,0 +1,28 @@
+[
+    {
+        "property": "uc.theme.comptitle-enable-pinned.enabled",
+        "label": "Enable titles in pinned and essential tabs",
+        "type": "checkbox",
+        "disabledOn": []
+    },
+    {
+        "property": "uc.theme.comptitle-default-text.enabled",
+        "label": "Disable deemphasized tab titles",
+        "type": "checkbox",
+        "disabledOn": []
+    },
+    {
+        "property": "uc.theme.tab_indicator.color",
+        "label": "Tab Indicator Color:",
+        "type": "string",
+        "defaultValue": "var(--tab-indicator-color)",
+        "placeholder": "#0000ff"
+    },
+    {
+        "property": "uc.theme.tab_indicator.width",
+        "label": "Tab Indicator Width:",
+        "type": "string",
+        "defaultValue": "4px",
+        "placeholder": "4px"
+    }
+]

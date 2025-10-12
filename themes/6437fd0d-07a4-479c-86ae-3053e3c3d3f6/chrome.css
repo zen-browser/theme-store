@@ -1,0 +1,113 @@
+
+@property --tab-indicator-color {
+	syntax: "<color>";
+	inherits: false;
+	initial-value: light-dark(#444444, #dddddd);
+}
+
+:root {
+	--tab-indicator-width: 4px;
+}
+
+@media not (-moz-bool-pref: "zen.view.sidebar-expanded") {
+  /* confine tab side indicator to rounded tab box */
+  .tab-background {
+    position: relative;
+  }
+
+/* active tab side indicator */
+  .tab-background[selected=""]::after {
+    --tab-indicator-color: light-dark(color-mix(in oklab, var(--zen-main-browser-background) 70%, #000000), color-mix(in oklab, var(--zen-main-browser-background) 40%, #ffffff));
+    content: "";
+    position: absolute;
+    width: var(--uc-theme-tab_indicator-width);
+    height: 100%;
+    background-color: var(--uc-theme-tab_indicator-color); /* config active tab side strip color */
+  }
+  
+  /* remove tab close button */
+  image.tab-close-button {
+    display: none !important;
+  }
+  
+  /* remove audio icon if sound plays */
+  .tab-icon-overlay:is([soundplaying], [muted], [activemedia-blocked]) {
+    display: none !important;
+  }
+  
+  /* keep favicon visible */
+  .tab-icon-image {
+    opacity: 1 !important;
+  }
+  
+  .tabbrowser-tab {
+    /* restore tab title and show the first 3 letters */
+    .tab-label-container {
+      --comptitle-width: 3ch;
+      overflow: hidden;
+      position: absolute;
+      text-overflow: ellipsis;
+      width: var(--comptitle-width);
+      right: 0;
+      white-space: nowrap;
+      background: var(--zen-main-browser-background); /* tab title bg color */
+      height: 1rem !important;
+      opacity: 1;
+      top: 0;
+      border-radius: 5px;
+      font-family: monospace;
+      display: flex !important;
+      mask-image: none !important;
+      color: var(--text-color-deemphasized); /* tab title color */
+    }
+
+/* remove the "Playing" subtitle */
+    .tab-secondary-label {
+      display: none !important;
+    }
+
+/* selected tab title */
+    &[selected] .tab-label-container {
+      color: var(--text-color);
+      background: light-dark(var(--tab-selected-bgcolor), var(--zen-main-browser-background));
+    }
+    
+    /* show tab side indicator if tab makes sounds */
+    &:is([soundplaying], [muted]) {
+		  .tab-background::after {
+		    --tab-indicator-color: light-dark(color-mix(in oklab, var(--zen-main-browser-background) 70%, #000000), color-mix(in oklab, var(--zen-main-browser-background) 40%, #ffffff));
+			  content:"";
+			  position: absolute;
+			  width: var(--tab-indicator-width) !important;
+			  border-radius: var(--uc-theme-tab_indicator-width) !important;
+			  height: 50% !important;
+			  top: 50%;
+			  left: calc(100% - var(--uc-theme-tab_indicator-width)) !important;
+			  transform: translateY(-50%);
+			  background-color: var(--uc-theme-tab_indicator-color) !important;
+		  }
+
+&:not([selected='true']) .tab-background::after{
+			  height: 25% !important;
+		  }
+		  
+		  &:not([selected='true']):hover .tab-background::after{
+			  height: 50% !important;
+		  }
+	  }
+	  
+    /* show title on pinned tabs as well */
+    @media (-moz-bool-pref: "uc.theme.comptitle-enable-pinned.enabled") {
+      .tab-label-container {
+        width: var(--comptitle-width) !important;
+      }
+    }
+    
+    /* use active text color for all tab titles */
+    @media (-moz-bool-pref: "uc.theme.comptitle-default-text.enabled") {
+      .tab-label-container {
+        color: var(--text-color);
+      }
+    }
+  }
+}
