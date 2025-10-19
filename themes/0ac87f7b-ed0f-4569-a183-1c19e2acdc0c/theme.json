@@ -1,0 +1,14 @@
+{
+    "id": "0ac87f7b-ed0f-4569-a183-1c19e2acdc0c",
+    "name": "Better Workspace Switcher",
+    "description": "Refresh the workspace switcher to make it more appealing.",
+    "homepage": "https://github.com/tomoayan/zen-mods-tomo/tree/main/Better%20Workspace%20Switcher",
+    "style": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/0ac87f7b-ed0f-4569-a183-1c19e2acdc0c/chrome.css",
+    "readme": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/0ac87f7b-ed0f-4569-a183-1c19e2acdc0c/readme.md",
+    "image": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/0ac87f7b-ed0f-4569-a183-1c19e2acdc0c/image.png",
+    "author": "tomoayan",
+    "version": "1.0.0",
+    "tags": [],
+    "createdAt": "2025-08-05",
+    "updatedAt": "2025-08-05"
+}
