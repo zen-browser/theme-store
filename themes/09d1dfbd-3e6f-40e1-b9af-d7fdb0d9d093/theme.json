@@ -1,0 +1,15 @@
+{
+    "id": "09d1dfbd-3e6f-40e1-b9af-d7fdb0d9d093",
+    "name": "Zen Loaded Tab Indicator",
+    "description": "A zen mod to differentiate between loaded and unloaded pinned tabs",
+    "homepage": "https://github.com/GnoxNahte/zen-loaded-tab-indicator",
+    "style": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/09d1dfbd-3e6f-40e1-b9af-d7fdb0d9d093/chrome.css",
+    "readme": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/09d1dfbd-3e6f-40e1-b9af-d7fdb0d9d093/readme.md",
+    "image": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/09d1dfbd-3e6f-40e1-b9af-d7fdb0d9d093/image.png",
+    "author": "GnoxNahte",
+    "version": "1.0.0",
+    "tags": [],
+    "createdAt": "2025-08-16",
+    "updatedAt": "2025-08-16",
+    "preferences": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/09d1dfbd-3e6f-40e1-b9af-d7fdb0d9d093/preferences.json"
+}
