@@ -1,0 +1,22 @@
+
+{
+  #urlbar-input {
+    font-size: var(--cfs-font-size-urlbar) !important;
+  }
+
+.findbar-container {
+    font-size: var(--cfs-font-size-searchbar) !important;
+  }
+
+#tabbrowser-tabs {
+    font-size: var(--cfs-font-size-tabbar-tabs) !important;
+  }
+
+#zen-current-workspace-indicator-name, .zen-current-workspace-indicator-name {
+    font-size: var(--cfs-font-size-workspace-title) !important;
+  }
+
+.zen-workspace-icon {
+    font-size: var(--cfs-icon-size-footer) !important;
+  }
+}

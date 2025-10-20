@@ -1,0 +1,15 @@
+{
+    "id": "65fd0997-ba9a-4848-92d0-e17df7ac3862",
+    "name": "Customize Font Sizes",
+    "description": "Adjust the font size of several parts of the browser.",
+    "homepage": "https://github.com/okuuva/zen-customize-font-sizes",
+    "style": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/65fd0997-ba9a-4848-92d0-e17df7ac3862/chrome.css",
+    "readme": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/65fd0997-ba9a-4848-92d0-e17df7ac3862/readme.md",
+    "image": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/65fd0997-ba9a-4848-92d0-e17df7ac3862/image.png",
+    "author": "okuuva",
+    "version": "1.0.0",
+    "tags": [],
+    "createdAt": "2025-10-20",
+    "updatedAt": "2025-10-20",
+    "preferences": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/65fd0997-ba9a-4848-92d0-e17df7ac3862/preferences.json"
+}
