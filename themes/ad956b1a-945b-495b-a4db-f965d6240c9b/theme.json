@@ -1,0 +1,14 @@
+{
+    "id": "ad956b1a-945b-495b-a4db-f965d6240c9b",
+    "name": "Min Container Indicator",
+    "description": "This theme add a minimalist dot indicator for the current container in Zen Browser.",
+    "homepage": "https://github.com/anjerodev/zen-themes/tree/main/minimalist-container-indicator",
+    "style": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/ad956b1a-945b-495b-a4db-f965d6240c9b/chrome.css",
+    "readme": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/ad956b1a-945b-495b-a4db-f965d6240c9b/readme.md",
+    "image": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/ad956b1a-945b-495b-a4db-f965d6240c9b/image.png",
+    "author": "anjerodev",
+    "version": "1.0.0",
+    "tags": [],
+    "createdAt": "2024-11-06",
+    "updatedAt": "2024-11-06"
+}
