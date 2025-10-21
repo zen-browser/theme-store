@@ -1,0 +1,15 @@
+{
+    "id": "e122b5d9-d385-4bf8-9971-e137809097d0",
+    "name": "No Top Sites",
+    "description": "Annoyed with top sites that appear when you open the URL bar? With this mod, you can now hide them!",
+    "homepage": "https://github.com/Ivaon/zen-theme/tree/main/NoTopSites",
+    "style": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/e122b5d9-d385-4bf8-9971-e137809097d0/chrome.css",
+    "readme": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/e122b5d9-d385-4bf8-9971-e137809097d0/readme.md",
+    "image": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/e122b5d9-d385-4bf8-9971-e137809097d0/image.png",
+    "author": "Ivaon",
+    "version": "1.0.0",
+    "tags": [],
+    "createdAt": "2025-10-21",
+    "updatedAt": "2025-10-21",
+    "preferences": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/e122b5d9-d385-4bf8-9971-e137809097d0/preferences.json"
+}

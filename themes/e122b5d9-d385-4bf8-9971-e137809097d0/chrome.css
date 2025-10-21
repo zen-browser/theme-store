@@ -1,0 +1,22 @@
+
+#urlbar:not([usertyping]) {
+  @media -moz-pref("mod.ivaon.urlbar.hide_results", "0") {
+    &>.urlbarView {
+      display: none !important;
+    }
+  }
+
+#urlbar-results div.urlbarView-row[row-selectable] {
+    @media -moz-pref("mod.ivaon.urlbar.hide_results", "1") {
+      &[type="top_site"] {
+        display: none !important;
+      }
+    }
+
+@media -moz-pref("mod.ivaon.urlbar.hide_results", "2") {
+      &[type="top_site"]:not([pinned]) {
+        display: none !important;
+      }
+    }
+  }
+}
