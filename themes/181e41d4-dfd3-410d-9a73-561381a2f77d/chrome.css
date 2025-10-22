@@ -1,0 +1,21 @@
+
+#zen-site-data-addons {
+    display: block !important;
+
+#overflowed-extensions-list,
+    & #unified-extensions-area,
+    & .unified-extensions-list,
+    & #zen-site-data-new-addon-button-container {
+        &>* {
+            width: 100% !important;
+            height: auto !important;
+            justify-content: normal !important;
+            align-items: normal !important;
+            margin-top: 5px !important;
+        }
+
+.unified-extensions-item-name {
+            display: block !important;
+        }
+    }
+}
