@@ -1,0 +1,14 @@
+{
+    "id": "cb5efa80-f1e1-43ce-8c0b-fece8462d225",
+    "name": "Container Halo",
+    "description": "A mod for zen browser that highlights Firefox containers around the whole tab, even while inactive.",
+    "homepage": "https://github.com/themanontv/zen-container-halo",
+    "style": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/cb5efa80-f1e1-43ce-8c0b-fece8462d225/chrome.css",
+    "readme": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/cb5efa80-f1e1-43ce-8c0b-fece8462d225/readme.md",
+    "image": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/cb5efa80-f1e1-43ce-8c0b-fece8462d225/image.png",
+    "author": "themanontv",
+    "version": "1.0.0",
+    "tags": [],
+    "createdAt": "2025-10-20",
+    "updatedAt": "2025-10-20"
+}
