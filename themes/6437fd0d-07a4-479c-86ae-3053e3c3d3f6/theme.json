@@ -1,0 +1,15 @@
+{
+    "id": "6437fd0d-07a4-479c-86ae-3053e3c3d3f6",
+    "name": "Improved Collapsed Tabs",
+    "description": "An opinionated Zen mod for improved collapsed tabs. (functionally and visually)",
+    "homepage": "https://github.com/xXMacMillanXx/improved-collapsed-tabs",
+    "style": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/6437fd0d-07a4-479c-86ae-3053e3c3d3f6/chrome.css",
+    "readme": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/6437fd0d-07a4-479c-86ae-3053e3c3d3f6/readme.md",
+    "image": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/6437fd0d-07a4-479c-86ae-3053e3c3d3f6/image.png",
+    "author": "xXMacMillanXx",
+    "version": "1.0.0",
+    "tags": [],
+    "createdAt": "2025-10-12",
+    "updatedAt": "2025-10-12",
+    "preferences": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/6437fd0d-07a4-479c-86ae-3053e3c3d3f6/preferences.json"
+}
