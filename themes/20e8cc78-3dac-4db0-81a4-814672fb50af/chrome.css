@@ -1,10 +1,10 @@
 
 /**
-* Zen Mod: Right Side Glance Buttons
+* Zen Mod: Right Left Glance Buttons
 * Move the at a glance buttons to the right side of the window.
 * Pontus Sundén <hi@pontus.cc>
 */
 .zen-glance-sidebar-container {
-  left: 100% !important;
-  right: unset !important;
+  right: 100% !important;
+  left: unset !important;
 }
