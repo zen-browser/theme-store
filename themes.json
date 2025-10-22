@@ -273,6 +273,20 @@
         "createdAt": "2025-02-17",
         "updatedAt": "2025-02-23"
     },
+    "cb5efa80-f1e1-43ce-8c0b-fece8462d225": {
+        "id": "cb5efa80-f1e1-43ce-8c0b-fece8462d225",
+        "name": "Container Halo",
+        "description": "A mod for zen browser that highlights Firefox containers around the whole tab, even while inactive.",
+        "homepage": "https://github.com/themanontv/zen-container-halo",
+        "style": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/cb5efa80-f1e1-43ce-8c0b-fece8462d225/chrome.css",
+        "readme": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/cb5efa80-f1e1-43ce-8c0b-fece8462d225/readme.md",
+        "image": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/cb5efa80-f1e1-43ce-8c0b-fece8462d225/image.png",
+        "author": "themanontv",
+        "version": "1.0.0",
+        "tags": [],
+        "createdAt": "2025-10-20",
+        "updatedAt": "2025-10-22"
+    },
     "180d9426-a020-4bd7-98ec-63f957291119": {
         "id": "180d9426-a020-4bd7-98ec-63f957291119",
         "name": "TitleBarButton UI Tweaks",
@@ -418,6 +432,21 @@
         "createdAt": "2024-12-24",
         "updatedAt": "2025-01-26",
         "preferences": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/5f12d02a-c692-4f9c-b1f3-cd92782bab02/preferences.json"
+    },
+    "e122b5d9-d385-4bf8-9971-e137809097d0": {
+        "id": "e122b5d9-d385-4bf8-9971-e137809097d0",
+        "name": "No Top Sites",
+        "description": "Annoyed with top sites that appear when you open the URL bar? With this mod, you can now hide them!",
+        "homepage": "https://github.com/Ivaon/zen-theme/tree/main/NoTopSites",
+        "style": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/e122b5d9-d385-4bf8-9971-e137809097d0/chrome.css",
+        "readme": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/e122b5d9-d385-4bf8-9971-e137809097d0/readme.md",
+        "image": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/e122b5d9-d385-4bf8-9971-e137809097d0/image.png",
+        "author": "Ivaon",
+        "version": "1.0.0",
+        "tags": [],
+        "createdAt": "2025-10-21",
+        "updatedAt": "2025-10-22",
+        "preferences": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/e122b5d9-d385-4bf8-9971-e137809097d0/preferences.json"
     },
     "9bbaab67-a2c8-4d79-837f-90cd72a8932a": {
         "id": "9bbaab67-a2c8-4d79-837f-90cd72a8932a",
@@ -591,6 +620,20 @@
         "tags": [],
         "createdAt": "2025-03-28",
         "updatedAt": "2025-03-31"
+    },
+    "181e41d4-dfd3-410d-9a73-561381a2f77d": {
+        "id": "181e41d4-dfd3-410d-9a73-561381a2f77d",
+        "name": "Extensions List",
+        "description": "Use a list instead of the default grid on the extensions popout",
+        "homepage": "",
+        "style": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/181e41d4-dfd3-410d-9a73-561381a2f77d/chrome.css",
+        "readme": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/181e41d4-dfd3-410d-9a73-561381a2f77d/readme.md",
+        "image": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/181e41d4-dfd3-410d-9a73-561381a2f77d/image.png",
+        "author": "dagadtwok",
+        "version": "1.0.0",
+        "tags": [],
+        "createdAt": "2025-10-21",
+        "updatedAt": "2025-10-22"
     },
     "253a3a74-0cc4-47b7-8b82-996a64f030d5": {
         "id": "253a3a74-0cc4-47b7-8b82-996a64f030d5",
