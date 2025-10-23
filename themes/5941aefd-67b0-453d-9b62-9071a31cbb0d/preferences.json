@@ -1,0 +1,9 @@
+[
+    {
+        "property": "theme.smaller_compact_mode.sidebar_width",
+        "label": "Sidebar width (vh)",
+        "type": "string",
+        "placeholder": "50 - 99",
+        "defaultValue": "70"
+    }
+]
