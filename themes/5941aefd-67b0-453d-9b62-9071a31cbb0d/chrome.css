@@ -10,6 +10,6 @@
   :root[zen-compact-mode="true"] #navigator-toolbox {
     top: 50% !important;
     transform: translateY(-50%) !important;
-    height: 75vh !important;
+    height: calc(var(--theme-smaller_compact_mode-sidebar_height) * 1vh) !important;
   }
 }
