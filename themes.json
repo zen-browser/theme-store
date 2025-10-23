@@ -376,6 +376,21 @@
         "createdAt": "2024-12-03",
         "updatedAt": "2025-07-31"
     },
+    "6437fd0d-07a4-479c-86ae-3053e3c3d3f6": {
+        "id": "6437fd0d-07a4-479c-86ae-3053e3c3d3f6",
+        "name": "Improved Collapsed Tabs",
+        "description": "An opinionated Zen mod for improved collapsed tabs. (functionally and visually)",
+        "homepage": "https://github.com/xXMacMillanXx/improved-collapsed-tabs",
+        "style": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/6437fd0d-07a4-479c-86ae-3053e3c3d3f6/chrome.css",
+        "readme": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/6437fd0d-07a4-479c-86ae-3053e3c3d3f6/readme.md",
+        "image": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/6437fd0d-07a4-479c-86ae-3053e3c3d3f6/image.png",
+        "author": "xXMacMillanXx",
+        "version": "1.0.0",
+        "tags": [],
+        "createdAt": "2025-10-12",
+        "updatedAt": "2025-10-22",
+        "preferences": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/6437fd0d-07a4-479c-86ae-3053e3c3d3f6/preferences.json"
+    },
     "ae7868dc-1fa1-469e-8b89-a5edf7ab1f24": {
         "id": "ae7868dc-1fa1-469e-8b89-a5edf7ab1f24",
         "name": "Load Bar",
@@ -594,18 +609,18 @@
     "5941aefd-67b0-453d-9b62-9071a31cbb0d": {
         "id": "5941aefd-67b0-453d-9b62-9071a31cbb0d",
         "name": "Smaller Compact Mode",
-        "description": "Reduce the height of the compact sidebar!",
-        "homepage": "https://github.com/n7itro/Zen-Themes",
+        "description": "Reduce the height of the compact sidebar.",
         "style": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/5941aefd-67b0-453d-9b62-9071a31cbb0d/chrome.css",
         "readme": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/5941aefd-67b0-453d-9b62-9071a31cbb0d/readme.md",
         "image": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/5941aefd-67b0-453d-9b62-9071a31cbb0d/image.png",
         "author": "n7itro",
-        "version": "1.0.3",
+        "preferences": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/5941aefd-67b0-453d-9b62-9071a31cbb0d/preferences.json",
+        "version": "1.0.4",
         "tags": [
             "tabs"
         ],
         "createdAt": "2024-08-31",
-        "updatedAt": "2025-01-26"
+        "updatedAt": "2025-10-23"
     },
     "20e8cc78-3dac-4db0-81a4-814672fb50af": {
         "id": "20e8cc78-3dac-4db0-81a4-814672fb50af",
