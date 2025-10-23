@@ -1,0 +1,12 @@
+[
+    {
+        "property": "mod.devdinc.hide-navbar.enabled",
+        "label": "Enable the mod",
+        "type": "checkbox"
+    },
+    {
+        "property": "mod.devdinc.hide-navbar.animation.enabled",
+        "label": "Enable animations",
+        "type": "checkbox"
+    }
+]
