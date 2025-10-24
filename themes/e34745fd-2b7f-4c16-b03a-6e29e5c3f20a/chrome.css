@@ -1,49 +1,31 @@
-
-@media (-moz-bool-pref: "mod.devdinc.hide-navbar.animation.enabled") {
-  /* Transition defaults for all toolbar elements */
-  #nav-bar,
-  #zen-sidebar-top-buttons,
-  #urlbar,
-  #navigator-toolbox {
-    transition:
-      height 0.3s ease,
-      max-height 0.3s ease,
-      min-height 0.3s ease,
-      opacity 0.3s ease,
-      transform 0.3s ease,
-      padding 0.3s ease;
-  }
-}
 @media (-moz-bool-pref: "mod.devdinc.hide-navbar.enabled") {
+  @media (-moz-bool-pref: "mod.devdinc.hide-navbar.animation.enabled") {
+    /* Transition defaults for all toolbar elements */
+    #nav-bar,
+    #zen-sidebar-top-buttons {
+      transition:
+        height 0.3s ease,
+        max-height 0.3s ease,
+        min-height 0.3s ease,
+        transform 0.3s ease,
+        margin 0.3s ease;
+    }
+  }
   :root {
     .browserContainer {
       --margin-top-fix: 0 !important;
     }
+    #urlbar-container {
+      background: none !important;
+    }
   }
-  
-  :root:not([zen-single-toolbar="true"]):has(#zen-appcontent-navbar-wrapper:not([zen-has-hover])),
-  :root[zen-single-toolbar="true"]:has(#navigator-toolbox:not([zen-has-hover])){
-    #zen-sidebar-top-buttons {
-      opacity: 0;
-      padding: 0 !important;
-      height: 0;
-      min-height: 0 !important;
-    }
-
-:has(#urlbar:not([breakout-extend])) { 
-      #nav-bar {
-        opacity: 0;
-      }
-    }
-    
+  :root:not([zen-single-toolbar="true"]) #zen-appcontent-navbar-wrapper:not([zen-has-hover]),
+  :root[zen-single-toolbar="true"] {
     #nav-bar,
     #zen-sidebar-top-buttons {
-      --zen-toolbar-height: 0px !important;
+      margin-top: -100px !important;
+      --zen-toolbar-height: calc(var(--zen-element-separation) + 100px) !important;
       margin-bottom: 0 !important;
-    }
-    
-    #navigator-toolbox {
-      height: calc(100% - var(--zen-compact-float)) !important;
     }
   }
 }
