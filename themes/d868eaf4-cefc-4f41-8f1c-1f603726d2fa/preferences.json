@@ -38,5 +38,93 @@
                 "value": "22"
             }
         ]
+    },
+    {
+        "property": "uc.tabtextsize.workspaceheader",
+        "label": "Set Workspace Text Size: ",
+        "type": "dropdown",
+        "defaultValue": "default",
+        "options": [
+            {
+                "label": "6",
+                "value": "6"
+            },
+            {
+                "label": "8",
+                "value": "8"
+            },
+            {
+                "label": "Default (10)",
+                "value": "default"
+            },
+            {
+                "label": "12",
+                "value": "12"
+            },
+            {
+                "label": "14",
+                "value": "14"
+            },
+            {
+                "label": "16",
+                "value": "16"
+            },
+            {
+                "label": "18",
+                "value": "18"
+            },
+            {
+                "label": "20",
+                "value": "20"
+            },
+            {
+                "label": "22",
+                "value": "22"
+            }
+        ]
+    },
+    {
+        "property": "uc.tabtextsize.tabgroup",
+        "label": "Set Folder Text Size: ",
+        "type": "dropdown",
+        "defaultValue": "default",
+        "options": [
+            {
+                "label": "6",
+                "value": "6"
+            },
+            {
+                "label": "8",
+                "value": "8"
+            },
+            {
+                "label": "10",
+                "value": "10"
+            },
+            {
+                "label": "Default (12)",
+                "value": "default"
+            },
+            {
+                "label": "14",
+                "value": "14"
+            },
+            {
+                "label": "16",
+                "value": "16"
+            },
+            {
+                "label": "18",
+                "value": "18"
+            },
+            {
+                "label": "20",
+                "value": "20"
+            },
+            {
+                "label": "22",
+                "value": "22"
+            }
+        ]
     }
 ]
