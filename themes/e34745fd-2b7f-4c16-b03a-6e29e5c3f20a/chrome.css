@@ -2,7 +2,8 @@
   @media (-moz-bool-pref: "mod.devdinc.hide-navbar.animation.enabled") {
     /* Transition defaults for all toolbar elements */
     #nav-bar,
-    #zen-sidebar-top-buttons {
+    #zen-sidebar-top-buttons,
+    #PersonalToolbar {
       transition:
         height 0.3s ease,
         max-height 0.3s ease,
@@ -26,6 +27,10 @@
       margin-top: -100px !important;
       --zen-toolbar-height: calc(var(--zen-element-separation) + 100px) !important;
       margin-bottom: 0 !important;
+    }
+    #PersonalToolbar {
+      height: 0 !important;
+      min-height: 0 !important;
     }
   }
 }
