@@ -1,0 +1,15 @@
+{
+    "id": "82c97287-76d3-4154-b05d-a6c359e78797",
+    "name": "Floating Sidebar",
+    "description": "Making sidebar float without disrupting the page allowing placement on either side.",
+    "homepage": "https://github.com/smbq/zen-floating-sidebar",
+    "style": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/82c97287-76d3-4154-b05d-a6c359e78797/chrome.css",
+    "readme": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/82c97287-76d3-4154-b05d-a6c359e78797/readme.md",
+    "image": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/82c97287-76d3-4154-b05d-a6c359e78797/image.png",
+    "author": "smbq",
+    "version": "1.0.0",
+    "tags": [],
+    "createdAt": "2025-10-24",
+    "updatedAt": "2025-10-24",
+    "preferences": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/82c97287-76d3-4154-b05d-a6c359e78797/preferences.json"
+}
