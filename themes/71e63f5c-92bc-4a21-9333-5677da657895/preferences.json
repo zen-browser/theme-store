@@ -1,0 +1,40 @@
+[
+    {
+        "property": "mod.devdinc.letterbox.enabled",
+        "label": "Enabled",
+        "type": "dropdown",
+        "defaultValue": "enabledwithoutcompact",
+        "options": [
+            {
+                "label": "Only compact mode",
+                "value": "enabled"
+            },
+            {
+                "label": "true",
+                "value": "enabledwithoutcompact"
+            },
+            {
+                "label": "false",
+                "value": "false"
+            }
+        ]
+    },
+    {
+        "property": "mod.devdinc.letterbox.size",
+        "label": "Letterbox size",
+        "type": "string",
+        "defaultValue": "8px"
+    },
+    {
+        "property": "mod.devdinc.letterbox.color",
+        "label": "Letterbox color",
+        "type": "string",
+        "defaultValue": "#131313"
+    },
+    {
+        "property": "mod.devdinc.letterbox.app.border.radius",
+        "label": "App border radius",
+        "type": "string",
+        "defaultValue": "4px"
+    }
+]

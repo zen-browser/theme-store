@@ -1,0 +1,45 @@
+
+:root
+  :not([customizing])
+  :not([inDOMFullscreen="true"])
+  :has(
+    [zen-compact-mode="true"] #theme-Custom-Letter-Box-Style[mod-devdinc-letterbox-enabled="enabled"],
+    #theme-Custom-Letter-Box-Style[mod-devdinc-letterbox-enabled="enabledwithoutcompact"]
+  ) {
+  
+  .browserSidebarContainer {
+    border-radius: var(--mod-devdinc-letterbox-app-border-radius) !important;
+  }
+  
+  #zen-browser-background::after {
+    --zen-main-browser-background: var(--mod-devdinc-letterbox-color) !important;
+  }
+  
+  #zen-appcontent-navbar-wrapper {
+    min-height: var(--mod-devdinc-letterbox-size) !important;
+  }
+  
+  #zen-tabbox-wrapper {
+    --letter-box-size-right: var(--mod-devdinc-letterbox-size);
+    --letter-box-size-left: var(--mod-devdinc-letterbox-size);
+  }
+  
+  [zen-compact-mode="false"] {
+    [zen-right-side="true"] {
+      #zen-tabbox-wrapper {
+        --letter-box-size-right: 0 !important;  
+      }
+    }
+    :not([zen-right-side="true"]) {
+      #zen-tabbox-wrapper {
+        --letter-box-size-left: 0 !important;  
+      }
+    }
+  }
+   
+  #zen-tabbox-wrapper {
+    margin-bottom: var(--mod-devdinc-letterbox-size) !important;
+    margin-left: var(--letter-box-size-left) !important;
+    margin-right: var(--letter-box-size-right) !important;
+  }
+}

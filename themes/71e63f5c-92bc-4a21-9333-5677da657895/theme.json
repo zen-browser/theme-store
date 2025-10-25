@@ -1,0 +1,15 @@
+{
+    "id": "71e63f5c-92bc-4a21-9333-5677da657895",
+    "name": "Custom Letter Box Style",
+    "description": "Customize the borders around the browser without touching other elements.",
+    "homepage": "",
+    "style": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/71e63f5c-92bc-4a21-9333-5677da657895/chrome.css",
+    "readme": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/71e63f5c-92bc-4a21-9333-5677da657895/readme.md",
+    "image": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/71e63f5c-92bc-4a21-9333-5677da657895/image.png",
+    "author": "devdinc",
+    "version": "1.0.0",
+    "tags": [],
+    "createdAt": "2025-10-24",
+    "updatedAt": "2025-10-24",
+    "preferences": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/71e63f5c-92bc-4a21-9333-5677da657895/preferences.json"
+}
