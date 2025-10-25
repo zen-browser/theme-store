@@ -9,7 +9,9 @@
     "author": "danm36",
     "preferences": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/58649066-2b6f-4a5b-af6d-c3d21d16fc00/preferences.json",
     "version": "1.0.5",
-    "tags": ["Private Browsing"],
+    "tags": [
+        "Private Browsing"
+    ],
     "createdAt": "2024-08-09",
-    "updatedAt": "2025-07-28"
+    "updatedAt": "2025-10-25"
 }
