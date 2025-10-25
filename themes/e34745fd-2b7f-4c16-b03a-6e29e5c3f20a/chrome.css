@@ -21,14 +21,14 @@
     }
   }
   :root:not([zen-single-toolbar="true"]) #zen-appcontent-navbar-wrapper:not([zen-has-hover]),
-  :root[zen-single-toolbar="true"] {
+  :root[zen-single-toolbar="true"]:has(#zen-sidebar-top-buttons:not(:hover)):has(#nav-bar:not(:hover)) {
     #nav-bar,
     #zen-sidebar-top-buttons {
       margin-top: -100px !important;
       --zen-toolbar-height: calc(var(--zen-element-separation) + 100px) !important;
       margin-bottom: 0 !important;
     }
-    #PersonalToolbar {
+    #PersonalToolbar:last-child {
       height: 0 !important;
       min-height: 0 !important;
     }
