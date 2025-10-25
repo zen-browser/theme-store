@@ -3,12 +3,12 @@
         "property": "mod.devdinc.hide-navbar.enabled",
         "label": "Enable the mod",
         "type": "checkbox",
-        "defaultValue": "true"
+        "defaultValue": true
     },
     {
         "property": "mod.devdinc.hide-navbar.animation.enabled",
         "label": "Enable animations",
         "type": "checkbox",
-        "defaultValue": "true"
+        "defaultValue": true
     }
 ]
