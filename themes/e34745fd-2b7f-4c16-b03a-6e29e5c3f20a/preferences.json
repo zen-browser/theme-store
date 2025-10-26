@@ -1,6 +1,6 @@
 [
     {
-        "property": "mod.devdinc.hide-navbar.enabled",
+        "property": "zen.view.compact.hide-toolbar",
         "label": "Enable the mod",
         "type": "checkbox",
         "defaultValue": true
