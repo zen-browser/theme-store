@@ -1,17 +1,20 @@
-@media (-moz-bool-pref: "mod.devdinc.hide-navbar.enabled") {
+@media (-moz-bool-pref: "zen.view.compact.hide-toolbar") { /* zen default hide toolbar */
   @media (-moz-bool-pref: "mod.devdinc.hide-navbar.animation.enabled") {
     /* Transition defaults for all toolbar elements */
     #nav-bar,
     #zen-sidebar-top-buttons,
-    #PersonalToolbar {
+    #PersonalToolbar,
+    #titlebar{
       transition:
         height 0.3s ease,
         max-height 0.3s ease,
         min-height 0.3s ease,
         transform 0.3s ease,
-        margin 0.3s ease;
+        padding 0.3s ease,
+        margin 0.3s ease !important;
     }
   }
+  /* backup hiding styles */
   :root {
     .browserContainer {
       --margin-top-fix: 0 !important;
@@ -19,8 +22,19 @@
     #urlbar-container {
       background: none !important;
     }
+    --computed-padding-height: var(--zen-toolbar-height);
+    & [zen-compact-mode="true"] #titlebar:nth-child(3){
+      --computed-padding-height: 0;
+    }
+    :not([zen-compact-mode="true"]) #titlebar:nth-child(3) {
+      padding-top: var(--computed-padding-height) !important;
+    }
+    :not([zen-compact-mode="true"]) #navigator-toolbox {
+      margin-top: 0 !important;
+    }
   }
-  :root:not([zen-single-toolbar="true"]) #zen-appcontent-navbar-wrapper:not([zen-has-hover]),
+  
+  :root:not([zen-compact-mode="true"]):not([zen-single-toolbar="true"]):has(#zen-appcontent-navbar-wrapper:not([zen-has-hover])),
   :root[zen-single-toolbar="true"]:has(#zen-sidebar-top-buttons:not(:hover)):has(#nav-bar:not(:hover)) {
     #nav-bar,
     #zen-sidebar-top-buttons {
@@ -28,9 +42,13 @@
       --zen-toolbar-height: calc(var(--zen-element-separation) + 100px) !important;
       margin-bottom: 0 !important;
     }
-    #PersonalToolbar:last-child {
+    #PersonalToolbar:last-child { /* only on non single toolbar */
       height: 0 !important;
       min-height: 0 !important;
+    }
+    /* transition tabs only on non single toolbar, this element make it so we need :has */
+    #titlebar:nth-child(3) {
+      --computed-padding-height: 0 !important;
     }
   }
 }
