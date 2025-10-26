@@ -1,4 +1,3 @@
-{
     :root:has(#theme-Tab-Text-Size[uc-tabtextsize-textsize="8"]) {
         .tab-text.tab-label {
             font-size: 8px;
@@ -152,4 +151,3 @@
             font-size: 22px !important;
         }
     }
-}
