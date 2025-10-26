@@ -74,16 +74,7 @@
     transition: transform 0.35s !important;
     visibility: visible !important;
     opacity: 1 !important;
-
-    /*&[hidden="true"],
-    &[hidden=""] {
-        display: flex !important;
-        transform: translate(
-            var(--floating-sidebar-transform-translateX),
-            var(--floating-sidebar-transform-translateY)
-        ) !important;
-        opacity: 0 !important;
-    }*/
+    
     &[checked="true"] {
         display: flex !important;
         transform: translate(
