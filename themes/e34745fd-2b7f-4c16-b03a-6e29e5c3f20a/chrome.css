@@ -41,7 +41,7 @@ Enabling 'Hide both' below here with compact mode disabled.";
     #TabsToolbar,
     #titlebar{
       transition:
-        all 0.1s ease !important;
+        all var(--zen-hidden-toolbar-transition) !important;
         /* adding will change makes urlbar open not centered anymore */
     }
   }
@@ -49,9 +49,9 @@ Enabling 'Hide both' below here with compact mode disabled.";
   :root {
     --margin-top-fix-hide: calc((var(--zen-toolbar-height) + 50px) + var(--mod-devdinc-hide-navbar-element-seperation));
     --margin-top-fix-hide-reverse: calc(((var(--zen-toolbar-height) + 50px) * -1));
-  
-    .browserContainer {
-      --margin-top-fix: 0 !important;
+    
+    &:not([zen-compact-mode="true"]):not([zen-single-toolbar="true"]) .browserContainer { /* only on non single toolbar */
+      margin-top: calc(var(--zen-toolbar-height) * -1);
     }
   }
   
@@ -73,6 +73,9 @@ Enabling 'Hide both' below here with compact mode disabled.";
     /* hides the padding between top of browser and tabs */
     #titlebar, #navigator-toolbox  {
       --zen-toolbar-height: 0 !important;
+    }
+    .browserContainer { /* only on non single toolbar */
+      margin-top: calc(var(--mod-devdinc-hide-navbar-element-seperation) * -1);
     }
   }
 }
