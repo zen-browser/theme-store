@@ -1,0 +1,17 @@
+{
+    "id": "58649066-2b6f-4a5b-af6d-c3d21d16fc00",
+    "name": "Private Mode Highlighting",
+    "description": "This theme adds a configurable background, border and an icon to any private browsing window.",
+    "homepage": "https://github.com/danm36/zen-browser-private-browsing-toolbar-highlighting",
+    "style": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/58649066-2b6f-4a5b-af6d-c3d21d16fc00/chrome.css",
+    "readme": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/58649066-2b6f-4a5b-af6d-c3d21d16fc00/readme.md",
+    "image": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/58649066-2b6f-4a5b-af6d-c3d21d16fc00/image.png",
+    "author": "danm36",
+    "preferences": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/58649066-2b6f-4a5b-af6d-c3d21d16fc00/preferences.json",
+    "version": "1.0.5",
+    "tags": [
+        "Private Browsing"
+    ],
+    "createdAt": "2024-08-09",
+    "updatedAt": "2025-10-25"
+}
