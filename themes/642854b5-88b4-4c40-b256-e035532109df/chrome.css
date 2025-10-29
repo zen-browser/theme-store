@@ -139,31 +139,44 @@ tabpanels .browserStack browser {
 }
 
 /* no tab image */
-#browser:has([zen-empty-tab="true"][selected="true"]) .browserStack {
-  @media -moz-pref( "mod.sameerasw.zen_notab_img_enabled") {
-    background-image: var(
-      --mod-sameerasw-zen_notab_img,
-      url("https://raw.githubusercontent.com/zen-browser/branding/refs/heads/main/Official/Word%20Marks/SVG/zen_logo_icon_white.svg")
-    ) !important;
+:root:has(
+    [mod-sameerasw_zen_empty_tab_logo="1"],
+    [mod-sameerasw_zen_empty_tab_logo="2"],
+    [mod-sameerasw_zen_empty_tab_logo="3"]
+  ) {
+  #browser:has([zen-empty-tab="true"][selected="true"]) .browserStack {
+      background-image: var(
+        --mod-sameerasw-zen_notab_img,
+        url("https://raw.githubusercontent.com/zen-browser/branding/refs/heads/main/Official/Word%20Marks/SVG/zen_logo_icon_white.svg")
+      ) !important;
 
-    background-position: center !important;
-    background-repeat: no-repeat !important;
+      background-position: center !important;
+      background-repeat: no-repeat !important;
+      background-size: var(--mod-sameerasw-zen_notab_img_size, 150px) !important;
+      opacity: var(--mod-sameerasw-zen_notab_img_opacity, 1) !important;
+  }
+}
 
-    background-size: var(--mod-sameerasw-zen_notab_img_size, 150px) !important;
+:root:has(
+    [mod-sameerasw_zen_empty_tab_logo="2"]
+  ) {
+  #browser:has([zen-empty-tab="true"][selected="true"]) .browserStack {
+        filter: saturate(0) !important;
+  }
+}
 
-    opacity: var(--mod-sameerasw-zen_notab_img_opacity, 1) !important;
+:root:has(
+    [mod-sameerasw_zen_empty_tab_logo="3"]
+  ) {
+  #browser:has([zen-empty-tab="true"][selected="true"]) .browserStack {
+        filter: saturate(0) !important;
 
-    @media -moz-pref( "mod.sameerasw.zen_notab_img_saturate") {
-      filter: saturate(0) !important;
-
-      @media -moz-pref( "mod.sameerasw.zen_notab_img_invert") {
         @media (prefers-color-scheme: light) {
           filter: saturate(0) invert(1) !important;
         }
-      }
-    }
   }
 }
+
 /* ============= Transparent Sidebar: Mask or Push ============= */
 
 :root:has(
@@ -391,6 +404,34 @@ tabpanels .browserStack browser {
   }
 }
 
+/* Custom background */
+@media -moz-pref("mod.sameerasw.zen_bg_img_enabled") {
+  @media -moz-pref("mod.sameerasw.zen_bg_img_not_fullscreen") {
+    #main-window::before {
+      content: "";
+      position: fixed;
+      inset: 0;
+      z-index: -1;
+      background: var(--mod-sameerasw-zen_bg_img) no-repeat center center fixed !important;
+      background-size: cover !important;
+      opacity: var(--mod-sameerasw-zen_bg_opacity, 1) !important;
+      filter: blur(var(--mod-sameerasw-zen_bg_blur, 0)) !important;
+    }
+  }
+  @media (display-mode: fullscreen) {
+      #main-window::before {
+        content: "";
+        position: fixed;
+        inset: 0;
+        z-index: -1;
+        background: var(--mod-sameerasw-zen_bg_img) no-repeat center center fixed !important;
+        background-size: cover !important;
+        opacity: var(--mod-sameerasw-zen_bg_opacity, 1) !important;
+        filter: blur(var(--mod-sameerasw-zen_bg_blur, 0)) !important;
+      }
+  }
+}
+
 /* Transparent glance */
 .zen-glance-background > vbox {
   @media -moz-pref( "mod.sameerasw.zen_transparent_glance_enabled") {
@@ -405,7 +446,7 @@ tabpanels .browserStack browser {
   );
   mask-repeat: no-repeat;
   mask-size: 100% 100%;
-  
+
   transition: all var(--zen-hidden-toolbar-transition), mask-image 0.3s ease-in-out 1s !important;
   }
 }
@@ -430,7 +471,7 @@ tabpanels .browserStack browser {
     gap: 6px !important;
     height: fit-content !important;
     backdrop-filter: blur(10px) !important;
-    
+
     toolbarbutton{
       margin: 0.5em !important;
     }
