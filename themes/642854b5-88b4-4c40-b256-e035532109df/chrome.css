@@ -181,6 +181,10 @@ tabpanels .browserStack browser {
     --zen-sidebar-width: var(--zen-sidebar-custom-width) !important;
     --actual-zen-sidebar-width: var(--zen-sidebar-custom-width) !important;
     width: var(--zen-sidebar-custom-width) !important;
+
+    #titlebar{
+      width: var(--zen-sidebar-width) !important;
+    }
   }
 
   #zen-toolbar-background, #zen-toolbar-background::after, .zen-toolbar-background, .zen-toolbar-background::after{
@@ -391,25 +395,44 @@ tabpanels .browserStack browser {
 .zen-glance-background > vbox {
   @media -moz-pref( "mod.sameerasw.zen_transparent_glance_enabled") {
     mask-image: linear-gradient(
-      to right,
-      black 0%,
-      black 4%,
-      transparent 7%,
-      transparent 93.5%,
-      black 96%,
-      black 100%
-    );
-    mask-repeat: no-repeat;
-    mask-size: 100% 100%;
+    to right,
+    black 0%,
+    black 3.7%,
+    transparent 6.7%,
+    transparent 93.3%,
+    black 96.3%,
+    black 100%
+  );
+  mask-repeat: no-repeat;
+  mask-size: 100% 100%;
+  
+  transition: all var(--zen-hidden-toolbar-transition), mask-image 0.3s ease-in-out 1s !important;
   }
 }
 
 .zen-glance-overlay > vbox {
   @media -moz-pref( "mod.sameerasw.zen_transparent_glance_enabled") {
     background-color: light-dark(#fff7, #0007) !important;
-    margin-top: 0.5% !important;
-    margin-bottom: 0.5% !important;
-    height: 99% !important;
-    border-radius: 1.5em !important;
+  border-radius: 1.5em !important;
+  border: 1px solid light-dark(#ffff, #fff3);
+  box-shadow:   4px 2px 60px light-dark(#0005, #0001), inset 0 2px 4px light-dark(#ffff, #fff3);
+  }
+}
+
+.zen-glance-sidebar-container{
+  @media -moz-pref( "mod.sameerasw.zen_transparent_glance_enabled") {
+    background-color: light-dark(#fff7, #0007) !important;
+    border-radius: 10em !important;
+    margin: 0.5em;
+    padding: 0 !important;
+    border: 1px solid light-dark(#ffff, #fff5);
+    box-shadow:   4px 2px 60px light-dark(#0005, #0001), inset 0 2px 4px light-dark(#ffff, #fff3);
+    gap: 6px !important;
+    height: fit-content !important;
+    backdrop-filter: blur(10px) !important;
+    
+    toolbarbutton{
+      margin: 0.5em !important;
+    }
   }
 }
