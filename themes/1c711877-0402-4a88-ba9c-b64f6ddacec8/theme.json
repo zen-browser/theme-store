@@ -1,0 +1,15 @@
+{
+    "id": "1c711877-0402-4a88-ba9c-b64f6ddacec8",
+    "name": "BiggerSpace",
+    "description": "Make workspace icons bigger and more legible everywhere.",
+    "homepage": "https://github.com/different55/BiggerSpace",
+    "style": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/1c711877-0402-4a88-ba9c-b64f6ddacec8/chrome.css",
+    "readme": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/1c711877-0402-4a88-ba9c-b64f6ddacec8/readme.md",
+    "image": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/1c711877-0402-4a88-ba9c-b64f6ddacec8/image.png",
+    "author": "different55",
+    "version": "1.0.0",
+    "tags": [],
+    "createdAt": "2025-02-02",
+    "updatedAt": "2025-02-02",
+    "preferences": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/1c711877-0402-4a88-ba9c-b64f6ddacec8/preferences.json"
+}
