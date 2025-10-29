@@ -8,8 +8,13 @@
 /* Reduced height */
 @media (-moz-bool-pref: "zen.view.compact.hide-tabbar") {
   :root[zen-compact-mode="true"] #navigator-toolbox {
-    top: 50% !important;
-    transform: translateY(-50%) !important;
+    top: calc((100vh - var(--theme-smaller_compact_mode-sidebar_height)*1vh)/2) !important;
     height: calc(var(--theme-smaller_compact_mode-sidebar_height) * 1vh) !important;
+
+    @media not (-moz-bool-pref: "zen.view.compact.hide-toolbar") {
+      & {
+        height: calc(var(--theme-smaller_compact_mode-sidebar_height) * 1vh - var(--zen-toolbar-height-with-bookmarks)) !important;
+      }
+    }
   }
 }
