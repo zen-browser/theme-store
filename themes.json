@@ -163,11 +163,11 @@
         "readme": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/2317fd93-c3ed-4f37-b55a-304c1816819e/readme.md",
         "image": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/2317fd93-c3ed-4f37-b55a-304c1816819e/image.png",
         "author": "Kaedriz",
-        "version": "1.3.0",
+        "version": "1.3.1",
         "preferences": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/2317fd93-c3ed-4f37-b55a-304c1816819e/preferences.json",
         "tags": [],
         "createdAt": "2024-12-06",
-        "updatedAt": "2025-05-28"
+        "updatedAt": "2025-10-29"
     },
     "c6813222-6571-4ba6-8faf-58f3343324f6": {
         "id": "c6813222-6571-4ba6-8faf-58f3343324f6",
@@ -632,12 +632,12 @@
         "image": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/5941aefd-67b0-453d-9b62-9071a31cbb0d/image.png",
         "author": "n7itro",
         "preferences": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/5941aefd-67b0-453d-9b62-9071a31cbb0d/preferences.json",
-        "version": "1.0.4",
+        "version": "1.0.5",
         "tags": [
             "tabs"
         ],
         "createdAt": "2024-08-31",
-        "updatedAt": "2025-10-23"
+        "updatedAt": "2025-10-29"
     },
     "20e8cc78-3dac-4db0-81a4-814672fb50af": {
         "id": "20e8cc78-3dac-4db0-81a4-814672fb50af",
@@ -1033,10 +1033,10 @@
         "readme": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/642854b5-88b4-4c40-b256-e035532109df/readme.md",
         "image": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/642854b5-88b4-4c40-b256-e035532109df/image.png",
         "author": "sameerasw",
-        "version": "1.16.3",
+        "version": "1.17.3",
         "tags": [],
         "createdAt": "2025-02-04",
-        "updatedAt": "2025-10-05",
+        "updatedAt": "2025-10-29",
         "preferences": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/642854b5-88b4-4c40-b256-e035532109df/preferences.json"
     },
     "ea1a5ace-f698-4b45-ab88-6e8bd3a563f0": {
@@ -1080,7 +1080,7 @@
         "version": "1.0.1",
         "tags": [],
         "createdAt": "2025-10-23",
-        "updatedAt": "2025-10-25",
+        "updatedAt": "2025-10-29",
         "preferences": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/e34745fd-2b7f-4c16-b03a-6e29e5c3f20a/preferences.json"
     },
     "79dde383-4fe7-404a-a8e6-9be440022542": {
