@@ -40,5 +40,11 @@
         "label": "Audio Wave: Color of the audio wave (When audio is muted).",
         "type": "string",
         "defaultValue": "color-mix(in srgb, -moz-dialogtext 50%, rgb(129, 0, 0) 50%)"
+    },
+    {
+        "property": "zen.mods.AudioIndicatorEnhanced.bigEssentialIcons.enabled",
+        "label": "Makes Essential icons bigger. (Doesn't work with Audio Wave mode)",
+        "type": "checkbox",
+        "defaultValue": false
     }
 ]
