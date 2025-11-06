@@ -1,0 +1,103 @@
+[
+    {
+        "property": "mod.devdinc.collapsed-styling.enabled",
+        "label": "Enabled",
+        "type": "dropdown",
+        "defaultValue": "enabledwithoutcompact",
+        "options": [
+            {
+                "label": "Only compact mode",
+                "value": "enabled"
+            },
+            {
+                "label": "true",
+                "value": "enabledwithoutcompact"
+            },
+            {
+                "label": "false",
+                "value": "false"
+            }
+        ]
+    },
+    {
+        "property": "mod.devdinc.collapsed-styling.panel-width",
+        "label": "Panel width",
+        "type": "string",
+        "defaultValue": "36px",
+        "placeholder": "zen default 66px, default 36px"
+    },
+    {
+        "property": "mod.devdinc.collapsed-styling.padding-size",
+        "label": "Padding size",
+        "type": "string",
+        "defaultValue": "4px",
+        "placeholder": "zen default 8px, default 4px"
+    },
+    {
+        "property": "mod.devdinc.collapsed-styling.gap",
+        "label": "Gap between some elements",
+        "type": "string",
+        "defaultValue": "0px",
+        "placeholder": "zen default 8px, default 0px"
+    },
+    {
+        "property": "mod.devdinc.collapsed-styling.tab-icon-size",
+        "label": "Tab icon size",
+        "type": "string",
+        "defaultValue": "16px",
+        "placeholder": "zen default 16px, default 16px"
+    },
+    {
+        "property": "mod.devdinc.collapsed-styling.button-icon-size",
+        "label": "Button icon size",
+        "type": "string",
+        "defaultValue": "16px",
+        "placeholder": "zen default 16px, default 16px"
+    },
+    {
+        "property": "mod.devdinc.collapsed-styling.workspace-icon-size",
+        "label": "Workspace icon size",
+        "type": "string",
+        "defaultValue": "14px",
+        "placeholder": "zen default 8px, default 14px"
+    },
+    {
+        "property": "mod.devdinc.collapsed-styling.tab-height",
+        "label": "Tab height",
+        "type": "string",
+        "defaultValue": "36px",
+        "placeholder": "zen default 40px, default 36px"
+    },
+    {
+        "property": "mod.devdinc.collapsed-styling.button-height",
+        "label": "Button height",
+        "type": "string",
+        "defaultValue": "36px",
+        "placeholder": "zen default 40px, default 36px"
+    },
+    {
+        "property": "mod.devdinc.collapsed-styling.workspace-button-height",
+        "label": "Workspace button height",
+        "type": "string",
+        "defaultValue": "20px",
+        "placeholder": "zen default 28px, default 20px"
+    },
+    {
+        "property": "mod.devdinc.collapsed-styling.background.enabled",
+        "label": "Enable custom background",
+        "type": "checkbox",
+        "defaultValue": true
+    },
+    {
+        "property": "mod.devdinc.collapsed-styling.background",
+        "label": "Background color (only compact mode)",
+        "type": "string",
+        "defaultValue": "var(--zen-main-browser-background-toolbar)"
+    },
+    {
+        "property": "mod.devdinc.collapsed-styling.disable-pin-seperator",
+        "label": "Disable pinned tab section seperator",
+        "type": "checkbox",
+        "defaultValue": false
+    }
+]
