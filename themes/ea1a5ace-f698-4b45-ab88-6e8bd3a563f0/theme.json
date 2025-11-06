@@ -1,15 +1,21 @@
 {
-    "id": "ea1a5ace-f698-4b45-ab88-6e8bd3a563f0",
-    "name": "Bookmark Toolbar Tweaks",
-    "description": "Center bookmarks, hide the icons!",
-    "homepage": "https://github.com/n7itro/Zen-Themes/",
-    "style": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/ea1a5ace-f698-4b45-ab88-6e8bd3a563f0/chrome.css",
-    "readme": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/ea1a5ace-f698-4b45-ab88-6e8bd3a563f0/readme.md",
-    "image": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/ea1a5ace-f698-4b45-ab88-6e8bd3a563f0/image.png",
-    "author": "n7itro",
-    "preferences": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/ea1a5ace-f698-4b45-ab88-6e8bd3a563f0/preferences.json",
-    "version": "1.2.2",
-    "tags": [],
-    "createdAt": "2024-08-19",
-    "updatedAt": "2025-01-26"
+  "id": "ea1a5ace-f698-4b45-ab88-6e8bd3a563f0",
+  "name": "Bookmark Toolbar Tweaks",
+  "description": "Comprehensive bookmarks toolbar customization: center, hide icons, transparent backgrounds, auto-hide with hover/search expand.",
+  "homepage": "https://github.com/zen-browser/theme-store/tree/main/themes/ea1a5ace-f698-4b45-ab88-6e8bd3a563f0/",
+  "style": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/ea1a5ace-f698-4b45-ab88-6e8bd3a563f0/chrome.css",
+  "readme": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/ea1a5ace-f698-4b45-ab88-6e8bd3a563f0/readme.md",
+  "image": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/ea1a5ace-f698-4b45-ab88-6e8bd3a563f0/image.png",
+  "author": "n7itro",
+  "preferences": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/ea1a5ace-f698-4b45-ab88-6e8bd3a563f0/preferences.json",
+  "version": "1.2.3",
+  "tags": [
+    "bookmarks",
+    "toolbar",
+    "transparency",
+    "auto-hide",
+    "customization"
+  ],
+  "createdAt": "2024-08-19",
+  "updatedAt": "2025-01-26"
 }
