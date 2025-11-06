@@ -1,0 +1,14 @@
+{
+    "id": "7302035f-1478-4a9b-ae4e-01736527bec4",
+    "name": "MacOS like buttons",
+    "description": "Mod for Zen Browser that changes the default window action buttons to look like macOS-style traffic lights.",
+    "homepage": "https://github.com/joach70/zen-macOS-style-menu?tab=readme-ov-file#zen-macos-like-window-action-buttons",
+    "style": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/7302035f-1478-4a9b-ae4e-01736527bec4/chrome.css",
+    "readme": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/7302035f-1478-4a9b-ae4e-01736527bec4/readme.md",
+    "image": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/7302035f-1478-4a9b-ae4e-01736527bec4/image.png",
+    "author": "joach70",
+    "version": "1.0.0",
+    "tags": [],
+    "createdAt": "2025-10-24",
+    "updatedAt": "2025-10-24"
+}
