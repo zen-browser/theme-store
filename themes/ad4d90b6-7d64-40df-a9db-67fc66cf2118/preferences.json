@@ -1,0 +1,15 @@
+[
+    {
+        "property": "mod.zen-light-up.enable",
+        "label": "Enable custom transparency",
+        "type": "checkbox",
+        "defaultValue": false
+    },
+    {
+        "property": "mod.zen-light-up.transparency",
+        "label": "Set custom transparency",
+        "type": "string",
+        "placeholder": "0.4",
+        "defaultValue": "0.4"
+    }
+]
