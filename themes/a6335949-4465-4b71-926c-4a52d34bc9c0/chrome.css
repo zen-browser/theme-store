@@ -6,6 +6,14 @@
 	--better-findbar-position-bottom: 15px;
 	--better-findbar-position-left: 50%;
 	--better-findbar-position-right: auto;
+	--better-findbar-background-color: var(--zen-primary-color);
+}
+
+/* Custom background */
+@media (-moz-bool-pref: "theme-better_find_bar-enable_custom_background") {
+	:root {
+		--better-findbar-background-color: var(--theme-better_find_bar-custom_background);
+	}
 }
 
 findbar {
@@ -29,7 +37,7 @@ findbar {
 	overflow: unset !important;
 	box-shadow: var(--box-shadow-10);
 
-	background: var(--zen-primary-color) !important;
+	background: var(--better-findbar-background-color) !important;
 	border: 1px solid var(--input-border-color) !important;
 
 	transition: transform 0.35s ease !important;
@@ -59,6 +67,13 @@ findbar {
 
 	@starting-style {
 		transform: translateX(var(--better-findbar-transform-translateX)) translateY(var(--better-findbar-transform-translateY));
+	}
+}
+
+/* Disable animations */
+@media (-moz-bool-pref: "theme.better_find_bar.instant_animations") {
+	findbar, findbar .findbar-container {
+		transition: initial !important;
 	}
 }
 
@@ -95,7 +110,7 @@ body:has(
 	findbar .findbar-textbox:not([status="notfound"]) {
 		backdrop-filter: blur(8px);
 
-		background: color-mix(in hsl, var(--zen-primary-color), transparent 10%) !important;
+		background: color-mix(in hsl, var(--better-findbar-background-color), transparent 10%) !important;
 	}
 }
 
