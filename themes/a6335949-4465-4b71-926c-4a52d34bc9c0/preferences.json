@@ -1,5 +1,17 @@
 [
     {
+        "property": "theme.better_find_bar.custom_background",
+        "label": "Custom background CSS",
+        "type": "string",
+        "defaultValue": ""
+    },
+    {
+        "property": "theme-better_find_bar-enable_custom_background",
+        "label": "Enable custom background CSS",
+        "type": "checkbox",
+        "defaultValue": false
+    },
+    {
         "property": "theme.better_find_bar.transparent_background",
         "label": "Transparent background (disable it if the background blur doesn't work)",
         "type": "checkbox",
@@ -122,6 +134,12 @@
                 "value": "hide_on_disable"
             }
         ]
+    },
+    {
+        "property": "theme.better_find_bar.instant_animations",
+        "label": "Instant animations",
+        "type": "checkbox",
+        "defaultValue": false
     },
     {
         "property": "theme.better_find_bar.hide_find_status",
