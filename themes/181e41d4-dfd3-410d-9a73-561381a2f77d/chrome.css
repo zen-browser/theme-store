@@ -19,3 +19,5 @@
         }
     }
 }
+
+.unified-extensions-item-action-button .toolbarbutton-text { display: flex !important; }
