@@ -112,7 +112,7 @@
         "image": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/a6335949-4465-4b71-926c-4a52d34bc9c0/image.png",
         "author": "RobotoSkunk",
         "preferences": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/a6335949-4465-4b71-926c-4a52d34bc9c0/preferences.json",
-        "version": "1.3.5",
+        "version": "1.5.0",
         "tags": [
             "find",
             "bar",
@@ -122,7 +122,7 @@
             "search-bar"
         ],
         "createdAt": "2024-11-24",
-        "updatedAt": "2025-09-18"
+        "updatedAt": "2025-11-16"
     },
     "a7125691-139e-4a62-aad9-06c6e9f2e5ba": {
         "id": "a7125691-139e-4a62-aad9-06c6e9f2e5ba",
@@ -662,10 +662,10 @@
         "readme": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/181e41d4-dfd3-410d-9a73-561381a2f77d/readme.md",
         "image": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/181e41d4-dfd3-410d-9a73-561381a2f77d/image.png",
         "author": "dagadtwok",
-        "version": "1.0.0",
+        "version": "1.0.1",
         "tags": [],
         "createdAt": "2025-10-21",
-        "updatedAt": "2025-10-22"
+        "updatedAt": "2025-11-16"
     },
     "253a3a74-0cc4-47b7-8b82-996a64f030d5": {
         "id": "253a3a74-0cc4-47b7-8b82-996a64f030d5",
