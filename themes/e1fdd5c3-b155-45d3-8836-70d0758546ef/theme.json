@@ -1,0 +1,15 @@
+{
+    "id": "e1fdd5c3-b155-45d3-8836-70d0758546ef",
+    "name": "zen spotlight search",
+    "description": "Blur and/or darken pages behind your search bar for a more focused experience.",
+    "homepage": "https://github.com/alpegasus/zen-spotlight-search",
+    "style": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/e1fdd5c3-b155-45d3-8836-70d0758546ef/chrome.css",
+    "readme": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/e1fdd5c3-b155-45d3-8836-70d0758546ef/readme.md",
+    "image": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/e1fdd5c3-b155-45d3-8836-70d0758546ef/image.png",
+    "author": "alpegasus",
+    "version": "1.0.0",
+    "tags": [],
+    "createdAt": "2025-11-09",
+    "updatedAt": "2025-11-09",
+    "preferences": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/e1fdd5c3-b155-45d3-8836-70d0758546ef/preferences.json"
+}
