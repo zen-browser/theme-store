@@ -1,0 +1,8 @@
+[
+    {
+        "property": "minimal-findbar.enable-acrylic",
+        "label": "Enable acrylic/blurred backdrop",
+        "type": "checkbox",
+        "defaultValue": true
+    }
+]

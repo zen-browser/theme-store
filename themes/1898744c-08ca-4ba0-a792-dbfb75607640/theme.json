@@ -1,0 +1,15 @@
+{
+    "id": "1898744c-08ca-4ba0-a792-dbfb75607640",
+    "name": "Cleaner Findbar",
+    "description": "Makes the findbar (Ctrl + F) look like the findbar in arc browser",
+    "homepage": "https://github.com/kritishd8/Zen-Mods/tree/main/Minimal-Findbar",
+    "style": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/1898744c-08ca-4ba0-a792-dbfb75607640/chrome.css",
+    "readme": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/1898744c-08ca-4ba0-a792-dbfb75607640/readme.md",
+    "image": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/1898744c-08ca-4ba0-a792-dbfb75607640/image.png",
+    "author": "kritishd8",
+    "version": "1.0.0",
+    "tags": [],
+    "createdAt": "2025-11-26",
+    "updatedAt": "2025-11-26",
+    "preferences": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/1898744c-08ca-4ba0-a792-dbfb75607640/preferences.json"
+}
