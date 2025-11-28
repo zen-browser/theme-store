@@ -1,0 +1,56 @@
+
+#urlbar-container {
+    background: transparent !important;
+}
+
+html[zen-compact-mode="false"] {
+    #zen-appcontent-navbar-container[zen-user-show] {
+        height: var(--zen-element-separation) !important;
+        
+        toolbarbutton {
+            opacity: 0 !important;
+        }
+        
+        .titlebar-buttonbox-container {
+            opacity: 0 !important;
+        }
+        
+        #urlbar:not([open]) {
+            opacity: 0 !important;   
+            height: 0 !important;
+            width: 0 !important;
+        }
+    }
+
+#navigator-toolbox[zen-user-show] {
+        display: none !important;
+        
+        html:not([zen-right-side="true"]) & ~ #zen-appcontent-wrapper .titlebar-buttonbox-container {
+            margin-left: -6px !important;
+        }
+
+&[zen-sidebar-expanded="true"] {
+            ~ #zen-sidebar-splitter {
+                display: none !important;
+            }
+
+~ #zen-appcontent-wrapper {
+                padding-left: var(--zen-element-separation);
+            }
+
+html[zen-right-side="true"] & ~ #zen-appcontent-wrapper {
+                padding-right: var(--zen-element-separation);
+                padding-left: 0;
+            }
+        }
+
+~ #zen-appcontent-wrapper {
+            padding-left: var(--zen-element-separation);
+        }
+
+html[zen-right-side="true"] & ~ #zen-appcontent-wrapper {
+            padding-right: var(--zen-element-separation);
+            padding-left: 0;
+        }
+    }
+}
