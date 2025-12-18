@@ -12,7 +12,7 @@
     --zen-toolbox-min-width: 1px !important;
     --zen-sidebar-width: var(--zen-toolbox-max-width) !important;
     
-    @media (-moz-bool-pref: "theme.sidebar_expand_on_hover.hide_workspace_indicator") {
+    @media (-moz-pref("theme.sidebar_expand_on_hover.hide_workspace_indicator")) {
         #zen-current-workspace-indicator-container {
             display: none !important;
         }
@@ -63,7 +63,7 @@
         }
     }
 
-    @media (not (-moz-bool-pref: "zen.view.use-single-toolbar")) {
+    @media not (-moz-pref("zen.view.use-single-toolbar")) {
 
             #navigator-toolbox {
                 margin-top: var(--zen-toolbar-height) !important;
@@ -75,7 +75,7 @@
     }
     
     /* Move topbar buttons in the now empty space */
-    @media (not (-moz-bool-pref: "zen.view.use-single-toolbar")) and (not (-moz-platform: macos)) {
+    @media (not (-moz-pref("zen.view.use-single-toolbar"))) and (not (-moz-platform: macos)) {
         #browser:has(#navigator-toolbox:not([zen-right-side="true"])) {
             #zen-appcontent-wrapper {
                 overflow: visible !important;
@@ -274,7 +274,7 @@
             margin-inline: 0 !important;
         }
 
-        @media not (-moz-bool-pref: "theme.sidebar_expand_on_hover.collapse_buttons") {
+        @media not (-moz-pref("theme.sidebar_expand_on_hover.collapse_buttons")) {
             #zen-sidebar-bottom-buttons > :not(:first-child)
             {
                 flex-grow: 0 !important;
@@ -284,7 +284,7 @@
             }
         }
 
-        @media (-moz-bool-pref: "theme.sidebar_expand_on_hover.collapse_buttons") {
+        @media (-moz-pref("theme.sidebar_expand_on_hover.collapse_buttons")) {
             /* Show first child only when no visible workspace switcher */
             #zen-sidebar-bottom-buttons:not(:has(#zen-workspaces-button:not([dont-show="true"]))) > :not(:first-child),
             /* Show active workspace only when visible workspace switcher */
@@ -310,7 +310,7 @@
             padding-right: 0 !important;
         }
         
-        @media (-moz-bool-pref: "zen.view.use-single-toolbar") {
+        @media (-moz-pref("zen.view.use-single-toolbar")) {
             #nav-bar {
                 direction: ltr !important;
             }

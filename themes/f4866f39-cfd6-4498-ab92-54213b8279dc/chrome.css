@@ -61,7 +61,9 @@
 
 .tab-reset-button {
   transition: background-color 0.3s ease-in-out; /* Smooth transition for background-color */
-} /* Transition properties for tab background */
+}
+
+/* Transition properties for tab background */
 .tab-background {
   transition:
     background-color 0.4s ease,

@@ -9,7 +9,7 @@
 	--tab-indicator-width: 4px;
 }
 
-@media not (-moz-bool-pref: "zen.view.sidebar-expanded") {
+@media not (-moz-pref("zen.view.sidebar-expanded")) {
   /* confine tab side indicator to rounded tab box */
   .tab-background {
     position: relative;
@@ -97,14 +97,14 @@
 	  }
 	  
     /* show title on pinned tabs as well */
-    @media (-moz-bool-pref: "uc.theme.comptitle-enable-pinned.enabled") {
+    @media (-moz-pref("uc.theme.comptitle-enable-pinned.enabled")) {
       .tab-label-container {
         width: var(--comptitle-width) !important;
       }
     }
     
     /* use active text color for all tab titles */
-    @media (-moz-bool-pref: "uc.theme.comptitle-default-text.enabled") {
+    @media (-moz-pref("uc.theme.comptitle-default-text.enabled")) {
       .tab-label-container {
         color: var(--text-color);
       }

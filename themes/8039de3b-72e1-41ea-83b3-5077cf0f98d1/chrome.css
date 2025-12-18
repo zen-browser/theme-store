@@ -6,13 +6,13 @@
   --mod-browser-translate-x: var(--user-tab-movement, 2%); 
 }
 
-@media (-moz-bool-pref: "tab-shadow-enabled") {
+@media (-moz-pref("tab-shadow-enabled")) {
   .browserStack browser {
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.75);
   }
 }
 
-@media (-moz-bool-pref: "border-shadow-disabled") {
+@media (-moz-pref("border-shadow-disabled")) {
   hbox.browserSidebarContainer,
   #zen-tabbox-wrapper {
     box-shadow: none !important;

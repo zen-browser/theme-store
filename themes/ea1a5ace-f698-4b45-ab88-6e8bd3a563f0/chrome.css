@@ -10,41 +10,41 @@ menuitem.bookmark-item[label*="github"] .menu-icon {
 }
 
 /* Center the bookmarks toolbar */
-@media (-moz-bool-pref: "uc.bookmarks.center-toolbar") {
+@media (-moz-pref("uc.bookmarks.center-toolbar")) {
   #PlacesToolbarItems {
     justify-content: center;
   }
 }
 
 /* Positioning bookmarks toolbar direction */
-:root:has(#theme-Bookmark-Toolbar-Tweaks[uc-bookmarks-position-toolbar="left"]) {
+@media (-moz-pref("uc.bookmarks.position-toolbar", "left")) {
   #PlacesToolbarItems {
     direction: ltr;
   }
 }
 
-:root:has(#theme-Bookmark-Toolbar-Tweaks[uc-bookmarks-position-toolbar="right"]) {
+@media (-moz-pref("uc.bookmarks.position-toolbar", "right")) {
   #PlacesToolbarItems {
     direction: rtl;
   }
 }
 
 /* Hide folder icons in the bookmarks toolbar */
-@media (-moz-bool-pref: "uc.bookmarks.hide-folder-icons") {
+@media (-moz-pref("uc.bookmarks.hide-folder-icons")) {
   .bookmark-item[container="true"] .toolbarbutton-icon {
     display: none;
   }
 }
 
 /* Hide favicons in the bookmarks toolbar */
-@media (-moz-bool-pref: "uc.bookmarks.hide-favicons") {
+@media (-moz-pref("uc.bookmarks.hide-favicons")) {
   .bookmark-item:not([container]) .toolbarbutton-icon {
     display: none;
   }
 }
 
 /* Hide bookmark labels */
-@media (-moz-bool-pref: "uc.bookmarks.hide-name") {
+@media (-moz-pref("uc.bookmarks.hide-name")) {
   #personal-bookmarks .bookmark-item:not([container]) .toolbarbutton-text {
     display: none !important;
   }
@@ -67,8 +67,7 @@ menuitem.bookmark-item[label*="github"] .menu-icon {
 }
 
 /* Enhanced transparent bookmarks toolbar styles */
-@media (-moz-bool-pref: "uc.bookmarks.transparent") {
-
+@media (-moz-pref("uc.bookmarks.transparent")) {
   /* More transparent bookmark buttons */
   #personal-bookmarks toolbarbutton.bookmark-item {
     background-color: color-mix(in hsl, var(--zen-colors-tertiary), transparent 10%) !important;
@@ -98,8 +97,7 @@ menuitem.bookmark-item[label*="github"] .menu-icon {
 }
 
 /* Base styles for hiding bookmarks toolbar and remove extra height */
-@media (-moz-bool-pref: "uc.bookmarks.expand-on-search") or (-moz-bool-pref: "uc.bookmarks.expand-on-hover") {
-
+@media (-moz-pref("uc.bookmarks.expand-on-search")) or (-moz-pref("uc.bookmarks.expand-on-hover")) {
   /* Only apply hiding when bookmarks toolbar is actually enabled */
   #PersonalToolbar:not([collapsed]):not([customizing]) {
     position: relative;
@@ -117,14 +115,14 @@ menuitem.bookmark-item[label*="github"] .menu-icon {
 }
 
 /* Expand the bookmarks toolbar by hovering */
-@media (-moz-bool-pref: "uc.bookmarks.expand-on-hover") {
+@media (-moz-pref("uc.bookmarks.expand-on-hover")) {
   #zen-appcontent-navbar-container:hover #PersonalToolbar:not([collapsed]) {
     transform: rotateX(0deg) !important;
   }
 }
 
 /* Expand the bookmarks toolbar when you search */
-@media (-moz-bool-pref: "uc.bookmarks.expand-on-search") {
+@media (-moz-pref("uc.bookmarks.expand-on-search")) {
   #nav-bar:focus-within+#PersonalToolbar:not([collapsed]) {
     transform: rotateX(0deg) !important;
   }

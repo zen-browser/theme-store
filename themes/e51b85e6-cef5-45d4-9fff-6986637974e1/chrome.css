@@ -1,12 +1,11 @@
-
 #zen-toast-container {
   top: calc(var(--zen-element-separation) * 6) !important;
   
-  :root:not([zen-right-side='true']) & {
+  :root:not([zen-right-side="true"]) & {
     right: calc(var(--zen-element-separation) * 2) !important;
   }
 
-  :root[zen-right-side='true'] & {
+  :root[zen-right-side="true"] & {
     left: calc(var(--zen-element-separation) * 2) !important;
   }
 
@@ -31,5 +30,4 @@
       transition: 0.3s !important;
     }
   }
-
 }
