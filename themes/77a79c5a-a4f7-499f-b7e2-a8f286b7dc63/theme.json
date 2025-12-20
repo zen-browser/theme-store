@@ -1,0 +1,14 @@
+{
+    "id": "77a79c5a-a4f7-499f-b7e2-a8f286b7dc63",
+    "name": "Hide Audio Icon",
+    "description": "Minimalist Zen Browser mod to remove audio/mute indicators from the sidebar.",
+    "homepage": "https://github.com/Noyoth/zen-hide-audio-icons",
+    "style": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/77a79c5a-a4f7-499f-b7e2-a8f286b7dc63/chrome.css",
+    "readme": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/77a79c5a-a4f7-499f-b7e2-a8f286b7dc63/readme.md",
+    "image": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/77a79c5a-a4f7-499f-b7e2-a8f286b7dc63/image.png",
+    "author": "Noyoth",
+    "version": "1.0.0",
+    "tags": [],
+    "createdAt": "2025-12-20",
+    "updatedAt": "2025-12-20"
+}
