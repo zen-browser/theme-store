@@ -1,0 +1,165 @@
+
+/* Monokai Ristretto Theme for Zen Browser */
+
+:root {
+  /* Primary colors */
+  --zen-colors-primary: #5b5353 !important;
+  --zen-primary-color: #f38d70 !important;
+  --zen-colors-secondary: #5b5353 !important;
+  --zen-colors-tertiary: #403838 !important;
+  --zen-colors-border: #f38d70 !important;
+  --toolbarbutton-icon-fill: #f38d70 !important;
+
+/* Text colors */
+  --lwt-text-color: #fff1f3 !important;
+  --toolbar-field-color: #fff1f3 !important;
+  --tab-selected-textcolor: #fff1f3 !important;
+  --toolbar-field-focus-color: #fff1f3 !important;
+  --newtab-text-primary-color: #fff1f3 !important;
+  --arrowpanel-color: #fff1f3 !important;
+  --sidebar-text-color: #fff1f3 !important;
+  --lwt-sidebar-text-color: #fff1f3 !important;
+
+/* Background colors */
+  --arrowpanel-background: #2c2525 !important;
+  --lwt-sidebar-background-color: #2c2525 !important;
+  --toolbar-bgcolor: #2c2525 !important;
+  --newtab-background-color: #2c2525 !important;
+  --zen-themed-toolbar-bg: #2c2525 !important;
+  --zen-main-browser-background: #2c2525 !important;
+  --tab-selected-bgcolor: transparent !important;
+  --autocomplete-popup-highlight-background: #403838 !important;
+  --toolbar-field-background-color: #2c2525 !important;
+  --toolbar-field-focus-background-color: #2c2525 !important;
+}
+
+/* Text - ensure white throughout */
+#sidebar-box, .sidebar-panel, .tab-label, .tab-text,
+#zen-workspaces-button, #zen-workspaces-button *,
+.zen-workspace-name, [class*="workspace"] {
+  color: #fff1f3 !important;
+}
+
+/* URL bar input */
+#urlbar-input, .urlbar-input {
+  color: #fff1f3 !important;
+}
+
+#urlbar-input::selection, .urlbar-input::selection {
+  background-color: #f38d70 !important;
+  color: #2c2525 !important;
+}
+
+/* URL bar background */
+.urlbar-background, #urlbar-background,
+#urlbar[focused] .urlbar-background,
+#urlbar .urlbar-input-container {
+  background: #2c2525 !important;
+}
+
+/* URL bar dropdown */
+.urlbarView, #urlbar-results, .urlbarView-body-outer, .urlbarView-body-inner {
+  background: #2c2525 !important;
+}
+
+.urlbarView-row .urlbarView-title {
+  color: #fff1f3 !important;
+}
+
+.urlbarView-row .urlbarView-url {
+  color: #f38d70 !important;
+}
+
+/* URL bar selected row */
+.urlbarView-row[selected] {
+  background: #403838 !important;
+  border: 2px solid #fd6883 !important;
+  border-radius: 6px !important;
+  margin: 2px 4px !important;
+}
+
+.urlbarView-row[selected] *,
+.urlbarView-row[selected] .urlbarView-title,
+.urlbarView-row[selected] .urlbarView-secondary {
+  color: #fff1f3 !important;
+}
+
+.urlbarView-row[selected] .urlbarView-url {
+  color: #f38d70 !important;
+}
+
+/* Tabs - selected state */
+.tabbrowser-tab[selected] .tab-background,
+.tabbrowser-tab[visuallyselected] .tab-background {
+  background: transparent !important;
+  border: 2px solid #fd6883 !important;
+  border-radius: 6px !important;
+}
+
+.tabbrowser-tab[selected] .tab-label,
+.tabbrowser-tab[visuallyselected] .tab-label {
+  color: #fff1f3 !important;
+}
+
+/* Tabs - non-selected state */
+.tabbrowser-tab:not([selected]) .tab-background {
+  background: transparent !important;
+}
+
+/* Main backgrounds */
+#zen-main-app-wrapper, #zen-appcontent-wrapper, #zen-sidebar-splitter {
+  appearance: unset !important;
+  background: #2c2525 !important;
+}
+
+.sidebar-placesTree, #zen-workspaces-button, #TabsToolbar, hbox#titlebar,
+#zen-appcontent-navbar-container {
+  background-color: #2c2525 !important;
+}
+
+/* Separator lines */
+hr, toolbarseparator {
+  border-color: #5b5353 !important;
+  background: transparent !important;
+}
+
+/* Container tab colors */
+.identity-color-blue { --identity-tab-color: #85dacc !important; }
+.identity-color-green { --identity-tab-color: #adda78 !important; }
+.identity-color-yellow { --identity-tab-color: #f9cc6c !important; }
+.identity-color-orange { --identity-tab-color: #f38d70 !important; }
+.identity-color-red { --identity-tab-color: #fd6883 !important; }
+.identity-color-purple { --identity-tab-color: #a8a9eb !important; }
+
+/* Remove borders from search dropdown */
+.urlbarView, #urlbar-results, .urlbarView-body-outer, .urlbarView-body-inner,
+#PopupAutoComplete, panel[type="autocomplete"], #urlbar-container, #urlbar, .urlbar-input-box {
+  border: none !important;
+  box-shadow: none !important;
+  outline: none !important;
+}
+
+/* New Tab page */
+#newtab-container, .contentWrapper, body[class*="newtab"], #root, .outer-wrapper {
+  background-color: #2c2525 !important;
+}
+
+/* Browser content area */
+browser[type="content"], #browser, #tabbrowser-tabpanels, .browserContainer {
+  background-color: #2c2525 !important;
+}
+
+/* New tab text */
+.title, .search-wrapper input, .top-site-outer .title {
+  color: #fff1f3 !important;
+}
+
+/* New Tab button */
+#tabs-newtab-button, .tabs-newtab-button {
+  background-color: #4a3f3f !important;
+  border-radius: 6px !important;
+}
+
+#tabs-newtab-button:hover, .tabs-newtab-button:hover {
+  background-color: #5b4e4e !important;
+}
