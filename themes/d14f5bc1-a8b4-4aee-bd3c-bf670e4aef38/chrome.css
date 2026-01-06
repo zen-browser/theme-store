@@ -1,0 +1,218 @@
+
+/* Horizontal Pins - Makes pinned tabs horizontal and scrollable at the top of the sidebar. */
+
+:root {
+    --horizontal-pins-height: 42px;
+    --horizontal-pins-gap: 4px;
+    --horizontal-pins-padding: 6px;
+}
+
+/* Tab size options */
+@media (-moz-bool-pref: "uc.horizontal-pins.size.small") {
+    :root {
+        --horizontal-pins-height: 36px;
+    }
+}
+
+@media (-moz-bool-pref: "uc.horizontal-pins.size.large") {
+    :root {
+        --horizontal-pins-height: 50px;
+    }
+}
+
+/* Parent container - ensure no background and proper sizing */
+#vertical-pinned-tabs-container {
+    background: transparent !important;
+    background-color: transparent !important;
+    overflow: hidden !important;
+}
+
+/* Main container - CSS GRID single row */
+.zen-workspace-pinned-tabs-section,
+#vertical-pinned-tabs-container > .zen-workspace-tabs-section {
+    /* CSS Grid - single row, auto columns */
+    display: grid !important;
+    grid-auto-flow: column !important;
+    grid-auto-columns: var(--horizontal-pins-height) !important;
+    grid-template-rows: var(--horizontal-pins-height) !important;
+
+/* Scrolling */
+    overflow-x: auto !important;
+    overflow-y: hidden !important;
+
+/* Sizing - fit content exactly */
+    width: fit-content !important;
+    min-width: 0 !important;
+    max-width: 100% !important;
+    height: calc(var(--horizontal-pins-height) + var(--horizontal-pins-padding) * 2) !important;
+
+/* Spacing */
+    gap: var(--horizontal-pins-gap) !important;
+    padding: var(--horizontal-pins-padding) !important;
+    margin: 0 !important;
+
+/* Alignment */
+    align-items: center !important;
+    justify-content: start !important;
+
+/* Scroll behavior */
+    scroll-behavior: smooth !important;
+    scrollbar-width: thin !important;
+
+/* Remove any background that could cause black box */
+    background: transparent !important;
+}
+
+/* Hide scrollbar option */
+@media (-moz-bool-pref: "uc.horizontal-pins.hide-scrollbar") {
+    .zen-workspace-pinned-tabs-section,
+    #vertical-pinned-tabs-container > .zen-workspace-tabs-section {
+        scrollbar-width: none !important;
+    }
+}
+
+/* Individual tabs */
+.zen-workspace-pinned-tabs-section > .tabbrowser-tab,
+.zen-workspace-pinned-tabs-section > *,
+#vertical-pinned-tabs-container > .zen-workspace-tabs-section > .tabbrowser-tab,
+#vertical-pinned-tabs-container > .zen-workspace-tabs-section > * {
+    /* Size - perfect square */
+    width: var(--horizontal-pins-height) !important;
+    min-width: var(--horizontal-pins-height) !important;
+    max-width: var(--horizontal-pins-height) !important;
+    height: var(--horizontal-pins-height) !important;
+    min-height: var(--horizontal-pins-height) !important;
+    max-height: var(--horizontal-pins-height) !important;
+
+/* Prevent overflow */
+    overflow: hidden !important;
+
+/* Reset */
+    margin: 0 !important;
+    padding: 0 !important;
+}
+
+/* Tab stack - constrain to perfect square */
+.zen-workspace-pinned-tabs-section .tabbrowser-tab .tab-stack,
+#vertical-pinned-tabs-container .tabbrowser-tab .tab-stack {
+    width: var(--horizontal-pins-height) !important;
+    min-width: var(--horizontal-pins-height) !important;
+    max-width: var(--horizontal-pins-height) !important;
+    height: var(--horizontal-pins-height) !important;
+    min-height: var(--horizontal-pins-height) !important;
+    max-height: var(--horizontal-pins-height) !important;
+    overflow: hidden !important;
+}
+
+/* Tab content - constrain to perfect square */
+.zen-workspace-pinned-tabs-section .tabbrowser-tab .tab-content,
+#vertical-pinned-tabs-container .tabbrowser-tab .tab-content {
+    width: var(--horizontal-pins-height) !important;
+    min-width: var(--horizontal-pins-height) !important;
+    max-width: var(--horizontal-pins-height) !important;
+    height: var(--horizontal-pins-height) !important;
+    padding: 0 !important;
+    margin: 0 !important;
+    justify-content: center !important;
+    align-items: center !important;
+}
+
+/* Hide labels, close button, and reset button - icon only */
+.zen-workspace-pinned-tabs-section .tabbrowser-tab .tab-label-container,
+.zen-workspace-pinned-tabs-section .tabbrowser-tab .tab-close-button,
+.zen-workspace-pinned-tabs-section .tabbrowser-tab .tab-reset-button,
+#vertical-pinned-tabs-container .tabbrowser-tab .tab-label-container,
+#vertical-pinned-tabs-container .tabbrowser-tab .tab-close-button,
+#vertical-pinned-tabs-container .tabbrowser-tab .tab-reset-button {
+    display: none !important;
+}
+
+/* Center favicon */
+.zen-workspace-pinned-tabs-section .tabbrowser-tab .tab-icon-stack,
+#vertical-pinned-tabs-container .tabbrowser-tab .tab-icon-stack {
+    margin: auto !important;
+    position: relative !important;
+    left: 0 !important;
+    transform: none !important;
+}
+
+/* Fix loading spinner - keep it contained and centered */
+.zen-workspace-pinned-tabs-section .tabbrowser-tab .tab-throbber,
+.zen-workspace-pinned-tabs-section .tabbrowser-tab .tab-icon-pending,
+#vertical-pinned-tabs-container .tabbrowser-tab .tab-throbber,
+#vertical-pinned-tabs-container .tabbrowser-tab .tab-icon-pending {
+    margin: auto !important;
+    position: static !important;
+    transform: none !important;
+}
+
+/* Ensure tab doesn't expand during loading */
+.zen-workspace-pinned-tabs-section .tabbrowser-tab[busy],
+.zen-workspace-pinned-tabs-section .tabbrowser-tab[progress],
+#vertical-pinned-tabs-container .tabbrowser-tab[busy],
+#vertical-pinned-tabs-container .tabbrowser-tab[progress] {
+    width: var(--horizontal-pins-height) !important;
+    min-width: var(--horizontal-pins-height) !important;
+    max-width: var(--horizontal-pins-height) !important;
+}
+
+/* Tab background styling - perfect rounded square with uniform corners */
+.zen-workspace-pinned-tabs-section .tabbrowser-tab .tab-background,
+#vertical-pinned-tabs-container .tabbrowser-tab .tab-background {
+    border-radius: 8px !important;
+    width: var(--horizontal-pins-height) !important;
+    min-width: var(--horizontal-pins-height) !important;
+    max-width: var(--horizontal-pins-height) !important;
+    height: var(--horizontal-pins-height) !important;
+    min-height: var(--horizontal-pins-height) !important;
+    max-height: var(--horizontal-pins-height) !important;
+    margin: 0 !important;
+    padding: 0 !important;
+}
+
+/* Separator - hide in horizontal mode since it's designed for vertical layout */
+/* This element contains the "close all unpinned tabs" button and separator line */
+.vertical-pinned-tabs-container-separator,
+.pinned-tabs-container-separator {
+    display: none !important;
+}
+
+/* Optional: Show background behind pinned section */
+@media (-moz-bool-pref: "uc.horizontal-pins.show-background") {
+    .zen-workspace-pinned-tabs-section,
+    #vertical-pinned-tabs-container > .zen-workspace-tabs-section {
+        background: color-mix(in srgb, var(--zen-colors-secondary, gray) 10%, transparent) !important;
+        border-radius: 8px !important;
+    }
+}
+
+/* Optional: Show borders on tabs */
+@media (-moz-bool-pref: "uc.horizontal-pins.show-borders") {
+    .zen-workspace-pinned-tabs-section .tabbrowser-tab .tab-background,
+    #vertical-pinned-tabs-container .tabbrowser-tab .tab-background {
+        border: 1px solid color-mix(in srgb, var(--zen-colors-border, gray) 50%, transparent) !important;
+    }
+}
+
+/* Optional: Hide unloaded tab indicator on pinned tabs */
+@media (-moz-bool-pref: "uc.horizontal-pins.hide-unloaded-indicator") {
+    .zen-workspace-pinned-tabs-section .tabbrowser-tab[pending] .tab-icon-overlay,
+    .zen-workspace-pinned-tabs-section .tabbrowser-tab .tab-icon-overlay:not([soundplaying]):not([muted]),
+    #vertical-pinned-tabs-container .tabbrowser-tab[pending] .tab-icon-overlay,
+    #vertical-pinned-tabs-container .tabbrowser-tab .tab-icon-overlay:not([soundplaying]):not([muted]) {
+        display: none !important;
+    }
+}
+
+/* Optional: Hide workspaces/spaces indicator */
+@media (-moz-bool-pref: "uc.horizontal-pins.hide-workspaces") {
+    #zen-workspaces-button,
+    #zen-current-workspace-indicator,
+    .zen-workspace-indicator,
+    .zen-workspaces-button,
+    #zen-workspaces-wrapper,
+    [id*="workspace-indicator"],
+    [class*="workspace-indicator"] {
+        display: none !important;
+    }
+}
