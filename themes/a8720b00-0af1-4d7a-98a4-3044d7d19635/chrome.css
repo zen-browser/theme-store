@@ -1,0 +1,8 @@
+
+@-moz-document url-prefix("chrome:") {
+    #back-button, /* Hides the back button */
+    #forward-button /* Hides the forward button */ 
+    {
+      display: none !important;
+    }
+  }
