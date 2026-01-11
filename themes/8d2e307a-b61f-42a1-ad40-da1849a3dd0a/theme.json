@@ -1,0 +1,14 @@
+{
+    "id": "8d2e307a-b61f-42a1-ad40-da1849a3dd0a",
+    "name": "Spacious Context Menu",
+    "description": "A mod which adds more padding to Zen's context menu.",
+    "homepage": "https://github.com/TimurCravtov/ZenSpaciousContextMenu",
+    "style": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/8d2e307a-b61f-42a1-ad40-da1849a3dd0a/chrome.css",
+    "readme": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/8d2e307a-b61f-42a1-ad40-da1849a3dd0a/readme.md",
+    "image": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/8d2e307a-b61f-42a1-ad40-da1849a3dd0a/image.png",
+    "author": "TimurCravtov",
+    "version": "1.0.0",
+    "tags": [],
+    "createdAt": "2026-01-11",
+    "updatedAt": "2026-01-11"
+}
