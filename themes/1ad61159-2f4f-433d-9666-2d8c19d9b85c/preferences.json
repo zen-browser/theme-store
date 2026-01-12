@@ -1,0 +1,19 @@
+[
+    {
+        "property": "theme.glance-control-alignment.position",
+        "label": "Position",
+        "type": "dropdown",
+        "disabledOn": [],
+        "placeholder": "Default",
+        "options": [
+            {
+                "label": "Left",
+                "value": "left"
+            },
+            {
+                "label": "Right",
+                "value": "right"
+            }
+        ]
+    }
+]
