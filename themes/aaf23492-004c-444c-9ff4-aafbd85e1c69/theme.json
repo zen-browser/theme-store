@@ -1,0 +1,14 @@
+{
+    "id": "aaf23492-004c-444c-9ff4-aafbd85e1c69",
+    "name": "Snappy Findbar",
+    "description": "A mod that transforms the findbar into a minimalistic, centered overlay at the top of your browser.",
+    "homepage": "https://github.com/WilleMahMille/zen-snappy-findbar",
+    "style": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/aaf23492-004c-444c-9ff4-aafbd85e1c69/chrome.css",
+    "readme": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/aaf23492-004c-444c-9ff4-aafbd85e1c69/readme.md",
+    "image": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/aaf23492-004c-444c-9ff4-aafbd85e1c69/image.png",
+    "author": "WilleMahMille",
+    "version": "1.0.0",
+    "tags": [],
+    "createdAt": "2026-01-17",
+    "updatedAt": "2026-01-17"
+}
