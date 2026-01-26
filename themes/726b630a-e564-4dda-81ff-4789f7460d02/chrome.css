@@ -1,0 +1,128 @@
+
+/* Custom variables */
+:root {
+    --zen-content-radius: 8px;
+    --zen-content-margin: 2px;
+    --zen-border-color: rgba(255, 255, 255, 0.10);
+    --zen-border-width: 1px;
+}
+
+/* Outer wrapper - draws border without clip-path to keep it visible */
+#tabbrowser-tabpanels {
+    margin: var(--zen-content-margin) !important;
+    margin-left: calc(var(--zen-content-margin) / 2) !important;
+    background-color: transparent !important;
+    border-radius: var(--zen-content-radius) !important;
+    overflow: visible !important;
+    isolation: isolate !important;
+    transform: translateZ(0) !important;
+    box-shadow: 0 0 0 var(--zen-border-width) var(--zen-border-color) !important;
+    contain: layout style !important;
+    background: var(--toolbar-bgcolor, #1c1b22) !important;
+    position: relative !important;
+}
+
+/* Inner clipping layer - clips content without affecting parent border */
+#tabbrowser-tabpanels::before {
+    content: "" !important;
+    position: absolute !important;
+    inset: 0 !important;
+    border-radius: var(--zen-content-radius) !important;
+    overflow: clip !important;
+    clip-path: inset(0 round var(--zen-content-radius)) !important;
+    pointer-events: none !important;
+    z-index: 1 !important;
+    transform: translateZ(1px) !important;
+}
+
+/* Content container - z-index below ::before for proper clipping */
+#webext-panels-stack {
+    border-radius: 0 !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    position: relative !important;
+    z-index: 0 !important;
+    overflow: clip !important;
+    clip-path: inset(0 round var(--zen-content-radius)) !important;
+    contain: strict !important;
+    content-visibility: auto !important;
+}
+
+.browserContainer {
+    border-radius: 0 !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    overflow: clip !important;
+    clip-path: inset(0 round var(--zen-content-radius)) !important;
+    position: relative !important;
+}
+
+browser[type="content"] {
+    border-radius: 0 !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    background: var(--toolbar-bgcolor, #1c1b22) !important;
+    overflow: clip !important;
+    clip-path: inset(0 round var(--zen-content-radius)) !important;
+    position: relative !important;
+}
+
+/* Loading mask overlay */
+browser[type="content"]::before {
+    content: "" !important;
+    position: absolute !important;
+    inset: 0 !important;
+    background: var(--toolbar-bgcolor, #1c1b22) !important;
+    opacity: 1 !important;
+    pointer-events: none !important;
+    z-index: 999999 !important;
+    transition: opacity 0.12s ease-out !important;
+    transform: translateZ(2px) !important;
+}
+
+/* Hide loading mask when content is ready */
+browser[type="content"][remote="true"]:not([pendingpaint])::before,
+browser[type="content"].hasLoaded::before {
+    opacity: 0 !important;
+    transition: opacity 0.12s ease-out, visibility 0s linear 0.12s !important;
+    visibility: hidden !important;
+}
+
+/* Rendering deck with SVG mask */
+#appcontent deck {
+    clip-path: inset(0 round var(--zen-content-radius)) !important;
+    contain: strict !important;
+    -moz-appearance: none !important;
+}
+
+/* Performance optimization */
+#tabbrowser-tabpanels,
+#webext-panels-stack,
+.browserContainer,
+browser[type="content"] {
+    content-visibility: auto !important;
+    will-change: transform, clip-path !important;
+}
+
+/* Loading shimmer effect */
+browser[type="content"][busy="true"]::before {
+    background: 
+        linear-gradient(
+            90deg,
+            var(--toolbar-bgcolor, #1c1b22) 0%,
+            color-mix(in srgb, var(--toolbar-bgcolor, #1c1b22) 95%, white) 50%,
+            var(--toolbar-bgcolor, #1c1b22) 100%
+        ) !important;
+    background-size: 200% 100% !important;
+    animation: loading-shimmer 1.5s ease-in-out infinite !important;
+}
+
+@keyframes loading-shimmer {
+    0% { background-position: 200% 0; }
+    100% { background-position: -200% 0; }
+}
+
+/* Disable transitions for background tabs */
+browser[type="content"]:not([selected])::before {
+    transition: none !important;
+}
