@@ -15,32 +15,37 @@
     @media (-moz-pref("zen.view.sidebar-expanded")) and not (-moz-pref("zen.view.sidebar-expanded.on-hover")) {
 
         /* Default essentials-width and essentials-gap variables (set to browser default) to fix some bugs */
-        :root {
+        .zen-workspace-pinned-tabs-section, .zen-essentials-container {
             --essentials-width: 49px;
             --essentials-gap: calc(var(--zen-toolbox-padding) - 2px);
-        }
 
-        /* Set width of Essentials (Dropdown) */
-        @media (-moz-pref("uc.essentials.width", "Thin")) {
-            :root {
+            @media (-moz-pref("uc.essentials.width", "Thin")) {
                 --essentials-width: 50px;
             }
-        }
 
-        @media (-moz-pref("uc.essentials.width", "Normal")) {
-            :root {
+            @media (-moz-pref("uc.essentials.width", "Normal")) {
                 --essentials-width: 60px;
             }
-        }
 
-        @media (-moz-pref("uc.essentials.width", "Wide")) {
-            :root {
+            @media (-moz-pref("uc.essentials.width", "Wide")) {
                 --essentials-width: 70px;
+            }
+
+            @media (-moz-pref("uc.essentials.gap", "Small")) {
+                --essentials-gap: 0px;
+            }
+
+            @media (-moz-pref("uc.essentials.gap", "Normal")) {
+                --essentials-gap: 2px;
+            }
+
+            @media (-moz-pref("uc.essentials.gap", "Big")) {
+                --essentials-gap: 5px;
             }
         }
 
-        @media (-moz-pref("uc.essentials.width")) and not (-moz-pref("uc.essentials.width", "none")) {
-            #zen-essentials-container, .zen-essentials-container {
+        @media not (-moz-pref("uc.essentials.width", "none")) {
+            .zen-essentials-container {
                 grid-template-columns: repeat(auto-fit,
                         minmax(var(--essentials-width), auto)) !important;
             }
@@ -56,27 +61,8 @@
             }
         }
 
-        /* Set margin between Essentials (Dropdown) */
-        @media (-moz-pref("uc.essentials.gap", "Small")) {
-            :root {
-                --essentials-gap: 0px;
-            }
-        }
-
-        @media (-moz-pref("uc.essentials.gap", "Normal")) {
-            :root {
-                --essentials-gap: 2px;
-            }
-        }
-
-        @media (-moz-pref("uc.essentials.gap", "Big")) {
-            :root {
-                --essentials-gap: 5px;
-            }
-        }
-
-        @media (-moz-pref("uc.essentials.gap")) and not (-moz-pref("uc.essentials.gap", "none")) {
-            #zen-essentials-container, .zen-essentials-container {
+        @media not (-moz-pref("uc.essentials.gap", "none")) {
+            .zen-essentials-container {
                 gap: var(--essentials-gap) var(--essentials-gap) !important;
             }
         }
@@ -198,7 +184,7 @@
             &:has(> :nth-child(2)) {
                 margin: 0 var(--zen-toolbox-padding) !important;
                 padding: 0 var(--zen-toolbox-padding) !important;
-                padding-bottom: 17px !important;
+                padding-bottom: 25px !important;
             }
 
             .tabbrowser-tab {
@@ -413,7 +399,6 @@
     /* Let pinned tabs have the same selected styling as essentials */
     @media (-moz-pref("uc.pins.essentials-layout")) {
         /* Specific query to overwrite previous one */
-        #vertical-pinned-tabs-container>.zen-workspace-tabs-section,
         .zen-workspace-pinned-tabs-section {
             grid-template-columns: repeat(auto-fit, minmax(var(--essentials-width), auto)) !important;
 
