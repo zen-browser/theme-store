@@ -1,15 +1,15 @@
 [
     {
-        "property": "theme.better_find_bar.custom_background",
-        "label": "Custom background CSS",
-        "type": "string",
-        "defaultValue": ""
-    },
-    {
         "property": "theme-better_find_bar-enable_custom_background",
-        "label": "Enable custom background CSS",
+        "label": "Enable custom background",
         "type": "checkbox",
         "defaultValue": false
+    },
+    {
+        "property": "theme.better_find_bar.custom_background",
+        "label": "Custom background HEX color",
+        "type": "string",
+        "defaultValue": "#112233"
     },
     {
         "property": "theme.better_find_bar.transparent_background",
