@@ -1,4 +1,3 @@
-
 /* Blurs the background */
 #urlbar[breakout-extend="true"] .urlbar-background {
     border: solid 3px color-mix(in hsl, hsl(0 0 50), transparent 90%) !important;

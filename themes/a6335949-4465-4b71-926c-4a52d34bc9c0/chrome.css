@@ -1,4 +1,3 @@
-
 :root {
 	--better-findbar-transform-translateY: 150px;
 	--better-findbar-transform-translateX: -50%;
@@ -10,7 +9,7 @@
 }
 
 /* Custom background */
-@media (-moz-bool-pref: "theme-better_find_bar-enable_custom_background") {
+@media (-moz-pref("theme-better_find_bar-enable_custom_background")) {
 	:root {
 		--better-findbar-background-color: var(--theme-better_find_bar-custom_background);
 	}
@@ -71,41 +70,41 @@ findbar {
 }
 
 /* Disable animations */
-@media (-moz-bool-pref: "theme.better_find_bar.instant_animations") {
+@media (-moz-pref("theme.better_find_bar.instant_animations")) {
 	findbar, findbar .findbar-container {
 		transition: initial !important;
 	}
 }
 
 /* Horizontal Position */
-body:has(
-		#theme-Better-Find-Bar[theme-better_find_bar-horizontal_position="left"]
-	) {
-	--better-findbar-transform-translateX: 0%;
-	--better-findbar-position-left: 15px;
-	--better-findbar-position-right: auto;
+@media (-moz-pref("theme.better_find_bar.horizontal_position", "left")) {
+	:root {
+		--better-findbar-transform-translateX: 0%;
+		--better-findbar-position-left: 15px;
+		--better-findbar-position-right: auto;
+	}
 }
 
-body:has(
-		#theme-Better-Find-Bar[theme-better_find_bar-horizontal_position="right"]
-	) {
-	--better-findbar-transform-translateX: 0%;
-	--better-findbar-position-left: auto;
-	--better-findbar-position-right: 15px;
+@media (-moz-pref("theme.better_find_bar.horizontal_position", "right")) {
+	:root {
+		--better-findbar-transform-translateX: 0%;
+		--better-findbar-position-left: auto;
+		--better-findbar-position-right: 15px;
+	}
 }
 
 /* Vertical Position */
-body:has(
-		#theme-Better-Find-Bar[theme-better_find_bar-vertical_position="top"]
-	) {
-	--better-findbar-transform-translateY: -150px;
-	--better-findbar-position-bottom: auto;
-	--better-findbar-position-top: 15px;
+@media (-moz-pref("theme.better_find_bar.vertical_position", "top")) {
+	:root {
+		--better-findbar-transform-translateY: -150px;
+		--better-findbar-position-bottom: auto;
+		--better-findbar-position-top: 15px;
+	}
 }
 
 
 /* Background blur */
-@media (-moz-bool-pref: "theme.better_find_bar.transparent_background") {
+@media (-moz-pref("theme.better_find_bar.transparent_background")) {
 	findbar,
 	findbar .findbar-textbox:not([status="notfound"]) {
 		backdrop-filter: blur(8px);
@@ -115,82 +114,66 @@ body:has(
 }
 
 /* Hide highlight checkbox */
-body:has(
-		#theme-Better-Find-Bar[theme-better_find_bar-hide_highlight="hide_immediately"]
-	) {
+@media (-moz-pref("theme.better_find_bar.hide_highlight", "hide_immediately")) {
 	findbar .findbar-highlight {
 		display: none !important;
 	}
 }
 
-body:has(
-		#theme-Better-Find-Bar[theme-better_find_bar-hide_highlight="hide_on_disable"]
-	) {
+@media (-moz-pref("theme.better_find_bar.hide_highlight", "hide_on_disable")) {
 	findbar checkbox.findbar-highlight:not([checked]) {
 		display: none !important;
 	}
 }
 
 /* Hide match case checkbox */
-body:has(
-		#theme-Better-Find-Bar[theme-better_find_bar-hide_match_case="hide_immediately"]
-	) {
+@media (-moz-pref("theme.better_find_bar.hide_match_case", "hide_immediately")) {
 	findbar .findbar-case-sensitive {
 		display: none !important;
 	}
 }
 
-body:has(
-		#theme-Better-Find-Bar[theme-better_find_bar-hide_match_case="hide_on_disable"]
-	) {
+@media (-moz-pref("theme.better_find_bar.hide_match_case", "hide_on_disable")) {
 	findbar checkbox.findbar-case-sensitive:not([checked]) {
 		display: none !important;
 	}
 }
 
 /* Hide match diacritics checkbox */
-body:has(
-		#theme-Better-Find-Bar[theme-better_find_bar-hide_match_diacritics="hide_immediately"]
-	) {
+@media (-moz-pref("theme.better_find_bar.hide_match_diacritics", "hide_immediately")) {
 	findbar .findbar-match-diacritics {
 		display: none !important;
 	}
 }
 
-body:has(
-		#theme-Better-Find-Bar[theme-better_find_bar-hide_match_diacritics="hide_on_disable"]
-	) {
+@media (-moz-pref("theme.better_find_bar.hide_match_diacritics", "hide_on_disable")) {
 	findbar checkbox.findbar-match-diacritics:not([checked]) {
 		display: none !important;
 	}
 }
 
 /* Hide whole words checkbox */
-body:has(
-		#theme-Better-Find-Bar[theme-better_find_bar-hide_whole_words="hide_immediately"]
-	) {
+@media (-moz-pref("theme.better_find_bar.hide_whole_words", "hide_immediately")) {
 	findbar .findbar-entire-word {
 		display: none !important;
 	}
 }
 
-body:has(
-		#theme-Better-Find-Bar[theme-better_find_bar-hide_whole_words="hide_on_disable"]
-	) {
+@media (-moz-pref("theme.better_find_bar.hide_whole_words", "hide_on_disable")) {
 	findbar .findbar-entire-word:not([checked]) {
 		display: none !important;
 	}
 }
 
 /* Hide find status label */
-@media (-moz-bool-pref: "theme.better_find_bar.hide_find_status") {
+@media (-moz-pref("theme.better_find_bar.hide_find_status")) {
 	findbar .findbar-find-status {
 		display: none !important;
 	}
 }
 
 /* Hide found matches label */
-@media (-moz-bool-pref: "theme.better_find_bar.hide_found_matches") {
+@media (-moz-pref("theme.better_find_bar.hide_found_matches")) {
 	findbar .findbar-label.found-matches {
 		display: none !important;
 	}
