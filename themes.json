@@ -51,13 +51,13 @@
         "readme": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/ad97bb70-0066-4e42-9b5f-173a5e42c6fc/readme.md",
         "image": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/ad97bb70-0066-4e42-9b5f-173a5e42c6fc/image.png",
         "author": "CosmoCreeper",
-        "version": "1.5.7",
+        "version": "1.7.0",
         "preferences": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/ad97bb70-0066-4e42-9b5f-173a5e42c6fc/preferences.json",
         "tags": [
             "tabs"
         ],
         "createdAt": "2024-08-28",
-        "updatedAt": "2025-07-22"
+        "updatedAt": "2026-01-28"
     },
     "f4866f39-cfd6-4498-ab92-54213b8279dc": {
         "id": "f4866f39-cfd6-4498-ab92-54213b8279dc",
@@ -457,10 +457,10 @@
         "readme": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/e122b5d9-d385-4bf8-9971-e137809097d0/readme.md",
         "image": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/e122b5d9-d385-4bf8-9971-e137809097d0/image.png",
         "author": "Ivaon",
-        "version": "1.0.0",
+        "version": "1.1.0",
         "tags": [],
         "createdAt": "2025-10-21",
-        "updatedAt": "2025-10-22",
+        "updatedAt": "2026-01-26",
         "preferences": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/e122b5d9-d385-4bf8-9971-e137809097d0/preferences.json"
     },
     "9bbaab67-a2c8-4d79-837f-90cd72a8932a": {
@@ -573,10 +573,10 @@
         "readme": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/4a222d82-2803-4ed2-a390-90abfce4f195/readme.md",
         "image": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/4a222d82-2803-4ed2-a390-90abfce4f195/image.png",
         "author": "jean06560",
-        "version": "1.0.0",
+        "version": "1.0.1",
         "tags": [],
         "createdAt": "2025-03-06",
-        "updatedAt": "2025-03-07"
+        "updatedAt": "2026-01-26"
     },
     "daf345ec-9a89-4b5d-9d41-47df562e29c9": {
         "id": "daf345ec-9a89-4b5d-9d41-47df562e29c9",
@@ -1033,10 +1033,10 @@
         "readme": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/642854b5-88b4-4c40-b256-e035532109df/readme.md",
         "image": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/642854b5-88b4-4c40-b256-e035532109df/image.png",
         "author": "sameerasw",
-        "version": "1.17.3",
+        "version": "1.17.15",
         "tags": [],
         "createdAt": "2025-02-04",
-        "updatedAt": "2025-10-29",
+        "updatedAt": "2026-01-26",
         "preferences": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/642854b5-88b4-4c40-b256-e035532109df/preferences.json"
     },
     "ea1a5ace-f698-4b45-ab88-6e8bd3a563f0": {
