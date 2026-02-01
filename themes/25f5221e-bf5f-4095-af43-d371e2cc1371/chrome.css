@@ -1,0 +1,12 @@
+
+:root[zen-compact-mode="true"]:not([customizing]):not([inDOMFullscreen="true"]) {
+  @media (-moz-bool-pref: "zen.view.compact.hide-tabbar") or (-moz-bool-pref: "zen.view.use-single-toolbar") {
+    &:not([zen-right-side="true"]) #navigator-toolbox[flash-popup] {
+      left: calc(-1 * var(--zen-sidebar-width) + var(--zen-element-separation)) !important;
+    }
+    
+    &[zen-right-side="true"] #navigator-toolbox[flash-popup] {
+      right: calc(-1 * var(--zen-sidebar-width) + var(--zen-element-separation)) !important;
+    }
+  }
+}
