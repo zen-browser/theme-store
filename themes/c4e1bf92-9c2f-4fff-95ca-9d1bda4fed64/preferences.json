@@ -1,0 +1,29 @@
+[
+    {
+        "property": "mod.minimal-adds.exit-menu-macos-style",
+        "label": "MacOS style exit menu (colored circles always visible)",
+        "type": "checkbox",
+        "defaultValue": false,
+        "disabledOn": [
+            "macos"
+        ]
+    },
+    {
+        "property": "mod.minimal-adds.exit-menu-acrylic-effect",
+        "label": "Enable acrylic/frosted glass effect on exit menu",
+        "type": "checkbox",
+        "defaultValue": true
+    },
+    {
+        "property": "mod.minimal-adds.exit-menu-box-shadow",
+        "label": "Enable shadow effect on exit menu buttons",
+        "type": "checkbox",
+        "defaultValue": true
+    },
+    {
+        "property": "mod.minimal-adds.centered-urlbartext-enabled",
+        "label": "Enable centered URL bar text",
+        "type": "checkbox",
+        "defaultValue": true
+    }
+]
