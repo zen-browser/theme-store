@@ -1,0 +1,14 @@
+{
+    "id": "14afff9d-cc02-4e91-a374-bd1a3baf801b",
+    "name": "Cleaner Context Menu",
+    "description": "Zen mod to remove all third-party extension items from the right-click context menu.",
+    "homepage": "https://github.com/Noyoth/zen-hide-extension-in-context-menu",
+    "style": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/14afff9d-cc02-4e91-a374-bd1a3baf801b/chrome.css",
+    "readme": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/14afff9d-cc02-4e91-a374-bd1a3baf801b/readme.md",
+    "image": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/14afff9d-cc02-4e91-a374-bd1a3baf801b/image.png",
+    "author": "Noyoth",
+    "version": "1.0.0",
+    "tags": [],
+    "createdAt": "2026-02-06",
+    "updatedAt": "2026-02-06"
+}
