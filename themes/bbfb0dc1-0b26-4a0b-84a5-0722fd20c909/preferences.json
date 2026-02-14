@@ -1,0 +1,32 @@
+[
+    {
+        "property": "property",
+        "label": "mod.adjust_tab_height.tab_height",
+        "type": "checkbox",
+        "disabledOn": []
+    },
+    {
+        "property": "label",
+        "label": "Tab Height (Pixels)",
+        "type": "checkbox",
+        "disabledOn": []
+    },
+    {
+        "property": "type",
+        "label": "string",
+        "type": "checkbox",
+        "disabledOn": []
+    },
+    {
+        "property": "placeholder",
+        "label": "4",
+        "type": "checkbox",
+        "disabledOn": []
+    },
+    {
+        "property": "defaultValue",
+        "label": "4",
+        "type": "checkbox",
+        "disabledOn": []
+    }
+]
