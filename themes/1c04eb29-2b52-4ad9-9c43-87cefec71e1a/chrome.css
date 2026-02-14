@@ -1,0 +1,49 @@
+
+/* Panel style */ /* Preventing corners exist after border-radius is set */
+panel#ctrlTab-panel {
+    border-radius: var(--panel-border-radius) !important;
+}
+/* Panel style */
+#ctrlTab-panel {
+    --panel-background: #181818 !important;
+    --panel-border-radius: 19px !important;
+    --panel-border-color: #4E4E4E !important;
+}
+
+/* The tabs preview image */
+#ctrlTab-previews .ctrlTab-canvas {
+    border-radius: 6px !important;
+    overflow: hidden !important;
+    box-shadow: 0px 0px 20px 2px rgba(0,0,0,0.7) !important;
+    margin: 10px !important;
+}
+
+/* Selected and Hover style */
+.ctrlTab-preview:focus > .ctrlTab-preview-inner {
+    border-radius: 11px !important;
+    border-color: var(--panel-background) !important;
+    box-shadow: 0px 0px 2px 1px color-mix(in srgb, var(--zen-colors-hover-bg), white 30%) inset !important;
+    background-color: color-mix(in srgb, var(--zen-colors-hover-bg), white 25%) !important;
+}
+
+/* Favicon position */ /* Set the parent container as the positioning reference */
+.ctrlTab-preview-inner {
+    position: relative !important;
+}
+/* Favicon position */
+.ctrlTab-favicon-container {
+    position: absolute !important;
+    top: 52px !important;
+    left: 8px !important;
+    z-index: 10 !important;
+}
+/* Favicon style */
+#ctrlTab-previews .ctrlTab-favicon {
+    width: 30px !important;
+    height: 30px !important;
+    border-radius: 10px !important;
+    border: 1px solid color-mix(in srgb, var(--zen-colors-hover-bg), white 70%) !important;;
+    background-color: white !important;
+    box-sizing: border-box !important;
+    box-shadow: 0px 0px 20px 1px rgba(0,0,0,0.3) !important;
+}
