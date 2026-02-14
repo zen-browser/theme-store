@@ -1,0 +1,20 @@
+
+menupopup > menuitem > .menu-iconic-left,
+menupopup > menu > .menu-iconic-left {
+  padding-block: 8px !important;
+}
+
+menupopup > menuitem > .menu-iconic-text,
+menupopup > menu > .menu-iconic-text,
+menupopup > menuitem > .menu-text,
+menupopup > menu > .menu-text {
+  padding-block: 5px !important;
+  padding-inline: 8px !important;
+}
+
+menupopup > menuitem,
+menupopup > menu,
+menupopup > menucaption {
+  padding-top: 8px !important;
+  padding-bottom: 8px !important;
+}
