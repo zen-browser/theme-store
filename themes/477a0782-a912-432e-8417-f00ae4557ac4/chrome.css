@@ -1,0 +1,133 @@
+
+.tab-context-line {
+  display: none !important;
+}
+
+#tabbrowser-tabs .tabbrowser-tab[usercontextid]:is([selected], [visuallyselected], [multiselected]) .tab-background {
+  border: 2px solid var(--identity-icon-color) !important;
+  opacity: 0.85 !important;
+}
+
+#tabbrowser-tabs .tabbrowser-tab:is(
+  [usercontextid="1"],
+  [usercontextid="2"],
+  [usercontextid="3"],
+  [usercontextid="4"],
+  [usercontextid="5"],
+  [usercontextid="6"],
+  [usercontextid="7"],
+  [usercontextid="8"],
+  [usercontextid="9"],
+  [usercontextid="10"],
+  [usercontextid="11"],
+  [usercontextid="12"],
+  [usercontextid="13"],
+  [usercontextid="14"],
+  [usercontextid="15"],
+  [usercontextid="16"],
+  [usercontextid="17"],
+  [usercontextid="18"]
+):not([pinned]) .tab-label-container {
+  gap: 2px !important;
+}
+
+#tabbrowser-tabs .tabbrowser-tab:is(
+  [usercontextid="1"],
+  [usercontextid="2"],
+  [usercontextid="3"],
+  [usercontextid="4"],
+  [usercontextid="5"],
+  [usercontextid="6"],
+  [usercontextid="7"],
+  [usercontextid="8"],
+  [usercontextid="9"],
+  [usercontextid="10"],
+  [usercontextid="11"],
+  [usercontextid="12"],
+  [usercontextid="13"],
+  [usercontextid="14"],
+  [usercontextid="15"],
+  [usercontextid="16"],
+  [usercontextid="17"],
+  [usercontextid="18"]
+):not([pinned]) .tab-label-container::before {
+  content: var(--named-container-label);
+  display: inline-flex;
+  align-self: flex-start;
+  max-width: 100%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  font-size: 9px;
+  font-weight: 700;
+  letter-spacing: 0.02em;
+  line-height: 1.2;
+  padding: 1px 6px;
+  border-radius: 999px;
+  color: var(--identity-icon-color, currentColor);
+  background: color-mix(
+    in srgb,
+    var(--identity-icon-color, currentColor) 18%,
+    transparent
+  );
+  border: 1px solid color-mix(
+    in srgb,
+    var(--identity-icon-color, currentColor) 38%,
+    transparent
+  );
+}
+
+#tabbrowser-tabs .tabbrowser-tab[usercontextid="1"] {
+  --named-container-label: var(--mod-named_container_tabs-name_1);
+}
+#tabbrowser-tabs .tabbrowser-tab[usercontextid="2"] {
+  --named-container-label: var(--mod-named_container_tabs-name_2);
+}
+#tabbrowser-tabs .tabbrowser-tab[usercontextid="3"] {
+  --named-container-label: var(--mod-named_container_tabs-name_3);
+}
+#tabbrowser-tabs .tabbrowser-tab[usercontextid="4"] {
+  --named-container-label: var(--mod-named_container_tabs-name_4);
+}
+#tabbrowser-tabs .tabbrowser-tab[usercontextid="5"] {
+  --named-container-label: var(--mod-named_container_tabs-name_5);
+}
+#tabbrowser-tabs .tabbrowser-tab[usercontextid="6"] {
+  --named-container-label: var(--mod-named_container_tabs-name_6);
+}
+#tabbrowser-tabs .tabbrowser-tab[usercontextid="7"] {
+  --named-container-label: var(--mod-named_container_tabs-name_7);
+}
+#tabbrowser-tabs .tabbrowser-tab[usercontextid="8"] {
+  --named-container-label: var(--mod-named_container_tabs-name_8);
+}
+#tabbrowser-tabs .tabbrowser-tab[usercontextid="9"] {
+  --named-container-label: var(--mod-named_container_tabs-name_9);
+}
+#tabbrowser-tabs .tabbrowser-tab[usercontextid="10"] {
+  --named-container-label: var(--mod-named_container_tabs-name_10);
+}
+#tabbrowser-tabs .tabbrowser-tab[usercontextid="11"] {
+  --named-container-label: var(--mod-named_container_tabs-name_11);
+}
+#tabbrowser-tabs .tabbrowser-tab[usercontextid="12"] {
+  --named-container-label: var(--mod-named_container_tabs-name_12);
+}
+#tabbrowser-tabs .tabbrowser-tab[usercontextid="13"] {
+  --named-container-label: var(--mod-named_container_tabs-name_13);
+}
+#tabbrowser-tabs .tabbrowser-tab[usercontextid="14"] {
+  --named-container-label: var(--mod-named_container_tabs-name_14);
+}
+#tabbrowser-tabs .tabbrowser-tab[usercontextid="15"] {
+  --named-container-label: var(--mod-named_container_tabs-name_15);
+}
+#tabbrowser-tabs .tabbrowser-tab[usercontextid="16"] {
+  --named-container-label: var(--mod-named_container_tabs-name_16);
+}
+#tabbrowser-tabs .tabbrowser-tab[usercontextid="17"] {
+  --named-container-label: var(--mod-named_container_tabs-name_17);
+}
+#tabbrowser-tabs .tabbrowser-tab[usercontextid="18"] {
+  --named-container-label: var(--mod-named_container_tabs-name_18);
+}

@@ -1,0 +1,110 @@
+[
+    {
+        "property": "mod.named_container_tabs.name_1",
+        "label": "Label for usercontextid=1",
+        "type": "string",
+        "defaultValue": "01"
+    },
+    {
+        "property": "mod.named_container_tabs.name_2",
+        "label": "Label for usercontextid=2",
+        "type": "string",
+        "defaultValue": "02"
+    },
+    {
+        "property": "mod.named_container_tabs.name_3",
+        "label": "Label for usercontextid=3",
+        "type": "string",
+        "defaultValue": "03"
+    },
+    {
+        "property": "mod.named_container_tabs.name_4",
+        "label": "Label for usercontextid=4",
+        "type": "string",
+        "defaultValue": "04"
+    },
+    {
+        "property": "mod.named_container_tabs.name_5",
+        "label": "Label for usercontextid=5",
+        "type": "string",
+        "defaultValue": "05"
+    },
+    {
+        "property": "mod.named_container_tabs.name_6",
+        "label": "Label for usercontextid=6",
+        "type": "string",
+        "defaultValue": "06"
+    },
+    {
+        "property": "mod.named_container_tabs.name_7",
+        "label": "Label for usercontextid=7",
+        "type": "string",
+        "defaultValue": "07"
+    },
+    {
+        "property": "mod.named_container_tabs.name_8",
+        "label": "Label for usercontextid=8",
+        "type": "string",
+        "defaultValue": "08"
+    },
+    {
+        "property": "mod.named_container_tabs.name_9",
+        "label": "Label for usercontextid=9",
+        "type": "string",
+        "defaultValue": "09"
+    },
+    {
+        "property": "mod.named_container_tabs.name_10",
+        "label": "Label for usercontextid=10",
+        "type": "string",
+        "defaultValue": "10"
+    },
+    {
+        "property": "mod.named_container_tabs.name_11",
+        "label": "Label for usercontextid=11",
+        "type": "string",
+        "defaultValue": "11"
+    },
+    {
+        "property": "mod.named_container_tabs.name_12",
+        "label": "Label for usercontextid=12",
+        "type": "string",
+        "defaultValue": "12"
+    },
+    {
+        "property": "mod.named_container_tabs.name_13",
+        "label": "Label for usercontextid=13",
+        "type": "string",
+        "defaultValue": "13"
+    },
+    {
+        "property": "mod.named_container_tabs.name_14",
+        "label": "Label for usercontextid=14",
+        "type": "string",
+        "defaultValue": "14"
+    },
+    {
+        "property": "mod.named_container_tabs.name_15",
+        "label": "Label for usercontextid=15",
+        "type": "string",
+        "defaultValue": "15"
+    },
+    {
+        "property": "mod.named_container_tabs.name_16",
+        "label": "Label for usercontextid=16",
+        "type": "string",
+        "defaultValue": "16"
+    },
+    {
+        "property": "mod.named_container_tabs.name_17",
+        "label": "Label for usercontextid=17",
+        "type": "string",
+        "defaultValue": "17"
+    },
+    {
+        "property": "mod.named_container_tabs.name_18",
+        "label": "Label for usercontextid=18",
+        "type": "string",
+        "defaultValue": "18"
+    }
+]
