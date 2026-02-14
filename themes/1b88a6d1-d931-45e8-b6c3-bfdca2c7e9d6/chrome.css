@@ -1,4 +1,11 @@
+@media (-moz-pref("mod.remove-tab-x.scope", "all")) {
+    image.tab-close-button {
+        display: none !important;
+    }
+}
 
-image.tab-close-button {
-  display: none !important;
+@media (-moz-pref("mod.remove-tab-x.scope", "pinned")) {
+    .zen-workspace-pinned-tabs-section image.tab-close-button {
+        display: none !important;
+    }
 }
