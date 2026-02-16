@@ -1,0 +1,14 @@
+{
+    "id": "cc0073c0-01a7-427b-b75d-69b4995d89be",
+    "name": "Container Border Loader",
+    "description": "A container-aware loading border that traces your active tab",
+    "homepage": "https://github.com/asankahh/Container-Border-Loader",
+    "style": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/cc0073c0-01a7-427b-b75d-69b4995d89be/chrome.css",
+    "readme": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/cc0073c0-01a7-427b-b75d-69b4995d89be/readme.md",
+    "image": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/cc0073c0-01a7-427b-b75d-69b4995d89be/image.png",
+    "author": "asankahh",
+    "version": "1.0.0",
+    "tags": [],
+    "createdAt": "2025-12-11",
+    "updatedAt": "2025-12-11"
+}
