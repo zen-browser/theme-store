@@ -1,0 +1,14 @@
+{
+    "id": "3aedd5dd-9d41-4ac8-b705-fd35f6fd9bc1",
+    "name": "Remove Pinned Tab X",
+    "description": "Removes the X from pinned tabs. Only middle mouse click and Ctrl+W will help you now.",
+    "homepage": "https://github.com/zanyoo/zen-remove-pinned-tab-x",
+    "style": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/3aedd5dd-9d41-4ac8-b705-fd35f6fd9bc1/chrome.css",
+    "readme": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/3aedd5dd-9d41-4ac8-b705-fd35f6fd9bc1/readme.md",
+    "image": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/3aedd5dd-9d41-4ac8-b705-fd35f6fd9bc1/image.png",
+    "author": "zanyoo",
+    "version": "1.0.0",
+    "tags": [],
+    "createdAt": "2025-12-28",
+    "updatedAt": "2025-12-28"
+}
