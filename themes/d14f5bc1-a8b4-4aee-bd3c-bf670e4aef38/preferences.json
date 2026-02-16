@@ -1,0 +1,44 @@
+[
+    {
+        "property": "uc.horizontal-pins.size.small",
+        "label": "Small pins (36px)",
+        "type": "checkbox",
+        "defaultValue": false
+    },
+    {
+        "property": "uc.horizontal-pins.size.large",
+        "label": "Large pins (50px)",
+        "type": "checkbox",
+        "defaultValue": false
+    },
+    {
+        "property": "uc.horizontal-pins.hide-scrollbar",
+        "label": "Hide scrollbar",
+        "type": "checkbox",
+        "defaultValue": false
+    },
+    {
+        "property": "uc.horizontal-pins.show-background",
+        "label": "Show background behind pinned tabs",
+        "type": "checkbox",
+        "defaultValue": false
+    },
+    {
+        "property": "uc.horizontal-pins.show-borders",
+        "label": "Show borders on pinned tabs",
+        "type": "checkbox",
+        "defaultValue": false
+    },
+    {
+        "property": "uc.horizontal-pins.hide-unloaded-indicator",
+        "label": "Hide unloaded tab indicator (dash)",
+        "type": "checkbox",
+        "defaultValue": true
+    },
+    {
+        "property": "uc.horizontal-pins.hide-workspaces",
+        "label": "Hide workspaces/spaces indicator",
+        "type": "checkbox",
+        "defaultValue": false
+    }
+]
