@@ -1,0 +1,19 @@
+
+@-moz-document url-prefix("chrome:") {
+
+/* Left (Default) */
+	body:has(#theme-Glance-control-alignment[theme-glance-control-alignment-position='left']) {
+		.zen-glance-sidebar-container {
+			left: unset !important;
+			right: 100% !important;
+		}
+	}
+
+/* Right */
+	body:has(#theme-Glance-control-alignment[theme-glance-control-alignment-position='right']) {
+		.zen-glance-sidebar-container {
+			left: 100% !important;
+			right: unset !important;
+		}
+	}
+}
