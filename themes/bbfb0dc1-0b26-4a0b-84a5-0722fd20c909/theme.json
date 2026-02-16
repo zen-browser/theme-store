@@ -1,0 +1,15 @@
+{
+    "id": "bbfb0dc1-0b26-4a0b-84a5-0722fd20c909",
+    "name": "Adjust Tab Height",
+    "description": "A simple zen mod for adjusting the height of tabs in the sidebar. Made for Katrielle!",
+    "homepage": "https://github.com/adorablue/Zen-Mod-Adjust-Tab-Height",
+    "style": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/bbfb0dc1-0b26-4a0b-84a5-0722fd20c909/chrome.css",
+    "readme": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/bbfb0dc1-0b26-4a0b-84a5-0722fd20c909/readme.md",
+    "image": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/bbfb0dc1-0b26-4a0b-84a5-0722fd20c909/image.png",
+    "author": "adorablue",
+    "version": "1.0.0",
+    "tags": [],
+    "createdAt": "2026-01-03",
+    "updatedAt": "2026-01-03",
+    "preferences": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/bbfb0dc1-0b26-4a0b-84a5-0722fd20c909/preferences.json"
+}
