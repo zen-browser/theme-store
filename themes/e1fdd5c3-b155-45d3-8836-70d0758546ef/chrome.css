@@ -1,0 +1,92 @@
+
+/* only apply to browser elements */
+@-moz-document url-prefix("chrome://") {
+
+/* ---------- LAYERS ---------- */
+@layer prefs, scope, effect;
+
+/* ---------- 1) USER PREFERENCES ---------- */
+@layer prefs {
+    /* FETCH PREFS OR DEFAULT */
+    :root {
+        --splt-blur_radius: var(--mod-alps-spotlight-blur_radius, 6px);
+        --splt-brightness: var(--mod-alps-spotlight-brightness, 0.66);
+        --splt-transition: var(--mod-alps-spotlight-transition, .20s);
+    }
+
+/* BLUR */
+    /* When blur toggle is on, set specified blur radius */
+    @media (-moz-bool-pref: "mod.alps.spotlight.enable_blur") {
+        :root {
+            --splt-blur-active: var(--splt-blur_radius);
+        }
+    }
+    /* When blur toggle is off, set blur radius to 0px */
+    @media not (-moz-bool-pref: "mod.alps.spotlight.enable_blur") {
+        :root {
+            --splt-blur-active: 0px;
+        }
+    }
+
+/* BRIGHTNESS */
+    /* When dim toggle is on, set specified brightness */
+    @media (-moz-bool-pref: "mod.alps.spotlight.enable_dim") {
+        :root {
+            --splt-bright-active: var(--splt-brightness);
+        }
+    }
+    /* When dim toggle is off, set brightness to 1.0 */
+    @media not (-moz-bool-pref: "mod.alps.spotlight.enable_dim") {
+        :root {
+            --splt-bright-active: 1;
+        }
+    }
+
+/*  TRANSITION */
+    /* Respect reduced motion*/
+    @media (prefers-reduced-motion: reduce) {
+        :root {
+            --splt-transition: 0s;
+        }
+    }
+}
+
+/* ---------- 2) ESTABLISH SCOPE  ---------- */
+@layer scope {
+
+/* ADDRESS BAR */
+    /* If user did not pick docked, neutralize when docked */
+    @media not (-moz-bool-pref: "mod.alps.spotlight.on_docked") {
+        :root:not(:has(#urlbar[open][zen-floating-urlbar="true"])) {
+            --splt-blur-active: 0px;
+            --splt-bright-active: 1;
+        }
+    }
+
+/* FLOATING BAR */
+    /* If user did not choose floating, neutralize when floating */
+    @media not (-moz-bool-pref: "mod.alps.spotlight.on_floating") {
+        :root:has(#urlbar[open][zen-floating-urlbar="true"]) {
+            --splt-blur-active: 0px;
+            --splt-bright-active: 1;
+        }
+    }
+}
+
+/* ---------- 3) EFFECT APPLICATION ---------- */
+@layer effect {
+
+/* Blur the page content when the URL bar is open */
+    :root:has(#urlbar[open]) #tabbrowser-tabpanels {
+        filter: blur(var(--splt-blur-active)) brightness(var(--splt-bright-active));
+        transition: filter var(--splt-transition) ease;
+    }
+
+/* Keep the bar above the blur/darken filter */
+    #urlbar[open] {
+        position: relative;
+        z-index: 9999;
+    }
+}
+
+}
