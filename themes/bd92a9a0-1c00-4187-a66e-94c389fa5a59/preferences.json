@@ -1,23 +1,23 @@
 [
     {
-      "property": "mod.autoexpand.performance_mode",
-      "label": "Performance Setting",
-      "type": "dropdown",
-      "defaultValue": "balanced",
-      "options": [
-        {
-          "label": "Fancy",
-          "value": "fancy"
-        },
-        {
-          "label": "Balanced",
-          "value": "balanced"
-        },
-        {
-          "label": "Potato",
-          "value": "potato"
-        }
-      ]
+        "property": "mod.autoexpand.performance_mode",
+        "label": "Performance Setting",
+        "type": "dropdown",
+        "defaultValue": "balanced",
+        "options": [
+            {
+                "label": "Fancy",
+                "value": "fancy"
+            },
+            {
+                "label": "Balanced",
+                "value": "balanced"
+            },
+            {
+                "label": "Potato",
+                "value": "potato"
+            }
+        ]
     },
     {
         "property": "mod.autoexpand.expanded_width",
