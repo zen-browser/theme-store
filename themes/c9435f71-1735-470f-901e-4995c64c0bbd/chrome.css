@@ -1,0 +1,34 @@
+
+@media not (-moz-bool-pref: "zen.view.sidebar-expanded") {
+	.tabbrowser-tab:is([soundplaying], [muted]) {
+		/* Create colored indicator bar on the right edge of tabs with audio */
+		& .tab-background::after {
+			content:'';
+			position: absolute;
+			width: 4px !important;
+			border-radius: 4px !important;
+			height: 80% !important;
+			top: 50%;
+			left: calc(100% - 4px) !important;
+			transform: translateY(-50%);
+			background-color: var(--zen-colors-primary) !important;
+		}
+
+/* Make indicator smaller and more subtle for inactive tabs */
+		&:not([selected='true']) .tab-background::after{
+			height: 33.33% !important;
+			background-color: var(--zen-colors-secondary) !important;
+		}
+
+/* Expand indicator on hover over inactive tabs */
+		&:not([selected='true']):hover .tab-background::after{
+			height: 80% !important;
+			background-color: var(--zen-colors-secondary) !important;
+		}
+
+/* Hide the speaker icon when the indicator bar is shown */
+		& .tab-icon-overlay[soundplaying] {
+			display: none !important;
+		}
+	}
+}
