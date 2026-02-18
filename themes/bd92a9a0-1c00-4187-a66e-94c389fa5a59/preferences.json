@@ -1,32 +1,76 @@
 [
     {
-        "property": "theme.sidebar_expand_on_hover.hide_workspace_indicator",
+      "property": "mod.autoexpand.performance_mode",
+      "label": "Performance Setting",
+      "type": "dropdown",
+      "defaultValue": "balanced",
+      "options": [
+        {
+          "label": "Fancy",
+          "value": "fancy"
+        },
+        {
+          "label": "Balanced",
+          "value": "balanced"
+        },
+        {
+          "label": "Potato",
+          "value": "potato"
+        }
+      ]
+    },
+    {
+        "property": "mod.autoexpand.expanded_width",
+        "label": "Width of the expanded sidebar (limits the minimum as 350px if using tabs on the right)",
+        "type": "string",
+        "defaultValue": "250px"
+    },
+    {
+        "property": "mod.autoexpand.collapsed_width",
+        "label": "Width of the minimized sidebar (default 45px)",
+        "type": "string",
+        "defaultValue": "45px"
+    },
+    {
+        "property": "mod.autoexpand.animation_duration",
+        "label": "Expanding animation duration, in ms (default: 200ms)",
+        "type": "string",
+        "defaultValue": "200ms"
+    },
+    {
+        "property": "mod.autoexpand.animation_delay",
+        "label": "Delay before expanding after hover (default: 0ms)",
+        "type": "string",
+        "defaultValue": "0ms"
+    },
+    {
+        "property": "mod.autoexpand.collapse_delay",
+        "label": "Delay before collapsing (default: 100ms)",
+        "type": "string",
+        "defaultValue": "100ms"
+    },
+    {
+        "property": "mod.autoexpand.essentials_vertical",
+        "label": "Makes all essentials visible in the minimized sidebar",
+        "type": "checkbox",
+        "defaultValue": false
+    },
+    {
+        "property": "mod.autoexpand.fade_sleeping_tabs",
+        "label": "Slightly fade Unloaded (Sleeping) Tabs",
+        "type": "checkbox",
+        "defaultValue": true
+    },
+    {
+        "property": "mod.autoexpand.hide_workspace_indicator",
         "label": "Hide top workspace indicator",
         "type": "checkbox",
         "defaultValue": true
     },
     {
-        "property": "theme.sidebar_expand_on_hover.collapse_buttons",
-        "label": "Collapse the buttons to only show current workspace",
-        "type": "checkbox",
-        "defaultValue": true
-    },
-    {
-        "property": "theme.sidebar_expand_on_hover.inverted_tabs",
-        "label": "Inverted Tab Direction",
+        "property": "mod.autoexpand.remove_line_separator",
+        "label": "Remove the thin line separator under the pinned tabs",
         "type": "checkbox",
         "defaultValue": false
-    },
-    {
-        "property": "theme.sidebar_expand_on_hover.expanded_width",
-        "label": "Width of the expanded sidebar",
-        "type": "string",
-        "defaultValue": "300px"
-    },
-    {
-        "property": "theme.sidebar_expand_on_hover.transition_speed",
-        "label": "Transition speed of the sidebar",
-        "type": "string",
-        "defaultValue": "120ms"
     }
 ]
