@@ -742,10 +742,11 @@
         "readme": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/1b88a6d1-d931-45e8-b6c3-bfdca2c7e9d6/readme.md",
         "image": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/1b88a6d1-d931-45e8-b6c3-bfdca2c7e9d6/image.png",
         "author": "xXMacMillanXx",
-        "version": "1.0.0",
+        "version": "1.1.1",
         "tags": [],
         "createdAt": "2025-03-11",
-        "updatedAt": "2025-03-11"
+        "updatedAt": "2026-02-18",
+        "preferences": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/1b88a6d1-d931-45e8-b6c3-bfdca2c7e9d6/preferences.json"
     },
     "20e8cc78-3dac-4db0-81a4-814672fb50af": {
         "id": "20e8cc78-3dac-4db0-81a4-814672fb50af",

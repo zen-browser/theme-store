@@ -1,12 +1,18 @@
 [
-  {
-    "property": "mod.remove-tab-x.scope",
-    "label": "Remove close button from",
-    "type": "dropdown",
-    "defaultValue": "all",
-    "options": [
-      { "label": "All tabs", "value": "all" },
-      { "label": "Pinned tabs only", "value": "pinned" }
-    ]
-  }
+    {
+        "property": "mod.remove-tab-x.scope",
+        "label": "Remove close button from",
+        "type": "dropdown",
+        "defaultValue": "all",
+        "options": [
+            {
+                "label": "All tabs",
+                "value": "all"
+            },
+            {
+                "label": "Pinned tabs only",
+                "value": "pinned"
+            }
+        ]
+    }
 ]
