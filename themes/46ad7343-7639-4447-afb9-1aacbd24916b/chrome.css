@@ -1,0 +1,61 @@
+
+.control-item.control-button {
+	display: none !important;
+}
+
+#close, #unpip {
+	display: none !important;
+
+&:hover {
+		&::after {
+			display: none !important;
+		}
+	}
+}
+
+#close {
+	display: none !important;
+}
+
+#unpip {
+	display: none !important;
+}
+
+/* for dragging */
+#controls {
+	visibility: hidden !important;
+
+&:hover {
+		visibility: hidden !important;
+	}
+}
+
+#controls-bottom-gradient {
+	display: none !important;
+}
+
+#controls-bottom {
+	display: none !important;
+}
+
+/* progress bar */
+.scrubber-no-drag {
+	display: none !important;
+}
+
+#scrubber::-moz-range-thumb {
+	display: none !important;
+}
+
+#scrubber {
+	display: none !important;
+	&:hover {
+		display: none !important;
+	}
+}
+
+#scrubber {
+	&::-moz-range-track, &::-moz-range-progress {
+		display: none !important;
+	}
+}
