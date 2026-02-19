@@ -1,0 +1,25 @@
+
+:root {
+    /* Only applies adaptive colour if tab is not empty */
+	&:has(#tabbrowser-tabpanels > .browserSidebarContainer[id] browser:not([transparent])) {
+		–zen-main-browser-background: var(--lwt-accent-color) !important;
+	}
+	/* Reverts toolbar button’s active colour */
+	–toolbarbutton-active-background: var(--zen-toolbar-element-bg) !important;
+}
+
+/* Removes shadow around the tab panel & side bar */
+.browserSidebarContainer,
+#zen-tabbox-wrapper #sidebar-box {
+	box-shadow: none !important;
+}
+
+/* Removes tab outline */
+.tab-background {
+	outline: none !important;
+}
+
+/* Makes tab panel transparent */
+browser[transparent="true"] {
+	background-color: transparent !important;
+}
