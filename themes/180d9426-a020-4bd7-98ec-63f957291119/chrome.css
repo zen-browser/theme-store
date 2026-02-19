@@ -1,32 +1,32 @@
+/* TitleBarButton UI Tweaks */
 .titlebar-buttonbox {
   padding: 9px !important;
 }
 
-.titlebar-button:hover {
-  background-color: var(--button-hover-bgcolor) !important;
-}
-
-.titlebar-min {
-  padding-left: 10px !important;
-  padding-right: 10px !important;
-  border-radius: var(--uc-contextmenu-menuitem-border-radius) !important;
-}
-
-.titlebar-max,
-.titlebar-restore {
-  padding-left: 10px !important;
-  padding-right: 10px !important;
-  margin-left: 5px !important;
-  margin-right: 5px !important;
-  border-radius: var(--uc-contextmenu-menuitem-border-radius) !important;
-}
-
+.titlebar-min, 
+.titlebar-max, 
+.titlebar-restore, 
 .titlebar-close {
+  background-clip: content-box !important; 
+  
+  transform: translateY(-8px) !important; 
+  
+  padding-top: 10px !important;
+  padding-bottom: 10px !important;
   padding-left: 10px !important;
   padding-right: 10px !important;
-  border-radius: var(--uc-contextmenu-menuitem-border-radius) !important;
+  
+  margin-left: 0px !important; 
+  border-radius: 16px !important; 
+}
+
+.titlebar-min:hover, 
+.titlebar-max:hover, 
+.titlebar-restore:hover {
+  background-color: var(--button-hover-bgcolor, rgba(255, 255, 255, 0.15)) !important;
 }
 
 .titlebar-close:hover {
-  background-color: var(--buttons-destructive-hover-bgcolor) !important;
+  background-color: var(--buttons-destructive-hover-bgcolor, #e81123) !important;
+  color: white !important;
 }
