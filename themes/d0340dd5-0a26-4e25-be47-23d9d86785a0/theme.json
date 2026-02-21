@@ -1,0 +1,14 @@
+{
+    "id": "d0340dd5-0a26-4e25-be47-23d9d86785a0",
+    "name": "Solid Fullscreen",
+    "description": "This mod prevents the wallpaper from bleeding through in fullscreen mode.",
+    "homepage": "https://github.com/blu14x/zen/tree/main/solidFullscreen",
+    "style": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/d0340dd5-0a26-4e25-be47-23d9d86785a0/chrome.css",
+    "readme": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/d0340dd5-0a26-4e25-be47-23d9d86785a0/readme.md",
+    "image": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/d0340dd5-0a26-4e25-be47-23d9d86785a0/image.png",
+    "author": "blu14x",
+    "version": "1.0.0",
+    "tags": [],
+    "createdAt": "2026-02-21",
+    "updatedAt": "2026-02-21"
+}
