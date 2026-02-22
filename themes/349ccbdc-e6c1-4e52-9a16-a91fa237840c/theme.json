@@ -1,0 +1,14 @@
+{
+    "id": "349ccbdc-e6c1-4e52-9a16-a91fa237840c",
+    "name": "Hide Workspace Indicator",
+    "description": "This mod removes the workspace indicator in the Zen toolbar.",
+    "homepage": "https://github.com/seagram/hide-workspace-indicator",
+    "style": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/349ccbdc-e6c1-4e52-9a16-a91fa237840c/chrome.css",
+    "readme": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/349ccbdc-e6c1-4e52-9a16-a91fa237840c/readme.md",
+    "image": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/349ccbdc-e6c1-4e52-9a16-a91fa237840c/image.png",
+    "author": "seagram",
+    "version": "1.0.0",
+    "tags": [],
+    "createdAt": "2025-05-20",
+    "updatedAt": "2025-05-20"
+}
