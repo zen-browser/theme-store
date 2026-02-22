@@ -1,0 +1,60 @@
+[
+    {
+        "property": "mod.alps.spotlight.enable_blur",
+        "label": "Enable Spotlight Blur",
+        "type": "checkbox",
+        "defaultValue": true
+    },
+    {
+        "property": "mod.alps.spotlight.blur_radius",
+        "label": "Spotlight Blur Radius (px)",
+        "type": "string",
+        "defaultValue": "6px",
+        "placeholder": "e.g. 4px"
+    },
+    {
+        "property": "mod.alps.spotlight.enable_brightness",
+        "label": "Enable Spotlight Brightness",
+        "type": "checkbox",
+        "defaultValue": true
+    },
+    {
+        "property": "mod.alps.spotlight.brightness",
+        "label": "Spotlight Brightness 0-1, with 1 being full brightness",
+        "type": "string",
+        "defaultValue": "0.66",
+        "placeholder": "e.g. 0.9"
+    },
+    {
+        "property": "mod.alps.spotlight.on_floating",
+        "label": "Apply on floating URL searchbar",
+        "type": "checkbox",
+        "defaultValue": true
+    },
+    {
+        "property": "mod.alps.spotlight.on_docked",
+        "label": "Apply on address bar",
+        "type": "checkbox",
+        "defaultValue": false
+    },
+    {
+        "property": "mod.alps.spotlight.transition",
+        "label": "Transition Duration (seconds)",
+        "type": "dropdown",
+        "defaultValue": ".20s",
+        "options": [
+            {
+                "label": "Snappy (.15s)",
+                "value": ".15s"
+            },
+            {
+                "label": "Default (.20s)",
+                "value": ".20s"
+            },
+            {
+                "label": "Gentle (.30s)",
+                "value": ".30s"
+            }
+        ]
+    }
+]
