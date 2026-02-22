@@ -1,0 +1,38 @@
+[
+    {
+        "property": "mod.better_titlebar_and_more.compact_titlebar",
+        "label": "Compact Titlebar (on the right)",
+        "type": "checkbox"
+    },
+    {
+        "property": "mod.better_titlebar_and_more.borderless_sidebar",
+        "label": "Borderless Sidebar",
+        "type": "checkbox"
+    },
+    {
+        "property": "mod.better_titlebar_and_more.traffic_lights",
+        "label": "Traffic Light styled Window Controls",
+        "type": "checkbox",
+        "disabledOn": [
+            "macos"
+        ]
+    },
+    {
+        "property": "mod.better_titlebar_and_more.compact_titlebar_right_padding",
+        "label": "Compact Titlebar right padding so you can still drag it",
+        "placeholder": "40px",
+        "type": "string"
+    },
+    {
+        "property": "mod.better_titlebar_and_more.empty",
+        "label": "To enable Borderless go to 'about:config' in the urlbar and set 'zen.theme.content-element-separation' to '0'",
+        "type": "dropdown",
+        "defaultValue": "empty",
+        "options": [
+            {
+                "label": "-",
+                "value": "empty"
+            }
+        ]
+    }
+]

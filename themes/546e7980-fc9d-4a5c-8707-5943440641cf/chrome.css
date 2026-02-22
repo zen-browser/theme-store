@@ -1,0 +1,109 @@
+
+/* Bookmark visibility fix */
+#PersonalToolbar {
+  visibility: visible !important;
+  min-width: 0px !important;
+
+&[collapsed="true"] {
+    display: none !important;
+  }
+}
+
+.titlebar-buttonbox {
+  padding-left: var(
+    --mod-better_titlebar_and_more-compact_titlebar_right_padding,
+    0px
+  ) !important;
+}
+
+[zen-single-toolbar="true"] {
+  /* Overlay Titlebar */
+  #zen-appcontent-wrapper {
+    position: relative;
+  }
+
+/* Hide titlebar and spacing */
+  #zen-appcontent-navbar-wrapper {
+    position: absolute !important;
+    backdrop-filter: blur(10px) !important;
+    background: var(--zen-main-browser-background) !important;
+  }
+
+@media (-moz-bool-pref: "mod.better_titlebar_and_more.borderless_sidebar") {
+    &[zen-compact-mode="true"] {
+      #navigator-toolbox {
+        height: 100% !important;
+        top: 0 !important;
+
+/* Hide sidebar background/border */
+        #titlebar,
+        #titlebar::before {
+          border: none !important;
+          outline: none !important;
+          box-shadow: none !important;
+          border-right: 1px solid #ffffff20 !important;
+          border-radius: 0 !important;
+        }
+
+/* Custom sidebar background/border */
+        &[zen-has-hover="true"]:after {
+          display: block;
+          content: "";
+          width: 10px;
+          height: 10px;
+          background: var(--zen-dialog-background);
+          position: absolute;
+          left: 0;
+          width: var(--zen-element-separation);
+          height: 100%;
+        }
+      }
+    }
+  }
+
+@media not (-moz-bool-pref: "mod.better_titlebar_and_more.compact_titlebar") {
+    #zen-appcontent-navbar-wrapper {
+      width: 100% !important;
+    }
+  }
+
+@media (-moz-bool-pref: "mod.better_titlebar_and_more.compact_titlebar") {
+    /* Compact titlebar */
+    #zen-appcontent-navbar-wrapper {
+      width: max-content !important;
+      right: 0;
+      border-bottom-left-radius: 8px;
+      overflow: hidden;
+    }
+  }
+}
+
+@media (-moz-bool-pref: "mod.better_titlebar_and_more.traffic_lights") {
+  .titlebar-buttonbox {
+    padding-left: 40px;
+    toolbarbutton {
+      list-style-image: none !important;
+      padding: 6px 10px !important;
+
+.toolbarbutton-text {
+        width: 12px;
+        height: 12px;
+        border-radius: 10px;
+        border: 1px solid #00000040;
+      }
+      image {
+        display: none !important;
+      }
+      &.titlebar-min .toolbarbutton-text {
+        background: #44cc45;
+      }
+      &.titlebar-max .toolbarbutton-text,
+      &.titlebar-restore .toolbarbutton-text {
+        background: #f5bc36;
+      }
+      &.titlebar-close .toolbarbutton-text {
+        background: #f55f5c;
+      }
+    }
+  }
+}
