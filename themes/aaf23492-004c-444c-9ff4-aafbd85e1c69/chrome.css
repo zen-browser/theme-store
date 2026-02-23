@@ -1,0 +1,140 @@
+
+:root {
+  /* Customizable variables */
+  /* Animation variables */
+  --snappy-findbar-animation-duration: 0.2s;
+  --snappy-findbar-animation-easing: ease;
+  /* Position variables */
+  --snappy-findbar-position-top: 5vh;
+  /* Visual styling variables */
+  --snappy-findbar-background-color: black;
+  --snappy-findbar-border-radius: 15px;
+  --snappy-findbar-border-color: grey;
+
+/* Other variables */
+  /* Position variables */
+  --snappy-findbar-transform-hiddenY: -15vh;
+  --snappy-findbar-transform-showY: 0;
+  /* Visual styling variables */
+  --snappy-findbar-border-width: 1px;
+  --snappy-findbar-width: 40%;
+  /* Spacing variables */
+  --snappy-findbar-padding-vertical: 10px;
+  --snappy-findbar-padding-horizontal: 5px;
+  --snappy-findbar-container-row-gap: 5px;
+  --snappy-findbar-container-column-gap: 0px;
+}
+
+findbar {
+  display: flex !important;
+
+border-radius: var(--snappy-findbar-border-radius) !important;
+  margin: 0px !important;
+
+padding-top: var(--snappy-findbar-padding-vertical) !important;
+  padding-bottom: var(--snappy-findbar-padding-vertical) !important;
+  padding-left: var(--snappy-findbar-padding-horizontal) !important;
+  padding-right: var(--snappy-findbar-padding-horizontal) !important;
+
+width: var(--snappy-findbar-width) !important;
+  max-width: 100%;
+
+height: auto !important;
+
+position: absolute !important;
+
+top: var(--snappy-findbar-position-top);
+  left: 50%;
+  transform: translate(-50%, var(--snappy-findbar-transform-showY));
+
+overflow: unset !important;
+  box-shadow: var(--box-shadow-10);
+
+background: var(--snappy-findbar-background-color) !important;
+  border: var(--snappy-findbar-border-width) solid
+    var(--snappy-findbar-border-color) !important;
+
+transition:
+    transform var(--snappy-findbar-animation-duration)
+      var(--snappy-findbar-animation-easing),
+    border 0s 0s,
+    background 0s 0s !important;
+
+visibility: visible !important;
+  opacity: 1 !important;
+
+& .findbar-container {
+    flex-wrap: wrap;
+    overflow-x: auto !important;
+    height: auto !important;
+
+row-gap: var(--snappy-findbar-container-row-gap);
+    column-gap: var(--snappy-findbar-container-column-gap);
+
+& > :first-child {
+      width: 100% !important;
+    }
+
+& .findbar-textbox {
+      flex-grow: 1;
+    }
+
+/* Checkbox styling */
+    & checkbox {
+      padding: 0px 0px !important;
+      margin: 0px 1px !important;
+      border-radius: 6px;
+      border: 1px solid transparent;
+      transition: all 0.15s ease;
+
+&:hover {
+        border-color: rgba(255, 255, 255, 0.3);
+      }
+
+&[checked="true"] {
+        background-color: rgba(255, 255, 255, 0.15) !important;
+
+&:hover {
+          background-color: rgba(255, 255, 255, 0.2) !important;
+        }
+      }
+
+/* Hide checkbox images */
+      & .checkbox-check,
+      & .checkbox-icon {
+        display: none !important;
+      }
+
+/* Add padding to checkbox label for better click area */
+      & .checkbox-label {
+        padding: 4px 10px;
+      }
+    }
+
+/* Hide the find status description */
+    & .findbar-find-status {
+      display: none !important;
+    }
+  }
+
+@starting-style {
+    transform: translate(-50%, var(--snappy-findbar-transform-hiddenY));
+    background: transparent !important;
+    border-color: transparent !important;
+  }
+
+&[hidden],
+  &:not(:focus-within) {
+    transform: translate(-50%, var(--snappy-findbar-transform-hiddenY));
+    pointer-events: none;
+
+background: transparent !important;
+    border-color: transparent !important;
+
+transition:
+      transform var(--snappy-findbar-animation-duration)
+        var(--snappy-findbar-animation-easing),
+      border 0s var(--snappy-findbar-animation-duration),
+      background 0s var(--snappy-findbar-animation-duration) !important;
+  }
+}
