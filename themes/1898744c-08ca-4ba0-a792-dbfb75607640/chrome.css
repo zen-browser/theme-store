@@ -1,0 +1,106 @@
+
+@media (-moz-bool-pref: "minimal-findbar.enable-acrylic") {
+    :root {
+        --acrylic-background: light-dark(rgba(240, 248, 250, 0.8), rgba(36, 37, 39,0.6)) !important;
+        --acrylic-backdrop: blur(40px) brightness(0.5) saturate(3.5) !important;
+    }    
+    
+    findbar {
+        background: var(--acrylic-background) !important;
+        backdrop-filter: var(--acrylic-backdrop) !important;
+    }
+}
+
+@media not (-moz-bool-pref: "minimal-findbar.enable-acrylic") {
+    findbar {
+        background: light-dark( hsl(0, 0%, 100%), color-mix(in srgb, hsl(0, 0%, 5%) 80%, var(--zen-colors-primary) 20%) ) !important;
+    }
+}
+
+/* Minimal Findbar */
+findbar {
+    box-sizing: border-box;
+    position: fixed;
+    top: 12% !important;
+    right: 2% !important;
+    width: 345px !important;
+    border-radius: 8px !important;
+    border: none !important;
+    box-shadow: inset 0 0 0 .5px #61605a99 !important;
+    padding: 10px 4px !important;
+
+.findbar-match-diacritics,
+    .findbar-label.found-matches,
+    .findbar-case-sensitive,
+    .findbar-highlight,
+    .findbar-entire-word,
+    description {
+        display: none !important;
+    }
+
+.findbar-container {
+        display: flex !important;
+        flex-wrap: wrap !important;
+        height: 100% !important;
+
+hbox[anonid="findbar-textbox-wrapper"] {
+            flex: 1 1 100%;
+        }
+
+hbox[anonid="findbar-textbox-wrapper"] {
+            order: -2 !important;
+        }
+
+.findbar-label.found-matches {
+            order: -1 !important;
+            margin-inline-start: 6px !important;
+        }
+    }
+
+.findbar-case-sensitive {
+        margin-inline-start: 6px !important;
+
+.checkbox-label-box {
+            &::after {
+                content: 'Aa';
+            }
+
+label {
+                display: none !important;
+            }
+        }
+    }
+
+.findbar-match-diacritics {
+        margin-inline-start: 6px !important;
+
+.checkbox-label-box {
+            &::after {
+                content: 'Äă';
+            }
+
+label {
+                display: none !important;
+            }
+        }
+    }
+
+hbox[anonid="findbar-textbox-wrapper"] {
+        .findbar-textbox {
+            border: none !important;
+            box-shadow: none !important;
+            background: transparent !important;
+        }
+    }
+
+toolbarbutton {
+        &:hover {
+            background-color: color-mix(in srgb, var(--zen-primary-color) 50%, transparent 50%) !important;
+        }
+    }
+
+.findbar-label.found-matches:is(label, description)[value]::before {
+        content: args !important;
+        display: block;
+    }
+}
