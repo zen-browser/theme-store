@@ -1,0 +1,15 @@
+{
+    "id": "477a0782-a912-432e-8417-f00ae4557ac4",
+    "name": "Named Container Tabs",
+    "description": "Show container labels above tab titles.",
+    "homepage": "https://github.com/constansino",
+    "style": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/477a0782-a912-432e-8417-f00ae4557ac4/chrome.css",
+    "readme": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/477a0782-a912-432e-8417-f00ae4557ac4/readme.md",
+    "image": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/477a0782-a912-432e-8417-f00ae4557ac4/image.png",
+    "author": "constansino",
+    "version": "1.0.0",
+    "tags": [],
+    "createdAt": "2026-02-14",
+    "updatedAt": "2026-02-14",
+    "preferences": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/477a0782-a912-432e-8417-f00ae4557ac4/preferences.json"
+}
