@@ -1,0 +1,14 @@
+{
+    "id": "bb000c91-4d89-4083-b6a9-98c773523963",
+    "name": "Gruvbox",
+    "description": "A theme inspired by gruvbox",
+    "homepage": "https://github.com/TeenCoder159/gruvbox-zen",
+    "style": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/bb000c91-4d89-4083-b6a9-98c773523963/chrome.css",
+    "readme": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/bb000c91-4d89-4083-b6a9-98c773523963/readme.md",
+    "image": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/bb000c91-4d89-4083-b6a9-98c773523963/image.png",
+    "author": "TeenCoder159",
+    "version": "1.0.0",
+    "tags": [],
+    "createdAt": "2025-08-10",
+    "updatedAt": "2025-08-10"
+}
