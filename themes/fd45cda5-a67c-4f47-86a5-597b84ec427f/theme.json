@@ -1,0 +1,14 @@
+{
+    "id": "fd45cda5-a67c-4f47-86a5-597b84ec427f",
+    "name": "Remove workspace switcher",
+    "description": "Remove the top workspace switcher from the UI when using vertical tabs. This will provide a clean look.",
+    "homepage": "https://github.com/treffendharm/remove-workspace-switcher",
+    "style": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/fd45cda5-a67c-4f47-86a5-597b84ec427f/chrome.css",
+    "readme": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/fd45cda5-a67c-4f47-86a5-597b84ec427f/readme.md",
+    "image": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/fd45cda5-a67c-4f47-86a5-597b84ec427f/image.png",
+    "author": "treffendharm",
+    "version": "1.0.0",
+    "tags": [],
+    "createdAt": "2025-05-07",
+    "updatedAt": "2025-05-07"
+}
