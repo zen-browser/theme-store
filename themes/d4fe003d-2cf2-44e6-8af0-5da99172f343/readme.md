@@ -1,0 +1,2 @@
+
+Hides annoying workspace button
