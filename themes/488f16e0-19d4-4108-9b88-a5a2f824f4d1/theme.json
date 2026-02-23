@@ -1,0 +1,14 @@
+{
+    "id": "488f16e0-19d4-4108-9b88-a5a2f824f4d1",
+    "name": "No window padding",
+    "description": "Mod for Zen Browser that removes padding around the page for even sleeker view.",
+    "homepage": "https://github.com/topchiyev/zen-no-window-padding-mod",
+    "style": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/488f16e0-19d4-4108-9b88-a5a2f824f4d1/chrome.css",
+    "readme": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/488f16e0-19d4-4108-9b88-a5a2f824f4d1/readme.md",
+    "image": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/488f16e0-19d4-4108-9b88-a5a2f824f4d1/image.png",
+    "author": "topchiyev",
+    "version": "1.0.0",
+    "tags": [],
+    "createdAt": "2025-12-12",
+    "updatedAt": "2025-12-12"
+}
