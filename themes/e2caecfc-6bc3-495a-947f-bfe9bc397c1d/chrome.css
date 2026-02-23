@@ -1,0 +1,7 @@
+
+/* UR Zen — Center the URL panel when editing or when the field is empty */
+#urlbar:not([zen-newtab])[open] {
+  top: 50% !important;
+  left: 50% !important;
+  transform: translate(-50%, -50%) !important;
+}
