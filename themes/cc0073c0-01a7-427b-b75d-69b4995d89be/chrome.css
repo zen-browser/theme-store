@@ -1,0 +1,58 @@
+
+/* 1. DEFINE THE ANGLE (Allows spinning colors without spinning the shape) */
+@property --zen-loading-angle {
+  syntax: "<angle>";
+  inherits: false;
+  initial-value: 0deg;
+}
+
+/* 2. THE ANIMATION SETTING */
+@keyframes border-spin {
+    to { --zen-loading-angle: 360deg; }
+}
+
+/* 3. THE LOADING BORDER */
+.tabbrowser-tab[selected][busy] .tab-background::before {
+    content: "";
+    display: block;
+    position: absolute;
+    
+    /* FILL THE TAB EXACTLY */
+    inset: 0; 
+    
+    /* CRITICAL FIX: This copies the tab's exact roundness */
+    border-radius: inherit; 
+    
+    /* BORDER THICKNESS */
+    padding: 2px; 
+    
+    /* THE MOVING COLOR */
+    /* Uses Container Color (Green/Blue/etc), falls back to Gray (#ffffff77) */
+    background: conic-gradient(
+        from var(--zen-loading-angle), 
+        transparent 40%, 
+        var(--identity-icon-color, #ffffff77) 100%
+    );
+    
+    /* THE MASK: Cuts out the center */
+    -webkit-mask: 
+       linear-gradient(#fff 0 0) content-box, 
+       linear-gradient(#fff 0 0);
+    mask: 
+       linear-gradient(#fff 0 0) content-box, 
+       linear-gradient(#fff 0 0);
+    -webkit-mask-composite: xor;
+    mask-composite: exclude;
+    
+    /* ANIMATION SPEED */
+    animation: border-spin 2s linear infinite;
+    
+    /* LAYERING: Sit on top, but let clicks pass through */
+    z-index: 1000;
+    pointer-events: none;
+}
+
+/* 4. HIDE WHEN NOT LOADING */
+.tabbrowser-tab:not([busy]) .tab-background::before {
+    display: none;
+}
