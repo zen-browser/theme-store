@@ -1,0 +1,14 @@
+{
+    "id": "f2708f1a-8570-4d17-b779-14d5c0991ac8",
+    "name": "No Borders in Fullscreen",
+    "description": "Borders are hidden when Zen Browser goes to fullscreen, just like Arc.",
+    "homepage": "",
+    "style": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/f2708f1a-8570-4d17-b779-14d5c0991ac8/chrome.css",
+    "readme": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/f2708f1a-8570-4d17-b779-14d5c0991ac8/readme.md",
+    "image": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/f2708f1a-8570-4d17-b779-14d5c0991ac8/image.png",
+    "author": "Risengan",
+    "version": "1.0.0",
+    "tags": [],
+    "createdAt": "2025-05-15",
+    "updatedAt": "2025-05-15"
+}
