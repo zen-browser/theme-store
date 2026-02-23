@@ -1,0 +1,15 @@
+{
+    "id": "1deefdfb-7141-412e-b87b-e70fdf80057f",
+    "name": "Top PiP",
+    "description": "Move the PiP button to the top right or left corner of your videos.",
+    "homepage": "https://github.com/tolgaizdas/top-pip",
+    "style": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/1deefdfb-7141-412e-b87b-e70fdf80057f/chrome.css",
+    "readme": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/1deefdfb-7141-412e-b87b-e70fdf80057f/readme.md",
+    "image": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/1deefdfb-7141-412e-b87b-e70fdf80057f/image.png",
+    "author": "tolgaizdas",
+    "version": "1.0.0",
+    "tags": [],
+    "createdAt": "2025-05-14",
+    "updatedAt": "2025-05-14",
+    "preferences": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/1deefdfb-7141-412e-b87b-e70fdf80057f/preferences.json"
+}
