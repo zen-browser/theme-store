@@ -1,0 +1,20 @@
+
+{
+  "colors": {
+    "toolbar.background": "#000000",
+    "chrome.background": "#000000",
+    "popup.background": "#000000",
+    "sidebar.background": "#000000",
+    "tab.background": "#000000",
+    "tab.selected.background": "#000000",
+    "urlbar.background": "#000000",
+    "hover.background": "#222222",
+    "active.background": "#333333",
+    "text.primary": "#FFFFFF",
+    "border.subtle": "rgba(51, 51, 51, 0.9)",
+    "menu.hover": "#222222",
+    "panel.hover": "#333333",
+    "extension.hover": "#222222",
+    "extension.button.hover": "#333333"
+  }
+}
