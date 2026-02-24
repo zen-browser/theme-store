@@ -1,0 +1,14 @@
+{
+    "id": "ac1a4947-c808-4b46-a1e4-e4d1784df8e4",
+    "name": "Disable Sidebar Hover",
+    "description": "Disables the hover-to-expand interaction for the sidebar/toolbar, while keeping contents functional.",
+    "homepage": "https://gitlab.com/gambloide/zen-browser-no-toolbar-hover/-/tree/main",
+    "style": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/ac1a4947-c808-4b46-a1e4-e4d1784df8e4/chrome.css",
+    "readme": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/ac1a4947-c808-4b46-a1e4-e4d1784df8e4/readme.md",
+    "image": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/ac1a4947-c808-4b46-a1e4-e4d1784df8e4/image.png",
+    "author": "Gambloide",
+    "version": "1.0.0",
+    "tags": [],
+    "createdAt": "2025-01-30",
+    "updatedAt": "2025-01-30"
+}
