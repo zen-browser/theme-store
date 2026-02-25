@@ -1,0 +1,20 @@
+
+#zen-main-app-wrapper {
+    background-image: linear-gradient(to bottom, #eed296, #96B2EE) !important;
+}
+
+#appMenu-mainView {
+    background-image: linear-gradient(#eed296, #96B2EE) !important;
+}
+
+#appmenu-moreTools {
+    background-image: linear-gradient(#eed296, #96B2EE) !important;
+}
+
+#PanelUI-button {
+    --button-active-bgcolor: black !important;
+}
+
+html#main-window {
+    --lwt-text-color: #4a4948 !important;
+}
