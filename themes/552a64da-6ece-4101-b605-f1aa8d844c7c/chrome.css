@@ -1,0 +1,26 @@
+
+@media (-moz-bool-pref: "zen.view.compact") {
+        :root:not([customizing]) {
+            @media (-moz-bool-pref: "zen.view.compact.hide-tabbar") {
+                & #navigator-toolbox{
+                  left: 0 !important;
+                  box-shadow: none !important;
+                  transform: translate3d(-98%, 0, 0) !important;
+                  padding:0;
+                }
+
+& #titlebar {
+                  border: none !important;
+                  box-shadow: none !important;
+                  padding: 10px !important;
+                  margin:10px 0 10px 10px !important;
+                  box-sizing: border-box !important;
+                  width: fit-content !important;
+                }
+
+& #navigator-toolbox:hover, & #navigator-toolbox[zen-has-hover], & #navigator-toolbox:focus-within, & #navigator-toolbox[zen-user-show], & #navigator-toolbox[flash-popup], & #navigator-toolbox[has-popup-menu], & #navigator-toolbox[movingtab], & #mainPopupSet:has(> #appMenu-popup:hover) ~ toolbox, & #navigator-toolbox:has(.tabbrowser-tab:active), & #navigator-toolbox:has([open="true"]:not(tab):not(#zen-sidepanel-button)) {
+                    transform: translate3d(0, 0, 0) !important;
+                }
+            }
+        }
+    }
