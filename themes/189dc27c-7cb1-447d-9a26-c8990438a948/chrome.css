@@ -1,0 +1,6 @@
+
+@media (-moz-bool-pref: "browser.tabs.allow_transparent_browser") {
+    :root {
+      --tabpanel-background-color: #00000000 !important;
+    }
+  }
