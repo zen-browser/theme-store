@@ -1,0 +1,15 @@
+{
+    "id": "c52737db-3176-4af4-8105-d83fefe2962c",
+    "name": "No Gaps Revived",
+    "description": "Removes the empty space around the tab view.",
+    "homepage": "https://github.com/vcekron/noGaps_ZenMod",
+    "style": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/c52737db-3176-4af4-8105-d83fefe2962c/chrome.css",
+    "readme": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/c52737db-3176-4af4-8105-d83fefe2962c/readme.md",
+    "image": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/c52737db-3176-4af4-8105-d83fefe2962c/image.png",
+    "author": "vcekron",
+    "version": "1.0.0",
+    "tags": [],
+    "createdAt": "2025-05-27",
+    "updatedAt": "2025-05-27",
+    "preferences": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/c52737db-3176-4af4-8105-d83fefe2962c/preferences.json"
+}
