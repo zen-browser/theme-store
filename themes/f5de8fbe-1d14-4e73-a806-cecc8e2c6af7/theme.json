@@ -1,0 +1,14 @@
+{
+    "id": "f5de8fbe-1d14-4e73-a806-cecc8e2c6af7",
+    "name": "Sidebar animation",
+    "description": "Refines Zen's compact sidebar with smooth reveal and fadeout animation on hover.",
+    "homepage": "https://github.com/Nimit1705/Zen-sidebar-animation",
+    "style": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/f5de8fbe-1d14-4e73-a806-cecc8e2c6af7/chrome.css",
+    "readme": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/f5de8fbe-1d14-4e73-a806-cecc8e2c6af7/readme.md",
+    "image": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/f5de8fbe-1d14-4e73-a806-cecc8e2c6af7/image.png",
+    "author": "Nimit1705",
+    "version": "1.0.0",
+    "tags": [],
+    "createdAt": "2025-01-02",
+    "updatedAt": "2025-01-02"
+}
