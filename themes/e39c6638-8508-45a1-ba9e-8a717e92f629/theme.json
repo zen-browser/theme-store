@@ -1,0 +1,14 @@
+{
+    "id": "e39c6638-8508-45a1-ba9e-8a717e92f629",
+    "name": "PiP Rounded Corners",
+    "description": "Adds rounded corners to the PiP player",
+    "homepage": "https://github.com/ghostsshadow/zen-pip-rounded-corners.git",
+    "style": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/e39c6638-8508-45a1-ba9e-8a717e92f629/chrome.css",
+    "readme": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/e39c6638-8508-45a1-ba9e-8a717e92f629/readme.md",
+    "image": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/e39c6638-8508-45a1-ba9e-8a717e92f629/image.png",
+    "author": "ghostsshadow",
+    "version": "1.0.0",
+    "tags": [],
+    "createdAt": "2024-11-05",
+    "updatedAt": "2024-11-05"
+}
