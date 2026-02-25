@@ -1,0 +1,9 @@
+
+#navigator-toolbox:not([zen-sidebar-expanded='true']) {
+    visibility: collapse;
+}
+
+:root:not([zen-sidebar-expanded='true']) #zen-sidebar-splitter {
+    display: initial !important;
+    pointer-events: none !important;
+}
