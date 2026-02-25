@@ -1,0 +1,13 @@
+
+/* Arc-like appearance to Folder Icons */
+.tab-group-folder-icon rect,
+.tab-group-folder-icon path {
+  stroke-width: 1.8px !important;
+}
+.tab-group-folder-icon {
+  scale: 110% !important;
+}
+.tab-group-folder-icon #folder-icon image {
+  height: 16px !important;
+  transform: translate(15%, 28%) !important;
+}
