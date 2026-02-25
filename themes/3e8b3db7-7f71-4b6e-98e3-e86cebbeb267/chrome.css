@@ -1,0 +1,123 @@
+
+:root {
+    --floating-history-transform-translateX: 110%;
+    --floating-history-position-right: 15px;
+    --floating-history-position-left: auto;
+}
+
+/* Horizontal Position */
+
+:root:has(#theme-Floating-History[theme-floating_sidebar-position="right"]) {
+    --floating-history-transform-translateX: 110%;
+    --floating-history-position-right: 15px;
+    --floating-history-position-left: auto;
+}
+
+:root:has(#theme-Floating-History[theme-floating_sidebar-position="left"]) {
+    --floating-history-transform-translateX: -110%;
+    --floating-history-position-left: 15px;
+    --floating-history-position-right: auto;
+}
+
+/* Disable dragable splitter */
+#sidebar-box + splitter {
+  display: none !important;
+}
+
+/* Make sure content is not affect by history tab sliding in and out */
+#tabbrowser-tabbox[flex="1"][tabcontainer="tabbrowser-tabs"] {
+    will-change: unset !important;
+}
+
+/* History Tab Styles */
+#sidebar-box {
+    order: none !important;
+    height: 80% !important;
+    width: 22em !important;
+  
+    position: fixed !important;
+
+right: var(--floating-history-position-right);
+    left: var(--floating-history-position-left);
+
+transform: translateX(50%) !important;
+    z-index: 10;
+  
+    transform: translateY(12%) !important;
+  
+    border-radius: var(--zen-border-radius) !important;
+
+box-shadow: var(--box-shadow-10) !important;
+    background: var(--zen-colors-tertiary) !important;
+    border: 1px solid var(--zen-colors-border) !important;
+    
+    transition: transform 0.35s !important;
+    visibility: visible !important;
+    opacity: 1 !important;
+  
+  
+    &[hidden="true"] {
+		display: flex !important;
+        transform: translateX(var(--floating-history-transform-translateX)) translateY(12%) !important;
+	}
+    
+    @starting-style {
+        display: flex !important;
+        transform: translateX(var(--floating-history-transform-translateX)) translateY(12%) !important;
+    }
+  
+    &[checked="true"] {
+        display: flex !important;
+        transform: translateX(0%) translateY(12%) !important;
+    }
+}
+
+/* Inner Styles of History Tab */
+
+#sidebar-box box#sidebar-header {
+    border-bottom: none !important;
+}
+
+window#history-panel {
+    box-shadow: var(--box-shadow-10) !important;
+    background: var(--zen-colors-tertiary) !important;
+}
+
+/* Search Bar Styles */
+window#history-panel search-textbox#search-box[data-l10n-id="places-history-search"] {
+    appearance: none !important;
+    background-color: var(--input-bgcolor, var(--zen-colors-tertiary)) !important;
+    color: var(--input-color, var(--toolbar-field-color)) !important;
+    border: 1px solid var(--zen-input-border-color, rgb(66,65,77));
+    border-radius: 4px;
+    outline: none;
+    box-sizing: border-box;
+    padding: 0.5rem !important;
+
+&[focused="true"] {
+        background-color: var(--input-bgcolor, var(--toolbar-field-background-color)) !important;
+        border: 1px solid var(--input-border-color, rgb(66,65,77));
+    }
+}
+
+/* View Button Styles */
+window#history-panel hbox#sidebar-search-container button#viewButton {
+    appearance: none !important;
+    margin-inline-end: 4px !important;
+    border-radius: 6px !important;
+    border: 1px solid transparent !important;
+    padding: 2px 4px !important;
+    background: transparent !important;
+}
+
+window#history-panel hbox#sidebar-search-container button#viewButton:hover {
+    background-color: color-mix(in srgb, currentColor 10%, transparent) !important;
+}
+
+window#history-panel hbox#sidebar-search-container button#viewButton:active {
+    background-color: color-mix(in srgb, currentColor 15%, transparent) !important;
+}
+
+window#history-panel hbox#sidebar-search-container {
+    margin-bottom: 1rem !important;
+}

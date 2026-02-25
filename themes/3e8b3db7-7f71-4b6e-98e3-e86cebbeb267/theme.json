@@ -1,0 +1,15 @@
+{
+    "id": "3e8b3db7-7f71-4b6e-98e3-e86cebbeb267",
+    "name": "Zen Floating Sidebar",
+    "description": "A zen mode for a floating all sidebar.",
+    "homepage": "https://github.com/chaojimct/zen-floating-sidebar",
+    "style": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/3e8b3db7-7f71-4b6e-98e3-e86cebbeb267/chrome.css",
+    "readme": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/3e8b3db7-7f71-4b6e-98e3-e86cebbeb267/readme.md",
+    "image": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/3e8b3db7-7f71-4b6e-98e3-e86cebbeb267/image.png",
+    "author": "chaojimct",
+    "version": "1.0.0",
+    "tags": [],
+    "createdAt": "2025-07-31",
+    "updatedAt": "2025-07-31",
+    "preferences": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/3e8b3db7-7f71-4b6e-98e3-e86cebbeb267/preferences.json"
+}
