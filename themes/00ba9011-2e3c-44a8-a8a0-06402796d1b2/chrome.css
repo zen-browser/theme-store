@@ -1,0 +1,45 @@
+
+#PlacesToolbarItems {
+  display: flex !important;
+  justify-content: center !important;
+  align-items: center !important;
+}
+
+#nav-bar-customization-target.customization-target{
+  display: flex !important;
+  justify-content: center !important;
+  align-items: center !important;
+}
+
+#urlbar-container, #wrapper-urlbar-container {
+  flex: initial !important;
+}
+
+#urlbar-container{
+  width: 30vw !important;
+}
+
+@media -moz-pref("zen.tabs.vertical") {
+  :root:not([zen-window-buttons-reversed="true"]) {
+    & .titlebar-buttonbox-container {
+      margin-left: auto !important;
+      width: fit-content !important;
+      position: absolute !important;
+      right: 0 !important;
+    }
+  }
+}
+
+@media not (-moz-platform: macos) {
+  .titlebar-buttonbox-container {
+    height: 38px !important;
+  }
+}
+
+#zen-appcontent-navbar-container{
+  height: 72px !important;
+}
+
+#PanelUI-button {
+  position: absolute !important;
+}
