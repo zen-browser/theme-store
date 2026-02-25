@@ -1,0 +1,27 @@
+
+/* Remove border padding */
+:root:not([inDOMFullscreen="true"]):not([chromehidden~="location"]):not([chromehidden~="toolbar"]) {
+  & #tabbrowser-tabbox #tabbrowser-tabpanels .browserSidebarContainer  {
+    margin: 0 !important;
+    border-radius: 0 !important;
+  }
+}
+
+/* Remove border padding from Zen sidebar */
+:root:not([inDOMFullscreen="true"]):not([chromehidden~="location"]):not([chromehidden~="toolbar"]) {
+  & #zen-sidebar-web-panel-wrapper {
+    margin: 0 !important;
+  }
+}
+
+:root:not([inDOMFullscreen="true"]):not([chromehidden~="location"]):not([chromehidden~="toolbar"]) {
+  & #zen-sidebar-web-header {
+    border-radius: 0 !important;
+  }
+}
+
+:root:not([inDOMFullscreen="true"]):not([chromehidden~="location"]):not([chromehidden~="toolbar"]) {
+  & #zen-sidebar-web-panel {
+    border-radius: 0 !important;
+  }
+}
