@@ -1,0 +1,50 @@
+[
+    {
+        "property": "theme.tabradius.top.left",
+        "type": "string",
+        "label": "Set the top left radius",
+        "defaultValue": "10px"
+    },
+    {
+        "property": "theme.tabradius.top.right",
+        "type": "string",
+        "label": "Set the top right radius",
+        "defaultValue": "10px"
+    },
+    {
+        "property": "theme.tabradius.bottom.left",
+        "type": "string",
+        "label": "Set the bottom left radius",
+        "defaultValue": "10px"
+    },
+    {
+        "property": "theme.tabradius.bottom.right",
+        "type": "string",
+        "label": "Set the bottom right radius",
+        "defaultValue": "10px"
+    },
+    {
+        "property": "theme.tabradius.active.top.left",
+        "type": "string",
+        "label": "Set the top left radius when the tab is activated/held on",
+        "defaultValue": "10px"
+    },
+    {
+        "property": "theme.tabradius.active.top.right",
+        "type": "string",
+        "label": "Set the top right radius when the tab is activated/held on",
+        "defaultValue": "10px"
+    },
+    {
+        "property": "theme.tabradius.active.bottom.left",
+        "type": "string",
+        "label": "Set the bottom left radius when the tab is activated/held on",
+        "defaultValue": "10px"
+    },
+    {
+        "property": "theme.tabradius.active.bottom.right",
+        "type": "string",
+        "label": "Set the bottom right radius when the tab is activated/held on",
+        "defaultValue": "10px"
+    }
+]
