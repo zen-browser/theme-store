@@ -1,0 +1,15 @@
+{
+    "id": "f665c811-d161-4147-b626-bc059acf88cb",
+    "name": "Nyan Cattos",
+    "description": "Bongo cat and nyan cattos playing in your Zen sidebar.",
+    "homepage": "https://github.com/RayZ3R0/nyan-catto",
+    "style": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/f665c811-d161-4147-b626-bc059acf88cb/chrome.css",
+    "readme": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/f665c811-d161-4147-b626-bc059acf88cb/readme.md",
+    "image": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/f665c811-d161-4147-b626-bc059acf88cb/image.png",
+    "author": "RayZ3R0",
+    "version": "1.0.0",
+    "tags": [],
+    "createdAt": "2025-05-14",
+    "updatedAt": "2025-05-14",
+    "preferences": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/f665c811-d161-4147-b626-bc059acf88cb/preferences.json"
+}
