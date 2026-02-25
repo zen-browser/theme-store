@@ -1,0 +1,24 @@
+
+@media (-moz-platform: macos) {
+	#navigator-toolbox {
+		margin-top: 40px !important;
+	}
+
+#appcontent {
+		overflow: visible !important;
+	}
+
+#zen-appcontent-navbar-container {
+		margin-left: -50px;
+	}
+
+#nav-bar-customization-target {
+		margin-left: 20px;
+	}
+
+@media (-moz-bool-pref: "zen.view.sidebar-expanded") {
+		#zen-appcontent-navbar-container {
+			margin-left: -164px;
+		}
+	}
+}
