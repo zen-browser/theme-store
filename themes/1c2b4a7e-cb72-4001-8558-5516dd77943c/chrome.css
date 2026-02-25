@@ -1,0 +1,11 @@
+
+@-moz-document url-prefix("chrome:") {
+    :root {
+        --zen-colors-primary: black !important;
+        --zen-colors-secondary: rgba(255, 217, 0, 0.8) !important;
+        --zen-colors-tertiary: black !important;
+        --zen-colors-border: rgba(255, 217, 0, 0.4) !important;
+        --zen-dialog-background: black !important;
+    }
+
+}
