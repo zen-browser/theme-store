@@ -1,0 +1,14 @@
+{
+    "id": "ab97c137-801e-4bd2-b95f-f0856f42c95a",
+    "name": "No Borders",
+    "description": "Remove tab borders in Zen Browser for more content space and better browsing experience",
+    "homepage": "https://github.com/wysh3/Zen-Mods/tree/main/No%20Borders",
+    "style": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/ab97c137-801e-4bd2-b95f-f0856f42c95a/chrome.css",
+    "readme": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/ab97c137-801e-4bd2-b95f-f0856f42c95a/readme.md",
+    "image": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/ab97c137-801e-4bd2-b95f-f0856f42c95a/image.png",
+    "author": "wysh3",
+    "version": "1.0.0",
+    "tags": [],
+    "createdAt": "2024-11-03",
+    "updatedAt": "2024-11-03"
+}
