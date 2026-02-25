@@ -1,0 +1,74 @@
+[
+    {
+        "property": "theme.betterWindowsButtons.use_custom_icon_color_for_min",
+        "label": "Use custom icon color for \u2501 button",
+        "type": "checkbox",
+        "defaultValue": false
+    },
+    {
+        "property": "theme.betterWindowsButtons.icon_color_for_min",
+        "label": "Icon color for \u2501 button (tick checkbox above)",
+        "type": "string",
+        "placeholder": "white, #fff, rgb(255, 255, 255), etc..."
+    },
+    {
+        "property": "theme.betterWindowsButtons.use_custom_button_color_for_min",
+        "label": "Use custom button color for \u2501 button",
+        "type": "checkbox",
+        "defaultValue": false
+    },
+    {
+        "property": "theme.betterWindowsButtons.button_color_for_min",
+        "label": "Button color for \u2501 button (tick checkbox above)",
+        "type": "string",
+        "placeholder": "limegreen, #f53, rgb(255, 85, 51), etc..."
+    },
+    {
+        "property": "theme.betterWindowsButtons.use_custom_icon_color_for_restore",
+        "label": "Use custom icon color for \u29c9 button",
+        "type": "checkbox",
+        "defaultValue": false
+    },
+    {
+        "property": "theme.betterWindowsButtons.icon_color_for_restore",
+        "label": "Icon color for \u29c9 button (tick checkbox above)",
+        "type": "string",
+        "placeholder": "white, #fff, rgb(255, 255, 255), etc..."
+    },
+    {
+        "property": "theme.betterWindowsButtons.use_custom_button_color_for_restore",
+        "label": "Use custom button color for \u29c9 button",
+        "type": "checkbox",
+        "defaultValue": false
+    },
+    {
+        "property": "theme.betterWindowsButtons.button_color_for_restore",
+        "label": "Button color for \u29c9 button (tick checkbox above)",
+        "type": "string",
+        "placeholder": "orange, #ffa500, rgb(255, 87, 51), etc..."
+    },
+    {
+        "property": "theme.betterWindowsButtons.use_custom_icon_color_for_close",
+        "label": "Use custom icon color for \u2716 button",
+        "type": "checkbox",
+        "defaultValue": false
+    },
+    {
+        "property": "theme.betterWindowsButtons.icon_color_for_close",
+        "label": "Icon color for \u2716 button (tick checkbox above)",
+        "type": "string",
+        "placeholder": "white, #fff, rgb(255, 255, 255), etc..."
+    },
+    {
+        "property": "theme.betterWindowsButtons.use_custom_button_color_for_close",
+        "label": "Use custom button color for \u2716 button",
+        "type": "checkbox",
+        "defaultValue": false
+    },
+    {
+        "property": "theme.betterWindowsButtons.button_color_for_close",
+        "label": "Button color for \u2716 button (tick checkbox above)",
+        "type": "string",
+        "placeholder": "red, #f00, rgb(255, 0, 0), etc..."
+    }
+]
