@@ -1,0 +1,10 @@
+
+/* Consistent opacity when window is inactive */
+.tab-stack:-moz-window-inactive, #urlbar:-moz-window-inactive {
+    opacity: 0.5 !important;
+  }
+  
+  /* Make browser slightly lighter when inactive */
+  #browser:-moz-window-inactive {
+    background-color: rgba(255, 255, 255, 0.1) !important;
+  }
