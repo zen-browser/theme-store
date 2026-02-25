@@ -1,0 +1,14 @@
+[
+    {
+        "property": "uc.floatingtabbar.increase.spacing",
+        "label": "Increase space around edge of browser window and tab bar",
+        "type": "checkbox",
+        "disabledOn": []
+    },
+    {
+        "property": "uc.floatingtabbar.compact.enabled",
+        "label": "Enable compact tab bar, similar to Smaller Compact Mode by n7itro",
+        "type": "checkbox",
+        "disabledOn": []
+    }
+]
