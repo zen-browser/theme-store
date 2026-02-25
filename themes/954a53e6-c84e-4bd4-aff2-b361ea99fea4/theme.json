@@ -1,0 +1,14 @@
+{
+    "id": "954a53e6-c84e-4bd4-aff2-b361ea99fea4",
+    "name": "Remove bookmark button",
+    "description": "Hide the add bookmark button from the url bar!",
+    "homepage": "https://github.com/omeyenburg/zen-remove-bookmark-button",
+    "style": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/954a53e6-c84e-4bd4-aff2-b361ea99fea4/chrome.css",
+    "readme": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/954a53e6-c84e-4bd4-aff2-b361ea99fea4/readme.md",
+    "image": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/954a53e6-c84e-4bd4-aff2-b361ea99fea4/image.png",
+    "author": "omeyenburg",
+    "version": "1.0.0",
+    "tags": [],
+    "createdAt": "2025-08-03",
+    "updatedAt": "2025-08-03"
+}
