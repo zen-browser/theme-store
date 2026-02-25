@@ -1,0 +1,63 @@
+
+#tabbrowser-tabs .tabbrowser-tab[pinned]:not([pending="true"]):not([zen-essential]) {
+  & .tab-content::before {
+    content: '';
+    left: var(--tab-block-margin);
+    width: 10px;
+    height: 100%;
+    pointer-events: none;
+    background: linear-gradient(to right, var(--border-color-interactive) 4px, transparent 4px); 
+    position: absolute;
+
+@media (-moz-bool-pref: "theme.zen-loaded-tab-indicator.use-gradient-background") {
+      width: 100%;
+      background: linear-gradient(to right, light-dark(rgba(0, 0, 0, 0.15), rgba(255, 255, 255, 0.15)), transparent) !important;
+    }
+  }
+  
+  /* Add bottom border radius when:
+     - Next tab isn't loaded
+     - This tab is the last tab */
+  &:has(+ .tabbrowser-tab[pinned][pending="true"]:not([zen-essential])),
+  &:has(+ .pinned-tabs-container-separator),
+  &:last-child {
+    & .tab-content::before {
+      border-bottom-left-radius: var(--border-radius-medium);
+      border-bottom-right-radius: var(--border-radius-medium);
+      bottom: var(--tab-block-margin);
+      height: calc(100% - var(--tab-block-margin));
+    }
+  }
+}
+
+/* Add top border radius when:
+     - Previous tab isn't loaded
+     - This tab is the first tab */
+#tabbrowser-tabs  {
+  .tabbrowser-tab[pinned][pending="true"]:not([zen-essential]) + .tabbrowser-tab[pinned]:not([pending="true"]):not([zen-essential]),
+  .tabbrowser-tab[pinned]:not([pending="true"]):not([zen-essential]):first-child {
+    & .tab-content::before {
+      border-top-left-radius: var(--border-radius-medium);
+      border-top-right-radius: var(--border-radius-medium);
+      top: var(--tab-block-margin);
+      height: calc(100% - var(--tab-block-margin));
+    }
+  }
+}
+
+/* Collapsed toolbar */
+#navigator-toolbox:not([zen-sidebar-expanded="true"]) {
+  #tabbrowser-tabs .tabbrowser-tab[pinned]:not([pending="true"]):not([zen-essential]) {
+    & .tab-content::before {
+      left: 0;
+    }
+  }
+}
+
+@media (-moz-bool-pref: "theme.zen-loaded-tab-indicator.fade-unloaded-tab") {
+  #tabbrowser-tabs .tabbrowser-tab[pinned][pending="true"]:not([zen-essential]) {
+    & .tab-content {
+        opacity: 0.7;
+    }
+  }
+}
