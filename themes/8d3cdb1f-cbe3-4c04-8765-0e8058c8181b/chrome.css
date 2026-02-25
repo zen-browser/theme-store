@@ -1,0 +1,36 @@
+
+/**
+* Zen Mod: Compact Bookmarks
+* Better visibility of bookmarks by hiding text and adjusting spacing.
+* Namdomnau - https://github.com/NamdomNau
+*/
+@-moz-document url-prefix("chrome:") {
+
+/* Toolbar Bookmarks - Text */
+  #PlacesToolbar .bookmark-item:not([type='menu'])>.toolbarbutton-text {
+    font-size: 0px;
+  }
+
+/* Toolbar Bookmarks - Icon */
+  #PlacesToolbar .bookmark-item:not([type='menu'])>.toolbarbutton-icon {
+    margin: 0px !important;
+  }
+
+/* Toolbar Bookmarks - Folder Text */
+  #PlacesToolbar .bookmark-item[type='menu']>.toolbarbutton-text {
+    margin: -2px !important;
+    margin-left: 0px !important;
+  }
+
+/* Bookmark Menus -  Maximum width */
+  #PlacesToolbar menupopup {
+    max-width: var(--nn-compact-bookmarks-bookmarkMenuMaxWidth) !important;
+  }
+
+/* Bookmark Menus - Inside padding */
+  #PlacesToolbar menu,
+  #PlacesToolbar menuitem,
+  #PlacesToolbar menucaption {
+    padding: var(--nn-compact-bookmarks-bookmarkMenuPadding) !important;
+  }
+}
