@@ -1,0 +1,14 @@
+
+/* hide Sidebery header */
+@media (-moz-bool-pref: "theme.hidesidebar.hide_sidebar_header") {
+  #sidebar-header {
+    display: none !important;
+  }
+}
+
+/* hide default sidebar */
+@media (-moz-bool-pref: "theme.hidesidebar.hide_navigator_toolbox") {
+  #navigator-toolbox {
+    display: none !important;
+  }
+}
