@@ -1,0 +1,9 @@
+
+@-moz-document url-prefix("chrome:") {
+	/* Set main browser background color */
+	@media (-moz-bool-pref: "mod.zen-light-up.enable") {
+		body {
+			--zen-main-browser-background: rgba(0, 0, 0, var(--mod_zen-light-up_transparency));
+		}
+	}
+}
