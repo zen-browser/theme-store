@@ -1,0 +1,14 @@
+{
+    "id": "ea59396a-09c4-4dd5-b32d-2d9ec667cdac",
+    "name": "Disable Sidebar Dragging",
+    "description": "This mod disables windows dragging within the sidebar, limiting it to the window's title bar.",
+    "homepage": "https://github.com/dom6770/zen-mods/tree/main/disable-sidebar-dragging",
+    "style": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/ea59396a-09c4-4dd5-b32d-2d9ec667cdac/chrome.css",
+    "readme": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/ea59396a-09c4-4dd5-b32d-2d9ec667cdac/readme.md",
+    "image": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/ea59396a-09c4-4dd5-b32d-2d9ec667cdac/image.png",
+    "author": "dom6770",
+    "version": "1.0.0",
+    "tags": [],
+    "createdAt": "2025-01-12",
+    "updatedAt": "2025-01-12"
+}
