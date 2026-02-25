@@ -1,0 +1,35 @@
+
+.titlebar-buttonbox {
+    margin-right: 20px;
+}
+
+.titlebar-button {
+    padding: 0px !important;
+    min-height: 15px !important;
+    min-width: 15px !important;
+    align-self: center;
+    margin-left: 5px !important;
+    border-radius: 50%;
+    transition: all 100ms;
+    cursor: pointer;
+}
+
+.titlebar-button > image {
+    visibility: collapse !important;
+}
+
+.titlebar-button:hover {
+    opacity: 0.5 !important;
+}
+
+.titlebar-min {
+    background-color: #ff9e64 !important;
+}
+
+.titlebar-max, .titlebar-restore {
+    background-color: #9ece6a !important;
+}
+
+.titlebar-close {
+    background-color: #f7768e !important;
+}
