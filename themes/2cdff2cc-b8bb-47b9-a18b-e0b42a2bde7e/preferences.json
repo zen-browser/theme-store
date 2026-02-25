@@ -1,0 +1,58 @@
+[
+    {
+        "property": "custom-body-width",
+        "label": "Body Width Percentage:",
+        "type": "dropdown",
+        "defaultValue": "100.35",
+        "options": [
+            {
+                "label": "100%",
+                "value": "100"
+            },
+            {
+                "label": "100.10%",
+                "value": "100.1"
+            },
+            {
+                "label": "100.20%",
+                "value": "100.2"
+            },
+            {
+                "label": "100.30%",
+                "value": "100.3"
+            },
+            {
+                "label": "100.35%",
+                "value": "100.35"
+            },
+            {
+                "label": "100.40%",
+                "value": "100.4"
+            },
+            {
+                "label": "100.50%",
+                "value": "100.5"
+            },
+            {
+                "label": "100.60%",
+                "value": "100.6"
+            },
+            {
+                "label": "100.70%",
+                "value": "100.7"
+            },
+            {
+                "label": "100.80%",
+                "value": "100.8"
+            },
+            {
+                "label": "100.90%",
+                "value": "100.9"
+            },
+            {
+                "label": "101%",
+                "value": "101"
+            }
+        ]
+    }
+]
