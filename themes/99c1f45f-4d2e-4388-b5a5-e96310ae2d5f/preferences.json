@@ -1,0 +1,20 @@
+[
+    {
+        "property": "uc.padding.big",
+        "label": "big browser padding (12px)",
+        "type": "checkbox",
+        "disabledOn": []
+    },
+    {
+        "property": "uc.padding.bigger",
+        "label": "bigger browser padding (16px)",
+        "type": "checkbox",
+        "disabledOn": []
+    },
+    {
+        "property": "uc.padding.biggest",
+        "label": "biggest browser padding (20px)",
+        "type": "checkbox",
+        "disabledOn": []
+    }
+]
