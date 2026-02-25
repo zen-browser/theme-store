@@ -1,0 +1,15 @@
+{
+    "id": "7c2b976b-2b9b-4af1-90dd-40dee695dbc0",
+    "name": "Zen Custom Tabs",
+    "description": "Customize tabs, active tab border and bg colors, unloaded tabs opacity and weight",
+    "homepage": "https://github.com/guustavocl/zen-custom-tabs",
+    "style": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/7c2b976b-2b9b-4af1-90dd-40dee695dbc0/chrome.css",
+    "readme": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/7c2b976b-2b9b-4af1-90dd-40dee695dbc0/readme.md",
+    "image": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/7c2b976b-2b9b-4af1-90dd-40dee695dbc0/image.png",
+    "author": "guustavocl",
+    "version": "1.0.0",
+    "tags": [],
+    "createdAt": "2025-09-18",
+    "updatedAt": "2025-09-18",
+    "preferences": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/7c2b976b-2b9b-4af1-90dd-40dee695dbc0/preferences.json"
+}
