@@ -1,0 +1,20 @@
+[
+    {
+        "property": "property",
+        "label": "mod.fixed-pins.sticky_new_tab",
+        "type": "checkbox",
+        "disabledOn": []
+    },
+    {
+        "property": "label",
+        "label": "Keep New Tab button visible when scrolling",
+        "type": "checkbox",
+        "disabledOn": []
+    },
+    {
+        "property": "type",
+        "label": "checkbox",
+        "type": "checkbox",
+        "disabledOn": []
+    }
+]

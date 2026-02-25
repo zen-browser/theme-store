@@ -1,0 +1,38 @@
+
+@media (-moz-bool-pref: "zen.tabs.vertical") {
+  
+  #zen-browser-tabs-container {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    overflow-y: clip;
+  }
+
+#vertical-pinned-tabs-container .zen-workspace-tabs-section {
+    overflow: auto;
+    position: sticky !important;
+  }
+  
+  #tabbrowser-arrowscrollbox {
+    min-height: 0 !important;
+    max-height: 100% !important;
+    position: relative;
+  }
+  #tabbrowser-arrowscrollbox .zen-workspace-tabs-section {
+    position: relative !important;
+    overflow-y: auto;
+    margin-top: initial !important;
+  }
+  
+  @media (-moz-bool-pref: "mod.fixed-pins.sticky_new_tab") {
+    #tabbrowser-arrowscrollbox-periphery {
+      position: sticky !important;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      background: var(--toolbox-bgcolor) !important;
+    }
+  }
+}
