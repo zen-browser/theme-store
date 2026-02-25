@@ -1,0 +1,15 @@
+{
+    "id": "51b7616f-9df3-4fb6-81bf-cb64068d4113",
+    "name": "Custom Sidebar Panel",
+    "description": "A Zen Browser mod that allows you to customize the Zen Sidebar Panel.",
+    "homepage": "",
+    "style": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/51b7616f-9df3-4fb6-81bf-cb64068d4113/chrome.css",
+    "readme": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/51b7616f-9df3-4fb6-81bf-cb64068d4113/readme.md",
+    "image": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/51b7616f-9df3-4fb6-81bf-cb64068d4113/image.png",
+    "author": "KorvusDev",
+    "version": "1.0.0",
+    "tags": [],
+    "createdAt": "2024-10-23",
+    "updatedAt": "2024-10-23",
+    "preferences": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/51b7616f-9df3-4fb6-81bf-cb64068d4113/preferences.json"
+}
