@@ -1,0 +1,105 @@
+
+/* Better Workspace Switcher */
+zen-workspace > arrowscrollbox[overflowing]::after {
+    /* Remove bottom hr */
+    display: none;
+}
+
+#zen-sidebar-foot-buttons {
+    & > & {
+        border-radius: var(--tab-border-radius) !important;
+        transition: background .2s linear !important;
+
+&:hover {
+            background: rgba(255, 255, 255, .09) !important;
+
+& .toolbarbutton-badge-stack {
+                background-color: transparent !important;
+                ;
+            }
+        }
+    }
+
+& #zen-workspaces-button {
+        background: var(--toolbarbutton-hover-background) !important;
+        overflow: visible !important;
+        gap: 0 !important;
+        transition: background .2s linear;
+
+&:hover {
+            background: rgba(255, 255, 255, .09) !important;
+        }
+
+& .subviewbutton {
+            position: relative;
+            opacity: 1 !important;
+            filter: none !important;
+
+& label {
+                scale: 0;
+                font-size: small;
+                transition: .3s cubic-bezier(.2, 1.01, .27, 1.22);
+                transition-property: scale, transform, filter;
+            }
+
+&:not([active="true"])::before {
+                content: "";
+                position: absolute;
+                background-color: #fff;
+                inset: 0;
+                width: 4px;
+                height: 4px;
+                left: 50%;
+                top: 50%;
+                transform: translate(-50%, -50%);
+                border-radius: 1rem;
+                opacity: .5;
+                transition: opacity .3s ease;
+            }
+
+&[active="true"] label {
+                scale: 1.2;
+                transform: translateY(-2px);
+                accent-color: white;
+                color: white !important;
+                transition: .3s cubic-bezier(.5, 1.294, .5, 1.294);
+            }
+
+&:hover {
+                background-color: transparent !important;
+
+& label {
+                    scale: 1.6;
+                    transform: translateY(-5px);
+                    accent-color: white;
+                    color: white !important;
+                }
+
+&::before {
+                    opacity: 0 !important;
+                }
+            }
+
+&:active label {
+                scale: 1.2;
+                transform: translateY(-3px);
+                filter: grayscale(1);
+            }
+        }
+    }
+
+&:has(.subviewbutton[dragged="true"]) .subviewbutton {
+        pointer-events: none;
+        /* border: 1px solid red; */
+
+&[dragged="true"] {
+            background-color: transparent !important;
+            pointer-events: auto;
+
+& label {
+                scale: 1.2 !important;
+                transform: translateY(-3px) !important;
+            }
+        }
+    }
+}
