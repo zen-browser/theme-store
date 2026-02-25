@@ -1,0 +1,57 @@
+[
+    {
+        "property": "theme.tabbartweaks.hideworkspace",
+        "label": "Hide workspace indicator",
+        "type": "checkbox",
+        "defaultValue": false
+    },
+    {
+        "property": "theme.tabbartweaks.centernames",
+        "label": "Center tab names",
+        "type": "checkbox",
+        "defaultValue": false
+    },
+    {
+        "property": "theme.tabbartweaks.fullclose",
+        "label": "Large close tab button",
+        "type": "checkbox",
+        "defaultValue": false
+    },
+    {
+        "property": "theme.tabbartweaks.topseparation",
+        "label": "Top margin",
+        "type": "string",
+        "defaultValue": "34px"
+    },
+    {
+        "property": "theme.tabbartweaks.bottomseparation",
+        "label": "Bottom margin",
+        "type": "string",
+        "defaultValue": "4px"
+    },
+    {
+        "property": "theme.tabbartweaks.tabbehaviour",
+        "label": "Tab behaviour",
+        "type": "dropdown",
+        "placeholder": "Go to top",
+        "defaultValue": "gototop",
+        "options": [
+            {
+                "label": "Go to the top",
+                "value": "gototop"
+            },
+            {
+                "label": "Go to the middle",
+                "value": "gototmiddle"
+            },
+            {
+                "label": "Go to the bottom",
+                "value": "gotobottom"
+            },
+            {
+                "label": "Stretch",
+                "value": "stretch"
+            }
+        ]
+    }
+]
