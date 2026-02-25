@@ -1,0 +1,14 @@
+{
+    "id": "09ca5310-3fb6-4efb-8654-515c05c8b5b2",
+    "name": "Perfection",
+    "description": "Adds spacing to the toolbar/sidebar, increases tab font size, and makes minor tweaks to the URL bar.",
+    "homepage": "https://github.com/saschaeggi/zenbrowser-themes/tree/main/Perfection",
+    "style": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/09ca5310-3fb6-4efb-8654-515c05c8b5b2/chrome.css",
+    "readme": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/09ca5310-3fb6-4efb-8654-515c05c8b5b2/readme.md",
+    "image": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/09ca5310-3fb6-4efb-8654-515c05c8b5b2/image.png",
+    "author": "saschaeggi",
+    "version": "1.0.0",
+    "tags": [],
+    "createdAt": "2024-10-29",
+    "updatedAt": "2024-10-29"
+}
