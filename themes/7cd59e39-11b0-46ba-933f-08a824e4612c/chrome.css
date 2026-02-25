@@ -1,0 +1,44 @@
+
+.titlebar-buttonbox {
+  display: flex !important;
+  justify-content: center !important;
+  align-items: center !important;
+  height: 42px !important;
+  margin-right: 8px;
+}
+
+.titlebar-button {
+  padding: 1px !important;
+  height: 16px !important;
+  width: 16px !important;
+  margin-left: 5px !important;
+  border-radius: 50px;
+  transition: all 100ms;
+}
+
+.titlebar-min {
+  background-color: hsl(110, 54%, 49%) !important;
+}
+
+.titlebar-max,
+.titlebar-restore {
+  background-color: hsl(47, 78%, 56%) !important;
+}
+
+.titlebar-close {
+  background-color: hsl(3, 100%, 66%) !important;
+}
+
+.titlebar-button > image {
+  visibility: hidden !important;
+}
+
+.titlebar-button:hover > image {
+  visibility: visible !important;
+  filter: brightness(0);
+  margin-bottom: 1px !important;
+}
+
+.titlebar-button:hover {
+  opacity: 0.75 !important;
+}
