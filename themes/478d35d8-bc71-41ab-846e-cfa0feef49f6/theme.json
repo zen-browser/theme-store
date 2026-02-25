@@ -1,0 +1,15 @@
+{
+    "id": "478d35d8-bc71-41ab-846e-cfa0feef49f6",
+    "name": "Zen Letterbox",
+    "description": "A simple way to change the width of the letterbox.",
+    "homepage": "",
+    "style": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/478d35d8-bc71-41ab-846e-cfa0feef49f6/chrome.css",
+    "readme": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/478d35d8-bc71-41ab-846e-cfa0feef49f6/readme.md",
+    "image": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/478d35d8-bc71-41ab-846e-cfa0feef49f6/image.png",
+    "author": "p-sw",
+    "version": "1.0.0",
+    "tags": [],
+    "createdAt": "2025-03-03",
+    "updatedAt": "2025-03-03",
+    "preferences": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/478d35d8-bc71-41ab-846e-cfa0feef49f6/preferences.json"
+}
