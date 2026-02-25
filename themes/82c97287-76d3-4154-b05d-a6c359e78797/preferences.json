@@ -1,0 +1,34 @@
+[
+  {
+    "property": "theme.floating_sidebar.transparency",
+    "label": "Transparent background",
+    "type": "checkbox",
+    "defaultValue": true
+  },
+  {
+    "property": "theme.floating_sidebar.position",
+    "label": "Position",
+    "type": "dropdown",
+    "placeholder": "Right",
+    "defaultValue": "right",
+    "options": [
+      {
+        "label": "Left",
+        "value": "left"
+      }
+    ]
+  },
+  {
+    "property": "theme.floating_sidebar.size",
+    "label": "Size",
+    "type": "dropdown",
+    "placeholder": "Full",
+    "defaultValue": "full",
+    "options": [
+      {
+        "label": "Compact",
+        "value": "compact"
+      }
+    ]
+  }
+]
