@@ -1,0 +1,14 @@
+{
+    "id": "8493b479-1ffe-4061-af72-f9c38569e4b0",
+    "name": "OnlyReset",
+    "description": "Removes the close button from pinned tabs, preventing accidental closure. Only reset is allowed.",
+    "homepage": "https://github.com/send-me-a-ticket/zen-browser-only-reset-pinned-tabs/",
+    "style": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/8493b479-1ffe-4061-af72-f9c38569e4b0/chrome.css",
+    "readme": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/8493b479-1ffe-4061-af72-f9c38569e4b0/readme.md",
+    "image": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/8493b479-1ffe-4061-af72-f9c38569e4b0/image.png",
+    "author": "send-me-a-ticket",
+    "version": "1.0.0",
+    "tags": [],
+    "createdAt": "2025-02-17",
+    "updatedAt": "2025-02-17"
+}
