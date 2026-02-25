@@ -1,0 +1,15 @@
+{
+    "id": "0f636079-ac59-4830-849e-dbf165ed7ad0",
+    "name": "SidebarHover",
+    "description": "Expanding sidebar on hover with customizable speed and width",
+    "homepage": "https://github.com/Waltorvi/ZenMods/tree/master/SidebarHover",
+    "style": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/0f636079-ac59-4830-849e-dbf165ed7ad0/chrome.css",
+    "readme": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/0f636079-ac59-4830-849e-dbf165ed7ad0/readme.md",
+    "image": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/0f636079-ac59-4830-849e-dbf165ed7ad0/image.png",
+    "author": "Waltorvi",
+    "version": "1.0.0",
+    "tags": [],
+    "createdAt": "2025-03-17",
+    "updatedAt": "2025-03-17",
+    "preferences": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/0f636079-ac59-4830-849e-dbf165ed7ad0/preferences.json"
+}
