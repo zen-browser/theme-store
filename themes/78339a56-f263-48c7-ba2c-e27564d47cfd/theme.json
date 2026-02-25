@@ -1,0 +1,14 @@
+{
+    "id": "78339a56-f263-48c7-ba2c-e27564d47cfd",
+    "name": "No Bottom Workspaces",
+    "description": "Removes the bottom workspace switcher and icons from Zen\u2019s sidebar.",
+    "homepage": "",
+    "style": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/78339a56-f263-48c7-ba2c-e27564d47cfd/chrome.css",
+    "readme": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/78339a56-f263-48c7-ba2c-e27564d47cfd/readme.md",
+    "image": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/78339a56-f263-48c7-ba2c-e27564d47cfd/image.png",
+    "author": "phlppk",
+    "version": "1.0.0",
+    "tags": [],
+    "createdAt": "2025-03-21",
+    "updatedAt": "2025-03-21"
+}
