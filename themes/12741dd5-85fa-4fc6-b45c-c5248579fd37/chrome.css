@@ -1,0 +1,9 @@
+
+#unified-extensions-button {
+  opacity: 0;
+  transition: opacity 0.2s ease-in-out;
+}
+
+#unified-extensions-button:hover {
+  opacity: 1;
+}
