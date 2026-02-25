@@ -1,0 +1,14 @@
+{
+    "id": "3f316ff2-ede6-4610-888d-8be3f76f8e10",
+    "name": "Immersive Search",
+    "description": "Transforms the look of the URL bar in your Zen Browser to have a dark and blurry background.",
+    "homepage": "https://github.com/LucHermkens/immersive-search",
+    "style": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/3f316ff2-ede6-4610-888d-8be3f76f8e10/chrome.css",
+    "readme": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/3f316ff2-ede6-4610-888d-8be3f76f8e10/readme.md",
+    "image": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/3f316ff2-ede6-4610-888d-8be3f76f8e10/image.png",
+    "author": "LucHermkens",
+    "version": "1.0.0",
+    "tags": [],
+    "createdAt": "2025-02-11",
+    "updatedAt": "2025-02-11"
+}
