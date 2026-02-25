@@ -1,0 +1,128 @@
+[
+    {
+        "property": "mod.floaty.use-floating-sidebar",
+        "label": "Floating Sidebar",
+        "type": "checkbox",
+        "defaultValue": true
+    },
+    {
+        "property": "mod.floaty.use-floating-topbar",
+        "label": "Floating Topbar",
+        "type": "checkbox",
+        "defaultValue": true
+    },
+    {
+        "property": "mod.floaty.use-floating-findbar",
+        "label": "Floating Findbar",
+        "type": "checkbox",
+        "defaultValue": true
+    },
+    {
+        "property": "mod.floaty.use-floating-statuspanel",
+        "label": "Floating Statuspanel",
+        "type": "checkbox",
+        "defaultValue": false
+    },
+    {
+        "property": "mod.floaty.use-themed-sidebar",
+        "label": "Themed Sidebar",
+        "type": "checkbox",
+        "defaultValue": true
+    },
+    {
+        "property": "mod.floaty.use-themed-topbar",
+        "label": "Themed Topbar",
+        "type": "checkbox",
+        "defaultValue": true
+    },
+    {
+        "property": "mod.floaty.use-themed-urlbar",
+        "label": "Themed URL bar",
+        "type": "checkbox",
+        "defaultValue": true
+    },
+    {
+        "property": "mod.floaty.use-themed-findbar",
+        "label": "Themed Findbar",
+        "type": "checkbox",
+        "defaultValue": true
+    },
+    {
+        "property": "mod.floaty.use-themed-statuspanel",
+        "label": "Themed Statuspanel",
+        "type": "checkbox",
+        "defaultValue": false
+    },
+    {
+        "property": "mod.floaty.use-blur",
+        "label": "Background Blur",
+        "type": "checkbox",
+        "defaultValue": true
+    },
+    {
+        "property": "mod.floaty.use-transparency",
+        "label": "Background Transparency",
+        "type": "checkbox",
+        "defaultValue": true
+    },
+    {
+        "property": "mod.floaty.use-grain",
+        "label": "Background Grain (May increase CPU usage)",
+        "type": "checkbox",
+        "defaultValue": false
+    },
+    {
+        "property": "mod.floaty.use-animation",
+        "label": "Sidebar & Topbar Animation",
+        "type": "checkbox",
+        "defaultValue": true
+    },
+    {
+        "property": "mod.floaty.use-always-hide-topbar-in-single-toolbar-layout",
+        "label": "Always Hide Topbar in Single Toolbar Layout",
+        "type": "checkbox",
+        "defaultValue": false
+    },
+    {
+        "property": "mod.floaty.margin",
+        "label": "Toolbar Floating Margin",
+        "type": "string",
+        "placeholder": "8px",
+        "defaultValue": "8px"
+    },
+    {
+        "property": "mod.floaty.blur-radius",
+        "label": "Toolbar Blur Radius",
+        "type": "string",
+        "placeholder": "32px",
+        "defaultValue": "32px"
+    },
+    {
+        "property": "mod.floaty.blur-saturation",
+        "label": "Toolbar Blur Saturation",
+        "type": "string",
+        "placeholder": "128%",
+        "defaultValue": "128%"
+    },
+    {
+        "property": "mod.floaty.animation-duration",
+        "label": "Sidebar & Topbar Animation Duration",
+        "type": "string",
+        "placeholder": "0.15s",
+        "defaultValue": "0.15s"
+    },
+    {
+        "property": "mod.floaty.findbar-top-margin",
+        "label": "Findbar Top Margin",
+        "type": "string",
+        "placeholder": "64px",
+        "defaultValue": "64px"
+    },
+    {
+        "property": "mod.floaty.findbar-max-width",
+        "label": "Findbar Width",
+        "type": "string",
+        "placeholder": "1060px",
+        "defaultValue": "1060px"
+    }
+]
