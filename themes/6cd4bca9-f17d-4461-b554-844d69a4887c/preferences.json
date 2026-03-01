@@ -2,16 +2,14 @@
     {
         "property": "theme.zen-minimal-exit-menu.enable-macos-identic",
         "label": "Makes theme more identical to MacOS version.",
-        "defaultValue": "false",
-        "disabledOn": [
-            "macos"
-        ],
+        "defaultValue": false,
+        "disabledOn": ["macos"],
         "type": "checkbox"
     },
     {
-        "property": "theme.zen-minimal-exit-menu.enable-icon-visibility",
-        "label": "Shows the window icons.",
-        "defaultValue": "false",
+        "property": "theme.zen-minimal-exit-menu.show-window-icons",
+        "label": "Show window control icons (minimize, maximize, close).",
+        "defaultValue": true,
         "type": "checkbox"
     }
 ]
