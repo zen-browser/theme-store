@@ -1,0 +1,20 @@
+[
+    {
+        "property": "mod.forkedtidypopup.usezenprimarycolor",
+        "label": "Use Zen Browser primary color for hover effects",
+        "type": "checkbox",
+        "defaultValue": true
+    },
+    {
+        "property": "mod.forkedtidypopup.hovercolor.light",
+        "label": "Button color when hovered (Light mode)",
+        "type": "string",
+        "defaultValue": "rgba(80, 80, 250, 0.75)"
+    },
+    {
+        "property": "mod.forkedtidypopup.hovercolor.dark",
+        "label": "Button color when hovered (Dark mode)",
+        "type": "string",
+        "defaultValue": "rgba(80, 80, 250, 0.75)"
+    }
+]
