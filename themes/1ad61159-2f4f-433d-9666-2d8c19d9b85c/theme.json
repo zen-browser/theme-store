@@ -1,0 +1,15 @@
+{
+    "id": "1ad61159-2f4f-433d-9666-2d8c19d9b85c",
+    "name": "Glance control alignment",
+    "description": "Align the glance controls on the left or right of the glance window.",
+    "homepage": "https://github.com/riverattic/glance-control-alignment",
+    "style": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/1ad61159-2f4f-433d-9666-2d8c19d9b85c/chrome.css",
+    "readme": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/1ad61159-2f4f-433d-9666-2d8c19d9b85c/readme.md",
+    "image": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/1ad61159-2f4f-433d-9666-2d8c19d9b85c/image.png",
+    "author": "riverattic",
+    "version": "1.0.0",
+    "tags": [],
+    "createdAt": "2026-01-12",
+    "updatedAt": "2026-01-12",
+    "preferences": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/1ad61159-2f4f-433d-9666-2d8c19d9b85c/preferences.json"
+}
