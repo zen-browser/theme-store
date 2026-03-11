@@ -1,0 +1,14 @@
+{
+    "id": "da342a99-4c0d-4af5-8e36-ab969ccb18d7",
+    "name": "Aura",
+    "description": "Personal style of Sam Lewis (https://saml.dev). Maybe you'll love it too!",
+    "homepage": "https://github.com/saml-dev/zen-theme",
+    "style": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/da342a99-4c0d-4af5-8e36-ab969ccb18d7/chrome.css",
+    "readme": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/da342a99-4c0d-4af5-8e36-ab969ccb18d7/readme.md",
+    "image": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/da342a99-4c0d-4af5-8e36-ab969ccb18d7/image.png",
+    "author": "saml-dev",
+    "version": "1.0.0",
+    "tags": [],
+    "createdAt": "2025-02-07",
+    "updatedAt": "2025-02-07"
+}

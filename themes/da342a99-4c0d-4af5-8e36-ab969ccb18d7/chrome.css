@@ -1,0 +1,86 @@
+
+/* Small workspace name, centered, uppercase. */
+#zen-current-workspace-indicator {
+  justify-content: center;
+  align-items: center !important;
+  display: flex;
+  margin: 5px 0;
+}
+#zen-current-workspace-indicator-icon {
+  display: none;
+}
+#zen-current-workspace-indicator-name {
+  font-size: 0.9em !important;
+  padding: 0 !important;
+  position: static !important;
+  text-transform: uppercase;
+}
+
+/* Large tabs. */
+.tab-content {
+  padding: 11px 9px !important;
+  font-size: 1.3em;
+}
+
+/* Hide New Tab Button. */
+#new-tab-button {
+  display: none;
+}
+
+/* Hide Settings and Sidebar Collapse buttons. */
+#preferences-button,
+#zen-expand-sidebar-button {
+  display: none;
+}
+
+/* Hide URL bar buttons. */
+#page-action-buttons {
+  display: none;
+}
+
+/* Hide URL bar buttons unless hovering. */
+#tracking-protection-icon-container,
+#identity-box,
+#page-action-buttons {
+  opacity: 0 !important;
+  transition: opacity 150ms;
+
+.urlbar-input-container:hover & {
+    opacity: 1 !important;
+  }
+}
+
+/* Center URL when not focused. */
+#urlbar-input[aria-expanded='false'] {
+  text-align: center !important;
+}
+#urlbar-container {
+  max-width: 700px;
+  margin: 0 auto !important;
+}
+
+/* Y-padding on the top bar. */
+#zen-appcontent-navbar-container {
+  padding: 8px 0;
+}
+
+/* Bigger text when typing in URL bar. */
+#urlbar-input[aria-expanded='true'] {
+  font-size: 1.3em !important;
+}
+
+/* Larger workspace icons at bottom of tab bar. */
+#zen-workspaces-button {
+  font-size: 1.5em;
+  gap: 8px !important;
+}
+
+/* Faded bottom icons in the sidebar until hover. */
+#zen-sidebar-icons-wrapper {
+  opacity: 0.5;
+  transition: opacity 150ms;
+
+&:hover {
+    opacity: 1;
+  }
+}
