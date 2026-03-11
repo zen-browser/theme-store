@@ -1,0 +1,15 @@
+{
+    "id": "a0077b84-d98c-493f-a3b9-5054b2dd25a8",
+    "name": "Tidy popup v2",
+    "description": "A clean theme for Zen Browser that makes popup panels compact and modern.",
+    "homepage": "https://github.com/theoneand33/zen-tidy-popup",
+    "style": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/a0077b84-d98c-493f-a3b9-5054b2dd25a8/chrome.css",
+    "readme": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/a0077b84-d98c-493f-a3b9-5054b2dd25a8/readme.md",
+    "image": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/a0077b84-d98c-493f-a3b9-5054b2dd25a8/image.png",
+    "author": "theoneand33",
+    "version": "1.0.0",
+    "tags": [],
+    "createdAt": "2026-03-02",
+    "updatedAt": "2026-03-02",
+    "preferences": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/a0077b84-d98c-493f-a3b9-5054b2dd25a8/preferences.json"
+}
