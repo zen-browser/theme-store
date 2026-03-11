@@ -1,0 +1,17 @@
+
+#zen-appcontent-navbar-wrapper {
+  height: 0px;
+  min-height: 0px;
+}
+
+#zen-tabbox-wrapper {
+  margin: 0 !important;
+}
+
+#zen-appcontent-navbar-wrapper {
+  margin-bottom: -8px;
+}
+
+#zen-appcontent-navbar-wrapper[zen-has-hover="true"] {
+  margin-bottom: 0px;
+}
