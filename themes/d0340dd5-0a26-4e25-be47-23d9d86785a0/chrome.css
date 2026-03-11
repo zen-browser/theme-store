@@ -1,0 +1,17 @@
+
+:root[inFullscreen] {
+  #zen-main-app-wrapper {
+    /*
+    override
+    background: var(--zen-themed-toolbar-bg-transparent)
+    */
+    background: var(--zen-branding-bg)!important;
+
+/* keep grey-out setting intact */
+    @media (-moz-pref("zen.view.grey-out-inactive-windows")) {
+      &:-moz-window-inactive {
+        background: InactiveCaption!important;;
+      }
+    }
+  }
+}
