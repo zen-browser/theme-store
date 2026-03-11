@@ -1,0 +1,12 @@
+
+#contentAreaContextMenu > [extensionid] {
+    display: none !important;
+}
+#contentAreaContextMenu menuitem[id^="_"],
+#contentAreaContextMenu menu[id^="_"] {
+    display: none !important;
+}
+#contentAreaContextMenu > .menu-iconic[id*="extension"],
+#contentAreaContextMenu > .menuitem-iconic[id*="extension"] {
+    display: none !important;
+}
