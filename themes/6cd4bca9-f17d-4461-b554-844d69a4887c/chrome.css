@@ -1,7 +1,3 @@
-#navigator-toolbox[zen-right-side="true"] > #zen-sidebar-top-buttons > .titlebar-buttonbox-container > .titlebar-buttonbox {
-    margin-top: 11px !important;
-}
-
 .titlebar-buttonbox {
     margin-right: 20px;
 }
@@ -29,18 +25,14 @@
     background-color: hsl(0, 50%, 50%) !important;
 }
 
-.titlebar-button > image {
-    visibility: collapse !important;
+.titlebar-button {
+    font-size: 11px !important;
 }
 
-@media (-moz-bool-pref: "theme.zen-minimal-exit-menu.enable-icon-visibility"){
-    .titlebar-button > image {
-        visibility: visible !important;
-        max-height: 8px !important;
-        max-width: 8px !important;
-        position: relative !important;
-        left: 2.55px !important;
-        filter: brightness(0) !important;
+@media not (-moz-bool-pref: "theme.zen-minimal-exit-menu.show-window-icons") {
+    .titlebar-button {
+        font-size: 0px !important;
+        color: transparent !important;
     }
 }
 
@@ -56,11 +48,11 @@
     }
     
     .titlebar-min:hover {
-        background-color: hsl(60, 50%, 50%) !important;
+        background-color: hsl(130, 50%, 40%) !important;
     }
 
     .titlebar-max:hover, .titlebar-restore:hover {
-        background-color: hsl(130, 50%, 40%) !important;
+        background-color: hsl(60, 50%, 50%) !important;
     }
 
     .titlebar-close:hover {
