@@ -1,0 +1,14 @@
+{
+    "id": "d6a7a7c4-a699-4a0a-a564-ffc72dcd15c5",
+    "name": "New toolbar icons",
+    "description": "New icons for the toolbar and better locale button",
+    "homepage": "https://github.com/qumeqa/zen-toolbar-icons",
+    "style": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/d6a7a7c4-a699-4a0a-a564-ffc72dcd15c5/chrome.css",
+    "readme": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/d6a7a7c4-a699-4a0a-a564-ffc72dcd15c5/readme.md",
+    "image": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/d6a7a7c4-a699-4a0a-a564-ffc72dcd15c5/image.png",
+    "author": "qumeqa",
+    "version": "1.0.0",
+    "tags": [],
+    "createdAt": "2025-12-22",
+    "updatedAt": "2025-12-22"
+}
