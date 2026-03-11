@@ -1,0 +1,8 @@
+
+.tab-audio-button {
+  display: none !important;
+}
+.tab-icon-overlay[muted], 
+.tab-icon-overlay[soundplaying] { 
+  display: none !important; 
+}
