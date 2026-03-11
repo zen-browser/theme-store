@@ -1,0 +1,194 @@
+
+/* ===== MINIMAL EXIT MENU ===== */
+/* Hide default Windows glyphs inside titlebar buttons */
+.titlebar-button image, 
+.titlebar-button .toolbarbutton-icon, 
+.titlebar-button::before, 
+.titlebar-button::after { 
+    display: none !important; 
+    visibility: collapse !important; 
+}
+
+/* Adjust margin for right-side sidebar */
+#navigator-toolbox[zen-right-side="true"] > #zen-sidebar-top-buttons > .titlebar-buttonbox-container > .titlebar-buttonbox {
+    margin-top: 11px !important;
+}
+
+.titlebar-buttonbox {
+    margin-right: 20px;
+}
+
+/* Base button styling */
+.titlebar-button {
+    padding: 0px !important;
+    min-height: 13px !important;
+    min-width: 13px !important;
+    height: 13px !important;
+    align-self: center;
+    margin-left: 5px !important;
+    border-radius: 50px;
+    transition: all 200ms cubic-bezier(0.4, 0.0, 0.2, 1) !important;
+}
+
+/* Default state colors - Acrylic Effect */
+@media (-moz-bool-pref: "mod.minimal-adds.exit-menu-acrylic-effect") {
+    .titlebar-button {
+        background-color: rgba(155, 155, 155, 0.15) !important;
+        backdrop-filter: blur(10px) saturate(180%) !important;
+        border: .5px solid rgba(255, 255, 255, 0.2) !important;
+    }
+    
+    @media (-moz-bool-pref: "mod.minimal-adds.exit-menu-box-shadow") {
+        .titlebar-button {
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1) !important;
+        }
+    }
+    
+    .titlebar-min:hover {
+        background-color: rgba(255, 234, 0, 0.4) !important;
+        backdrop-filter: blur(12px) saturate(200%) !important;
+        border-color: rgba(255, 234, 0, 0.4) !important;
+    }
+    
+    @media (-moz-bool-pref: "mod.minimal-adds.exit-menu-box-shadow") {
+        .titlebar-min:hover {
+            box-shadow: 0 2px 12px rgba(255, 234, 0, 0.3) !important;
+        }
+    }
+
+.titlebar-max:hover, .titlebar-restore:hover {
+        background-color: rgba(40, 205, 65, 0.4) !important;
+        backdrop-filter: blur(12px) saturate(200%) !important;
+        border-color: rgba(40, 205, 65, 0.4) !important;
+    }
+    
+    @media (-moz-bool-pref: "mod.minimal-adds.exit-menu-box-shadow") {
+        .titlebar-max:hover, .titlebar-restore:hover {
+            box-shadow: 0 2px 12px rgba(40, 205, 65, 0.3) !important;
+        }
+    }
+
+.titlebar-close:hover {
+        background-color: rgba(255, 69, 58, 0.4) !important;
+        backdrop-filter: blur(12px) saturate(200%) !important;
+        border-color: rgba(255, 69, 58, 0.4) !important;
+    }
+    
+    @media (-moz-bool-pref: "mod.minimal-adds.exit-menu-box-shadow") {
+        .titlebar-close:hover {
+            box-shadow: 0 2px 12px rgba(255, 69, 58, 0.3) !important;
+        }
+    }
+    
+    .titlebar-button:hover {
+        min-height: 20px !important;
+        transform: scale(1.05) !important;
+    }
+}
+
+/* Default state colors - Solid (no acrylic) */
+@media not (-moz-bool-pref: "mod.minimal-adds.exit-menu-macos-style") {
+    @media not (-moz-bool-pref: "mod.minimal-adds.exit-menu-acrylic-effect") {
+        .titlebar-button {
+            background-color: var(--zen-colors-border) !important;
+        }
+        
+        .titlebar-min:hover {
+            background-color: hsl(60, 50%, 50%) !important;
+        }
+
+.titlebar-max:hover, .titlebar-restore:hover {
+            background-color: hsl(130, 50%, 40%) !important;
+        }
+
+.titlebar-close:hover {
+            background-color: hsl(0, 50%, 50%) !important;
+        }
+        
+        .titlebar-button:hover {
+            min-height: 20px !important;
+        }
+    }
+}
+
+/* MacOS style - Acrylic Effect */
+@media (-moz-bool-pref: "mod.minimal-adds.exit-menu-macos-style") {
+    @media (-moz-bool-pref: "mod.minimal-adds.exit-menu-acrylic-effect") {
+        .titlebar-min {
+            background-color: rgba(40, 205, 65, 0.5) !important;
+            backdrop-filter: blur(10px) saturate(180%) !important;
+            border: 1px solid rgba(40, 205, 65, 0.3) !important;
+        }
+        
+        @media (-moz-bool-pref: "mod.minimal-adds.exit-menu-box-shadow") {
+            .titlebar-min {
+                box-shadow: 0 2px 8px rgba(40, 205, 65, 0.2) !important;
+            }
+        }
+
+.titlebar-max, .titlebar-restore {
+            background-color: rgba(255, 204, 0, 0.5) !important;
+            backdrop-filter: blur(10px) saturate(180%) !important;
+            border: 1px solid rgba(255, 204, 0, 0.3) !important;
+        }
+        
+        @media (-moz-bool-pref: "mod.minimal-adds.exit-menu-box-shadow") {
+            .titlebar-max, .titlebar-restore {
+                box-shadow: 0 2px 8px rgba(255, 204, 0, 0.2) !important;
+            }
+        }
+
+.titlebar-close {
+            background-color: rgba(255, 69, 58, 0.5) !important;
+            backdrop-filter: blur(10px) saturate(180%) !important;
+            border: 1px solid rgba(255, 69, 58, 0.3) !important;
+        }
+        
+        @media (-moz-bool-pref: "mod.minimal-adds.exit-menu-box-shadow") {
+            .titlebar-close {
+                box-shadow: 0 2px 8px rgba(255, 69, 58, 0.2) !important;
+            }
+        }
+
+.titlebar-button:hover {
+            opacity: 0.7 !important;
+            backdrop-filter: blur(15px) saturate(220%) !important;
+            transform: scale(1.05) !important;
+        }
+    }
+
+/* MacOS style - Solid (no acrylic) */
+    @media not (-moz-bool-pref: "mod.minimal-adds.exit-menu-acrylic-effect") {
+        .titlebar-min {
+            background-color: hsl(130, 50%, 40%) !important;
+        }
+
+.titlebar-max, .titlebar-restore {
+            background-color: hsl(60, 50%, 50%) !important;
+        }
+
+.titlebar-close {
+            background-color: hsl(0, 50%, 50%) !important;
+        }
+
+.titlebar-button:hover {
+            opacity: 0.25 !important;
+        }
+    }
+}
+
+/* ===== CENTERED URL BAR TEXT ===== */
+
+/* Enable centered URL bar text */
+@media (-moz-bool-pref: "mod.minimal-adds.centered-urlbartext-enabled") {
+    
+    /* Center text when not focused */
+    #urlbar:not([focused]) #urlbar-input {
+        text-align: center !important;
+    }
+
+/* Left align text when focused/clicked */
+    #urlbar[focused] #urlbar-input {
+        text-align: left !important;
+    }
+}

@@ -1,0 +1,15 @@
+{
+    "id": "c4e1bf92-9c2f-4fff-95ca-9d1bda4fed64",
+    "name": "Minimal Adds",
+    "description": "A quality-of-use improvement mod focused on Zen",
+    "homepage": "https://github.com/Gatogordo03/Minimal-Adds-Zen",
+    "style": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/c4e1bf92-9c2f-4fff-95ca-9d1bda4fed64/chrome.css",
+    "readme": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/c4e1bf92-9c2f-4fff-95ca-9d1bda4fed64/readme.md",
+    "image": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/c4e1bf92-9c2f-4fff-95ca-9d1bda4fed64/image.png",
+    "author": "Gatogordo03",
+    "version": "1.0.0",
+    "tags": [],
+    "createdAt": "2025-11-17",
+    "updatedAt": "2025-11-17",
+    "preferences": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/c4e1bf92-9c2f-4fff-95ca-9d1bda4fed64/preferences.json"
+}
