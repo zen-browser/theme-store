@@ -1,0 +1,98 @@
+
+:root {
+  --active-tab-emoji-focus-marker: var(
+    --mod-active_tab_emoji_focus-active_marker,
+    "✨"
+  );
+  --active-tab-emoji-focus-marker-size: calc(
+    var(--mod-active_tab_emoji_focus-marker_size, 11) * 1px
+  );
+  --active-tab-emoji-focus-inactive-opacity: calc(
+    var(--mod-active_tab_emoji_focus-inactive_opacity, 78) / 100
+  );
+  --active-tab-emoji-focus-border-width: calc(
+    var(--mod-active_tab_emoji_focus-border_width, 2) * 1px
+  );
+}
+
+#tabbrowser-tabs .tabbrowser-tab {
+  --active-tab-emoji-focus-accent: var(
+    --identity-icon-color,
+    color-mix(in srgb, var(--zen-primary-color, #62c6ff) 75%, white 25%)
+  );
+}
+
+#tabbrowser-tabs .tabbrowser-tab > .tab-stack > .tab-background {
+  transition:
+    border-color 180ms ease,
+    box-shadow 180ms ease,
+    opacity 180ms ease,
+    transform 180ms ease,
+    background-color 180ms ease !important;
+}
+
+#tabbrowser-tabs .tabbrowser-tab:not(:is([selected], [visuallyselected], [multiselected]))
+  > .tab-stack
+  > .tab-background {
+  opacity: var(--active-tab-emoji-focus-inactive-opacity) !important;
+  filter: saturate(0.82) brightness(0.94) !important;
+}
+
+#tabbrowser-tabs .tabbrowser-tab:is([selected], [visuallyselected], [multiselected])
+  > .tab-stack
+  > .tab-background {
+  border: var(--active-tab-emoji-focus-border-width) solid
+    color-mix(in srgb, var(--active-tab-emoji-focus-accent) 92%, white 8%) !important;
+  background:
+    radial-gradient(
+      circle at 50% 52%,
+      color-mix(in srgb, var(--active-tab-emoji-focus-accent) 18%, transparent)
+        0%,
+      transparent 58%
+    ),
+    color-mix(in srgb, var(--active-tab-emoji-focus-accent) 11%, transparent) !important;
+  box-shadow:
+    0 0 0 1px
+      color-mix(in srgb, var(--active-tab-emoji-focus-accent) 35%, transparent),
+    0 0 20px
+      color-mix(in srgb, var(--active-tab-emoji-focus-accent) 34%, transparent),
+    inset 0 0 16px
+      color-mix(in srgb, var(--active-tab-emoji-focus-accent) 12%, transparent) !important;
+}
+
+#tabbrowser-tabs .tabbrowser-tab:is([selected], [visuallyselected], [multiselected])
+  > .tab-stack
+  > .tab-content {
+  position: relative !important;
+}
+
+#tabbrowser-tabs
+  .tabbrowser-tab:is([selected], [visuallyselected], [multiselected]):not([pinned])
+  .tab-label-container {
+  padding-inline: 14px !important;
+}
+
+#tabbrowser-tabs
+  .tabbrowser-tab:is([selected], [visuallyselected], [multiselected]):not([pinned])
+  > .tab-stack
+  > .tab-content::after {
+  content: var(--active-tab-emoji-focus-marker);
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -52%);
+  font-size: var(--active-tab-emoji-focus-marker-size);
+  line-height: 1;
+  pointer-events: none;
+  color: color-mix(in srgb, var(--active-tab-emoji-focus-accent) 76%, white 24%);
+  text-shadow:
+    0 0 6px color-mix(in srgb, var(--active-tab-emoji-focus-accent) 60%, transparent),
+    0 0 12px color-mix(in srgb, var(--active-tab-emoji-focus-accent) 45%, transparent);
+  opacity: 0.95;
+  z-index: 3;
+}
+
+#tabbrowser-tabs .tabbrowser-tab:is([selected], [visuallyselected], [multiselected]) .tab-label {
+  font-weight: 650 !important;
+  letter-spacing: 0.01em !important;
+}

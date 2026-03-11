@@ -1,0 +1,15 @@
+{
+    "id": "32cfeb7c-d7c1-4503-b712-8f8eb5825176",
+    "name": "Active Tab Emoji Focus",
+    "description": "Highlight the active tab with a centered emoji marker and stronger visual focus.",
+    "homepage": "https://github.com/constansino/zen-active-tab-emoji-focus",
+    "style": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/32cfeb7c-d7c1-4503-b712-8f8eb5825176/chrome.css",
+    "readme": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/32cfeb7c-d7c1-4503-b712-8f8eb5825176/readme.md",
+    "image": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/32cfeb7c-d7c1-4503-b712-8f8eb5825176/image.png",
+    "author": "constansino",
+    "version": "1.0.0",
+    "tags": [],
+    "createdAt": "2026-02-18",
+    "updatedAt": "2026-02-18",
+    "preferences": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/32cfeb7c-d7c1-4503-b712-8f8eb5825176/preferences.json"
+}

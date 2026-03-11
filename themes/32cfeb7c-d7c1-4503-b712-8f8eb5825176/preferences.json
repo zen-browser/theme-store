@@ -1,0 +1,26 @@
+[
+    {
+        "property": "mod.active_tab_emoji_focus.active_marker",
+        "label": "Emoji marker shown at active tab center",
+        "type": "string",
+        "defaultValue": "\u2728"
+    },
+    {
+        "property": "mod.active_tab_emoji_focus.marker_size",
+        "label": "Active marker size in px (number only)",
+        "type": "string",
+        "defaultValue": "11"
+    },
+    {
+        "property": "mod.active_tab_emoji_focus.inactive_opacity",
+        "label": "Inactive tab opacity 0-100 (number only)",
+        "type": "string",
+        "defaultValue": "78"
+    },
+    {
+        "property": "mod.active_tab_emoji_focus.border_width",
+        "label": "Active border width in px (number only)",
+        "type": "string",
+        "defaultValue": "2"
+    }
+]
