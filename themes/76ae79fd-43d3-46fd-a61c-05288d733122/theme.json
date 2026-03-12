@@ -1,0 +1,15 @@
+{
+    "id": "76ae79fd-43d3-46fd-a61c-05288d733122",
+    "name": "Floaty UI",
+    "description": "Compact Mode, but it floats. Supports Zen Color Picker and background blur.",
+    "homepage": "https://github.com/moktavizen/floaty-ui",
+    "style": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/76ae79fd-43d3-46fd-a61c-05288d733122/chrome.css",
+    "readme": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/76ae79fd-43d3-46fd-a61c-05288d733122/readme.md",
+    "image": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/76ae79fd-43d3-46fd-a61c-05288d733122/image.png",
+    "author": "moktavizen",
+    "version": "1.0.0",
+    "tags": [],
+    "createdAt": "2025-07-16",
+    "updatedAt": "2025-07-16",
+    "preferences": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/76ae79fd-43d3-46fd-a61c-05288d733122/preferences.json"
+}
