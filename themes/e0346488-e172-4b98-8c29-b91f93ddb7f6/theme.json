@@ -1,0 +1,14 @@
+{
+    "id": "e0346488-e172-4b98-8c29-b91f93ddb7f6",
+    "name": "Remove Reset Pin Slash",
+    "description": "Remove the forward slash icon after the reset pin button.",
+    "homepage": "https://github.com/Ender-Wang/zen-mods/tree/master/remove-eset-pin-slash",
+    "style": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/e0346488-e172-4b98-8c29-b91f93ddb7f6/chrome.css",
+    "readme": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/e0346488-e172-4b98-8c29-b91f93ddb7f6/readme.md",
+    "image": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/e0346488-e172-4b98-8c29-b91f93ddb7f6/image.png",
+    "author": "Ender-Wang",
+    "version": "1.0.0",
+    "tags": [],
+    "createdAt": "2025-08-08",
+    "updatedAt": "2025-08-08"
+}
