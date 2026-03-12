@@ -6,7 +6,7 @@
     --ghost-opacity: calc(var(--mod-ghost_tabs-opacity, 50) * 0.01);
 }
 
-@media (-moz-bool-pref: "mod.ghost_tabs.bw_enabled") {
+@media (-moz-pref("mod.ghost_tabs.bw_enabled")) {
     :root {
         --ghost-filter: saturate(calc(var(--mod-ghost_tabs-saturation, 0) * 1%));
     }
