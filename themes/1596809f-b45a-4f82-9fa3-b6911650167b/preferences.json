@@ -1,0 +1,44 @@
+[
+    {
+        "property": "mod.searchbadge.fontsize",
+        "label": "Search badge font size (e.g. 13px)",
+        "type": "string",
+        "defaultValue": "13px"
+    },
+    {
+        "property": "mod.searchbadge.paddingvertical",
+        "label": "Search badge vertical padding (e.g. 4.5px)",
+        "type": "string",
+        "defaultValue": "4.5px"
+    },
+    {
+        "property": "mod.searchbadge.paddinghorizontal",
+        "label": "Search badge horizontal padding (e.g. 10px)",
+        "type": "string",
+        "defaultValue": "10px"
+    },
+    {
+        "property": "mod.searchbadge.backgroundcolor",
+        "label": "Search badge background color",
+        "type": "string",
+        "defaultValue": "#64ab9c"
+    },
+    {
+        "property": "mod.searchbadge.fontcolor",
+        "label": "Search badge font color",
+        "type": "string",
+        "defaultValue": "#ffffff"
+    },
+    {
+        "property": "mod.searchbadge.shadowcolor",
+        "label": "Search badge shadow color",
+        "type": "string",
+        "defaultValue": "#64ab9c4e"
+    },
+    {
+        "property": "mod.searchbadge.shadowstyle",
+        "label": "Search badge shadow style (e.g. 0 0 12px)",
+        "type": "string",
+        "defaultValue": "0 0 12px"
+    }
+]

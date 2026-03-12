@@ -1,0 +1,20 @@
+
+#urlbar-search-mode-indicator {
+  padding: var(--mod-searchbadge-paddingvertical)
+    var(--mod-searchbadge-paddinghorizontal) !important;
+  border-radius: 9999px !important;
+  background: var(--mod-searchbadge-backgroundcolor) !important;
+  color: var(--mod-searchbadge-fontcolor) !important;
+  font-weight: 500;
+  box-shadow: var(--mod-searchbadge-shadowstyle)
+    var(--mod-searchbadge-shadowcolor);
+  font-size: var(--mod-searchbadge-fontsize);
+}
+
+#urlbar-search-mode-indicator-close.close-button {
+  display: none;
+}
+
+#urlbar-search-mode-indicator-title {
+  padding: 0 !important;
+}
