@@ -1,0 +1,10 @@
+[
+    {
+        "property": "theme.firefoxtheme.heightmove",
+        "label": "Move up the theme if needed (pixel or %)",
+        "type": "string",
+        "defaultValue": "50%",
+        "placeholder": "e.g: 50px / 50%",
+        "disabledOn": []
+    }
+]
