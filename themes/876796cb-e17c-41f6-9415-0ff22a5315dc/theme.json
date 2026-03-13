@@ -1,0 +1,14 @@
+{
+    "id": "876796cb-e17c-41f6-9415-0ff22a5315dc",
+    "name": "Hide Application Menu",
+    "description": "Theme to hide the 'Open application menu' button.",
+    "homepage": "https://github.com/iTzNao/zen-hide-application-menu",
+    "style": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/876796cb-e17c-41f6-9415-0ff22a5315dc/chrome.css",
+    "readme": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/876796cb-e17c-41f6-9415-0ff22a5315dc/readme.md",
+    "image": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/876796cb-e17c-41f6-9415-0ff22a5315dc/image.png",
+    "author": "iTzNao",
+    "version": "1.0.0",
+    "tags": [],
+    "createdAt": "2025-04-15",
+    "updatedAt": "2025-04-15"
+}
