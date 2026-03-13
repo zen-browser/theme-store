@@ -8,15 +8,16 @@
     "image": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/a6335949-4465-4b71-926c-4a52d34bc9c0/image.png",
     "author": "RobotoSkunk",
     "preferences": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/a6335949-4465-4b71-926c-4a52d34bc9c0/preferences.json",
-    "version": "1.5.1",
+    "version": "1.6.0",
     "tags": [
         "find",
         "bar",
         "search",
+		"findbar",
         "searchbar",
         "find-bar",
         "search-bar"
     ],
     "createdAt": "2024-11-24",
-    "updatedAt": "2026-02-12"
+    "updatedAt": "2026-03-12"
 }

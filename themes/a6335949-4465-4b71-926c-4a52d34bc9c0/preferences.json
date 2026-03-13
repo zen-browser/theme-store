@@ -9,13 +9,40 @@
         "property": "theme.better_find_bar.custom_background",
         "label": "Custom background HEX color",
         "type": "string",
-        "defaultValue": "#112233"
+        "defaultValue": "#112233",
+        "placeholder": "#112233"
     },
     {
         "property": "theme.better_find_bar.transparent_background",
         "label": "Transparent background (disable it if the background blur doesn't work)",
         "type": "checkbox",
         "defaultValue": true
+    },
+    {
+        "property": "theme-better_find_bar-enable_custom_text_color",
+        "label": "Enable custom text color",
+        "type": "checkbox",
+        "defaultValue": false
+    },
+    {
+        "property": "theme.better_find_bar.custom_text_color",
+        "label": "Custom text HEX color",
+        "type": "string",
+        "defaultValue": "#ffffff",
+        "placeholder": "#ffffff"
+    },
+    {
+        "property": "theme-better_find_bar-enable_custom_box_shadow",
+        "label": "Enable custom box shadow",
+        "type": "checkbox",
+        "defaultValue": false
+    },
+    {
+        "property": "theme.better_find_bar.custom_box_shadow",
+        "label": "Custom box shadow (full CSS box-shadow value)",
+        "type": "string",
+        "defaultValue": "0 5px 10px rgba(0,0,0,0.5)",
+        "placeholder": "0 5px 10px rgba(0,0,0,0.5)"
     },
     {
         "property": "theme.better_find_bar.horizontal_position",
