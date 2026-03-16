@@ -1,0 +1,14 @@
+[
+    {
+        "property": "mod.zen_custom.opacity",
+        "label": "Background transparency",
+        "type": "checkbox",
+        "disabledOn": []
+    },
+    {
+        "property": "mod.zen_custom.border_radius",
+        "label": "Corner roundness",
+        "type": "checkbox",
+        "disabledOn": []
+    }
+]
