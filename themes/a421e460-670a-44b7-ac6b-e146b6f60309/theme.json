@@ -1,0 +1,14 @@
+{
+    "id": "a421e460-670a-44b7-ac6b-e146b6f60309",
+    "name": "Floating Bookmark Sidebar",
+    "description": "Improves appearance of bookmark sidebar, placing it on right, floating it and giving it zen aesthetic",
+    "homepage": "https://github.com/TISupe/Zen-Floating-Bookmark",
+    "style": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/a421e460-670a-44b7-ac6b-e146b6f60309/chrome.css",
+    "readme": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/a421e460-670a-44b7-ac6b-e146b6f60309/readme.md",
+    "image": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/a421e460-670a-44b7-ac6b-e146b6f60309/image.png",
+    "author": "TISupe",
+    "version": "1.0.0",
+    "tags": [],
+    "createdAt": "2025-04-12",
+    "updatedAt": "2025-04-12"
+}
