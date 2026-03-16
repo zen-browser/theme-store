@@ -1,0 +1,50 @@
+[
+    {
+        "property": "theme.sidebar_expand_on_hover.expanded_width",
+        "label": "Width of the expanded sidebar",
+        "type": "string",
+        "defaultValue": "300px"
+    },
+    {
+        "property": "theme.sidebar_expand_on_hover.transition_speed",
+        "label": "Transition speed of the sidebar",
+        "type": "string",
+        "defaultValue": "120ms"
+    },
+    {
+        "property": "theme.sidebar_expand_on_hover.default_tab_background_shape",
+        "label": "Default Tab Background Shape",
+        "type": "checkbox",
+        "defaultValue": false
+    },
+    {
+        "property": "theme.sidebar_expand_on_hover.collapse_buttons",
+        "label": "Collapse the buttons to only show current workspace",
+        "type": "checkbox",
+        "defaultValue": true
+    },
+    {
+        "property": "theme.sidebar_expand_on_hover.hide_workspace_indicator",
+        "label": "Hide top workspace indicator",
+        "type": "checkbox",
+        "defaultValue": true
+    },
+    {
+        "property": "theme.sidebar_expand_on_hover.custom_background",
+        "label": "My theme overwrites the #TabsToolbar background (e.g. catppuccin)",
+        "type": "checkbox",
+        "defaultValue": false
+    },
+    {
+        "property": "theme.sidebar_expand_on_hover.inverted_tabs",
+        "label": "Inverted Tab Direction",
+        "type": "checkbox",
+        "defaultValue": false
+    },
+    {
+        "property": "theme.zen-minimal-exit-menu.enable-macos-identic",
+        "label": "Enable macOS identical window buttons",
+        "type": "checkbox",
+        "defaultValue": false
+    }
+]

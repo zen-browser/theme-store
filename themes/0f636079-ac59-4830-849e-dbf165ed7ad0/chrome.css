@@ -1,0 +1,226 @@
+
+/* ========== Window Buttons Styles ========== */
+
+/* Adjust top margin for sidebar top buttons when using right-side layout */
+    #navigator-toolbox[zen-right-side="true"] > #zen-sidebar-top-buttons > .titlebar-buttonbox-container > .titlebar-buttonbox {
+        margin-top: 11px !important;
+    }
+
+/* Set right margin for the button container */
+    .titlebar-buttonbox {
+        margin-right: 20px;
+    }
+
+/* Base styling for titlebar buttons */
+    .titlebar-button {
+        padding: 0px !important;
+        min-height: 13px !important;
+        min-width: 13px !important;
+        height: 13px !important;
+        align-self: center;
+        margin-left: 5px !important;
+        border-radius: 50px;
+        transition: all 100ms;
+    }
+
+/* Background colors for individual window buttons */
+    .titlebar-min {
+        background-color: hsl(130, 50%, 40%) !important;
+    }
+    .titlebar-max, .titlebar-restore {
+        background-color: hsl(60, 50%, 50%) !important;
+    }
+    .titlebar-close {
+        background-color: hsl(0, 50%, 50%) !important;
+    }
+
+/* Hide images inside titlebar buttons */
+    .titlebar-button > image {
+        visibility: collapse !important;
+    }
+
+/* ========== macOS-style Hover Effect ========== */
+    @media (-moz-bool-pref: "theme.zen-minimal-exit-menu.enable-macos-identic") {
+        .titlebar-button:hover {
+            opacity: 0.25 !important;
+        }
+    }
+
+/* ========== Default Styling for Non-macOS Mode ========== */
+    @media not (-moz-bool-pref: "theme.zen-minimal-exit-menu.enable-macos-identic") {
+        .titlebar-button {
+            background-color: var(--zen-colors-border) !important;
+        }
+        .titlebar-min:hover {
+            background-color: hsl(130, 50%, 40%) !important;
+        }
+        .titlebar-max:hover, .titlebar-restore:hover {
+            background-color: hsl(60, 50%, 50%) !important;
+        }
+        .titlebar-close:hover {
+            background-color: hsl(0, 50%, 50%) !important;
+        }
+        .titlebar-button:hover {
+            min-height: 20px !important;
+        }
+    }
+
+/* ========== Navigator Toolbox and Titlebar Base Styles ========== */
+
+/* Set toolbox position and stacking order */
+    #navigator-toolbox {
+        position: relative !important;
+        z-index: 10 !important;
+    }
+
+/* Basic styling for the titlebar (sidebar container) */
+    #titlebar {
+        width: var(--zen-toolbox-max-width, 44px) !important; /* Default width is 44px */
+        transition: width var(--theme-sidebar_expand_on_hover-transition_speed, 120ms) cubic-bezier(.24, -0.01, .58, 1) !important;
+        overflow: hidden !important;
+        border-radius: 8px !important;
+        background-color: var(--zen-main-browser-background-toolbar, transparent) !important;
+        z-index: 1000 !important; /* Ensure titlebar is on top */
+    }
+
+/* ========== Collapsed Sidebar Mode Styles ========== */
+    :root:has(#navigator-toolbox:not([zen-sidebar-expanded="true"])) {
+        --zen-toolbox-max-width: 44px !important;
+        --tab-collapsed-width: var(--zen-toolbox-max-width) !important;
+
+/* Vertical tabs container styling in collapsed mode */
+        #tabbrowser-tabs[orient="vertical"] {
+            display: flex;
+            flex-direction: column;
+            overflow: hidden;
+            max-width: 100%;
+        }
+
+/* Tab styling for collapsed mode */
+        .tabbrowser-tab {
+            width: var(--zen-toolbox-max-width) !important;
+            margin: 0 !important;
+            /* Center the content within tabs */
+            .tab-content {
+                justify-content: center !important;
+                align-items: center !important;
+            }
+            .tab-icon-stack {
+                margin: 0 auto !important;
+            }
+            /* Hide tab labels when collapsed */
+            .tab-label-container {
+                display: none !important;
+            }
+        }
+
+/* Transition effect for the new tab button */
+        #tabs-newtab-button {
+            transition: width 120ms cubic-bezier(.24, -0.01, .58, 1) !important;
+        }
+
+/* ========== Sidebar Background in Collapsed Mode ========== */
+        @media not (-moz-bool-pref: "theme.sidebar_expand_on_hover.custom_background") {
+            #titlebar::before {
+                position: absolute;
+                content: "";
+                width: 100%;
+                height: 100%;
+                opacity: 0.0;
+                transition: 60ms opacity ease-in calc(var(--theme-sidebar_expand_on_hover-transition_speed, 120ms) - 60ms);
+                z-index: -1;
+                background: var(--zen-main-browser-background-toolbar) !important;
+                background-attachment: fixed !important;
+                background-size: 2000px !important;
+                backdrop-filter: blur(5px) !important;
+                border-top-right-radius: 8px !important;
+                border-bottom-right-radius: 8px !important;
+            }
+        }
+    }
+
+/* ========== Expanded Sidebar on Hover Styles ========== */
+    #navigator-toolbox #titlebar:hover {
+        width: var(--theme-sidebar_expand_on_hover-expanded_width, 300px) !important;
+        box-shadow: 0 0 1px rgba(0, 0, 0, 0.7);
+        background-color: var(--zen-main-browser-background-toolbar, transparent) !important;
+
+/* Reveal background when hovering */
+        &::before {
+            opacity: 1.0 !important;
+            transition: 60ms opacity ease-out;
+        }
+
+/* Expand new tab button within the titlebar on hover */
+        #titlebar:hover #tabs-newtab-button {
+            width: 100% !important; /* Button takes full width */
+            justify-content: flex-start !important;
+        }
+
+/* ========== Expanded Tabs Styles ========== */
+        .tabbrowser-tab {
+            width: 100% !important;
+            transition: all var(--theme-sidebar_expand_on_hover-transition_speed, 120ms) !important;
+            .tab-content {
+                justify-content: flex-start !important;
+                padding: 0 var(--tab-inline-padding) !important;
+                gap: var(--tab-inline-padding);
+                width: 100% !important;
+                align-items: center !important;
+                transition: all var(--theme-sidebar_expand_on_hover-transition_speed, 120ms) !important;
+            }
+            .tab-icon-stack {
+                margin: 0 !important;
+            }
+            /* Show tab labels in expanded mode */
+            .tab-label-container {
+                display: flex !important;
+                opacity: 1 !important;
+                visibility: visible !important;
+                max-width: calc(var(--theme-sidebar_expand_on_hover-expanded_width, 300px) - 60px) !important;
+                transition: opacity var(--theme-sidebar_expand_on_hover-transition_speed, 120ms) ease-in-out !important;
+            }
+            /* Animate active tab background */
+            .tab-background {
+                transition: all var(--theme-sidebar_expand_on_hover-transition_speed, 120ms) cubic-bezier(.24, -0.01, .58, 1) !important;
+                width: 100% !important;
+            }
+            &[visuallyselected="true"] .tab-background {
+                width: 100% !important;
+            }
+        }
+
+/* Display close buttons on tabs when hovered or active */
+        .tabbrowser-tab:not([pinned]):hover .tab-close-button,
+        .tabbrowser-tab[visuallyselected]:not([pinned]) .tab-close-button {
+            display: block !important;
+            opacity: 1 !important;
+        }
+    }
+
+/* ========== Tab Highlight Adjustments in Collapsed Mode ========== */
+    :root:has(#navigator-toolbox:not([zen-sidebar-expanded="true"])) {
+        .tabbrowser-tab[visuallyselected="true"] .tab-background {
+            width: calc(100% - 4px) !important;
+            margin: 0 auto !important;
+            border-radius: var(--border-radius-medium) !important;
+        }
+        @media not (-moz-bool-pref: "theme.sidebar_expand_on_hover.default_tab_background_shape") {
+            .tabbrowser-tab .tab-background {
+                border-radius: var(--border-radius-medium) !important;
+                width: calc(100% - 4px) !important;
+                margin: 0 auto !important;
+            }
+        }
+        /* Animate tab selection across various states */
+        #titlebar:hover .tabbrowser-tab .tab-background,
+        #navigator-toolbox[zen-has-hover] .tabbrowser-tab .tab-background,
+        #navigator-toolbox[has-popup-menu] .tabbrowser-tab .tab-background,
+        #navigator-toolbox[movingtab] .tabbrowser-tab .tab-background {
+            width: 100% !important;
+            transform: none !important;
+            border-radius: var(--border-radius-medium) 0 0 var(--border-radius-medium) !important;
+            transition: all var(--theme-sidebar_expand_on_hover-transition_speed, 120ms) cubic-bezier(.24, -0.01, .58, 1) !important;
+        }
+    }
+}
