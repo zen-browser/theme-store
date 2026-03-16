@@ -1,0 +1,15 @@
+{
+    "id": "9b4bd9dc-24cc-40ce-a397-cc0a24ae19ea",
+    "name": "Hide URL bar buttons",
+    "description": "Mod for Zen Browser that hides icons of your choice in the URL bar.",
+    "homepage": "https://github.com/YouriCode/ZenModHideURLBarIcons",
+    "style": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/9b4bd9dc-24cc-40ce-a397-cc0a24ae19ea/chrome.css",
+    "readme": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/9b4bd9dc-24cc-40ce-a397-cc0a24ae19ea/readme.md",
+    "image": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/9b4bd9dc-24cc-40ce-a397-cc0a24ae19ea/image.png",
+    "author": "YouriCode",
+    "version": "1.0.0",
+    "tags": [],
+    "createdAt": "2025-02-22",
+    "updatedAt": "2025-02-22",
+    "preferences": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/9b4bd9dc-24cc-40ce-a397-cc0a24ae19ea/preferences.json"
+}
