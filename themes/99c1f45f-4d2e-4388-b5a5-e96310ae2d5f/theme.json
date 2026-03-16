@@ -1,0 +1,15 @@
+{
+    "id": "99c1f45f-4d2e-4388-b5a5-e96310ae2d5f",
+    "name": "bigger browser padding",
+    "description": "makes padding of the browser... well... bigger!",
+    "homepage": "https://github.com/froggy-jpg/bigger-browser-padding",
+    "style": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/99c1f45f-4d2e-4388-b5a5-e96310ae2d5f/chrome.css",
+    "readme": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/99c1f45f-4d2e-4388-b5a5-e96310ae2d5f/readme.md",
+    "image": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/99c1f45f-4d2e-4388-b5a5-e96310ae2d5f/image.png",
+    "author": "froggy-jpg",
+    "version": "1.0.0",
+    "tags": [],
+    "createdAt": "2024-12-06",
+    "updatedAt": "2024-12-06",
+    "preferences": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/99c1f45f-4d2e-4388-b5a5-e96310ae2d5f/preferences.json"
+}
