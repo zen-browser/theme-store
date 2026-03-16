@@ -1,0 +1,14 @@
+{
+    "id": "12741dd5-85fa-4fc6-b45c-c5248579fd37",
+    "name": "Show UniExtBtn on Hover",
+    "description": "Show UniExt Button(the jigsaw puzzle-shaped extension icon) only when hovered.",
+    "homepage": "",
+    "style": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/12741dd5-85fa-4fc6-b45c-c5248579fd37/chrome.css",
+    "readme": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/12741dd5-85fa-4fc6-b45c-c5248579fd37/readme.md",
+    "image": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/12741dd5-85fa-4fc6-b45c-c5248579fd37/image.png",
+    "author": "quinut",
+    "version": "1.0.0",
+    "tags": [],
+    "createdAt": "2024-12-23",
+    "updatedAt": "2024-12-23"
+}
