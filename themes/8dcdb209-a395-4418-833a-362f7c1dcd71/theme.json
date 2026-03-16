@@ -1,0 +1,14 @@
+{
+    "id": "8dcdb209-a395-4418-833a-362f7c1dcd71",
+    "name": "Centered Search Box",
+    "description": "Limits search suggestions to five, adds a subtle border, and centers the search box.",
+    "homepage": "https://github.com/CoIorEvent8/zen-centered-search-box",
+    "style": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/8dcdb209-a395-4418-833a-362f7c1dcd71/chrome.css",
+    "readme": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/8dcdb209-a395-4418-833a-362f7c1dcd71/readme.md",
+    "image": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/8dcdb209-a395-4418-833a-362f7c1dcd71/image.png",
+    "author": "CoIorEvent8",
+    "version": "1.0.0",
+    "tags": [],
+    "createdAt": "2024-11-27",
+    "updatedAt": "2024-11-27"
+}
