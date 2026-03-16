@@ -1,0 +1,35 @@
+[
+    {
+        "label": "Size of Button Icons/Emojis",
+        "defaultValue": "16px",
+        "placeholder": "10px",
+        "property": "psu.better_ws_buttons.button_font_size",
+        "type": "string"
+    },
+    {
+        "label": "Opacity of Inactive Buttons",
+        "defaultValue": "0.7",
+        "placeholder": "0.5",
+        "property": "psu.better_ws_buttons.button_opacity",
+        "type": "string"
+    },
+    {
+        "label": "Magnification of Active Button",
+        "defaultValue": "1.1",
+        "placeholder": "1",
+        "property": "psu.better_ws_buttons.button_magnification",
+        "type": "string"
+    },
+    {
+        "label": "Show Idicator below Active Button",
+        "defaultValue": true,
+        "property": "psu.better_ws_buttons.show_indicator",
+        "type": "checkbox"
+    },
+    {
+        "label": "Show Separator above Buttons Toolbar",
+        "defaultValue": true,
+        "property": "psu.better_ws_buttons.show_separator",
+        "type": "checkbox"
+    }
+]

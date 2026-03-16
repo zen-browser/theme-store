@@ -1,0 +1,15 @@
+{
+    "id": "175c9fcc-bf2d-43b4-a8ea-66986cc1ada2",
+    "name": "Better Workspace Buttons",
+    "description": "Re-style and add customization options for the Workspace Buttons.",
+    "homepage": "https://github.com/psu/zen-mods",
+    "style": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/175c9fcc-bf2d-43b4-a8ea-66986cc1ada2/chrome.css",
+    "readme": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/175c9fcc-bf2d-43b4-a8ea-66986cc1ada2/readme.md",
+    "image": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/175c9fcc-bf2d-43b4-a8ea-66986cc1ada2/image.png",
+    "author": "psu",
+    "version": "1.0.0",
+    "tags": [],
+    "createdAt": "2025-03-28",
+    "updatedAt": "2025-03-28",
+    "preferences": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/175c9fcc-bf2d-43b4-a8ea-66986cc1ada2/preferences.json"
+}
