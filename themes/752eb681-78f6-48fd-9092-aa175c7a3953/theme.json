@@ -1,0 +1,14 @@
+{
+    "id": "752eb681-78f6-48fd-9092-aa175c7a3953",
+    "name": "Thin Toolbar",
+    "description": "Reduces the toolbar height.",
+    "homepage": "https://github.com/MigueloAtla/zen-thin-toolbar-mod",
+    "style": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/752eb681-78f6-48fd-9092-aa175c7a3953/chrome.css",
+    "readme": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/752eb681-78f6-48fd-9092-aa175c7a3953/readme.md",
+    "image": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/752eb681-78f6-48fd-9092-aa175c7a3953/image.png",
+    "author": "MigueloAtla",
+    "version": "1.0.0",
+    "tags": [],
+    "createdAt": "2024-11-11",
+    "updatedAt": "2024-11-11"
+}
