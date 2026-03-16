@@ -1,0 +1,14 @@
+{
+    "id": "c1f846ad-19f4-40e4-9cf2-597824e25af0",
+    "name": "Icon Only Pins",
+    "description": "Change pinned tabs to a horizontal list of icons.",
+    "homepage": "https://github.com/MihkelMK/zen-mods/tree/main/icon_only_pins",
+    "style": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/c1f846ad-19f4-40e4-9cf2-597824e25af0/chrome.css",
+    "readme": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/c1f846ad-19f4-40e4-9cf2-597824e25af0/readme.md",
+    "image": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/c1f846ad-19f4-40e4-9cf2-597824e25af0/image.png",
+    "author": "MihkelMK",
+    "version": "1.0.0",
+    "tags": [],
+    "createdAt": "2025-03-07",
+    "updatedAt": "2025-03-07"
+}

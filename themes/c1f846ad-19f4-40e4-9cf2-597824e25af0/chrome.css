@@ -1,0 +1,50 @@
+
+/* Hide label, reset and close buttons */
+/* Based on code from SuperPins by jLBlk https://github.com/JLBlk/Zen-Themes */
+#vertical-pinned-tabs-container .tabbrowser-tab[pinned] {
+  & .tab-close-button,
+  .tab-reset-button,
+  .tab-reset-pin-button,
+  .tab-label-container {
+    display: none !important;
+  }
+}
+
+/* Fix icon shift on tab label change */
+/* Code from SuperPins by jLBlk https://github.com/JLBlk/Zen-Themes */
+#navigator-toolbox[zen-sidebar-expanded="true"] {
+  & #tabbrowser-tabs {
+    & .tabbrowser-tab {
+      &[zen-pinned-changed="true"]:not([zen-essential])
+        > .tab-stack
+        > .tab-content
+        > .tab-icon-stack {
+        left: unset !important;
+      }
+    }
+  }
+}
+
+/* Change pin area flex direction and make it wrap */
+#vertical-pinned-tabs-container > .zen-workspace-tabs-section {
+  flex-direction: row !important;
+  flex-wrap: wrap;
+}
+
+/* Make pinned tabs square */
+#navigator-toolbox[zen-sidebar-expanded="true"] {
+  & #vertical-pinned-tabs-container:has(tab:not([hidden])) {
+    & .tabbrowser-tab {
+      --tab-pinned-margin-inline-expanded: 2px !important;
+      --toolbarbutton-inner-padding: 0; /* Fix overflow from restricting width */
+
+/* Make pin width same as height by using var(--tab-min-height) */
+      /* instead of var(--tab-pinned-expanded-background-width) */
+      --tab-pinned-min-width-expanded: calc(
+        var(--tab-min-height) + 2 * var(--tab-pinned-margin-inline-expanded)
+      ) !important;
+
+width: var(--tab-pinned-min-width-expanded) !important;
+    }
+  }
+}
