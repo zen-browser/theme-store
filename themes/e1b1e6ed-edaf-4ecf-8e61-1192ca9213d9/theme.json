@@ -1,0 +1,15 @@
+{
+    "id": "e1b1e6ed-edaf-4ecf-8e61-1192ca9213d9",
+    "name": "Fixed Pinned Tabs",
+    "description": "Keep pinned tabs visible when scrolling the vertical tabs",
+    "homepage": "",
+    "style": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/e1b1e6ed-edaf-4ecf-8e61-1192ca9213d9/chrome.css",
+    "readme": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/e1b1e6ed-edaf-4ecf-8e61-1192ca9213d9/readme.md",
+    "image": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/e1b1e6ed-edaf-4ecf-8e61-1192ca9213d9/image.png",
+    "author": "Cybolic",
+    "version": "1.0.0",
+    "tags": [],
+    "createdAt": "2025-03-01",
+    "updatedAt": "2025-03-01",
+    "preferences": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/e1b1e6ed-edaf-4ecf-8e61-1192ca9213d9/preferences.json"
+}
