@@ -1,0 +1,38 @@
+[
+    {
+        "property": "zen.workspaces.show-workspace-indicator",
+        "label": "Shows the workspace-indicator above Pins.",
+        "type": "checkbox",
+        "disabledOn": []
+    },
+    {
+        "property": "uc.workspace-tweaks.top-pad-rm",
+        "label": "Remove padding from sidebar start. Looks best with Bottom Essentials.",
+        "type": "checkbox",
+        "disabledOn": []
+    },
+    {
+        "property": "uc.workspace-tweaks.top-center",
+        "label": "Center top workspace-indicator label.",
+        "type": "checkbox",
+        "disabledOn": []
+    },
+    {
+        "property": "uc.workspace-tweaks.bottom-pad",
+        "label": "Add padding to the bottom workspace icons",
+        "type": "checkbox",
+        "disabledOn": []
+    },
+    {
+        "property": "uc.workspace-tweaks.top-bg",
+        "label": "Add a background to the top workspace-indicator label.",
+        "type": "checkbox",
+        "disabledOn": []
+    },
+    {
+        "property": "uc.workspace-tweaks.bottom-bg",
+        "label": "Add a background to the bottom workspace-indicator label.",
+        "type": "checkbox",
+        "disabledOn": []
+    }
+]
