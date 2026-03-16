@@ -1,0 +1,14 @@
+{
+    "id": "26839eca-2ed5-4ca4-85eb-468be8925aa9",
+    "name": "Floating Search",
+    "description": "A clean floating search activated using keyboard",
+    "homepage": "https://github.com/pokhrelashok/zen-floating-search",
+    "style": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/26839eca-2ed5-4ca4-85eb-468be8925aa9/chrome.css",
+    "readme": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/26839eca-2ed5-4ca4-85eb-468be8925aa9/readme.md",
+    "image": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/26839eca-2ed5-4ca4-85eb-468be8925aa9/image.png",
+    "author": "pokhrelashok",
+    "version": "1.0.0",
+    "tags": [],
+    "createdAt": "2024-12-23",
+    "updatedAt": "2024-12-23"
+}
