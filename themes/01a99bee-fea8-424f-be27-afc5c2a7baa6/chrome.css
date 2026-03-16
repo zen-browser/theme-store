@@ -1,0 +1,29 @@
+
+@-moz-document url-prefix("chrome:") {
+
+.ctrlTab-canvas {
+        border-radius: 0.5rem !important;
+    }
+
+.ctrlTab-preview-inner {
+        border-radius: 0.5rem !important;
+
+canvas {
+            border-radius: 0.5rem !important;
+        }
+
+img {
+            border-radius: 0.5rem !important;
+        }
+    }
+
+.ctrlTab-favicon-container {
+        display: none !important;
+    }
+
+#ctrlTab-panel {
+        --panel-background: #212120 !important;
+        border-color: #2121207D !important;
+    }
+
+}
