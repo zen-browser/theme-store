@@ -1,0 +1,23 @@
+
+@media (-moz-bool-pref: "uc.persistentcompactmode.active"){
+ @media (-moz-bool-pref: "zen.view.compact") {
+  #navigator-toolbox {
+   opacity: 1 !important;
+   transform: none !important;
+  }
+
+#zen-appcontent-navbar-container {
+   opacity: 1 !important;
+   transform: none !important;
+  }
+ @media (-moz-bool-pref: "uc.persistentcompactmode.transparent") {
+  #navigator-toolbox {
+   opacity: 0.7 !important;
+  }
+
+#zen-appcontent-navbar-container {
+   opacity: 0.7 !important;
+  }
+ }
+ }
+}
