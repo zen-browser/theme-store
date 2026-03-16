@@ -1,0 +1,26 @@
+
+@media (-moz-bool-pref: "theme.containerindicator.essentials") {
+  #zen-essentials-container {
+    .tabbrowser-tab[usercontextid]>.tab-stack>.tab-background>.tab-context-line {
+      #tabbrowser-tabs[orient="vertical"] & {
+        visibility: hidden;
+      }
+    }
+  }
+}
+
+@media (-moz-bool-pref: "theme.containerindicator.pinedtabs") {
+  #vertical-pinned-tabs-container {
+    .tabbrowser-tab[usercontextid]>.tab-stack>.tab-background>.tab-context-line {
+      visibility: hidden;
+    }
+  }
+}
+
+@media (-moz-bool-pref: "theme.containerindicator.normaltabs") {
+  #tabbrowser-arrowscrollbox {
+    .tabbrowser-tab[usercontextid]>.tab-stack>.tab-background>.tab-context-line {
+      visibility: hidden;
+    }
+  }
+}
