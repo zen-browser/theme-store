@@ -1,0 +1,20 @@
+
+#emptyDownloads,
+#downloadsListBox richlistitem,
+#downloadsFooter button {
+  padding-block: 0.7em !important;
+  padding-inline: 10px !important;
+  margin-block: 2px !important;
+  margin-inline: var(--tab-block-margin) !important;
+}
+
+#downloadsFooter button {
+  border: 0 !important;
+}
+#downloadsPanel-blockedSubview,
+#downloadsPanel-mainView {
+  padding: 0 !important;
+}
+#downloadsListBox richlistitem button.downloadButton {
+  min-width: 1em !important;
+}
