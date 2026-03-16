@@ -1,0 +1,15 @@
+{
+    "id": "65a89bd6-eecb-4fe4-b74d-351621de47d2",
+    "name": "Super Url Bar",
+    "description": "Get simple rounded edges, centered text, a removed border for your url bar and a background blur.",
+    "homepage": "https://github.com/CosmoCreeper/Zen-Themes/tree/main/SuperUrlBar",
+    "style": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/65a89bd6-eecb-4fe4-b74d-351621de47d2/chrome.css",
+    "readme": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/65a89bd6-eecb-4fe4-b74d-351621de47d2/readme.md",
+    "image": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/65a89bd6-eecb-4fe4-b74d-351621de47d2/image.png",
+    "author": "CosmoCreeper",
+    "version": "1.0.0",
+    "tags": [],
+    "createdAt": "2025-04-28",
+    "updatedAt": "2025-04-28",
+    "preferences": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/65a89bd6-eecb-4fe4-b74d-351621de47d2/preferences.json"
+}
