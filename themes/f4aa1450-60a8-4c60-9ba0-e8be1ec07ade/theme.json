@@ -1,0 +1,14 @@
+{
+    "id": "f4aa1450-60a8-4c60-9ba0-e8be1ec07ade",
+    "name": "Better Active Tab",
+    "description": "A Zen mod that highlights the active tab, and leaves the Essential Tabs highlighting intact",
+    "homepage": "",
+    "style": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/f4aa1450-60a8-4c60-9ba0-e8be1ec07ade/chrome.css",
+    "readme": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/f4aa1450-60a8-4c60-9ba0-e8be1ec07ade/readme.md",
+    "image": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/f4aa1450-60a8-4c60-9ba0-e8be1ec07ade/image.png",
+    "author": "kurtschambach",
+    "version": "1.0.0",
+    "tags": [],
+    "createdAt": "2025-02-28",
+    "updatedAt": "2025-02-28"
+}
