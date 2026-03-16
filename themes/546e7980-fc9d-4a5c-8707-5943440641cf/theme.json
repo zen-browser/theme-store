@@ -1,0 +1,15 @@
+{
+    "id": "546e7980-fc9d-4a5c-8707-5943440641cf",
+    "name": "Better Titlebar and more",
+    "description": "Non-disruptive and compact title bar with some extra stuff",
+    "homepage": "https://github.com/Waradu/zen_compact_titlebar_and_extras",
+    "style": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/546e7980-fc9d-4a5c-8707-5943440641cf/chrome.css",
+    "readme": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/546e7980-fc9d-4a5c-8707-5943440641cf/readme.md",
+    "image": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/546e7980-fc9d-4a5c-8707-5943440641cf/image.png",
+    "author": "Waradu",
+    "version": "1.0.0",
+    "tags": [],
+    "createdAt": "2025-05-22",
+    "updatedAt": "2025-05-22",
+    "preferences": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/546e7980-fc9d-4a5c-8707-5943440641cf/preferences.json"
+}
