@@ -1,0 +1,9 @@
+
+/* Arc-like appearance to Tabs and Folders */
+#zen-tabs-wrapper .tab-background,
+toolbarbutton#tabs-newtab-button {
+  box-shadow: none !important;
+}
+.tab-close-button, .tab-reset-button {
+  border-radius: 7px !important;
+}
