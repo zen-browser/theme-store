@@ -1,0 +1,14 @@
+
+@media (-moz-bool-pref: "mod.hide-tab-close.pinned") {
+    .zen-workspace-pinned-tabs-section image.tab-close-button,
+    .zen-workspace-pinned-tabs-section:hover image.tab-close-button {
+        display: none !important;
+    }
+}
+
+@media (-moz-bool-pref: "mod.hide-tab-close.normal") {
+    .zen-workspace-normal-tabs-section image.tab-close-button,
+    .zen-workspace-normal-tabs-section:hover image.tab-close-button {
+        display: none !important;
+    }
+}
