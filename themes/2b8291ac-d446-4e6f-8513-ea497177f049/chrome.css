@@ -1,0 +1,11 @@
+
+scrollbox:nth-child(5) {
+    scrollbar-color: grey transparent !important;
+    scrollbar-width: thin !important;
+}
+
+/* Pinned Tabs */
+#vertical-pinned-tabs-container {
+    scrollbar-color: grey transparent !important;
+    scrollbar-width: thin !important;
+}
