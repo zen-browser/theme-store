@@ -1,0 +1,14 @@
+{
+    "id": "9dfcbb3f-9a50-4028-9860-d167d934d96c",
+    "name": "pinned tabs height",
+    "description": "Unset pinned tabs container height so you don't have to scroll",
+    "homepage": "https://github.com/skipness/zen-browser-pinned-tabs-height",
+    "style": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/9dfcbb3f-9a50-4028-9860-d167d934d96c/chrome.css",
+    "readme": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/9dfcbb3f-9a50-4028-9860-d167d934d96c/readme.md",
+    "image": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/9dfcbb3f-9a50-4028-9860-d167d934d96c/image.png",
+    "author": "skipness",
+    "version": "1.0.0",
+    "tags": [],
+    "createdAt": "2024-11-11",
+    "updatedAt": "2024-11-11"
+}
