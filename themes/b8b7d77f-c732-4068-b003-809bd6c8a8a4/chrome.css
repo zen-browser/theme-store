@@ -1,0 +1,6 @@
+
+.tabbrowser-tab:is([pending="true"]){
+  & .tab-icon-stack, & .tab-label-container{
+    opacity: 0.5 !important;
+  }
+}
