@@ -1,0 +1,9 @@
+
+/* Arc-like appearance to Space Indicators */
+.zen-current-workspace-indicator-icon {
+  font-size: 18px !important;
+}
+zen-workspace-icons .subviewbutton {
+  font-size: 15px !important;
+  margin: 3px !important;
+}
