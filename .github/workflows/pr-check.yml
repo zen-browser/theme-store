@@ -1,4 +1,4 @@
-name: Check PR is valid
+name: Check if PR is valid
 
 on:
   pull_request:
@@ -9,15 +9,15 @@ jobs:
     name: Rebuild themes after theme submission
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout code
-        uses: actions/checkout@v2
+      - name: Checkout repository
+        uses: actions/checkout@v4
 
-      - name: Install python
-        uses: actions/setup-python@v2
+      - name: Setup Python
+        uses: actions/setup-python@v5
         with:
           python-version: "3.x"
 
-      - name: Setup python modules
+      - name: Install dependencies
         run: |
           pip3 install requests
           pip3 install pillow
