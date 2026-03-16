@@ -1,0 +1,14 @@
+{
+    "id": "47f79f01-094e-4e95-a646-df2eeb89912c",
+    "name": "Centered URL Bar",
+    "description": "Give your Zen Browser a sleek, balanced look by centering the URL bar text.",
+    "homepage": "https://github.com/SleepInfinity/centered-url-bar",
+    "style": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/47f79f01-094e-4e95-a646-df2eeb89912c/chrome.css",
+    "readme": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/47f79f01-094e-4e95-a646-df2eeb89912c/readme.md",
+    "image": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/47f79f01-094e-4e95-a646-df2eeb89912c/image.png",
+    "author": "SleepInfinity",
+    "version": "1.0.0",
+    "tags": [],
+    "createdAt": "2025-03-12",
+    "updatedAt": "2025-03-12"
+}

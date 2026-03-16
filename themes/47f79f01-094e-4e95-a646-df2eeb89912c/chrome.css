@@ -1,0 +1,12 @@
+
+.urlbar-input {
+  text-align: center !important;
+}
+
+.urlbar-input[aria-expanded="false"] {
+  text-align: center !important;
+}
+
+.urlbar-input[aria-expanded="true"] {
+  text-align: match-parent !important;
+}
