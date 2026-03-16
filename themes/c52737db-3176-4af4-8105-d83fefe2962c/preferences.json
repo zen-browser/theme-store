@@ -1,0 +1,106 @@
+[
+    {
+        "property": "mod.no_gaps.gaps",
+        "label": "Remove gaps",
+        "placeholder": "Always",
+        "type": "dropdown",
+        "options": [
+            {
+                "label": "Never",
+                "value": "_never"
+            },
+            {
+                "label": "Only in unsplit view",
+                "value": "_unsplit"
+            },
+            {
+                "label": "Only in split view",
+                "value": "_split"
+            }
+        ]
+    },
+    {
+        "property": "mod.no_gaps.rounded_corners",
+        "label": "Remove rounded corners",
+        "placeholder": "Always",
+        "type": "dropdown",
+        "options": [
+            {
+                "label": "Never",
+                "value": "_never"
+            },
+            {
+                "label": "Only in unsplit view",
+                "value": "_unsplit"
+            },
+            {
+                "label": "Only in split view",
+                "value": "_split"
+            }
+        ]
+    },
+    {
+        "property": "mod.no_gaps.shadow",
+        "label": "Remove shadow",
+        "placeholder": "Always",
+        "type": "dropdown",
+        "options": [
+            {
+                "label": "Never",
+                "value": "_never"
+            },
+            {
+                "label": "Only in unsplit view",
+                "value": "_unsplit"
+            },
+            {
+                "label": "Only in split view",
+                "value": "_split"
+            }
+        ]
+    },
+    {
+        "property": "mod.no_gaps.outline",
+        "label": "Remove highlighted outline (split view)",
+        "placeholder": "Always",
+        "type": "dropdown",
+        "options": [
+            {
+                "label": "Never",
+                "value": "_never"
+            }
+        ]
+    },
+    {
+        "property": "mod.no_gaps.hide_navbar",
+        "label": "Hide top bar (single toolbar)",
+        "placeholder": "Always",
+        "type": "dropdown",
+        "options": [
+            {
+                "label": "Never",
+                "value": "_never"
+            }
+        ]
+    },
+    {
+        "property": "mod.no_gaps.remove_navbar",
+        "label": "Remove top bar (overrides previous option)",
+        "placeholder": "Never",
+        "type": "dropdown",
+        "options": [
+            {
+                "label": "Always",
+                "value": "_always"
+            },
+            {
+                "label": "Only in unsplit view",
+                "value": "_unsplit"
+            },
+            {
+                "label": "Only in split view",
+                "value": "_split"
+            }
+        ]
+    }
+]
