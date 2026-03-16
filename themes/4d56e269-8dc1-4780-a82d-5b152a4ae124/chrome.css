@@ -1,0 +1,36 @@
+
+/* Toolbar */
+@media not (-moz-bool-pref: "uc.increase-compact-hover.toolbar.disable") {
+  @media (-moz-bool-pref: "zen.view.compact") {
+    @media (-moz-bool-pref: "zen.view.compact.hide-toolbar") {
+      #zen-appcontent-navbar-container {
+        transform: translateY(calc(-100% + 35px)) !important;
+      }
+
+#zen-appcontent-navbar-container:hover,
+      #zen-appcontent-navbar-container:focus-within,
+      #zen-appcontent-navbar-container[zen-user-show],
+      #mainPopupSet:has(> #appMenu-popup:hover)~#zen-appcontent-navbar-container,
+      #zen-appcontent-navbar-container:has([open="true"]) {
+        transform: translateY(0) !important;
+      }
+    }
+  }
+}
+
+/* Sidebar */
+@media not (-moz-bool-pref: "uc.increase-compact-hover.sidebar.disable") {
+  @media (-moz-bool-pref: "zen.view.compact") {
+    #navigator-toolbox {
+      transform: translateX(calc(-100% + (var(--zen-compact-toolbox-margin-single) / 2) + 30px)) !important;
+    }
+
+#navigator-toolbox:hover,
+    #navigator-toolbox:focus-within,
+    #navigator-toolbox[zen-user-show],
+    #mainPopupSet:has(> #appMenu-popup:hover)~toolbox,
+    #navigator-toolbox:has([open="true"]:not(tab):not(#zen-sidepanel-button)) {
+      transform: none !important;
+    }
+  }
+}
