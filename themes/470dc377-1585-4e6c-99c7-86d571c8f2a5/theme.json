@@ -1,0 +1,15 @@
+{
+    "id": "470dc377-1585-4e6c-99c7-86d571c8f2a5",
+    "name": "Minimal Workspace Buttons",
+    "description": "Overhauls the look of Workspace Buttons making it look minimal and adding custom animations for a premium feel",
+    "homepage": "https://github.com/JustAdumbPrsn/MacOS-dock-inspired-Workspace-buttons",
+    "style": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/470dc377-1585-4e6c-99c7-86d571c8f2a5/chrome.css",
+    "readme": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/470dc377-1585-4e6c-99c7-86d571c8f2a5/readme.md",
+    "image": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/470dc377-1585-4e6c-99c7-86d571c8f2a5/image.png",
+    "author": "JustAdumbPrsn",
+    "version": "1.0.0",
+    "tags": [],
+    "createdAt": "2025-09-05",
+    "updatedAt": "2025-09-05",
+    "preferences": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/470dc377-1585-4e6c-99c7-86d571c8f2a5/preferences.json"
+}

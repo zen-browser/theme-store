@@ -1,0 +1,7 @@
+[
+    {
+        "type": "checkbox",
+        "property": "nebula-workspace-style-alt",
+        "label": "Enable Workspace Button Background"
+    }
+]
