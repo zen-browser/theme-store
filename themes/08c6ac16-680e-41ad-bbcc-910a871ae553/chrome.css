@@ -1,0 +1,25 @@
+
+#zen-workspaces-button::after {
+  content:'';
+  position: absolute;
+  border-radius: 3px !important;
+  height: 2px !important;
+  transform: translateY(+24px);
+  background-color: var(--zen-input-border-color) !important;
+}
+
+@media not (-moz-bool-pref: "zen.view.sidebar-expanded") {
+  #zen-workspaces-button::after {
+    width: 40px;
+  }
+}
+
+@media (-moz-bool-pref: "zen.view.sidebar-expanded") {
+  #zen-workspaces-button::after {
+    width: 160px;
+  }
+}
+
+#zen-workspaces-button {
+  margin-bottom: 15px !important;
+}
