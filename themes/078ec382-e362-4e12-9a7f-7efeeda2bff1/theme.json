@@ -1,0 +1,15 @@
+{
+    "id": "078ec382-e362-4e12-9a7f-7efeeda2bff1",
+    "name": "GalaxyDream Gradient",
+    "description": "This Zen Mod adds the legacy gradient themes Zen Galaxy and Zen Dream.",
+    "homepage": "https://github.com/JLBlk/Zen-Themes/tree/main/GalaxyDreamGradient",
+    "style": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/078ec382-e362-4e12-9a7f-7efeeda2bff1/chrome.css",
+    "readme": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/078ec382-e362-4e12-9a7f-7efeeda2bff1/readme.md",
+    "image": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/078ec382-e362-4e12-9a7f-7efeeda2bff1/image.png",
+    "author": "JLBlk",
+    "version": "1.0.0",
+    "tags": [],
+    "createdAt": "2024-10-30",
+    "updatedAt": "2024-10-30",
+    "preferences": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/078ec382-e362-4e12-9a7f-7efeeda2bff1/preferences.json"
+}
