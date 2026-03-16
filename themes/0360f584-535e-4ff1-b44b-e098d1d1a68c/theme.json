@@ -1,0 +1,14 @@
+{
+    "id": "0360f584-535e-4ff1-b44b-e098d1d1a68c",
+    "name": "Always show bookmarks bar",
+    "description": "Keep showing bookmarks bar for Single Toolbar mode when Bookmarks Toolbar is set to Always show.",
+    "homepage": "https://github.com/HUMORCE/zen-browser-always-show-bookmarks-bar",
+    "style": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/0360f584-535e-4ff1-b44b-e098d1d1a68c/chrome.css",
+    "readme": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/0360f584-535e-4ff1-b44b-e098d1d1a68c/readme.md",
+    "image": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/0360f584-535e-4ff1-b44b-e098d1d1a68c/image.png",
+    "author": "HUMORCE",
+    "version": "1.0.0",
+    "tags": [],
+    "createdAt": "2025-08-13",
+    "updatedAt": "2025-08-13"
+}
