@@ -1,0 +1,14 @@
+{
+    "id": "279a260a-03e2-4c40-a9bf-6fb87c078fd9",
+    "name": "Simple Centred Address",
+    "description": "Centres the URL bar text and hides buttons when unfocused.",
+    "homepage": "",
+    "style": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/279a260a-03e2-4c40-a9bf-6fb87c078fd9/chrome.css",
+    "readme": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/279a260a-03e2-4c40-a9bf-6fb87c078fd9/readme.md",
+    "image": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/279a260a-03e2-4c40-a9bf-6fb87c078fd9/image.png",
+    "author": "Lisiowen",
+    "version": "1.0.0",
+    "tags": [],
+    "createdAt": "2024-11-16",
+    "updatedAt": "2024-11-16"
+}

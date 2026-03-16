@@ -1,0 +1,41 @@
+
+/* ----- Search Bar Idle ----- */
+
+/* Centre text */
+#urlbar-input {
+  text-align: center !important;
+}
+
+/* Hide icons */
+
+#page-action-buttons,
+#tracking-protection-icon-container,
+#identity-box {
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+/* ----- Search Bar Hover ----- */
+
+/* Reveal icons*/
+#urlbar:hover #page-action-buttons,
+#urlbar:hover #tracking-protection-icon-container,
+#urlbar:hover #identity-box {
+  opacity: 1;
+}
+
+/* ----- Search Bar Focus ----- */
+
+/* Revert text */
+#urlbar[focused=""] #urlbar-input {
+  text-align: left !important;
+}
+
+/* ----- Button Menu Opened ----- */
+
+/* Keep buttons/menu visible */
+#page-action-buttons:has(#star-button-box[open="true"])
+#tracking-protection-icon-container[open="true"],
+#identity-box:has(#identity-icon-box[open="true"]) {
+  opacity: 1;
+}
