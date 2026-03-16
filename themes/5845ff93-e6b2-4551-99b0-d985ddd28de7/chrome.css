@@ -1,0 +1,6 @@
+
+:root[zen-compact-mode="true"] {
+    #navigator-toolbox {
+        display: none !important;
+    }
+}
