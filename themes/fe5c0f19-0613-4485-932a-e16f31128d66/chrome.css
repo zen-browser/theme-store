@@ -1,0 +1,26 @@
+
+/* Revert Pinned Tab Behavior */
+/* CO-AUTHORED by sporocyst and Lu9 */
+/* Make pinned tabs pinned again! (Warning: contains issues with transparency/blur in non-compact mode when Mica/Acrylic is enabled) */
+#zen-tabs-wrapper {position: static !important;}
+#zen-browser-tabs-container {
+  position: static !important;
+}
+#vertical-pinned-tabs-container {position: static !important;}
+
+#vertical-pinned-tabs-container > .zen-workspace-tabs-section {
+z-index: 5;
+width: 100%;
+.tabbrowser-tab .tab-background {
+    background: var(--zen-toolbar-element-bg) !important;
+  }
+.tabbrowser-tab:hover .tab-background {
+    background: var(--tab-selected-bgcolor) !important;
+  }
+}
+
+#tabbrowser-arrowscrollbox {position: relative !important;}
+
+#vertical-pinned-tabs-container > .zen-workspace-tabs-section {
+backdrop-filter: blur(10px);
+}
