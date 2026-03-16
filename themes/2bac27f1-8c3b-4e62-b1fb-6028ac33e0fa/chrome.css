@@ -1,0 +1,134 @@
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --zen-colors-primary: #434c5e !important;
+    --zen-primary-color: #81a1c1 !important;
+    --zen-colors-secondary: #434c5e !important;
+    --zen-colors-tertiary: #2e3440 !important;
+    --zen-colors-border: #81a1c1 !important;
+    --toolbarbutton-icon-fill: #81a1c1 !important;
+    --lwt-text-color: #d8dee9 !important;
+    --toolbar-field-color: #d8dee9 !important;
+    --tab-selected-textcolor: #81a1c1 !important;
+    --toolbar-field-focus-color: #d8dee9 !important;
+    --toolbar-color: #d8dee9 !important;
+    --newtab-text-primary-color: #d8dee9 !important;
+    --arrowpanel-color: #d8dee9 !important;
+    --arrowpanel-background: #3b4252 !important;
+    --sidebar-text-color: #d8dee9 !important;
+    --lwt-sidebar-text-color: #d8dee9 !important;
+    --lwt-sidebar-background-color: #2e3440 !important;
+    --toolbar-bgcolor: #434c5e !important;
+    --newtab-background-color: #3b4252 !important;
+    --zen-themed-toolbar-bg: #2e3440 !important;
+    --zen-main-browser-background: #2e3440 !important;
+    --toolbox-bgcolor-inactive: #2e3440 !important;
+  }
+
+#permissions-granted-icon {
+    color: #2e3440 !important;
+  }
+
+.sidebar-placesTree,
+  #zen-workspaces-button,
+  #urlbar-background,
+  .content-shortcuts {
+    background-color: #3b4252 !important;
+    border-color: #81a1c1 !important;
+  }
+  /* Style the url view bar */
+  .urlbarView-url {
+    color: #81a1c1 !important;
+  }
+
+#zenEditBookmarkPanelFaviconContainer {
+    background: #2e3440 !important;
+  }
+
+#TabsToolbar,
+  hbox#titlebar,
+  #zen-appcontent-navbar-container {
+    background-color: #2e3440 !important;
+  }
+  /* bruh i suck at comment writing so im not gonna write anymore */
+  #zen-media-controls-toolbar #zen-media-progress-bar::-moz-range-track {
+    background: #434c5e !important;
+  }
+
+toolbar
+    .toolbarbutton-1:not([disabled]):is([open], [checked])
+    > :is(
+      .toolbarbutton-icon,
+      .toolbarbutton-text,
+      .toolbarbutton-badge-stack
+    ) {
+    fill: #2e3440 !important;
+  }
+  tooltip,
+  #tooltip,
+  #main-window tooltip {
+    background-color: #3b4252 !important; /* Nord secondary background */
+    color: #d8dee9 !important; /* Nord text color */
+    border: 1px solid #81a1c1 !important; /* Nord accent border */
+    font-family: "Segoe UI", sans-serif !important;
+    font-size: 13px !important;
+    padding: 4px 8px !important;
+    border-radius: 4px !important;
+  }
+
+.arrowpanel-menuitem,
+  .panel-subview-body,
+  .panel-header,
+  .panel-footer,
+  .panel-button {
+    background-color: #3b4252 !important;
+    color: #d8dee9 !important;
+    border: none !important;
+  }
+
+.arrowpanel-menuitem:hover,
+  .panel-button:hover {
+    background-color: #434c5e !important;
+    color: #d8dee9 !important;
+  }
+
+.identity-color-blue {
+    --identity-tab-color: #81a1c1 !important;
+    --identity-icon-color: #81a1c1 !important;
+  }
+
+.identity-color-turquoise {
+    --identity-tab-color: #88c0d0 !important;
+    --identity-icon-color: #88c0d0 !important;
+  }
+
+.identity-color-green {
+    --identity-tab-color: #a3be8c !important;
+    --identity-icon-color: #a3be8c !important;
+  }
+
+.identity-color-yellow {
+    --identity-tab-color: #ebcb8b !important;
+    --identity-icon-color: #ebcb8b !important;
+  }
+
+.identity-color-orange {
+    --identity-tab-color: #d08770 !important;
+    --identity-icon-color: #d08770 !important;
+  }
+
+.identity-color-red {
+    --identity-tab-color: #bf616a !important;
+    --identity-icon-color: #bf616a !important;
+  }
+
+.identity-color-pink {
+    --identity-tab-color: #d8dee9 !important;
+    --identity-icon-color: #d8dee9 !important;
+  }
+
+.identity-color-purple {
+    --identity-tab-color: #b48ead !important;
+    --identity-icon-color: #b48ead !important;
+  }
+}
