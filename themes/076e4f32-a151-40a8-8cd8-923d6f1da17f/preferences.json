@@ -1,0 +1,22 @@
+[
+    {
+        "property": "uc.floating-side-bar.Bookmarks",
+        "label": "makes the Bookmark side bar float",
+        "type": "checkbox"
+    },
+    {
+        "property": "uc.floating-side-bar.History",
+        "label": "makes the history side bar float",
+        "type": "checkbox"
+    },
+    {
+        "property": "uc.floating-side-bar.Synced-Tabs",
+        "label": "makes the synced tab side bar float",
+        "type": "checkbox"
+    },
+    {
+        "property": "uc.floating-side-bar.Others",
+        "label": "makes other side bars float",
+        "type": "checkbox"
+    }
+]

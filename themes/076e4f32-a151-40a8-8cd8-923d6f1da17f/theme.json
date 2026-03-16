@@ -1,0 +1,15 @@
+{
+    "id": "076e4f32-a151-40a8-8cd8-923d6f1da17f",
+    "name": "floating side bar",
+    "description": "A Zen browser mod for a detached and redesigned the sidebar, so that it appears to float and match the zen aesthetic.",
+    "homepage": "https://github.com/princess-wawa/zen-floating-side-bar",
+    "style": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/076e4f32-a151-40a8-8cd8-923d6f1da17f/chrome.css",
+    "readme": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/076e4f32-a151-40a8-8cd8-923d6f1da17f/readme.md",
+    "image": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/076e4f32-a151-40a8-8cd8-923d6f1da17f/image.png",
+    "author": "princess-wawa",
+    "version": "1.0.0",
+    "tags": [],
+    "createdAt": "2024-12-05",
+    "updatedAt": "2024-12-05",
+    "preferences": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/076e4f32-a151-40a8-8cd8-923d6f1da17f/preferences.json"
+}
