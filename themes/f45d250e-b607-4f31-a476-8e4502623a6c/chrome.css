@@ -1,0 +1,488 @@
+
+/*
+Interesting advanced settings:
+- zen.view.sidebar-collapsed.hide-mute-button => false
+- browser.tabs.allow_transparent_browser => false
+- zen.workspaces.show-workspace-indicator => false
+- zen.urlbar.replace-newtab
+- browser.tabs.hoverPreview.enabled
+*/
+
+/* ----- Typeahead Find ----- */
+
+/* Open full find with all options */
+@media (-moz-bool-pref: "lancear.inner-peace.typeahead-find.show-full-find") {
+  .findbar-container > checkbox[hidden] {
+    display: flex !important;
+  }
+}
+
+/* ----- Urlbar ----- */
+
+/* Center url in (non floating) urlbar */
+@media (-moz-bool-pref: "lancear.inner-peace.urlbar.center-url") {
+  #urlbar-input:not([aria-expanded="true"]) {
+    text-align: center !important;
+  }
+}
+
+/* ----- Mute Tab Button ----- */
+
+/* Resize */
+@media (-moz-bool-pref: "lancear.inner-peace.mute-tab-button.resize") {
+  .tab-icon-overlay {
+    width: var(--lancear-inner-peace-mute-tab-button-size) !important;
+    height: var(--lancear-inner-peace-mute-tab-button-size) !important;
+  }
+}
+
+/* Reposition */
+@media (-moz-bool-pref: "lancear.inner-peace.mute-tab-button.reposition") {
+  .tab-icon-overlay {
+    top: var(--lancear-inner-peace-mute-tab-button-top) !important;
+    right: var(--lancear-inner-peace-mute-tab-button-right) !important;
+  }
+}
+
+/* ----- Close Tab Button ----- */
+
+/* Close tab button in the style of the mute button */
+@media (-moz-bool-pref: "lancear.inner-peace.close-tab-button.show") {
+  :root:not([zen-sidebar-expanded]) tab:hover .tab-close-button {
+    display: inline-flex !important;
+
+width: 0.1px !important;
+    height: 0.1px !important;
+    padding: 0.02px !important;
+    transform: scale(140);
+
+position: relative;
+    top: -9px;
+    right: 2.5px;
+
+background: #ffffff;
+    margin-inline: 0 !important;
+  }
+  
+  :root:not([zen-sidebar-expanded]) tab:hover .tab-close-button:hover {
+    background: #ffffff !important;
+  }
+}
+
+/* Rescale */
+@media (-moz-bool-pref: "lancear.inner-peace.close-tab-button.resize") {
+  :root:not([zen-sidebar-expanded]) tab:hover .tab-close-button {
+    transform: scale(var(--lancear-inner-peace-close-tab-button-size));
+  }
+}
+
+/* Reposition */
+@media (-moz-bool-pref: "lancear.inner-peace.close-tab-button.reposition") {
+  :root:not([zen-sidebar-expanded]) tab:hover .tab-close-button {
+    top: var(--lancear-inner-peace-close-tab-button-top);
+    right: var(--lancear-inner-peace-close-tab-button-right);
+  }
+}
+
+/* ----- Split Tabs ----- */
+
+/* Highlight all open split tabs (unfortunately stops working after an accumulated amount of 64 tabs have been created in a session) */
+@media (-moz-bool-pref: "lancear.inner-peace.split-tabs.highlight-all-open") { 
+  :has(#tabbrowser-tabpanels #panel-1-1[zen-split]:not(.deck-selected)) .tabbrowser-tab[linkedpanel="panel-1-1"] .tab-background,
+  :has(#tabbrowser-tabpanels #panel-1-2[zen-split]:not(.deck-selected)) .tabbrowser-tab[linkedpanel="panel-1-2"] .tab-background,
+  :has(#tabbrowser-tabpanels #panel-1-3[zen-split]:not(.deck-selected)) .tabbrowser-tab[linkedpanel="panel-1-3"] .tab-background,
+  :has(#tabbrowser-tabpanels #panel-1-4[zen-split]:not(.deck-selected)) .tabbrowser-tab[linkedpanel="panel-1-4"] .tab-background,
+  :has(#tabbrowser-tabpanels #panel-1-5[zen-split]:not(.deck-selected)) .tabbrowser-tab[linkedpanel="panel-1-5"] .tab-background,
+  :has(#tabbrowser-tabpanels #panel-1-6[zen-split]:not(.deck-selected)) .tabbrowser-tab[linkedpanel="panel-1-6"] .tab-background,
+  :has(#tabbrowser-tabpanels #panel-1-7[zen-split]:not(.deck-selected)) .tabbrowser-tab[linkedpanel="panel-1-7"] .tab-background,
+  :has(#tabbrowser-tabpanels #panel-1-8[zen-split]:not(.deck-selected)) .tabbrowser-tab[linkedpanel="panel-1-8"] .tab-background,
+  :has(#tabbrowser-tabpanels #panel-1-9[zen-split]:not(.deck-selected)) .tabbrowser-tab[linkedpanel="panel-1-9"] .tab-background,
+  :has(#tabbrowser-tabpanels #panel-1-10[zen-split]:not(.deck-selected)) .tabbrowser-tab[linkedpanel="panel-1-10"] .tab-background,
+  :has(#tabbrowser-tabpanels #panel-1-11[zen-split]:not(.deck-selected)) .tabbrowser-tab[linkedpanel="panel-1-11"] .tab-background,
+  :has(#tabbrowser-tabpanels #panel-1-12[zen-split]:not(.deck-selected)) .tabbrowser-tab[linkedpanel="panel-1-12"] .tab-background,
+  :has(#tabbrowser-tabpanels #panel-1-13[zen-split]:not(.deck-selected)) .tabbrowser-tab[linkedpanel="panel-1-13"] .tab-background,
+  :has(#tabbrowser-tabpanels #panel-1-14[zen-split]:not(.deck-selected)) .tabbrowser-tab[linkedpanel="panel-1-14"] .tab-background,
+  :has(#tabbrowser-tabpanels #panel-1-15[zen-split]:not(.deck-selected)) .tabbrowser-tab[linkedpanel="panel-1-15"] .tab-background,
+  :has(#tabbrowser-tabpanels #panel-1-16[zen-split]:not(.deck-selected)) .tabbrowser-tab[linkedpanel="panel-1-16"] .tab-background,
+  :has(#tabbrowser-tabpanels #panel-1-17[zen-split]:not(.deck-selected)) .tabbrowser-tab[linkedpanel="panel-1-17"] .tab-background,
+  :has(#tabbrowser-tabpanels #panel-1-18[zen-split]:not(.deck-selected)) .tabbrowser-tab[linkedpanel="panel-1-18"] .tab-background,
+  :has(#tabbrowser-tabpanels #panel-1-19[zen-split]:not(.deck-selected)) .tabbrowser-tab[linkedpanel="panel-1-19"] .tab-background,
+  :has(#tabbrowser-tabpanels #panel-1-20[zen-split]:not(.deck-selected)) .tabbrowser-tab[linkedpanel="panel-1-20"] .tab-background,
+  :has(#tabbrowser-tabpanels #panel-1-21[zen-split]:not(.deck-selected)) .tabbrowser-tab[linkedpanel="panel-1-21"] .tab-background,
+  :has(#tabbrowser-tabpanels #panel-1-22[zen-split]:not(.deck-selected)) .tabbrowser-tab[linkedpanel="panel-1-22"] .tab-background,
+  :has(#tabbrowser-tabpanels #panel-1-23[zen-split]:not(.deck-selected)) .tabbrowser-tab[linkedpanel="panel-1-23"] .tab-background,
+  :has(#tabbrowser-tabpanels #panel-1-24[zen-split]:not(.deck-selected)) .tabbrowser-tab[linkedpanel="panel-1-24"] .tab-background,
+  :has(#tabbrowser-tabpanels #panel-1-25[zen-split]:not(.deck-selected)) .tabbrowser-tab[linkedpanel="panel-1-25"] .tab-background,
+  :has(#tabbrowser-tabpanels #panel-1-26[zen-split]:not(.deck-selected)) .tabbrowser-tab[linkedpanel="panel-1-26"] .tab-background,
+  :has(#tabbrowser-tabpanels #panel-1-27[zen-split]:not(.deck-selected)) .tabbrowser-tab[linkedpanel="panel-1-27"] .tab-background,
+  :has(#tabbrowser-tabpanels #panel-1-28[zen-split]:not(.deck-selected)) .tabbrowser-tab[linkedpanel="panel-1-28"] .tab-background,
+  :has(#tabbrowser-tabpanels #panel-1-29[zen-split]:not(.deck-selected)) .tabbrowser-tab[linkedpanel="panel-1-29"] .tab-background,
+  :has(#tabbrowser-tabpanels #panel-1-30[zen-split]:not(.deck-selected)) .tabbrowser-tab[linkedpanel="panel-1-30"] .tab-background,
+  :has(#tabbrowser-tabpanels #panel-1-31[zen-split]:not(.deck-selected)) .tabbrowser-tab[linkedpanel="panel-1-31"] .tab-background,
+  :has(#tabbrowser-tabpanels #panel-1-32[zen-split]:not(.deck-selected)) .tabbrowser-tab[linkedpanel="panel-1-32"] .tab-background,
+  :has(#tabbrowser-tabpanels #panel-1-33[zen-split]:not(.deck-selected)) .tabbrowser-tab[linkedpanel="panel-1-33"] .tab-background,
+  :has(#tabbrowser-tabpanels #panel-1-34[zen-split]:not(.deck-selected)) .tabbrowser-tab[linkedpanel="panel-1-34"] .tab-background,
+  :has(#tabbrowser-tabpanels #panel-1-35[zen-split]:not(.deck-selected)) .tabbrowser-tab[linkedpanel="panel-1-35"] .tab-background,
+  :has(#tabbrowser-tabpanels #panel-1-36[zen-split]:not(.deck-selected)) .tabbrowser-tab[linkedpanel="panel-1-36"] .tab-background,
+  :has(#tabbrowser-tabpanels #panel-1-37[zen-split]:not(.deck-selected)) .tabbrowser-tab[linkedpanel="panel-1-37"] .tab-background,
+  :has(#tabbrowser-tabpanels #panel-1-38[zen-split]:not(.deck-selected)) .tabbrowser-tab[linkedpanel="panel-1-38"] .tab-background,
+  :has(#tabbrowser-tabpanels #panel-1-39[zen-split]:not(.deck-selected)) .tabbrowser-tab[linkedpanel="panel-1-39"] .tab-background,
+  :has(#tabbrowser-tabpanels #panel-1-40[zen-split]:not(.deck-selected)) .tabbrowser-tab[linkedpanel="panel-1-40"] .tab-background,
+  :has(#tabbrowser-tabpanels #panel-1-41[zen-split]:not(.deck-selected)) .tabbrowser-tab[linkedpanel="panel-1-41"] .tab-background,
+  :has(#tabbrowser-tabpanels #panel-1-42[zen-split]:not(.deck-selected)) .tabbrowser-tab[linkedpanel="panel-1-42"] .tab-background,
+  :has(#tabbrowser-tabpanels #panel-1-43[zen-split]:not(.deck-selected)) .tabbrowser-tab[linkedpanel="panel-1-43"] .tab-background,
+  :has(#tabbrowser-tabpanels #panel-1-44[zen-split]:not(.deck-selected)) .tabbrowser-tab[linkedpanel="panel-1-44"] .tab-background,
+  :has(#tabbrowser-tabpanels #panel-1-45[zen-split]:not(.deck-selected)) .tabbrowser-tab[linkedpanel="panel-1-45"] .tab-background,
+  :has(#tabbrowser-tabpanels #panel-1-46[zen-split]:not(.deck-selected)) .tabbrowser-tab[linkedpanel="panel-1-46"] .tab-background,
+  :has(#tabbrowser-tabpanels #panel-1-47[zen-split]:not(.deck-selected)) .tabbrowser-tab[linkedpanel="panel-1-47"] .tab-background,
+  :has(#tabbrowser-tabpanels #panel-1-48[zen-split]:not(.deck-selected)) .tabbrowser-tab[linkedpanel="panel-1-48"] .tab-background,
+  :has(#tabbrowser-tabpanels #panel-1-49[zen-split]:not(.deck-selected)) .tabbrowser-tab[linkedpanel="panel-1-49"] .tab-background,
+  :has(#tabbrowser-tabpanels #panel-1-50[zen-split]:not(.deck-selected)) .tabbrowser-tab[linkedpanel="panel-1-50"] .tab-background,
+  :has(#tabbrowser-tabpanels #panel-1-51[zen-split]:not(.deck-selected)) .tabbrowser-tab[linkedpanel="panel-1-51"] .tab-background,
+  :has(#tabbrowser-tabpanels #panel-1-52[zen-split]:not(.deck-selected)) .tabbrowser-tab[linkedpanel="panel-1-52"] .tab-background,
+  :has(#tabbrowser-tabpanels #panel-1-53[zen-split]:not(.deck-selected)) .tabbrowser-tab[linkedpanel="panel-1-53"] .tab-background,
+  :has(#tabbrowser-tabpanels #panel-1-54[zen-split]:not(.deck-selected)) .tabbrowser-tab[linkedpanel="panel-1-54"] .tab-background,
+  :has(#tabbrowser-tabpanels #panel-1-55[zen-split]:not(.deck-selected)) .tabbrowser-tab[linkedpanel="panel-1-55"] .tab-background,
+  :has(#tabbrowser-tabpanels #panel-1-56[zen-split]:not(.deck-selected)) .tabbrowser-tab[linkedpanel="panel-1-56"] .tab-background,
+  :has(#tabbrowser-tabpanels #panel-1-57[zen-split]:not(.deck-selected)) .tabbrowser-tab[linkedpanel="panel-1-57"] .tab-background,
+  :has(#tabbrowser-tabpanels #panel-1-58[zen-split]:not(.deck-selected)) .tabbrowser-tab[linkedpanel="panel-1-58"] .tab-background,
+  :has(#tabbrowser-tabpanels #panel-1-59[zen-split]:not(.deck-selected)) .tabbrowser-tab[linkedpanel="panel-1-59"] .tab-background,
+  :has(#tabbrowser-tabpanels #panel-1-60[zen-split]:not(.deck-selected)) .tabbrowser-tab[linkedpanel="panel-1-60"] .tab-background,
+  :has(#tabbrowser-tabpanels #panel-1-61[zen-split]:not(.deck-selected)) .tabbrowser-tab[linkedpanel="panel-1-61"] .tab-background,
+  :has(#tabbrowser-tabpanels #panel-1-62[zen-split]:not(.deck-selected)) .tabbrowser-tab[linkedpanel="panel-1-62"] .tab-background,
+  :has(#tabbrowser-tabpanels #panel-1-63[zen-split]:not(.deck-selected)) .tabbrowser-tab[linkedpanel="panel-1-63"] .tab-background,
+  :has(#tabbrowser-tabpanels #panel-1-64[zen-split]:not(.deck-selected)) .tabbrowser-tab[linkedpanel="panel-1-64"] .tab-background {
+    background-color: var(--tab-hover-background-color) !important;
+    outline-color: var(--tab-hover-outline-color) !important;
+  }
+}
+
+/* ----- Clean up layout ----- */
+
+/* Add vertical spacing around the toolbar */
+@media (-moz-bool-pref: "lancear.inner-peace.clean-up-layout.vertical-toolbar-spacing") {
+  :root:not([zen-single-toolbar]) #zen-appcontent-navbar-container {
+    padding-top: 4px;
+    padding-bottom: 4px;
+  }
+}
+
+/* Horizontally align the toolbar */
+@media (-moz-bool-pref: "lancear.inner-peace.clean-up-layout.horizontal-toolbar-alignment") {
+  :root:not([zen-sidebar-expanded]) #nav-bar {
+    margin-left: 0 !important;
+  }
+  
+  :root:not([zen-sidebar-expanded]) #PersonalToolbar,
+  :root:not([zen-right-side="true"]) #PersonalToolbar {
+    padding-inline-start: 0px !important;
+  }
+
+:root:not([zen-compact-mode="true"]) #PersonalToolbar {
+    padding-inline-end: 0px !important;
+  }
+
+#nav-bar #PanelUI-button:last-of-type toolbarbutton {
+    padding-right: 0 !important;
+  }
+
+#nav-bar #nav-bar-overflow-button {
+    padding-right: 0px !important;  
+  }
+}
+
+/* Add horizontal spacing around the sidebar */
+@media (-moz-bool-pref: "lancear.inner-peace.clean-up-layout.horizontal-sidebar-spacing") {
+  :root:not([zen-sidebar-expanded]) {
+    --zen-toolbox-padding: 5px !important;
+  }
+
+:root[zen-right-side="true"] #zen-tabbox-wrapper {
+    padding-right: 2px;
+  }
+
+:root:not([zen-right-side="true"]) #zen-tabbox-wrapper {
+    padding-left: 2px;
+  }
+}
+
+/* Vertically align the sidebar */
+@media (-moz-bool-pref: "lancear.inner-peace.clean-up-layout.vertical-sidebar-alignment") {
+  #zen-main-app-wrapper:has(#PersonalToolbar[collapsed="true"]) {
+    --personal-toolbar-height: 0px;
+  }
+
+#zen-main-app-wrapper:has(#PersonalToolbar[collapsed="false"]) {
+    --personal-toolbar-height: var(--lancear-inner-peace-clean-up-layout-personal-toolbar-height);
+  }
+
+:root:not([zen-single-toolbar]):not([zen-sidebar-expanded]) #navigator-toolbox {
+    padding-top: var(--personal-toolbar-height) !important;
+  }
+
+:root:not([zen-single-toolbar])[zen-sidebar-expanded] #zen-sidebar-top-buttons {
+    margin-bottom: var(--personal-toolbar-height) !important;
+  }
+  
+  @media (-moz-bool-pref: "lancear.inner-peace.clean-up-layout.vertical-toolbar-spacing") {
+    :root:not([zen-single-toolbar]):not([zen-sidebar-expanded]) #navigator-toolbox {
+      padding-top: calc(8px + var(--personal-toolbar-height)) !important;
+    }
+
+:root:not([zen-single-toolbar])[zen-sidebar-expanded] #zen-sidebar-top-buttons {
+      margin-bottom: calc(4px + var(--personal-toolbar-height)) !important;
+    }
+  }
+}
+
+/* Unify the window buttons styling across all layouts */
+@media (-moz-bool-pref: "lancear.inner-peace.clean-up-layout.unify-window-buttons-styling") {
+  :root[zen-right-side="true"]:not([zen-sidebar-expanded]) .titlebar-buttonbox-container {
+    padding-right: 5px;
+  }
+
+:root[zen-sidebar-expanded] .titlebar-buttonbox-container {
+    margin-right: unset !important;
+    margin-top: unset !important;
+    height: 100% !important;
+  }
+
+:root:not([zen-single-toolbar])[zen-sidebar-expanded] #zen-sidebar-top-buttons {
+    height: var(--zen-toolbar-height) !important;
+    min-height: var(--zen-toolbar-height) !important;
+    max-height: var(--zen-toolbar-height) !important;
+  }
+
+:root[zen-single-toolbar] #zen-sidebar-top-buttons {
+    margin-top: 0px !important;
+    --zen-toolbar-height: inherit !important;
+  }
+
+.titlebar-button {
+    align-items: center !important;
+  }
+}
+
+/* ----- Hide Anything ----- */
+
+/* Hide back button */
+@media (-moz-bool-pref: "lancear.inner-peace.hide-anything.back-button") { 
+  #back-button {
+    display: none;
+  }
+}
+
+/* Hide forward button */
+@media (-moz-bool-pref: "lancear.inner-peace.hide-anything.forward-button") { 
+  #forward-button {
+    display: none;
+  }
+}
+
+/* Hide url identity box */
+@media (-moz-bool-pref: "lancear.inner-peace.hide-anything.url-identity-box") { 
+  #identity-box {
+    display: none;
+  }
+  
+  .urlbar-input-box {
+    padding-left: 6px;
+  }
+}
+
+/* Hide tracking protection icon */
+@media (-moz-bool-pref: "lancear.inner-peace.hide-anything.tracking-protection-icon") { 
+  #tracking-protection-icon-container {
+    display: none;
+  }
+}
+
+/* Hide feature recommendation */
+@media (-moz-bool-pref: "lancear.inner-peace.hide-anything.feature-recommendation") { 
+  #contextual-feature-recommendation {
+    display: none;
+  }
+}
+
+/* Hide container info fully */
+@media (-moz-bool-pref: "lancear.inner-peace.hide-anything.container-info") { 
+  #userContext-icons {
+    display: none;
+  }
+}
+
+/* Hide container label */
+@media (-moz-bool-pref: "lancear.inner-peace.hide-anything.container-label") { 
+  #userContext-label {
+    display: none;
+  }
+}
+
+/* Hide container icon */
+@media (-moz-bool-pref: "lancear.inner-peace.hide-anything.container-icon") { 
+  #userContext-indicator {
+    display: none;
+  }
+}
+
+/* Hide reader mode button */
+@media (-moz-bool-pref: "lancear.inner-peace.hide-anything.reader-mode-button") { 
+  #reader-mode-button {
+    display: none;
+  }
+}
+
+/* Hide pciture in picture button */
+@media (-moz-bool-pref: "lancear.inner-peace.hide-anything.picture-in-picture-button") { 
+  #picture-in-picture-button {
+    display: none;
+  }
+}
+
+/* Hide translations button */
+@media (-moz-bool-pref: "lancear.inner-peace.hide-anything.translations-button") { 
+  #translations-button {
+    display: none;
+  }
+}
+
+/* Hide shopping button */
+@media (-moz-bool-pref: "lancear.inner-peace.hide-anything.shopping-button") { 
+  #shopping-sidebar-button {
+    display: none;
+  }
+}
+
+/* Hide zoom button */
+@media (-moz-bool-pref: "lancear.inner-peace.hide-anything.zoom-button") { 
+  #urlbar-zoom-button {
+    display: none;
+  }
+}
+
+/* Hide page action button */
+@media (-moz-bool-pref: "lancear.inner-peace.hide-anything.page-action-button") { 
+  #pageActionButton {
+    display: none;
+  }
+}
+
+/* Hide split views button */
+@media (-moz-bool-pref: "lancear.inner-peace.hide-anything.split-views-button") { 
+  #zen-split-views-button {
+    display: none;
+  }
+}
+
+/* Hide bookmark button */
+@media (-moz-bool-pref: "lancear.inner-peace.hide-anything.bookmark-button") { 
+  #star-button-box {
+    display: none;
+  }
+}
+
+/* Hide extensions button */
+@media (-moz-bool-pref: "lancear.inner-peace.hide-anything.extensions-button") { 
+  #unified-extensions-button {
+    display: none;
+  }
+}
+
+/* Hide menu button */
+@media (-moz-bool-pref: "lancear.inner-peace.hide-anything.menu-button") { 
+  #PanelUI-menu-button {
+    display: none;
+  }
+}
+
+/* Hide window minimize button */
+@media (-moz-bool-pref: "lancear.inner-peace.hide-anything.window-min-button") { 
+  .titlebar-min {
+    display: none;
+  }
+}
+
+/* Hide window restore button */
+@media (-moz-bool-pref: "lancear.inner-peace.hide-anything.window-restore-button") { 
+  .titlebar-restore {
+    display: none;
+  }
+}
+
+/* Hide window close button */
+@media (-moz-bool-pref: "lancear.inner-peace.hide-anything.window-close-button") { 
+  .titlebar-close {
+    display: none;
+  }
+}
+
+/* Hide workspace switcher */
+@media (-moz-bool-pref: "lancear.inner-peace.hide-anything.workspace-switcher") { 
+  #zen-workspaces-button {
+    display: none !important;
+  }
+}
+
+/* Hide tab reset button */
+@media (-moz-bool-pref: "lancear.inner-peace.hide-anything.tab-reset-button") { 
+  .tab-reset-button {
+    display: none !important;
+  }
+}
+
+/* Hide tab close button */
+@media (-moz-bool-pref: "lancear.inner-peace.hide-anything.tab-close-button") { 
+  .tab-close-button {
+    display: none !important;
+  }
+}
+
+/* Hide tab icon fully */
+@media (-moz-bool-pref: "lancear.inner-peace.hide-anything.tab-icon") { 
+  .tab-icon-stack {
+    display: none !important;
+  }
+    
+  .tab-content {
+    padding-left: 10px !important;
+  }  
+}
+
+/* Hide tab mute button */
+@media (-moz-bool-pref: "lancear.inner-peace.hide-anything.tab-mute-button") { 
+  .tab-icon-overlay {
+    display: none !important;
+  }
+}
+
+/* Hide tab sharing icon button */
+@media (-moz-bool-pref: "lancear.inner-peace.hide-anything.tab-sharing-icon") { 
+  .tab-sharing-icon-overlay {
+    display: none !important;
+  }
+  
+  .tab-icon-image[sharing] {
+    animation: none !important;
+  }
+}
+
+/* Hide tab title changed indicator */
+@media (-moz-bool-pref: "lancear.inner-peace.hide-anything.tab-title-changed-indicator") { 
+  .tab-content {
+    background: none !important;
+  }
+}
+
+/* Hide tab pending icon*/
+@media (-moz-bool-pref: "lancear.inner-peace.hide-anything.tab-pending-icon") { 
+  .tab-icon-pending {
+    display: none !important;
+  }
+}
+
+/* Hide tab throbber */
+@media (-moz-bool-pref: "lancear.inner-peace.hide-anything.tab-throbber") { 
+  .tab-throbber {
+    display: none !important;
+  }
+}
