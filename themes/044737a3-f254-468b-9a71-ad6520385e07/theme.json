@@ -1,0 +1,14 @@
+{
+    "id": "044737a3-f254-468b-9a71-ad6520385e07",
+    "name": "Customization Theming",
+    "description": "Applies your Zen theme to the Customize Toolbar menu",
+    "homepage": "",
+    "style": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/044737a3-f254-468b-9a71-ad6520385e07/chrome.css",
+    "readme": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/044737a3-f254-468b-9a71-ad6520385e07/readme.md",
+    "image": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/044737a3-f254-468b-9a71-ad6520385e07/image.png",
+    "author": "thebitstick",
+    "version": "1.0.0",
+    "tags": [],
+    "createdAt": "2025-09-19",
+    "updatedAt": "2025-09-19"
+}
