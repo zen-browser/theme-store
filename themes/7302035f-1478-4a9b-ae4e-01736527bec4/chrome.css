@@ -1,0 +1,194 @@
+
+/* === macOS traffic-light titlebar buttons for Zen Browser === */
+
+/* Position adjustments (optional, tweak as you like) */
+#navigator-toolbox[zen-right-side="true"] > #zen-sidebar-top-buttons > .titlebar-buttonbox-container > .titlebar-buttonbox {
+  margin-top: 11px !important;
+}
+
+.titlebar-buttonbox {
+  margin-right: 20px;
+  display: flex;
+  gap: 6px;
+}
+
+/* ===================== COLORS ===================== */
+:root {
+  --close-red: #ff6159;
+  --close-red-active: #bf4942;
+  --close-red-icon: #4d0000;
+  --close-red-icon-active: #190000;
+
+--minimize-yellow: #ffbd2e;
+  --minimize-yellow-active: #bf8e22;
+  --minimize-yellow-icon: #995700;
+  --minimize-yellow-icon-active: #592800;
+
+--maximize-green: #28c941;
+  --maximize-green-active: #1d9730;
+  --maximize-green-icon: #006500;
+  --maximize-green-icon-active: #003200;
+
+--disabled-gray: #ddd;
+}
+
+/* ===================== BASE BUTTON STYLE ===================== */
+.titlebar-button {
+  padding: 0 !important;
+  min-height: 12px !important;
+  min-width: 12px !important;
+  height: 12px !important;
+  width: 12px !important;
+  align-self: center;
+  margin-left: 5px !important;
+  border-radius: 50%;
+  border: 1px solid rgba(0, 0, 0, 0.06);
+  box-sizing: border-box;
+  background-color: var(--disabled-gray) !important;
+  transition: all 120ms ease-in-out;
+  position: relative;
+}
+
+.titlebar-button > image {
+  visibility: collapse !important;
+}
+
+/* ===================== COLORS ON HOVER ===================== */
+.titlebar-buttonbox:hover .titlebar-close {
+  background-color: var(--close-red) !important;
+}
+.titlebar-buttonbox:hover .titlebar-min {
+  background-color: var(--minimize-yellow) !important;
+}
+.titlebar-buttonbox:hover .titlebar-max,
+.titlebar-buttonbox:hover .titlebar-restore {
+  background-color: var(--maximize-green) !important;
+}
+
+/* ===================== ACTIVE STATE COLORS ===================== */
+.titlebar-close:active {
+  background-color: var(--close-red-active) !important;
+}
+.titlebar-min:active {
+  background-color: var(--minimize-yellow-active) !important;
+}
+.titlebar-max:active,
+.titlebar-restore:active {
+  background-color: var(--maximize-green-active) !important;
+}
+
+/* ===================== ICONS (macOS-style) ===================== */
+.titlebar-close::before,
+.titlebar-close::after,
+.titlebar-min::before,
+.titlebar-max::before,
+.titlebar-max::after {
+  content: "";
+  position: absolute;
+  border-radius: 1px;
+  left: 0; right: 0; top: 0; bottom: 0;
+  margin: auto;
+  visibility: hidden;
+}
+
+/* Only show icons when hovering the button box */
+.titlebar-buttonbox:hover .titlebar-close::before,
+.titlebar-buttonbox:hover .titlebar-close::after,
+.titlebar-buttonbox:hover .titlebar-min::before,
+.titlebar-buttonbox:hover .titlebar-max::before,
+.titlebar-buttonbox:hover .titlebar-max::after {
+  visibility: visible;
+}
+
+/* Close (X) */
+.titlebar-close::before,
+.titlebar-close::after {
+  background-color: var(--close-red-icon);
+  width: 6px;
+  height: 1px;
+}
+.titlebar-close::before { transform: rotate(45deg); }
+.titlebar-close::after { transform: rotate(-45deg); }
+.titlebar-close:active::before,
+.titlebar-close:active::after {
+  background-color: var(--close-red-icon-active);
+}
+
+/* Minimize (–) */
+.titlebar-min::before {
+  background-color: var(--minimize-yellow-icon);
+  width: 8px;
+  height: 1px;
+}
+.titlebar-min:active::before {
+  background-color: var(--minimize-yellow-icon-active);
+}
+
+/* Maximize (+) */
+.titlebar-max::before {
+  background-color: var(--maximize-green-icon);
+  width: 4px;
+  height: 4px;
+  border-radius: 1px;
+}
+.titlebar-max::after {
+  background-color: var(--maximize-green);
+  width: 8px;
+  height: 2px;
+  transform: rotate(45deg);
+}
+.titlebar-max:active::before {
+  background-color: var(--maximize-green-icon-active);
+}
+.titlebar-max:active::after {
+  background-color: var(--maximize-green-active);
+}
+
+/* ===================== OPTIONAL: ALIGN LEFT ===================== */
+/*
+.titlebar-buttonbox {
+  order: -1 !important;
+  margin-left: 8px !important;
+  margin-right: 0 !important;
+}
+*/
+
+/* ===================== COLORS WHEN WINDOW IS FOCUSED ===================== */
+
+/* When Zen is the active window — always colored */
+:root:not(:-moz-window-inactive) .titlebar-close {
+  background-color: var(--close-red) !important;
+}
+:root:not(:-moz-window-inactive) .titlebar-min {
+  background-color: var(--minimize-yellow) !important;
+}
+:root:not(:-moz-window-inactive) .titlebar-max,
+:root:not(:-moz-window-inactive) .titlebar-restore {
+  background-color: var(--maximize-green) !important;
+}
+
+/* When Zen is not focused — all buttons go gray */
+:root:-moz-window-inactive .titlebar-button {
+  background-color: var(--disabled-gray) !important;
+}
+
+/* Keep pressed state vivid even when focused */
+.titlebar-close:active {
+  background-color: var(--close-red-active) !important;
+}
+.titlebar-min:active {
+  background-color: var(--minimize-yellow-active) !important;
+}
+.titlebar-max:active,
+.titlebar-restore:active {
+  background-color: var(--maximize-green-active) !important;
+}
+
+/* Show icons only when focused + hovered */
+:root:not(:-moz-window-inactive) .titlebar-buttonbox:hover .titlebar-close::before,
+:root:not(:-moz-window-inactive) .titlebar-buttonbox:hover .titlebar-close::after,
+:root:not(:-moz-window-inactive) .titlebar-buttonbox:hover .titlebar-min::before,
+:root:not(:-moz-window-inactive) .titlebar-buttonbox:hover .titlebar-max::before,
+:root:not(:-moz-window-inactive) .titlebar-buttonbox:hover .titlebar-max::after {
+  visibility: visible;
+}
