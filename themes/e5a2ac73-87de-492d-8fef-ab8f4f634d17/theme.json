@@ -1,0 +1,15 @@
+{
+    "id": "e5a2ac73-87de-492d-8fef-ab8f4f634d17",
+    "name": "urlbar animation",
+    "description": "this adds a customizable blur and tab expanding animation to the urlbar animation",
+    "homepage": "https://github.com/Fury7425/my-zen-mods",
+    "style": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/e5a2ac73-87de-492d-8fef-ab8f4f634d17/chrome.css",
+    "readme": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/e5a2ac73-87de-492d-8fef-ab8f4f634d17/readme.md",
+    "image": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/e5a2ac73-87de-492d-8fef-ab8f4f634d17/image.png",
+    "author": "Fury7425",
+    "version": "1.0.0",
+    "tags": [],
+    "createdAt": "2025-04-19",
+    "updatedAt": "2025-04-19",
+    "preferences": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/e5a2ac73-87de-492d-8fef-ab8f4f634d17/preferences.json"
+}

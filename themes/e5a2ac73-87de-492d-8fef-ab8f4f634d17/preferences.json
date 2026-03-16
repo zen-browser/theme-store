@@ -1,0 +1,30 @@
+[
+    {
+        "property": "zen-tabbox-user-scale",
+        "label": "Tabbox scale (e.g. 1.07)",
+        "type": "string",
+        "defaultValue": "1.07",
+        "placeholder": "e.g. 1.05"
+    },
+    {
+        "property": "zen-tabbox-user-blur",
+        "label": "Tabbox blur amount",
+        "type": "string",
+        "defaultValue": "10px",
+        "placeholder": "e.g. 8px"
+    },
+    {
+        "property": "zen-tabbox-user-brightness",
+        "label": "Tabbox brightness",
+        "type": "string",
+        "defaultValue": "0.7",
+        "placeholder": "e.g. 0.9"
+    },
+    {
+        "property": "zen-tabbox-user-ease",
+        "label": "Easing curve (4 values)",
+        "type": "string",
+        "defaultValue": "0.46, -0.45, 0.34, 1.69",
+        "placeholder": "e.g. 0.25, 0.1, 0.25, 1"
+    }
+]
