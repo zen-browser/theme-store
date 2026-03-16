@@ -1,0 +1,37 @@
+
+#tabbrowser-tabbox {
+    #zen-sidebar-web-panel-wrapper {
+        margin: 10px !important;
+
+@media (-moz-bool-pref: "zen.view.compact.hide-tabbar") {
+            margin-left: 16px !important;
+        }
+
+#zen-sidebar-web-panel {
+            box-shadow: none !important;
+            min-width: 300px !important; 
+            max-width: 100% !important; 
+            position: relative;
+            overflow: auto;
+            resize: both;
+            background: var(--uc-custom-zen-sidebar-panel-color-background, #21212180) !important;
+            backdrop-filter: blur(var(--uc-custom-zen-sidebar-panel-blur, 3px)) !important;
+            border-radius: var(--uc-custom-zen-sidebar-panel-border-radius, 15px) !important;
+            box-shadow: 0 var(--uc-custom-zen-sidebar-panel-shadow-position, 0px) var(--uc-custom-zen-sidebar-panel-shadow-strength, 5px) var(--uc-custom-zen-sidebar-panel-color-shadow, #3d3d3d1a)  !important;
+            browser {opacity: var(--uc-custom-zen-sidebar-panel-color-opacity, 0.8);}
+
+@media (-moz-bool-pref: "uc.custom-zen-sidebar-panel.show-borders") {
+                border: 1 !important;
+            }
+            @media not (-moz-bool-pref: "uc.custom-zen-sidebar-panel.show-borders") {
+                border: 0 !important;
+            }
+
+resizer {
+                @media not (-moz-bool-pref: "uc.custom-zen-sidebar-panel.transparent-resizer") {
+                    background: transparent;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,47 @@
+[
+    {
+        "property": "uc.custom-zen-sidebar-panel.color.background",
+        "label": "Background (Hex: #RRGGBBAA / def: #21212180)",
+        "type": "string"
+    },
+    {
+        "property": "uc.custom-zen-sidebar-panel.color.opacity",
+        "label": "Opacity (Between 0, 1 / def: 0.8)",
+        "type": "string"
+    },
+    {
+        "property": "uc.custom-zen-sidebar-panel.show-borders",
+        "label": "Show Borders",
+        "type": "checkbox"
+    },
+    {
+        "property": "uc.custom-zen-sidebar-panel.color.shadow",
+        "label": "Shadow (Hex: #RRGGBBAA / def: #3d3d3d1a)",
+        "type": "string"
+    },
+    {
+        "property": "uc.custom-zen-sidebar-panel.shadow-position",
+        "label": "Shadow Position (n+px / def: 0px)",
+        "type": "string"
+    },
+    {
+        "property": "uc.custom-zen-sidebar-panel.shadow-strength",
+        "label": "Shadow Strength (n+px / def: 5px)",
+        "type": "string"
+    },
+    {
+        "property": "uc.custom-zen-sidebar-panel.blur",
+        "label": "Blur (n+px / def: 3px)",
+        "type": "string"
+    },
+    {
+        "property": "uc.custom-zen-sidebar-panel.border-radius",
+        "label": "Border Radius (n+px or n+% / def: 15px)",
+        "type": "string"
+    },
+    {
+        "property": "uc.custom-zen-sidebar-panel.transparent-resizer",
+        "label": "Show Resizer",
+        "type": "checkbox"
+    }
+]
