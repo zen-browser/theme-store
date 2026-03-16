@@ -1,0 +1,29 @@
+
+/* Arc-like Spacing */
+#zen-sidebar-top-buttons {
+  margin-top: 4px !important;
+  margin-bottom: 6px !important;
+}
+#back-button {
+  margin-right: 5px !important;
+}
+:root:not([sizemode="fullscreen"]) #zen-appcontent-wrapper {
+  margin: 2px !important;
+}
+#navigator-toolbox {
+  margin-top: 4px !important;
+  margin-bottom: 4px !important;
+  margin-left: 4px !important;
+  margin-right: 4px !important;
+}
+.zen-current-workspace-indicator {
+  margin-bottom: -4px !important;
+}
+:root[zen-compact-mode=true] #navigator-toolbox #titlebar {
+  margin-bottom: 10px !important;
+  padding-left: 10px !important;
+  padding-right: 10px !important;
+}
+:root[zen-compact-mode=true] .subviewbutton {
+  margin-bottom: 6px !important;
+}
