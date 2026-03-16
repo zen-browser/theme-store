@@ -1,0 +1,14 @@
+{
+    "id": "1876d579-11d6-4268-acf4-1f2374bfaac2",
+    "name": "Hide Tabs In Compact Mode",
+    "description": "This mod disables the tab menu popping out when you hover over it with your mouse in compact mode.",
+    "homepage": "https://github.com/AndImGone/hidetabsincompactmode?",
+    "style": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/1876d579-11d6-4268-acf4-1f2374bfaac2/chrome.css",
+    "readme": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/1876d579-11d6-4268-acf4-1f2374bfaac2/readme.md",
+    "image": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/1876d579-11d6-4268-acf4-1f2374bfaac2/image.png",
+    "author": "AndImGone",
+    "version": "1.0.0",
+    "tags": [],
+    "createdAt": "2025-02-01",
+    "updatedAt": "2025-02-01"
+}
