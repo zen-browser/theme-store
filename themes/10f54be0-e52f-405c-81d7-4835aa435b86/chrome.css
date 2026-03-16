@@ -1,0 +1,97 @@
+
+/* TAB TWEAKS */
+
+/* no workspace indicator */
+@media (-moz-bool-pref: "theme.tabbartweaks.hideworkspace"){
+    vbox.zen-workspace-tabs-section.zen-current-workspace-indicator {
+    display: none !important;
+    }
+}
+/* tab-bar size */
+:root[zen-compact-mode="true"] {
+    toolbox#navigator-toolbox.browser-toolbox-background {
+        padding-top: var(--theme-tabbartweaks-tobseparation) !important; /*default 34px*/
+        padding-bottom: var(--theme-tabbartweaks-bottomseparation) !important; /*default 4px*/
+        margin: 0px !important;
+        bottom: 0px !important;
+        top: 0px !important;
+        height: 100% !important;
+    }
+}
+:root[zen-compact-mode="false"] {
+    #TabsToolbar {
+        margin-top: calc(var(--theme-tabbartweaks-tobseparation) - 38px) !important;
+        margin-bottom: var(--theme-tabbartweaks-bottomseparation) !important;
+    }
+}
+/* tabs */
+:root:has(#theme-Tab-Bar-Tweaks[theme-tabbartweaks-tabbehaviour="stretch"]){
+    vbox.zen-workspace-tabs-section.zen-workspace-normal-tabs-section {
+        display: flex !important;
+    }
+}
+:root:has(#theme-Tab-Bar-Tweaks[theme-tabbartweaks-tabbehaviour="gototop"]){
+    vbox.zen-workspace-tabs-section.zen-workspace-normal-tabs-section {
+        display: block !important;
+        align-content: start !important;
+    }
+}
+:root:has(#theme-Tab-Bar-Tweaks[theme-tabbartweaks-tabbehaviour="gototmiddle"]){
+    vbox.zen-workspace-tabs-section.zen-workspace-normal-tabs-section {
+        display: block !important;
+        align-content: center !important;
+    }
+}
+:root:has(#theme-Tab-Bar-Tweaks[theme-tabbartweaks-tabbehaviour="gototbottom"]){
+    vbox.zen-workspace-tabs-section.zen-workspace-normal-tabs-section {
+        display: block !important;
+        align-content: end !important;
+    }
+}
+/* tab behaviour */
+tab.tabbrowser-tab {
+    flex-grow: 1 !important;
+}
+vbox.tab-label-container {
+    flex-flow: row !important;
+    display: flex !important;
+}
+label.tab-text.tab-label {
+        flex-grow: 1 !important;
+        text-align: left !important;
+    }
+@media (-moz-bool-pref: "theme.tabbartweaks.centernames") {
+    label.tab-text.tab-label {
+        flex-grow: 1 !important;
+        text-align: center !important;
+    }
+}
+label.tab-text.tab-label {
+    max-width: 100% !important;
+}
+label.tab-reset-pin-label {
+    width: 0px !important;
+}
+
+/* full height close buttons */
+@media (-moz-bool-pref: "theme.tabbartweaks.fullclose"){
+    image.tab-close-button {
+        height: calc(100% - 4px) !important;
+        width: 40px !important;
+        padding: 12px !important;
+        margin-right: -6px !important;
+        border-radius: 8px !important;
+        border-bottom-left-radius: 0px !important;
+        border-top-left-radius: 0px !important;
+        display: block !important;
+    }
+    #tabbrowser-tabs[orient="vertical"] {
+        &[expanded] {
+            & .tabbrowser-tab {
+                &:not(:hover) .tab-close-button:not([selected]) {
+                    opacity: 0 !important;
+                }
+            }
+        }
+    }
+}

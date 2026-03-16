@@ -1,0 +1,15 @@
+{
+    "id": "10f54be0-e52f-405c-81d7-4835aa435b86",
+    "name": "Tab Bar Tweaks",
+    "description": "this mod allows for better customization of your tab bar.",
+    "homepage": "https://github.com/Janb0/Zen-Browser-Mods/tree/84b39dedf1c5d1b779d254b0ed1eea5c983783a9/Tab%20Bar%20Tweaks",
+    "style": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/10f54be0-e52f-405c-81d7-4835aa435b86/chrome.css",
+    "readme": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/10f54be0-e52f-405c-81d7-4835aa435b86/readme.md",
+    "image": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/10f54be0-e52f-405c-81d7-4835aa435b86/image.png",
+    "author": "Janb0",
+    "version": "1.0.0",
+    "tags": [],
+    "createdAt": "2025-05-29",
+    "updatedAt": "2025-05-29",
+    "preferences": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/10f54be0-e52f-405c-81d7-4835aa435b86/preferences.json"
+}
