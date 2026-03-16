@@ -1,0 +1,14 @@
+{
+    "id": "4ef75ef2-b751-45f6-ab65-e0baf7b60568",
+    "name": "Grayscale",
+    "description": "Applies a grayscale filter to the browser.",
+    "homepage": "https://github.com/Erl-koenig/zen-grayscale",
+    "style": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/4ef75ef2-b751-45f6-ab65-e0baf7b60568/chrome.css",
+    "readme": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/4ef75ef2-b751-45f6-ab65-e0baf7b60568/readme.md",
+    "image": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/4ef75ef2-b751-45f6-ab65-e0baf7b60568/image.png",
+    "author": "Erl-koenig",
+    "version": "1.0.0",
+    "tags": [],
+    "createdAt": "2025-05-06",
+    "updatedAt": "2025-05-06"
+}
