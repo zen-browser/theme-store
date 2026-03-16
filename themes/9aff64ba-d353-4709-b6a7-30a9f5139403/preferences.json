@@ -1,0 +1,14 @@
+[
+    {
+        "property": "theme.hidesidebar.hide_sidebar_header",
+        "label": "hide Sidebery header",
+        "type": "checkbox",
+        "defaultValue": false
+    },
+    {
+        "property": "theme.hidesidebar.hide_navigator_toolbox",
+        "label": "hide default sidebar",
+        "type": "checkbox",
+        "defaultValue": false
+    }
+]

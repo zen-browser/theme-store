@@ -1,0 +1,15 @@
+{
+    "id": "9aff64ba-d353-4709-b6a7-30a9f5139403",
+    "name": "Hide Sidebar",
+    "description": "Hide default sidebar for using Sidebery",
+    "homepage": "https://git.081024.xyz/hxx/zen-mods",
+    "style": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/9aff64ba-d353-4709-b6a7-30a9f5139403/chrome.css",
+    "readme": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/9aff64ba-d353-4709-b6a7-30a9f5139403/readme.md",
+    "image": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/9aff64ba-d353-4709-b6a7-30a9f5139403/image.png",
+    "author": "jqtmviyu",
+    "version": "1.0.0",
+    "tags": [],
+    "createdAt": "2025-05-25",
+    "updatedAt": "2025-05-25",
+    "preferences": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/9aff64ba-d353-4709-b6a7-30a9f5139403/preferences.json"
+}
