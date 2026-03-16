@@ -1,0 +1,24 @@
+[
+    {
+        "property": "media.videocontrols.picture-in-picture.video-toggle.position",
+        "label": "Position",
+        "type": "dropdown",
+        "disabledOn": [],
+        "placeholder": "Select PiP position",
+        "defaultValue": "top-right",
+        "options": [
+            {
+                "label": "Default",
+                "value": "right"
+            },
+            {
+                "label": "Top Left",
+                "value": "top-left"
+            },
+            {
+                "label": "Top Right",
+                "value": "top-right"
+            }
+        ]
+    }
+]
