@@ -1,0 +1,14 @@
+{
+    "id": "a9728b38-7ce0-4a61-81d8-90afabc60b50",
+    "name": "Toolless TabTip",
+    "description": "Hides the tab preview tooltip/popup when hovering a tab.",
+    "homepage": "https://github.com/different55/ToollessTabTip",
+    "style": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/a9728b38-7ce0-4a61-81d8-90afabc60b50/chrome.css",
+    "readme": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/a9728b38-7ce0-4a61-81d8-90afabc60b50/readme.md",
+    "image": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/a9728b38-7ce0-4a61-81d8-90afabc60b50/image.png",
+    "author": "different55",
+    "version": "1.0.0",
+    "tags": [],
+    "createdAt": "2025-02-05",
+    "updatedAt": "2025-02-05"
+}
