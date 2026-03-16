@@ -1,0 +1,5 @@
+
+html[zen-compact-mode="true"] {
+	--zen-element-separation: 0px !important;
+	--zen-webview-border-radius: 0;
+}

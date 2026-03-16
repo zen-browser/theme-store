@@ -1,0 +1,14 @@
+{
+    "id": "f700dae8-93bf-446f-b27f-8efbfff37e0f",
+    "name": "Borderless Compact Mode",
+    "description": "Remove border and rounded corners only when compact mode enabled",
+    "homepage": "",
+    "style": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/f700dae8-93bf-446f-b27f-8efbfff37e0f/chrome.css",
+    "readme": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/f700dae8-93bf-446f-b27f-8efbfff37e0f/readme.md",
+    "image": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/f700dae8-93bf-446f-b27f-8efbfff37e0f/image.png",
+    "author": "declider",
+    "version": "1.0.0",
+    "tags": [],
+    "createdAt": "2025-05-20",
+    "updatedAt": "2025-05-20"
+}
