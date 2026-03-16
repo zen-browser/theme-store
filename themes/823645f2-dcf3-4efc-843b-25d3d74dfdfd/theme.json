@@ -1,0 +1,15 @@
+{
+    "id": "823645f2-dcf3-4efc-843b-25d3d74dfdfd",
+    "name": "Finetuning",
+    "description": "Finetuning is a mod that allows you to fine-tune the appearance of the browser.",
+    "homepage": "",
+    "style": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/823645f2-dcf3-4efc-843b-25d3d74dfdfd/chrome.css",
+    "readme": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/823645f2-dcf3-4efc-843b-25d3d74dfdfd/readme.md",
+    "image": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/823645f2-dcf3-4efc-843b-25d3d74dfdfd/image.png",
+    "author": "wxxxcxx",
+    "version": "1.0.0",
+    "tags": [],
+    "createdAt": "2024-11-07",
+    "updatedAt": "2024-11-07",
+    "preferences": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/823645f2-dcf3-4efc-843b-25d3d74dfdfd/preferences.json"
+}

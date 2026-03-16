@@ -1,0 +1,23 @@
+
+@-moz-document url-prefix("chrome:") {
+  :root {
+    --zen-toolbar-height: var(--finetuning-titlebar-titlebar_height) !important;
+  }
+  #nav-bar #zen-sidebar-top-buttons {
+    min-height: auto !important;
+    height: auto !important;
+    max-height: auto !important;
+    padding-right: 15px !important;
+  }
+
+.titlebar-buttonbox-container {
+    padding-left: 15px !important;
+  }
+
+/* Hide the new tab button at the end of the tabs */
+  @media (-moz-bool-pref: "finetuning.tabs.hide_tabs_newtab_button") {
+    #tabbrowser-arrowscrollbox-periphery {
+      display: none !important;
+    }
+  }
+}

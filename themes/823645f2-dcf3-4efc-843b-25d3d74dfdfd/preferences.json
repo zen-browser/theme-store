@@ -1,0 +1,16 @@
+[
+    {
+        "property": "finetuning.titlebar.titlebar_height",
+        "label": "Set the height of the titlebar",
+        "type": "string",
+        "defaultValue": "40px",
+        "disabledOn": []
+    },
+    {
+        "property": "finetuning.tabs.hide_tabs_newtab_button",
+        "label": "Hide the new tab button at the end of the tabs",
+        "type": "checkbox",
+        "defaultValue": false,
+        "disabledOn": []
+    }
+]
