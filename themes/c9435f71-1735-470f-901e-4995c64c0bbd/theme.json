@@ -1,0 +1,14 @@
+{
+    "id": "c9435f71-1735-470f-901e-4995c64c0bbd",
+    "name": "Audio Tab Stripe",
+    "description": "Display an indicator on the 'Now playing' tab when the sidebar is collapsed.",
+    "homepage": "https://github.com/itacentury/zen-mods/tree/main",
+    "style": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/c9435f71-1735-470f-901e-4995c64c0bbd/chrome.css",
+    "readme": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/c9435f71-1735-470f-901e-4995c64c0bbd/readme.md",
+    "image": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/c9435f71-1735-470f-901e-4995c64c0bbd/image.png",
+    "author": "itacentury",
+    "version": "1.0.0",
+    "tags": [],
+    "createdAt": "2025-11-08",
+    "updatedAt": "2025-11-08"
+}
