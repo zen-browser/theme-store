@@ -1,0 +1,14 @@
+{
+    "id": "796d80d6-9c3f-4db8-bb01-2fcb2505bd39",
+    "name": "Zen Floating Toast",
+    "description": "A simple Zen mod to make the toast more elegant and zen-like.",
+    "homepage": "https://github.com/bobbymannino/zen-floating-toast/tree/main",
+    "style": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/796d80d6-9c3f-4db8-bb01-2fcb2505bd39/chrome.css",
+    "readme": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/796d80d6-9c3f-4db8-bb01-2fcb2505bd39/readme.md",
+    "image": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/796d80d6-9c3f-4db8-bb01-2fcb2505bd39/image.png",
+    "author": "bobbymannino",
+    "version": "1.0.0",
+    "tags": [],
+    "createdAt": "2025-05-12",
+    "updatedAt": "2025-05-12"
+}
