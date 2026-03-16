@@ -1,0 +1,98 @@
+
+@-moz-document url-prefix("chrome:") {
+  @media not (-moz-bool-pref: "zen.view.sidebar-expanded") {
+    .tabbrowser-tab:not([pinned]) {
+      /* Audio Button */
+      .tab-icon-overlay {
+        position: absolute !important;
+        padding: 3px !important;
+        height: 16px !important;
+        width: 16px !important;
+        transform: translate(-40%, -60%) !important;
+        background-color: var(--zen-colors-border) !important;
+        cursor: pointer;
+        border-radius: 10% 0% 40% 0% !important;
+        transition: all 0.15s ease-in-out;
+      }
+
+.tab-icon-overlay:hover {
+        background-color: var(
+          --zen-urlbar-background,
+          var(--uc-compact-tab-close-button-bg-color)
+        ) !important;
+      }
+
+.tab-icon-overlay:is([soundplaying], [muted]):not([selected]) {
+        display: block !important;
+        border-radius: 20% 0% 40% 0% !important;
+      }
+
+.tab-icon-overlay[muted] {
+        background-color: rgb(101, 58, 58) !important;
+      }
+
+&:hover .tab-icon-overlay:is([soundplaying], [muted]) {
+        border-radius: 20% 0% 0% 0% !important;
+      }
+
+/* Tab Icon */
+      &:hover .tab-icon-stack {
+        position: absolute !important;
+        margin-left: 0px;
+      }
+
+/* Close Button */
+      &:hover .tab-close-button {
+        position: absolute !important;
+        display: block !important;
+        padding: 3px !important;
+        height: 16px !important;
+        width: 16px !important;
+        transform: translate(50%, -65%) !important;
+        background-color: var(--zen-colors-border) !important;
+        cursor: pointer;
+        border-radius: 0% 50% 0% 0% !important;
+        transition: all 0.15s ease-in-out;
+      }
+
+.tab-close-button:hover {
+        background-color: var(
+          --zen-urlbar-background,
+          var(--uc-compact-tab-close-button-bg-color)
+        ) !important;
+        transform: translate(50%, -65%) !important;
+      }
+
+&:active .tab-close-button {
+        transform: translate(45%, -65%) !important;
+        transition: none;
+      }
+    }
+  }
+
+/* Active Tab */
+  .tab-background {
+    position: relative !important;
+    overflow: hidden !important;
+  }
+
+.tab-background[selected]::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    transform: translate(0, -50%);
+    width: 4px;
+    height: 100%;
+    background-color: var(--zen-primary-color);
+  }
+
+.tab-background:not([selected])::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    transform: translate(0, -50%);
+    width: 4px;
+    height: 100%;
+    background-color: var(--zen-colors-border);
+  }
+}

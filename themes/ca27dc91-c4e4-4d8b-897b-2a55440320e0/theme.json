@@ -1,0 +1,14 @@
+{
+    "id": "ca27dc91-c4e4-4d8b-897b-2a55440320e0",
+    "name": "Tab Collapse Action",
+    "description": "This theme improves collapsed toolbar tabs in Zen Browser with quick-access audio and close icons.",
+    "homepage": "https://github.com/achmadawdi/zen-themes/tree/main/tab-collapse-action",
+    "style": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/ca27dc91-c4e4-4d8b-897b-2a55440320e0/chrome.css",
+    "readme": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/ca27dc91-c4e4-4d8b-897b-2a55440320e0/readme.md",
+    "image": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/ca27dc91-c4e4-4d8b-897b-2a55440320e0/image.png",
+    "author": "achmadawdi",
+    "version": "1.0.0",
+    "tags": [],
+    "createdAt": "2025-02-18",
+    "updatedAt": "2025-02-18"
+}
