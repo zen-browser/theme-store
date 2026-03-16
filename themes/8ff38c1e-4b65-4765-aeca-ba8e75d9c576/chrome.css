@@ -1,0 +1,10 @@
+
+/* Arc-like appearance to New Tab and Downloads button */
+#zen-create-new-button .toolbarbutton-icon {
+  width: calc(2 * var(--toolbarbutton-inner-padding) + 20px) !important;
+  height: calc(2 * var(--toolbarbutton-inner-padding) + 20px) !important;
+}
+#downloads-button #downloads-indicator-icon {
+  min-width: calc(2 * var(--toolbarbutton-inner-padding) + 10px) !important;
+  min-height: calc(2 * var(--toolbarbutton-inner-padding) + 10px) !important;
+}
