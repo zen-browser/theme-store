@@ -1,0 +1,38 @@
+
+body {
+  --zen-toolbar-height: 54px;
+}
+
+.urlbar-background {
+  background: rgba(255, 255, 255, 0.1);
+  margin-inline-end: 0.25em;
+}
+
+#identity-box {
+  margin-inline-end: 0;
+}
+
+#urlbar #identity-box #identity-icon-box {
+  background: transparent !important;
+  border-inline-end: 1px solid rgba(255, 255, 255, 0.3) !important;
+  border-radius: 0 !important;
+  padding-inline: 1rem !important;
+  margin-block: 0.5rem !important;
+  margin-inline-end: 1rem !important;
+}
+
+.toolbar-items {
+  padding-inline-start: 0.5em;
+}
+
+.tab-label {
+  font-size: 1.25em;
+}
+
+#zen-sidebar-top-buttons-customization-target {
+  padding-block: 0.5em;
+}
+
+.titlebar-buttonbox-container {
+  margin-inline-end: 0.75rem;
+}
