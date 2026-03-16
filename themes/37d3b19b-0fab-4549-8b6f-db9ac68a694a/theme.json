@@ -1,0 +1,14 @@
+{
+    "id": "37d3b19b-0fab-4549-8b6f-db9ac68a694a",
+    "name": "Opened Tab Marker",
+    "description": "Visually distinguishes opened essential, and pinned tabs from closed ones with a colored border.",
+    "homepage": "https://github.com/CodeWithAlamin/Opened-Tab-Marker",
+    "style": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/37d3b19b-0fab-4549-8b6f-db9ac68a694a/chrome.css",
+    "readme": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/37d3b19b-0fab-4549-8b6f-db9ac68a694a/readme.md",
+    "image": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/37d3b19b-0fab-4549-8b6f-db9ac68a694a/image.png",
+    "author": "CodeWithAlamin",
+    "version": "1.0.0",
+    "tags": [],
+    "createdAt": "2025-08-09",
+    "updatedAt": "2025-08-09"
+}

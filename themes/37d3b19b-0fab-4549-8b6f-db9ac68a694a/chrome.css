@@ -1,0 +1,12 @@
+
+/* Target loaded tabs' background with a border indicator */
+.tabbrowser-tab:not([pending="true"]) .tab-background,
+.tabbrowser-tab:not(.tab-loading) .tab-background {
+  border-left: 3px solid currentColor !important;
+}
+
+/* Ensure unloaded/pending tabs' background has no indicator */
+.tabbrowser-tab[pending="true"] .tab-background,
+.tabbrowser-tab.tab-loading .tab-background {
+  border-left: none !important;
+}
