@@ -1,0 +1,14 @@
+{
+    "id": "695f1422-2054-4c9b-8555-d1bb9f9d0f59",
+    "name": "Better URL bar",
+    "description": "Removes icons from the URL bar, centres the text and makes the bar transparent",
+    "homepage": "https://github.com/TaminoDesign/Better-URL-bar",
+    "style": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/695f1422-2054-4c9b-8555-d1bb9f9d0f59/chrome.css",
+    "readme": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/695f1422-2054-4c9b-8555-d1bb9f9d0f59/readme.md",
+    "image": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/695f1422-2054-4c9b-8555-d1bb9f9d0f59/image.png",
+    "author": "TaminoDesign",
+    "version": "1.0.0",
+    "tags": [],
+    "createdAt": "2025-05-15",
+    "updatedAt": "2025-05-15"
+}
