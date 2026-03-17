@@ -1,0 +1,14 @@
+[
+    {
+        "property": "theme.zen-loaded-tab-indicator.use-gradient-background",
+        "label": "Use gradient background as the indicator.",
+        "defaultValue": false,
+        "type": "checkbox"
+    },
+    {
+        "property": "theme.zen-loaded-tab-indicator.fade-unloaded-tab",
+        "label": "Fade unloaded tabs",
+        "defaultValue": true,
+        "type": "checkbox"
+    }
+]
