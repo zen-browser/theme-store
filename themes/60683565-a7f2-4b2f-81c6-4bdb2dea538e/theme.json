@@ -1,0 +1,15 @@
+{
+    "id": "60683565-a7f2-4b2f-81c6-4bdb2dea538e",
+    "name": "Floating Bookmarks",
+    "description": "Makes the bookmarks tab floating.",
+    "homepage": "https://github.com/Frost-Phoenix/zen-floating-bookmarks",
+    "style": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/60683565-a7f2-4b2f-81c6-4bdb2dea538e/chrome.css",
+    "readme": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/60683565-a7f2-4b2f-81c6-4bdb2dea538e/readme.md",
+    "image": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/60683565-a7f2-4b2f-81c6-4bdb2dea538e/image.png",
+    "author": "Frost-Phoenix",
+    "version": "1.0.0",
+    "tags": [],
+    "createdAt": "2025-02-28",
+    "updatedAt": "2025-02-28",
+    "preferences": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/60683565-a7f2-4b2f-81c6-4bdb2dea538e/preferences.json"
+}
