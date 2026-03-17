@@ -1,0 +1,15 @@
+{
+    "id": "2946525a-97df-486f-ab1e-af8bf65f6c63",
+    "name": "Collapsed Toolbar Styling",
+    "description": "Make your toolbar more fit, escape from your theme color.",
+    "homepage": "",
+    "style": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/2946525a-97df-486f-ab1e-af8bf65f6c63/chrome.css",
+    "readme": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/2946525a-97df-486f-ab1e-af8bf65f6c63/readme.md",
+    "image": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/2946525a-97df-486f-ab1e-af8bf65f6c63/image.png",
+    "author": "devdinc",
+    "version": "1.0.0",
+    "tags": [],
+    "createdAt": "2025-11-03",
+    "updatedAt": "2025-11-03",
+    "preferences": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/2946525a-97df-486f-ab1e-af8bf65f6c63/preferences.json"
+}
