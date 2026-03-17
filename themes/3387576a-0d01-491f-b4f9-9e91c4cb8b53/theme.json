@@ -1,0 +1,14 @@
+{
+    "id": "3387576a-0d01-491f-b4f9-9e91c4cb8b53",
+    "name": "Fullscreen Bookmarks Bar",
+    "description": "Make the Bookmarks Toolbar also visible in fullscreen mode, instead of only showing an empty bar",
+    "homepage": "",
+    "style": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/3387576a-0d01-491f-b4f9-9e91c4cb8b53/chrome.css",
+    "readme": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/3387576a-0d01-491f-b4f9-9e91c4cb8b53/readme.md",
+    "image": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/3387576a-0d01-491f-b4f9-9e91c4cb8b53/image.png",
+    "author": "LikeAMantis",
+    "version": "1.0.0",
+    "tags": [],
+    "createdAt": "2025-03-12",
+    "updatedAt": "2025-03-12"
+}
