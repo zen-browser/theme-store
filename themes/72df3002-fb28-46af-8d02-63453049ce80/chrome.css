@@ -1,0 +1,4 @@
+
+toolbarbutton#back-button, toolbarbutton#forward-button {
+    visibility: hidden;
+}
