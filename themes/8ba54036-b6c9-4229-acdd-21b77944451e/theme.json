@@ -1,0 +1,14 @@
+{
+    "id": "8ba54036-b6c9-4229-acdd-21b77944451e",
+    "name": "Bookmark Hide Compact",
+    "description": "Hides bookmarks in Compact mode when using Single toolbar layout.",
+    "homepage": "https://github.com/Markusice/bookmark_hide_compact",
+    "style": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/8ba54036-b6c9-4229-acdd-21b77944451e/chrome.css",
+    "readme": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/8ba54036-b6c9-4229-acdd-21b77944451e/readme.md",
+    "image": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/8ba54036-b6c9-4229-acdd-21b77944451e/image.png",
+    "author": "Markusice",
+    "version": "1.0.0",
+    "tags": [],
+    "createdAt": "2025-03-22",
+    "updatedAt": "2025-03-22"
+}
