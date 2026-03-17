@@ -1,0 +1,113 @@
+
+/* Arka Plan ve Şeffaflık */
+#navigator-toolbox {
+    background: rgba(35, 30, 55, 0.9) !important; /* Koyu mor arka plan ve şeffaflık */
+    backdrop-filter: blur(10px); /* Cam efekti */
+    color: #ffffff !important; /* Araç çubuğu yazı rengi beyaz */
+}
+
+/* Sekme Görünümü */
+.tab-background {
+    background-color: #4b3b6b !important; /* Sekme arka planı yumuşak mor */
+    border-radius: 8px  !important; /* Sekmelerin köşelerini daha fazla yuvarlama */
+    transition: background-color 0.3s ease; /* Sekme arka planı için geçiş animasyonu */
+}
+
+.tab-background[selected="true"] {
+    background-color: #7e57c2 !important; /* Seçili sekmenin daha parlak mor rengi */
+    border-bottom: 3px solid #b39ddb !important; /* Seçili sekme alt çizgisi açık mor */
+    
+}
+
+.tab-label {
+    font-weight: bold !important; /* Sekme yazıları kalın */
+    color: #ffffff !important; /* Sekme yazı rengi beyaz */
+}
+
+/* URL Çubuğu */
+#urlbar {
+    background-color: #3a2f4f !important; /* URL çubuğu koyu mor arka plan */
+    color: #ffffff !important; /* URL çubuğundaki metin rengi beyaz */
+    border: 1px solid #7e57c2 !important; /* URL çubuğunun mor çerçevesi */
+    border-radius: 8px !important; /* URL çubuğunu yuvarlatma */   
+    transition: border-color 0.3s ease; /* URL çubuğu çerçeve renginin geçişi */
+}
+
+#urlbar:hover {
+    border-color: #b39ddb !important; /* Üzerine gelince çerçeve rengi açık mor */
+}
+
+/* Düğmeler ve Araç Çubukları */
+.toolbarbutton-1 {
+    color: #ffffff !important; /* Düğme yazı rengi beyaz */
+    border: none !important; /* Sınır kaldırıldı */
+    border-radius: 6px !important; /* Düğmelerin yuvarlatılmış köşeleri */
+    transition: background-color 0.3s ease; /* Arka plan değişim animasyonu */
+}
+
+.toolbarbutton-1:hover {
+    background-color: #7e57c2 !important; /* Üzerine gelindiğinde düğme rengi parlak mor */
+    color: #ffffff !important; /* Düğme üzerindeki metin rengi beyaz */
+}
+
+/* Menü Açılır Listeleri */
+menupopup {
+    background-color: #3a2f4f !important; /* Menü arka plan rengi koyu mor */
+    color: #ffffff !important; /* Menü metin rengi beyaz */
+    border-radius: 8px !important; /* Açılır menü yuvarlatılmış kenarları */
+}
+
+menu:hover, menuitem:hover {
+    background-color: #7e57c2 !important; /* Üzerine gelindiğinde menüdeki öğelerin arka planı mor */
+    color: #ffffff !important; /* Menüdeki öğe yazı rengi beyaz */
+    border-radius: 6px !important; /* Menü öğelerinin köşelerini yuvarlatma */
+}
+
+/* Kaydırma Çubuğu */
+scrollbar {
+    background-color: #4b3b6b !important; /* Kaydırma çubuğu arka planı koyu mor */
+}
+
+scrollbar thumb {
+    background-color: #7e57c2 !important; /* Kaydırma çubuğu sürgüsü parlak mor */
+    border-radius: 8px !important; /* Kaydırma çubuğunun yuvarlatılmış sürgüsü */
+}
+
+/* Araç İpuçları */
+.tooltip {
+    background-color: #3a2f4f !important; /* Araç ipucu arka plan rengi koyu mor */
+    color: #ffffff !important; /* Araç ipucu metin rengi beyaz */
+    border-radius: 5px !important; /* Araç ipucunun köşelerini yuvarlatma */
+}
+
+/* Arama Çubuğu İçin Stil */
+#urlbar {
+    background-color: #3a2f4f !important; /* Arama çubuğu arka plan rengi */
+    color: #ffffff !important; /* Arama çubuğundaki metin rengi beyaz */
+    border: 1px solid #7e57c2 !important; /* Arama çubuğunun çerçeve rengi */
+    border-radius: 8px !important; /* Arama çubuğunun köşe yuvarlatması */
+    padding: 5px 10px !important; /* Arama çubuğundaki iç boşluk */
+    min-width: 300px !important; /* Arama çubuğunun minimum genişliği */
+}
+
+/* Arama Çubuğunun Üzerine Gelindiğinde */
+#urlbar:hover {
+    border-color: #b39ddb !important; /* Üzerine gelince çerçeve renginin değişimi */
+}
+
+/* Arama Çubuğundaki Metin için Stil */
+#urlbar .textbox-input {
+    font-size: 14px !important; /* Metin boyutu */
+    font-weight: normal !important; /* Metin kalınlığı */
+}
+
+/* Sekmelerin Bulunduğu Sütunun Arka Planına Resim Ekleme */
+#tabbrowser-tabs {
+    background-image: url('https://github.com/electrichunter/zen-browser-project-icon/blob/main/gar%C4%B1dalinux.png?raw=true'); /* Resim URL'sini buraya ekleyin */
+    background-size: contain; /* Resmi alana sığdırır, tüm resim görünür */
+    background-position: center; /* Resmi ortala */
+    background-repeat: no-repeat; /* Resmin tekrarlanmamasını sağlar */
+    padding: 20px 10px; /* Üst ve alt boşluk için padding ekleyin */
+    box-sizing: border-box; /* Padding'in alanı etkilemesini sağlar */
+    
+}
