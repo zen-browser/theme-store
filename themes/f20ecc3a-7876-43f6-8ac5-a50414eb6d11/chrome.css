@@ -1,0 +1,117 @@
+
+.titlebar-buttonbox {
+  padding: 9px !important;
+  display: flex !important;
+  align-items: center !important;
+  gap: var(--mod-macos-titlebar-button_gap, 8px) !important;
+}
+
+.titlebar-button {
+  width: var(--mod-macos-titlebar-button_size, 12px) !important;
+  height: var(--mod-macos-titlebar-button_size, 12px) !important;
+  border-radius: 50% !important;
+  padding: 0 !important;
+  margin: 0 !important;
+  border: none !important;
+  position: relative !important;
+  transition: all 0.2s ease !important;
+}
+
+.titlebar-button > .toolbarbutton-icon {
+  display: none !important;
+}
+
+.titlebar-button:hover {
+  transform: scale(1.1) !important;
+}
+
+.titlebar-close {
+  background-color: var(--mod-macos-titlebar-close_color, #ff5f57) !important;
+  border: 1px solid
+    color-mix(
+      in srgb,
+      var(--mod-macos-titlebar-close_color, #ff5f57) 85%,
+      black
+    ) !important;
+}
+
+.titlebar-close::before {
+  content: " " !important;
+}
+
+.titlebar-close:hover {
+  background-color: var(--mod-macos-titlebar-close_color, #ff5f57) !important;
+}
+
+.titlebar-close:hover::before {
+  content: " " !important;
+  position: absolute !important;
+  top: 50% !important;
+  left: 50% !important;
+  transform: translate(-50%, -50%) !important;
+  color: #7a251f !important;
+  font-size: 10px !important;
+  font-weight: bold !important;
+  line-height: 1 !important;
+}
+
+.titlebar-min {
+  background-color: var(
+    --mod-macos-titlebar-minimize_color,
+    #ffbd2e
+  ) !important;
+  border: 1px solid
+    color-mix(
+      in srgb,
+      var(--mod-macos-titlebar-minimize_color, #ffbd2e) 85%,
+      black
+    ) !important;
+}
+
+.titlebar-min::before {
+  content: " " !important;
+}
+
+.titlebar-min:hover::before {
+  content: " " !important;
+  position: absolute !important;
+  top: 50% !important;
+  left: 50% !important;
+  transform: translate(-50%, -50%) !important;
+  color: #995700 !important;
+  font-size: 10px !important;
+  font-weight: bold !important;
+  line-height: 1 !important;
+}
+
+.titlebar-max,
+.titlebar-restore {
+  background-color: var(
+    --mod-macos-titlebar-maximize_color,
+    #28ca42
+  ) !important;
+  border: 1px solid
+    color-mix(
+      in srgb,
+      var(--mod-macos-titlebar-maximize_color, #28ca42) 85%,
+      black
+    ) !important;
+}
+
+.titlebar-max::before,
+.titlebar-restore::before {
+  content: " " !important;
+}
+
+.titlebar-max:hover::before,
+.titlebar-restore:hover::before {
+  content: " " !important;
+  position: absolute !important;
+  top: 50% !important;
+  left: 50% !important;
+  transform: translate(-50%, -50%) !important;
+  color: #0d5d1a !important;
+  font-size: 8px !important;
+  font-weight: bold !important;
+  line-height: 1 !important;
+}
