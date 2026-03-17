@@ -1,0 +1,14 @@
+{
+    "id": "dc170098-b28b-46c4-aec4-6b5f9d423878",
+    "name": "Remove Workspace icon",
+    "description": "This mod for the Zen Browser removes the Worskspace icon from the sidebar.",
+    "homepage": "https://github.com/FabiDev08/zen-browser-rm-worspace-icon",
+    "style": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/dc170098-b28b-46c4-aec4-6b5f9d423878/chrome.css",
+    "readme": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/dc170098-b28b-46c4-aec4-6b5f9d423878/readme.md",
+    "image": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/dc170098-b28b-46c4-aec4-6b5f9d423878/image.png",
+    "author": "FabiDev08",
+    "version": "1.0.0",
+    "tags": [],
+    "createdAt": "2024-11-04",
+    "updatedAt": "2024-11-04"
+}

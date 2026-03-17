@@ -1,0 +1,4 @@
+
+:root:not([customizing]) .zen-workspace-sidebar-icon {
+    display: none !important;
+}
