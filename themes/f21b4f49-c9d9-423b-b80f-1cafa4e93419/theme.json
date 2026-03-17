@@ -1,0 +1,14 @@
+{
+    "id": "f21b4f49-c9d9-423b-b80f-1cafa4e93419",
+    "name": "Zen0 Context Menu",
+    "description": "CSS Style to match your theme for Menu, Context Menu, Toolbar, Download Panel",
+    "homepage": "https://github.com/Ayamarre/Zen0-Context-Menu",
+    "style": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/f21b4f49-c9d9-423b-b80f-1cafa4e93419/chrome.css",
+    "readme": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/f21b4f49-c9d9-423b-b80f-1cafa4e93419/readme.md",
+    "image": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/f21b4f49-c9d9-423b-b80f-1cafa4e93419/image.png",
+    "author": "Ayamarre",
+    "version": "1.0.0",
+    "tags": [],
+    "createdAt": "2025-05-26",
+    "updatedAt": "2025-05-26"
+}
