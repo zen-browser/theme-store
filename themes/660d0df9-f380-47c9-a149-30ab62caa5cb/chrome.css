@@ -1,0 +1,10 @@
+
+.tabbrowser-tab[pending="true"] .tab-label {
+  text-decoration: line-through !important;
+  text-decoration-thickness: 1px !important;
+}
+
+.tabbrowser-tab[pending="true"] .tab-icon-image {
+  filter: brightness(0.6) !important;
+  opacity: 0.5 !important;
+}
