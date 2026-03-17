@@ -1,0 +1,7 @@
+[
+    {
+        "property": "theme.bat-indicator.on-right",
+        "label": "Moves the active tab indicator to the right side of the tab. Has a neat little compatibility with Now Playing Indicator by benstone326 :-)",
+        "type": "checkbox"
+    }
+]
