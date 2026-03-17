@@ -1,0 +1,66 @@
+
+@-moz-document url-prefix("chrome:") {
+  /* Transparency */
+  @media (-moz-bool-pref: "mod.immersive_zen.transparency") {
+    :root {
+      --zen-dialog-background: transparent !important;
+      --zen-branding-bg: transparent !important;
+    }
+  }
+
+/* Glass Effect */
+  @media (-moz-bool-pref: "mod.immersive_zen.glass_effect") {
+    :root {
+      --zen-dialog-background: hsla(0, 0%, 100%, 0.08) !important;
+    }
+
+:root[zen-compact-mode="true"] {
+      #titlebar::before {
+        background-color: hsla(0, 0%, 100%, 0.08) !important;
+      }
+    }
+  }
+
+/* Immersive Sidebar */
+  @media (-moz-bool-pref: "mod.immersive_zen.immersive_sidebar") {
+    :root[zen-compact-mode="true"]:has(
+        #navigator-toolbox[zen-has-hover],
+        #navigator-toolbox[movingtab]
+      ) {
+      #zen-appcontent-wrapper {
+        filter: blur(20px) !important;
+      }
+    }
+  }
+
+/* Immersive Popup */
+  @media (-moz-bool-pref: "mod.immersive_zen.immersive_popup") {
+    :root:has(
+      #navigator-toolbox[has-popup-menu]:not(#navigator-toolbox[movingtab])
+    ) {
+      #zen-main-app-wrapper,
+      #urlbar {
+        filter: blur(20px) !important;
+        pointer-events: none !important;
+      }
+    }
+  }
+
+/* No Navbar */
+  @media (-moz-bool-pref: "mod.immersive_zen.no_navbar") {
+    #zen-appcontent-navbar-wrapper {
+      display: none !important;
+    }
+
+#zen-tabbox-wrapper {
+      margin-top: var(--zen-element-separation) !important;
+    }
+  }
+
+/* No Gaps */
+  @media (-moz-bool-pref: "mod.immersive_zen.no_gaps") {
+    #zen-tabbox-wrapper {
+      margin: 0 !important;
+    }
+  }
+}

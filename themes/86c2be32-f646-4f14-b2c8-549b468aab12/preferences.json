@@ -1,0 +1,38 @@
+[
+    {
+        "property": "mod.immersive_zen.transparency",
+        "label": "Make overlays and popups transparent.",
+        "type": "checkbox",
+        "defaultValue": true
+    },
+    {
+        "property": "mod.immersive_zen.glass_effect",
+        "label": "Add glass effect to overlays and popups.",
+        "type": "checkbox",
+        "defaultValue": true
+    },
+    {
+        "property": "mod.immersive_zen.immersive_sidebar",
+        "label": "Blurs the active tab when sidebar is visible in compact mode.",
+        "type": "checkbox",
+        "defaultValue": true
+    },
+    {
+        "property": "mod.immersive_zen.immersive_popup",
+        "label": "Blurs the whole browser when any popup is opened. (beta)",
+        "type": "checkbox",
+        "defaultValue": true
+    },
+    {
+        "property": "mod.immersive_zen.no_navbar",
+        "label": "Hide navbar",
+        "type": "checkbox",
+        "defaultValue": true
+    },
+    {
+        "property": "mod.immersive_zen.no_gaps",
+        "label": "Remove gaps from around the page.",
+        "type": "checkbox",
+        "defaultValue": true
+    }
+]
