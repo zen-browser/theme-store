@@ -1,0 +1,15 @@
+{
+    "id": "ee621caf-9f7e-47d5-acf2-dec16d32f010",
+    "name": "PywalZen",
+    "description": "Enable correct support for Pywalfox!",
+    "homepage": "https://github.com/Axenide/PywalZen",
+    "style": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/ee621caf-9f7e-47d5-acf2-dec16d32f010/chrome.css",
+    "readme": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/ee621caf-9f7e-47d5-acf2-dec16d32f010/readme.md",
+    "image": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/ee621caf-9f7e-47d5-acf2-dec16d32f010/image.png",
+    "author": "Axenide",
+    "version": "1.0.0",
+    "tags": [],
+    "createdAt": "2025-05-17",
+    "updatedAt": "2025-05-17",
+    "preferences": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/ee621caf-9f7e-47d5-acf2-dec16d32f010/preferences.json"
+}
