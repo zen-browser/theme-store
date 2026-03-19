@@ -5,7 +5,7 @@
 */
 
 /* 1 - Hide Zoom button in URL bar */
-@media (-moz-bool-pref: "mod.lean.hide-zoom") {
+@media (-moz-pref("mod.lean.hide-zoom")) {
   #urlbar-zoom-button {
     display: none !important;
   }
@@ -13,7 +13,7 @@
 
 /* 2 - Show translation button when hovering URL bar in Single Toolbar mode */
 :root[zen-single-toolbar='true'] {
-  @media (-moz-bool-pref: "mod.lean.show-translation") {
+  @media (-moz-pref("mod.lean.show-translation")) {
     #urlbar:hover {
       #translations-button {
         display: inherit !important; 
@@ -48,7 +48,7 @@
 
 /* 3 - Show page action button for extensions when hovering URL bar in Single Toolbar mode */
 :root[zen-single-toolbar='true'] {
-  @media (-moz-bool-pref: "mod.lean.show-pageactions") {
+  @media (-moz-pref("mod.lean.show-pageactions")) {
     #urlbar:hover {
       .urlbar-addon-page-action {
         display: inherit !important;

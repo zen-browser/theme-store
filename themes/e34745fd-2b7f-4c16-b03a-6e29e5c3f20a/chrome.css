@@ -31,8 +31,8 @@ Enabling 'Hide both' below here with compact mode disabled.";
   }
 }
 
-@media (-moz-bool-pref: "zen.view.compact.hide-toolbar") { /* zen default hide toolbar */
-  @media (-moz-bool-pref: "mod.devdinc.hide-navbar.animation.enabled") {
+@media (-moz-pref("zen.view.compact.hide-toolbar")) { /* zen default hide toolbar */
+  @media (-moz-pref("mod.devdinc.hide-navbar.animation.enabled")) {
     /* Transition defaults for all toolbar elements */
     #nav-bar,
     #zen-sidebar-top-buttons,
