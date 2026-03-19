@@ -1,0 +1,46 @@
+
+/* Hover effect for all tabs - macOS Dock style zoom */
+.tabbrowser-tab {
+  transition: transform 0.3s cubic-bezier(0.25, 1, 0.5, 1),
+    filter 0.3s ease,
+    opacity 0.3s ease !important;
+}
+
+/* Tab directly under the cursor (unpinned) */
+.tabbrowser-tab:not([pinned]):hover {
+  transform: scale(1.15) !important;
+  filter: brightness(1.1) saturate(1.2) !important;
+  z-index: 2 !important;
+}
+
+/* Pinned tabs: they only grow smoothly, no wave generated to avoid breaking the grid */
+.tabbrowser-tab[pinned]:hover {
+  transform: scale(1.1) !important;
+  filter: brightness(1.1) saturate(1.2) !important;
+  z-index: 2 !important;
+}
+
+/* Immediate adjacent tabs (1 position away) to the hovered tab */
+.tabbrowser-tab:not([pinned]):has(+ .tabbrowser-tab:not([pinned]):hover),
+.tabbrowser-tab:not([pinned]):hover+.tabbrowser-tab:not([pinned]) {
+  transform: scale(1.08) !important;
+}
+
+/* Distant adjacent tabs (2 positions away) to the hovered tab */
+.tabbrowser-tab:not([pinned]):has(+ .tabbrowser-tab:not([pinned]) + .tabbrowser-tab:not([pinned]):hover),
+.tabbrowser-tab:not([pinned]):hover+.tabbrowser-tab:not([pinned])+.tabbrowser-tab:not([pinned]) {
+  transform: scale(1.03) !important;
+}
+
+/* State: Pending/unloaded tab */
+.tabbrowser-tab[pending="true"] {
+  filter: saturate(0.4) brightness(0.8) !important;
+  opacity: 0.8 !important;
+  transition: filter 0.5s ease, opacity 0.5s ease, transform 0.3s cubic-bezier(0.25, 1, 0.5, 1) !important;
+}
+
+/* State: Hovering over a pending tab */
+.tabbrowser-tab[pending="true"]:hover {
+  filter: saturate(1) brightness(1) !important;
+  opacity: 1 !important;
+}

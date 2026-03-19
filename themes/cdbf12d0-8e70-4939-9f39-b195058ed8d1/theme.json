@@ -1,0 +1,14 @@
+{
+    "id": "cdbf12d0-8e70-4939-9f39-b195058ed8d1",
+    "name": "better tabs",
+    "description": "better tabs Makes unloaded tabs easier to notice, and add hover effect like macos dock",
+    "homepage": "https://github.com/alzari555/better-zen-browser-better-unloaded-tabs",
+    "style": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/cdbf12d0-8e70-4939-9f39-b195058ed8d1/chrome.css",
+    "readme": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/cdbf12d0-8e70-4939-9f39-b195058ed8d1/readme.md",
+    "image": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/cdbf12d0-8e70-4939-9f39-b195058ed8d1/image.png",
+    "author": "alzari555",
+    "version": "1.0.0",
+    "tags": [],
+    "createdAt": "2026-03-19",
+    "updatedAt": "2026-03-19"
+}
