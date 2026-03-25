@@ -1,26 +1,50 @@
 [
-    {
-        "property": "zen.mods.TabPreviewEnhanced.enabledMargins",
-        "label": "Put margins around tab preview image",
-        "type": "checkbox",
-        "defaultValue": true
-    },
-    {
-        "property": "zen.mods.TabPreviewEnhanced.enabledBackgroundNative",
-        "label": "Follows background color of Zen main browser (Workspaces included)",
-        "type": "checkbox",
-        "defaultValue": true
-    },
-    {
-        "property": "zen.mods.TabPreviewEnhanced.enabledCustomBorderRadius",
-        "label": "Enables custom border radius for tab preview",
-        "type": "checkbox",
-        "defaultValue": true
-    },
-    {
-        "property": "zen.mods.TabPreviewEnhanced.borderRadiusAmount",
-        "label": "Amount of custom border radius (Only active if above is enabled)",
-        "type": "string",
-        "defaultValue": "10px"
-    }
+	{
+		"property": "browser.tabs.hoverPreview.enabled",
+		"label": "Enable Zen's tab previews.",
+		"type": "checkbox",
+		"defaultValue": true
+	},
+	{
+		"property": "zen.mods.TabPreviewEnhanced.enabledBackgroundNative",
+		"label": "Enable native background on tab previews.",
+		"type": "checkbox",
+		"defaultValue": true
+	},
+	{
+		"property": "zen.mods.TabPreviewEnhanced.enabledMargins",
+		"label": "Enable padding on tab previews.",
+		"type": "checkbox",
+		"defaultValue": true
+	},
+	{
+		"property": "zen.mods.TabPreviewEnhanced.enabledCustomMargin",
+		"label": "Enable custom left margin to tab preview containers.",
+		"type": "checkbox",
+		"defaultValue": false
+	},
+	{
+		"property": "zen.mods.TabPreviewEnhanced.marginAmount",
+		"label": "Custom left margin (checkbox above must be enabled):",
+		"type": "string",
+		"defaultValue": "0.5em"
+	},
+	{
+		"property": "zen.mods.TabPreviewEnhanced.enabledCustomBorderRadius",
+		"label": "Enable custom border radius on tab preview images.",
+		"type": "checkbox",
+		"defaultValue": false
+	},
+	{
+		"property": "zen.mods.TabPreviewEnhanced.borderRadiusAmount",
+		"label": "Custom border radius (checkbox above must be enabled):",
+		"type": "string",
+		"defaultValue": "4px"
+	},
+	{
+		"property": "zen.mods.TabPreviewEnhanced.shrinkPreview",
+		"label": "Shrink tab preview images to match added padding.",
+		"type": "checkbox",
+		"defaultValue": true
+	}
 ]
