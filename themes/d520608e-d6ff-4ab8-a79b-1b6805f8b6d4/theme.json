@@ -1,0 +1,14 @@
+{
+    "id": "d520608e-d6ff-4ab8-a79b-1b6805f8b6d4",
+    "name": "No Back to pinned url",
+    "description": "Disables the Back to pinned url button that appears when hovering over the icon of a tab.",
+    "homepage": "",
+    "style": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/d520608e-d6ff-4ab8-a79b-1b6805f8b6d4/chrome.css",
+    "readme": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/d520608e-d6ff-4ab8-a79b-1b6805f8b6d4/readme.md",
+    "image": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/d520608e-d6ff-4ab8-a79b-1b6805f8b6d4/image.png",
+    "author": "InteAlis",
+    "version": "1.0.0",
+    "tags": [],
+    "createdAt": "2026-03-28",
+    "updatedAt": "2026-03-28"
+}
