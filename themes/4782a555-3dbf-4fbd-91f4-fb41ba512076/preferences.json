@@ -1,0 +1,72 @@
+[
+    {
+        "property": "zen-tabs-organiser.enable_sort",
+        "label": "Sort button",
+        "type": "checkbox",
+        "defaultValue": true
+    },
+    {
+        "property": "zen-tabs-organiser.enable_clear",
+        "label": "Clear button",
+        "type": "checkbox",
+        "defaultValue": true
+    },
+    {
+        "property": "zen-tabs-organiser.auto_colors",
+        "label": "Auto-assign colors to groups",
+        "type": "checkbox",
+        "defaultValue": true
+    },
+    {
+        "property": "zen-tabs-organiser.auto_icons",
+        "label": "Auto-assign icons to groups",
+        "type": "checkbox",
+        "defaultValue": true
+    },
+    {
+        "property": "zen-tabs-organiser.ai_model",
+        "label": "AI Provider",
+        "type": "dropdown",
+        "defaultValue": "0",
+        "options": [
+            {
+                "value": "0",
+                "label": "None"
+            },
+            {
+                "value": "1",
+                "label": "Gemini"
+            },
+            {
+                "value": "2",
+                "label": "Ollama"
+            },
+            {
+                "value": "3",
+                "label": "Mistral"
+            },
+            {
+                "value": "4",
+                "label": "OpenAI"
+            }
+        ]
+    },
+    {
+        "property": "zen-tabs-organiser.ai_api_key",
+        "label": "API Key",
+        "type": "string",
+        "placeholder": "Required for Gemini, Mistral, OpenAI"
+    },
+    {
+        "property": "zen-tabs-organiser.ai_model_name",
+        "label": "Model",
+        "type": "string",
+        "placeholder": "gpt-4o-mini, gemini-2.0-flash, llama3.2"
+    },
+    {
+        "property": "zen-tabs-organiser.ai_endpoint",
+        "label": "Endpoint",
+        "type": "string",
+        "placeholder": "Only for Ollama or OpenAI-compatible"
+    }
+]
