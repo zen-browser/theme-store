@@ -1,0 +1,193 @@
+
+/* --- Group label header: match native tab dimensions --- */
+tab-group .tab-group-label-container {
+  min-height: var(--tab-min-height, 36px) !important;
+  margin-block: var(--tab-block-margin, 2px) 0 !important;
+  padding: 0 var(--tab-inline-padding, 8px) 0 0 !important;
+  display: flex !important;
+  flex-direction: row !important;
+  align-items: center !important;
+  justify-content: flex-start !important;
+  background: color-mix(in srgb, var(--tab-group-color, gray) 10%, transparent) !important;
+  border-radius: var(--border-radius-medium, 6px) var(--border-radius-medium, 6px) 0 0 !important;
+  border-left: 3px solid color-mix(in srgb, var(--tab-group-color, gray) 40%, transparent) !important;
+  transition: background 0.2s ease, border-radius 0.3s ease !important;
+}
+
+tab-group[collapsed] .tab-group-label-container {
+  border-left-color: transparent !important;
+}
+
+tab-group .tab-group-label-container:hover {
+  background: color-mix(in srgb, var(--tab-group-color, gray) 15%, transparent) !important;
+}
+
+/* Close button: hidden, shown on hover */
+tab-group .tab-group-label-container .tab-close-button {
+  display: none !important;
+}
+tab-group .tab-group-label-container:hover .tab-close-button {
+  display: flex !important;
+  visibility: visible !important;
+}
+
+/* --- Tab container: colored background bottom part --- */
+tab-group .tab-group-container {
+  margin-inline-start: 0 !important;
+  padding-inline-start: 0 !important;
+  background: color-mix(in srgb, var(--tab-group-color, gray) 10%, transparent) !important;
+  border-radius: 0 0 var(--border-radius-medium, 6px) var(--border-radius-medium, 6px) !important;
+  padding-bottom: var(--tab-block-margin, 2px) !important;
+  margin-bottom: var(--tab-block-margin, 2px) !important;
+  border-left: 3px solid color-mix(in srgb, var(--tab-group-color, gray) 40%, transparent) !important;
+  transition: background 0.3s ease, padding-bottom 0.3s ease !important;
+}
+
+/* --- Icon container --- */
+.tab-group-icon-container {
+  margin: 0 6px 0 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Icon square */
+tab-group .tab-group-icon {
+  list-style-image: none !important;
+  display: flex !important;
+  justify-content: center !important;
+  align-items: center !important;
+  width: 16px;
+  height: 16px;
+  border-radius: 4px;
+  position: relative;
+  background: rgba(255, 255, 255, 0.12) !important;
+}
+
+tab-group .tab-group-icon .group-icon,
+tab-group .tab-group-icon image {
+  display: block;
+  width: 10px;
+  height: 10px;
+  -moz-context-properties: fill, stroke, color !important;
+  fill: white !important;
+  color: white !important;
+}
+
+tab-group .tab-group-icon label {
+  transform: translate(0, -1px);
+}
+
+/* --- Group label text --- */
+tab-group .tab-group-label {
+  direction: ltr;
+  mask-image: linear-gradient(to left, transparent, black 1em);
+  margin-right: auto !important;
+  width: 100%;
+  height: 100% !important;
+  padding: 0 4px !important;
+  background: transparent !important;
+  color: var(--tab-selected-textcolor) !important;
+  font-weight: 500 !important;
+  text-align: start !important;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 5px;
+}
+
+/* Hide native Zen tab-group-line and grain */
+tab-group .tab-group-line,
+tab-group .tab-group-container .grain {
+  display: none !important;
+}
+
+/* --- Expand/Collapse animation --- */
+tab-group .tab-group-container {
+  overflow: hidden !important;
+}
+
+tab-group .tab-group-label-container {
+  transition: background 0.2s ease, border-radius 0.3s ease !important;
+}
+
+/* Tabs wave animation — each tab has a staggered delay */
+tab-group .tab-group-container tab {
+  transition: max-height 0.25s ease, opacity 0.2s ease, transform 0.25s ease !important;
+  max-height: 100px !important;
+  opacity: 1 !important;
+  transform: translateY(0) !important;
+}
+
+tab-group .tab-group-container tab:nth-child(1) { transition-delay: 0s !important; }
+tab-group .tab-group-container tab:nth-child(2) { transition-delay: 0.03s !important; }
+tab-group .tab-group-container tab:nth-child(3) { transition-delay: 0.06s !important; }
+tab-group .tab-group-container tab:nth-child(4) { transition-delay: 0.09s !important; }
+tab-group .tab-group-container tab:nth-child(5) { transition-delay: 0.12s !important; }
+tab-group .tab-group-container tab:nth-child(6) { transition-delay: 0.15s !important; }
+tab-group .tab-group-container tab:nth-child(7) { transition-delay: 0.18s !important; }
+tab-group .tab-group-container tab:nth-child(8) { transition-delay: 0.21s !important; }
+tab-group .tab-group-container tab:nth-child(9) { transition-delay: 0.24s !important; }
+tab-group .tab-group-container tab:nth-child(10) { transition-delay: 0.27s !important; }
+tab-group .tab-group-container tab:nth-child(n+11) { transition-delay: 0.3s !important; }
+
+/* Collapsed: tabs slide up and fade out */
+tab-group[collapsed] .tab-group-container tab {
+  max-height: 0 !important;
+  opacity: 0 !important;
+  transform: translateY(-6px) !important;
+  padding: 0 !important;
+  margin: 0 !important;
+}
+
+tab-group[collapsed] .tab-group-container {
+  margin: 0 !important;
+  padding-bottom: 0 !important;
+  background: transparent !important;
+  border-left-color: transparent !important;
+}
+
+tab-group[collapsed] {
+  outline: none !important;
+  border: none !important;
+  box-shadow: none !important;
+}
+tab-group[collapsed] > .tab-group-label-container .tab-group-label {
+  outline: none !important;
+  outline-offset: 0 !important;
+}
+
+/* When collapsed, make header fully rounded */
+tab-group[collapsed] .tab-group-label-container {
+  border-radius: var(--border-radius-medium, 6px) !important;
+}
+
+/* --- Group creation animation --- */
+@keyframes zenGroupAppear {
+  from {
+    opacity: 0;
+    transform: translateY(-8px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+tab-group .tab-group-label-container {
+  animation: zenGroupAppear 0.35s ease-out !important;
+}
+
+tab-group .tab-group-container {
+  animation: zenGroupAppear 0.35s ease-out 0.1s both !important;
+}
+
+/* --- Hide group start divider --- */
+.zen-tab-group-start {
+  display: none !important;
+}
+
+/* --- Hide Zen native Clear button --- */
+.zen-workspace-close-unpinned-tabs-button {
+  display: none !important;
+}

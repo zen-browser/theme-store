@@ -1,0 +1,15 @@
+{
+    "id": "4782a555-3dbf-4fbd-91f4-fb41ba512076",
+    "name": "Zen Tabs Organiser",
+    "description": "Sort your browser tabs into groups using AI or domain-based grouping in one click.",
+    "homepage": "https://github.com/alexiscrocilla/Zen-Tabs-Organiser",
+    "style": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/4782a555-3dbf-4fbd-91f4-fb41ba512076/chrome.css",
+    "readme": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/4782a555-3dbf-4fbd-91f4-fb41ba512076/readme.md",
+    "image": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/4782a555-3dbf-4fbd-91f4-fb41ba512076/image.png",
+    "author": "alexiscrocilla",
+    "version": "1.0.0",
+    "tags": [],
+    "createdAt": "2026-03-30",
+    "updatedAt": "2026-03-30",
+    "preferences": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/4782a555-3dbf-4fbd-91f4-fb41ba512076/preferences.json"
+}
