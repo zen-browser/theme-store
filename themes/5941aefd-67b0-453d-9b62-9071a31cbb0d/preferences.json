@@ -1,0 +1,9 @@
+[
+    {
+        "property": "theme.smaller_compact_mode.sidebar_height",
+        "label": "Sidebar height (vh)",
+        "type": "string",
+        "placeholder": "50 - 99",
+        "defaultValue": "70"
+    }
+]

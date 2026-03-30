@@ -1,0 +1,22 @@
+[
+    {
+        "property": "mod.ghost_tabs.saturation",
+        "label": "Saturation (0-100)",
+        "type": "string",
+        "defaultValue": "0",
+        "placeholder": "e.g. 50"
+    },
+    {
+        "property": "mod.ghost_tabs.opacity",
+        "label": "Opacity (0-100)",
+        "type": "string",
+        "defaultValue": "50",
+        "placeholder": "e.g. 30"
+    },
+    {
+        "property": "mod.ghost_tabs.bw_enabled",
+        "label": "Enable Black & White effect",
+        "type": "checkbox",
+        "defaultValue": true
+    }
+]

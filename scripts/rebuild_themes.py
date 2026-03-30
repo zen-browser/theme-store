@@ -44,7 +44,7 @@ def write_colors(colors_file, output_file):
 
 def main():
     with open(THEMES_DATA_FILE, "w") as f:
-        json.dump({}, f, indent=4)
+        json.dump({}, f)
     for theme in os.listdir(THEMES_FOLDER):
         theme_folder = os.path.join(THEMES_FOLDER, theme)
 

@@ -1,0 +1,23 @@
+[
+    {
+        "property": "mod.ivaon.urlbar.hide_results",
+        "label": "Hide search results when opening URL bar",
+        "type": "dropdown",
+        "defaultValue": 0,
+        "disabledOn": [],
+        "options": [
+            {
+                "label": "Hide all",
+                "value": 0
+            },
+            {
+                "label": "Hide only top sites",
+                "value": 1
+            },
+            {
+                "label": "Hide only non-pinned top sites",
+                "value": 2
+            }
+        ]
+    }
+]

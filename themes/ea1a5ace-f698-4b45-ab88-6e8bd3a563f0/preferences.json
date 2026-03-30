@@ -41,19 +41,19 @@
     },
     {
         "property": "uc.bookmarks.expand-on-hover",
-        "label": "Expand the bookmarks toolbar by hovering",
+        "label": "Auto-hide: Expand by hovering",
         "type": "checkbox",
         "disabledOn": []
     },
     {
         "property": "uc.bookmarks.expand-on-search",
-        "label": "Expand the bookmarks toolbar when you search",
+        "label": "Auto-hide: Expand when searching",
         "type": "checkbox",
         "disabledOn": []
     },
     {
         "property": "uc.bookmarks.transparent",
-        "label": "Make the bookmarks toolbar transparent (only works with expand features)",
+        "label": "Enhanced transparent effects",
         "type": "checkbox",
         "disabledOn": []
     }

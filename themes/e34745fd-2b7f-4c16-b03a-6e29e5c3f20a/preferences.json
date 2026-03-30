@@ -1,0 +1,20 @@
+[
+    {
+        "property": "zen.view.compact.hide-toolbar",
+        "label": "Enable the mod",
+        "type": "checkbox",
+        "defaultValue": true
+    },
+    {
+        "property": "mod.devdinc.hide-navbar.animation.enabled",
+        "label": "Enable animations",
+        "type": "checkbox",
+        "defaultValue": true
+    },
+    {
+        "property": "mod.devdinc.hide-navbar.element-seperation",
+        "label": "Change the top border at the top of the page",
+        "type": "string",
+        "defaultValue": "var(--zen-element-separation)"
+    }
+]

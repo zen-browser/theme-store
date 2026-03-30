@@ -1,0 +1,55 @@
+
+.tabbrowser-tab[usercontextid]:is([selected],
+[visuallyselected],
+[multiselected]):has(.tab-context-line)
+  .tab-background {
+  background-color: color-mix(
+    in srgb,
+    var(--identity-tab-color, var(--tab-group-color-gray-invert)) 10%,
+    transparent
+  ) !important;
+  border: 2.5px solid
+    color-mix(
+      in srgb,
+      var(--identity-tab-color, var(--tab-group-color-gray-invert)) 90%,
+      transparent
+    ) !important;
+  opacity: 1 !important;
+  border-left: 2px solid
+    color-mix(
+      in srgb,
+      var(--identity-tab-color, var(--tab-group-color-gray-invert)) 90%,
+      transparent
+    ) !important;
+}
+
+.tabbrowser-tab[usercontextid]:not([selected]):not([visuallyselected]):not([multiselected]):has(.tab-context-line)
+.tab-background {
+  background-color: color-mix(
+    in srgb,
+    var(--identity-tab-color, var(--tab-group-color-gray-invert)) 5%,
+    transparent
+  ) !important;
+  border: 2.5px solid
+    color-mix(
+      in srgb,
+      var(--identity-tab-color, var(--tab-group-color-gray-invert)) 45%,
+      transparent
+    ) !important;
+  opacity: 0.8 !important;
+  border-left: 2px solid
+    color-mix(
+      in srgb,
+      var(--identity-tab-color, var(--tab-group-color-gray-invert)) 45%,
+      transparent
+    ) !important;
+}
+
+.tabbrowser-tab .tab-context-line {
+    display: none !important;
+    visibility: hidden !important;
+    width: 0 !important;
+    min-width: 0 !important;
+    margin-inline-start: 0 !important;
+    padding: 0 !important;
+}

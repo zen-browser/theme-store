@@ -6,9 +6,14 @@
 	--better-findbar-position-bottom: 15px;
 	--better-findbar-position-left: 50%;
 	--better-findbar-position-right: auto;
+	--better-findbar-background-color: var(--zen-primary-color);
 }
-.browserContainer {
-	overflow: clip
+
+/* Custom background */
+@media (-moz-bool-pref: "theme-better_find_bar-enable_custom_background") {
+	:root {
+		--better-findbar-background-color: var(--theme-better_find_bar-custom_background);
+	}
 }
 
 findbar {
@@ -18,7 +23,7 @@ findbar {
 	margin: 0px !important;
 
 	width: 90% !important;
-	max-width: 800px;
+	max-width: calc(var(--theme-better_find_bar-textbox_width) * 1px); 
 
 	height: auto !important;
 
@@ -32,8 +37,8 @@ findbar {
 	overflow: unset !important;
 	box-shadow: var(--box-shadow-10);
 
-	background: var(--zen-colors-tertiary) !important;
-	border: 1px solid var(--zen-colors-border) !important;
+	background: var(--better-findbar-background-color) !important;
+	border: 1px solid var(--input-border-color) !important;
 
 	transition: transform 0.35s ease !important;
 
@@ -56,12 +61,19 @@ findbar {
 		}
 	}
 
-	&[hidden="true"] {
+	&[hidden] {
 		transform: translateX(var(--better-findbar-transform-translateX)) translateY(var(--better-findbar-transform-translateY));
 	}
 
 	@starting-style {
 		transform: translateX(var(--better-findbar-transform-translateX)) translateY(var(--better-findbar-transform-translateY));
+	}
+}
+
+/* Disable animations */
+@media (-moz-bool-pref: "theme.better_find_bar.instant_animations") {
+	findbar, findbar .findbar-container {
+		transition: initial !important;
 	}
 }
 
@@ -82,6 +94,7 @@ body:has(
 	--better-findbar-position-right: 15px;
 }
 
+/* Vertical Position */
 body:has(
 		#theme-Better-Find-Bar[theme-better_find_bar-vertical_position="top"]
 	) {
@@ -93,13 +106,92 @@ body:has(
 
 /* Background blur */
 @media (-moz-bool-pref: "theme.better_find_bar.transparent_background") {
-	findbar, findbar .findbar-textbox:not([status="notfound"]) {
+	findbar,
+	findbar .findbar-textbox:not([status="notfound"]) {
 		backdrop-filter: blur(8px);
 
-		background: color-mix(in hsl, var(--zen-colors-tertiary), transparent 30%) !important;
+		background: color-mix(in hsl, var(--better-findbar-background-color), transparent 10%) !important;
 	}
+}
 
-	findbar .findbar-textbox:not([status="notfound"]) {
-		background: color-mix(in hsl, var(--zen-colors-tertiary), transparent 10%) !important;
+/* Hide highlight checkbox */
+body:has(
+		#theme-Better-Find-Bar[theme-better_find_bar-hide_highlight="hide_immediately"]
+	) {
+	findbar .findbar-highlight {
+		display: none !important;
+	}
+}
+
+body:has(
+		#theme-Better-Find-Bar[theme-better_find_bar-hide_highlight="hide_on_disable"]
+	) {
+	findbar checkbox.findbar-highlight:not([checked]) {
+		display: none !important;
+	}
+}
+
+/* Hide match case checkbox */
+body:has(
+		#theme-Better-Find-Bar[theme-better_find_bar-hide_match_case="hide_immediately"]
+	) {
+	findbar .findbar-case-sensitive {
+		display: none !important;
+	}
+}
+
+body:has(
+		#theme-Better-Find-Bar[theme-better_find_bar-hide_match_case="hide_on_disable"]
+	) {
+	findbar checkbox.findbar-case-sensitive:not([checked]) {
+		display: none !important;
+	}
+}
+
+/* Hide match diacritics checkbox */
+body:has(
+		#theme-Better-Find-Bar[theme-better_find_bar-hide_match_diacritics="hide_immediately"]
+	) {
+	findbar .findbar-match-diacritics {
+		display: none !important;
+	}
+}
+
+body:has(
+		#theme-Better-Find-Bar[theme-better_find_bar-hide_match_diacritics="hide_on_disable"]
+	) {
+	findbar checkbox.findbar-match-diacritics:not([checked]) {
+		display: none !important;
+	}
+}
+
+/* Hide whole words checkbox */
+body:has(
+		#theme-Better-Find-Bar[theme-better_find_bar-hide_whole_words="hide_immediately"]
+	) {
+	findbar .findbar-entire-word {
+		display: none !important;
+	}
+}
+
+body:has(
+		#theme-Better-Find-Bar[theme-better_find_bar-hide_whole_words="hide_on_disable"]
+	) {
+	findbar .findbar-entire-word:not([checked]) {
+		display: none !important;
+	}
+}
+
+/* Hide find status label */
+@media (-moz-bool-pref: "theme.better_find_bar.hide_find_status") {
+	findbar .findbar-find-status {
+		display: none !important;
+	}
+}
+
+/* Hide found matches label */
+@media (-moz-bool-pref: "theme.better_find_bar.hide_found_matches") {
+	findbar .findbar-label.found-matches {
+		display: none !important;
 	}
 }

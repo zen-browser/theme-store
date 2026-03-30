@@ -1,0 +1,81 @@
+#zen-context-menu-compact-mode-hide-toolbar[disabled="true"] {
+  display: block; /* or flex-direction: column if using flex */
+  
+  & label, 
+  & img {
+    display: none !important;
+  }
+  
+  &::before, &::after {
+    content: "Native Hide Toolbar mode is disabled.\A\A\
+To achieve a similar effect, try:";
+    /* Style for readability */
+    font-size: 0.95rem;
+    line-height: 1.0;
+    width: 100%;
+    display: block;
+    color: rgba(200, 200, 0, 0.8);
+    
+    /* Preserve newlines and wrap nicely */
+    white-space: pre-wrap;
+  }
+  
+  &::after {
+    content: "Toggling the 'enable the mod' setting in Hide Toolbar mod settings\
+ off then on\A\A\
+Enabling 'Hide both' below here with compact mode disabled.";
+    padding-left: 5px;
+    margin-top: 10px;
+    border-left: rgba(0,0,0,0.4) solid 2px;
+    color: inherit;
+  }
+}
+
+@media (-moz-bool-pref: "zen.view.compact.hide-toolbar") { /* zen default hide toolbar */
+  @media (-moz-bool-pref: "mod.devdinc.hide-navbar.animation.enabled") {
+    /* Transition defaults for all toolbar elements */
+    #nav-bar,
+    #zen-sidebar-top-buttons,
+    #PersonalToolbar,
+    #navigator-toolbox,
+    #TabsToolbar,
+    #titlebar{
+      transition:
+        all var(--zen-hidden-toolbar-transition) !important;
+        /* adding will change makes urlbar open not centered anymore */
+    }
+  }
+  /* backup hiding styles */
+  :root {
+    --margin-top-fix-hide: calc((var(--zen-toolbar-height) + 50px) + var(--mod-devdinc-hide-navbar-element-seperation));
+    --margin-top-fix-hide-reverse: calc(((var(--zen-toolbar-height) + 50px) * -1));
+    
+    &:not([zen-compact-mode="true"]):not([zen-single-toolbar="true"]) .browserContainer { /* only on non single toolbar */
+      margin-top: calc(var(--zen-toolbar-height) * -1);
+    }
+  }
+  
+  :root:not([zen-compact-mode="true"]):not([zen-single-toolbar="true"]):has(> body #zen-main-app-wrapper #browser #zen-appcontent-wrapper #zen-appcontent-navbar-wrapper:not([zen-has-hover])),
+  
+  :root[zen-compact-mode="true"][zen-single-toolbar="true"] #navigator-toolbox:has(> #titlebar:not(:hover), > #titlebar > #TabsToolbar:hover),
+  :root:not([zen-compact-mode="true"])[zen-single-toolbar="true"] #navigator-toolbox:is(:not(:hover), :has(> #titlebar > #TabsToolbar:hover)) {
+    
+    #nav-bar,
+    #zen-sidebar-top-buttons {
+      margin-top: var(--margin-top-fix-hide-reverse) !important;
+      --zen-toolbar-height: var(--margin-top-fix-hide) !important;
+    }
+    #PersonalToolbar { /* only on non single toolbar */
+      height: 0 !important;
+      min-height: 0 !important;
+    }
+    /* transition tabs only on non single toolbar, this element make it so we need :has */
+    /* hides the padding between top of browser and tabs */
+    #titlebar, #navigator-toolbox  {
+      --zen-toolbar-height: 0 !important;
+    }
+    .browserContainer { /* only on non single toolbar */
+      margin-top: calc(var(--mod-devdinc-hide-navbar-element-seperation) * -1);
+    }
+  }
+}

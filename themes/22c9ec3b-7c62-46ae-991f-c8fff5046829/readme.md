@@ -2,9 +2,17 @@
 
 Shows the Number corresponding to each Tab. This can help you navigate between Tabs faster by pressing Cmd + Number of the Tab. (or Ctrl + Number on Windows)
 
-Additions (v1.0.6 - current version):
+Additions (v1.0.8 - current version):
 
-Fixed tab numbering across workspaces.
+- Ensured the tab counter is incremented only for tabs that are considered essential or within an active workspace.
+
+Additions (v1.0.7):
+
+- Reverted back to a previous version.
+
+Additions (v1.0.6):
+
+- Fixed tab numbering across workspaces.
 
 Additions (v1.0.5):
 

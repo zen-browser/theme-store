@@ -1,8 +1,0 @@
-#downloads-indicator-progress-outer::after {
-  content: "";
-  display: block;
-  position: absolute;
-  inset: 0;
-  z-index: -40;
-  background: var(--toolbar-field-background-color);
-}

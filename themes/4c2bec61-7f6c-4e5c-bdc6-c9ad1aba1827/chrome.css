@@ -1,11 +1,11 @@
-
-tab-group[split-view-group] {
+tab-group[split-view-group] .tab-group-container {
+    display: flex;
     flex-direction: column;
     padding: 2px 2px !important;
     position: relative;
 
     &::after {
-        content: '';
+        content: "";
         width: 3px;
         height: calc(100% - 8px);
         background-color: var(--tab-selected-bgcolor);
@@ -13,17 +13,16 @@ tab-group[split-view-group] {
         left: 2px;
         top: 50%;
         transform: translateY(-50%);
-        border-radius: 2px
+        border-radius: 2px;
     }
 
-    &:hover, &:has(> tab:is([visuallyselected], [multiselected])){
-        &::after{
+    &:hover,
+    &:has(> tab:is([visuallyselected], [multiselected])) {
+        &::after {
             width: 0;
         }
     }
-}
 
-tab-group[split-view-group] {
     & > .tabbrowser-tab {
         &:not(:last-child)::after {
             width: 0 !important;
