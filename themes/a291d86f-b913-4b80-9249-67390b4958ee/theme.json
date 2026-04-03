@@ -1,0 +1,15 @@
+{
+    "id": "a291d86f-b913-4b80-9249-67390b4958ee",
+    "name": "Space Icon Boost",
+    "description": "Space Icon Boost is a small mod that makes the Space icons at the bottom of the sidebar larger and easier to hit.",
+    "homepage": "https://github.com/sergiubacioiu/zen-mods/",
+    "style": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/a291d86f-b913-4b80-9249-67390b4958ee/chrome.css",
+    "readme": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/a291d86f-b913-4b80-9249-67390b4958ee/readme.md",
+    "image": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/a291d86f-b913-4b80-9249-67390b4958ee/image.png",
+    "author": "sergiubacioiu",
+    "version": "1.0.0",
+    "tags": [],
+    "createdAt": "2026-04-03",
+    "updatedAt": "2026-04-03",
+    "preferences": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/a291d86f-b913-4b80-9249-67390b4958ee/preferences.json"
+}
