@@ -1,0 +1,56 @@
+
+/* Space Icon Boost */
+
+:root {
+  --space-icon-boost-icon-size: var(--mod-space_icon_boost-icon_size, 22px);
+  --space-icon-boost-hit-area: var(--mod-space_icon_boost-hit_area, 31px);
+  --space-icon-boost-gap: var(--mod-space_icon_boost-gap, 4px);
+  --space-icon-boost-radius: var(--mod-space_icon_boost-radius, 8px);
+}
+
+#zen-workspaces-button {
+  gap: var(--space-icon-boost-gap) !important;
+  align-items: center !important;
+  justify-content: center !important;
+  padding-block: 4px !important;
+  padding-inline: 0 !important;
+}
+
+#zen-workspaces-button > toolbarbutton,
+#zen-workspaces-button > .subviewbutton,
+#zen-workspaces-button toolbarbutton.subviewbutton {
+  min-inline-size: var(--space-icon-boost-hit-area) !important;
+  inline-size: var(--space-icon-boost-hit-area) !important;
+  min-block-size: var(--space-icon-boost-hit-area) !important;
+  block-size: var(--space-icon-boost-hit-area) !important;
+  padding: 0 !important;
+  margin: 0 !important;
+  border-radius: var(--space-icon-boost-radius) !important;
+  display: inline-flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  box-sizing: border-box !important;
+}
+
+#zen-workspaces-button > toolbarbutton > .toolbarbutton-badge-stack,
+#zen-workspaces-button > .subviewbutton > .toolbarbutton-badge-stack,
+#zen-workspaces-button > toolbarbutton > .toolbarbutton-icon,
+#zen-workspaces-button > .subviewbutton > .toolbarbutton-icon {
+  min-inline-size: var(--space-icon-boost-hit-area) !important;
+  min-block-size: var(--space-icon-boost-hit-area) !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  padding: 0 !important;
+  margin: 0 !important;
+}
+
+#zen-workspaces-button .zen-workspace-icon,
+#zen-workspaces-button .toolbarbutton-icon,
+#zen-workspaces-button image.toolbarbutton-icon {
+  inline-size: var(--space-icon-boost-icon-size) !important;
+  block-size: var(--space-icon-boost-icon-size) !important;
+  font-size: var(--space-icon-boost-icon-size) !important;
+  line-height: 1 !important;
+  flex: 0 0 auto !important;
+}

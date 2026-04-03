@@ -1,0 +1,26 @@
+[
+    {
+        "property": "mod.space_icon_boost.icon_size",
+        "label": "Space icon size",
+        "type": "string",
+        "defaultValue": "22px"
+    },
+    {
+        "property": "mod.space_icon_boost.hit_area",
+        "label": "Space button size",
+        "type": "string",
+        "defaultValue": "31px"
+    },
+    {
+        "property": "mod.space_icon_boost.gap",
+        "label": "Space button gap",
+        "type": "string",
+        "defaultValue": "4px"
+    },
+    {
+        "property": "mod.space_icon_boost.radius",
+        "label": "Space button radius",
+        "type": "string",
+        "defaultValue": "8px"
+    }
+]
