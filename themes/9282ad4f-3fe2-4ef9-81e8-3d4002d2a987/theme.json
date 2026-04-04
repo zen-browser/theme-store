@@ -1,0 +1,14 @@
+{
+    "id": "9282ad4f-3fe2-4ef9-81e8-3d4002d2a987",
+    "name": "Container Tab Highlight",
+    "description": "Highlight tabs with container color",
+    "homepage": "https://github.com/parintorn0/zen-container-tab-highlighting",
+    "style": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/9282ad4f-3fe2-4ef9-81e8-3d4002d2a987/chrome.css",
+    "readme": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/9282ad4f-3fe2-4ef9-81e8-3d4002d2a987/readme.md",
+    "image": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/9282ad4f-3fe2-4ef9-81e8-3d4002d2a987/image.png",
+    "author": "parintorn0",
+    "version": "1.0.0",
+    "tags": [],
+    "createdAt": "2026-04-04",
+    "updatedAt": "2026-04-04"
+}
