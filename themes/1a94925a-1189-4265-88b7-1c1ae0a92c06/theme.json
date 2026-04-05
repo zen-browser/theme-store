@@ -1,0 +1,15 @@
+{
+    "id": "1a94925a-1189-4265-88b7-1c1ae0a92c06",
+    "name": "Extensible sidebar",
+    "description": "Auto expand the taskbar on hover, fork of a similar extension which just works better and is way more stable.",
+    "homepage": "https://github.com/rawnullbyte/zen-extensible-sidebar",
+    "style": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/1a94925a-1189-4265-88b7-1c1ae0a92c06/chrome.css",
+    "readme": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/1a94925a-1189-4265-88b7-1c1ae0a92c06/readme.md",
+    "image": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/1a94925a-1189-4265-88b7-1c1ae0a92c06/image.png",
+    "author": "rawnullbyte",
+    "version": "1.0.0",
+    "tags": [],
+    "createdAt": "2026-04-05",
+    "updatedAt": "2026-04-05",
+    "preferences": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/1a94925a-1189-4265-88b7-1c1ae0a92c06/preferences.json"
+}

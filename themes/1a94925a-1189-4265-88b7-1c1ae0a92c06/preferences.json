@@ -1,0 +1,87 @@
+[
+    {
+        "property": "mod.autoexpand.hide_workspace_indicator",
+        "label": "Hide workspace indicator",
+        "type": "checkbox",
+        "defaultValue": false
+    },
+    {
+        "property": "mod.autoexpand.essentials_vertical",
+        "label": "Make essential tabs vertical in collapsed state",
+        "type": "checkbox",
+        "defaultValue": false
+    },
+    {
+        "property": "mod.autoexpand.fade_sleeping_tabs",
+        "label": "Fade unloaded (sleeping) tabs",
+        "type": "checkbox",
+        "defaultValue": false
+    },
+    {
+        "property": "mod.autoexpand.fade_sleeping_folders",
+        "label": "Fade unloaded (sleeping) folders",
+        "type": "checkbox",
+        "defaultValue": false
+    },
+    {
+        "property": "mod.autoexpand.remove_line_separator",
+        "label": "Remove pinned tabs line separator",
+        "type": "checkbox",
+        "defaultValue": false
+    },
+    {
+        "property": "mod.autoexpand.performance_mode",
+        "label": "Performance mode",
+        "type": "dropdown",
+        "defaultValue": "fancy",
+        "options": [
+            {
+                "label": "Fancy",
+                "value": "fancy"
+            },
+            {
+                "label": "Balanced",
+                "value": "balanced"
+            },
+            {
+                "label": "Potato",
+                "value": "potato"
+            }
+        ]
+    },
+    {
+        "property": "mod.autoexpand.collapsed_width",
+        "label": "Collapsed sidebar width",
+        "type": "string",
+        "defaultValue": "50px",
+        "placeholder": "e.g. 50px"
+    },
+    {
+        "property": "mod.autoexpand.expanded_width",
+        "label": "Expanded sidebar width",
+        "type": "string",
+        "defaultValue": "300px",
+        "placeholder": "e.g. 300px"
+    },
+    {
+        "property": "mod.autoexpand.animation_delay",
+        "label": "Animation delay (expand)",
+        "type": "string",
+        "defaultValue": "0ms",
+        "placeholder": "e.g. 0ms"
+    },
+    {
+        "property": "mod.autoexpand.collapse_delay",
+        "label": "Animation delay (collapse)",
+        "type": "string",
+        "defaultValue": "200ms",
+        "placeholder": "e.g. 200ms"
+    },
+    {
+        "property": "mod.autoexpand.animation_duration",
+        "label": "Animation speed",
+        "type": "string",
+        "defaultValue": "150ms",
+        "placeholder": "e.g. 150ms"
+    }
+]
