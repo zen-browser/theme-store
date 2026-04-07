@@ -1,0 +1,105 @@
+
+:root {
+    --floating-bookmarks-transform-translateX: 110%;
+    --floating-bookmarks-position-right: 15px;
+    --floating-bookmarks-position-left: auto;
+}
+
+/* Horizontal Position */
+
+:root:has(#theme-Floating-Bookmarks[theme-floating_bookmarks-position="right"]) {
+    --floating-bookmarks-transform-translateX: 110%;
+    --floating-bookmarks-position-right: 15px;
+    --floating-bookmarks-position-left: auto;
+}
+
+:root:has(#theme-Floating-Bookmarks[theme-floating_bookmarks-position="left"]) {
+    --floating-bookmarks-transform-translateX: -110%;
+    --floating-bookmarks-position-left: 15px;
+    --floating-bookmarks-position-right: auto;
+}
+
+/* Disable dragable splitter */
+#sidebar-box[sidebarcommand="viewBookmarksSidebar"] + splitter {
+  display: none !important;
+}
+
+/* Make sure content is not affect by history tab sliding in and out */
+#tabbrowser-tabbox[flex="1"][tabcontainer="tabbrowser-tabs"] {
+    will-change: unset !important;
+}
+
+/* Bookmarks Tab Styles */
+#sidebar-box[sidebarcommand="viewBookmarksSidebar"] {
+    order: none !important;
+    height: 80% !important;
+    width: 22em !important;
+  
+    position: fixed !important;
+
+right: var(--floating-bookmarks-position-right);
+    left: var(--floating-bookmarks-position-left);
+
+transform: translateX(50%) !important;
+    z-index: 10;
+  
+    transform: translateY(12%) !important;
+  
+    border-radius: var(--zen-border-radius) !important;
+
+box-shadow: var(--box-shadow-10) !important;
+    background: var(--zen-colors-tertiary) !important;
+    border: 1px solid var(--zen-colors-border) !important;
+    
+    transition: transform 0.35s !important;
+    visibility: visible !important;
+    opacity: 1 !important;
+  
+  
+    &[hidden="true"] {
+		display: flex !important;
+        transform: translateX(var(--floating-bookmarks-transform-translateX)) translateY(12%) !important;
+	}
+    
+    @starting-style {
+        display: flex !important;
+        transform: translateX(var(--floating-bookmarks-transform-translateX)) translateY(12%) !important;
+    }
+  
+    &[checked="true"] {
+        display: flex !important;
+        transform: translateX(0%) translateY(12%) !important;
+    }
+}
+
+/* Inner Styles of Bookmarks Tab */
+
+#sidebar-box[sidebarcommand="viewBookmarksSidebar"] box#sidebar-header {
+    border-bottom: none !important;
+}
+
+window#bookmarksPanel {
+    box-shadow: var(--box-shadow-10) !important;
+    background: var(--zen-colors-tertiary) !important;
+}
+
+/* Search Bar Styles */
+window#bookmarksPanel search-textbox#search-box[data-l10n-id="places-bookmarks-search"] {
+    appearance: none !important;
+    background-color: var(--input-bgcolor, var(--zen-colors-tertiary)) !important;
+    color: var(--input-color, var(--toolbar-field-color)) !important;
+    border: 1px solid var(--zen-input-border-color, rgb(66,65,77));
+    border-radius: 4px;
+    outline: none;
+    box-sizing: border-box;
+    padding: 0.5rem !important;
+
+&[focused="true"] {
+        background-color: var(--input-bgcolor, var(--toolbar-field-background-color)) !important;
+        border: 1px solid var(--input-border-color, rgb(66,65,77));
+    }
+}
+
+window#bookmarksPanel hbox#sidebar-search-container {
+    margin-bottom: 1rem !important;
+}
