@@ -1,0 +1,19 @@
+[
+    {
+        "property": "theme.floating_bookmarks.position",
+        "label": "Position",
+        "type": "dropdown",
+        "defaultValue": "right",
+        "placeholder": "Use Default (Right)",
+        "options": [
+            {
+                "label": "Right",
+                "value": "right"
+            },
+            {
+                "label": "Left",
+                "value": "left"
+            }
+        ]
+    }
+]

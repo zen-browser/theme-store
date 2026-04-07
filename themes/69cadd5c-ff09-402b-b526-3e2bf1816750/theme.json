@@ -1,0 +1,15 @@
+{
+    "id": "69cadd5c-ff09-402b-b526-3e2bf1816750",
+    "name": "Floating Bookmarks",
+    "description": "Floating bookmarks sidebar for Zen Browser",
+    "homepage": "https://github.com/Aryan-Techie/zen-floating-bookmarks",
+    "style": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/69cadd5c-ff09-402b-b526-3e2bf1816750/chrome.css",
+    "readme": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/69cadd5c-ff09-402b-b526-3e2bf1816750/readme.md",
+    "image": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/69cadd5c-ff09-402b-b526-3e2bf1816750/image.png",
+    "author": "Aryan-Techie",
+    "version": "1.0.0",
+    "tags": [],
+    "createdAt": "2026-04-07",
+    "updatedAt": "2026-04-07",
+    "preferences": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/69cadd5c-ff09-402b-b526-3e2bf1816750/preferences.json"
+}
