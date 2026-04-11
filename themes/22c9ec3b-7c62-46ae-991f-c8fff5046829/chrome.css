@@ -7,6 +7,10 @@ tabs {
 hbox.zen-essentials-container tab:not([zen-glance-tab="true"]),
 zen-workspace[active] tab:not([zen-glance-tab="true"]) {
   counter-increment: tab-counter;
+}
+/* Stop counting tabs inside collapsed folders */
+zen-folder:has(.tab-group-label[aria-expanded="false"]) tab {
+  counter-increment: none;
 } /* Styles when the sidebar is expanded */
 @media (-moz-bool-pref: "zen.view.sidebar-expanded") {
   tab:not([zen-glance-tab="true"]) > .tab-stack > .tab-content::after {
