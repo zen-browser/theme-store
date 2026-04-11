@@ -8,8 +8,8 @@ hbox.zen-essentials-container tab:not([zen-glance-tab="true"]),
 zen-workspace[active] tab:not([zen-glance-tab="true"]) {
   counter-increment: tab-counter;
 }
-/* Stop counting tabs inside collapsed folders */
-zen-folder:has(.tab-group-label[aria-expanded="false"]) tab {
+/* Stop counting tabs inside collapsed folders, except the folder's active tab */
+zen-folder:has(.tab-group-label[aria-expanded="false"]) tab:not([folder-active="true"]) {
   counter-increment: none;
 } /* Styles when the sidebar is expanded */
 @media (-moz-bool-pref: "zen.view.sidebar-expanded") {
