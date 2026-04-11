@@ -3,10 +3,14 @@
 }
 tabs {
   counter-reset: tab-counter;
-} /* Automatically increment tab numbers for each tab which is essential or is in an active workspace */
-hbox.zen-essentials-container tab:not([zen-glance-tab="true"]),
+} /* Automatically increment tab numbers for each tab which is essential (in the active container) or is in an active workspace */
+hbox.zen-essentials-container:not([hidden="true"]) tab:not([zen-glance-tab="true"]),
 zen-workspace[active] tab:not([zen-glance-tab="true"]) {
   counter-increment: tab-counter;
+}
+/* Stop counting tabs inside collapsed folders, except the folder's active tab */
+zen-folder:has(.tab-group-label[aria-expanded="false"]) tab:not([folder-active="true"]) {
+  counter-increment: none;
 } /* Styles when the sidebar is expanded */
 @media (-moz-bool-pref: "zen.view.sidebar-expanded") {
   tab:not([zen-glance-tab="true"]) > .tab-stack > .tab-content::after {
@@ -49,6 +53,15 @@ zen-workspace[active] tab:not([zen-glance-tab="true"]) {
     opacity: 0; /* Make it invisible */
     width: 0; /* In order to bring the close button to the right */
     margin: 0;
+  }
+
+  /* Hide the second icon when tab is pinned */
+  [zen-pinned-changed='true']:not([zen-essential]) .tab-reset-pin-button image {
+    opacity: 1 !important;
+  }
+  
+  [zen-pinned-changed='true']:not([zen-essential]) .tab-icon-image {
+    opacity: 0 !important;
   }
 
   /* Show the "X" close button on hover */
