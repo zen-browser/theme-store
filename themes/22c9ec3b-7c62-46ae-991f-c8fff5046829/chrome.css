@@ -3,8 +3,8 @@
 }
 tabs {
   counter-reset: tab-counter;
-} /* Automatically increment tab numbers for each tab which is essential or is in an active workspace */ 
-hbox.zen-essentials-container tab:not([zen-glance-tab="true"]),
+} /* Automatically increment tab numbers for each tab which is essential (in the active container) or is in an active workspace */
+hbox.zen-essentials-container:not([hidden="true"]) tab:not([zen-glance-tab="true"]),
 zen-workspace[active] tab:not([zen-glance-tab="true"]) {
   counter-increment: tab-counter;
 }
