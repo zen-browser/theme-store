@@ -1,0 +1,14 @@
+{
+    "id": "8ef24526-bc29-45b7-b62d-db973e1cf6c5",
+    "name": "Zen Loading Bar",
+    "description": "Mobile-style loading indicator to Zen Browser plus a subtle progress bar on each tab as pages load.",
+    "homepage": "https://github.com/shariarratul/ZenLoadingBar",
+    "style": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/8ef24526-bc29-45b7-b62d-db973e1cf6c5/chrome.css",
+    "readme": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/8ef24526-bc29-45b7-b62d-db973e1cf6c5/readme.md",
+    "image": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/8ef24526-bc29-45b7-b62d-db973e1cf6c5/image.png",
+    "author": "shariarratul",
+    "version": "1.0.0",
+    "tags": [],
+    "createdAt": "2026-04-12",
+    "updatedAt": "2026-04-12"
+}
