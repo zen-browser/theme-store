@@ -1,0 +1,129 @@
+
+@-moz-document url-prefix("chrome:") {
+  .browserSidebarContainer.deck-selected::before {
+    content: "" !important;
+    position: absolute !important;
+    top: 0px !important;
+    left: 0px !important;
+    height: 4px !important;
+    max-width: 100% !important;
+    width: var(--bar-pcent) !important;
+    background: var(--bar-colour) !important;
+    filter: drop-shadow(0px 0px 10px rgba(139, 92, 246, 0.8)) !important;
+    border-radius: 0 3px 3px 0 !important;
+    z-index: 1 !important;
+    transition: width 0.5s ease-in-out, top 0.1s ease-in-out, background 0.2s ease !important;
+  }
+
+@media not (-moz-bool-pref: "zen.view.compact.hide-toolbar") and not (-moz-bool-pref: "zen.view.use-single-toolbar") {
+    .browserSidebarContainer.deck-selected::before {
+      top: 40px !important;
+    }
+  }
+
+.browserSidebarContainer.deck-selected:has([zen-glance-selected])::before,
+  .browserSidebarContainer.deck-selected.zen-glance-overlay::before {
+    max-width: calc(85%) !important;
+    left: calc(15%/2) !important;
+    border-radius: 4px !important;
+  }
+
+.browserSidebarContainer.deck-selected.zen-glance-background::before {
+    background: transparent !important;
+    height: 0px !important;
+  }
+
+:root {
+    &:has(.tabbrowser-tab[selected][busy]) {
+      --bar-colour: linear-gradient(90deg, #4c1d95, #7c3aed, #a855f7, #ec4899);
+      --bar-pcent: 15%;
+    }
+    &:has(.tabbrowser-tab[selected][busy][pendingicon]) {
+      --bar-colour: linear-gradient(90deg, #4c1d95, #7c3aed, #a855f7, #ec4899);
+      --bar-pcent: 45%;
+    }
+    &:has(.tabbrowser-tab[selected][busy][pendingicon][progress]) {
+      --bar-colour: linear-gradient(90deg, #4c1d95, #7c3aed, #a855f7, #ec4899);
+      --bar-pcent: 85%;
+    }
+    &:has(.tabbrowser-tab[selected][busy][progress]) {
+      --bar-colour: linear-gradient(90deg, #4c1d95, #7c3aed, #a855f7, #ec4899);
+      --bar-pcent: 95%;
+    }
+    &:has(.tabbrowser-tab[selected][muted]:not([busy])) {
+      --bar-colour: linear-gradient(90deg, #dc2626, #f97316);
+      --bar-pcent: 100%;
+      .browserSidebarContainer.deck-selected::before {
+        border-radius: 0;
+      }
+    }
+  }
+
+@media (-moz-bool-pref: "zen.view.compact.hide-toolbar") {
+    :root:not([zen-single-toolbar='true']):has([zen-compact-mode='true']) {
+      &:has(#zen-appcontent-navbar-wrapper[zen-has-hover]),
+      &:has(#zen-appcontent-navbar-wrapper[zen-user-show]),
+      &:has(#zen-appcontent-navbar-wrapper[has-popup-menu]),
+      &:has(*:is(#zen-appcontent-navbar-wrapper[panelopen='true'],
+                 #zen-appcontent-navbar-wrapper[open='true'],
+                 #urlbar:focus-within:not(#urlbar[zen-floating-urlbar='true']),
+                 #zen-appcontent-navbar-wrapper[breakout-extend='true'])
+            :not(.zen-compact-mode-ignore)
+      ) {
+        .browserSidebarContainer.deck-selected::before {
+          top: 39px !important;
+        }
+      }
+    }
+  }
+}
+
+/* Tab background progress fill */
+  .tabbrowser-tab .tab-content {
+    position: relative !important;
+  }
+
+.tabbrowser-tab .tab-content::before {
+    content: "" !important;
+    position: absolute !important;
+    top: 0 !important;
+    left: 0 !important;
+    height: 100% !important;
+    width: 100% !important;
+    opacity: 0 !important;
+    background: linear-gradient(90deg, rgba(255,255,255,0.15), rgba(255,255,255,0.05)) !important;
+    border-radius: 4px !important;
+    z-index: 0 !important;
+    pointer-events: none !important;
+    transition: width 0.2s ease-out, opacity 0.4s ease 0.2s !important;
+  }
+
+.tabbrowser-tab[busy] .tab-content::before {
+    opacity: 1 !important;
+    width: 15% !important;
+    transition: width 0.5s ease-in-out, opacity 0.1s ease !important;
+  }
+
+.tabbrowser-tab[busy][pendingicon] .tab-content::before {
+    opacity: 1 !important;
+    width: 45% !important;
+    transition: width 0.5s ease-in-out, opacity 0.1s ease !important;
+  }
+
+.tabbrowser-tab[busy][pendingicon][progress] .tab-content::before {
+    opacity: 1 !important;
+    width: 85% !important;
+    transition: width 0.5s ease-in-out, opacity 0.1s ease !important;
+  }
+
+.tabbrowser-tab[busy][progress] .tab-content::before {
+    opacity: 1 !important;
+    width: 95% !important;
+    transition: width 0.5s ease-in-out, opacity 0.1s ease !important;
+  }
+
+/* Keep close button above the fill */
+  .tabbrowser-tab .tab-close-button {
+    position: relative !important;
+    z-index: 1 !important;
+  }
