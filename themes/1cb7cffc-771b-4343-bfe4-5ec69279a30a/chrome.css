@@ -1,0 +1,442 @@
+
+/* ============================================
+   SPACING — BOOKMARKS TOOLBAR
+   ============================================ */
+@media (-moz-bool-pref: "mod.zen-toolkit.spacious-bookmarks") {
+  #PersonalToolbar {
+    margin-top: calc(var(--mod-zen-toolkit-bookmarks-padding-top, 0) * 1px) !important;
+    margin-bottom: calc(var(--mod-zen-toolkit-bookmarks-padding-bottom, 8) * 1px) !important;
+    margin-left: calc(var(--mod-zen-toolkit-bookmarks-padding-left, 0) * 1px) !important;
+    margin-right: calc(var(--mod-zen-toolkit-bookmarks-padding-right, 0) * 1px) !important;
+  }
+}
+
+/* ============================================
+   SPACING — NAVIGATION BAR
+   ============================================ */
+@media (-moz-bool-pref: "mod.zen-toolkit.navbar-padding") {
+  #nav-bar {
+    margin-top: calc(var(--mod-zen-toolkit-navbar-padding-top, 8) * 1px) !important;
+    margin-bottom: calc(var(--mod-zen-toolkit-navbar-padding-bottom, 8) * 1px) !important;
+  }
+}
+
+/* ============================================
+   SPACING — URL BAR
+   ============================================ */
+@media (-moz-bool-pref: "mod.zen-toolkit.urlbar-margin") {
+  #urlbar-container {
+    margin-inline: calc(var(--mod-zen-toolkit-urlbar-margin-inline, 8) * 1px) !important;
+  }
+}
+
+/* ============================================
+   UI — MENU BUTTON ICON
+   ============================================ */
+body:has(#theme-Zen-Toolkit[mod-zen-toolkit-menu-icon="gear"]) #PanelUI-menu-button .toolbarbutton-icon {
+  list-style-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' viewBox='0 0 24 24' fill='none' stroke='context-fill' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Ccircle cx='12' cy='12' r='3'/%3E%3Cpath d='M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1-2.83 2.83l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-4 0v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83-2.83l.06-.06A1.65 1.65 0 0 0 4.68 15a1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1 0-4h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 2.83-2.83l.06.06A1.65 1.65 0 0 0 9 4.68a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 4 0v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 2.83l-.06.06A1.65 1.65 0 0 0 19.4 9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 0 4h-.09a1.65 1.65 0 0 0-1.51 1z'/%3E%3C/svg%3E") !important;
+}
+
+body:has(#theme-Zen-Toolkit[mod-zen-toolkit-menu-icon="sliders"]) #PanelUI-menu-button .toolbarbutton-icon {
+  list-style-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' viewBox='0 0 24 24' fill='none' stroke='context-fill' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cline x1='4' y1='21' x2='4' y2='14'/%3E%3Cline x1='4' y1='10' x2='4' y2='3'/%3E%3Cline x1='12' y1='21' x2='12' y2='12'/%3E%3Cline x1='12' y1='8' x2='12' y2='3'/%3E%3Cline x1='20' y1='21' x2='20' y2='16'/%3E%3Cline x1='20' y1='12' x2='20' y2='3'/%3E%3Cline x1='1' y1='14' x2='7' y2='14'/%3E%3Cline x1='9' y1='8' x2='15' y2='8'/%3E%3Cline x1='17' y1='16' x2='23' y2='16'/%3E%3C/svg%3E") !important;
+}
+
+body:has(#theme-Zen-Toolkit[mod-zen-toolkit-menu-icon="grid"]) #PanelUI-menu-button .toolbarbutton-icon {
+  list-style-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' viewBox='0 0 24 24' fill='none' stroke='context-fill' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Crect x='3' y='3' width='7' height='7'/%3E%3Crect x='14' y='3' width='7' height='7'/%3E%3Crect x='14' y='14' width='7' height='7'/%3E%3Crect x='3' y='14' width='7' height='7'/%3E%3C/svg%3E") !important;
+}
+
+body:has(#theme-Zen-Toolkit[mod-zen-toolkit-menu-icon="wrench"]) #PanelUI-menu-button .toolbarbutton-icon {
+  list-style-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' viewBox='0 0 24 24' fill='none' stroke='context-fill' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z'/%3E%3C/svg%3E") !important;
+}
+
+body:has(#theme-Zen-Toolkit[mod-zen-toolkit-menu-icon="compass"]) #PanelUI-menu-button .toolbarbutton-icon {
+  list-style-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' viewBox='0 0 24 24' fill='none' stroke='context-fill' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Ccircle cx='12' cy='12' r='10'/%3E%3Cpolygon points='16.24 7.76 14.12 14.12 7.76 16.24 9.88 9.88 16.24 7.76'/%3E%3C/svg%3E") !important;
+}
+
+body:has(#theme-Zen-Toolkit[mod-zen-toolkit-menu-icon="diamond"]) #PanelUI-menu-button .toolbarbutton-icon {
+  list-style-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' viewBox='0 0 24 24' fill='none' stroke='context-fill' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M6 3h12l4 6-10 13L2 9z'/%3E%3Cpath d='M2 9h20'/%3E%3Cpath d='M12 22L6 9'/%3E%3Cpath d='M12 22l6-13'/%3E%3Cpath d='M6 3l6 6 6-6'/%3E%3C/svg%3E") !important;
+}
+
+/* ============================================
+   UI — HIDE DOUBLE MENU SEPARATORS
+   ============================================ */
+@media (-moz-bool-pref: "mod.zen-toolkit.hide-double-separators") {
+  menuseparator + menuseparator {
+    display: none !important;
+  }
+}
+
+/* ============================================
+   UI — HIDE SIDEBAR SCROLLBAR
+   ============================================ */
+@media (-moz-bool-pref: "mod.zen-toolkit.hide-sidebar-scrollbar") {
+  #tabbrowser-arrowscrollbox scrollbox {
+    overflow-y: auto !important;
+    scrollbar-width: none !important;
+  }
+}
+
+/* ============================================
+   UI — HIDE STATUS BAR
+   ============================================ */
+@media (-moz-bool-pref: "mod.zen-toolkit.hide-status-bar") {
+  #statuspanel {
+    display: none !important;
+  }
+}
+
+/* ============================================
+   CONTEXT MENU — PAGE
+   ============================================ */
+@media (-moz-bool-pref: "mod.zen-toolkit.hide-accessibility") {
+  #context-inspect-a11y {
+    display: none !important;
+  }
+}
+
+@media (-moz-bool-pref: "mod.zen-toolkit.hide-send-image") {
+  #context-sendimage {
+    display: none !important;
+  }
+}
+
+@media (-moz-bool-pref: "mod.zen-toolkit.hide-screenshot") {
+  #context-take-screenshot,
+  #context-sep-screenshots {
+    display: none !important;
+  }
+}
+
+@media (-moz-bool-pref: "mod.zen-toolkit.hide-search-web") {
+  #context-searchselect,
+  #context-searchselect-private {
+    display: none !important;
+  }
+}
+
+@media (-moz-bool-pref: "mod.zen-toolkit.hide-view-source") {
+  #context-viewsource {
+    display: none !important;
+  }
+}
+
+@media (-moz-bool-pref: "mod.zen-toolkit.hide-inspect") {
+  #context-inspect {
+    display: none !important;
+  }
+}
+
+@media (-moz-bool-pref: "mod.zen-toolkit.hide-save-page") {
+  #context-savepage {
+    display: none !important;
+  }
+}
+
+/* ============================================
+   CONTEXT MENU — TABS & BOOKMARKS
+   ============================================ */
+@media (-moz-bool-pref: "mod.zen-toolkit.hide-container-tabs") {
+  #placesContext_open\:newcontainertab,
+  #sidebar-history-context-menu-container-tab,
+  #context_reopenInContainer,
+  #context_zenWorkspacesOpenInContainerTab {
+    display: none !important;
+  }
+}
+
+@media (-moz-bool-pref: "mod.zen-toolkit.hide-essentials") {
+  #context_zen-add-essential {
+    display: none !important;
+  }
+}
+
+@media (-moz-bool-pref: "mod.zen-toolkit.hide-send-tab") {
+  #context-sendpagetodevice,
+  #context-sendlinktodevice {
+    display: none !important;
+  }
+}
+
+/* ============================================
+   FIND BAR — FLOATING STYLE
+   ============================================ */
+@media (-moz-bool-pref: "mod.zen-toolkit.findbar-enable") {
+  :root {
+    --zentk-findbar-translate-y: 150px;
+    --zentk-findbar-translate-x: -50%;
+    --zentk-findbar-top: auto;
+    --zentk-findbar-bottom: 15px;
+    --zentk-findbar-left: 50%;
+    --zentk-findbar-right: auto;
+    --zentk-findbar-bg: var(--zen-primary-color);
+  }
+
+findbar {
+    display: flex !important;
+    position: absolute !important;
+    border-radius: calc(var(--mod-zen-toolkit-findbar-border-radius, 8) * 1px) !important;
+    margin: 0 !important;
+    padding: calc(var(--mod-zen-toolkit-findbar-padding, 8) * 1px) !important;
+    width: 90% !important;
+    max-width: calc(var(--mod-zen-toolkit-findbar-width, 800) * 1px);
+    height: auto !important;
+    top: var(--zentk-findbar-top);
+    bottom: var(--zentk-findbar-bottom);
+    left: var(--zentk-findbar-left);
+    right: var(--zentk-findbar-right);
+    transform: translateX(var(--zentk-findbar-translate-x)) translateY(0);
+    overflow: unset !important;
+    background: var(--zentk-findbar-bg) !important;
+    border: 1px solid var(--input-border-color) !important;
+    transition: transform 0.35s ease !important;
+    visibility: visible !important;
+    opacity: 1 !important;
+
+& .findbar-container {
+      flex-wrap: wrap;
+      overflow-x: auto !important;
+      height: auto !important;
+      row-gap: 10px;
+
+& > :first-child {
+        width: 100% !important;
+      }
+
+& .findbar-textbox {
+        flex-grow: 1;
+      }
+    }
+
+&[hidden] {
+      transform: translateX(var(--zentk-findbar-translate-x)) translateY(var(--zentk-findbar-translate-y));
+    }
+
+@starting-style {
+      transform: translateX(var(--zentk-findbar-translate-x)) translateY(var(--zentk-findbar-translate-y));
+    }
+  }
+}
+
+/* Find bar — shadow */
+@media (-moz-bool-pref: "mod.zen-toolkit.findbar-enable") {
+  @media (-moz-bool-pref: "mod.zen-toolkit.findbar-shadow") {
+    findbar {
+      box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3) !important;
+    }
+  }
+}
+
+/* Find bar — custom background color */
+@media (-moz-bool-pref: "mod.zen-toolkit.findbar-enable") {
+  @media (-moz-bool-pref: "mod.zen-toolkit.findbar-custom-bg") {
+    :root {
+      --zentk-findbar-bg: var(--mod-zen-toolkit-findbar-bg-color, #1a1a2e);
+    }
+  }
+}
+
+/* Find bar — disable animation */
+@media (-moz-bool-pref: "mod.zen-toolkit.findbar-enable") {
+  @media (-moz-bool-pref: "mod.zen-toolkit.findbar-no-animation") {
+    findbar, findbar .findbar-container {
+      transition: initial !important;
+    }
+  }
+}
+
+/* Find bar — horizontal position */
+@media (-moz-bool-pref: "mod.zen-toolkit.findbar-enable") {
+  body:has(#theme-Zen-Toolkit[mod-zen-toolkit-findbar-position-h="left"]) {
+    --zentk-findbar-translate-x: 0%;
+    --zentk-findbar-left: 15px;
+    --zentk-findbar-right: auto;
+  }
+
+body:has(#theme-Zen-Toolkit[mod-zen-toolkit-findbar-position-h="right"]) {
+    --zentk-findbar-translate-x: 0%;
+    --zentk-findbar-left: auto;
+    --zentk-findbar-right: 15px;
+  }
+}
+
+/* Find bar — vertical position */
+@media (-moz-bool-pref: "mod.zen-toolkit.findbar-enable") {
+  body:has(#theme-Zen-Toolkit[mod-zen-toolkit-findbar-position-v="top"]) {
+    --zentk-findbar-translate-y: -150px;
+    --zentk-findbar-bottom: auto;
+    --zentk-findbar-top: 15px;
+  }
+}
+
+/* Find bar — hide highlight checkbox */
+@media (-moz-bool-pref: "mod.zen-toolkit.findbar-enable") {
+  body:has(#theme-Zen-Toolkit[mod-zen-toolkit-findbar-hide-highlight="hide"]) findbar .findbar-highlight {
+    display: none !important;
+  }
+
+body:has(#theme-Zen-Toolkit[mod-zen-toolkit-findbar-hide-highlight="checked_only"]) findbar checkbox.findbar-highlight:not([checked]) {
+    display: none !important;
+  }
+}
+
+/* Find bar — hide match case checkbox */
+@media (-moz-bool-pref: "mod.zen-toolkit.findbar-enable") {
+  body:has(#theme-Zen-Toolkit[mod-zen-toolkit-findbar-hide-case="hide"]) findbar .findbar-case-sensitive {
+    display: none !important;
+  }
+
+body:has(#theme-Zen-Toolkit[mod-zen-toolkit-findbar-hide-case="checked_only"]) findbar checkbox.findbar-case-sensitive:not([checked]) {
+    display: none !important;
+  }
+}
+
+/* Find bar — hide match diacritics checkbox */
+@media (-moz-bool-pref: "mod.zen-toolkit.findbar-enable") {
+  body:has(#theme-Zen-Toolkit[mod-zen-toolkit-findbar-hide-diacritics="hide"]) findbar .findbar-match-diacritics {
+    display: none !important;
+  }
+
+body:has(#theme-Zen-Toolkit[mod-zen-toolkit-findbar-hide-diacritics="checked_only"]) findbar checkbox.findbar-match-diacritics:not([checked]) {
+    display: none !important;
+  }
+}
+
+/* Find bar — hide whole words checkbox */
+@media (-moz-bool-pref: "mod.zen-toolkit.findbar-enable") {
+  body:has(#theme-Zen-Toolkit[mod-zen-toolkit-findbar-hide-words="hide"]) findbar .findbar-entire-word {
+    display: none !important;
+  }
+
+body:has(#theme-Zen-Toolkit[mod-zen-toolkit-findbar-hide-words="checked_only"]) findbar .findbar-entire-word:not([checked]) {
+    display: none !important;
+  }
+}
+
+/* Find bar — hide find status label */
+@media (-moz-bool-pref: "mod.zen-toolkit.findbar-enable") {
+  @media (-moz-bool-pref: "mod.zen-toolkit.findbar-hide-status") {
+    findbar .findbar-find-status {
+      display: none !important;
+    }
+  }
+}
+
+/* Find bar — hide match count label */
+@media (-moz-bool-pref: "mod.zen-toolkit.findbar-enable") {
+  @media (-moz-bool-pref: "mod.zen-toolkit.findbar-hide-matches") {
+    findbar .findbar-label.found-matches {
+      display: none !important;
+    }
+  }
+}
+
+/* ============================================
+   TABS — GHOST TABS
+   ============================================ */
+@media (-moz-bool-pref: "mod.zen-toolkit.ghost-tabs") {
+  :root {
+    --zentk-ghost-opacity: calc(var(--mod-zen-toolkit-ghost-tabs-opacity, 50) * 0.01);
+    --zentk-ghost-filter: none;
+  }
+
+.tabbrowser-tab[pending="true"] {
+    filter: var(--zentk-ghost-filter);
+    opacity: var(--zentk-ghost-opacity);
+  }
+
+zen-folder:not(:has(.tab-label-container-editing)):not(
+          :has(.tabbrowser-tab:not([pending="true"]))
+      )
+      :is(.tab-group-label, .tab-label-container, .tab-group-folder-icon) {
+    filter: var(--zentk-ghost-filter);
+    opacity: var(--zentk-ghost-opacity);
+  }
+}
+
+/* Ghost tabs — grayscale */
+@media (-moz-bool-pref: "mod.zen-toolkit.ghost-tabs") {
+  @media (-moz-bool-pref: "mod.zen-toolkit.ghost-tabs-bw") {
+    :root {
+      --zentk-ghost-filter: saturate(calc(var(--mod-zen-toolkit-ghost-tabs-saturation, 0) * 1%));
+    }
+  }
+}
+
+/* ============================================
+   TABS — REMOVE TAB CLOSE BUTTON
+   ============================================ */
+body:has(#theme-Zen-Toolkit[mod-zen-toolkit-remove-tab-x="all"]) image.tab-close-button {
+  display: none !important;
+}
+
+body:has(#theme-Zen-Toolkit[mod-zen-toolkit-remove-tab-x="pinned"]) .zen-workspace-pinned-tabs-section image.tab-close-button {
+  display: none !important;
+}
+
+/* ============================================
+   SLEEK BORDER
+   ============================================ */
+@media (-moz-bool-pref: "mod.zen-toolkit.sleek-border") {
+  :root {
+    --zentk-border: var(--mod-zen-toolkit-sleek-border-color, #e8e8e830);
+
+#urlbar {
+      transform-origin: right;
+      transition: all 0.2s linear !important;
+      --toolbarbutton-border-radius: 10px;
+      --urlbarView-separator-color: var(--zen-colors-border);
+      --urlbarView-hover-background: var(--toolbarbutton-hover-background);
+      --urlbarView-highlight-background: var(--toolbarbutton-hover-background);
+      border: 1px solid var(--zentk-border);
+      border-radius: var(--toolbarbutton-border-radius);
+      overflow: hidden;
+      padding: 1px;
+    }
+
+#urlbar[breakout][breakout-extend] {
+      top: 10%;
+    }
+
+#urlbar:is([focused], [open]) > #urlbar-background,
+    #searchbar:focus-within {
+      background: #000000e5;
+    }
+  }
+
+:root:not([inDOMFullscreen="true"]):not([chromehidden~="location"]):not(
+      [chromehidden~="toolbar"]
+    ) {
+    & #tabbrowser-tabbox #tabbrowser-tabpanels .browserSidebarContainer {
+      width: -moz-available;
+      border-radius: var(--zen-webview-border-radius, var(--zen-border-radius));
+      transform: translate3d(0, 0, 0);
+      position: relative;
+
+--uc-tweak-rounded-corners-shadow-color: var(--zentk-border);
+      --uc-tweak-rounded-corners-shadow: 0 0 0 1px var(--uc-tweak-rounded-corners-shadow-color);
+
+box-shadow: var(--uc-tweak-rounded-corners-shadow) !important;
+
+&::after {
+        content: "";
+        position: absolute;
+        inset: 0;
+        border-radius: inherit;
+        box-shadow:
+          var(--uc-tweak-rounded-corners-shadow, 0 0 transparent),
+          0 0 0 16px var(--zen-main-browser-background) !important;
+        clip-path: inset(0);
+        pointer-events: none;
+      }
+    }
+  }
+}
+
+/* ============================================
+   DIALOGS — CUSTOM STYLE
+   ============================================ */
+@media (-moz-bool-pref: "mod.zen-toolkit.dialog-style") {
+  .dialogOverlay {
+    padding-top: calc(var(--mod-zen-toolkit-dialog-top-spacing, 20) * 1px) !important;
+  }
+}

@@ -1,0 +1,524 @@
+[
+    {
+        "property": "mod.zen-toolkit.separator-spacing",
+        "label": "\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500  Spacing  \u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500",
+        "type": "dropdown",
+        "placeholder": " ",
+        "defaultValue": "",
+        "options": [
+            {
+                "label": " ",
+                "value": " "
+            }
+        ]
+    },
+    {
+        "property": "mod.zen-toolkit.spacious-bookmarks",
+        "label": "Spacious bookmarks toolbar",
+        "type": "checkbox",
+        "defaultValue": true
+    },
+    {
+        "property": "mod.zen-toolkit.bookmarks-padding-top",
+        "label": "Bookmarks margin top (px)",
+        "type": "string",
+        "defaultValue": "0",
+        "placeholder": "0"
+    },
+    {
+        "property": "mod.zen-toolkit.bookmarks-padding-bottom",
+        "label": "Bookmarks margin bottom (px)",
+        "type": "string",
+        "defaultValue": "8",
+        "placeholder": "8"
+    },
+    {
+        "property": "mod.zen-toolkit.bookmarks-padding-left",
+        "label": "Bookmarks margin left (px)",
+        "type": "string",
+        "defaultValue": "0",
+        "placeholder": "0"
+    },
+    {
+        "property": "mod.zen-toolkit.bookmarks-padding-right",
+        "label": "Bookmarks margin right (px)",
+        "type": "string",
+        "defaultValue": "0",
+        "placeholder": "0"
+    },
+    {
+        "property": "mod.zen-toolkit.navbar-padding",
+        "label": "Extra navbar margin",
+        "type": "checkbox",
+        "defaultValue": true
+    },
+    {
+        "property": "mod.zen-toolkit.navbar-padding-top",
+        "label": "Navbar margin top (px)",
+        "type": "string",
+        "defaultValue": "8",
+        "placeholder": "8"
+    },
+    {
+        "property": "mod.zen-toolkit.navbar-padding-bottom",
+        "label": "Navbar margin bottom (px)",
+        "type": "string",
+        "defaultValue": "8",
+        "placeholder": "8"
+    },
+    {
+        "property": "mod.zen-toolkit.urlbar-margin",
+        "label": "Extra URL bar margin",
+        "type": "checkbox",
+        "defaultValue": true
+    },
+    {
+        "property": "mod.zen-toolkit.urlbar-margin-inline",
+        "label": "URL bar margin left/right (px)",
+        "type": "string",
+        "defaultValue": "8",
+        "placeholder": "8"
+    },
+    {
+        "property": "mod.zen-toolkit.separator-ui",
+        "label": "\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500  UI Tweaks  \u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500",
+        "type": "dropdown",
+        "placeholder": " ",
+        "defaultValue": "",
+        "options": [
+            {
+                "label": " ",
+                "value": " "
+            }
+        ]
+    },
+    {
+        "property": "mod.zen-toolkit.menu-icon",
+        "label": "Menu button icon",
+        "type": "dropdown",
+        "defaultValue": "gear",
+        "options": [
+            {
+                "label": "Gear",
+                "value": "gear"
+            },
+            {
+                "label": "Sliders",
+                "value": "sliders"
+            },
+            {
+                "label": "Grid",
+                "value": "grid"
+            },
+            {
+                "label": "Wrench",
+                "value": "wrench"
+            },
+            {
+                "label": "Compass",
+                "value": "compass"
+            },
+            {
+                "label": "Diamond",
+                "value": "diamond"
+            }
+        ]
+    },
+    {
+        "property": "mod.zen-toolkit.hide-double-separators",
+        "label": "Hide double menu separators",
+        "type": "checkbox",
+        "defaultValue": true
+    },
+    {
+        "property": "mod.zen-toolkit.hide-sidebar-scrollbar",
+        "label": "Hide sidebar scrollbar",
+        "type": "checkbox",
+        "defaultValue": false
+    },
+    {
+        "property": "mod.zen-toolkit.hide-status-bar",
+        "label": "Hide status bar",
+        "type": "checkbox",
+        "defaultValue": false
+    },
+    {
+        "property": "mod.zen-toolkit.separator-context",
+        "label": "\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500  Context Menu  \u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500",
+        "type": "dropdown",
+        "placeholder": " ",
+        "defaultValue": "",
+        "options": [
+            {
+                "label": " ",
+                "value": " "
+            }
+        ]
+    },
+    {
+        "property": "mod.zen-toolkit.hide-accessibility",
+        "label": "Hide accessibility inspector",
+        "type": "checkbox",
+        "defaultValue": true
+    },
+    {
+        "property": "mod.zen-toolkit.hide-send-image",
+        "label": "Hide send image via email",
+        "type": "checkbox",
+        "defaultValue": true
+    },
+    {
+        "property": "mod.zen-toolkit.hide-screenshot",
+        "label": "Hide screenshot",
+        "type": "checkbox",
+        "defaultValue": true
+    },
+    {
+        "property": "mod.zen-toolkit.hide-search-web",
+        "label": "Hide \"Search web for...\"",
+        "type": "checkbox",
+        "defaultValue": false
+    },
+    {
+        "property": "mod.zen-toolkit.hide-view-source",
+        "label": "Hide \"View page source\"",
+        "type": "checkbox",
+        "defaultValue": false
+    },
+    {
+        "property": "mod.zen-toolkit.hide-inspect",
+        "label": "Hide \"Inspect\"",
+        "type": "checkbox",
+        "defaultValue": false
+    },
+    {
+        "property": "mod.zen-toolkit.hide-save-page",
+        "label": "Hide \"Save page as\"",
+        "type": "checkbox",
+        "defaultValue": false
+    },
+    {
+        "property": "mod.zen-toolkit.hide-container-tabs",
+        "label": "Hide container tabs",
+        "type": "checkbox",
+        "defaultValue": true
+    },
+    {
+        "property": "mod.zen-toolkit.hide-essentials",
+        "label": "Hide add to essentials",
+        "type": "checkbox",
+        "defaultValue": true
+    },
+    {
+        "property": "mod.zen-toolkit.hide-send-tab",
+        "label": "Hide \"Send page/link to device\"",
+        "type": "checkbox",
+        "defaultValue": false
+    },
+    {
+        "property": "mod.zen-toolkit.separator-findbar",
+        "label": "\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500  Find Bar  \u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500",
+        "type": "dropdown",
+        "placeholder": " ",
+        "defaultValue": "",
+        "options": [
+            {
+                "label": " ",
+                "value": " "
+            }
+        ]
+    },
+    {
+        "property": "mod.zen-toolkit.findbar-enable",
+        "label": "Enable floating style",
+        "type": "checkbox",
+        "defaultValue": true
+    },
+    {
+        "property": "mod.zen-toolkit.findbar-position-h",
+        "label": "Horizontal position",
+        "type": "dropdown",
+        "placeholder": "Center",
+        "defaultValue": "center",
+        "options": [
+            {
+                "label": "Left",
+                "value": "left"
+            },
+            {
+                "label": "Center",
+                "value": "center"
+            },
+            {
+                "label": "Right",
+                "value": "right"
+            }
+        ]
+    },
+    {
+        "property": "mod.zen-toolkit.findbar-position-v",
+        "label": "Vertical position",
+        "type": "dropdown",
+        "placeholder": "Bottom",
+        "defaultValue": "top",
+        "options": [
+            {
+                "label": "Top",
+                "value": "top"
+            },
+            {
+                "label": "Bottom",
+                "value": "bottom"
+            }
+        ]
+    },
+    {
+        "property": "mod.zen-toolkit.findbar-width",
+        "label": "Max width (px)",
+        "type": "string",
+        "defaultValue": "800",
+        "placeholder": "800"
+    },
+    {
+        "property": "mod.zen-toolkit.findbar-border-radius",
+        "label": "Border radius (px)",
+        "type": "string",
+        "defaultValue": "8",
+        "placeholder": "8"
+    },
+    {
+        "property": "mod.zen-toolkit.findbar-padding",
+        "label": "Padding (px)",
+        "type": "string",
+        "defaultValue": "8",
+        "placeholder": "8"
+    },
+    {
+        "property": "mod.zen-toolkit.findbar-custom-bg",
+        "label": "Custom background color",
+        "type": "checkbox",
+        "defaultValue": false
+    },
+    {
+        "property": "mod.zen-toolkit.findbar-bg-color",
+        "label": "Background color (hex)",
+        "type": "string",
+        "defaultValue": "#1a1a2e",
+        "placeholder": "#1a1a2e"
+    },
+    {
+        "property": "mod.zen-toolkit.findbar-no-animation",
+        "label": "Disable animation",
+        "type": "checkbox",
+        "defaultValue": false
+    },
+    {
+        "property": "mod.zen-toolkit.findbar-shadow",
+        "label": "Show shadow",
+        "type": "checkbox",
+        "defaultValue": true
+    },
+    {
+        "property": "mod.zen-toolkit.findbar-hide-highlight",
+        "label": "Hide \"Highlight\" checkbox",
+        "type": "dropdown",
+        "defaultValue": "show",
+        "options": [
+            {
+                "label": "Show",
+                "value": "show"
+            },
+            {
+                "label": "Hide always",
+                "value": "hide"
+            },
+            {
+                "label": "Show only when checked",
+                "value": "checked_only"
+            }
+        ]
+    },
+    {
+        "property": "mod.zen-toolkit.findbar-hide-case",
+        "label": "Hide \"Match case\" checkbox",
+        "type": "dropdown",
+        "defaultValue": "show",
+        "options": [
+            {
+                "label": "Show",
+                "value": "show"
+            },
+            {
+                "label": "Hide always",
+                "value": "hide"
+            },
+            {
+                "label": "Show only when checked",
+                "value": "checked_only"
+            }
+        ]
+    },
+    {
+        "property": "mod.zen-toolkit.findbar-hide-diacritics",
+        "label": "Hide \"Match diacritics\" checkbox",
+        "type": "dropdown",
+        "defaultValue": "show",
+        "options": [
+            {
+                "label": "Show",
+                "value": "show"
+            },
+            {
+                "label": "Hide always",
+                "value": "hide"
+            },
+            {
+                "label": "Show only when checked",
+                "value": "checked_only"
+            }
+        ]
+    },
+    {
+        "property": "mod.zen-toolkit.findbar-hide-words",
+        "label": "Hide \"Whole words\" checkbox",
+        "type": "dropdown",
+        "defaultValue": "show",
+        "options": [
+            {
+                "label": "Show",
+                "value": "show"
+            },
+            {
+                "label": "Hide always",
+                "value": "hide"
+            },
+            {
+                "label": "Show only when checked",
+                "value": "checked_only"
+            }
+        ]
+    },
+    {
+        "property": "mod.zen-toolkit.findbar-hide-status",
+        "label": "Hide find status label",
+        "type": "checkbox",
+        "defaultValue": false
+    },
+    {
+        "property": "mod.zen-toolkit.findbar-hide-matches",
+        "label": "Hide match count label",
+        "type": "checkbox",
+        "defaultValue": false
+    },
+    {
+        "property": "mod.zen-toolkit.separator-tabs",
+        "label": "\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500  Tabs  \u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500",
+        "type": "dropdown",
+        "placeholder": " ",
+        "defaultValue": "",
+        "options": [
+            {
+                "label": " ",
+                "value": " "
+            }
+        ]
+    },
+    {
+        "property": "mod.zen-toolkit.ghost-tabs",
+        "label": "Ghost tabs (dim unloaded tabs)",
+        "type": "checkbox",
+        "defaultValue": true
+    },
+    {
+        "property": "mod.zen-toolkit.ghost-tabs-opacity",
+        "label": "Ghost tabs opacity (0-100)",
+        "type": "string",
+        "defaultValue": "60",
+        "placeholder": "60"
+    },
+    {
+        "property": "mod.zen-toolkit.ghost-tabs-bw",
+        "label": "Ghost tabs grayscale",
+        "type": "checkbox",
+        "defaultValue": false
+    },
+    {
+        "property": "mod.zen-toolkit.ghost-tabs-saturation",
+        "label": "Ghost tabs saturation (0-100)",
+        "type": "string",
+        "defaultValue": "0",
+        "placeholder": "0"
+    },
+    {
+        "property": "mod.zen-toolkit.remove-tab-x",
+        "label": "Remove tab close button",
+        "type": "dropdown",
+        "defaultValue": "none",
+        "options": [
+            {
+                "label": "Don't remove",
+                "value": "none"
+            },
+            {
+                "label": "All tabs",
+                "value": "all"
+            },
+            {
+                "label": "Pinned tabs only",
+                "value": "pinned"
+            }
+        ]
+    },
+    {
+        "property": "mod.zen-toolkit.separator-border",
+        "label": "\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500  Sleek Border  \u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500",
+        "type": "dropdown",
+        "placeholder": " ",
+        "defaultValue": "",
+        "options": [
+            {
+                "label": " ",
+                "value": " "
+            }
+        ]
+    },
+    {
+        "property": "mod.zen-toolkit.sleek-border",
+        "label": "Enable sleek border",
+        "type": "checkbox",
+        "defaultValue": true
+    },
+    {
+        "property": "mod.zen-toolkit.sleek-border-color",
+        "label": "Border color (e.g. #e8e8e80f)",
+        "type": "string",
+        "defaultValue": "#e8e8e830",
+        "placeholder": "#e8e8e830"
+    },
+    {
+        "property": "mod.zen-toolkit.separator-dialogs",
+        "label": "\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500  Dialogs  \u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500",
+        "type": "dropdown",
+        "placeholder": " ",
+        "defaultValue": "",
+        "options": [
+            {
+                "label": " ",
+                "value": " "
+            }
+        ]
+    },
+    {
+        "property": "mod.zen-toolkit.dialog-style",
+        "label": "Custom dialog style",
+        "type": "checkbox",
+        "defaultValue": true
+    },
+    {
+        "property": "mod.zen-toolkit.dialog-top-spacing",
+        "label": "Top spacing (px)",
+        "type": "string",
+        "defaultValue": "20",
+        "placeholder": "20"
+    }
+]

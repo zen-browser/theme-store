@@ -1,0 +1,15 @@
+{
+    "id": "1cb7cffc-771b-4343-bfe4-5ec69279a30a",
+    "name": "Zen Toolkit",
+    "description": "An all-in-one mod that declutters the interface & gives you control of 40+ configurable settings.",
+    "homepage": "https://github.com/scorpio-99/zen-toolkit",
+    "style": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/1cb7cffc-771b-4343-bfe4-5ec69279a30a/chrome.css",
+    "readme": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/1cb7cffc-771b-4343-bfe4-5ec69279a30a/readme.md",
+    "image": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/1cb7cffc-771b-4343-bfe4-5ec69279a30a/image.png",
+    "author": "scorpio-99",
+    "version": "1.0.0",
+    "tags": [],
+    "createdAt": "2026-04-16",
+    "updatedAt": "2026-04-16",
+    "preferences": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/1cb7cffc-771b-4343-bfe4-5ec69279a30a/preferences.json"
+}
