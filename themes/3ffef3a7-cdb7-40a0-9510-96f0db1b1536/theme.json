@@ -1,0 +1,20 @@
+{
+  "id": "3ffef3a7-cdb7-40a0-9510-96f0db1b1536",
+  "name": "Zen Traffic Lights",
+  "description": "Elegant macOS-inspired circular traffic light buttons for Zen Browser, optimized for sidebar and compact layouts.",
+  "author": "Rahul",
+  "version": "1.3.0",
+  "homepage": "https://github.com/GoldLion123RP/zen-traffic-lights",
+  "style": "https://raw.githubusercontent.com/GoldLion123RP/zen-traffic-lights/main/3ffef3a7-cdb7-40a0-9510-96f0db1b1536/chrome.css",
+  "readme": "https://raw.githubusercontent.com/GoldLion123RP/zen-traffic-lights/main/3ffef3a7-cdb7-40a0-9510-96f0db1b1536/readme.md",
+  "preferences": "https://raw.githubusercontent.com/GoldLion123RP/zen-traffic-lights/main/3ffef3a7-cdb7-40a0-9510-96f0db1b1536/preferences.json",
+  "image": "https://raw.githubusercontent.com/GoldLion123RP/zen-traffic-lights/main/3ffef3a7-cdb7-40a0-9510-96f0db1b1536/image.png",
+  "tags": [
+    "window-controls",
+    "ui-customization",
+    "traffic-lights",
+    "macos"
+  ],
+  "createdAt": "2026-04-18",
+  "updatedAt": "2026-04-19"
+}

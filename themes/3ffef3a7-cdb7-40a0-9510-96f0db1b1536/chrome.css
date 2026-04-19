@@ -1,0 +1,141 @@
+/* ============================================================ */
+/* ZEN TRAFFIC LIGHTS (OFFICIAL SUBMISSION VERSION)            */
+/* ============================================================ */
+
+:root {
+  --zen-exit-size: 13px;
+  --zen-exit-gap: 5px;
+  --zen-exit-red: hsl(0, 50%, 50%);
+  --zen-exit-yellow: hsl(60, 50%, 50%);
+  --zen-exit-green: hsl(130, 50%, 40%);
+  --zen-exit-grey: var(--zen-colors-border, #4d4d4d);
+  --zen-exit-trans: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* DEEPENED COLORS FOR LIGHT MODE VISIBILITY */
+@media (prefers-color-scheme: light) {
+  :root {
+    --zen-exit-red: hsl(5, 95%, 45%);
+    --zen-exit-yellow: hsl(38, 100%, 45%);
+    --zen-exit-green: hsl(135, 85%, 35%);
+    --zen-exit-grey: #8a8a8a;
+  }
+}
+
+/* 1. PREFERENCES: BUTTON SIZE */
+@media -moz-pref("mod.zen-traffic-lights.button_size_large") {
+  :root {
+    --zen-exit-size: 15px;
+    --zen-exit-gap: 7px;
+  }
+}
+
+/* Container Spacing */
+.titlebar-buttonbox {
+  margin-right: 20px !important;
+}
+
+.titlebar-buttonbox,
+.titlebar-buttonbox-container {
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  padding: 0 !important;
+  height: auto !important;
+}
+
+/* Sidebar Fixes */
+#browser-sidebar .titlebar-buttonbox-container {
+  padding: 12px 0 !important;
+  margin-right: 0 !important;
+  flex-direction: row !important;
+}
+
+/* Base Button Styling */
+.titlebar-button {
+  appearance: none !important;
+  -moz-appearance: none !important;
+  list-style-image: none !important;
+  background-image: none !important;
+  width: var(--zen-exit-size) !important;
+  height: var(--zen-exit-size) !important;
+  min-width: var(--zen-exit-size) !important;
+  min-height: var(--zen-exit-size) !important;
+  border-radius: 50% !important;
+  padding: 0 !important;
+  margin: 0 !important;
+  margin-left: var(--zen-exit-gap) !important;
+  cursor: pointer !important;
+  border: none !important;
+  box-shadow: none !important;
+  background-position: center !important;
+  background-repeat: no-repeat !important;
+  background-size: 0px !important;
+  transition: var(--zen-exit-trans) !important;
+  background-color: var(--zen-exit-grey) !important;
+  
+  /* AGGRESSIVE ICON HIDING */
+  color: transparent !important;
+  fill: transparent !important;
+  fill-opacity: 0 !important;
+}
+
+/* Hide Default Icons */
+.titlebar-button > .toolbarbutton-icon,
+.titlebar-button > .toolbarbutton-badge-stack,
+.titlebar-button > image {
+  visibility: collapse !important;
+  display: none !important;
+  opacity: 0 !important;
+}
+
+/* 2. PREFERENCES: BOLD TACTILE ANIMATIONS */
+@media -moz-pref("mod.zen-traffic-lights.animations_enabled") {
+  .titlebar-button:hover {
+    transform: scale(1.15, 1.4) !important;
+    filter: brightness(1.2) !important;
+    border-radius: 12px !important;
+  }
+  .titlebar-button:active {
+    transform: scale(0.8) !important;
+    transition: transform 0.05s ease !important;
+  }
+}
+
+/* --- COLORS & MODES --- */
+
+/* MODE: COLORS ALWAYS */
+@media not -moz-pref("mod.zen-traffic-lights.colors_on_hover") {
+  .titlebar-close { background-color: var(--zen-exit-red) !important; }
+  .titlebar-min { background-color: var(--zen-exit-yellow) !important; }
+  .titlebar-max, .titlebar-restore { background-color: var(--zen-exit-green) !important; }
+}
+
+/* MODE: COLORS ONLY ON INDIVIDUAL HOVER */
+@media -moz-pref("mod.zen-traffic-lights.colors_on_hover") {
+  .titlebar-close:hover { background-color: var(--zen-exit-red) !important; }
+  .titlebar-min:hover { background-color: var(--zen-exit-yellow) !important; }
+  .titlebar-max:hover, .titlebar-restore:hover { background-color: var(--zen-exit-green) !important; }
+  
+  .titlebar-buttonbox:hover .titlebar-button:not(:hover) {
+    background-color: var(--zen-exit-grey) !important;
+    opacity: 0.8;
+  }
+}
+
+/* HOVER SYMBOLS LOGIC */
+@media -moz-pref("mod.zen-traffic-lights.hover_symbols") {
+  .titlebar-close {
+    background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="8" height="8" viewBox="0 0 8 8"><path fill="black" fill-opacity="0.4" d="M1.1,1.1c-0.2-0.2-0.2-0.5,0-0.7s0.5-0.2,0.7,0L4,2.6l2.2-2.2c0.2-0.2,0.5-0.2,0.7,0s0.2,0.5,0,0.7L4.7,4l2.2,2.2c0.2,0.2,0.2,0.5,0,0.7s-0.5,0.2-0.7,0L4,5.4L1.8,7.6c-0.2,0.2-0.5,0.2-0.7,0s-0.2-0.5,0-0.7L3.3,4L1.1,1.1z"/></svg>') !important;
+  }
+  .titlebar-min {
+    background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="8" height="8" viewBox="0 0 8 8"><path fill="black" fill-opacity="0.4" d="M0,4c0-0.3,0.2-0.5,0.5-0.5h7c0.3,0,0.5,0.2,0.5,0.5s-0.2,0.5-0.5,0.5h-7C0.2,4.5,0,4.3,0,4z"/></svg>') !important;
+  }
+  .titlebar-max, .titlebar-restore {
+    background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="8" height="8" viewBox="0 0 8 8"><path fill="black" fill-opacity="0.4" d="M4.5,0.5L4.5,1.5L6,1.5L1.5,6L1.5,4.5L0.5,4.5L0.5,7.5L3.5,7.5L3.5,6.5L2,6.5L6.5,2L6.5,3.5L7.5,3.5L7.5,0.5L4.5,0.5z"/></svg>') !important;
+  }
+  
+  .titlebar-button:hover {
+    background-size: 8px 10px !important;
+  }
+}
