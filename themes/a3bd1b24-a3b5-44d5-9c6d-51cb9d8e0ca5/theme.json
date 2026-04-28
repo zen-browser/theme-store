@@ -1,0 +1,14 @@
+{
+    "id": "a3bd1b24-a3b5-44d5-9c6d-51cb9d8e0ca5",
+    "name": "Better Tab Overflow",
+    "description": "Replaces the built-in simple line tab overflow indicators with a gradient",
+    "homepage": "https://github.com/JosephPri/Zen-Better-Tab-Overflow",
+    "style": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/a3bd1b24-a3b5-44d5-9c6d-51cb9d8e0ca5/chrome.css",
+    "readme": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/a3bd1b24-a3b5-44d5-9c6d-51cb9d8e0ca5/readme.md",
+    "image": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/a3bd1b24-a3b5-44d5-9c6d-51cb9d8e0ca5/image.png",
+    "author": "JosephPri",
+    "version": "1.0.0",
+    "tags": [],
+    "createdAt": "2026-04-28",
+    "updatedAt": "2026-04-28"
+}
