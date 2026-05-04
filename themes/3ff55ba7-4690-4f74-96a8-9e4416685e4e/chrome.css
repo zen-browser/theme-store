@@ -1,6 +1,4 @@
-.tabbrowser-tab:is([selected],
-[visuallyselected],
-[multiselected])
+.tabbrowser-tab:is([selected], [visuallyselected], [multiselected])
   .tab-background {
   background-color: color-mix(
     in srgb,
@@ -14,6 +12,10 @@
       transparent
     ) !important;
   opacity: 0.8 !important;
+}
+
+.tabbrowser-tab:not([zen-essential]):is([selected], [visuallyselected], [multiselected])
+  .tab-background {
   border-left: 32px solid
     color-mix(
       in srgb,
