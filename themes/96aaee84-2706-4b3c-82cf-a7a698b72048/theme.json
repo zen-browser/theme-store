@@ -1,0 +1,15 @@
+{
+    "id": "96aaee84-2706-4b3c-82cf-a7a698b72048",
+    "name": "Better Cleaned URL Bar",
+    "description": "Elegant and minimalistic glassmorphic URL bar with blur, transparency and customizable colors",
+    "homepage": "https://github.com/matteo-tafuro/zen-better-cleaned-url-bar",
+    "style": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/96aaee84-2706-4b3c-82cf-a7a698b72048/chrome.css",
+    "readme": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/96aaee84-2706-4b3c-82cf-a7a698b72048/readme.md",
+    "image": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/96aaee84-2706-4b3c-82cf-a7a698b72048/image.png",
+    "author": "matteo-tafuro",
+    "version": "1.0.0",
+    "tags": [],
+    "createdAt": "2026-05-05",
+    "updatedAt": "2026-05-05",
+    "preferences": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/96aaee84-2706-4b3c-82cf-a7a698b72048/preferences.json"
+}
