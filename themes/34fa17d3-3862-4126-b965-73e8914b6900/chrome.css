@@ -1,0 +1,33 @@
+
+#main-window:-moz-window-inactive,
+#navigator-toolbox:-moz-window-inactive,
+#TabsToolbar:-moz-window-inactive,
+#tabbrowser-tabs:-moz-window-inactive,
+#tabs-newtab-button:-moz-window-inactive,
+#vertical-tabs-newtab-button:-moz-window-inactive,
+#zen-sidebar-bottom-buttons:-moz-window-inactive,
+#zen-workspaces-button:-moz-window-inactive {
+  opacity: 1 !important;
+  filter: none !important;
+}
+
+.tabbrowser-tab[selected]:-moz-window-inactive .tab-background,
+.tabbrowser-tab[visuallyselected]:-moz-window-inactive .tab-background {
+  background-image: none !important;
+  border: none !important;
+  outline: none !important;
+  opacity: 0.7 !important;
+}
+
+#tabbrowser-tabs .tabbrowser-tab,
+#tabbrowser-tabs .tabbrowser-tab .tab-label-container,
+#tabbrowser-tabs .tabbrowser-tab .tab-label,
+#tabbrowser-tabs .tabbrowser-tab .tab-text,
+.tabbrowser-tab .tab-label,
+.tabbrowser-tab .tab-text {
+  font-family: -apple-system, BlinkMacSystemFont, "SF Pro Text", system-ui, sans-serif !important;
+  font-size: 14px !important;
+  font-weight: 450 !important;
+  letter-spacing: -0.01em !important;
+  -moz-osx-font-smoothing: auto !important;
+}
