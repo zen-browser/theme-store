@@ -1,0 +1,56 @@
+
+@media (-moz-bool-pref: "mod.kian1991.enable") {
+  /* ============================================
+     Borderless Compact Mode for Zen Browser
+     ============================================ */
+  /* Only apply when Zen's compact mode is active */
+  :root[zen-compact-mode="true"] {
+    /* 1. Remove all margins around the browser content wrapper
+          so the webview touches the window edges */
+    #zen-tabbox-wrapper {
+      margin: 0 !important;
+    }
+    /* 2. Remove the gap at the top where the collapsed toolbar lives */
+    #zen-appcontent-navbar-wrapper:not(
+        :is([zen-has-hover], [has-popup-menu], [zen-compact-mode-active])
+      ) {
+      height: 0 !important;
+    }
+    /* 3. Remove rounded corners and drop-shadow from the webview container */
+    .browserSidebarContainer {
+      border-radius: 0 !important;
+      box-shadow: none !important;
+    }
+    /* 4. Remove border/shadow from floating sidebar / toolbar backgrounds */
+    .zen-toolbar-background {
+      box-shadow: none !important;
+      outline: none !important;
+      border-radius: 0 !important;
+    }
+    .zen-toolbar-background::before,
+    .zen-toolbar-background::after {
+      outline: none !important;
+      border-radius: 0 !important;
+    }
+    /* 5. Make the floating sidebar flush with screen edges */
+    #navigator-toolbox:not([animate="true"]) {
+      --zen-compact-float: 0px !important;
+      padding: 0 !important;
+      bottom: 0 !important;
+    }
+    /* 6. Remove padding inside the sidebar so tabs touch the edge */
+    #navigator-toolbox:not([animate="true"]) #titlebar {
+      padding: 0 !important;
+    }
+    /* 7. Remove extra top margin from titlebar in multi-toolbar setups */
+    &:not([zen-single-toolbar="true"]) #titlebar {
+      margin-top: 0 !important;
+    }
+    /* 8. Remove nav-bar side margins that create gaps when window 
+          controls are reversed */
+    #zen-appcontent-navbar-wrapper #nav-bar {
+      margin-left: 0 !important;
+      margin-right: 0 !important;
+    }
+  }
+}

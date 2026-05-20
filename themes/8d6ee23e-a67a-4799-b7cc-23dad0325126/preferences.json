@@ -1,0 +1,8 @@
+[
+    {
+        "property": "mod.kian1991.enable",
+        "label": "Enable Borderless Compactmode",
+        "type": "checkbox",
+        "defaultValue": true
+    }
+]
