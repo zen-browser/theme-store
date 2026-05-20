@@ -1,0 +1,15 @@
+{
+    "id": "8d6ee23e-a67a-4799-b7cc-23dad0325126",
+    "name": "Borderless Compact Mode",
+    "description": "Removes borders, shadows & rounded corners in compact mode for a true edge-to-edge experience.",
+    "homepage": "https://github.com/kian1991/bordeless-compactmode",
+    "style": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/8d6ee23e-a67a-4799-b7cc-23dad0325126/chrome.css",
+    "readme": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/8d6ee23e-a67a-4799-b7cc-23dad0325126/readme.md",
+    "image": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/8d6ee23e-a67a-4799-b7cc-23dad0325126/image.png",
+    "author": "kian1991",
+    "version": "1.0.0",
+    "tags": [],
+    "createdAt": "2026-05-20",
+    "updatedAt": "2026-05-20",
+    "preferences": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/8d6ee23e-a67a-4799-b7cc-23dad0325126/preferences.json"
+}
