@@ -1,0 +1,14 @@
+{
+    "id": "60937f5b-1e14-411a-b7e0-02a9ba0270fe",
+    "name": "Inverted Tabs",
+    "description": "Inverts the placement of the favicon and x button on tabs. Useful for using the tab bar on the right.",
+    "homepage": "https://github.com/bryce-hoehn/zen-browser-inverted-tabs",
+    "style": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/60937f5b-1e14-411a-b7e0-02a9ba0270fe/chrome.css",
+    "readme": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/60937f5b-1e14-411a-b7e0-02a9ba0270fe/readme.md",
+    "image": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/60937f5b-1e14-411a-b7e0-02a9ba0270fe/image.png",
+    "author": "bryce-hoehn",
+    "version": "1.0.0",
+    "tags": [],
+    "createdAt": "2026-05-24",
+    "updatedAt": "2026-05-24"
+}

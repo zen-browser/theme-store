@@ -1,0 +1,8 @@
+
+hbox.tab-content > image {
+  order: -1;
+}
+
+hbox.tab-content > stack {
+  order: 1;
+}
