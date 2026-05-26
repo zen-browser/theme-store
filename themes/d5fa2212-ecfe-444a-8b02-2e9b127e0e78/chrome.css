@@ -1,0 +1,181 @@
+
+/* ============================================================
+   Better Toast — Zen Browser Mod
+   by mahtamun-hoque-fahim
+   ============================================================
+   Frosted-glass pill notification with:
+   · backdrop-filter blur
+   · Auto dark/light color switching
+   · 4-way position control (top/bottom × left/right/center/auto)
+   · Safe minimum offset (works even when element-separation = 0)
+   · Smooth entrance + hover accent transition
+   ============================================================ */
+
+/* ── Internal variables (tweak these if needed) ── */
+:root {
+  --mbt-blur:           12px;
+  --mbt-radius:         999px;   /* full pill */
+  --mbt-padding:        8px 16px;
+  --mbt-font-size:      12px;
+  --mbt-desc-size:      10px;
+  --mbt-font-weight:    500;
+  --mbt-max-width:      320px;
+  --mbt-transition:     0.25s cubic-bezier(0.4, 0, 0.2, 1);
+  --mbt-letter-spacing: 0.01em;
+
+/* Glass colours — light mode defaults */
+  --mbt-bg:     rgba(255, 255, 255, 0.18);
+  --mbt-border: rgba(255, 255, 255, 0.30);
+  --mbt-text:   rgba(255, 255, 255, 0.95);
+  --mbt-shadow: 0 4px 24px rgba(0, 0, 0, 0.18),
+                0 1px 4px  rgba(0, 0, 0, 0.10);
+}
+
+/* ── Dark mode: white-tinted glass ── */
+@media (prefers-color-scheme: dark) {
+  :root {
+    --mbt-bg:     rgba(255, 255, 255, 0.14);
+    --mbt-border: rgba(255, 255, 255, 0.22);
+    --mbt-text:   rgba(255, 255, 255, 0.95);
+    --mbt-shadow: 0 4px 24px rgba(0, 0, 0, 0.35),
+                  0 1px 4px  rgba(0, 0, 0, 0.20);
+  }
+}
+
+/* ── Light mode: dark-tinted glass ── */
+@media (prefers-color-scheme: light) {
+  :root {
+    --mbt-bg:     rgba(0, 0, 0, 0.10);
+    --mbt-border: rgba(0, 0, 0, 0.14);
+    --mbt-text:   rgba(0, 0, 0, 0.88);
+    --mbt-shadow: 0 4px 24px rgba(0, 0, 0, 0.12),
+                  0 1px 4px  rgba(0, 0, 0, 0.06);
+  }
+}
+
+/* ════════════════════════════════════════════════════════════
+   CONTAINER — default positioning
+   Default: top + auto (sidebar-aware)
+   ════════════════════════════════════════════════════════════ */
+#zen-toast-container {
+  --_offset-v: 10vh;
+  --_offset-h: 10vw;
+
+/* Sit above panels, toolbars, sidebars — so blur has real UI to blur */
+  z-index: 2147483647 !important;
+  position: fixed !important;
+
+/* Default: top */
+  top:    var(--_offset-v) !important;
+  bottom: unset            !important;
+
+/* Default horizontal: right (sidebar typically on left) */
+  right:  var(--_offset-h) !important;
+  left:   unset            !important;
+}
+
+/* Sidebar-aware: flip to left when sidebar is on the right */
+:root[zen-right-side='true'] #zen-toast-container {
+  left:  var(--_offset-h) !important;
+  right: unset            !important;
+}
+
+/* ════════════════════════════════════════════════════════════
+   POSITION PREFERENCES — via -moz-pref() media queries
+   ════════════════════════════════════════════════════════════ */
+
+/* Vertical: bottom */
+@media (-moz-pref("mod.better-toast.position-v", "bottom")) {
+  #zen-toast-container {
+    top:    unset            !important;
+    bottom: var(--_offset-v) !important;
+  }
+}
+
+/* Horizontal: left */
+@media (-moz-pref("mod.better-toast.position-h", "left")) {
+  #zen-toast-container {
+    right: unset            !important;
+    left:  var(--_offset-h) !important;
+  }
+  :root[zen-right-side='true'] #zen-toast-container {
+    right: unset            !important;
+    left:  var(--_offset-h) !important;
+  }
+}
+
+/* Horizontal: right */
+@media (-moz-pref("mod.better-toast.position-h", "right")) {
+  #zen-toast-container {
+    left:  unset            !important;
+    right: var(--_offset-h) !important;
+  }
+  :root[zen-right-side='true'] #zen-toast-container {
+    left:  unset            !important;
+    right: var(--_offset-h) !important;
+  }
+}
+
+/* Horizontal: center */
+@media (-moz-pref("mod.better-toast.position-h", "center")) {
+  #zen-toast-container {
+    left:      50%              !important;
+    right:     unset            !important;
+    transform: translateX(-50%) !important;
+  }
+  :root[zen-right-side='true'] #zen-toast-container {
+    left:      50%              !important;
+    right:     unset            !important;
+    transform: translateX(-50%) !important;
+  }
+}
+
+/* ════════════════════════════════════════════════════════════
+   TOAST — frosted glass pill
+   ════════════════════════════════════════════════════════════ */
+#zen-toast-container .zen-toast {
+  /* Ensure each toast creates its own stacking context for backdrop-filter */
+  isolation: isolate;
+  position:  relative;
+  z-index:   1;
+
+/* Shape */
+  padding:       var(--mbt-padding)   !important;
+  border-radius: var(--mbt-radius)    !important;
+  max-width:     var(--mbt-max-width) !important;
+
+/* Glass */
+  background:              var(--mbt-bg)     !important;
+  border:                  1px solid var(--mbt-border) !important;
+  backdrop-filter:         blur(var(--mbt-blur)) saturate(1.6) !important;
+  -webkit-backdrop-filter: blur(var(--mbt-blur)) saturate(1.6) !important;
+  box-shadow:              var(--mbt-shadow) !important;
+
+/* Typography */
+  color:          var(--mbt-text)           !important;
+  font-size:      var(--mbt-font-size)      !important;
+  font-weight:    var(--mbt-font-weight)    !important;
+  letter-spacing: var(--mbt-letter-spacing) !important;
+
+/* Transition */
+  transition: background   var(--mbt-transition),
+              border-color var(--mbt-transition),
+              color        var(--mbt-transition),
+              box-shadow   var(--mbt-transition) !important;
+
+/* Description text */
+  & .description {
+    font-size:  var(--mbt-desc-size) !important;
+    opacity:    0.75                 !important;
+    margin-top: 2px                  !important;
+  }
+
+/* Hover: accent highlight */
+  &:hover {
+    background:   var(--zen-primary-color) !important;
+    color:        var(--button-primary-color, #fff) !important;
+    border-color: transparent !important;
+    box-shadow:   0 4px 28px color-mix(in srgb, var(--zen-primary-color) 40%, transparent),
+                  0 1px 6px  color-mix(in srgb, var(--zen-primary-color) 25%, transparent) !important;
+  }
+}
