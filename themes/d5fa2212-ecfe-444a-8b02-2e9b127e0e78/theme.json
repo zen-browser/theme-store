@@ -1,0 +1,15 @@
+{
+    "id": "d5fa2212-ecfe-444a-8b02-2e9b127e0e78",
+    "name": "More Better Toast",
+    "description": "Frosted-glass pill toast with backdrop blur, auto dark/light & position control (left/right/bottom).",
+    "homepage": "https://github.com/mahtamun-hoque-fahim/zen-mod-more-better-toast",
+    "style": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/d5fa2212-ecfe-444a-8b02-2e9b127e0e78/chrome.css",
+    "readme": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/d5fa2212-ecfe-444a-8b02-2e9b127e0e78/readme.md",
+    "image": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/d5fa2212-ecfe-444a-8b02-2e9b127e0e78/image.png",
+    "author": "mahtamun-hoque-fahim",
+    "version": "1.0.0",
+    "tags": [],
+    "createdAt": "2026-05-26",
+    "updatedAt": "2026-05-26",
+    "preferences": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/d5fa2212-ecfe-444a-8b02-2e9b127e0e78/preferences.json"
+}

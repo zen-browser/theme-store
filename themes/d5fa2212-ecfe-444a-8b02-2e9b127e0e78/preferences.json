@@ -1,0 +1,42 @@
+[
+    {
+        "property": "mod.better-toast.position-v",
+        "label": "Vertical Position",
+        "type": "dropdown",
+        "options": [
+            {
+                "label": "Top",
+                "value": "top"
+            },
+            {
+                "label": "Bottom",
+                "value": "bottom"
+            }
+        ],
+        "defaultValue": "top"
+    },
+    {
+        "property": "mod.better-toast.position-h",
+        "label": "Horizontal Position",
+        "type": "dropdown",
+        "options": [
+            {
+                "label": "Auto (sidebar-aware)",
+                "value": "auto"
+            },
+            {
+                "label": "Left",
+                "value": "left"
+            },
+            {
+                "label": "Center",
+                "value": "center"
+            },
+            {
+                "label": "Right",
+                "value": "right"
+            }
+        ],
+        "defaultValue": "auto"
+    }
+]
