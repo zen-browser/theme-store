@@ -1,0 +1,15 @@
+{
+    "id": "6a6ad4c8-4bec-4eb5-a5da-b6480766f8ad",
+    "name": "Rainbow Audio Tabs",
+    "description": "Never lose track of a noisy tab again. This mod adds a flowing background to tabs playing audio.",
+    "homepage": "https://github.com/LexyDevv/Zen-Rainbow-Audio-Tabs",
+    "style": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/6a6ad4c8-4bec-4eb5-a5da-b6480766f8ad/chrome.css",
+    "readme": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/6a6ad4c8-4bec-4eb5-a5da-b6480766f8ad/readme.md",
+    "image": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/6a6ad4c8-4bec-4eb5-a5da-b6480766f8ad/image.png",
+    "author": "LexyDevv",
+    "version": "1.0.0",
+    "tags": [],
+    "createdAt": "2026-05-29",
+    "updatedAt": "2026-05-29",
+    "preferences": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/6a6ad4c8-4bec-4eb5-a5da-b6480766f8ad/preferences.json"
+}
