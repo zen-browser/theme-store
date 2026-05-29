@@ -1,0 +1,14 @@
+[
+    {
+        "property": "mod.rainbow.colors",
+        "label": "Gradient Colors (Comma separated, min 2)",
+        "type": "checkbox",
+        "disabledOn": []
+    },
+    {
+        "property": "mod.rainbow.opacity",
+        "label": "Glow Opacity (0.0 to 1.0)",
+        "type": "checkbox",
+        "disabledOn": []
+    }
+]

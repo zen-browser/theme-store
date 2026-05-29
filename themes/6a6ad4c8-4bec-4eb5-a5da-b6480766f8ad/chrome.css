@@ -1,0 +1,19 @@
+
+@keyframes audio-rainbow-flow {
+    0% {
+        background-position: 0% 50%;
+    }
+
+100% {
+        background-position: 200% 50%;
+    }
+}
+
+.tabbrowser-tab[soundplaying] .tab-background {
+    /* Notice the fallback: var(--variable-name, default-value) */
+    background-image: linear-gradient(90deg, var(--mod-rainbow-colors, #ff4b4b, #e8d024, #24b8e8, #9b24e8, #ff4b4b) ) !important;
+    background-size: 200% 200% !important;
+    animation: audio-rainbow-flow 12s linear infinite !important;
+    /* Fallback for opacity */
+    opacity: var(--mod-rainbow-opacity, 0.15) !important;
+}
