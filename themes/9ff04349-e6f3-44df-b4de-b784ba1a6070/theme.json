@@ -1,0 +1,15 @@
+{
+    "id": "9ff04349-e6f3-44df-b4de-b784ba1a6070",
+    "name": "Floating Bookmarks",
+    "description": "Floating bookmarks panel inspired by existing floating history mod",
+    "homepage": "https://github.com/Malorn44/zen-floating-bookmarks/tree/main",
+    "style": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/9ff04349-e6f3-44df-b4de-b784ba1a6070/chrome.css",
+    "readme": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/9ff04349-e6f3-44df-b4de-b784ba1a6070/readme.md",
+    "image": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/9ff04349-e6f3-44df-b4de-b784ba1a6070/image.png",
+    "author": "Malorn44",
+    "version": "1.0.0",
+    "tags": [],
+    "createdAt": "2026-06-01",
+    "updatedAt": "2026-06-01",
+    "preferences": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/9ff04349-e6f3-44df-b4de-b784ba1a6070/preferences.json"
+}
