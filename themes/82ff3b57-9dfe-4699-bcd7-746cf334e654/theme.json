@@ -1,0 +1,14 @@
+{
+    "id": "82ff3b57-9dfe-4699-bcd7-746cf334e654",
+    "name": "Easy Window Drag",
+    "description": "Lets you drag the browser window via the margin on the search bar, eliminating the need to aim away from it.",
+    "homepage": "https://github.com/b0red-man/zen-mods/tree/main/easy-window-drag",
+    "style": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/82ff3b57-9dfe-4699-bcd7-746cf334e654/chrome.css",
+    "readme": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/82ff3b57-9dfe-4699-bcd7-746cf334e654/readme.md",
+    "image": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/82ff3b57-9dfe-4699-bcd7-746cf334e654/image.png",
+    "author": "b0red-man",
+    "version": "1.0.0",
+    "tags": [],
+    "createdAt": "2026-06-02",
+    "updatedAt": "2026-06-02"
+}
