@@ -1,0 +1,9 @@
+
+:root:not([customizing]) #back-button,
+  :root:not([customizing]) #forward-button {
+    display: none !important;
+  }
+  
+  :root:not([customizing]) #zen-sidebar-top-buttons-separator {
+    flex: 1 1 auto !important;
+  }

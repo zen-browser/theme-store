@@ -1,0 +1,14 @@
+{
+    "id": "7116fab2-0358-459c-9867-831c7a07cbde",
+    "name": "Back Fwd Hidden ext",
+    "description": "Hides back/forward buttons, keeps extension icons right-aligned. For mice with side buttons.",
+    "homepage": "https://github.com/movsq/zen-back-fwd-hidden-ext",
+    "style": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/7116fab2-0358-459c-9867-831c7a07cbde/chrome.css",
+    "readme": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/7116fab2-0358-459c-9867-831c7a07cbde/readme.md",
+    "image": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/7116fab2-0358-459c-9867-831c7a07cbde/image.png",
+    "author": "movsq",
+    "version": "1.0.0",
+    "tags": [],
+    "createdAt": "2026-06-03",
+    "updatedAt": "2026-06-03"
+}
