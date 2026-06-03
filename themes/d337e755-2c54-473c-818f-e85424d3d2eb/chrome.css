@@ -1,0 +1,257 @@
+
+/* Zen Sharp Edges
+ * Removes rounded corners from Zen Browser sidebar, tabs, navbar, essentials,
+ * media controls, and common popup surfaces.
+ */
+
+:root {
+  --tab-border-radius: 0px !important;
+  --zen-border-radius: 0px !important;
+  --zen-webview-border-radius: 0px !important;
+  --toolbarbutton-border-radius: 0px !important;
+  --border-radius-medium: 0px !important;
+  --border-radius-small: 0px !important;
+  --panel-border-radius: 0px !important;
+  --arrowpanel-border-radius: 0px !important;
+  --tooltip-border-radius: 0px !important;
+  --theme-customstatusbar-radius: 0px !important;
+}
+
+/* Tabs, pinned tabs, essentials, workspaces, and sidebar buttons. */
+#tabbrowser-tabs .tabbrowser-tab,
+.zen-essentials-container .tabbrowser-tab,
+.zen-essentials-container toolbarbutton,
+#zen-sidebar-foot-buttons toolbarbutton,
+#zen-workspaces-button {
+  --tab-border-radius: 0px !important;
+  --border-radius-medium: 0px !important;
+  --toolbarbutton-border-radius: 0px !important;
+}
+
+#tabbrowser-tabs .tabbrowser-tab,
+#tabbrowser-tabs .tabbrowser-tab :is(
+  .tab-background,
+  .tab-stack,
+  .tab-content,
+  .tab-label-container,
+  .tab-icon-stack,
+  .tab-close-button
+),
+.zen-essentials-container,
+.zen-essentials-container :is(
+  .tabbrowser-tab,
+  .tab-background,
+  .tab-stack,
+  .tab-content,
+  .tab-icon-stack,
+  toolbarbutton,
+  .toolbarbutton-icon,
+  .toolbarbutton-badge-stack
+),
+#zen-sidebar-foot-buttons toolbarbutton,
+#zen-sidebar-foot-buttons toolbarbutton :is(
+  .toolbarbutton-icon,
+  .toolbarbutton-badge-stack
+),
+#zen-workspaces-button,
+tab-group[split-view-group] .tab-group-container::after {
+  border-radius: 0px !important;
+}
+
+/* Browser content frame, URL bar, search bar, and URL suggestions. */
+#tabbrowser-tabbox #tabbrowser-tabpanels .browserSidebarContainer,
+#tabbrowser-tabbox #tabbrowser-tabpanels .browserSidebarContainer::after,
+#urlbar,
+#urlbar-background,
+#urlbar-container,
+#urlbar-input-container,
+#urlbar .urlbar-input-container,
+#identity-box,
+#tracking-protection-icon-container,
+#page-action-buttons,
+#urlbar :is(
+  .urlbar-page-action,
+  .urlbar-icon,
+  .urlbarView,
+  .urlbarView-body-inner,
+  .urlbarView-results,
+  .urlbarView-row,
+  .urlbarView-row-inner,
+  .urlbarView-favicon
+),
+#searchbar {
+  border-radius: 0px !important;
+}
+
+/* Sidebar-wide pass for Zen's compact navbar and custom sidebar widgets. */
+#navigator-toolbox *,
+#titlebar *,
+#zen-sidebar-top-buttons *,
+#zen-sidebar-foot-buttons *,
+#zen-sidebar-foot-buttons::before,
+#zen-sidebar-foot-buttons::after,
+#navigator-toolbox *::before,
+#navigator-toolbox *::after,
+#titlebar *::before,
+#titlebar *::after {
+  border-radius: 0px !important;
+}
+
+/* Media and now-playing controls. */
+#tabbrowser-tabs .tabbrowser-tab :is(
+  .tab-audio-button,
+  .tab-icon-overlay,
+  .tab-icon-sound,
+  .tab-secondary-label,
+  .tab-icon-image
+),
+#navigator-toolbox :is(
+  #zen-media-controls,
+  #zen-media-controls-toolbar,
+  #zen-media-controls-button,
+  #zen-media-progress-bar,
+  #zen-media-title,
+  #zen-media-artist,
+  #media-control-button,
+  #mediaControlButton,
+  .media-control,
+  .media-controls,
+  .media-control-button,
+  .media-button,
+  .zen-media,
+  .zen-media-control,
+  .zen-media-controls
+) {
+  border-radius: 0px !important;
+}
+
+/* Attribute fallback for Zen custom element names. */
+:root :is(
+  [id*="urlbar" i],
+  [class*="urlbar" i],
+  [id*="navbar" i],
+  [class*="navbar" i],
+  [id*="nav-bar" i],
+  [class*="nav-bar" i],
+  [id*="location" i],
+  [class*="location" i],
+  [id*="media" i],
+  [class*="media" i],
+  [id*="audio" i],
+  [class*="audio" i],
+  [id*="playing" i],
+  [class*="playing" i],
+  [id*="now" i],
+  [class*="now" i]
+),
+:root :is(
+  [id*="urlbar" i],
+  [class*="urlbar" i],
+  [id*="navbar" i],
+  [class*="navbar" i],
+  [id*="nav-bar" i],
+  [class*="nav-bar" i],
+  [id*="location" i],
+  [class*="location" i],
+  [id*="media" i],
+  [class*="media" i],
+  [id*="audio" i],
+  [class*="audio" i],
+  [id*="playing" i],
+  [class*="playing" i],
+  [id*="now" i],
+  [class*="now" i]
+) *,
+:root :is(
+  [id*="urlbar" i],
+  [class*="urlbar" i],
+  [id*="navbar" i],
+  [class*="navbar" i],
+  [id*="nav-bar" i],
+  [class*="nav-bar" i],
+  [id*="location" i],
+  [class*="location" i],
+  [id*="media" i],
+  [class*="media" i],
+  [id*="audio" i],
+  [class*="audio" i],
+  [id*="playing" i],
+  [class*="playing" i],
+  [id*="now" i],
+  [class*="now" i]
+)::before,
+:root :is(
+  [id*="urlbar" i],
+  [class*="urlbar" i],
+  [id*="navbar" i],
+  [class*="navbar" i],
+  [id*="nav-bar" i],
+  [class*="nav-bar" i],
+  [id*="location" i],
+  [class*="location" i],
+  [id*="media" i],
+  [class*="media" i],
+  [id*="audio" i],
+  [class*="audio" i],
+  [id*="playing" i],
+  [class*="playing" i],
+  [id*="now" i],
+  [class*="now" i]
+)::after {
+  border-radius: 0px !important;
+}
+
+/* Panels and tooltip-like surfaces. */
+panel,
+menupopup,
+tooltip,
+#tabbrowser-tab-tooltip,
+#btTooltip,
+#un-toolbar-tooltip,
+#tab-preview-panel,
+#tab-preview-container,
+#statuspanel,
+#statuspanel-label,
+.tooltip,
+.tooltip-label,
+.tab-preview-panel,
+.tab-preview-container,
+panel[type="tooltip"],
+panel[type="tooltip"] *,
+popup[type="tooltip"],
+popup[type="tooltip"] * {
+  appearance: none !important;
+  -moz-appearance: none !important;
+  background-clip: border-box !important;
+  border-radius: 0px !important;
+}
+
+/* Statusbar mods. This may depend on Zen Mod load order. */
+#statuspanel,
+#statuspanel #statuspanel-label,
+#main-window #statuspanel,
+#main-window #statuspanel #statuspanel-label,
+:root #statuspanel #statuspanel-label {
+  --theme-customstatusbar-radius: 0px !important;
+  border-radius: 0px !important;
+  border-top-left-radius: 0px !important;
+  border-top-right-radius: 0px !important;
+  border-bottom-right-radius: 0px !important;
+  border-bottom-left-radius: 0px !important;
+  clip-path: none !important;
+}
+
+tooltip::before,
+tooltip::after,
+#tabbrowser-tab-tooltip::before,
+#tabbrowser-tab-tooltip::after,
+#btTooltip::before,
+#btTooltip::after,
+#un-toolbar-tooltip::before,
+#un-toolbar-tooltip::after,
+#tab-preview-panel::before,
+#tab-preview-panel::after,
+#tab-preview-container::before,
+#tab-preview-container::after {
+  border-radius: 0px !important;
+}

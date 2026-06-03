@@ -1,0 +1,14 @@
+{
+    "id": "d337e755-2c54-473c-818f-e85424d3d2eb",
+    "name": "Zen Sharp Edges",
+    "description": "Removes rounded corners from Zen Browser tabs, sidebar, navbar, media, panels, and tooltips.",
+    "homepage": "https://github.com/ftbhabuk/-zen-sharp-edges",
+    "style": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/d337e755-2c54-473c-818f-e85424d3d2eb/chrome.css",
+    "readme": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/d337e755-2c54-473c-818f-e85424d3d2eb/readme.md",
+    "image": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/d337e755-2c54-473c-818f-e85424d3d2eb/image.png",
+    "author": "ftbhabuk",
+    "version": "1.0.0",
+    "tags": [],
+    "createdAt": "2026-06-03",
+    "updatedAt": "2026-06-03"
+}
