@@ -1,0 +1,38 @@
+
+/* ============================================================================
+ * Zen Live Folder Indicator
+ * ----------------------------------------------------------------------------
+ * Shows a small badge on the top-right of a folder's icon whenever
+ * that folder — or any folder nested inside it — contains a live-folder tab
+ * (RSS / GitHub feed tabs, marked by Zen with `zen-live-folder-item-id`).
+ * ============================================================================ */
+:root {
+  --livefolder-badge-size: var(--uc-livefolder-indicator-size, 9px);
+  --livefolder-badge-color: var(--uc-livefolder-indicator-color, #ff7a18);
+  --livefolder-badge-ring: var(--uc-livefolder-indicator-ring, var(--zen-colors-tertiary, #1c1c1f));
+}
+zen-folder:has(tab[zen-live-folder-item-id]) > .tab-group-label-container > .tab-group-folder-icon {
+  position: relative;
+  overflow: visible;
+}
+zen-folder:has(tab[zen-live-folder-item-id]) > .tab-group-label-container > .tab-group-folder-icon::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: var(--livefolder-badge-size);
+  height: var(--livefolder-badge-size);
+  border-radius: 50%;
+  box-sizing: border-box;
+  background: var(--livefolder-badge-color);
+  border: 1.5px solid var(--livefolder-badge-ring);
+  pointer-events: none;
+  z-index: 2;
+}
+@media (-moz-pref("uc.livefolder-indicator.glow")) {
+  zen-folder:has(tab[zen-live-folder-item-id]) > .tab-group-label-container > .tab-group-folder-icon::after {
+    box-shadow:
+      0 0 3px 1px color-mix(in srgb, var(--livefolder-badge-color) 80%, transparent),
+      0 0 6px 2px color-mix(in srgb, var(--livefolder-badge-color) 45%, transparent);
+  }
+}
