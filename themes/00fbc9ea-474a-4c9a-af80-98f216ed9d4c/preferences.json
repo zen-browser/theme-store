@@ -1,0 +1,26 @@
+[
+    {
+        "property": "uc.livefolder-indicator.color",
+        "label": "Badge color \u2014 any CSS color",
+        "type": "string",
+        "placeholder": "e.g. #ff7a18"
+    },
+    {
+        "property": "uc.livefolder-indicator.ring",
+        "label": "Ring color (optional) \u2014 leave empty to match the theme",
+        "type": "string",
+        "placeholder": "e.g. #1c1c1f"
+    },
+    {
+        "property": "uc.livefolder-indicator.size",
+        "label": "Badge size \u2014 include a unit",
+        "type": "string",
+        "placeholder": "e.g. 9px"
+    },
+    {
+        "property": "uc.livefolder-indicator.glow",
+        "label": "Show glow around the badge",
+        "type": "checkbox",
+        "defaultValue": true
+    }
+]

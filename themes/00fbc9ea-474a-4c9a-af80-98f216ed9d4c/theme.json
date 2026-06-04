@@ -1,0 +1,15 @@
+{
+    "id": "00fbc9ea-474a-4c9a-af80-98f216ed9d4c",
+    "name": "Livefolder Indicator",
+    "description": "Recursively displays an indicator on folders if they currently contain live tabs.",
+    "homepage": "",
+    "style": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/00fbc9ea-474a-4c9a-af80-98f216ed9d4c/chrome.css",
+    "readme": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/00fbc9ea-474a-4c9a-af80-98f216ed9d4c/readme.md",
+    "image": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/00fbc9ea-474a-4c9a-af80-98f216ed9d4c/image.png",
+    "author": "eXaminator",
+    "version": "1.0.0",
+    "tags": [],
+    "createdAt": "2026-06-04",
+    "updatedAt": "2026-06-04",
+    "preferences": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/00fbc9ea-474a-4c9a-af80-98f216ed9d4c/preferences.json"
+}
