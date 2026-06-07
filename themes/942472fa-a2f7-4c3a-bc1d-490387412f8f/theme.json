@@ -1,0 +1,14 @@
+{
+    "id": "942472fa-a2f7-4c3a-bc1d-490387412f8f",
+    "name": "Zen Key Lock",
+    "description": "A glassmorphic floating indicator showing when Caps Lock, Num Lock, or Scroll Lock is active.",
+    "homepage": "https://github.com/arifomer733/zen-key-lock-indicator",
+    "style": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/942472fa-a2f7-4c3a-bc1d-490387412f8f/chrome.css",
+    "readme": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/942472fa-a2f7-4c3a-bc1d-490387412f8f/readme.md",
+    "image": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/942472fa-a2f7-4c3a-bc1d-490387412f8f/image.png",
+    "author": "arifomer733",
+    "version": "1.0.0",
+    "tags": [],
+    "createdAt": "2026-06-07",
+    "updatedAt": "2026-06-07"
+}

@@ -1,0 +1,39 @@
+
+/* Glassmorphic Lock Indicator styles */
+#zen-keylock-toast {
+  position: fixed;
+  z-index: 2147483647;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  background: rgba(22, 22, 26, 0.82) !important;
+  backdrop-filter: blur(20px) saturate(1.6) !important;
+  -webkit-backdrop-filter: blur(20px) saturate(1.6) !important;
+  border: 1px solid rgba(255, 255, 255, 0.1) !important;
+  padding: 8px 12px !important;
+  border-radius: 14px !important;
+  box-shadow: 0 8px 40px rgba(0, 0, 0, 0.45) !important;
+  font-family: system-ui, -apple-system, sans-serif !important;
+  color: #ffffff !important;
+  transition: opacity 0.25s ease, transform 0.25s ease !important;
+}
+
+.zen-keylock-badge {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  padding: 5px 10px !important;
+  background: rgba(255, 255, 255, 0.05) !important;
+  border: 1px solid rgba(255, 255, 255, 0.06) !important;
+  border-radius: 8px !important;
+  font-weight: 500 !important;
+  font-size: 11.5px !important;
+}
+
+.zen-keylock-dot {
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  background: var(--zen-accent, #8ab4f8) !important;
+  box-shadow: 0 0 6px var(--zen-accent, #8ab4f8);
+}
