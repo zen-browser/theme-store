@@ -1,0 +1,14 @@
+{
+    "id": "310826db-8bc8-4ec4-ae3d-749dcfe86a37",
+    "name": "Zen Scrollbar Mod",
+    "description": "Slim, minimalist scrollbar that fades when inactive and expands slightly on hover.",
+    "homepage": "https://github.com/arifomer733/zen-scrollbar-mod",
+    "style": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/310826db-8bc8-4ec4-ae3d-749dcfe86a37/chrome.css",
+    "readme": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/310826db-8bc8-4ec4-ae3d-749dcfe86a37/readme.md",
+    "image": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/310826db-8bc8-4ec4-ae3d-749dcfe86a37/image.png",
+    "author": "arifomer733",
+    "version": "1.0.0",
+    "tags": [],
+    "createdAt": "2026-06-07",
+    "updatedAt": "2026-06-07"
+}
