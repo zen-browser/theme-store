@@ -1,0 +1,14 @@
+{
+    "id": "6a27226c-d052-44b2-9b98-69232615cc17",
+    "name": "Borderless PWA Suite",
+    "description": "Unlocks native, borderless PWA support with an automated setup script for smart link routing.",
+    "homepage": "https://github.com/SuperGamer2026/zen-pwa-automator",
+    "style": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/6a27226c-d052-44b2-9b98-69232615cc17/chrome.css",
+    "readme": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/6a27226c-d052-44b2-9b98-69232615cc17/readme.md",
+    "image": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/6a27226c-d052-44b2-9b98-69232615cc17/image.png",
+    "author": "SuperGamer2026",
+    "version": "1.0.0",
+    "tags": [],
+    "createdAt": "2026-06-08",
+    "updatedAt": "2026-06-08"
+}

@@ -1,0 +1,13 @@
+
+/* FirefoxPWA / Zen Browser Seamless Overrides */
+:root {
+    --zen-borders-radius: 0px !important;
+    --uc-window-control-width: 0px !important;
+    --uc-window-parts-padding: 0px !important;
+}
+
+#main-window, #tabbrowser-tabpanels, #appcontent {
+    border: none !important;
+    box-shadow: none !important;
+    border-radius: 0 !important;
+}
