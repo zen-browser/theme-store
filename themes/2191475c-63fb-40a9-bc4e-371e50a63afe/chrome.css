@@ -1,0 +1,73 @@
+
+/*
+ * Essential Tab Unload Button
+ * Version: 1.0.0
+ *
+ * Shows Zen's built-in unload button on Essential tabs.
+ * Compatible with:
+ * - Stock Zen
+ * - SuperPins
+ */
+
+/* Configuration */
+.tabbrowser-tab[zen-essential="true"] {
+  --essential-action-size: 18px;
+  --essential-action-offset: 4px;
+}
+
+/* Hide the remove-from-Essentials button */
+.tabbrowser-tab[zen-essential="true"] .tab-close-button {
+  display: none !important;
+}
+
+/* Hide unload button completely by default */
+.tabbrowser-tab[zen-essential="true"] .tab-reset-button {
+  display: none !important;
+}
+
+/*
+ * SuperPins-compatible positioning.
+ */
+.tabbrowser-tab[zen-essential="true"] .tab-content {
+  position: relative;
+}
+
+/* Show and position the unload button only for loaded tabs */
+.tabbrowser-tab[zen-essential="true"]:not([pending]) .tab-reset-button {
+  position: absolute !important;
+  top: var(--essential-action-offset);
+  right: var(--essential-action-offset);
+  z-index: 10;
+
+display: flex !important;
+  align-items: center;
+  justify-content: center;
+
+width: var(--essential-action-size) !important;
+  height: var(--essential-action-size) !important;
+  min-width: var(--essential-action-size) !important;
+
+opacity: 0;
+  border-radius: 999px;
+  pointer-events: auto !important;
+
+transition: opacity 120ms ease, background-color 120ms ease;
+}
+
+/*
+ * Stock Zen fallback.
+ */
+.tabbrowser-tab[zen-essential="true"]:not([pending]) .tab-reset-button.reset-icon {
+  margin-inline-start: calc(-1 * var(--essential-action-size)) !important;
+  margin-inline-end: 0 !important;
+}
+
+/* Reveal the unload button when hovering a loaded Essential tab */
+.tabbrowser-tab[zen-essential="true"]:not([pending]):hover .tab-reset-button {
+  opacity: 1 !important;
+}
+
+/* Add a subtle hover background to the button */
+.tabbrowser-tab[zen-essential="true"]:not([pending]) .tab-reset-button:hover {
+  background-color: color-mix(in srgb, currentColor 14%, transparent);
+}

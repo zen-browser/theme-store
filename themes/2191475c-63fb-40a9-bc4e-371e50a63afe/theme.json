@@ -1,0 +1,14 @@
+{
+    "id": "2191475c-63fb-40a9-bc4e-371e50a63afe",
+    "name": "Essential Tab Unload",
+    "description": "Adds an unload button to Essential tabs. Compatible with stock Zen and SuperPins mod.",
+    "homepage": "https://github.com/lilbuda/zen-essential-tabs-unload-button",
+    "style": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/2191475c-63fb-40a9-bc4e-371e50a63afe/chrome.css",
+    "readme": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/2191475c-63fb-40a9-bc4e-371e50a63afe/readme.md",
+    "image": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/2191475c-63fb-40a9-bc4e-371e50a63afe/image.png",
+    "author": "lilbuda",
+    "version": "1.0.0",
+    "tags": [],
+    "createdAt": "2026-06-09",
+    "updatedAt": "2026-06-09"
+}
