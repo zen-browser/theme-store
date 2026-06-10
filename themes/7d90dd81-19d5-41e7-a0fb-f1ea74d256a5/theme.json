@@ -1,0 +1,14 @@
+{
+    "id": "7d90dd81-19d5-41e7-a0fb-f1ea74d256a5",
+    "name": "No Grain Overlay",
+    "description": "Removes the grainy noise effect from the browser background.",
+    "homepage": "https://github.com/Hali-Adam/no-grain-mod",
+    "style": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/7d90dd81-19d5-41e7-a0fb-f1ea74d256a5/chrome.css",
+    "readme": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/7d90dd81-19d5-41e7-a0fb-f1ea74d256a5/readme.md",
+    "image": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/7d90dd81-19d5-41e7-a0fb-f1ea74d256a5/image.png",
+    "author": "Hali-Adam",
+    "version": "1.0.0",
+    "tags": [],
+    "createdAt": "2026-06-10",
+    "updatedAt": "2026-06-10"
+}

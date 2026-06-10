@@ -1,0 +1,15 @@
+
+#zen-grain-overlay, 
+.zen-grain-overlay, 
+#zen-look-and-feel-container *, 
+[id*="grain"], 
+[class*="grain"] {
+  display: none !important;
+  visibility: hidden !important;
+  opacity: 0 !important;
+  background-image: none !important;
+}
+:root {
+  --zen-grain-opacity: 0 !important;
+  --zen-grain-visibility: hidden !important;
+}
