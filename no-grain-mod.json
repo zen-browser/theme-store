@@ -1,0 +1,8 @@
+{
+  "id": "no-grain-mod",
+  "name": "No Grain Overlay",
+  "description": "Removes the grainy noise effect from the browser background.",
+  "author": "Community",
+  "version": "1.0.0",
+  "stylesheet": "#zen-grain-overlay { display: none !important; } :root { --zen-grain-opacity: 0 !important; }"
+}
