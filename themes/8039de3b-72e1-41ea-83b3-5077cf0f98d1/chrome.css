@@ -3,7 +3,15 @@
   --mod-browser-ease-swipe: var(--user-browser-ease-swipe, 0.3, 1.2, 0.5, 1);
   --mod-browser-ease-reset: var(--user-browser-ease-reset, 0.2, 1.4, 0.3, 1);
   --mod-browser-radius-default: var(--user-tab-radius, 8px);
-  --mod-browser-translate-x: var(--user-tab-movement, 2%); 
+  --mod-browser-translate-x: var(--user-tab-movement, 2%);
+}
+
+/* In fullscreen (e.g. fullscreen video) square off the corners so the page
+   background does not bleed through the rounded corners. Zeroing the radius
+   variable collapses both the default (x1) and swipe (x2) radii to 0. */
+:root[sizemode="fullscreen"],
+:root[inDOMFullscreen="true"] {
+  --mod-browser-radius-default: 0px;
 }
 
 @media (-moz-bool-pref: "tab-shadow-enabled") {
