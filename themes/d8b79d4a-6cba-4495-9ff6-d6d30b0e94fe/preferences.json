@@ -1,7 +1,48 @@
 [
-    {
-        "property": "theme.better-active-tab.on-right",
-        "label": "Move the active tab indicator to the right",
-        "type": "checkbox"
-    }
+  {
+    "property": "mod.better-active-tab.on-right",
+    "label": "Move the active tab indicator to the right",
+    "type": "checkbox",
+    "defaultValue": false
+  },
+  {
+    "property": "mod.better-active-tab.tab-width",
+    "label": "Change indicator width",
+    "type": "dropdown",
+    "defaultValue": "3px",
+    "options": [
+      {
+        "label": "Smallest",
+        "value": "3px"
+      },
+      {
+        "label": "Small",
+        "value": "4px"
+      },
+      {
+        "label": "Medium",
+        "value": "5px"
+      },
+      {
+        "label": "Large",
+        "value": "6px"
+      },
+      {
+        "label": "Largest",
+        "value": "7px"
+      }
+    ]
+  },
+  {
+    "property": "mod.better-active-tab.custom",
+    "label": "Use custom indicator color",
+    "type": "checkbox",
+    "defaultValue": false
+  },
+  {
+    "property": "mod.better-active-tab.hexcode",
+    "label": "Custom indicator color hexcode",
+    "type": "string",
+    "placeholder": "#000000 to #FFFFFF"
+  }
 ]

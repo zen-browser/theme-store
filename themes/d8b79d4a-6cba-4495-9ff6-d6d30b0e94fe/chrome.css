@@ -2,17 +2,38 @@
     position: relative;
 }
 
-.tab-background[selected='']::after {
+.tab-background[selected]::after {
     content: '';
     position: absolute;
     top: 0px;
-    width: 3px;
+    left: 0px; 
     height: 100%;
     background-color: var(--zen-primary-color);
+
+    @media (-moz-pref("mod.better-active-tab.tab-width", "3px")) {
+        width: 3px;
+    }
+    @media (-moz-pref("mod.better-active-tab.tab-width", "4px")) {
+        width: 4px;
+    }
+    @media (-moz-pref("mod.better-active-tab.tab-width", "5px")) {
+        width: 5px;
+    }
+    @media (-moz-pref("mod.better-active-tab.tab-width", "6px")) {
+        width: 6px;
+    }
+    @media (-moz-pref("mod.better-active-tab.tab-width", "7px")) {
+        width: 7px;
+    }
+    @media (-moz-pref("mod.better-active-tab.custom")) {
+        background-color: var(--mod-better-active-tab-hexcode);
+    }
 }
 
-@media (-moz-bool-pref: "theme.better-active-tab.on-right") {
-    .tab-background[selected='']::after {
+
+@media (-moz-pref("mod.better-active-tab.on-right")) {
+    .tab-background[selected]::after {
+        left: auto;
         right: 0px;
     }
 }
