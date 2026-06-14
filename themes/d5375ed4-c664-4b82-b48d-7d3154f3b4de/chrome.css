@@ -1,0 +1,32 @@
+
+:root:has(#theme-No-Bookmark-Icon[theme-noBookmarkIcon-enabled="toolbar"]) {
+    #nav-bar #personal-bookmarks .toolbarbutton-icon {
+        display: none !important;
+    }
+}
+
+:root:has(#theme-No-Bookmark-Icon[theme-noBookmarkIcon-enabled="sub"]) {
+    .toolbar-menupopup .menu-iconic .menu-icon:not([srcset]) {
+        display: none !important;
+    }
+}
+
+:root:has(#theme-No-Bookmark-Icon[theme-noBookmarkIcon-enabled="both"]) {
+    .toolbar-menupopup .menu-iconic .menu-icon:not([srcset]),
+    #nav-bar #personal-bookmarks .toolbarbutton-icon {
+        display: none !important;
+    }
+}
+
+@media (-moz-pref("theme.noBookmarkIcon.site_enabled")) {
+    .toolbar-menupopup .menu-iconic .menu-icon[srcset] {
+        display: none !important;
+    }
+}
+
+@media (-moz-pref("theme.noBookmarkIcon.site_garayscale")) {
+    .toolbar-menupopup .menu-iconic .menu-icon[srcset] {
+        filter: grayscale(1);
+        mix-blend-mode: plus-lighter;
+    }
+}

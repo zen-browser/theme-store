@@ -1,0 +1,15 @@
+{
+    "id": "d5375ed4-c664-4b82-b48d-7d3154f3b4de",
+    "name": "No Bookmark Icon",
+    "description": "Hide the bookmark folders icon or the websites icon to keep only the text for a more minimal experience.",
+    "homepage": "https://github.com/rfNeoN/No-Bookmark-Icon-For-Zen-Browser",
+    "style": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/d5375ed4-c664-4b82-b48d-7d3154f3b4de/chrome.css",
+    "readme": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/d5375ed4-c664-4b82-b48d-7d3154f3b4de/readme.md",
+    "image": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/d5375ed4-c664-4b82-b48d-7d3154f3b4de/image.png",
+    "author": "rfNeoN",
+    "version": "1.0.0",
+    "tags": [],
+    "createdAt": "2026-06-14",
+    "updatedAt": "2026-06-14",
+    "preferences": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/d5375ed4-c664-4b82-b48d-7d3154f3b4de/preferences.json"
+}
