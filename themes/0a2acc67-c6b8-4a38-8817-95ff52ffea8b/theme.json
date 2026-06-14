@@ -1,0 +1,15 @@
+{
+    "id": "0a2acc67-c6b8-4a38-8817-95ff52ffea8b",
+    "name": "Space Border Width",
+    "description": "Customize the width of the colored space border around web content",
+    "homepage": "",
+    "style": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/0a2acc67-c6b8-4a38-8817-95ff52ffea8b/chrome.css",
+    "readme": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/0a2acc67-c6b8-4a38-8817-95ff52ffea8b/readme.md",
+    "image": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/0a2acc67-c6b8-4a38-8817-95ff52ffea8b/image.png",
+    "author": "zendoin",
+    "version": "1.0.0",
+    "tags": [],
+    "createdAt": "2026-06-14",
+    "updatedAt": "2026-06-14",
+    "preferences": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/0a2acc67-c6b8-4a38-8817-95ff52ffea8b/preferences.json"
+}
