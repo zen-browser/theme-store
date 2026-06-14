@@ -1,0 +1,4 @@
+
+#main-window {
+  --zen-element-separation: var(--mod-spaceborder-width) !important;
+}

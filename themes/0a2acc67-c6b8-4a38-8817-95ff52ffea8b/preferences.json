@@ -1,0 +1,9 @@
+[
+    {
+        "property": "mod.spaceborder.width",
+        "label": "Border width (e.g. 0px, 4px, 8px)",
+        "type": "string",
+        "defaultValue": "8px",
+        "placeholder": "e.g. 0px, 4px, 8px"
+    }
+]
