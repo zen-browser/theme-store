@@ -1,0 +1,34 @@
+[
+    {
+        "property": "theme.noBookmarkIcon.enabled",
+        "label": "Hide The Icons From ",
+        "type": "dropdown",
+        "defaultValue": "both",
+        "options": [
+            {
+                "label": "Toolbar Folders",
+                "value": "toolbar"
+            },
+            {
+                "label": "Sub Folders",
+                "value": "sub"
+            },
+            {
+                "label": "Every Where",
+                "value": "both"
+            }
+        ]
+    },
+    {
+        "property": "theme.noBookmarkIcon.site_enabled",
+        "label": "Also Hide Websites Icon",
+        "type": "checkbox",
+        "defaultValue": false
+    },
+    {
+        "property": "theme.noBookmarkIcon.site_garayscale",
+        "label": "Grayscale Website Icons",
+        "type": "checkbox",
+        "defaultValue": false
+    }
+]
