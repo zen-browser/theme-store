@@ -1,0 +1,15 @@
+{
+    "id": "ef61770b-92c2-4d52-8760-ce37490ee3b1",
+    "name": "Essentials Contrast",
+    "description": "Improves essential tabs icon visibility, especially with the better unloaded tabs mod",
+    "homepage": "https://github.com/BrenoPT/essentials-contrast",
+    "style": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/ef61770b-92c2-4d52-8760-ce37490ee3b1/chrome.css",
+    "readme": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/ef61770b-92c2-4d52-8760-ce37490ee3b1/readme.md",
+    "image": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/ef61770b-92c2-4d52-8760-ce37490ee3b1/image.png",
+    "author": "BrenoPT",
+    "version": "1.0.0",
+    "tags": [],
+    "createdAt": "2026-06-18",
+    "updatedAt": "2026-06-18",
+    "preferences": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/ef61770b-92c2-4d52-8760-ce37490ee3b1/preferences.json"
+}
