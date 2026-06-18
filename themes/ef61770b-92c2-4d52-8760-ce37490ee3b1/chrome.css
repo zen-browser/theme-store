@@ -1,0 +1,33 @@
+
+/* Essentials Contrast v1.0 */
+/* <brenotarga@proton.me> */
+
+/* controls the drop shadow from the icons from non-active tabs */
+@media (-moz-pref("mod.essentials_constrast.icon_shadow")) {
+  .tabbrowser-tab[zen-essential="true"]:not([selected]) .tab-icon-image {
+    filter: drop-shadow(0px 0px 3px rgba(0, 0, 0, 0.3)) !important;
+  }
+}
+
+/* controls the loaded tabs background */
+#zen-essentials .tabbrowser-tab .tab-background {
+  background-color: color-mix(
+    in srgb,
+    var(--zen-primary-color, transparent) 40%,
+    var(--zen-colors-secondary, rgba(0, 0, 0)) 100%
+  ) !important;
+}
+
+/* controls the background colored glow */
+@media (-moz-pref("mod.essentials_constrast.background_glow")) {
+  #zen-essentials .tabbrowser-tab[selected] .tab-background::before {
+    opacity: 0.1 !important;
+    filter: blur(20px) saturate(2) brightness(1) !important;
+  }
+}
+
+/* controls the tab outline */
+.tabbrowser-tab[zen-essential="true"] .tab-background {
+  outline: 1.5px solid color-mix(in srgb, currentColor 20%, transparent) !important;
+  outline-offset: -1px !important;
+}
