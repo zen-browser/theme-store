@@ -1,0 +1,15 @@
+{
+    "id": "2bc95290-07c3-4c71-b4a7-05b5b1ab8f93",
+    "name": "Top Workspace Bar",
+    "description": "A Zen Browser mod that moves the workspace toolbar to the top",
+    "homepage": "https://github.com/rparin/zen-top-workspace-bar",
+    "style": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/2bc95290-07c3-4c71-b4a7-05b5b1ab8f93/chrome.css",
+    "readme": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/2bc95290-07c3-4c71-b4a7-05b5b1ab8f93/readme.md",
+    "image": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/2bc95290-07c3-4c71-b4a7-05b5b1ab8f93/image.png",
+    "author": "rparin",
+    "version": "1.0.0",
+    "tags": [],
+    "createdAt": "2026-06-22",
+    "updatedAt": "2026-06-22",
+    "preferences": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/2bc95290-07c3-4c71-b4a7-05b5b1ab8f93/preferences.json"
+}

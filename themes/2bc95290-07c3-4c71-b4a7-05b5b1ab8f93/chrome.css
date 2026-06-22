@@ -1,0 +1,165 @@
+
+@media (-moz-pref("zWorkspaceMod.type.selectType", "text")),
+  (-moz-pref("zWorkspaceMod.type.selectType", "icon")) {
+  #zen-workspaces-button {
+    background: var(--zWorkspaceMod-bg-bgValue) !important;
+
+mask: linear-gradient(
+      calc(var(--zWorkspaceMod-bg-angleValue) * 1deg),
+      transparent,
+      white calc(var(--zWorkspaceMod-bg-fadeValue) * 1%),
+      white calc((100 - var(--zWorkspaceMod-bg-fadeValue)) * 1%),
+      transparent
+    );
+
+/*Only Sidebar*/
+    /*Do Nothing*/
+  }
+
+/*Sidebar and Top Toolbar*/
+  :root:not([zen-single-toolbar]) {
+    #zen-tabbox-wrapper {
+      /*Icon setting*/
+      @media (-moz-pref("zWorkspaceMod.type.selectType", "icon")) {
+        margin-top: 25px !important;
+      }
+
+/*Text Setting*/
+      @media (-moz-pref("zWorkspaceMod.type.selectType", "text")) {
+        margin-top: 22px !important;
+      }
+    }
+
+#zen-workspaces-button {
+      display: flex !important;
+      flex-direction: row !important;
+      position: fixed !important;
+      top: 63px !important;
+      left: 190px !important;
+      width: 86.5% !important;
+
+@media (-moz-pref("zWorkspaceMod.type.selectType", "icon")) {
+        top: 62px !important;
+      }
+    }
+  }
+
+/*Collapsed Sidebar*/
+  :root:not([zen-sidebar-expanded]):not([zen-single-toolbar]) {
+    #zen-workspaces-button {
+      display: flex !important;
+      flex-direction: row !important;
+      position: fixed !important;
+      top: 63px !important;
+      left: 62px !important;
+      width: 95% !important;
+
+@media (-moz-pref("zWorkspaceMod.type.selectType", "icon")) {
+        top: 62px !important;
+      }
+    }
+  }
+
+#navigator-toolbox {
+    z-index: 999 !important;
+  }
+
+/* Hide icon/dot placeholder */
+  #zen-workspaces-button .zen-workspace-icon {
+    /*For icon only*/
+    @media (-moz-pref("zWorkspaceMod.type.selectType", "icon")) {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+/*For Text Only*/
+    @media (-moz-pref("zWorkspaceMod.type.selectType", "text")) {
+      visibility: hidden;
+      display: none;
+    }
+  }
+
+@media (max-width: 1000px) {
+    #zen-workspaces-button {
+      justify-content: flex-start;
+      width: 90% !important;
+    }
+  }
+
+/*Text only*/
+  @media (-moz-pref("zWorkspaceMod.type.selectType", "text")) {
+    /* Main button styling */
+    #zen-workspaces-button toolbarbutton.subviewbutton {
+      display: inline-block !important;
+      align-items: center !important;
+      justify-content: center !important;
+      width: fit-content !important;
+      min-width: unset !important;
+      height: auto !important;
+      margin: 0 !important;
+      white-space: nowrap !important;
+      position: relative !important;
+    }
+
+/* Replace icon/label with tooltip text */
+    #zen-workspaces-button toolbarbutton.subviewbutton::after {
+      content: attr(tooltiptext);
+      font-size: calc(var(--zWorkspaceMod-style-fontValue) * 1px);
+      white-space: nowrap;
+      display: inline-block;
+      text-align: center;
+      color: var(--zWorkspaceMod-style-fontColor);
+      transform: translate(
+        calc(var(--zWorkspaceMod-labelPos-posXValue) * 1%),
+        calc(var(--zWorkspaceMod-labelPos-posYValue) * 1%)
+      );
+    }
+
+/* Hover = bold text only (inactive items only) */
+    #zen-workspaces-button
+      toolbarbutton.subviewbutton:hover:not([active="true"]) {
+      font-weight: 700;
+    }
+  }
+
+/* Hover + active states (full text highlight area) */
+  #zen-workspaces-button toolbarbutton.subviewbutton:hover {
+    background-color: rgba(0, 0, 0, 0.12);
+  }
+
+#zen-workspaces-button toolbarbutton.subviewbutton:active,
+  #zen-workspaces-button toolbarbutton.subviewbutton[active="true"] {
+    background-color: var(--zWorkspaceMod-style-selectedBg) !important;
+  }
+
+/* Keyboard focus visibility */
+  #zen-workspaces-button toolbarbutton.subviewbutton:focus-visible {
+    outline: 2px solid rgba(255, 255, 255, 0.35);
+    outline-offset: 2px;
+  }
+}
+
+/* Container layout (prevents crowding) */
+#zen-workspaces-button {
+  display: flex !important;
+  align-items: center !important;
+
+@media (-moz-pref("zWorkspaceMod.bar.alignValue", "center")) {
+    justify-content: center !important;
+  }
+
+@media (-moz-pref("zWorkspaceMod.bar.alignValue", "left")) {
+    justify-content: flex-start !important;
+  }
+
+@media (-moz-pref("zWorkspaceMod.bar.alignValue", "right")) {
+    justify-content: flex-end !important;
+  }
+
+gap: calc(var(--zWorkspaceMod-bar-gapValue) * 1px) !important;
+}
+
+#zen-workspaces-button toolbarbutton.subviewbutton {
+  padding: 0px calc(var(--zWorkspaceMod-button-padValue) * 1px) !important;
+}
