@@ -1,0 +1,96 @@
+[
+    {
+        "property": "zWorkspaceMod.type.selectType",
+        "label": "Label Type",
+        "type": "dropdown",
+        "placeholder": "Default",
+        "defaultValue": "text",
+        "options": [
+            {
+                "label": "Text",
+                "value": "text"
+            },
+            {
+                "label": "Icon",
+                "value": "icon"
+            }
+        ]
+    },
+    {
+        "property": "zWorkspaceMod.bar.alignValue",
+        "label": "Label Align",
+        "type": "dropdown",
+        "placeholder": "Center",
+        "defaultValue": "center",
+        "options": [
+            {
+                "label": "Left",
+                "value": "left"
+            },
+            {
+                "label": "Right",
+                "value": "right"
+            }
+        ]
+    },
+    {
+        "property": "zWorkspaceMod.style.fontValue",
+        "label": "Font Size (px) Default: 16",
+        "type": "string",
+        "defaultValue": "16"
+    },
+    {
+        "property": "zWorkspaceMod.style.fontColor",
+        "label": "Font Color (hex) Default: #ffffff",
+        "type": "string",
+        "defaultValue": "#ffffff"
+    },
+    {
+        "property": "zWorkspaceMod.style.selectedBg",
+        "label": "Selected Background (hex) Default: #ffffff2e",
+        "type": "string",
+        "defaultValue": "#ffffff2e"
+    },
+    {
+        "property": "zWorkspaceMod.bar.gapValue",
+        "label": "Gap (px) Default: 5",
+        "type": "string",
+        "defaultValue": "5"
+    },
+    {
+        "property": "zWorkspaceMod.button.padValue",
+        "label": "Pad (px) Default: 50",
+        "type": "string",
+        "defaultValue": "50"
+    },
+    {
+        "property": "zWorkspaceMod.labelPos.posXValue",
+        "label": "Label Position X (%) Default: -50",
+        "type": "string",
+        "defaultValue": "-50"
+    },
+    {
+        "property": "zWorkspaceMod.labelPos.posYValue",
+        "label": "Label Position Y (%) Default: 0",
+        "type": "string",
+        "defaultValue": "0"
+    },
+    {
+        "property": "zWorkspaceMod.bg.bgValue",
+        "label": "Workspace Background (hex) Default: #00000000",
+        "type": "string",
+        "defaultValue": "#00000000"
+    },
+    {
+        "property": "zWorkspaceMod.bg.fadeValue",
+        "label": "Workspace Background Fade Width (%) Default: 20",
+        "type": "string",
+        "defaultValue": "20"
+    },
+    {
+        "property": "zWorkspaceMod.bg.angleValue",
+        "label": "Workspace Background Fade Angle (deg) Default: 90",
+        "type": "string",
+        "defaultValue": "90"
+    }
+]
