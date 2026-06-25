@@ -1,0 +1,15 @@
+{
+    "id": "cc678215-525f-4b6e-84f3-d9768917c746",
+    "name": "Grid Search",
+    "description": "Transforms the default vertical URL bar shortcuts into a clean, modern grid layout.",
+    "homepage": "https://github.com/ahseyg/Zen-Grid-Search",
+    "style": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/cc678215-525f-4b6e-84f3-d9768917c746/chrome.css",
+    "readme": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/cc678215-525f-4b6e-84f3-d9768917c746/readme.md",
+    "image": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/cc678215-525f-4b6e-84f3-d9768917c746/image.png",
+    "author": "ahseyg",
+    "version": "1.0.0",
+    "tags": [],
+    "createdAt": "2026-06-25",
+    "updatedAt": "2026-06-25",
+    "preferences": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/cc678215-525f-4b6e-84f3-d9768917c746/preferences.json"
+}

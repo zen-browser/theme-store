@@ -1,0 +1,54 @@
+[
+    {
+        "property": "mod.zengridsearch.only_empty",
+        "label": "Only show grid on New Tab (Empty URL)",
+        "type": "checkbox",
+        "defaultValue": false
+    },
+    {
+        "property": "mod.zengridsearch.hide_urls",
+        "label": "Hide URL links (Show only titles)",
+        "type": "checkbox",
+        "defaultValue": false
+    },
+    {
+        "property": "mod.zengridsearch.max_rows",
+        "label": "Grid Rows",
+        "type": "dropdown",
+        "defaultValue": "2",
+        "options": [
+            {
+                "label": "2 Rows (Max 10 sites)",
+                "value": "2"
+            },
+            {
+                "label": "3 Rows (Max 15 sites)",
+                "value": "3"
+            },
+            {
+                "label": "Unlimited (Scrollable)",
+                "value": "unlimited"
+            }
+        ]
+    },
+    {
+        "property": "mod.zengridsearch.animations",
+        "label": "Animation Speed",
+        "type": "dropdown",
+        "defaultValue": "normal",
+        "options": [
+            {
+                "label": "Normal",
+                "value": "normal"
+            },
+            {
+                "label": "Fast",
+                "value": "fast"
+            },
+            {
+                "label": "Disabled",
+                "value": "off"
+            }
+        ]
+    }
+]
