@@ -1,0 +1,396 @@
+
+/* =========================================================
+   ZEN GRID SEARCH - CORE CSS (DEFAULT)
+   ========================================================= */
+@media not (-moz-pref("mod.zengridsearch.only_empty")) {
+
+#urlbar:not([usertyping]) .urlbarView-results {
+    display: flex !important;
+    flex-wrap: wrap !important;
+    justify-content: center !important;
+    gap: 8px 12px !important;
+    padding: 16px !important;
+}
+
+#urlbar:not([usertyping]) .urlbarView-row:not([type="topsites"]) {
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: stretch !important;
+    padding: 12px 6px !important;
+    border-radius: 12px !important;
+    background: transparent !important;
+    
+    /* Remove height constraints to allow natural expansion */
+    min-height: 125px !important;
+    height: auto !important;
+    max-height: none !important;
+    
+    /* Calculate width for 5 columns (100% / 5) */
+    width: calc(20% - 10px) !important;
+    min-width: 90px !important; 
+    max-width: 140px !important;
+    flex: 0 0 calc(20% - 10px) !important;
+    
+    box-sizing: border-box !important;
+    position: relative !important;
+    overflow: hidden !important; 
+}
+
+#urlbar:not([usertyping]) .urlbarView-row:not([type="topsites"]):hover {
+    background-color: var(--urlbar-box-hover-bgcolor, rgba(128, 128, 128, 0.1)) !important;
+}
+
+#urlbar:not([usertyping]) .urlbarView-row-inner {
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important; 
+    width: 100% !important;
+    min-width: 100% !important;
+    max-width: 100% !important;
+    padding: 0 !important;
+    margin: 0 !important;
+    position: relative !important; 
+}
+
+#urlbar:not([usertyping]) .urlbarView-no-wrap,
+#urlbar:not([usertyping]) .urlbarView-title-wrapper,
+#urlbar:not([usertyping]) .urlbarView-title {
+    position: static !important;
+}
+
+#urlbar:not([usertyping]) .urlbarView-no-wrap {
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important; 
+    width: 100% !important;
+    min-width: 100% !important;
+    max-width: 100% !important;
+    padding: 0 !important;
+    margin: 0 !important;
+}
+
+#urlbar:not([usertyping]) .urlbarView-favicon {
+    width: 48px !important;
+    height: 48px !important;
+    min-width: 48px !important;
+    min-height: 48px !important;
+    padding: 10px !important; 
+    margin: 0 auto 8px auto !important;
+    background-color: var(--urlbar-box-bgcolor, rgba(128, 128, 128, 0.1)) !important;
+    border-radius: 14px !important; 
+    box-sizing: border-box !important;
+    object-fit: contain !important;
+    display: block !important;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.15) !important; 
+}
+
+/* Pin/Star Icon alignment */
+#urlbar:not([usertyping]) .urlbarView-type-icon {
+    display: block !important;
+    position: absolute !important;
+    top: 32px !important;
+    bottom: auto !important;
+    left: 50% !important;
+    right: auto !important;
+    margin: 0 0 0 12px !important; 
+    transform: none !important; 
+    z-index: 2 !important;
+    pointer-events: none !important;
+    width: 16px !important;
+    height: 16px !important;
+    background-color: transparent !important;
+}
+
+/* Hide unused elements */
+#urlbar:not([usertyping]) .urlbarView-title-separator,
+#urlbar:not([usertyping]) .urlbarView-action,
+#urlbar:not([usertyping]) .urlbarView-tags {
+    display: none !important;
+}
+
+#urlbar:not([usertyping]) .urlbarView-title {
+    font-size: 0.85em !important;
+    font-weight: 500 !important;
+    text-align: center !important;
+    width: 100% !important;
+    min-width: 100% !important;
+    display: block !important;
+    white-space: nowrap !important;
+    overflow: hidden !important;
+    text-overflow: ellipsis !important;
+    color: var(--urlbar-popup-url-color, inherit) !important;
+    margin: 0 !important;
+    padding: 0 0 2px 0 !important; 
+    line-height: 1.4 !important; 
+    height: auto !important;
+    max-height: none !important;
+    mask-image: none !important;
+    -webkit-mask-image: none !important;
+}
+
+#urlbar:not([usertyping]) .urlbarView-url {
+    font-size: 0.75em !important;
+    font-weight: 400 !important;
+    text-align: center !important;
+    width: 100% !important;
+    min-width: 100% !important;
+    display: block !important;
+    white-space: nowrap !important;
+    overflow: hidden !important;
+    text-overflow: ellipsis !important;
+    color: var(--urlbar-popup-url-color, inherit) !important;
+    opacity: 0.6 !important;
+    margin: 4px 0 0 0 !important;
+    padding: 0 0 2px 0 !important; 
+    line-height: 1.4 !important;
+    height: auto !important;
+    max-height: none !important;
+    mask-image: none !important;
+    -webkit-mask-image: none !important;
+}
+
+#urlbar:not([usertyping]) .urlbarView-row[type="topsites"] {
+    width: 100% !important;
+    max-width: 100% !important;
+}
+
+}
+
+/* =========================================================
+   ZEN GRID SEARCH - CORE CSS (ONLY NEW TAB / EMPTY URL)
+   ========================================================= */
+@media (-moz-pref("mod.zengridsearch.only_empty")) {
+
+#urlbar[pageproxystate="invalid"]:not([usertyping]) .urlbarView-results {
+    display: flex !important;
+    flex-wrap: wrap !important;
+    justify-content: center !important;
+    gap: 8px 12px !important;
+    padding: 16px !important;
+}
+
+#urlbar[pageproxystate="invalid"]:not([usertyping]) .urlbarView-row:not([type="topsites"]) {
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: stretch !important;
+    padding: 12px 6px !important;
+    border-radius: 12px !important;
+    background: transparent !important;
+    
+    /* Remove height constraints to allow natural expansion */
+    min-height: 125px !important;
+    height: auto !important;
+    max-height: none !important;
+    
+    /* Calculate width for 5 columns (100% / 5) */
+    width: calc(20% - 10px) !important;
+    min-width: 90px !important; 
+    max-width: 140px !important;
+    flex: 0 0 calc(20% - 10px) !important;
+    
+    box-sizing: border-box !important;
+    position: relative !important;
+    overflow: hidden !important; 
+}
+
+#urlbar[pageproxystate="invalid"]:not([usertyping]) .urlbarView-row:not([type="topsites"]):hover {
+    background-color: var(--urlbar-box-hover-bgcolor, rgba(128, 128, 128, 0.1)) !important;
+}
+
+#urlbar[pageproxystate="invalid"]:not([usertyping]) .urlbarView-row-inner {
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important; 
+    width: 100% !important;
+    min-width: 100% !important;
+    max-width: 100% !important;
+    padding: 0 !important;
+    margin: 0 !important;
+    position: relative !important; 
+}
+
+#urlbar[pageproxystate="invalid"]:not([usertyping]) .urlbarView-no-wrap,
+#urlbar[pageproxystate="invalid"]:not([usertyping]) .urlbarView-title-wrapper,
+#urlbar[pageproxystate="invalid"]:not([usertyping]) .urlbarView-title {
+    position: static !important;
+}
+
+#urlbar[pageproxystate="invalid"]:not([usertyping]) .urlbarView-no-wrap {
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important; 
+    width: 100% !important;
+    min-width: 100% !important;
+    max-width: 100% !important;
+    padding: 0 !important;
+    margin: 0 !important;
+}
+
+#urlbar[pageproxystate="invalid"]:not([usertyping]) .urlbarView-favicon {
+    width: 48px !important;
+    height: 48px !important;
+    min-width: 48px !important;
+    min-height: 48px !important;
+    padding: 10px !important; 
+    margin: 0 auto 8px auto !important;
+    background-color: var(--urlbar-box-bgcolor, rgba(128, 128, 128, 0.1)) !important;
+    border-radius: 14px !important; 
+    box-sizing: border-box !important;
+    object-fit: contain !important;
+    display: block !important;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.15) !important; 
+}
+
+/* Pin/Star Icon alignment */
+#urlbar[pageproxystate="invalid"]:not([usertyping]) .urlbarView-type-icon {
+    display: block !important;
+    position: absolute !important;
+    top: 32px !important;
+    bottom: auto !important;
+    left: 50% !important;
+    right: auto !important;
+    margin: 0 0 0 12px !important; 
+    transform: none !important; 
+    z-index: 2 !important;
+    pointer-events: none !important;
+    width: 16px !important;
+    height: 16px !important;
+    background-color: transparent !important;
+}
+
+/* Hide unused elements */
+#urlbar[pageproxystate="invalid"]:not([usertyping]) .urlbarView-title-separator,
+#urlbar[pageproxystate="invalid"]:not([usertyping]) .urlbarView-action,
+#urlbar[pageproxystate="invalid"]:not([usertyping]) .urlbarView-tags {
+    display: none !important;
+}
+
+#urlbar[pageproxystate="invalid"]:not([usertyping]) .urlbarView-title {
+    font-size: 0.85em !important;
+    font-weight: 500 !important;
+    text-align: center !important;
+    width: 100% !important;
+    min-width: 100% !important;
+    display: block !important;
+    white-space: nowrap !important;
+    overflow: hidden !important;
+    text-overflow: ellipsis !important;
+    color: var(--urlbar-popup-url-color, inherit) !important;
+    margin: 0 !important;
+    padding: 0 0 2px 0 !important; 
+    line-height: 1.4 !important; 
+    height: auto !important;
+    max-height: none !important;
+    mask-image: none !important;
+    -webkit-mask-image: none !important;
+}
+
+#urlbar[pageproxystate="invalid"]:not([usertyping]) .urlbarView-url {
+    font-size: 0.75em !important;
+    font-weight: 400 !important;
+    text-align: center !important;
+    width: 100% !important;
+    min-width: 100% !important;
+    display: block !important;
+    white-space: nowrap !important;
+    overflow: hidden !important;
+    text-overflow: ellipsis !important;
+    color: var(--urlbar-popup-url-color, inherit) !important;
+    opacity: 0.6 !important;
+    margin: 4px 0 0 0 !important;
+    padding: 0 0 2px 0 !important; 
+    line-height: 1.4 !important;
+    height: auto !important;
+    max-height: none !important;
+    mask-image: none !important;
+    -webkit-mask-image: none !important;
+}
+
+#urlbar[pageproxystate="invalid"]:not([usertyping]) .urlbarView-row[type="topsites"] {
+    width: 100% !important;
+    max-width: 100% !important;
+}
+
+}
+
+/* =========================================================
+   ZEN GRID SEARCH - PREFERENCES
+   ========================================================= */
+
+/* --- ROW LIMITS (max_rows) --- */
+@media not (-moz-pref("mod.zengridsearch.max_rows")) {
+    #urlbar:not([usertyping]) .urlbarView-row:not([type="topsites"]):nth-of-type(n+12) {
+        display: none !important;
+    }
+}
+@media (-moz-pref("mod.zengridsearch.max_rows", "2")) {
+    #urlbar:not([usertyping]) .urlbarView-row:not([type="topsites"]):nth-of-type(n+12) {
+        display: none !important;
+    }
+}
+@media (-moz-pref("mod.zengridsearch.max_rows", "3")) {
+    #urlbar:not([usertyping]) .urlbarView-row:not([type="topsites"]):nth-of-type(n+17) {
+        display: none !important;
+    }
+}
+@media (-moz-pref("mod.zengridsearch.max_rows", "unlimited")) {
+    #urlbar:not([usertyping]) .urlbarView-results {
+        max-height: 500px !important;
+        overflow-y: auto !important;
+    }
+}
+
+/* --- HIDE URLS (hide_urls) --- */
+@media (-moz-pref("mod.zengridsearch.hide_urls")) {
+    #urlbar:not([usertyping]) .urlbarView-url {
+        display: none !important;
+    }
+}
+
+/* --- ANIMATION SPEED (animations) --- */
+@media not (-moz-pref("mod.zengridsearch.animations")) {
+    #urlbar:not([usertyping]) .urlbarView-row:not([type="topsites"]) {
+        transition: background-color 0.15s ease !important;
+    }
+    #urlbar:not([usertyping]) .urlbarView-favicon {
+        transition: transform 0.15s cubic-bezier(0.2, 0, 0, 1) !important;
+    }
+    #urlbar:not([usertyping]) .urlbarView-row:not([type="topsites"]):hover .urlbarView-favicon {
+        transform: scale(1.03) !important;
+    }
+}
+
+@media (-moz-pref("mod.zengridsearch.animations", "normal")) {
+    #urlbar:not([usertyping]) .urlbarView-row:not([type="topsites"]) {
+        transition: background-color 0.15s ease !important;
+    }
+    #urlbar:not([usertyping]) .urlbarView-favicon {
+        transition: transform 0.15s cubic-bezier(0.2, 0, 0, 1) !important;
+    }
+    #urlbar:not([usertyping]) .urlbarView-row:not([type="topsites"]):hover .urlbarView-favicon {
+        transform: scale(1.03) !important;
+    }
+}
+
+@media (-moz-pref("mod.zengridsearch.animations", "fast")) {
+    #urlbar:not([usertyping]) .urlbarView-row:not([type="topsites"]) {
+        transition: background-color 0.05s ease !important;
+    }
+    #urlbar:not([usertyping]) .urlbarView-favicon {
+        transition: transform 0.05s cubic-bezier(0.2, 0, 0, 1) !important;
+    }
+    #urlbar:not([usertyping]) .urlbarView-row:not([type="topsites"]):hover .urlbarView-favicon {
+        transform: scale(1.02) !important;
+    }
+}
+
+@media (-moz-pref("mod.zengridsearch.animations", "off")) {
+    #urlbar:not([usertyping]) .urlbarView-row:not([type="topsites"]),
+    #urlbar:not([usertyping]) .urlbarView-favicon {
+        transition: none !important;
+        transform: none !important;
+    }
+    #urlbar:not([usertyping]) .urlbarView-row:not([type="topsites"]):hover .urlbarView-favicon {
+        transform: none !important;
+    }
+}
