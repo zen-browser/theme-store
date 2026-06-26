@@ -1,0 +1,15 @@
+{
+    "id": "6b8ab735-8b62-4f7a-991c-3fa96bc638e7",
+    "name": "Visible Workspace Icons",
+    "description": "Makes workspace icons always visible in full color",
+    "homepage": "https://github.com/AhmedCharfeddine/zenbrowser-visible-workspace-icons",
+    "style": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/6b8ab735-8b62-4f7a-991c-3fa96bc638e7/chrome.css",
+    "readme": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/6b8ab735-8b62-4f7a-991c-3fa96bc638e7/readme.md",
+    "image": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/6b8ab735-8b62-4f7a-991c-3fa96bc638e7/image.png",
+    "author": "AhmedCharfeddine",
+    "version": "1.0.0",
+    "tags": [],
+    "createdAt": "2026-06-26",
+    "updatedAt": "2026-06-26",
+    "preferences": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/6b8ab735-8b62-4f7a-991c-3fa96bc638e7/preferences.json"
+}

@@ -1,0 +1,13 @@
+
+#zen-workspaces-button toolbarbutton {
+  filter: grayscale(0) !important;
+  opacity: var(--mod-visible-workspace-icons-button_opacity, 1) !important;
+}
+
+#zen-workspaces-button toolbarbutton[active='true'] {
+  background-color: var(--zen-toolbar-element-bg) !important;
+}
+
+#zen-workspaces-button toolbarbutton:not([active='true']):hover {
+  background-color: color-mix(in srgb, var(--zen-toolbar-element-bg) 40%, transparent) !important;
+}

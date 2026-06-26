@@ -1,0 +1,8 @@
+[
+    {
+        "property": "mod.visible-workspace-icons.button_opacity",
+        "label": "Workspace button opacity (Zen default was 0.7)",
+        "type": "string",
+        "defaultValue": "1"
+    }
+]
