@@ -129,6 +129,13 @@ menuitem.bookmark-item[label*="github"] .menu-icon {
     height: unset !important;
     min-height: unset !important;
     margin-bottom: 0px !important;
+    width: 100% !important;
+  }
+
+  /* Constrain width so overflow chevron appears correctly */
+  #zen-appcontent-navbar-container:hover #PlacesToolbarItems {
+    max-width: 100% !important;
+    overflow: hidden !important;
   }
 }
 
