@@ -102,6 +102,10 @@ menuitem.bookmark-item[label*="github"] .menu-icon {
 
   /* Only apply hiding when bookmarks toolbar is actually enabled */
   #PersonalToolbar:not([collapsed]):not([customizing]) {
+    height: 4px !important;
+    min-height: 4px !important;
+    margin-bottom: -4px !important;
+    overflow: visible !important;
     position: relative;
     margin-bottom: calc(0px - var(--urlbar-min-height));
     transform: rotateX(90deg) !important;
@@ -120,6 +124,11 @@ menuitem.bookmark-item[label*="github"] .menu-icon {
 @media (-moz-bool-pref: "uc.bookmarks.expand-on-hover") {
   #zen-appcontent-navbar-container:hover #PersonalToolbar:not([collapsed]) {
     transform: rotateX(0deg) !important;
+    /* position: absolute to float over webpage without pushing layout */
+    position: absolute !important;
+    height: unset !important;
+    min-height: unset !important;
+    margin-bottom: 0px !important;
   }
 }
 
