@@ -1,0 +1,14 @@
+{
+    "id": "5432ee32-f5b4-4503-b050-609c9ccf5466",
+    "name": "Lock Pinned Tabs",
+    "description": "Hides the close \u00d7 on pinned tabs so an accidental click can't dismiss them.",
+    "homepage": "https://github.com/rocavence/zen-workspace-tabs-as-assets",
+    "style": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/5432ee32-f5b4-4503-b050-609c9ccf5466/chrome.css",
+    "readme": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/5432ee32-f5b4-4503-b050-609c9ccf5466/readme.md",
+    "image": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/5432ee32-f5b4-4503-b050-609c9ccf5466/image.png",
+    "author": "rocavence",
+    "version": "1.0.0",
+    "tags": [],
+    "createdAt": "2026-06-30",
+    "updatedAt": "2026-06-30"
+}
