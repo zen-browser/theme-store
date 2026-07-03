@@ -1,0 +1,74 @@
+
+/* ============================================
+   Tab Switch Animations — Zen Browser Mod
+   Author: rmshkmx
+   ============================================ */
+
+/* ─── Speed Presets ─── */
+
+/* Fast (0.15s) */
+:root:has([mod-rmshkmx_tab_switch_anim_speed="fast"]) {
+  --rmshkmx-tab-anim-duration: 0.15s;
+  --rmshkmx-tab-anim-easing-popup: cubic-bezier(0.175, 0.885, 0.3, 1.3);
+  --rmshkmx-tab-anim-easing-slide: cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+
+/* Normal (0.25s) — default */
+:root:has([mod-rmshkmx_tab_switch_anim_speed="normal"]),
+:root:not(:has([mod-rmshkmx_tab_switch_anim_speed])) {
+  --rmshkmx-tab-anim-duration: 0.25s;
+  --rmshkmx-tab-anim-easing-popup: cubic-bezier(0.175, 0.885, 0.32, 1.35);
+  --rmshkmx-tab-anim-easing-slide: cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+
+/* Slow (0.4s) */
+:root:has([mod-rmshkmx_tab_switch_anim_speed="slow"]) {
+  --rmshkmx-tab-anim-duration: 0.4s;
+  --rmshkmx-tab-anim-easing-popup: cubic-bezier(0.175, 0.885, 0.32, 1.55);
+  --rmshkmx-tab-anim-easing-slide: cubic-bezier(0.22, 0.61, 0.36, 1);
+}
+
+/* Extra Slow (0.6s) */
+:root:has([mod-rmshkmx_tab_switch_anim_speed="extra-slow"]) {
+  --rmshkmx-tab-anim-duration: 0.6s;
+  --rmshkmx-tab-anim-easing-popup: cubic-bezier(0.175, 0.885, 0.32, 1.65);
+  --rmshkmx-tab-anim-easing-slide: cubic-bezier(0.22, 0.61, 0.36, 1);
+}
+
+/* ─── Popup Animation ─── */
+/* New tab zooms in from behind (scale 0.9 → 1.0) with inertia bounce */
+
+#tabbrowser-tabpanels>hbox:not([zen-split="true"]):not(:has(.zen-glance-background)) {
+  @media -moz-pref("mod.rmshkmx.tab_switch_anim_popup") {
+    transition: scale var(--rmshkmx-tab-anim-duration) var(--rmshkmx-tab-anim-easing-popup),
+      opacity var(--rmshkmx-tab-anim-duration) ease-in-out !important;
+    scale: 0.9 !important;
+    opacity: 0;
+  }
+}
+
+#tabbrowser-tabpanels>hbox.deck-selected:not([zen-split="true"]) {
+  @media -moz-pref("mod.rmshkmx.tab_switch_anim_popup") {
+    scale: 1 !important;
+    opacity: 1 !important;
+  }
+}
+
+/* ─── Slide Animation ─── */
+/* Old tab slides up and out, new tab slides in from below */
+
+#tabbrowser-tabpanels>hbox:not([zen-split="true"]):not(:has(.zen-glance-background)) {
+  @media -moz-pref("mod.rmshkmx.tab_switch_anim_slide") {
+    transition: translate var(--rmshkmx-tab-anim-duration) var(--rmshkmx-tab-anim-easing-slide),
+      opacity var(--rmshkmx-tab-anim-duration) ease-in-out !important;
+    translate: 0 -3% !important;
+    opacity: 0;
+  }
+}
+
+#tabbrowser-tabpanels>hbox.deck-selected:not([zen-split="true"]) {
+  @media -moz-pref("mod.rmshkmx.tab_switch_anim_slide") {
+    translate: 0 0 !important;
+    opacity: 1 !important;
+  }
+}
