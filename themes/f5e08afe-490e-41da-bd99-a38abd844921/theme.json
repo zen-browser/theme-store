@@ -1,0 +1,15 @@
+{
+    "id": "f5e08afe-490e-41da-bd99-a38abd844921",
+    "name": "Tab Switch Anim",
+    "description": "Popup & Slide tab switch animations with speed control",
+    "homepage": "https://github.com/rmshkmx/NewSwitchAnims",
+    "style": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/f5e08afe-490e-41da-bd99-a38abd844921/chrome.css",
+    "readme": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/f5e08afe-490e-41da-bd99-a38abd844921/readme.md",
+    "image": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/f5e08afe-490e-41da-bd99-a38abd844921/image.png",
+    "author": "rmshkmx",
+    "version": "1.0.0",
+    "tags": [],
+    "createdAt": "2026-07-03",
+    "updatedAt": "2026-07-03",
+    "preferences": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/f5e08afe-490e-41da-bd99-a38abd844921/preferences.json"
+}

@@ -1,0 +1,37 @@
+[
+    {
+        "property": "mod.rmshkmx.tab_switch_anim_popup",
+        "label": "\ud83c\udfac Enable Popup Animation (zoom-in with inertia)",
+        "type": "checkbox",
+        "defaultValue": true
+    },
+    {
+        "property": "mod.rmshkmx.tab_switch_anim_slide",
+        "label": "\ud83c\udfac Enable Slide Animation (vertical slide)",
+        "type": "checkbox",
+        "defaultValue": false
+    },
+    {
+        "property": "mod.rmshkmx.tab_switch_anim_speed",
+        "label": "\u26a1 Animation Speed",
+        "type": "dropdown",
+        "options": [
+            {
+                "label": "Fast (0.15s)",
+                "value": "fast"
+            },
+            {
+                "label": "Normal (0.25s)",
+                "value": "normal"
+            },
+            {
+                "label": "Slow (0.4s)",
+                "value": "slow"
+            },
+            {
+                "label": "Extra Slow (0.6s)",
+                "value": "extra-slow"
+            }
+        ]
+    }
+]
