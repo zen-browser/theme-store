@@ -1,0 +1,14 @@
+{
+    "id": "46e90a10-0c6b-4696-bfe1-ab303680b110",
+    "name": "Tab Memory Hover",
+    "description": "Displays process memory usage inside the tab hover card (requires userChrome.js).",
+    "homepage": "https://github.com/shaun6jrome",
+    "style": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/46e90a10-0c6b-4696-bfe1-ab303680b110/chrome.css",
+    "readme": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/46e90a10-0c6b-4696-bfe1-ab303680b110/readme.md",
+    "image": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/46e90a10-0c6b-4696-bfe1-ab303680b110/image.png",
+    "author": "shaun6jrome",
+    "version": "1.0.0",
+    "tags": [],
+    "createdAt": "2026-07-04",
+    "updatedAt": "2026-07-04"
+}
