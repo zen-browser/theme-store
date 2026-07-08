@@ -1,0 +1,44 @@
+[
+    {
+        "property": "theme-glance_button_colors-icon_color",
+        "label": "Icon color",
+        "type": "string",
+        "defaultValue": "#ffffff",
+        "placeholder": "#ffffff"
+    },
+    {
+        "property": "theme-glance_button_colors-button_background",
+        "label": "Button background",
+        "type": "string",
+        "defaultValue": "#181818",
+        "placeholder": "#181818"
+    },
+    {
+        "property": "theme-glance_button_colors-button_hover_background",
+        "label": "Hover background",
+        "type": "string",
+        "defaultValue": "#2c2c2c",
+        "placeholder": "#2c2c2c"
+    },
+    {
+        "property": "theme-glance_button_colors-button_opacity",
+        "label": "Button opacity",
+        "type": "string",
+        "defaultValue": "1",
+        "placeholder": "0.85, 0.9, or 1"
+    },
+    {
+        "property": "theme-glance_button_colors-button_border",
+        "label": "Button border",
+        "type": "string",
+        "defaultValue": "none",
+        "placeholder": "none or 1px solid rgba(255,255,255,.2)"
+    },
+    {
+        "property": "theme-glance_button_colors-button_shadow",
+        "label": "Button shadow",
+        "type": "string",
+        "defaultValue": "none",
+        "placeholder": "none or 0 4px 12px rgba(0,0,0,.35)"
+    }
+]
