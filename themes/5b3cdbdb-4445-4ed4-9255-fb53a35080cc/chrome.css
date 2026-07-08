@@ -1,0 +1,31 @@
+
+/* Glance Button Colors
+ * Customize Zen's floating Glance button colors.
+ */
+
+.zen-glance-sidebar-container toolbarbutton {
+  background: var(--theme-glance_button_colors-button_background, #181818) !important;
+  color: var(--theme-glance_button_colors-icon_color, #ffffff) !important;
+  fill: var(--theme-glance_button_colors-icon_color, #ffffff) !important;
+  stroke: var(--theme-glance_button_colors-icon_color, #ffffff) !important;
+
+opacity: var(--theme-glance_button_colors-button_opacity, 1) !important;
+
+border: var(--theme-glance_button_colors-button_border, none) !important;
+  box-shadow: var(--theme-glance_button_colors-button_shadow, none) !important;
+
+-moz-context-properties: fill, fill-opacity, stroke, stroke-opacity !important;
+}
+
+.zen-glance-sidebar-container toolbarbutton:hover {
+  background: var(--theme-glance_button_colors-button_hover_background, #2c2c2c) !important;
+}
+
+.zen-glance-sidebar-container toolbarbutton .toolbarbutton-icon {
+  color: var(--theme-glance_button_colors-icon_color, #ffffff) !important;
+  fill: var(--theme-glance_button_colors-icon_color, #ffffff) !important;
+  stroke: var(--theme-glance_button_colors-icon_color, #ffffff) !important;
+  filter: none !important;
+
+-moz-context-properties: fill, fill-opacity, stroke, stroke-opacity !important;
+}

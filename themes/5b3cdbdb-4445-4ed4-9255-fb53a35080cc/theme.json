@@ -1,0 +1,15 @@
+{
+    "id": "5b3cdbdb-4445-4ed4-9255-fb53a35080cc",
+    "name": "Glance Button Colors",
+    "description": "Customize Zen Browser\u2019s floating Glance button colors.",
+    "homepage": "https://github.com/ronniemason/glance-button-colors",
+    "style": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/5b3cdbdb-4445-4ed4-9255-fb53a35080cc/chrome.css",
+    "readme": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/5b3cdbdb-4445-4ed4-9255-fb53a35080cc/readme.md",
+    "image": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/5b3cdbdb-4445-4ed4-9255-fb53a35080cc/image.png",
+    "author": "ronniemason",
+    "version": "1.0.0",
+    "tags": [],
+    "createdAt": "2026-07-08",
+    "updatedAt": "2026-07-08",
+    "preferences": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/5b3cdbdb-4445-4ed4-9255-fb53a35080cc/preferences.json"
+}
