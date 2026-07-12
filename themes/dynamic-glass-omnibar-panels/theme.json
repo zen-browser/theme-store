@@ -1,0 +1,21 @@
+{
+    "id": "dynamic-glass-omnibar-panels",
+    "name": "Dynamic Glass OmniBar & Panels",
+    "description": "A premium, 100% adaptive glassmorphic theme that blends Zen Browser's OmniBar and extensions panel beautifully with your active theme colors.",
+    "author": "Dorukkino",
+    "version": "1.0.0",
+    "type": "style",
+    "readme": "README.md",
+    "theme": "theme.css",
+    "image": "preview.png",
+    "homepage": "https://github.com/Dorukkino/theme-store",
+    "repository": "https://github.com/Dorukkino/theme-store",
+    "tags": [
+        "glassmorphism",
+        "omnibar",
+        "transparent",
+        "adaptive-color"
+    ],
+    "createdAt": "2026-07-03",
+    "updatedAt": "2026-07-03"
+}

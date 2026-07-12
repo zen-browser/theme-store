@@ -1,0 +1,110 @@
+/* ==========================================================================
+   Zen Browser - %100 Dinamik Adaptif Cam Teması (Tema Mağazası Sürümü)
+   ========================================================================= */
+
+:root {
+    /* 
+     * URL BAR İÇİN DİNAMİK RENK 
+     * Kullanıcının aktif tema rengini (--zen-primary-color) yakalar; 
+     * bulamazsa araç çubuğunun aktif rengini bulur ve %35 oranında şeffaflaştırır.
+     */
+    --mod-urlbar-glass: color-mix(in srgb, var(--zen-primary-color, var(--zen-colors-primary, var(--toolbar-bgcolor, var(--zen-main-browser-background, #1e1e1e)))) 35%, transparent) !important;
+    
+    /* ORTAK CAM EFEKTLERİ */
+    --mod-glass-border: rgba(255, 255, 255, 0.12) !important;
+    --mod-glass-blur: blur(25px) !important;
+}
+
+/* 1. ANA GÖVDE ARKA PLANI */
+#main-window,
+#browser,
+#sidebar-box,
+#appcontent,
+.browserSidebarContainer,
+#tabbrowser-tabpanels {
+    background-color: var(--zen-main-browser-background, #1e1e1e) !important;
+    backdrop-filter: none !important;
+    filter: none !important;
+}
+
+/* 2. Spotlight Modalı Konum Ayarı */
+#urlbar[open] {
+    margin-top: 25px !important; 
+}
+
+/* 3. URL Bar İçi Katman Temizliği */
+#urlbar[open] .urlbarView,
+#urlbar[open] .urlbarView-body-inner,
+#urlbar[open] .urlbarView-results,
+#urlbar[open] #urlbar-input-container {
+    background: transparent !important;
+    background-color: transparent !important;
+    box-shadow: none !important;
+}
+
+/* 4. URL BAR ARKA PLANI (DİNAMİK) */
+#urlbar[open] .urlbar-background,
+.urlbar-background {
+    background-color: var(--mod-urlbar-glass) !important; 
+    backdrop-filter: var(--mod-glass-blur) !important;             
+    -webkit-backdrop-filter: var(--mod-glass-blur) !important;
+    border: 1px solid var(--mod-glass-border) !important; 
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.4) !important;
+}
+
+/* ==========================================================================
+   5. UZANTILAR PANELİ (İZOLE KATMANLAR İÇİN DİNAMİK TEMA ÇÖZÜMÜ)
+   ========================================================================== */
+
+/* Sistemin katı çizimini kapatır */
+panel,
+.panel-arrowcontent,
+#unified-extensions-panel,
+#identity-popup,
+panel-multiview {
+    appearance: none !important; 
+    background-image: none !important; 
+}
+
+panel {
+    background: transparent !important;
+    background-color: transparent !important;
+}
+
+/* 
+ * PANELLER İÇİN ÖZEL DİNAMİK RENK HESAPLAMASI 
+ * Kullanıcının o anki aktif tema rengini (--zen-primary-color) öncelikli okur, 
+ * bulamazsa panellerin yerleşik arka plan değişkenini %35 cam efektine dönüştürür! 
+ */
+panel[type="arrow"] .panel-arrowcontent,
+#unified-extensions-panel .panel-arrowcontent,
+#identity-popup .panel-arrowcontent {
+    background-color: color-mix(in srgb, var(--zen-primary-color, var(--zen-colors-primary, var(--arrowpanel-background, var(--zen-main-browser-background, #1e1e1e)))) 35%, transparent) !important; 
+    backdrop-filter: var(--mod-glass-blur) !important;             
+    -webkit-backdrop-filter: var(--mod-glass-blur) !important;
+    border: 1px solid var(--mod-glass-border) !important; 
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.4) !important;
+}
+
+/* İçerideki tüm alt katmanların inatçı siyahlığını yok ediyoruz */
+panelview,
+.panel-subview-body,
+#identity-popup-mainView,
+#unified-extensions-view,
+#unified-extensions-area,
+.panel-header,
+.panel-footer {
+    appearance: none !important;
+    background: transparent !important;
+    background-color: transparent !important;
+    box-shadow: none !important;
+}
+
+/* ========================================================================== */
+
+/* 6. Öneriler Listesinde Seçilen Satır */
+.urlbarView-row[selected],
+.urlbarView-row:hover {
+    background-color: rgba(255, 255, 255, 0.08) !important;
+    border-radius: 10px !important;
+}
