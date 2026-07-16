@@ -1,0 +1,125 @@
+[
+    {
+        "property": "mod.tab_hotkey_hints.essentials",
+        "label": "Enabled for Essentials",
+        "type": "checkbox",
+        "defaultValue": true
+    },
+    {
+        "property": "mod.tab_hotkey_hints.last_tab",
+        "label": "Enabled on last tab",
+        "type": "checkbox",
+        "defaultValue": false
+    },
+    {
+        "property": "mod.tab_hotkey_hints.font_size",
+        "label": "Font size",
+        "type": "string",
+        "defaultValue": "0.8em",
+        "placeholder": "0.8em"
+    },
+    {
+        "property": "mod.tab_hotkey_hints.font_weight",
+        "label": "Font weight",
+        "type": "string",
+        "defaultValue": "500",
+        "placeholder": "500"
+    },
+    {
+        "property": "mod.tab_hotkey_hints.opacity",
+        "label": "Opacity",
+        "type": "string",
+        "defaultValue": "1",
+        "placeholder": "0.9"
+    },
+    {
+        "property": "mod.tab_hotkey_hints.color",
+        "label": "Font color",
+        "type": "string",
+        "defaultValue": "inherit",
+        "placeholder": "inherit"
+    },
+    {
+        "property": "mod.tab_hotkey_hints.text_shadow",
+        "label": "Shadow",
+        "type": "string",
+        "defaultValue": "inherit",
+        "placeholder": "0px 0px 3px hsl(from var(--zen-primary-color) h 80 15)"
+    },
+    {
+        "property": "mod.tab_hotkey_hints.position",
+        "label": "Hint position anchor",
+        "type": "dropdown",
+        "defaultValue": "topright",
+        "options": [
+            {
+                "label": "Top right",
+                "value": "topright"
+            },
+            {
+                "label": "Top left",
+                "value": "topleft"
+            },
+            {
+                "label": "Bottom right",
+                "value": "botright"
+            },
+            {
+                "label": "Bottom left",
+                "value": "botleft"
+            }
+        ]
+    },
+    {
+        "property": "mod.tab_hotkey_hints.v_margin",
+        "label": "Vertical margin",
+        "type": "string",
+        "defaultValue": "4px",
+        "placeholder": "4px"
+    },
+    {
+        "property": "mod.tab_hotkey_hints.h_margin",
+        "label": "Horizontal margin",
+        "type": "string",
+        "defaultValue": "8px",
+        "placeholder": "8px"
+    },
+    {
+        "property": "mod.tab_hotkey_hints.position_essentials",
+        "label": "Hint position anchor for essentials",
+        "type": "dropdown",
+        "defaultValue": "topright",
+        "options": [
+            {
+                "label": "Top right",
+                "value": "topright"
+            },
+            {
+                "label": "Top left",
+                "value": "topleft"
+            },
+            {
+                "label": "Bottom right",
+                "value": "botright"
+            },
+            {
+                "label": "Bottom left",
+                "value": "botleft"
+            }
+        ]
+    },
+    {
+        "property": "mod.tab_hotkey_hints.v_margin_essentials",
+        "label": "Vertical margin for essentials",
+        "type": "string",
+        "defaultValue": "4px",
+        "placeholder": "4px"
+    },
+    {
+        "property": "mod.tab_hotkey_hints.h_margin_essentials",
+        "label": "Horizontal margin for essentials",
+        "type": "string",
+        "defaultValue": "8px",
+        "placeholder": "8px"
+    }
+]

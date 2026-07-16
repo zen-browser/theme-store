@@ -1,0 +1,15 @@
+{
+    "id": "81f72fe0-2c90-492f-b916-045521d6dac7",
+    "name": "Tab Hotkey Indicators",
+    "description": "Adds numbers on tabs to hint to its shortcut key",
+    "homepage": "https://github.com/ramla/zen-mods/tree/master/tabhotkeyindicators",
+    "style": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/81f72fe0-2c90-492f-b916-045521d6dac7/chrome.css",
+    "readme": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/81f72fe0-2c90-492f-b916-045521d6dac7/readme.md",
+    "image": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/81f72fe0-2c90-492f-b916-045521d6dac7/image.png",
+    "author": "ramla",
+    "version": "1.0.0",
+    "tags": [],
+    "createdAt": "2026-07-16",
+    "updatedAt": "2026-07-16",
+    "preferences": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/81f72fe0-2c90-492f-b916-045521d6dac7/preferences.json"
+}
