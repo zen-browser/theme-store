@@ -1,0 +1,126 @@
+
+@counter-style blank {
+  system: cyclic;
+  symbols: "";
+}
+@counter-style tabhint {
+  system: fixed;
+  symbols: "1" "2" "3" "4" "5" "6" "7" "8";
+  suffix: "";
+  fallback: blank;
+}
+
+#TabsToolbar {
+  counter-reset: tabcounter;
+}
+
+@media not (-moz-pref("mod.tab_hotkey_hints.essentials")) {
+  #zen-essentials .tab-content::after {
+    display: none;
+  }
+}
+
+@media -moz-pref("mod.tab_hotkey_hints.last_tab") {
+  zen-workspace[active="true"] .zen-workspace-tabs-section
+  > tab:not([pinned]):not([aria-hidden="true"]):not([folder-active="true"]):nth-last-child(2),
+  zen-workspace[active="true"] tab-group:not(:has(~ tab))
+  tab:not([pinned]):not([aria-hidden="true"]):not([folder-active="true"]):nth-last-child(1) {
+    .tab-content::before {
+      content: "9";
+      display: unset;
+      z-index: 1;
+      font-size: var(--mod-tab_hotkey_hints-font_size);
+      font-weight: var(--mod-tab_hotkey_hints-font_weight);
+      position: absolute;
+      opacity: var(--mod-tab_hotkey_hints-opacity);
+      color: var(--mod-tab_hotkey_hints-color);
+      text-shadow: var(--mod-tab_hotkey_hints-text_shadow);
+      @media (-moz-pref("mod.tab_hotkey_hints.position", "topright")) {
+          right: var(--mod-tab_hotkey_hints-h_margin);
+          top: var(--mod-tab_hotkey_hints-v_margin);
+      }
+      @media (-moz-pref("mod.tab_hotkey_hints.position", "topleft")) {
+          left: var(--mod-tab_hotkey_hints-h_margin);
+          top: var(--mod-tab_hotkey_hints-v_margin);
+      }
+      @media (-moz-pref("mod.tab_hotkey_hints.position", "botright")) {
+          right: var(--mod-tab_hotkey_hints-h_margin);
+          bottom: var(--mod-tab_hotkey_hints-v_margin);
+      }
+      @media (-moz-pref("mod.tab_hotkey_hints.position", "botleft")) {
+          left: var(--mod-tab_hotkey_hints-h_margin);
+          bottom: var(--mod-tab_hotkey_hints-v_margin);
+      }
+    }
+  }
+}
+@media not (-moz-pref("mod.tab_hotkey_hints.last_tab")) {
+  zen-workspace[active="true"] .zen-workspace-tabs-section
+  > tab:not([pinned]):not([aria-hidden="true"]):not([folder-active="true"]):nth-last-child(2),
+  zen-workspace[active="true"] tab-group:not(:has(~ tab))
+  tab:not([pinned]):not([aria-hidden="true"]):not([folder-active="true"]):nth-last-child(1) {
+    .tab-content::before {
+      display: none;
+    }
+  }
+}
+
+#tabbrowser-tabs {
+  #zen-essentials tab,
+  zen-workspace[active="true"] .zen-workspace-tabs-section > zen-folder:not([collapsed]) tab[aria-hidden="true"][folder-active="true"]:not([style*="height: 0px"]),
+  zen-workspace[active="true"] .zen-workspace-tabs-section > zen-folder:not([collapsed]) tab:not([aria-hidden="true"]):not([style*="height: 0px"]),
+  zen-workspace[active="true"] .zen-workspace-tabs-section > tab[aria-hidden="true"][folder-active="true"]:not([style*="height: 0px"]),
+  zen-workspace[active="true"] .zen-workspace-tabs-section > tab:not([aria-hidden="true"]):not([style*="height: 0px"]):not([zen-empty-tab="true"]):nth-child(-n+9) {
+    counter-increment: tabcounter;
+  }
+  #zen-essentials tab .tab-content::after,
+  zen-workspace[active="true"] .zen-workspace-tabs-section > zen-folder:not([collapsed]) tab[aria-hidden="true"][folder-active="true"]:not([style*="height: 0px"]) .tab-content::after,
+  zen-workspace[active="true"] .zen-workspace-tabs-section > zen-folder:not([collapsed]) tab:not([aria-hidden="true"]):not([style*="height: 0px"]) .tab-content::after,
+  zen-workspace[active="true"] .zen-workspace-tabs-section > tab[aria-hidden="true"][folder-active="true"]:not([style*="height: 0px"]) .tab-content::after,
+  zen-workspace[active="true"] .zen-workspace-tabs-section > tab:not([aria-hidden="true"]):not([style*="height: 0px"]):nth-child(-n+9) .tab-content::after {
+    content: counter(tabcounter, tabhint);
+    font-size: var(--mod-tab_hotkey_hints-font_size);
+    font-weight: var(--mod-tab_hotkey_hints-font_weight);
+    position: absolute;
+    opacity: var(--mod-tab_hotkey_hints-opacity);
+    color: var(--mod-tab_hotkey_hints-color);
+    text-shadow: var(--mod-tab_hotkey_hints-text_shadow);
+  }
+}
+#tabbrowser-tabs {
+  #zen-essentials .tab-content::after {
+    @media (-moz-pref("mod.tab_hotkey_hints.position_essentials", "topright")) {
+        right: var(--mod-tab_hotkey_hints-h_margin_essentials);
+        top: var(--mod-tab_hotkey_hints-v_margin_essentials);
+    }
+    @media (-moz-pref("mod.tab_hotkey_hints.position_essentials", "topleft")) {
+        left: var(--mod-tab_hotkey_hints-h_margin_essentials);
+        top: var(--mod-tab_hotkey_hints-v_margin_essentials);
+    }
+    @media (-moz-pref("mod.tab_hotkey_hints.position_essentials", "botright")) {
+        right: var(--mod-tab_hotkey_hints-h_margin_essentials);
+        bottom: var(--mod-tab_hotkey_hints-v_margin_essentials);
+    }
+    @media (-moz-pref("mod.tab_hotkey_hints.position_essentials", "botleft")) {
+        left: var(--mod-tab_hotkey_hints-h_margin_essentials);
+        bottom: var(--mod-tab_hotkey_hints-v_margin_essentials);
+    } 
+  }
+  zen-workspace[active="true"] .tab-content::after {
+    @media (-moz-pref("mod.tab_hotkey_hints.position", "topright")) {
+        right: var(--mod-tab_hotkey_hints-h_margin);
+        top: var(--mod-tab_hotkey_hints-v_margin);
+    }
+    @media (-moz-pref("mod.tab_hotkey_hints.position", "topleft")) {
+        left: var(--mod-tab_hotkey_hints-h_margin);
+        top: var(--mod-tab_hotkey_hints-v_margin);
+    }
+    @media (-moz-pref("mod.tab_hotkey_hints.position", "botright")) {
+        right: var(--mod-tab_hotkey_hints-h_margin);
+        bottom: var(--mod-tab_hotkey_hints-v_margin);
+    }
+    @media (-moz-pref("mod.tab_hotkey_hints.position", "botleft")) {
+        left: var(--mod-tab_hotkey_hints-h_margin);
+    }
+  }
+}
