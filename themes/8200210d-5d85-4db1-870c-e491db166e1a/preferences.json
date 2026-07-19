@@ -1,0 +1,32 @@
+[
+    {
+        "property": "mod.vakit-takibi.accent",
+        "label": "Accent color",
+        "type": "dropdown",
+        "defaultValue": "sky",
+        "options": [
+            {
+                "label": "Sky",
+                "value": "sky"
+            },
+            {
+                "label": "Teal",
+                "value": "teal"
+            },
+            {
+                "label": "Indigo",
+                "value": "indigo"
+            },
+            {
+                "label": "Amber",
+                "value": "amber"
+            }
+        ]
+    },
+    {
+        "property": "mod.vakit-takibi.compact-tabs",
+        "label": "Use compact tabs",
+        "type": "checkbox",
+        "defaultValue": false
+    }
+]
