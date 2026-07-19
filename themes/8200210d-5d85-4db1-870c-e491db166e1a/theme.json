@@ -1,0 +1,15 @@
+{
+    "id": "8200210d-5d85-4db1-870c-e491db166e1a",
+    "name": "Prayer Time",
+    "description": "A calm glassy Zen interface inspired by the Vakit Takibi prayer times extension.",
+    "homepage": "https://github.com/selimsezr/zen_salah_extension/tree/main/zen-theme",
+    "style": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/8200210d-5d85-4db1-870c-e491db166e1a/chrome.css",
+    "readme": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/8200210d-5d85-4db1-870c-e491db166e1a/readme.md",
+    "image": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/8200210d-5d85-4db1-870c-e491db166e1a/image.png",
+    "author": "selimsezr",
+    "version": "1.0.0",
+    "tags": [],
+    "createdAt": "2026-07-19",
+    "updatedAt": "2026-07-19",
+    "preferences": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/8200210d-5d85-4db1-870c-e491db166e1a/preferences.json"
+}

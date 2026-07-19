@@ -1,0 +1,159 @@
+
+/*
+ * Vakit Takibi — Zen Browser Mod
+ * A calm, glassy browser chrome inspired by the Vakit Takibi extension.
+ */
+
+:root {
+  --vakit-accent: #0ea5e9;
+  --vakit-accent-soft: color-mix(in srgb, var(--vakit-accent) 18%, transparent);
+  --vakit-accent-border: color-mix(in srgb, var(--vakit-accent) 38%, transparent);
+  --vakit-surface: light-dark(rgba(248, 251, 255, 0.84), rgba(10, 23, 40, 0.82));
+  --vakit-surface-raised: light-dark(rgba(255, 255, 255, 0.94), rgba(15, 30, 50, 0.94));
+  --vakit-border: light-dark(rgba(30, 64, 175, 0.14), rgba(148, 163, 184, 0.18));
+  --vakit-shadow: light-dark(rgba(30, 64, 175, 0.12), rgba(0, 0, 0, 0.34));
+  --vakit-radius: 14px;
+}
+
+@media (-moz-pref("mod.vakit-takibi.accent", "teal")) {
+  :root { --vakit-accent: #14b8a6; }
+}
+
+@media (-moz-pref("mod.vakit-takibi.accent", "indigo")) {
+  :root { --vakit-accent: #6366f1; }
+}
+
+@media (-moz-pref("mod.vakit-takibi.accent", "amber")) {
+  :root { --vakit-accent: #f59e0b; }
+}
+
+/* Main browser surfaces */
+#navigator-toolbox,
+#zen-sidebar-top-buttons,
+#zen-sidebar-foot-buttons {
+  background-color: transparent !important;
+}
+
+#navigator-toolbox {
+  color: light-dark(#172554, #eef2ff) !important;
+}
+
+#nav-bar,
+#PersonalToolbar {
+  border-color: var(--vakit-border) !important;
+}
+
+.browserSidebarContainer,
+#sidebar-box {
+  border: 1px solid var(--vakit-border) !important;
+  border-radius: var(--vakit-radius) !important;
+  background: var(--vakit-surface) !important;
+  box-shadow: 0 10px 28px var(--vakit-shadow) !important;
+}
+
+/* URL bar */
+#urlbar-background {
+  border: 1px solid var(--vakit-border) !important;
+  border-radius: 13px !important;
+  background: var(--vakit-surface-raised) !important;
+  box-shadow: 0 5px 16px var(--vakit-shadow) !important;
+  backdrop-filter: blur(18px) saturate(1.25) !important;
+}
+
+#urlbar[focused="true"] > #urlbar-background,
+#urlbar[open] > #urlbar-background {
+  border-color: var(--vakit-accent-border) !important;
+  box-shadow:
+    0 0 0 3px var(--vakit-accent-soft),
+    0 10px 24px var(--vakit-shadow) !important;
+}
+
+.urlbarView-row[selected] > .urlbarView-row-inner,
+.urlbarView-row:hover > .urlbarView-row-inner {
+  border-radius: 10px !important;
+  background: var(--vakit-accent-soft) !important;
+}
+
+/* Tabs */
+.tabbrowser-tab .tab-background {
+  border: 1px solid transparent !important;
+  border-radius: 11px !important;
+  transition: background-color 160ms ease, border-color 160ms ease, box-shadow 160ms ease !important;
+}
+
+.tabbrowser-tab:hover .tab-background {
+  border-color: var(--vakit-border) !important;
+  background: var(--vakit-surface) !important;
+}
+
+.tabbrowser-tab[selected] .tab-background {
+  border-color: var(--vakit-accent-border) !important;
+  background: var(--vakit-accent-soft) !important;
+  box-shadow: inset 3px 0 0 var(--vakit-accent), 0 5px 14px var(--vakit-shadow) !important;
+}
+
+.tabbrowser-tab[selected] .tab-label {
+  font-weight: 700 !important;
+}
+
+.tabbrowser-tab[selected] .tab-icon-image,
+.tabbrowser-tab[selected] .tab-icon-overlay {
+  filter: saturate(1.15) !important;
+}
+
+/* Toolbar controls and menus */
+.toolbarbutton-1 > .toolbarbutton-icon,
+.toolbarbutton-1 > .toolbarbutton-badge-stack,
+#zen-sidebar-top-buttons .toolbarbutton-1,
+#zen-sidebar-foot-buttons .toolbarbutton-1 {
+  border-radius: 10px !important;
+  transition: background-color 150ms ease, transform 150ms ease !important;
+}
+
+.toolbarbutton-1:not([disabled]):hover > .toolbarbutton-icon,
+.toolbarbutton-1:not([disabled]):hover > .toolbarbutton-badge-stack,
+#zen-sidebar-top-buttons .toolbarbutton-1:hover,
+#zen-sidebar-foot-buttons .toolbarbutton-1:hover {
+  background: var(--vakit-accent-soft) !important;
+}
+
+menupopup,
+panel,
+.panel-arrowcontent {
+  --panel-background: var(--vakit-surface-raised) !important;
+  --panel-border-color: var(--vakit-border) !important;
+  --panel-border-radius: var(--vakit-radius) !important;
+}
+
+menupopup,
+.panel-arrowcontent {
+  border-radius: var(--vakit-radius) !important;
+  box-shadow: 0 14px 34px var(--vakit-shadow) !important;
+  backdrop-filter: blur(20px) saturate(1.25) !important;
+}
+
+menuitem:hover,
+menu:hover,
+.subviewbutton:hover {
+  border-radius: 9px !important;
+  background: var(--vakit-accent-soft) !important;
+}
+
+/* Optional denser tabs */
+@media (-moz-pref("mod.vakit-takibi.compact-tabs")) {
+  .tabbrowser-tab {
+    min-height: 30px !important;
+  }
+
+.tabbrowser-tab .tab-content {
+    padding-block: 2px !important;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .tabbrowser-tab .tab-background,
+  .toolbarbutton-1 > .toolbarbutton-icon,
+  .toolbarbutton-1 > .toolbarbutton-badge-stack {
+    transition: none !important;
+  }
+}
