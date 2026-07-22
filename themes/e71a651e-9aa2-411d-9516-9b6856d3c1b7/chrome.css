@@ -1,0 +1,5 @@
+
+/* Hides the "Copy URL" button next to the URL bar */
+#zen-copy-url-button {
+  display: none !important;
+}
