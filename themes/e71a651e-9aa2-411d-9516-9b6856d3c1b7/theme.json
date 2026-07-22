@@ -1,0 +1,14 @@
+{
+    "id": "e71a651e-9aa2-411d-9516-9b6856d3c1b7",
+    "name": "No Copy URL",
+    "description": "Hides the Copy URL button from the URL bar.",
+    "homepage": "https://github.com/Alucxrd1/no-copy-url",
+    "style": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/e71a651e-9aa2-411d-9516-9b6856d3c1b7/chrome.css",
+    "readme": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/e71a651e-9aa2-411d-9516-9b6856d3c1b7/readme.md",
+    "image": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/e71a651e-9aa2-411d-9516-9b6856d3c1b7/image.png",
+    "author": "Alucxrd1",
+    "version": "1.0.0",
+    "tags": [],
+    "createdAt": "2026-07-22",
+    "updatedAt": "2026-07-22"
+}
