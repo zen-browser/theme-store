@@ -1,0 +1,14 @@
+{
+    "id": "d7d010a9-676f-4f10-9738-466810df5836",
+    "name": "Zen Macify",
+    "description": "Unifies border-radius, tab/toolbar heights and essentials grid for a macOS-style look on Windows.",
+    "homepage": "https://github.com/daustinn/zen-macify",
+    "style": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/d7d010a9-676f-4f10-9738-466810df5836/chrome.css",
+    "readme": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/d7d010a9-676f-4f10-9738-466810df5836/readme.md",
+    "image": "https://raw.githubusercontent.com/zen-browser/theme-store/main/themes/d7d010a9-676f-4f10-9738-466810df5836/image.png",
+    "author": "daustinn",
+    "version": "1.0.0",
+    "tags": [],
+    "createdAt": "2026-07-23",
+    "updatedAt": "2026-07-23"
+}
